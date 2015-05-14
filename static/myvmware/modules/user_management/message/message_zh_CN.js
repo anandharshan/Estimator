@@ -1,0 +1,25 @@
+﻿label.common.requiredMessage=必填
+label.common.validEmailIDMessage=无效的电子邮件地址。
+label.common.validEmailIDLengthMessage=无效的电子邮件地址。
+label.common.validEmailIDNotMatchMessage=电子邮件地址不匹配。
+label.common.validPasswordNotMatchMessage=密码不匹配。
+label.common.alphaNumericMessage=请只输入数字，字母和下划线
+label.common.phoneNumberMessage=无效电话号码。 
+label.common.maxlengthMessage=请输入不超过{0}个字符。
+label.common.rangelengthMessage=无效。必须在 {0} 至 {1} 个字符之间。
+label.common.digitMessage=请只输入数字
+label.common.range=请输入{0}和{1}之间的值
+label.common.validAlphaNumericNoSpace=无效的用户名
+label.common.selectOne=选择一个
+label.common.tooshort=太短
+label.common.weak=弱
+label.common.good=好
+label.common.strong=强
+label.common.loading=正在加载…
+label.common.defaultPass=密码强度
+label.common.sameasusername=作为用户名密码是相同。
+label.common.cancelButtonURL=/cn/web/vmware/login
+label.common.loadingDataForDropDown=数据载入中...
+label.common.summation.rangelengthmessage=Enter a number between {0}-{1}.
+label.common.empinCountry.exceedGlobalEmpMessage=超出全球员工的数量。
+label.common.already.deactivated.error=此电子邮件地址已被禁用。如果您误收到此消息，<a href="http://www.vmware.com/support/us_support.html" target='_blank'>请与支持部门联系</a>.

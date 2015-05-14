@@ -1,0 +1,571 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  support.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 04/21/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. CONTENT.CSS OVERRIDE
+ * ## 2. QUOTE REQUEST
+/* ########################################################################### */
+
+
+/* ########################################################################### *
+/* ##### CONTENT.CSS OVERRIDE
+/* ########################################################################### */
+#content-container table tr.more-details table {
+	width: 98%;
+}
+
+		#content-container table tr.more-details table td span {
+			font-weight: bold;
+			display: block;
+		}
+
+/* ########################################################################### *
+/* ##### QUOTE REQUEST
+/* ########################################################################### */
+.quote-request-wrapper {
+	padding: 10px 5px 5px 10px;
+}
+
+.quote-request-header-title {
+	background: #2F2F32 url(img/bg_filter_header.jpg) repeat-x;
+	color: white;
+	font-size: 18px;
+	padding: 5px 5px 5px 15px;
+	position: relative;
+	border-bottom: 1px solid black;
+}
+
+.quote-request-header {
+	border: 1px solid #000000;
+	background: #2F2F32 url(img/bg_gray_gradient.png) repeat-x;
+	border-top: 0px;
+	border-bottom: 0px;
+	overflow: hidden;
+}
+
+	.support_request_details .quote-request-header-wrapper {
+		padding: 15px 15px 12px 15px;
+		float: left;	
+	}
+	.quote-request-header.taller {
+		padding-bottom: 30px;
+		border-bottom: 1px solid #000000;		
+	}
+
+
+#content-container .tabbed_area .quote-request-header-wrapper {
+	padding: 10px;
+	background: #2F2F32 url(img/bg_gray_gradient.png) repeat-x;
+	color: white;
+}
+
+#content-container .quote-request-header-wrapper table th {
+	font-size: 12px;
+	background: none;
+	border: none;
+	width: 160px;
+	padding: 2px 10px;
+}
+
+#content-container .quote-request-header-wrapper table td {
+background: none;
+color: white;
+width: 260px;
+padding: 2px 0;
+}
+
+#content-container .quote-request-header-wrapper table.table-left {
+	width: 380px;
+	float: left;
+	margin-right: 20px;
+}
+
+	#content-container .quote-request-header-wrapper table.table-right {
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+	margin-left: 80px;
+}
+#content-container .quote-request-header-wrapper table.clearNone {clear:none;}
+
+		.quote-request-header-wrapper .quoteHolder {
+			margin-bottom: 3px;
+		}
+		.quote-request-header-wrapper .quoteField {
+			margin: 0px;
+			font-size: 12px;
+			font-weight: bold;
+			color: #FFF;
+			text-transform: none;
+			width: 125px;
+			float: left;
+		}
+			
+		.quote-request-header-wrapper .quoteField.long {
+			width: 300px;
+		}
+			
+		.quote-request-header-wrapper .quoteFieldUpperCase {
+			margin-right: 20px;
+			margin-left: 10px;
+			margin-top: 2px;
+			margin-bottom: 2px;
+			font-size: 12px;
+			font-weight: bold;
+			color: #FFF;
+			text-transform: uppercase;
+			float: left;
+			width: 125px;
+		}
+			
+	.quote-request-header-wrapper .quoteFieldName {
+		color: #FFF;
+		text-transform: none;
+		font-size: 12px;
+		float: left;
+	}
+		.quote-request-header-wrapper .quoteFieldName a {
+			color: #a7e4ff;
+		}
+	
+.quote-request-wrapper .ctrlHolder {
+	width: auto;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+.quote-request-wrapper .ctrlHolder label {
+	display: block;
+	margin-bottom: 10px;
+	margin-left: 0;
+	float: none;
+}
+
+.quote-request-wrapper .ctrlHolder input,
+.quote-request-wrapper .ctrlHolder select {
+	float: none;
+	display: block;
+}
+
+.ie7 .quote-request-wrapper .ctrlHolder input,
+.ie7 .quote-request-wrapper .ctrlHolder textarea, {
+	margin-left: -10px;
+}
+
+#content-container .activitiesFooter a.button,
+#content-container .activitiesFooter .textArea button {
+	float:none;
+	margin-left:5px !important;
+}
+/* Commented by PREEJITH */
+/*
+.quote-request-wrapper .warning {
+	float: left;
+	width: 400px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-bottom:#999 1px dotted;
+}
+
+	.ie7 .quote-request-wrapper .warning {
+		width: 430px;
+	}
+	*/
+.quote-request-wrapper .warning {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-bottom:#999 1px dotted;
+}
+
+	.ie7 .quote-request-wrapper .warning {
+
+	}
+	
+	.quote-request-wrapper .warning-header {
+		color: #F00;
+		font-weight: bold;
+		font-size: 12px;
+		margin-bottom: 2px;
+	}
+
+.quote-request-wrapper ul li {
+	font-size: 10px;
+	font-weight:bold;
+}
+
+.ie7 .quote-request-wrapper .buttons .secondary {
+	margin-right: 5px;	
+}
+#content-section .pagination-wrapper{
+	margin: 0;
+	padding: 11px 0;
+	border-top: 1px solid #999999;
+}
+#content-section .pagination-wrapper .resultsNumber{
+	padding-top: 4px;
+}
+#content-section .page-results-wrapper .pagination-nav-ctrl{
+	padding-top: 3px;
+}
+
+/* Upload module */
+#update_request label {
+  width: 120px;
+}
+
+#update_request textarea {
+  width: 309px;
+}
+
+.uploadModule {
+  background: #e7e7e7;
+  padding: 10px;
+  width: 310px;
+}
+
+#update_request .uploadModule .uploadInput label {
+  width: 95px;
+}
+
+#update_request .uploadInput textarea {
+  width: 165px;
+}
+
+.uploadModule .uploadInput {
+  margin-left: 120px; 
+}
+
+.uploadModule textarea {
+  width: 309px;
+}
+
+.uploadModule div button {
+  margin: 0;
+  /*float: right;*/
+}
+
+.uploadModule .uploadedFiles {
+  max-height: 250px;
+  margin-top: 15px;
+  overflow: auto;
+}
+
+.uploadedFile {
+  border-top: 1px dashed #B5B5B5;
+  padding: 8px 15px;
+  margin-right: 5px;
+}
+
+#support-details-content .uploadedFile .title {
+  font-weight: bold;
+  font-size: 11px;
+  color: #000;
+  padding-bottom: 3px;
+}
+
+.uploadedFile .description {
+  font-weight: normal;
+  color: #484848;
+  margin-bottom: 5px;
+  word-wrap:break-word;
+}
+
+.uploadedFile .removeFile {
+  text-align: right;
+}
+
+#content-section section.support_request_step1 .header,
+#content-section .support_request_details .header,
+#content-section .tabbed_area .header {
+	background: #2F2F32 url(img/bg_filter_header.jpg) repeat-x;
+	color: white;
+	display:block;
+	border: 1px solid #030303;
+	border-bottom: 0;
+}
+
+	#content-section section.support_request_step1 .header h2,
+	#content-section .support_request_details .header h2,
+	#content-section .tabbed_area .header h2,
+	#content-section .support_request_details h2{
+		font-size: 15px;
+		font-weight: bold;
+		padding: 5px 13px;
+		/*border-top: 1px solid white;*/
+		color: white;
+		margin:0px;
+		border:0px;
+		line-height:normal;
+	}
+
+#content section.support_request_step1 .header,
+#content .support_request_details .header {
+	background: #2F2F32 url(img/bg_filter_header.jpg) repeat-x;
+	color: white;
+}
+
+
+#content-section section.attach-files .header,
+#content section.attach-files .header  {
+	margin-bottom: 10px;
+}
+
+	#content  section.attach-files .header h2 {
+		border-bottom: #B7B8BA 1px solid;
+	}
+	#content-container .tabContent .column-wrapper{
+		overflow:hidden;
+	}
+	#content-container .activitiesLog table{
+		table-layout: fixed;
+		word-wrap: break-word;
+	}
+	#content-container .activitiesLog th.tdOpenCloseButton{
+	  padding:5px;
+  } 
+  #content-container .activitiesLog th{
+	  padding:3px 10px 4px 15px;
+  } 
+  #content-container .activitiesLog td{
+	  padding:13px 0 10px 15px;
+  } 
+  #content-container .activitiesLog .prodColum{
+	  width:145px;
+  }  
+  #content-container .activitiesLog .dateColum{
+	  width:auto;
+  }  
+  #content-container .activitiesLog .tdOpenCloseButton
+  {
+	  width:20px;
+	  text-align: center;
+  }  
+  #content-container .tabbed_area .activitiesLog table td:first-child{
+  		padding-left:10px;
+  }
+
+  #content-container .tabbed_area .activitiesLog table .more-details table{
+  	background:none;
+  	margin-left:35px;
+  	margin-bottom:0;
+  	border:0px;
+  	width: 810px;
+  }
+  #content-container .tabbed_area .activitiesLog table .more-details table td{
+  	background: #EEEEEE;
+	  border: 1px solid #CCCCCC;
+	  text-align: left;
+	  padding:12px 10px 20px 15px;
+  }
+  .filter-content-wrapper .filter-date.ctrlHolder input[type="radio"]{
+  	vertical-align:middle;
+  }
+  .filter-content-wrapper .filter-date.ctrlHolder label{
+  	top:0;
+  	vertical-align:middle;
+  }
+.ie9 .filter-section .filter-header{
+	padding-top:6px;
+}
+/* ########################################################################### *
+/* ##### QUOTE REQUEST UPDATE PREEJITH
+/* ########################################################################### */
+.column-wrapper .selected-contracts-panel{
+	background: #EEE;
+	padding: 15px;
+	font-size: 12px;
+}
+.column-wrapper .selected-contracts-panel div.title{
+	font-weight:bold;
+}
+.column-wrapper .selected-contracts-panel div.contents{
+    word-wrap: break-word;
+    margin-top: 5px;
+}
+.column-wrapper .renewal-info header,
+.column-wrapper .additional-info header{
+	background:none;
+}
+#content-section .tabbed_area .column-wrapper section.renewal-info h1,
+#content-section .tabbed_area .column-wrapper section.additional-info h1{
+	color:#333;
+	padding:10px 10px 10px 3px;
+	font-size:15px;
+	font-weight:bold;
+	border-bottom: 1px solid #c1c1c3;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+#content-section .tabbed_area .column-wrapper section.renewal-info label,
+#content-section .tabbed_area .column-wrapper section.additional-info label{
+	margin-top: 3px;
+}
+#content-section .tabbed_area .column-wrapper section.additional-info label span.info,
+#content-section .tabbed_area .column-wrapper section.renewal-info label span.info{
+	font-weight:normal;
+}
+#content-section .tabbed_area .column-wrapper section.renewal-info select,
+#content-section .tabbed_area .column-wrapper section.renewal-info input,
+#content-section .tabbed_area .column-wrapper section.additional-info select,
+#content-section .tabbed_area .column-wrapper section.additional-info input,
+#content-section .tabbed_area .column-wrapper section.additional-info textarea{
+	display:inline;
+}
+#content-section .tabbed_area .column-wrapper section.additional-info input.txt_document{
+	font-size:13px;
+	margin-bottom:0px;
+}
+#content-section .tabbed_area .column-wrapper section.additional-info a{
+	padding-left:5px;
+	text-decoration:underline;
+}
+#content-section .tabbed_area .column-wrapper section .txt_document{
+	width:220px;
+}
+
+#content-section .tabbed_area .column-wrapper section.renewal-info a{
+    text-decoration: underline;
+}
+
+#content-section .tabbed_area .column-wrapper section.renewal-info input.txt_datepicker{
+    height:14px;
+	width:90px;
+}
+
+#content-section .tabbed_area .column-wrapper section.renewal-info a.dp-choose-date{
+	padding-left:0px;
+}
+
+#content-section .tabbed_area .column-wrapper section.renewal-info a.dp-choose-date img{
+	/*background: none repeat scroll 0 0 #000000;*/
+    padding: 2px;
+    vertical-align: top;;
+}
+
+#content-section .tabbed_area .column-wrapper section .browse{
+	font: bold 12px arial;
+    height: 24px;
+    margin-left: 3px;
+    width: 100px;
+}
+
+#content-section .tabbed_area .column-wrapper section .browse {
+   background: #FEFEFE url('img/bg_button_secondary.png') repeat-x; /* old browsers */
+	background: -moz-linear-gradient(top, #FEFEFE 0%, #E3E3E3 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#E3E3E3)); /* webkit */
+	-webkit-background-clip: padding-box;
+	   -moz-background-clip: padding;
+	        background-clip: padding-box;
+			-webkid-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	padding: 3px 14px;		
+	color: #2A73B1;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border: 1px solid #bcbcbc;
+
+}
+
+#content-section .quote-request-wrapper .buttons{
+	text-align:right;
+}
+
+/**************No Results deplay ******************/
+.column-wrapper .noResultsMsg{
+	text-align:center;
+	font-size:16px;
+	padding:100px;
+}
+
+/**************Disabled checkbox tooltip***********/#content section header.simple {
+  border-top: 2px solid #484848;
+}
+  
+  #content section header.simple h1 {
+    border-top: 1px solid #FFF;
+    background: #484848;
+    font-size: 14px;
+    color: #FFF;
+    padding: 13px;
+    margin-bottom: 0;
+  }
+
+  /*********************/
+#content-section section .supportHeader {
+  	background: #2F2F32 url(img/bg_filter_header.jpg) repeat-x;
+	color: white;
+	font-size: 18px;
+	border-bottom: 1px solid #000;
+ }
+
+ 	#content-section section .supportHeader h2 {
+ 		font-size: 18px;
+		font-weight: normal;
+		padding: 3px 15px;
+		color: white;
+ 	}
+#content-section .tabbed_area section.renewal-info,
+#content-section .tabbed_area section.additional-info {
+	margin-left: 10px;
+}
+
+.renewal-info .ctrlHolder,
+.additional-info .ctrlHolder {
+ 	margin-left: 3px;
+ }
+
+ .quote-request-wrapper .ctrlHolder.buttons {
+ 	margin-right: 0;
+ }
+
+ .marginTop20 {
+ 	margin-top: 20px;
+ }
+ .marginTop15 {
+ 	margin-top: 15px;
+ }
+
+#content-section section .attention p {
+	font-size: 11px;
+}
+
+.attention strong {
+ 	color: #D8532E;
+}
+
+#content-section .tabbed_area .column-wrapper section.additional-info .progress_bar{
+    margin-left: 232px;
+}
+
+#content-section .tabbed_area .column-wrapper section.additional-info .progress_left{
+	background: url("img/bg_progress_corners.png") no-repeat scroll 0 0 transparent;
+    height: 29px;
+    width: 9px;
+	float:left;
+}
+
+#content-section .tabbed_area .column-wrapper section.additional-info .progress{
+	background: url("img/bg_progress.png") repeat-x scroll 0 0 transparent;
+    height: 29px;
+    width: 312px;
+	float:left;
+}
+
+#content-section .tabbed_area .column-wrapper section.additional-info .progress_right{
+	background: url("img/bg_progress_corners.png") no-repeat scroll -10px 0 transparent;
+    height: 29px;
+	float:left;
+    width: 9px;
+}
+.customfile-input { position: absolute; height: 30px; font-size:160% !important; cursor: pointer; background: transparent; border: 0; opacity: 0; -moz-opacity: 0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); z-index: 999; clip: rect(auto, 297px, auto, 200px); }
+#svcInstances {width:400px}
+table#tbl_instances { width:554px !important;}
+table#tbl_instances tbody tr td { padding-left:15px !important;}
+#supportRequestForm input.optionsHolder, #technical input.optionsHolder{font-size:11px;}
+#tsDropDownOpts a.dropdownOpt{padding-left:30px}

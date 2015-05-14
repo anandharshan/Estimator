@@ -1,0 +1,113 @@
+/* footer - START */
+.footerbar {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-top: 1px solid #A7A8A9;
+    position: relative;
+    height:190px;
+}
+.footerbar p {
+    color: #999999 !important;
+    display: block;
+    font-size: 13px;
+    line-height: 1.3;
+    margin: 0 !important;
+    padding-top: 30px;
+    text-align: left;
+    width: auto !important;
+    margin: 0;
+}
+.footer-nav-links,.liferay #navigation-bottom {
+    list-style: none outside none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    overflow: hidden;
+    padding: 0;
+}
+.footer-nav-links li,.liferay #navigation-bottom li {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin: 0 12px 0 0;
+    padding: 0;
+    float: left;
+}
+.liferay #navigation-bottom a.rss {
+    background: url("img/rss_14x14.png") no-repeat scroll right bottom rgba(0, 0, 0, 0);
+    float: right;
+    height: 14px;
+    margin-right: 11px;
+    padding: 0 20px 0 0;
+}
+.footerbar ul li a{
+    color: #999999;
+    &:hover{
+        color:$starlight-blue;
+    }
+}
+
+/* footer - END */
+
+/* background patterns - START */
+.page-b-footer-pattern {
+    background: url("../images/starlight/footer-pattern-lg.png") no-repeat scroll right bottom rgba(0, 0, 0, 0);
+    position: absolute;
+    right: 0;
+    width: 398px;
+    z-index: -1;
+    bottom: -25px;
+    height: 234px;
+}
+@media all and (max-width: $screen-md) {
+    .page-b-footer-pattern {
+        background: url("../images/starlight/footer-pattern-sm.png") no-repeat scroll right bottom rgba(0, 0, 0, 0);
+    }
+}
+.page-b-footer-gradient {
+    bottom: -25px;
+    height: 430px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background: transparent;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, transparent 0%, #38393c 99%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(99%, #38393c));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, transparent 0%, #38393c 99%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, transparent 0%, #38393c 99%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, transparent 0%, #38393c 99%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, transparent 0%, #38393c 99%);
+    /* W3C */
+}
+/* background patterns - END */
+
+.starlight{
+  .fatfooter{
+    background-color:#E6E6E6;
+    padding:30px 45px;
+    font-size: 15px;
+    margin-top: 30px;
+    h3{
+      margin-bottom: 20px;
+    }
+    .col-lg-3{
+      border-left: 1px solid #D3D3D3;
+      min-height: 140px;
+      &:first-child{
+        border-left: 0 none;
+      }
+    }
+    ul{
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      li{
+        line-height: 24px;
+      }
+    }
+  }
+}

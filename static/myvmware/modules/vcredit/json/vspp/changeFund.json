@@ -1,0 +1,96 @@
+{
+    "eaNumber": "364571507",
+    "eaName": "qatest0055",
+    "fundDetails": [
+        {
+            "id": "GRP10009",
+            "name": "GRP10009_name",
+            "balance": "954873",
+            "expiry": "2015-07-13",
+            "trueUp": "1",
+            "currency": "$",
+			"defaultFlag" : true,
+			"redemptionCurrency": "USD"
+        },
+        {
+            "id": "GRP10039",
+            "name": "GRP10039XAAS_11910355_1",
+            "balance": "-300",
+            "expiry": "2017-07-31",
+            "trueUp": "0",
+            "currency": "¥",
+			"defaultFlag" : false,
+			"redemptionCurrency": "USD"
+        },
+        {
+            "id": "GRP10037",
+            "name": "GRP10037XAAS_11910354_1",
+            "balance": "-100",
+            "expiry": "2017-07-31",
+            "trueUp": "0",
+            "currency": "£",
+			"defaultFlag" : false,
+			"redemptionCurrency": "USD"
+        },
+        {
+            "id": "GRP10007",
+            "name": "GRP10007GRP10007_n",
+            "balance": "-8118",
+            "expiry": "2017-07-31",
+            "trueUp": "1",
+            "currency": "$",
+			"defaultFlag" : false,
+			"redemptionCurrency": "USD"
+        },
+        {
+            "id": "GRP10006",
+            "name": "Testing_1",
+            "balance": "1263947",
+            "expiry": "2015-07-15",
+            "trueUp": "1",
+            "currency": "$",
+			"defaultFlag" : false,
+			"redemptionCurrency": "USD"
+        },
+        {
+            "id": "GRP10040",
+            "name": "GRP10040XAAS_11910355_2",
+            "balance": "3036963",
+            "expiry": "2017-08-03",
+            "trueUp": "0",
+            "currency": "¥",
+			"defaultFlag" : false,
+			"redemptionCurrency": "USD"
+        },
+        {
+            "id": "GRP10035",
+            "name": "GRP10035qatest.0055_FUND",
+            "balance": "299020",
+            "expiry": "2015-07-31",
+            "trueUp": "0",
+            "currency": "£",
+			"defaultFlag" : false,
+			"redemptionCurrency": "USD"
+        },
+        {
+            "id": "GRP10033",
+            "name": "GRP10033XAAS_11",
+            "balance": "522497",
+            "expiry": "2017-07-31",
+            "trueUp": "0",
+            "currency": "$",
+			"defaultFlag" : false,
+			"redemptionCurrency": "USD"
+        },
+        {
+            "id": "GRP10034",
+            "name": "GRP10034qatest.0055_FUND",
+            "balance": "97878298.95",
+            "expiry": "2015-07-31",
+            "trueUp": "0",
+            "currency": "$",
+			"defaultFlag" : false,
+			"redemptionCurrency": "USD"
+        }
+    ]
+}

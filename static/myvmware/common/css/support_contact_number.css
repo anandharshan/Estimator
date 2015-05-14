@@ -1,0 +1,172 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  support_contact_number.css
+ * ##### VERSION: v1.0
+ * ##### UPDATED: 09/12/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. 
+/* ########################################################################### */
+
+
+/* ########################################################################### *
+/* ##### 
+/* ########################################################################### */
+#content-section .column-wrapper .column.twoFourZero {
+	width:270px;
+	margin-bottom:15px;
+}
+#content-section .column.twoFourZero.auto {
+	height:auto!important;
+}
+#content-section .column-wrapper .column.sixTwoEight{
+	width:600px;
+	margin-bottom:15px;
+}
+#content-section section section{
+	margin-top:0px;
+}
+.column-wrapper.support {
+	border-top: none;
+}
+
+#content .sectionHeaders {
+	padding: 4px 0 4px 15px;/*changes as per Jason Kondo's comment */
+	border-right: 1px solid black;
+	font-size:10px;
+}
+
+#content .regionalData{
+	margin-bottom:0px;
+	position: relative;
+}
+
+.ie7 #content .regionalData{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.regionalData .group{
+	margin-bottom:20px;
+	margin-left:15px;
+}
+
+.regionalData .phoneInfo{
+	font-size:12px;
+	color:#666;
+	width: 280px;
+}
+.regionalData .phoneInfo #phInfo{
+	overflow:hidden;
+	
+}
+
+.regionalData .regionalLogo{
+	width:25px;
+	height:20px;
+	margin-left:20px;
+	float:left;	
+}
+
+.ie7 .regionalData .regionalLogo {
+	position: absolute;
+	top: 20px;
+}
+
+.regionalData .regionalInfo.leftSide{
+	width:240px;
+	margin-top:10px;
+}
+
+.regionalData .regionalInfo.rightSide{
+	margin-left:15px;
+	margin-top:15px;
+}
+
+.regionalData .customerInfo{
+	border: 1px solid #CCC;
+	background-color: #EEE;
+	margin: 20px 0px 20px 0px;	
+	padding: 15px;
+}
+
+	#content-section .regionalData .customerInfo p {
+		color: #666;
+		padding:0;
+		margin:0;
+	}
+
+.regionalData .label{
+	font-size:12px;
+	font-weight:bold;
+	color:#666;
+	width: 180px;
+}
+
+#content .regionalData .customerInfo td{
+	background: none;
+	border:0px;
+	border-bottom:0px;
+	border-top:0px;
+	padding:0 0 18px 0;
+	margin:0px;
+}
+
+.regionalData .headers{
+	font-size:15px;
+	font-weight:bold;
+	color:#333;
+}
+	
+	.regionalData .subHeaders{
+		font-size:12px;
+		font-weight:bold;
+		color:#333;
+	}
+
+.regionalData .note{
+	font-size:11px;
+	color:#666;
+}
+
+.continentalData{
+	border: 1px solid #CCC;
+	background-color: #EEE;
+	margin-top:20px;
+	padding: 15px;
+}
+
+.continentalData .country{
+	float:left;	
+	width:165px;
+}
+
+#content-section .continentalData .country ul li{
+	border-bottom: none;
+	color: #666;
+	padding: 0px 0px;
+}
+
+.continentalData .country a{
+	font-size: 12px;
+	color:#3399cc;
+}
+
+#content-section .continentalData .country h1{
+	font-size:12px;
+	font-weight:bold;
+	color:#666;
+	padding-bottom: 0px;
+}
+
+.country ul li .countrySelected{
+	color:#666;
+	font-weight: bold;
+}
+
+.country ul li a.countrySelected:hover{
+	text-decoration:none;
+	cursor:auto;
+}

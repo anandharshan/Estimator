@@ -1,0 +1,114 @@
+{
+    "wrapper": {
+        "fundCountry": "US",
+        "country": [
+            {
+                "countryCode": "US",
+                "countryName": "United States"
+            },
+            {
+                "countryCode": "AF",
+                "countryName": "Afghanistan"
+            },
+            {
+                "countryCode": "AL",
+                "countryName": "Albania"
+            },
+            {
+                "countryCode": "DZ",
+                "countryName": "Algeria"
+            },
+            {
+                "countryCode": "AS",
+                "countryName": "American Samoa"
+            },
+            {
+                "countryCode": "AD",
+                "countryName": "Andorra"
+            },
+            {
+                "countryCode": "AO",
+                "countryName": "Angola"
+            },
+            {
+                "countryCode": "AI",
+                "countryName": "Anguilla"
+            },
+            {
+                "countryCode": "AQ",
+                "countryName": "Antarctica"
+            },
+            {
+                "countryCode": "AG",
+                "countryName": "Antigua and Barbuda"
+            },
+            {
+                "countryCode": "IND",
+                "countryName": "India"
+            }
+        ],
+        "states": [],
+        "partners": [
+            {
+                "partnerId": "10012794",
+                "name": "VMWTestCRPremier-US",
+                "address": "3405, HillviewAvenue",
+                "country": "United States",
+                "state": "California",
+                "countryCode": "US",
+                "stateCode": "CA",
+                "directReseller": true
+            },
+            {
+                "partnerId": "10012796",
+                "name": "VMWTestCRPremier-UK",
+                "address": "3405, HillviewAvenue",
+                "country": "United Kingdom",
+                "state": "Scotland",
+                "countryCode": "US",
+                "stateCode": "SC",
+                "directReseller": false
+            },
+            {
+                "partnerId": "101245796",
+                "name": "Repeat Partner",
+                "address": "Repeat Partner, 3405, HillviewAvenue",
+                "country": "United Kingdom",
+                "state": "Scotland",
+                "countryCode": "US",
+                "stateCode": "SC",
+                "directReseller": false
+            },
+            {
+                "partnerId": "10012795",
+                "name": "xyz",
+                "address": "3405, HillviewAvenue",
+                "country": "United States",
+                "state": "Michigan",
+                "countryCode": "US",
+                "stateCode": "MI",
+                "directReseller": true
+            },
+            {
+                "partnerId": "10012798",
+                "name": "VMWTestsddsdsd",
+                "address": "3405, HillviewAvenue",
+                "country": "United States",
+                "state": "California",
+                "countryCode": "US",
+                "stateCode": "CA",
+                "directReseller": false
+            },
+            {
+                "partnerId": "10012798",
+                "name": "VMWTestsddsdsd",
+                "address": "3405, HillviewAvenue",
+                "country": "United States",
+                "state": "California",
+                "countryCode": "US",
+                "stateCode": "CA",
+                "directReseller": false
+            }
+        ]
+    }
+}

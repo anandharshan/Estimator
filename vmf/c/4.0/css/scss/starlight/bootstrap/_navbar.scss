@@ -1,0 +1,161 @@
+
+// Alternate navbars
+// --------------------------------------------------
+
+// Default navbar
+.navbar-default {
+      background: white;
+  	/* Old browsers */
+      /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+      background: -moz-linear-gradient(top, white 0%, #f7f7f7 6%, #f1f1f1 93%, #ececec 98%, #d0d0d0 100%);
+      /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(6%, #f7f7f7), color-stop(93%, #f1f1f1), color-stop(98%, #ececec), color-stop(100%, #d0d0d0));
+      /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, white 0%, #f7f7f7 6%, #f1f1f1 93%, #ececec 98%, #d0d0d0 100%);
+      /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, white 0%, #f7f7f7 6%, #f1f1f1 93%, #ececec 98%, #d0d0d0 100%);
+      /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, white 0%, #f7f7f7 6%, #f1f1f1 93%, #ececec 98%, #d0d0d0 100%);
+      /* IE10+ */
+      background: linear-gradient(to bottom, white 0%, #f7f7f7 6%, #f1f1f1 93%, #ececec 98%, #d0d0d0 100%);
+      /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 );
+      /* IE6-8 */
+
+  //New styling for Navbar, to add separator, change font-weight & line-height.
+  .navbar-nav > li {
+	  border-right: 1px solid #E7E7E7;
+	  font-weight: 400;
+  }
+  .navbar-nav {
+    > li > a {
+      line-height:inherit; //Added to fix the line-height of all the elements on Navbar
+      &:hover,
+      &:focus {
+        background: white;
+        /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: -moz-linear-gradient(top, #ececec 0%, #f1f1f1 6%, #f7f7f7 93%, white 98%, #d0d0d0 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(6%, #f1f1f1), color-stop(93%, #f7f7f7), color-stop(99%, white));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #ececec 0%, #f1f1f1 6%, #f7f7f7 93%, white 98%, #d0d0d0 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #ececec 0%, #f1f1f1 6%, #f7f7f7 93%, white 98%, #d0d0d0 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #ececec 0%, #f1f1f1 6%, #f7f7f7 93%, white 98%, #d0d0d0 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #ececec 0%, #f1f1f1 6%, #f7f7f7 93%, white 98%, #d0d0d0 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#ffffff',GradientType=0 );
+        /* IE6-8 */
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+          background: #6a6b6f;
+        /* Old browsers */
+          /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+          background: -moz-linear-gradient(top, #6a6b6f 0%, #363638 100%);
+          /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6a6b6f), color-stop(100%, #363638));
+          /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top, #6a6b6f 0%, #363638 100%);
+          /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top, #6a6b6f 0%, #363638 100%);
+          /* Opera 11.10+ */
+          background: -ms-linear-gradient(top, #6a6b6f 0%, #363638 100%);
+          /* IE10+ */
+          background: linear-gradient(to bottom, #6a6b6f 0%, #363638 100%);
+          /* W3C */
+          border-right: 1px solid transparent;
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a6b6f', endColorstr='#363638',GradientType=0 );
+          /* IE6-8 */
+      }
+    }
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+          background: #6a6b6f;
+      	/* Old browsers */
+          /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+          background: -moz-linear-gradient(top, #6a6b6f 0%, #363638 100%);
+          /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6a6b6f), color-stop(100%, #363638));
+          /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top, #6a6b6f 0%, #363638 100%);
+          /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top, #6a6b6f 0%, #363638 100%);
+          /* Opera 11.10+ */
+          background: -ms-linear-gradient(top, #6a6b6f 0%, #363638 100%);
+          /* IE10+ */
+          background: linear-gradient(to bottom, #6a6b6f 0%, #363638 100%);
+          /* W3C */
+          border-right: 1px solid transparent;
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a6b6f', endColorstr='#363638',GradientType=0 );
+          /* IE6-8 */
+      }
+    }
+
+    @media (max-width: $grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: $navbar-default-link-color;
+          &:hover,
+          &:focus {
+          background: white;
+            /* Old browsers */
+	        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	        background: -moz-linear-gradient(top, #ececec 0%, #f1f1f1 6%, #f7f7f7 93%, white 98%, #d0d0d0 100%);
+	        /* FF3.6+ */
+	        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(6%, #f1f1f1), color-stop(93%, #f7f7f7), color-stop(99%, white));
+	        /* Chrome,Safari4+ */
+	        background: -webkit-linear-gradient(top, #ececec 0%, #f1f1f1 6%, #f7f7f7 93%, white 98%, #d0d0d0 100%);
+	        /* Chrome10+,Safari5.1+ */
+	        background: -o-linear-gradient(top, #ececec 0%, #f1f1f1 6%, #f7f7f7 93%, white 98%, #d0d0d0 100%);
+	        /* Opera 11.10+ */
+	        background: -ms-linear-gradient(top, #ececec 0%, #f1f1f1 6%, #f7f7f7 93%, white 98%, #d0d0d0 100%);
+	        /* IE10+ */
+	        background: linear-gradient(to bottom, #ececec 0%, #f1f1f1 6%, #f7f7f7 93%, white 98%, #d0d0d0 100%);
+	        /* W3C */
+	        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='#ffffff',GradientType=0 );
+	        /* IE6-8 */
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            background: #6a6b6f;
+            /* Old browsers */
+	          /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	          background: -moz-linear-gradient(top, #6a6b6f 0%, #363638 100%);
+	          /* FF3.6+ */
+	          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6a6b6f), color-stop(100%, #363638));
+	          /* Chrome,Safari4+ */
+	          background: -webkit-linear-gradient(top, #6a6b6f 0%, #363638 100%);
+	          /* Chrome10+,Safari5.1+ */
+	          background: -o-linear-gradient(top, #6a6b6f 0%, #363638 100%);
+	          /* Opera 11.10+ */
+	          background: -ms-linear-gradient(top, #6a6b6f 0%, #363638 100%);
+	          /* IE10+ */
+	          background: linear-gradient(to bottom, #6a6b6f 0%, #363638 100%);
+	          /* W3C */
+	          border-right: 1px solid transparent;
+	          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a6b6f', endColorstr='#363638',GradientType=0 );
+	          /* IE6-8 */
+          }
+        }
+      }
+    }
+  }
+}

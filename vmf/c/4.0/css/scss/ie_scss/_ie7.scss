@@ -1,0 +1,44 @@
+
+		.breadcrumb > li{
+			zoom: 1;
+			*display:inline;
+		}
+		
+		.breadcrumb > li + li:before{
+			content: "/ ";
+		}
+
+		.starlight .page-eyebrow .eyebrow-menu ul li {
+			display:inline;
+		}
+
+		.starlight-cont, .starlight-step-container {
+			margin:10px 0 0 0;
+			position: relative;
+		}
+
+		.navBarCustom li > , .navBarCustom li.open >{ 
+			a, a:hover,a:focus{
+				padding:5px 10px !important;
+			}
+		}
+
+		.pull-right li{
+			float:left;
+		}
+
+		.frmWrap{
+			width:30%;
+		}
+
+		form{
+			position: relative;
+		}
+
+		.btn-primary{
+			color: white!important;
+		}
+
+		table.starlight.dataTable{
+			width: 100% !important;
+		}

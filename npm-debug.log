@@ -1,0 +1,89 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'gulp-scss',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 warn package.json VMware-DD-LmpImage@1.0.0 No repository field.
+6 warn package.json VMware-DD-LmpImage@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'gulp-scss', null ]
+9 verbose cache add name=undefined spec="gulp-scss" args=["gulp-scss",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'gulp-scss',
+10 verbose parsed url   path: 'gulp-scss',
+10 verbose parsed url   href: 'gulp-scss' }
+11 silly lockFile 0abf8cbf-gulp-scss gulp-scss
+12 verbose lock gulp-scss C:\Users\aharshan\AppData\Roaming\npm-cache\0abf8cbf-gulp-scss.lock
+13 silly lockFile 0abf8cbf-gulp-scss gulp-scss
+14 silly lockFile 0abf8cbf-gulp-scss gulp-scss
+15 verbose addNamed [ 'gulp-scss', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 63dd1445-gulp-scss gulp-scss@
+18 verbose lock gulp-scss@ C:\Users\aharshan\AppData\Roaming\npm-cache\63dd1445-gulp-scss.lock
+19 silly addNameRange { name: 'gulp-scss', range: '*', hasData: false }
+20 verbose request where is /gulp-scss
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id b580be6a3735fc20
+23 verbose url raw /gulp-scss
+24 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-scss' ]
+25 verbose url resolved https://registry.npmjs.org/gulp-scss
+26 verbose request where is https://registry.npmjs.org/gulp-scss
+27 info trying registry request attempt 1 at 16:11:01
+28 http GET https://registry.npmjs.org/gulp-scss
+29 http 404 https://registry.npmjs.org/gulp-scss
+30 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 verbose headers   'content-type': 'application/json',
+30 verbose headers   'cache-control': 'max-age=0',
+30 verbose headers   'content-length': '51',
+30 verbose headers   'accept-ranges': 'bytes',
+30 verbose headers   date: 'Mon, 20 Apr 2015 10:41:03 GMT',
+30 verbose headers   via: '1.1 varnish',
+30 verbose headers   age: '0',
+30 verbose headers   connection: 'keep-alive',
+30 verbose headers   'x-served-by': 'cache-ord1720-ORD',
+30 verbose headers   'x-cache': 'MISS',
+30 verbose headers   'x-cache-hits': '0',
+30 verbose headers   'x-timer': 'S1429526463.014936,VS0,VE69' }
+31 silly registry.get cb [ 404,
+31 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 silly registry.get     'content-type': 'application/json',
+31 silly registry.get     'cache-control': 'max-age=0',
+31 silly registry.get     'content-length': '51',
+31 silly registry.get     'accept-ranges': 'bytes',
+31 silly registry.get     date: 'Mon, 20 Apr 2015 10:41:03 GMT',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     age: '0',
+31 silly registry.get     connection: 'keep-alive',
+31 silly registry.get     'x-served-by': 'cache-ord1720-ORD',
+31 silly registry.get     'x-cache': 'MISS',
+31 silly registry.get     'x-cache-hits': '0',
+31 silly registry.get     'x-timer': 'S1429526463.014936,VS0,VE69' } ]
+32 silly lockFile 63dd1445-gulp-scss gulp-scss@
+33 silly lockFile 63dd1445-gulp-scss gulp-scss@
+34 error 404 404 Not Found: gulp-scss
+34 error 404
+34 error 404 'gulp-scss' is not in the npm registry.
+34 error 404 You should bug the author to publish it
+34 error 404 It was specified as a dependency of 'VMware-DD-LmpImage'
+34 error 404
+34 error 404 Note that you can also install from a
+34 error 404 tarball, folder, or http url, or git url.
+35 error System Windows_NT 6.2.9200
+36 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "gulp-scss" "--save"
+37 error cwd C:\inetpub\wwwroot\vmware\vcredit\lmpimage2
+38 error node -v v0.10.33
+39 error npm -v 1.4.28
+40 error code E404
+41 verbose exit [ 1, true ]

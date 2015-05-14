@@ -1,0 +1,92 @@
+{
+    "wrapper": {
+        "core": {
+            "id" : "3",
+            "serviceID": null,
+            "serviceTerm": "12 months",
+            "serviceName": "VMware vCloud Air",
+            "serviceType": "Virtual Private Cloud",
+            "region": "US - California",
+            "storage": "Standard Storage",
+            "paymentMethod": null,
+            "defaultPaymentType": "2",
+            "cost": "921",
+            "pricelist": [
+                "MSRP",
+                "-10769157587923222057810132984"
+            ],
+            "remainingTerm": [
+                365,
+                0,
+                12,
+                0
+            ],
+            "term": "12 months",
+            "currency": [
+                "$",
+                "U.S.Dollar"
+            ],
+            "coreTierInfo": "Academic VMware vCloud Air - Virtual Private Cloud A3A - Core Subscription - SSD Accelerated - 12 month Prepaid",
+            "longSkuDescription": "US - California Data Center - 5 GHz vCPU 20GB vRAM 2TB Standard Storage 10Mbps Internet Bandwidth 2 Public IPs and Production Support",
+            "prepaidTerm": "12",
+            "coreServiceSku": "HSD-AESS1-12MT1-C1S",
+            "crossRefSKUMap": null,
+            "coreServices": null,
+            "redemptionCurrency": "USD",
+            "redemptionCurrencySymbol": "$"
+        },
+        "paymentType": [
+            {
+                "paymentTypeID": "0",
+                "paymentTypeVal": "Promotion"
+            },
+            {
+                "paymentTypeID": "1",
+                "paymentTypeVal": "Prepaid"
+            },
+            {
+                "paymentTypeID": "2",
+                "paymentTypeVal": "Monthly"
+            },
+            {
+                "paymentTypeID": "3",
+                "paymentTypeVal": "Annually"
+            },
+            {
+                "paymentTypeID": "4",
+                "paymentTypeVal": "One Time"
+            }
+        ],
+        "levelSkuList": [
+            {
+                "minValue": "0",
+                "maxValue": "10000",
+                "sku": "SPP-CREDIT-C-L1"
+            },
+            {
+                "minValue": "10001",
+                "maxValue": "20000",
+                "sku": "SPP-CREDIT-C-L2"
+            },
+            {
+                "minValue": "20001",
+                "maxValue": "30000",
+                "sku": "SPP-CREDIT-C-L3"
+            },
+            {
+                "minValue": "30000",
+                "maxValue": "9999999999",
+                "sku": "SPP-CREDIT-C-L4"
+            }
+        ],
+        "paymentTerms": [
+            3,
+            6,
+            12,
+            24,
+            36
+        ],
+        "addons": {
+        }
+    }
+}

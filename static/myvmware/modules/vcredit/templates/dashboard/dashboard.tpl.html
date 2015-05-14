@@ -1,0 +1,227 @@
+		<section>
+                <!-- Content -->
+                <section>
+                    <article>
+                        <div class="bottomBorder ie7Border">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h1 class="component-heading">{{link3}}</h1>
+                                </div>
+                                <div class="col-md-3 text-right help_funds">
+                                    <a class="funds_link" href="#/expireFunds">{{expire}}</a>
+                                    <a class="help_link" href="{{globalVars.mySubscriptionFundsDashboard}}" target="_blank">
+                                        <span class="help_icon"></span>
+                                        <span class="help_text">{{globalVars.help}}</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+						<div class="bottomBorder ie7Border" ng-if="serviceData.fundGroups.length > 0">
+                            <div class="row">
+                                <div class="col-md-10  margin-top-20 margin-bottom-25" ng-bind-html='globalVars.dashboardHeading'>
+                                    
+                                </div>
+                            </div>
+                        </div>
+						<!--span class="errorMessage">{{dashboard}}</span-->
+						<article ng-if="showLoader">
+							<div class="row margin-top-20 margin-bottom-20">
+								<div class="col-md-12 text-center">
+									<div class="ajaxSpinner">&nbsp;</div>   
+								</div>
+							</div>
+						</article>
+                        <article>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div id="dashboardAlertBoxContainer" class="alertBoxMainContainer"></div>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+                    <article ng-if="serviceData.fundGroups.length<=0">
+						<div class="row">
+							<div class="col-md-12">
+								<h5>{{globalVars["learnMore"]}} <a href="{{globalVars.sppLanding}}">{{globalVars.learnMore2}}</a></h5>
+							</div>
+						</div>
+					</article>
+                    <article data-ng-repeat="subscription in serviceData.fundGroups">
+                        <div class="container-fluid starlight-container-fluid bottomBorder margin-top-0">
+                            <div class="row">
+                                <div class="col-md-12 renameEdit margin-bottom-0">
+									<h3 class="trueBadge" ng-if="subscription.trueupFlag == 'Y'" >{{globalVars["trueUp"]}}</h3>
+                                     <h3 class="headFnd"><span class="fundNameHead">{{subscription.fundName[0]}}</span>
+										<small>&nbsp;</small>
+                                        <small ng-if="subscription.fo"  class="renameLnk"><a href="javascript:void(0);" data-ng-click = "rename($index)">{{globalVars["rename"]}}</a></small>
+                                     </h3>
+                                    <!-- temporary styling inline-->
+                                    <div class="col-md-6 renameDash renameDiv" >
+                                    <!-- temporary styling inline-->
+                                        <input type="text" class="form-control renameFundName" data-parsley-alphaNumWithSpace data-parsley-required-message="{{globalVars['requiredFundname']}}" data-parsley-required data-parsley-alphaNumWithSpace-message="{{globalVars['invalidFundName']}}" data-parsley-trigger="blur change keyup keypress" ng-enter="save($index)" ng-escape ="cancel($index)" ng-blur="validateRename($index)" ng-keyup="validateRename($index)" maxlength="50" />
+                                        <a type="button" class="btn btn-primary" ng-disabled = "disableSave == true" ng-click = "save($index)">{{globalVars["Apply"]}}</a>
+                                        <a type="button" class="btn btn-default" ng-click = "cancel($index)">{{globalVars["cancel"]}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="alertBoxContainerRow"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 dashboardBal">
+                                        <div class="starlight-cont marginbottom15px padding-bottom-15">
+                                            <div class="col-md-12 balanceCnt padding-right-0">
+                                                <!--balanceCnt
+                                                <h5 ng-if="subscription.outstandingBalance == false" class="balanceTxt topMarginZero">{{balance}}</h5>
+												<h5  ng-if="subscription.outstandingBalance == true" class="balanceTxt topMarginZero">{{outstandingBalance}}</h5> -->
+                                                <div class="col-md-6 balanceCnt">
+												    <h5 class="balanceTxt topMarginZero fndBalance">{{balance}}</h5>
+                                                </div>
+                                                <div class="col-md-6 text-right redeemPadding">
+                                                <!-- Split button -->
+                                                <div class="btn-group">
+												  <a href="javascript:void(0);" class="btn btn-primary" data-ng-click="redeem($index)" ng-disabled="enableRedeem($index)">{{globalVars["redeem"]}}</a>
+                                                </div>
+
+                                            </div>
+                                                
+                                            </div>
+                                           <!-- <div ng-class="(subscription.outstandingBalance == false) ? 'balanceVal' : 'balanceVal balanceValNegative'">{{subscription.balance | customCurrency:subscription.currency:subscription.redemptionCurrency}} </div> -->
+										    <div ng-if="subscription.outstandingBalance == false" class="balanceVal">{{subscription.balance | customCurrency:subscription.currency:subscription.redemptionCurrency}} </div>
+											 <div ng-if="subscription.outstandingBalance == true" 	class="balanceVal balanceValNegative">{{subscription.balance | customCurrency:subscription.currency:subscription.redemptionCurrency}} </div>
+                                                <div class="expire_starts expireInfo margin-bottom-20">
+                                                    {{globalVars["expiry"]}} {{subscription.expiry}} 
+                                                    <span style="position:absolute;display:inline-block;vertical-align:text-top" class="info" tooltip-placement="{{getTooltipPlacement()}}" tooltip-trigger="{{{true: 'mouseenter', false: 'never'}['']}}" data-tooltip-html-unsafe="{{globalVars.expiryTooltip}}"></span>
+                                                </div>
+                                                
+                                            <div class="row bottomBorderWhite"></div>   
+                                        <div class="row">
+                                            <div class="col-md-12 service serviceCost">
+                                                <!-- <span class="msrp">{{globalVars["service_cost"]}} </span> -->
+                                                <span class="msrp">{{globalVars.monthlyConsumptionRate}}</span>
+                                                <div class="serviceCostCurr">{{subscription.serviceCost | customCurrency:subscription.currency:subscription.redemptionCurrency}} {{subscription.serviceCostUnit}}</div>
+                                            </div>
+                                            <!-- <div class="col-md-12 service serviceCost">
+                                                <span class="msrp">{{globalVars["service_cost"]}} </span>
+                                                <span class="msrp">{{globalVars.annualConsumptionRate}}</span>
+                                                <div class="serviceCostCurr">{{subscription.serviceAnnualCost | customCurrency:subscription.currency:subscription.redemptionCurrency}} {{subscription.serviceAnnualCostUnit}}</div>
+                                            </div> -->
+                                        </div>
+                                        <div class="row" ng-if="subscription.serviceAnnualCost > 0">
+                                            <div class="col-md-12 service serviceCost">
+                                                <!-- <span class="msrp">{{globalVars["service_cost"]}} </span> -->
+                                                <div class="msrp">{{globalVars.annualConsumptionRate}}
+												<span style="position:absolute;display:inline-block;vertical-align:text-top" class="info" tooltip-placement="{{getTooltipPlacement()}}" tooltip-trigger="{{{true: 'mouseenter', false: 'never'}['']}}" data-tooltip-html-unsafe="{{globalVars.expiryAnnualTooltip}}"></span>
+												</div>
+                                                <div class="serviceCostCurr">{{subscription.serviceAnnualCost | customCurrency:subscription.currency:subscription.redemptionCurrency}} {{subscription.serviceAnnualCostUnit}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 margin-bottom-20 ie7Border2 padding-left-0">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">{{globalVars["download"]}} <span class="caret"></span></a>
+                                    <!--temporary styles-->
+                                    <ul class="dashboardDropdown dropdown-menu" ng-if="subscription.fo">
+                                        <li><a class="csvDownload" ng-click="taggingTheRedemptionReportURL()" href="{{fundGroupRedemptionReportUrl}}{{subscription.fundName[1]}}">{{globalVars["redemptionHistory"]}}</a></li>
+                                        <li><a class="csvDownload" ng-click="taggingTheActivityReportURL()" href="{{fundGroupActivityReportUrl}}{{subscription.fundName[1]}}">{{globalVars["fundActivity"]}}</a></li>
+                                    </ul>
+                                    <ul class="dashboardDropdown dropdown-menu" ng-if="!subscription.fo">
+                                        <li><a class="csvDownload" ng-click="taggingTheRedemptionReportURL()" href="{{fundGroupRedemptionReportUrl}}{{subscription.fundName[1]}}">{{globalVars["redemptionHistory"]}}</a></li>
+                                    </ul> 
+                                </div>
+                                </div>
+                                <div class="col-md-4 users">
+                                    <div class="clearfix">
+                                        <div class="detialsDiv">
+                                            <h5 class="topMarginZero">{{globalVars["owner"]}}</h5>
+                                        </div>
+                                        <div class="detailDiv">
+                                            <ul class="list-unstyled">
+                                                <li data-ng-repeat= "(key,value) in subscription.users[0]" ng-if="key == subscription.users[subscription.users.length-1]">{{value}}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+									<div class="clearfix">
+										<div class="detialsDiv">
+                                            <h5 class="topMarginZero">{{globalVars["fundUsers"]}}</h5>
+                                        </div>
+										<div class="detailDiv">
+    										<ul class="list-unstyled fund_users_list">
+                                                <!-- <li data-ng-repeat= "(key,value) in subscription.users[0]" ng-if="key == subscription.users[subscription.users.length-1]">{{value}}
+                                                    <span class = "badgeBrown">{{globalVars["owner"]}}</span>
+                                                </li> -->
+                                                <!--li data-ng-repeat= "(key,value) in subscription.users[0] | orderBy:'value'" ng-if="key != subscription.users[subscription.users.length-1]">{{value}}
+                                                </li-->
+                                                <li data-ng-repeat= "user in subscription.usersArray | orderBy:'name'" ng-if="user.id != subscription.users[subscription.users.length-1]">{{user.name}}
+                                                </li>
+    										</ul>
+                                            <ul class="list-inline {{(subscription.usersArray.length < 2) && 'noFundUsers' || ''}}" ng-if="subscription.fo == true">
+                                                <li><a href="javascript:void(0);" ng-click = "addUser($index)">{{globalVars["adduser"]}}</a></li>
+                                                <li class = "remove" ng-if="subscription.usersArray.length > 1"><a href="javascript:void(0);" ng-click = "users($index)">{{globalVars["removeuser"]}}</a></li>
+                                            </ul>
+										</div>
+									</div>
+									
+									<!-- <div ng-if="subscription.partner[0]!=''" class="clearfix partnerWrapper">
+										<div class="detialsDiv"><h5>{{globalVars["partner"]}}
+										</h5></div>
+										<div class="detailDiv marginTop">
+										  <ul class="list-unstyled">
+										      <li>{{subscription.partner[0]}}</li>
+                                        
+										  </ul>
+										</div>
+									</div> -->
+									 <div class="clearfix accountWrapper">
+										<div class="detialsDiv"><h5>{{globalVars["account"]}}
+										</h5></div>
+										<div class="detailDiv">
+										<ul class="list-unstyled">
+										<li>{{subscription.account}}</li>
+                                        
+										</ul>
+										</div>
+									</div> 
+                                </div>
+                                <div class="col-md-4 sidList sid_list">
+                                    <h5 ng-if="subscription.subscription.length>0" class="topMarginZero SubscriptionHeading">{{globalVars["subscriptionServices"]}}</h5>
+                                    <ul class="list-inline row {{(key<3) && 'show' || 'hidden'}}" data-ng-repeat = "(key,services) in subscription.subscription">
+                                        <li class="col-md-4 {{(key<3) && 'disp' || 'nodisp'}}">
+                                            <a ng-if="services[5]=='1'" href="{{sidPageURL + services[4]}}">{{services[0]}}</a>
+                                            <span ng-if="services[5]=='0'">{{services[0]}}</span>
+                                        </li>
+                                        <li class="col-md-7 {{(key<3) && 'disp' || 'nodisp'}}">
+                                            {{services[1]}}
+                                            <!-- <span style="position:absolute;" ng-if="services[2]!=''"><a href="javascript:void(0);" class = "info" tooltip-trigger="{{{true: 'mouseenter', false: 'never'}['']}}" tooltip-placement="bottom" data-tooltip-html-unsafe="{{services[2]}}" >&nbsp;</a></span> -->
+                                            <span class="expiration_msg" ng-if="getExpiration(services[6])">
+                                                <a href="javascript:void(0);" class="{{alertType}}"></a><span class="expiration_text_{{alertTypeText}}">{{services[2]}}</span>
+                                            </span>
+                                        </li> 
+                                    </ul>
+                                    <a href="javascript:;" ng-if="subscription.subscription.length != 0" ng-click="hideAll($event)" class="subsViewLess hidden">{{globalVars.viewLess}}</a>
+                                    <a href="javascript:;" ng-if="subscription.subscription.length > 3" ng-click="showAll($event)" class="subsViewAll">{{globalVars.viewAll}}</a>
+                                    <span ng-if="subscription.subscription.length == 0 || subscription.subscription.length == undefined"><i>{{globalVars.noSidsForFundGroup}}</i></span>
+                                    <!--<div class="row bottomBorder"></div>-->
+                                    
+                                </div>
+                            </div>
+                            <!--<div class="row">
+                                    <div class="col-md-12 margin-bottom-20 ie7Border2">
+									<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">{{globalVars["download"]}} <span class="caret"></span></a>
+									<ul class="dropdown-menu" ng-if="subscription.fo">
+										<li><a class="csvDownload" href="{{fundGroupRedemptionReportUrl}}{{subscription.fundName[1]}}">{{globalVars["redemptionHistory"]}}</a></li>
+										<li><a class="csvDownload" href="{{fundGroupActivityReportUrl}}{{subscription.fundName[1]}}">{{globalVars["fundActivity"]}}</a></li>
+									</ul>
+									<ul class="dropdown-menu" ng-if="!subscription.fo">
+										<li><a class="csvDownload" href="{{fundGroupRedemptionReportUrl}}{{subscription.fundName[1]}}">{{globalVars["redemptionHistory"]}}</a></li>
+									</ul> 
+								</div>
+                            </div>-->
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Content End -->             
+		</section>

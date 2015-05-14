@@ -1,0 +1,134 @@
+/* Folder details page CSS */
+.hide{
+    display: none;
+}
+.ellipsisText{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+#content-section section section{
+    margin-top: 0 !important;
+}
+#usersListPane{
+    overflow: hidden;
+    margin-top: 5px;
+}
+#content-section section .splitterPaneHeading {
+    font-size: 13px;
+    font-weight: bold;
+}
+#userPermissionPane, #userDiv{
+    overflow: auto;
+}
+#usersListPane{
+    overflow: hidden;
+}
+#eaSelectorWidgetDiv{
+    display: none;
+}
+.folderNameCtnr{
+    padding-left: 40px;
+    background: url("img/folder_icon.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+}
+.folderNameCtnr, .EAnameCtnr, .folderDonotExist{
+    width: 33%;
+    margin-right: 1%;
+}
+.folderDonotBorder{
+    border-left:1px dotted #AAA;
+    padding-left:15px;
+}
+.noMarginTop{
+    margin-top:0px!important;
+}
+.folderDonotExistContainer{
+    width: 100%;
+}
+.EAnameCtnr .ellipsisText{
+    padding: 5px 0 7px;
+}
+.paneActionButton button{
+    margin-left: 15px !important;
+}
+#productsTblManageKeysBtn{
+    margin-top: 10px;
+}
+/* Folder error page */
+.folderDetailsError.warning_big{
+    margin: 0px;
+    border-radius: 10px;
+}
+.fontSize15{
+    font-size: 15px;
+}
+#fd_splitter.tabContent ul.info_list li{
+    cursor: auto;
+}
+
+
+/* export dropdown - START */
+.fpExportContainer{
+    position: relative;
+    display: inline-block;
+}
+#exportToExcel{
+    display: inline-block;
+    padding-right: 30px;
+    font-weight: bold;
+}
+.fpExportContainer #site-tools{
+    right: 0;
+    top: 0;
+}
+.fpExportContainer .user_dropdown{
+    width: 180px;
+}
+.fpExportDD ul li{
+    background: none !important;
+}
+/* export dropdown - END */
+
+#rtSec .paneActionButton .bottomarea, #ltSec .bottomarea{
+    background: none;
+    border-bottom: 1px solid #ccc;    
+}
+
+.fpExportDD ul{
+    margin: 0px!important;
+}
+
+#site-tools .exportDD:hover{
+    cursor: pointer;
+}
+#site-tools .exportDD{
+    position: absolute;
+    display:block;
+    background: url(img/btn_headerDropdown_Up.png) no-repeat;
+    right: 5px;
+    top: 0px;
+    width: 19px;
+    height:17px;
+    margin-left:3px;
+    z-index: 4000;
+}
+#site-tools .exportDD.opened{
+    background: url(img/btn_headerDropdown_Over.png) no-repeat;
+}
+.ie7 .fpExportContainer, .ie7 .manageKeysBtn{
+    float: left;
+}
+.ie7 .fpExportContainer{
+    margin-top: 10px;
+}
+.ie7 #userDiv{
+    overflow:auto;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.paneActionButton .bottomarea {padding:0px;}
+#content-section .tabContent ul.info_list li.active {
+    background-color: #FFF !important;
+}

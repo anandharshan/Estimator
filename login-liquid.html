@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:ng="http://angularjs.org" class="ng-app"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Your Tokens</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="vmf/c/4.0/css/liferay.css">
+    <link rel="stylesheet" href="//lmpimage2.vmware.com/vmf/c/4.0/css/starlight.css">
+
+  <link rel="stylesheet" href="static/myvmware/common/css/login_starlight.css">
+  
+  <link rel="stylesheet" href="//lmpimage2.vmware.com/vmf/m/flexSlider/4.0/css/flexslider_r.css">
+
+    <script src="//lmpimage2.vmware.com/vmf/c/4.0/js/vmf.js"></script>
+    <script src="//lmpimage2.vmware.com/vmf/m/parsley/4.0/js/parsley.js"></script>
+  
+    <script src="//lmpimage2.vmware.com/vmf/m/flexSlider/4.0/js/flexslider-min.js"></script>
+	<!--script src="https://my-dev15.vmware.com/vmf/c/4.0/js/vmf.js"></script-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		  <link rel="stylesheet" href="vmf/c/4.0/css/ie.css">
+           <script src="js/pseudoIE/html5shiv.js"></script>
+            <script src="js/pseudoIE/respond.min.js"></script>      
+    <![endif]-->
+    <!--[if IE 7 ]> 
+    <script src="resources/css/ie7.css"></script>
+    <link rel="stylesheet" href="/resources/css/login-ie7.css">
+    <![endif]-->
+    <!--[if IE 8 ]> 
+    <script src="resources/css/ie7.css"></script>
+    <link rel="stylesheet" href="/resources/css/login-ie8.css">
+    <![endif]-->
+    <script type="text/javascript">
+	 $(window).load(function() {
+    window.ParsleyValidator.addValidator('conditionalrequired', 
+      function (value, requirement) {
+        var elementValue = $(".emailId").val();
+          return (/^[0-9]/i.test(elementValue) || /^[a-zA-Z0-9._\-`~!#$%^&*+=?'\/{|}]+@([a-zA-Z0-9._\-`~!#$%^&*+=?'\/{|}]+\.)+[a-zA-Z0-9._\-]+$/i.test(elementValue));
+      }, 32);
+    $('.login-form').parsley();
+			$('.flexslider').flexslider({
+                manualControls: ".flex-control-nav li"
+            });
+            $('.quick-link-wrapper').click(function(){
+                $('.quick-link-wrapper').toggleClass('is-active');
+                $('.starlight-eyebrow-quick').toggleClass('is-active');
+            });
+		});
+        if (!Object.keys) {
+          Object.keys = (function () {
+            'use strict';
+            var hasOwnProperty = Object.prototype.hasOwnProperty,
+                hasDontEnumBug = !({toString: null}).propertyIsEnumerable('toString'),
+                dontEnums = [
+                  'toString',
+                  'toLocaleString',
+                  'valueOf',
+                  'hasOwnProperty',
+                  'isPrototypeOf',
+                  'propertyIsEnumerable',
+                  'constructor'
+                ],
+                dontEnumsLength = dontEnums.length;
+
+            return function (obj) {
+              if (typeof obj !== 'object' && (typeof obj !== 'function' || obj === null)) {
+                throw new TypeError('Object.keys called on non-object');
+              }
+
+              var result = [], prop, i;
+
+              for (prop in obj) {
+                if (hasOwnProperty.call(obj, prop)) {
+                  result.push(prop);
+                }
+              }
+
+              if (hasDontEnumBug) {
+                for (i = 0; i < dontEnumsLength; i++) {
+                  if (hasOwnProperty.call(obj, dontEnums[i])) {
+                    result.push(dontEnums[i]);
+                  }
+                }
+              }
+              return result;
+            };
+          }());
+        }
+    </script>
+</head>
+<body class="starlight">
+    <section class="page-eyebrow">
+        <div class="starlight container">
+            <div class="page-eyebrow">
+                <nav class="eyebrow-menu menu-eyebrow">
+                    <div class="quick-link-wrapper">
+                        <a role="button" href="#" class="menu-link-quick">Quick Links</a>
+                    </div>
+                    <div class="starlight-eyebrow-quick">
+                        <a title="Select a Country/Region" href="/in/worldwide.html" class="pull-left user-locale">
+                            <span class="icons-locale_bg"></span>United States
+                        </a>
+                        <ul class="pull-right nav navbar-nav navbar-right navBarCustom">
+                            <li class="navBorderAfter">
+                                <a href="#" role="button" class="menu-item-quick">Partner Central</a>
+                            </li>
+                            <li class="navBorderAfter">
+                                <a href="#" role="button" class="menu-item-quick">Training</a>
+                            </li>
+                            <li class="navBorderAfter">
+                                <a href="#" role="button" class="menu-item-quick">Community</a>
+                            </li>
+                            <li class="navBorderAfter">
+                                <a href="#" role="button" class="menu-item-quick">Store</a>
+                            </li>
+                            <li class="navBorderAfter">
+                                <a href="#" role="button" class="menu-item-quick">vmware.com</a>
+                            </li>
+                            <li class="navBorderAfter locale-li">
+                                <a title="Select a Country/Region" href="/in/worldwide.html" class="menu-item-quick icons-locale_bg pull-left user-locale">United States</a>
+                                </a>
+                            </li>
+                            
+                            <!-- <li id="fat-menu" class="dropdown navBorderAfter">
+                                <a href="#" role="button" class="dropdown-toggle menu-item-quick" data-toggle="dropdown">Michael Cooper <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle menu-item-quick" data-toggle="dropdown">VMware.com <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                </ul>
+                            </li> -->
+                        </ul> 
+                    </div>
+                </nav> 
+            </div>
+        </div>
+    </section>
+    <section class="starlight container page-container">
+           <header class="header">
+                <a class="page-logo" href="/" title="vmware"></a><span class="brand"></span>
+                <!-- <nav role="navigation" class="navbar nav-menu">
+                    <div class="container-fluid"> -->
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <!-- This is completely optional -->
+                        <!-- <div class="navbar-header">
+                              <button data-target=".nav-menu-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                              </button>
+                        </div> -->
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <!-- <div class="collapse navbar-collapse nav-menu-collapse">
+                            <ul class="nav navbar-nav nav-level-1">
+                                <li><a href="#" title="Products" alt="Products" target="_top" class="menu-item-primary-1">Products</a></li>
+                                <li><a href="#" title="Accounts" alt="Accounts" target="_top" class="menu-item-primary-1">Accounts</a></li>
+                                <li class="has-subnav">
+                                    <a href="javascript:;" title="Configurator" alt="Configurator" target="_top" class="menu-item-primary-1">Configurator <span class="icons-filter_btn_arw_selected"></span></a>
+                                    <ul class="nav-level-2">
+                                        <li><a href="#" class="requestQuote"><span>New Service</span></a></li>
+                                        <li><a href="#" class="requestCoTermQuote"><span>Add-On Service</span></a></li>
+                                        <li><a href="#" class="requestIBReport"><span>Renewal Service</span></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" title="Support" alt="Support" target="_top" class="menu-item-primary-1">Support</a></li>
+                            </ul> -->
+                        <!-- </div> --><!-- /.navbar-collapse -->
+                    <!-- </div> --><!-- /.container-fluid -->
+                <!-- </nav> -->
+            </header>       
+            <section  class="content-container" id="ng-app" ng-app="configurator">
+            <div class="register">
+            <div class="loginContainer">
+              <h2 class="h-4 h-icon h-icon-blue mr-t15">
+                Log In
+              </h2>
+              <form class="login-form">
+                <input type="text" class="emailId login" placeholder="Email address or customer number" data-parsley-required="true" data-parsley-error-message="incorrect email address or customer number" data-parsley-conditionalrequired/>
+                <input type="password" class="password login" placeholder="Password" data-parsley-required="true" data-parsley-error-message="Enter a password"/>
+                <span class="forgotPassword">Forgot password?</span>
+                <input type="checkbox" name="group_all" id="signedIn-checkbox">
+                <label class="staySigned" for="signedIn-checkbox">Stay signed in</label>
+                <button class="loginButton btn btn-primary"><span>Log In</span></button>
+              </form>
+            </div>
+            <div class="registerLink">
+              <h2 class="h-4 h-icon h-icon-green mr-t15">
+                Register
+              </h2>
+            
+            </div>
+            
+          </div>
+  				<div class="flexContainer">
+           <div class="flexslider">
+              <ul class="slides">
+               <li class="flex-3">
+                <div class="flex-caption">
+                 <div>
+                      <h2>Partner Programs</h2>
+                      <p class="description">Partner Central is the exclusive online information resource, providing a single, dedicated web portal for all VMware Partners. It offers everything you need to build a successful virtualization practice including product information, sales tools, and marketing campaigns.</p>
+                     <h3 class="more"> More Information </h3>
+                     <a class="link">VMware Technology Alliance Program (TAP) Partner </a>
+                     <a class="link"> OEM Partners </a>
+                     <a class="link">Solution Providers </a>
+                     <a class="link"> VMware Consulting and Integration Partners </a>
+                     <a class="link"> Service Providers </a>
+                 </div>
+                 </div>
+                <img src="vmf/c/4.0/images/reskinning/slider13.png" />
+               </li>
+               <li class="flex-2">
+                  <div class="flex-caption">
+                    <div>
+                      <h2>VMware Training</h2>
+                        <p class="description">Build knowledge and expertise through VMware training and certification.</br>Log in to VMware Education Services to access your enrollments, transcript information, course and certification offerings and registration options. Don't have an account?&nbsp;<a target="_top" alt="dshfh" href="#" class="link">Register Now</a></p>
+                        <div class="description_2">
+                          <a target="_top" alt="dshfh"  href="#" class="l-arrow-white link">Access Training</a>
+                          <p>Find and enroll in instructor-led technical training, start or resume e-learning courses and download study materials.</p>
+                          <a target="_top" alt="dshfh"  href="#" class="l-arrow-white link">Access Your Transcripts</a>
+                          <p>Review your VMware training and certification history or update your profile.</p>
+                          <a target="_top" alt="dshfh"  href="#" class="l-arrow-white link">Purchase Training</a>
+                          <p>Register for classes using various payment methods, including VMware consulting and training credits.</p>
+                        </div>
+                    </div>
+                   </div>
+                  <img src="vmf/c/4.0/images/reskinning/slider12.png" />
+                </li>
+               <li class="flex-1">
+                  <div class="flex-caption">
+                    <div>
+                      <h2>New Release on June 7th</h2>
+                        <div class="description">
+                          <p>New "My Download Page" - Product Ownership &amp; Accounts. -Improved Visibility and quicker access to your software.</p>
+                          <p>Downloading - Easier to identify products and components, switch across versions, direct access to Custom ISOs, manual download default, content specific links and resources</p>
+                          <p>Products - Improved browsing and search for product offerings</p>
+                        </div>
+                        <a target="_top" alt="Learn about Horizon Air Desktop DR" title="Learn about Horizon Air Desktop DR" href="/products/horizon-air-desktop-disaster-recovery/?src=WWW_HorizonAirDesktop_US_HPHero_WorkforceContinuity" class="link">Learn More</a>
+                    </div>
+                  </div>
+                  <img src="vmf/c/4.0/images/reskinning/slider11.png" />
+                </li>
+              </ul>
+              <ul class="flex-control-nav">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+					<!-- <div class="register">
+						<div class="loginContainer">
+							<h2 class="h-4 h-icon h-icon-blue mr-t15">
+								Log In
+							</h2>
+							<input type="text" class="emailId login" placeholder="Email address or customer number"/>
+							<input type="password" class="password login" placeholder="Password"/>
+							<span class="forgotPassword">Forgot password?</span>
+                            <input type="checkbox" name="group_all" id="signedIn-checkbox">
+							<span class="staySigned">Stay signed in</span>
+							<button class="loginButton btn btn-primary"><span>Log In</span></button>
+							
+						</div>
+						<div class="registerLink">
+							<h2 class="h-4 h-icon h-icon-green mr-t15">
+								Register
+							</h2>
+						
+						</div>
+						
+					</div> -->
+					<div class="infoFooter">
+            <div class="left-column">
+              <h2 class="footerHead"><span class="green">My VMware </span> simplified Management for Product Licenses and Support</h2>
+              <div class="footerTextContainer">
+                <div class="footerText">
+                  <span class="h-icon h-icon-blue mr-t15 footerIcons">
+                  </span>
+                  <p class="textDiv">Account Level management for all of your product licenses and support</p>
+                </div>
+                <div class="footerText">
+                  <span class="h-icon h-icon-green mr-t15 footerIcons">
+                  </span>
+                  <p class="textDiv">Control who has permissions to view and manage license keys. Delegate who can file support requests</p>
+                </div>
+                <div class="footerText">
+                  <span class="h-icon h-icon-blue mr-t15 footerIcons">
+                  </span>
+                  <p class="textDiv">View your support level on products and request support contract renewals</p>
+                </div>
+                
+              </div>  
+            </div>
+						</div>
+						<div class="right-column">
+              <span class="footerHead">Insights into VMware Strategy</span>
+              <div class="right-column-links">
+                <a href="#" class="link video_vmware">VMware - Software-Defined Enterprise</a><br/>
+                <a href="#" class="link video_vmware">The Software-Defined Future</a><br/>
+                <a href="#" class="link video_vmware">vSphere Strategy - Your Data Center</a><br/>
+                <a href="#" class="link video_vmware">NSX Strategy: The Network and Security Virtualization Platform</a><br/>
+              </div>
+            </div>
+					</div>
+        </section>
+        <footer class="footerbar">
+            <p>Copyright &copy; 2014 VMware, Inc. All rights reserved.</p>
+            <ul class="footer-nav-links">
+                <li><a title="Contact Us" href="//www.vmware.com/company/contact/">Contact Us</a></li>
+                <li><a title="Terms of Use" href="//www.vmware.com/help/legal.html">Terms of Use</a></li>
+                <li><a title="Privacy" href="//www.vmware.com/help/privacy.html">Privacy</a></li>
+                <li><a title="Accessibility" href="//www.vmware.com/accessibility.html">Accessibility</a></li>
+                <li><a title="Site Index" href="//www.vmware.com/site_index.html">Site Index</a></li>
+                <li><a title="Help" href="//www.vmware.com/help/">Help</a></li>
+                <li><a title="Feedback" href="javascript:;" class="footer-feeback">Feedback</a></li>
+            </ul>
+        </footer>
+      </section>
+    <!-- Background divs -->
+    <div class="page-b-header-gradient">
+    </div>
+    <div class="page-b-footer-gradient">
+    <div></div>
+    </div>
+    <div class="page-b-footer-pattern">
+    </div>
+    <!-- ##################### -->
+</body>
+</html>
+
+
+<script>
+    var vcredit =   {
+        "globalVars" : {
+            "payment_type1" : "for 12 months",
+            "payment_type2" : "/ month",
+            "payment_type3" : "/ year",
+            "payment_type4" : "",
+            "months": "Months",
+            "days": "Days",
+            "years": "Years",
+            "serviceType_error" : "Please select a sevice type.",
+            "term_error" : "Please select a term.",
+            "ajax_error_header" : "Error",
+            "ajax_error_body" : "Content is not available",
+            "modal_ok" : "Ok",
+            "modal_cancel" : "Cancel",
+            "trueup_header" : "Oops!",
+            "trueup_text1"  : "You have insufficient credit in your fund and cannot purchase a new service.",
+            "trueup_learnmore" : "Learn more",
+            "fund_text" : "Fund",
+            "modal_close" : "Close",
+            "msrp" : "MSRP",
+            //"vcredit_path" : "/static/myvmware/modules/vcredit/",
+            "vcredit_path" : "vcredit/",
+            //New Service flow URL
+            //step 1 
+            "getServicesUrl" : "vcredit/json/serviceDetails.json?test=abc",
+            //"submitServiceUrl" : "/static/myvmware/modules/vcredit/json/updated_addOn_service.json",
+            //step 2
+            "submitServiceUrl" : "vcredit/json/updated_addOn_service.json",
+            //step 3
+            "step3SubmitUrl" : "${selfServiceOrderSubmitUrl}",
+            //fetchAddonServiceDetailsUrl is used for mockup JSON data in step2 for service flow 
+            //"fetchAddonServiceDetailsUrl" : "vcredit/json/updated_addOn_service.json",
+            //Addon flow URL
+            //step 1 
+            "addonsGetServicesUrl" : "vcredit/json/addOn_service.json?test=abc",
+            //"addonsGetServicesUrl" : "/static/myvmware/modules/vcredit/json/addOn_service.json",
+            "selectServiceUrl" : "vcredit/json/sku_details.json",
+            //step 2
+            "submitAddonServiceURL" : "vcredit/json/updated_addOn_service.json",
+            "addonConfigForExistingServiceUrl" : "vcredit/json/addOn_service_from_ext.json?test=abc",
+            //"submitAddonServiceURL" : "/static/myvmware/modules/vcredit/json/updated_addOn_service.json",
+            //step 3
+            "step3AddonSubmitUrl" : "${addOnServiceOrderSubmitUrl}",
+            //Renewal flow URL
+            //step 1
+            "getServiceRenewalURL": "vcredit/json/addOn_service.json?test=abc",
+            "selectServiceRenewalURL": "vcredit/json/sku_details.json",
+            //step 2
+            "submitAddonRenewalServiceURL": "vcredit/json/renewal_service_step2.json",
+            "applyCoreRenewalServiceURL": "vcredit/json/renewal_service_step2-2.json",
+			"renewAddonConfigForExistingServiceUrl" : "vcredit/json/renewal_service_step2_from_ext.json?test=abc",
+            //step 3
+            "step3RenewalSubmitURL": "",
+            "balance_text" : "Balance",
+            "trueup_text2"  : "about how to purchase more credit.",
+            "config_page_content" : "This Configurator helps accurately select items for new and add-on Subscription Service transactions.",
+            "addonsServiceToolTip1" : "Services shown are those paid for by ",
+            "addonsServiceToolTip2" : "Go to All Services page to view a full list of services.",
+
+            "getConfiguratorOptionsUrl" : "vcredit/json/configurator.json",
+            "changeFundModalUrl" : "vcredit/json/changeFund.json",
+            "submitSelectedFundUrl" : "vcredit/json/configuratorResponse.json",
+
+			// Post back URL for addon and renewal page step 2 
+
+            "postBackUrlFromExtLink" : "http://google.com",
+            "configHomeUrl" : "vcredit_configurator.html?_VM_flow=addon",
+
+            //"directConnectAvailableQuota" : "${calculateDirectConnectAddonsAvailableQuota}",
+            "directConnectAvailableQuota" : "vcredit/json/directConnect.json",
+			
+			// Renewal Addon Text based on isXaasFund .
+
+            "renewalBtnText" : "Review Order",
+            "renewalBtnTextNotXaas" : "Request Order",
+            "addonHeaderNotXaas" : "Request to Purchase Add-ons",
+            "addonMessageNotXaas" : "* Prices shown are VMware estimated maximum prices and do not include taxes. Final pricing is subject to the terms and conditions with your Offering Partner and will be reflected in your invoice.",
+            "submitBtnText" : "Submit",
+            "submitBtnTextNotXaas" : "Submit Request",
+
+            // Renewal Addon section next to calculation loop .
+
+            "isNotXaasRenewalPageMessage1" : "Negotiated discounts will be applied at the time of invoice.",
+            "isNotXaasRenewalPageMessage2" : "Your cost may be lower, depending upon any special negotiated pricing, payment terms and conditions with the fering Partner. The invoice sent by the Offering Partner will contain final pricing.",
+            "isNotXaasRenewalPageMessage3" : "* Prices shown are VMware estimated maximum prices and do not include taxes. Final pricing is subject to the terms and conditions with your Offering Partner and will be reflected in your invoice.",
+
+            "tokenFlag" : "343234",
+
+            "balance_text" : "Balance",
+            "trueup_text2"  : "about how to purchase more credit.",
+            "config_page_content" : "This Configurator helps accurately select items for new and add-on Subscription Service transactions.",
+            "submitSelectedFundUrl" : "${setSelectedFundToSessionUrl}",
+            "configHomeUrl":"${configHomeUrl}",
+            "serviceDetailsPageUrl" : "${allServicesPageUrl}",
+            "directConnectAvailableQuota" : "${calculateDirectConnectAddonsAvailableQuota}",
+            "addonPurchaseCashFlowUrl":"${addonConfigForExistingServiceCashFlowUrl}",
+            "submitAddonRequestUrl":"${addOnServiceRequestSubmitUrl}",
+            "success":"Success!",
+            "orderSubmit" : "Your order has been submitted.",
+            "referenceId" : "Your reference ID is",
+            "configSelectedService" : "Configure add-on service to the selected service.",
+            "viewServiceDetails" : "View service details.",
+            "serviceId" : "Service ID",
+            "serviceType" : "Service Type",
+            "region" : "Region",
+            "termEnding" : "Term Ending",
+            "remainingTerm" : "Remaining Term",
+            "monthlyServiceCost" : "Monthly Service Cost",
+            "annuallyServiceCost" : "Annually Service Cost",
+            "addOnOneTime" : "Add-on One Time",
+            "chooseAddOn" : "Choose an add-on below",
+            "addOnRecurringCost" : "Add-on Recurring Cost",
+            "AddOnRecurringCost" : "Add-on Recurring Cost",
+            "addOnMonthlyCost" : "Add-on Monthly Cost",
+            "addOnPrepaidCost" : "Add-on Prepaid Cost",
+            "addOnAnnualCost" : "Add-on Annual Cost",
+            "addOnOneCost" : "Add-on One Time Cost",
+            "backBtn" : "Back",
+            "reviewOrderBtn" : "Review Order",
+            "cancelBtn" : "Cancel",
+            "SubmitBtn" : "Submit",
+            "continueBtn" : "Continue",
+            "applyBtn" : "Apply",
+            "revertBtn" : "Revert",
+            "editBtn" : "edit",
+            "saveBtn" : "save",
+            "showCalculations" : "Show calculations",
+            "hideCalculations" : "Hide calculations",
+            "dueNow" : "Due Now",
+            "monthlyCostService":"Monthly Cost for the Service",
+            "annualCostService": "Annual Cost for the Service",
+            "orderTotal" : "Order Total",
+            "coreServiceMCost" : "Core Service Monthly Cost",
+            "addOnServiceMCost":"Add-on Service Monthly Cost",
+            "coreServiceACost":"Core Service Annually Cost",
+            "AddOnServiceACost" : "Add-on Service Annually Cost",
+            "coreServiceTotal" : "Core Service Total",
+            "addOnServiceTotal" : "Add-on Service Total",
+            "submitNotification" : "All orders are final. Once submitted, the order cannot be cancelled.",
+            "agree" : "I agree to the",
+            "termsConditions" : "Terms &amp; Conditions",
+            "coreConfigureService" : "Select the core service to which you would like to configure an add-on service",
+            "DontSeeService" : "Don't see a service?",
+            "SKU" : "SKU",
+            "component" : "Component",
+            "orderType" : "Order Type",
+            "paymentType" : "Payment Type",
+            "qty" : "Qty",
+            "select" : "Select",
+            "changeConfiguration" : "Change configuration",
+            "serviceCost" : "Service Cost",
+            "term" : "Term",
+            "requiredFields" : "All fields are required.",
+            "service" : "Service",
+            "selectRegion":"Select a region to display Service type.",
+            "storage" : "Storage",
+            "partner" : "Partner",
+            "currency" : "Currency",
+            "selectBelow" : "Make your selections below",
+            "invalCombination" : "Price details not available for the selected combination",
+            "ReviewConfiguration":"Review the service configuration below",
+            "payment" : "Payment",
+            "NoAddOnService" : "No Add ON selected for this service.",
+            "successModified" : "Success! Your core configuration has been modified.",
+            "serviceStartDate" : "Service Start Date",
+            "termStart" : "Term Start",
+            "termEnd" : "Term End",
+            "serviceTerm" : "Service Term",
+            "offeringPartner" : "Offering Partner",
+            "paidWith" : "Paid With",
+            "coreService" : "Core Service",
+            "billingType" : "Billing Type",
+            "addOnService" : "Add-on Service",
+            "Cost" : "Cost",
+            "newService" : "New Service",
+            "ConfigureNewService":"Configure a new Subscription Service.",
+            "selectStart" : "Select to Start",
+            "toggleDropdown" : "Toggle Dropdown",
+            "configureCapacity" : "Configure additional capacity for an existing Subscription Service.",
+            "ConfigureRenewal" : "Configure a renewal for an existing Subscription Service.",
+            "pricingTerms" : "Any pricing or terms & conditions statement go here.",
+            "renewalService" : "Renewal Service",
+            "directConnect" : "Direct Connect Add-on Limit Exceeded",
+            "directConnectErr" : "You have reached your limit for Direct Connect and cannot purchase anymore.",
+            "noAddOns" : "No add-ons to display...",
+            "quantity" : "Quantity",
+            "billingRate" : "Billing Rate* (MSRP)",
+            "billingTerm" : "Billing Term",
+            "proratedExtendedCost" : "Prorated Extended Cost",
+            "extendedCost" : "Extended Cost",
+            "noPriceAssociated" : "no price is associated with chosen quantity",
+            "selectDifferentFund" : "Select a different fund",
+            "account" : "Account",
+            "balance" : "balance",
+            "expires" : "expires",
+            "monthlyRecurringTotal" : "Monthly Recurring Total",
+            "recurringTotal" : "Recurring Total",
+            "oneTOrPrepaidTotal" : "One Time/Prepaid Total",
+            "prepaid" : "Prepaid",
+            "oneTime" : "One Time",
+            "addOnRequest" : "Add-on Request",
+            "hasSubmitted" : "has been submitted to ",
+            "notificationEmail" : "You will receive notification by email and/or My VMware alert on the status of your order",
+            "backToService" : "Back to service details page",
+            "administratorService" : "Administrator of Service",
+            "administratorServiceText": "Verbiage here to explain what this means and why VMware wants this information.dipiscing elit.Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dispar turient montes, nascetur ridiculus mus.",
+            "primaryAdministrator": "Yes, I am the primary administrator of this service.",
+            "nonPrimaryadministrator" : "No, I am not the primary administrator of this service.",
+            "administratorDetails" : "Specify the primary administrator contact for this service",
+            "administratorFirstName" : "First Name",
+            "administratorLastName" : "Last Name",
+            "administratorEmailAddress" : "Email Address",
+            "change" : "Change",
+            "tokenFlag":"H%2FpN7r4YcTQ%3D",
+            "submitBtnTextNotXaas":"Submit Request",
+            "noFundMessage":"No Funds available for display",
+            "renewalBtnText" : "Review Order",
+            "renewalBtnTextNotXaas" : "Review Request",
+            "addonHeaderNotXaas" : "Request to Purchase Add-ons",
+            "addonMessageNotXaas" : "* Prices shown are VMware estimated maximum prices and do not include taxes. Final pricing is subject to the terms and conditions with your Offering Partner and will be reflected in your invoice.",
+            "isNotXaasRenewalPageMessage1" : "Negotiated discounts will be applied at the time of invoice.",
+            "isNotXaasRenewalPageMessage2" : "Your cost may be lower, depending upon any special negotiated pricing, payment terms and conditions with the fering Partner. The invoice sent by the Offering Partner will contain final pricing.",
+            "isNotXaasRenewalPageMessage3" : "* Prices shown are VMware estimated maximum prices and do not include taxes. Final pricing is subject to the terms and conditions with your Offering Partner and will be reflected in your invoice.",
+            "goToAllServiceText" : "Go to All Services page.",
+            "goToAllServiceURL" : "/group/vmware/all-services",
+            "sidDetailsUrl":'https://my-test15.vmware.com/group/vmware/all-services/-/consumer/WSRP_10132_0fe42433__f60d__4ce5__97c4__25c6ae1eb6f7/normal/view/cacheLevelPage/WDNOa2NFMTVVM1ZpYzJOeWFYQjBhVzl1YzFCdmNuUnNaWFJmVjBGU1gybDBjMlJ3WDE5V1RWOWhZM1JwYjI0OWRtbGxkMFJsZEdGcGJITSo*?p_p_lifecycle=0&p_p_col_id=column-6&p_p_col_count=1&_VM_serviceInstanceName=eeBaCAhwuuyZnURnHsZu4Q%253D%253D&_VM_subscriptionType=VMware%20vCloud%20Hybrid%20Service&_VM_instanceModel=&_VM_daasFlag=&_VM_daasDate=&_VM_serviceInstanceId=eeBaCAhwuuyZnURnHsZu4Q%253D%253D',
+            "forText": "for",
+            "fundAccessText1": "You do not have access to {0} fund to redeem Add-ons for this service. Contact",
+            "fundAccessText2": "to invite you to the fund.",
+            "managePermissionText": "You do not have sufficient permissions to purchase Add-ons. <a href='#'>Go to My Permissions</a> to request access.",
+            "dashboardURL" : "/dashboard.html#/",
+			
+			 // Praxis flow 
+
+            "praxisHeader" : "Sign Up for VMware vCloud Air Virtual Private Cloud OnDemand",
+            "praxisPromoCodeValidation" : "vcredit/json/changePromotion.json",
+            "praxisSignUpNewService" : "vcredit/json/praxisDetails.json?sss=55",
+            "praxisSubmitNewService" : "vcredit/json/submitPromotion.json?wfdf=3232",
+            //"praxisSignUpNewService" : "vcredit/json/submitPromotion.json",
+            "useYourPromoCredit" : "Use Your Promotional Credit",
+            "trackUsage" : "Track Your Usage and Billing",
+            "manageService" : "Manage Your Service",
+            "payForWhatYouUse" : "Pay for Only What You Use",
+            "manageServiceDesc":"You can go to the All Services page and find this service to view usage and billing details. You can also manage your payment method, file,   technical support request, and more.",
+            "goToAllServicesText" : "Go to All Services page",
+            "payForWhatYouUseDesc" : "Usage charges start when you first deploy your resources. Monthly usage is billed in arrears.",
+            "learnPricingLinkText" : "Learn about pricing",
+            "pricingEstimatorText" : "Pricing Estimator",
+            "pricingEstimatorDesc" : "Lorem ipsum dolor si tamet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+            "goToEstimatorLinkText" : "Go to Estimator",
+            "enterPromoCodeText" : "Enter Promotional Code (optional)",
+           "invalidPromoCode" : 'This promotional code is not valid',
+            "managePermissionText": "You do not have sufficient permissions to purchase Add-ons. <a href=\'#\'>Go to My Permissions<\/a> to request access.",
+
+            "praxisHeader2" : 'Click Submit to sign up for a new',
+            "praxisHeader3" : 'Subscription Service using the account and Subscription Fund below.',
+            "accountName" : 'Account Name',
+            "accountNumber" : 'Account Number',
+            "fundExpiration" : 'Fund Expiration',
+
+            "praxis_para1_1" : 'Subscription Credits will be debited from the selected Subscription Fund after you consume resources in the',
+            "praxis_para1_2" : 'portal. <p>Once you select a Subscription Fund as the payment method for your Subscription Service, you cannot modify the Fund used for payment or select another payment method.<\/p>',
+
+            "signUpFor" : 'Sign Up for', 
+            "praxisComplete_p1_1" : 'You have completed your',          
+            "praxisComplete_p1_2" : 'order for account',          
+            "praxisComplete_p1_3" : '. You will receive an email that explains how to log in to', 
+            "praxisComplete_p1_4" :  'and deploy resources and services that you can use to build applications within minutes. <p>You are charged for usage only after you deploy your new resources. Monthly usage is billed in arrears. Learn about pricing.<\/p>',
+            "using" : 'using',  
+            "accessThe" : 'Visit the',
+            "praxisServiceDetailsLinkText1" : 'Subscription Service Details page for Service ID:',
+            "praxisServiceDetailsLinkText2" : 'to view more information about this Subscription Service. You can manage your other services from the All Services Page.',
+            "inYourAccount" : 'in your account',
+
+            "selectOfferingPartner" : 'Select an Offering Partner',
+            "selectPartnerText" : 'Your Offering Partner can view your Subscription Fund balance, the approximate date that the balance will be depleted, and basic information about this Subscription Service. They cannot view usage data such as XXXX or XXXX.',
+
+
+            "signUpFor" : "Sign Up for ", 
+            "praxisComplete_p1_1" : 'You have completed your',          
+            "praxisComplete_p1_2" : 'order for account',          
+            "praxisComplete_p1_3" : '. You will receive an email that explains how to log in to', 
+            "praxisComplete_p1_4" :  'and deploy resources and services that you can use to build applications within minutes. <p>You are charged for usage only after you deploy your new resources. Monthly usage is billed in arrears. Learn about pricing.<\/p>',
+            "using" : "using",  
+            "accessThe" : "Access the ",
+            "praxisServiceDetailsLinkText1" : "Service Details page for Service ID:",
+            "praxisServiceDetailsLinkText2" : "to see the details about this service.",
+            "inYourAccount" : " in your account ",
+
+            "addOnSltNoData" : "There are no active subscription services for which to purchase Add-Ons.",
+            "renewalSltNoData" : "There are no subscription services that are eligible for renewal at this time.",
+
+
+            /********** Config Global Vars ***********/  
+
+            "configureService" : "CONFIGURE SERVICE",
+            "PurchaseNewService" : "Purchase new service",
+            "addAdditionalCapacity" : "ADD ADDITIONAL CAPACITY",
+            "reviewAndSubmit" : "REVIEW & SUBMIT",
+            "complete" : "COMPLETE",
+            "sltExistingService" : "SELECT AN EXISTING SERVICE",
+            "purchaseAddons" : "Purchase Add-ons",
+            "addCapacity" : "ADD ADDITIONAL CAPACITY",
+            "modifyCoreAddonService" : "MODIFY CORE & ADD-ON SERVICE",
+            "serviceRenewalConfiguration" : "Service Renewal Configuration",
+
+
+
+            "step3SubmitOrderUrl" : "vcredit/json/complete_success.json",
+            "step3RenewalSubmitURL" : "vcredit/json/complete_success.json",
+            "step3SubmitUrl" : "vcredit/json/complete_success.json",
+            "directConnectAvailableQuota" : "vcredit/json/complete_success.json",
+            "addOnFlowExcelImportURL" : "#",
+            "exportText" : "Export",
+            "removeAddonText" : "Are you sure you want to remove?",
+            "removeAddonHeaderText" : "Removing Addon",
+            "buttonLabelYes" : "Yes",
+            "buttonLabelNo" : "No",
+            "termsAndConditionsUrl":"http://www.vmware.com/pdf/invoice_terms.pdf",
+            "andText": "and",
+            "NAtext": "N/A",
+            "quantityText":"Quantity",
+            "discountsText": "Discounts",
+            "done_text" : "Done",
+            "success_noexl" : "Success",
+            "bulkDiscountMsg" : "Maximum billing rate. Billing rate will be updated based on quantity selected. Bulk discount available.",
+            "totalCreditsNeeded" : "",
+            "allServicesPageText" : "All Services Page",
+            "nonDecimalCurrency" : ['JPY','XYZ']
+        }
+    }
+
+</script>

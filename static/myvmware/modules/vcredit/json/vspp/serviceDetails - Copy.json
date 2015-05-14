@@ -1,0 +1,808 @@
+{
+    "wrapper": {
+        "customerType": "EDUCATIONAL",
+        "isXaasFund": "1",
+        "eaAccount": "qatestf1000",
+        "eaAccountNumber": "462134456",
+        "customerNumber": "9521319442",
+        "isStorageEnabled": "N",
+        "fundInfo": {
+            "name": "!@_fff",
+            "fundGroupId": null,
+            "trueUp": "0",
+            "fundBalance": "29646",
+            "redemptionCurrency": "USD",
+            "redemptionCurrencySymbol": "$",
+            "fundCurrencySymbol": "$",
+            "isXaasFund": 0,
+            "fundAccess": 0,
+            "fundExpiration": "",
+            "fundOwner": "",
+            "fundOwnername": ""
+        },
+        "priceList": [
+            "MSRP",
+            "MSRP"
+        ],
+        "serviceName": "VMware Horizon Air",
+        "paymentType": [
+            {
+                "Monthly": [
+                    "Monthly",
+                    "Monthly"
+                ],
+                "Prepaid": [
+                    "Prepaid",
+                    "Prepaid"
+                ],
+                "Annually": [
+                    "Annually",
+                    "Annually"
+                ]
+            },
+            ""
+        ],
+        "storageType": [
+            {
+                "NO STORAGE": "NO STORAGE"
+            },
+            ""
+        ],
+        "crossRefSKUMap": {
+            "ADV DESKTOP_1_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACADT-01MT0-A1S",
+                "3360"
+            ],
+            "ADV DESKTOP_12_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACADT-12MT0-A1S",
+                "2400"
+            ],
+            "ADV DESKTOP_12_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACADT-12PT0-A1S",
+                "28800"
+            ],
+            "ADV DESKTOP_24_MTH_Annually_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACADT-24AT0-A1S",
+                "26784"
+            ],
+            "ADV DESKTOP_24_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACADT-24MT0-A1S",
+                "2232"
+            ],
+            "ADV DESKTOP_24_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACADT-24PT0-A1S",
+                "53568"
+            ],
+            "ADV DESKTOP_36_MTH_Annually_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACADT-36AT0-A1S",
+                "25344"
+            ],
+            "ADV DESKTOP_36_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACADT-36MT0-A1S",
+                "2112"
+            ],
+            "ADV DESKTOP_36_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACADT-36PT0-A1S",
+                "76032"
+            ],
+            "N/A_12_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSWS-12MT0-A1S",
+                "1920"
+            ],
+            "N/A_12_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSWS-12PT0-A1S",
+                "22"
+            ],
+            "N/A_24_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSWS-24MT0-A1S",
+                "1843"
+            ],
+            "N/A_24_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSWS-24PT0-A1S",
+                "43"
+            ],
+            "N/A_36_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSWS-36MT0-A1S",
+                "1766"
+            ],
+            "N/A_36_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSWS-36PT0-A1S",
+                "62"
+            ],
+            "DAAS PILOT_3_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACBSP-03PT0-A1S",
+                "6240"
+            ],
+            "ENT DESKTOP_1_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACEDT-01MT0-A1S",
+                "6720"
+            ],
+            "ENT DESKTOP_12_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACEDT-12MT0-A1S",
+                "4800"
+            ],
+            "ENT DESKTOP_12_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACEDT-12PT0-A1S",
+                "57600"
+            ],
+            "ENT DESKTOP_24_MTH_Annually_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACEDT-24AT0-A1S",
+                "53568"
+            ],
+            "ENT DESKTOP_24_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACEDT-24MT0-A1S",
+                "4464"
+            ],
+            "ENT DESKTOP_24_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACEDT-24PT0-A1S",
+                "107136"
+            ],
+            "ENT DESKTOP_36_MTH_Annually_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACEDT-36AT0-A1S",
+                "50688"
+            ],
+            "ENT DESKTOP_36_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACEDT-36MT0-A1S",
+                "4224"
+            ],
+            "ENT DESKTOP_36_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACEDT-36PT0-A1S",
+                "152064"
+            ],
+            "HOST APPS SRV_1_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACHAP-01MT0-A1S",
+                "4032"
+            ],
+            "HOST APPS SRV_12_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACHAP-12MT0-A1S",
+                "2880"
+            ],
+            "HOST APPS SRV_12_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACHAP-12PT0-A1S",
+                "34560"
+            ],
+            "HOST APPS SRV_24_MTH_Annually_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACHAP-24AT0-A1S",
+                "32140.8"
+            ],
+            "HOST APPS SRV_24_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACHAP-24MT0-A1S",
+                "2678"
+            ],
+            "HOST APPS SRV_24_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACHAP-24PT0-A1S",
+                "64282"
+            ],
+            "HOST APPS SRV_36_MTH_Annually_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACHAP-36AT0-A1S",
+                "30412.8"
+            ],
+            "HOST APPS SRV_36_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACHAP-36MT0-A1S",
+                "2534"
+            ],
+            "HOST APPS SRV_36_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACHAP-36PT0-A1S",
+                "91238"
+            ],
+            "STD DESKTOP_1_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSDT-01MT0-A1S",
+                "2352"
+            ],
+            "STD DESKTOP_12_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSDT-12MT0-A1S",
+                "1680"
+            ],
+            "STD DESKTOP_12_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSDT-12PT0-A1S",
+                "20160"
+            ],
+            "STD DESKTOP_24_MTH_Annually_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSDT-24AT0-A1S",
+                "18748.8"
+            ],
+            "STD DESKTOP_24_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSDT-24MT0-A1S",
+                "1562"
+            ],
+            "STD DESKTOP_24_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSDT-24PT0-A1S",
+                "37498"
+            ],
+            "STD DESKTOP_36_MTH_Annually_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSDT-36AT0-A1S",
+                "17740.8"
+            ],
+            "STD DESKTOP_36_MTH_Monthly_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSDT-36MT0-A1S",
+                "1478"
+            ],
+            "STD DESKTOP_36_MTH_Prepaid_EDUCATIONAL_US_NO STORAGE": [
+                "DSD-ACSDT-36PT0-A1S",
+                "53222"
+            ],
+            "ADV DESKTOP_1_MTH_Monthly_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCADT-01MT0-A1S",
+                "3808"
+            ],
+            "DAAS PILOT_3_MTH_Prepaid_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCBSP-03PT0-A1S",
+                "7072"
+            ],
+            "ENT DESKTOP_1_MTH_Monthly_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCEDT-01MT0-A1S",
+                "7616"
+            ],
+            "HOST APPS SRV_1_MTH_Monthly_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCHAP-01MT0-A1S",
+                "4569"
+            ],
+            "HOST APPS SRV_12_MTH_Monthly_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCHAP-12MT0-A1S",
+                "3264"
+            ],
+            "HOST APPS SRV_12_MTH_Prepaid_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCHAP-12PT0-A1S",
+                "39167"
+            ],
+            "HOST APPS SRV_24_MTH_Annually_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCHAP-24AT0-A1S",
+                "36425.1958"
+            ],
+            "HOST APPS SRV_24_MTH_Monthly_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCHAP-24MT0-A1S",
+                "3035"
+            ],
+            "HOST APPS SRV_24_MTH_Prepaid_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCHAP-24PT0-A1S",
+                "72850"
+            ],
+            "HOST APPS SRV_36_MTH_Annually_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCHAP-36AT0-A1S",
+                "34466.852"
+            ],
+            "HOST APPS SRV_36_MTH_Monthly_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCHAP-36MT0-A1S",
+                "2872"
+            ],
+            "HOST APPS SRV_36_MTH_Prepaid_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCHAP-36PT0-A1S",
+                "103401"
+            ],
+            "STD DESKTOP_1_MTH_Monthly_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCSDT-01MT0-A1S",
+                "2666"
+            ],
+            "STD DESKTOP_12_MTH_Monthly_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCSDT-12MT0-A1S",
+                "1904"
+            ],
+            "STD DESKTOP_12_MTH_Prepaid_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCSDT-12PT0-A1S",
+                "22847"
+            ],
+            "STD DESKTOP_24_MTH_Annually_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCSDT-24AT0-A1S",
+                "21248.0309"
+            ],
+            "STD DESKTOP_24_MTH_Monthly_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCSDT-24MT0-A1S",
+                "1771"
+            ],
+            "STD DESKTOP_24_MTH_Prepaid_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCSDT-24PT0-A1S",
+                "42496"
+            ],
+            "STD DESKTOP_36_MTH_Annually_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCSDT-36AT0-A1S",
+                "20105.6636"
+            ],
+            "STD DESKTOP_36_MTH_Monthly_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCSDT-36MT0-A1S",
+                "1675"
+            ],
+            "STD DESKTOP_36_MTH_Prepaid_EDUCATIONAL_EM- EMEA_NO STORAGE": [
+                "DSD-BCSDT-36PT0-A1S",
+                "60317"
+            ]
+        },
+        "currency": [
+            {
+                "USD": [
+                    "U.S.Dollar",
+                    "$"
+                ]
+            },
+            "USD"
+        ],
+        "partner": [
+            [
+                {
+                    "id": "VMware",
+                    "name": "VMware Inc."
+                }
+            ],
+            "VMware"
+        ],
+        "region": [
+            {
+                "US": "US",
+                "EM- EMEA": "EM- EMEA"
+            },
+            ""
+        ],
+        "serviceType": {
+            "US": [
+                {
+                    "serviceName": "VMWare Horizon Air Desktop Advanced",
+                    "tenantType": "ADV DESKTOP",
+                    "licenseType": "EDUCATIONAL",
+                    "description": "VMware Horizon Air",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Annually",
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Annually",
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                },
+                {
+                    "serviceName": "N/A",
+                    "tenantType": "N/A",
+                    "licenseType": "EDUCATIONAL",
+                    "description": "VMware Horizon Air",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                },
+                {
+                    "serviceName": "DaaS Pilot",
+                    "tenantType": "DAAS PILOT",
+                    "licenseType": "EDUCATIONAL",
+                    "description": "VMware Horizon Air",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "3 months",
+                                        "3_MTH",
+                                        [
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                },
+                {
+                    "serviceName": "VMWare Horizon Air Desktop Enterprise ",
+                    "tenantType": "ENT DESKTOP",
+                    "licenseType": "EDUCATIONAL",
+                    "description": "VMware Horizon Air",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Annually",
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Annually",
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                },
+                {
+                    "serviceName": "VMWare Horizon Air Apps ",
+                    "tenantType": "HOST APPS SRV",
+                    "licenseType": "EDUCATIONAL",
+                    "description": "VMware Horizon Air",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Annually",
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Annually",
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                },
+                {
+                    "serviceName": "VMware Horizon Air Desktop Standard",
+                    "tenantType": "STD DESKTOP",
+                    "licenseType": "EDUCATIONAL",
+                    "description": "VMware Horizon Air",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Annually",
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Annually",
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                }
+            ],
+            "EM- EMEA": [
+                {
+                    "serviceName": "VMWare Horizon Air Desktop Advanced",
+                    "tenantType": "ADV DESKTOP",
+                    "licenseType": "EDUCATIONAL",
+                    "description": "VMware Horizon Air",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                },
+                {
+                    "serviceName": "DaaS Pilot",
+                    "tenantType": "DAAS PILOT",
+                    "licenseType": "EDUCATIONAL",
+                    "description": "VMware Horizon Air",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "3 months",
+                                        "3_MTH",
+                                        [
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                },
+                {
+                    "serviceName": "VMWare Horizon Air Desktop Enterprise ",
+                    "tenantType": "ENT DESKTOP",
+                    "licenseType": "EDUCATIONAL",
+                    "description": "VMware Horizon Air",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                },
+                {
+                    "serviceName": "VMWare Horizon Air Apps ",
+                    "tenantType": "HOST APPS SRV",
+                    "licenseType": "EDUCATIONAL",
+                    "description": "VMware Horizon Air",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Annually",
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Annually",
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                },
+                {
+                    "serviceName": "VMware Horizon Air Desktop Standard",
+                    "tenantType": "STD DESKTOP",
+                    "licenseType": "EDUCATIONAL",
+                    "description": "VMware Horizon Air",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Annually",
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Annually",
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                }
+            ]
+        },
+        "promotion": null,
+        "service": null
+    }
+}

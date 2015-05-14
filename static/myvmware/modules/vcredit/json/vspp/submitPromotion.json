@@ -1,0 +1,18 @@
+{
+    "wrapper": {
+        "serviceID": "M393949849",
+        "serviceName": "vCloud Hybrid Service",
+        "eaAccount": "qatest1436",
+        "eaAccountNumber": "313377584",
+        "instanceModel": "OnDemand",
+        "serviceInstanceId": "UQ%253D%253D",
+        "serviceInstanceName": "ZIX6iq8Khs1Fl4SFGZIX6iq8Khs1Fl4SFGhOehOeUQ%253D%253D",
+        "service": "VMware%20vCloud%20Hybrid%20Service",
+        "fundName": "XYZ fund",
+        "promotionDetails": [
+            "With this promo code, you’ll get $400 credit to user on vCloud Hybrid Service. This credit will expire in 60 days.",
+            "Message2",
+            "Message3"
+        ]
+    }
+}

@@ -1,0 +1,74 @@
+
+/* Form styles */
+#signup
+{
+	margin: 20px auto;
+	width: 610px;
+}
+#signup fieldset	
+{
+	margin: 0 0 20px;
+	padding: 20px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+	
+#signup fieldset input,
+#signup fieldset textarea,
+#signup fieldset select
+{
+	background: #fff url(ico_validation.png) 454px 37px no-repeat;
+}
+
+
+#signup input::-webkit-input-placeholder	{ color: #a9a9a9; }
+#signup input:-moz-placeholder			{ color: #a9a9a9; }
+
+/* Enhanced error styling */
+#signup input.error
+{
+	background-color: pink; 
+	background-position: 454px 8px;
+	outline: none; 
+}
+#signup input.required
+{
+	background-color: #fff; 
+	background-position: 454px -24px;
+}
+#signup input.valid
+{ 
+	background-color: #fff;
+	background-position: 454px -56px;
+}
+#signup fieldset input:required:valid
+{ 
+	background-color: #fff;
+	background-position: 454px -56px;
+}
+
+
+	.lt-ie8 #signup fieldset input,
+	.lt-ie8 #signup fieldset textarea,
+	.lt-ie8 #signup fieldset select
+	{
+		background-position: 480px 37px;
+	}
+
+	.lt-ie8 #signup input.error
+	{
+		background-position: 480px 8px;
+	}
+	.lt-ie8 #signup input.required
+	{
+		background-position: 480px -24px;
+	}
+	.lt-ie8 #signup input.valid
+	{ 
+		background-position: 480px -56px;
+	}
+	.lt-ie8 #signup fieldset input:required:valid
+	{ 
+		background-position: 480px -56px;
+	}

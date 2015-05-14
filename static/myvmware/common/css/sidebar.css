@@ -1,0 +1,314 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  aside.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 04/21/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. ASIDE
+/* ########################################################################### */
+
+/* ########################################################################### *
+/* ##### ASIDE
+/* ########################################################################### */
+
+.column-two-together aside section {
+   	margin-top: 15px;
+	padding-bottom: 15px;
+}
+
+.column-two-together aside section h1 {
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 8px;
+	border-bottom: 1px solid #bebfc0;
+}
+
+.column-two-together aside section p {
+	font-size: 12px;
+	padding-top: 5px;
+	padding-bottom: 12px;
+	color: #4c4e53;
+}
+
+.column-two-together #main aside section ul li {
+   	background: none;
+   	padding-left: 0;
+   	padding-top: 2px;
+   	padding-bottom: 2px;
+}
+
+.column-two-together #main aside section ul li a {
+	font-weight: bold;
+}
+
+.column-two-together #main aside section ul li.header {
+	font-weight: bold;
+}
+
+.separate {
+	display: block;
+	font-size: 11px;
+	color: #39A;
+}
+
+
+/* Old styles for links */
+aside section.links {
+	color: #666666;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border: 1px #c7cfd5 solid;
+	background: #C7CFD5 url(img/bkg_aside_section.png);
+	margin-bottom: 20px;
+}
+
+.ie7 aside section.links {
+	padding-bottom: 16px;
+}
+
+aside section.links .wrapper {
+	margin: 13px;
+}
+
+aside section.links header {
+	background: #909AA0; /* old browsers */
+	background: -moz-linear-gradient(top, #909AA0 0%, #687274 49%, #596363 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#909AA0), color-stop(49%,#687274), color-stop(100%,#596363)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#909AA0', endColorstr='#596363',GradientType=0 ); /* ie */
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+aside section.links header h1 {
+	float: left;
+	color: #FFF;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 8px 11px;
+	border-left: 1px solid #FFF;
+}
+
+aside section.links header .openClose {
+	float: left;
+	width: 32px;
+	height: 32px;
+	display: block;
+	background: url(img/btn_openClose.gif) center center no-repeat;
+}
+
+	.ie7 aside section.links header .openClose {
+		display: inline;
+	}
+
+section.links .customize {
+	float: right;
+	margin-top: 7px;
+}
+
+.closed aside nav.sub-nav {
+	display: block;
+}
+
+/* Sub Navigation */
+/* to fix space issues by hiding empty hyper link for IE 7*/
+#p_LeftNavigationPortlet_WAR_itcrossfunctional{display:none}
+#p_QuickLinksPortlet_WAR_itcrossfunctional{display:none}
+
+.column-two-collapse aside nav.sub-nav {
+	background: #FFF;
+	background: rgba(255,255,255,.8);
+	border: 1px solid #888;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-bottom-topleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 0px 0 10px 0;
+	margin-bottom: 20px;
+	margin-right: 0;
+}
+
+	.column-two-collapse aside nav.sub-nav .closeTitle {
+		font-size: 9px;
+		color: #999;
+		float: right;
+		position: relative;
+		top: -24px;
+		left: 0;	
+	}
+	
+	.sub-nav .openClose {
+		display: block;
+		width: 21px;
+		height: 23px;
+		background: url(img/bg-open-close.png) no-repeat 0 -28px;
+		margin: 13px 0 4px 15px;
+		
+	}
+
+	.opening .openClose {	
+		background-position: 0 0;
+	}
+	
+	/*.ie7 .sub-nav .openClose {position: relative;top:9px;left:13px;}*/
+
+	.sub-nav .quickLinksTitle {
+		display: block;
+		color: #666;
+		background: url(img/bg-quick-links-border.png) repeat-x bottom;
+		text-transform: uppercase;
+		font-size: 10px;
+		font-weight: bold;
+		padding-bottom: 9px;
+		position: absolute;
+		top: 16px;
+		left: 50px;
+		width: 125px;
+	}
+
+	#main .sub-nav ul li {
+		background: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+		#main .sub-nav ul li a {
+			font-size: 12px;
+			color: #228bc0;
+			padding: 8px 16px 7px 50px;
+			display: block;
+			background: url(img/quicklinks.png) no-repeat;
+		}
+		
+		.ie7 #main .sub-nav ul li a {
+			padding: 9px 15px 8px 50px;
+		}
+		#main .sub-nav ul li.alerts{
+			margin-bottom:0;
+		}
+		#main .sub-nav ul li.alerts a {
+			background-position: 13px 3px;
+		}
+			#main .sub-nav ul li.alertsBadge a {
+				background: url(img/bg_AlertsBadged.png) no-repeat;
+				background-position: 13px 7px;
+			}
+		#main .sub-nav ul li.myAccount a {
+			background-position: 13px -31px !important;
+		}
+
+		#main .sub-nav ul li.downloads a {
+			background-position: 13px -65px !important;
+		}
+		
+		#main .sub-nav ul li.licenses a {
+			background-position: 13px -104px !important;
+		}
+		#main .sub-nav ul li.services a {
+			background-position: 13px -278px !important;
+		}
+
+		#main .sub-nav ul li.accessPermissions a {
+			background-position: 13px -140px !important;
+		}
+
+		#main .sub-nav ul li.freeTrials a {
+			background-position: 13px -177px !important;
+		}
+
+		#main .sub-nav ul li.getHelp a {
+			background-position: 13px -212px !important;
+		}
+		
+		#main .sub-nav ul li.reports a {
+			background-position: 13px -248px !important;
+		}
+
+		/* IE7 fixes*/
+		.ie7 #main .sub-nav ul li.myAccount a {
+			background-position: 13px -29px !important;
+		}
+		
+		.ie7 #main .sub-nav ul li.downloads a {
+			background-position: 13px -63px !important;
+		}
+
+		.ie7 #main .sub-nav ul li.accessPermissions a {
+			background-position: 13px -137px !important;
+		}
+				
+	.closed #main .sub-nav ul li a {
+		padding-left: 47px;
+	}
+	
+	/* //////////////////for quick links in home page ///////////////////////////*/
+	
+	#main .quick-links ul li {
+		background: none;
+		padding: 0;
+		margin-left: -15px;
+	}
+	
+		#main .quick-links ul li a {
+			font-size: 12px;
+			color: #228bc0;
+			padding: 8px 16px 8px 40px;
+			display: block;
+			background: none;
+			background: url(img/quicklinks.png) no-repeat;
+		}
+		
+		.ie7 #main .quick-links ul li a {
+			padding: 9px 15px 8px 50px;
+		}
+		#main .quick-links ul li.alerts{
+			margin-bottom:0;
+		}
+		#main .quick-links ul li.alerts a {
+			background-position: 14px 3px;
+		}
+			#main .quick-links ul li.alertsBadge a {
+				background: url(img/bg_AlertsBadged.png) no-repeat;
+				background-position: 14px 7px;
+			}
+		#main .quick-links ul li.myAccount a {
+			background-position: 14px -32px;
+		}
+
+		#main .quick-links ul li.downloads a {
+			background-position: 14px -68px;
+		}
+
+		#main .quick-links ul li.services a {
+			background-position: 14px -279px !important;
+		}
+
+		#main .quick-links ul li.licenses a {
+			background-position: 14px -103px;
+		}
+
+		#main .quick-links ul li.accessPermissions a {
+			background-position: 14px -139px;
+		}
+		
+		.ie7 #main .quick-links ul li.accessPermissions a {
+			background-position: 14px -137px;
+		}
+
+		#main .quick-links ul li.freeTrials a {
+			background-position: 14px -176px;
+		}
+
+		#main .quick-links ul li.getHelp a {
+			background-position: 14px -212px;
+		}
+		#main .quick-links ul li.reports a {
+			background-position: 14px -248px;
+		}

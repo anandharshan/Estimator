@@ -1,0 +1,204 @@
+            <article ng-if="showLoader">
+                <div class="row margin-top-20 margin-bottom-20">
+                    <div class="col-md-12 text-center">
+                        <div class="ajaxSpinner">&nbsp;</div>   
+                    </div>
+                </div>
+            </article>
+            <section ng-if="!showLoader && showAddOnPage">
+                <article class="container-fluid">
+                        <div class="row margin-top-20 margin-bottom-20">
+                            <div class="col-md-5">
+                                <div class="row"><div class="col-md-12">
+                                    {{globalVars.configSelectedService}} <br>
+                                    <!--a class="btn-link" ng-click="gotoConfigure()">{{globalVars.viewServiceDetails}}</a-->
+                                    </div>
+                                </div>
+                                <div class="row margin-top-20">
+                                    <div class="col-md-5"><label>{{globalVars.serviceId}}</label></div>
+                                    <div class="col-md-7"><a class="btn-link" ng-click="gotoPrevious()">{{addOnData.core.serviceID}}</a></div>
+                                </div>
+                               <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.serviceType}}</label></div>
+                                    <div class="col-md-7">{{addOnData.core.serviceName}}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.remainingTerm}}</label></div>
+                                    <div class="col-md-7">{{remainingTerm}}</div>
+                                </div>
+                                 <div class="row margin-top-20">
+                                    <div class="col-md-12">{{addOnData.core.longSkuDescription}}</div>
+                                </div>                 
+                            </div>    
+                            <div class="col-md-7">
+                                <div class="row box-bgBlue">
+                                    <div class="col-md-6 padding-left-0 borderRightWhite">
+                                        <div>
+                                            <h4 class="calculationBoxHeader18">{{globalVars.currentCost}} ({{addOnData.core.pricelist[0]}})</h4>
+                                           <span class="intro-text" ng-if="!skuError">{{addOnData.core.cost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}
+                                                <span ng-if="addOnData.core.defaultPaymentType == '2'"> {{globalVars["payment_type2"]}}</span>
+                                                <span ng-if="addOnData.core.defaultPaymentType == '3'"> {{globalVars["payment_type3"]}}</span>
+                                           </span>
+                                           <div ng-if="selectedTermObj[0] !== '' && !skuError" class="margin-top-5">{{globalVars.term}} : {{selectedTermObj[0]}}</div>
+                                           <div ng-if="skuError" class="margin-top-5">{{globalVars.invalCombination}}</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 borderLeftWhite">
+                                        <div>
+                                            <h4 ng-if="(ttlOneTimeCost == 0 || ttlOneTimeCost == null) && (ttlPrepaidCost == 0 || ttlPrepaidCost == null) && (ttlMonthlyCost == 0 || ttlMonthlyCost == null) && (ttlYearlyCost == 0 || ttlYearlyCost == null)" class="calculationBoxHeader18">{{globalVars.addOnRecurringCost}}</h4>
+                                            
+                                            <div ng-if="ttlOneTimeCost > 0" class="margin-bottom-10">
+                                                <h4 class="calculationBoxHeader18">{{globalVars.addOnOneTime}} ({{addOnData.core.pricelist[0]}})</h4>
+                                                <!--span><strong>{{globalVars.addOnOneTime}} ({{addOnData.core.pricelist[0]}})</strong></span-->
+                                                <span class="intro-text intro-text-24">{{ttlOneTimeCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</span></div>
+                                            <div ng-if="ttlMonthlyCost > 0" class="margin-bottom-10">
+                                                <h4 class="calculationBoxHeader18">{{globalVars.addOnMonthlyCost}} ({{addOnData.core.pricelist[0]}})</h4>
+                                                <!--span><strong>{{globalVars.addOnMonthlyCost}} ({{addOnData.core.pricelist[0]}})</strong></span-->
+                                                <span class="intro-text intro-text-24">{{ttlMonthlyCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{globalVars["payment_type2"]}}</span></div>
+                                            <div ng-if="ttlPrepaidCost > 0" class="margin-bottom-10">
+                                                <h4 class="calculationBoxHeader18">{{globalVars.addOnPrepaidCost}} ({{addOnData.core.pricelist[0]}})</h4>
+                                                <!--span><strong>{{globalVars.addOnPrepaidCost}} ({{addOnData.core.pricelist[0]}})</strong></span-->
+                                                <span class="intro-text intro-text-24">{{ttlPrepaidCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</span></div>
+                                            <div ng-if="ttlYearlyCost > 0">
+                                                <h4 class="calculationBoxHeader18">{{globalVars.addOnAnnualCost}} ({{addOnData.core.pricelist[0]}})</h4>
+                                                <!--span><strong>{{globalVars.addOnAnnualCost}} ({{addOnData.core.pricelist[0]}})</strong></span-->
+                                                <span class="intro-text intro-text-24">{{ttlYearlyCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}  {{globalVars["payment_type3"]}}</span></div>
+                                            
+                                            <span ng-if="(ttlOneTimeCost == 0 || ttlOneTimeCost == null) && (ttlPrepaidCost == 0 || ttlPrepaidCost == null) && (ttlMonthlyCost == 0 || ttlMonthlyCost == null) && (ttlYearlyCost == 0 || ttlYearlyCost == null)">{{globalVars.chooseAddOn}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                </article>
+                <article>
+                    <div class="container-fluid box-bgBlue margin-bottom-20 formAlign">
+                        <div class="row margin-bottom-20">
+                            <div class="col-md-12">
+                                <span ng-if="applySuccess">{{globalVars.successModified}} </span>
+                                <span ng-if="applyError"> {{applyErrorMsg}} </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.serviceType}}</label></div>
+                                    <div class="col-md-7" ng-if="addOnData.core.coreServices.length > 1">
+                                        <select class="form-control autoWidth" name="storage" ng-model="addOnData.core.selectedServiceTypeId" ng-options="value.tenantType as value.tenantName for (key,value) in addOnData.core.coreServices" ng-change="setSelectedServiceObj()" selectpicker="{container:'body'}"></select>
+                                    </div>
+                                    <div class="col-md-7" ng-if="addOnData.core.coreServices.length == 1">
+                                        {{addOnData.core.coreServices[0]['tenantName']}}
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.serviceId}}</label></div>
+                                    <div class="col-md-7">{{addOnData.core.serviceID}}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.region}}</label></div>
+                                    <div class="col-md-7">{{addOnData.core.region}}</div>
+                                </div>
+
+                                <div class="row" ng-if="addOnData.core.storageEnabled">
+                                    <div class="col-md-5"><label>{{globalVars.storage}}</label></div>
+                                    <div class="col-md-7" ng-if="objectLength(addOnData.core.selectedServiceTypeObj.storage[0]) > 1">
+                                        <select class="form-control autoWidth" name="storage" ng-model="addOnData.core.storageType[1]" ng-options="key as value.storageName for (key,value) in addOnData.core.selectedServiceTypeObj.storage[0]" ng-change="changePayment()" selectpicker="{container:'body'}"></select>
+                                    </div>
+                                    <div class="col-md-7" ng-if="objectLength(addOnData.core.selectedServiceTypeObj.storage[0]) == 1">
+                                        {{getStorageName(addOnData.core.selectedServiceTypeObj.storage[0])}}
+                                    </div>
+                                </div>
+
+                                <!--div class="row">
+                                    <div class="col-md-5"><label>Storage</label></div>
+                                    <div class="col-md-7" ng-if="objectLength(addOnData.core.storageType[0]) > 1">
+                                        <select class="form-control autoWidth" name="storage" ng-model="addOnData.core.storageType[1]" ng-options="key as value for (key,value) in addOnData.core.storageType[0]" ng-change="changePayment()"></select>
+                                    </div>
+                                    <div class="col-md-7" ng-if="objectLength(addOnData.core.storageType[0]) == 1">
+                                        {{selectedStorageVal}}
+                                    </div>
+                                </div-->
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.serviceStartDate}}</label></div>
+                                    <div class="col-md-7">{{addOnData.core.serviceStartDate}}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.termStart}}</label></div>
+                                    <div class="col-md-7">{{addOnData.core.termStartDate}}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.termEnd}}</label></div>
+                                    <div class="col-md-7">{{addOnData.core.termEndDate}}</div>
+                                </div>
+                            </div>
+                             <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.remainingTerm}}</label></div>
+                                    <div class="col-md-7">{{remainingTerm}}</div>
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.serviceTerm}}</label>                             
+                                    </div>
+                                    <div class="col-md-7" ng-if="addOnData.core.selectedServiceTypeObj.storage[0][addOnData.core.storageType[1]].terms.length > 1">
+                                        <select class="form-control autoWidth" name="sltTerm" ng-change="changeTerm(serviceConfig.currServiceTerm)" ng-model="serviceConfig.currServiceTerm" ng-options="value[1] as value[0] for (key,value) in addOnData.core.selectedServiceTypeObj.storage[0][addOnData.core.storageType[1]].terms " selectpicker="{container:'body'}"></select>
+                                    </div>
+                                     <div class="col-md-7" ng-if="addOnData.core.selectedServiceTypeObj.storage[0][addOnData.core.storageType[1]].terms.length == 1">
+                                         {{addOnData.core.selectedServiceTypeObj.storage[0][addOnData.core.storageType[1]].terms[0][0]}}
+                                     </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.currency}}</label></div>
+                                    <div class="col-md-7">{{addOnData.core.currency[1]}} ({{addOnData.core.currency[0]}})</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.serviceCategory != 'VSPP' && globalVars.offeringPartner || globalVars.aggregator}}</label></div>
+                                    <div class="col-sm-7" ng-if="addOnData.core.offeringPartner[0].length > 1 && globalVars.serviceCategory != 'VSPP'">
+                                        <select name="partner" class="form-control autoWidth" ng-model="addOnData.core.offeringPartner[1]" ng-options="obj.id as obj.name for obj in addOnData.core.offeringPartner[0]" selectpicker="{container:'body'}" ng-change="changePartnerObj()"></select>                                
+                                    </div>
+                                    <div class="col-sm-7" ng-if="addOnData.core.offeringPartner[0].length == 1 && globalVars.serviceCategory != 'VSPP'">
+                                       {{addOnData.core.offeringPartner[0][0]['name']}}
+                                    </div>
+                                    <div class="col-sm-7" ng-if="globalVars.serviceCategory == 'VSPP'">
+                                       {{addOnData.core.partner}}
+                                    </div>
+
+                                </div> 
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.paidWith}}</label></div>
+                                    <div class="col-md-7">{{addOnData.core.fundInfo.name}}</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.paymentType}}</label></div>
+                                    <div class="col-md-7" ng-if="addOnData.core.payTypeDisplay.length > 1">
+                                        <select class="form-control autoWidth" data-ng-model="addOnData.core.selectedPayType" ng-options="duration.paymentTypeVal for duration in addOnData.core.payTypeDisplay" ng-change="paymentTypeChange()" selectpicker="{container:'body'}">
+                                    </select>
+                                    </div>
+                                    <div class="col-md-7" ng-if="addOnData.core.payTypeDisplay.length == 1">
+                                        {{addOnData.core.payTypeDisplay[0]['paymentTypeVal']}}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a class="btn btn-primary margin-left-20" ng-click="applyServiceChange()" ng-disabled="skuError || btnInitDisabled">{{globalVars.applyBtn}}</a>
+                                        <a class="btn btn-default margin-left-20" ng-click="revertServiceChange()" ng-disabled="btnInitDisabled">{{globalVars.revertBtn}}</a>                                             
+                                    </div>                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <ng-addon-table></ng-addon-table>
+                <article class="container-fluid">
+                    <div class="row margin-top-20">
+                         <div class="col-md-3 col-md-offset-9"></div>
+                    </div>
+                    <div class="row">
+                            <div class="col-xs-6 text-left"><a class="btn btn-default" ng-if="!getURLParam" ng-click="gotoConfigure()">{{globalVars.backBtn}}</a></div>
+                            <div class="col-xs-6 text-right">
+                                <a class="btn btn-primary" ng-click="goToReview()" ng-disabled="!(skuError || btnInitDisabled)">{{globalVars.reviewOrderBtn}}</a>
+                                <a class="btn btn-default margin-left-20" ng-click="cancelFlow(cancelFn)">{{globalVars.cancelBtn}}</a>
+                            </div>
+                    </div>
+                </article>
+            </section>

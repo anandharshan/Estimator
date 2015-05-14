@@ -1,0 +1,60 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  pagination.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 05/04/2011
+/* ########################################################################### *
+/* ##### PAGINATION
+/* ########################################################################### */
+
+.pagination-wrapper {
+    padding: 5px 5px 5px 0;
+    margin-top: 5px;
+}
+
+.pagination-wrapper .results-per-page {
+    float: left;
+}
+
+.pagination-wrapper .page-results-wrapper {
+    float: right;
+    margin-right: 0px;
+    text-align: right;
+    margin-top: 2px;
+}
+
+.page-results-wrapper .pagination-nav-ctrl {
+    margin-top: 0px;
+    position: relative;
+    color: #999;
+}
+
+.pagination-nav-ctrl .previous {
+    padding: 0 15px 0 9px;
+    background: url(img/anchor_left_blue.png) no-repeat left center;
+    margin-left: 5px;
+}
+
+.pagination-nav-ctrl .previous.disabled {
+    padding: 0 15px 0 9px;
+    background: url(img/anchor_left_gray.png) no-repeat left center;
+    margin-left: 5px;
+    color:#CCC;
+    text-decoration:none;
+}
+
+.pagination-nav-ctrl .next {
+    padding: 0 10px 0 10px;
+    background: url(img/anchor_right_blue.png) no-repeat right center;
+    margin-left: 5px;
+}
+
+.pagination-nav-ctrl .next.disabled {
+    padding: 0 10px 0 10px;
+    background: url(img/anchor_right_gray.png) no-repeat right center;
+    margin-left: 5px;
+    color:#CCC;
+    text-decoration:none;
+}
+

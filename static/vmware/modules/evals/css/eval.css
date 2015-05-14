@@ -1,0 +1,1178 @@
+.evaltabhead {height:54px;}
+div.evaltabhead ul {
+background:none;
+    font-size: 12px;
+    font-weight: bold;
+    list-style: none outside none;
+	margin:0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+#content div.evaltabhead ul li {
+    float: left;
+	text-align:center;
+    margin:0;	
+	line-height:normal;
+/*    background:url(bg_tab2.png) no-repeat 0 0;*/
+}
+#content div.evaltabhead ul li.one {
+	line-height:31px;
+}
+div.evaltabhead ul li a {
+    background:url(/static/vmware/modules/evals/img/bg_normaltab.png) no-repeat 0 0;
+    cursor: pointer;
+    float: left;
+	height:31px;
+    padding: 12px 0px 12px 0px;
+	margin-left:0px;
+	width:134px;
+}
+div.evaltabhead ul li a span {
+background:none;
+/*    float: left;*/
+    padding: 0 12px;
+	margin-left: -20px;	
+}
+#content div.evaltabhead ul li a.first {width:144px; margin:0px; background:url(/static/vmware/modules/evals/img/bg_tab1.png) no-repeat left 0;}
+#content div.evaltabhead ul li a.last {width:124px; background:url(/static/vmware/modules/evals/img/bg_lastnormaltab.png) no-repeat 0 0;border-right:1px solid #cecece; _margin-top:0px;}
+#content div.evaltabhead ul li a:hover, div.evaltabhead ul li a.active {
+background:url(/static/vmware/modules/evals/img/bg_atabnew.png) no-repeat;
+    color: #0c8d63;
+    text-decoration: none;		
+	margin-left:-10px;
+	margin-right:0px;
+	padding-left:10px;
+}
+#content div.evaltabhead ul li.first a:hover, #content div.evaltabhead ul li.first a.active {
+	background:url(/static/vmware/modules/evals/img/bg_aftab.png) no-repeat;
+	width:144px;
+	margin:0;
+	padding-left:0px;
+}
+#content div.evaltabhead ul li.last a:hover, #content div.evaltabhead ul li.last a.active {
+/*background:url(//www.vmware.com/files/images/tpl/eval/bg_activetab.png) repeat-x;*/
+background:url(/static/vmware/modules/evals/img/bg_alasttab1.png) 0 0 no-repeat;
+}
+#content-container.wide #content {margin:-64px 0 0 -25px; padding-bottom:0px;}
+#main {
+    background: url(/static/vmware/modules/evals/img/bg_header.png) no-repeat 0 0 transparent;
+    padding: 57px 25px 32px 25px;
+    width: 940px;
+/*	margin: -64px 0 0 -25px; */
+}
+#head {width:600px; padding:0 18px;}
+#head h1{font-size:30px; color:#fff;}
+.white {color:#fff;}
+#tab_content{clear:both; }
+ul.evalhead {margin:0px; padding:0px 20px 0 0 !important; float:left; font-size:13px; width:45%; font-weight:bold;}
+
+#content .evalhead li {
+    margin: 0px 0 8px 0px;
+	list-style: none;
+	background:url(/static/vmware/modules/evals/img/li_wht.png) no-repeat 0 6px; padding: 0px 0 0px 16px;	
+}
+.dbox {padding:20px; width:100%;}
+ul.nospace {margin:0; padding:0; list-style:outside;}
+li.smallgrey {margin: 0px 0 10px 0px;
+	list-style: none;
+	background:url(/static/vmware/modules/evals/img/bullet_regular.gif) no-repeat 0 6px; padding: 0px 0 0px 16px; line-height:15px !important;}
+
+li.bigpdf{margin: 0px 0 10px 0px;
+	list-style: none;
+	background:url(/static/vmware/modules/evals/img/icn_pdf.png) no-repeat; padding: 0px 0 0px 24px; line-height:16px !important;}	
+
+#logon {background:url(/static/vmware/modules/evals/img/bg_logon1.png) no-repeat; width:288px; float:right; margin:20px 0 20px 0px;}
+.logonbottom {background:url(/static/vmware/modules/evals/img/log_btm.png) bottom left no-repeat; height:10px; width:288px; float:right;}
+#logon p{padding:20px 20px 0px 20px; margin-bottom:10px;}
+#logontab {margin:0 9px;}
+#logontab ul {list-style:none outside none; margin:0px; padding:0px; height:24px;}
+#logontab ul li {background:url(/static/vmware/modules/evals/img/bg_logontab.png) no-repeat; float:left; display:inline; height:24px; margin:0; padding:0;}
+#logontab ul li a {display:block; height:24px; padding:5px 6px 0px 12px;}
+#logontab ul li#logontab1.active {background-position: 0 0; font-weight:bold; color:#333;}
+#logontab1.active a, #logontab2.active a{font-weight:bold; color:#333;}
+#logontab ul li#logontab1 {background-position: 0 -25px; width:139px;}
+#logontab ul li#logontab2 {background-position: 0 -25px; width:131px;}
+#logontab ul li#logontab2.active {background-position:0 0; height:24px; position:24px 0;}
+
+#logon #tab_login, #logon #tab_register{background:url(/static/vmware/modules/evals/img/bg_log.png) no-repeat; min-height:200px; height:auto !important; margin:0px 9px;}
+
+#logon form {padding: 15px;}
+#logon input[type="text"], #logon input[type="password"] {width:230px; height:15px; margin-bottom:4px; padding:2px;}
+#logon .desc {font-size:11px; color:#999; width:140px; float:left;}
+#logon input.btn_submit{float:right;height:auto;width:auto;}
+
+.green {color:#0c8d63; font-weight:bold; font-size:18px;}
+
+
+.infobox .infotab {
+        padding: 0 0 16px !important;
+        border: none !important;
+        width: default !important;
+}
+#div-intro {
+        overflow:hidden;
+        width:100%;
+        padding-bottom:10px;
+}
+#div-intro_vid {
+        border:none;
+        float:left;
+        padding:0 0 0;
+        width: 30%;
+}
+#div-intro_text {
+        border:none;
+        float:left;
+        padding:0 10px 0;
+        width: 60%;
+}
+.section-head {
+        background: url('/static/vmware/modules/evals/img/bg-vsphere-section-head.gif') repeat-x;
+        margin-top: 20px;
+        overflow:hidden;
+        width: 95%;
+        border: 1px solid #BCBCBC;
+        height:35px;
+}
+.section-head-left {
+        float: left;
+        width: auto;
+        color: #666666; 
+        font-weight: bold;
+        padding: 11px 5px 5px 25px;
+        background-color: transparent;
+}
+.section-head-right {
+        float: right;
+        width: 95px;
+        text-align: right;      
+        color: #666666; 
+        font-weight: bold;
+        padding: 11px 5px 5px 25px;
+        background-color: transparent;
+}
+.section-content {
+        display: none;
+        width:95.2%;
+		background:none;
+}
+.p-section-content {
+        padding:15px;
+        border-left: 1px solid #D6D6D6;
+        border-right: 1px solid #D6D6D6;
+        border-bottom: 1px solid #D6D6D6;
+}
+.title-section-content {
+        background-color:#F6F6F6;
+        overflow:hidden;
+        border-left: 1px solid #E4E4E4;
+        border-right: 1px solid #E4E4E4;
+        border-bottom: 1px solid #E4E4E4;
+}
+.title-section-content-left {
+        float: left;
+        width: 60%;
+        color: #666666;
+        font-weight: bold;
+        padding:0;
+        background-color:transparent;
+}
+.title-section-content-left p {
+        padding: 10px 15px;
+        margin: 0px;
+}
+.title-section-content-right {
+        float: right;
+        width: 40%;
+        text-align: right;
+        color: #666666;
+        font-weight: normal;
+        padding:0;
+        background-color:transparent;
+}
+.title-section-content-right p {
+        padding: 10px 15px;
+        margin: 0px;
+}
+.body-section-content {
+        padding:15px;
+        overflow:hidden;
+        border-left: 1px solid #D6D6D6;
+        border-right: 1px solid #D6D6D6;
+        border-bottom: 1px solid #D6D6D6;
+}
+.body-section-content-left {
+        float: left;
+        padding: 0 16px 0 0;
+}
+.body-section-content-right {
+        float: left;
+        min-height:130px;
+        width: 60%;
+}
+.body-section-content-right-ul {
+        line-height:11px;
+        list-style-image:none;
+        list-style-position:outside;
+        list-style-type:square;
+        padding:0 20px 10px;
+}
+.collapsed { background: url(/static/vmware/modules/evals/img/boxgrey_plus.gif) no-repeat 6px 11px; }
+.expanded {background: url(/static/vmware/modules/evals/img/boxgrey_minus.gif) no-repeat 6px 11px; }
+div.dbox div.body {padding:10px 0px; background:none !important;}
+#content li { 
+        line-height:14px;
+        margin:10px 1px 10px 0; 
+}
+
+.dbox{background: url(/static/vmware/modules/evals/img/bg_cont.png) no-repeat;}
+.dbox hr {/*width:885px !important*/; margin:10px 0 !important; border-color:#c4ced4 !important;}
+.dbox h3 {font-size:18px; color:#0c8d63; font-weight:normal;margin: 0 0 14px;}
+.dbox .pdf {background: url(/static/vmware/modules/evals/img/icn_pdf.png) no-repeat 0 0; padding: 2px 0px 2px 24px; line-height:24px;}
+
+.dbox .colleft{float:left;width:50%;}
+.dbox .colright{float:right;width:49%;}
+.dbox .colleft p, .dbox .colright p {width:95%;}
+.colleft h4, .colright h4 {font-size:12px;}
+.dbox .col1, .dbox .col2, .dbox .col3 {float:left; width:32%; padding-right:5px;}
+.dbox .cols {
+    border: 1px solid #D6D6D6;
+    border-top: none;
+    overflow: hidden;
+    padding: 15px;}
+div.tab {padding:10px 45px 16px 10px !important;}	
+.evalloginbox .strip {padding:0 10px 0 20px !important;}
+.vsphere-section-head {width:99% !important;}
+.vsphere-section-content {width:99.3% !important;}
+.vsphere-body-section-content-left  {width:73% !important;}
+
+ul.evalhead a {color:#fff;}
+#head p {font-size: 12px; color:#fff;}	
+#head div p strong {color:#387C2C; font-size:18px; font-weight:bold;}
+#hinfo {position:absolute; right:28px; top:160px;}
+#hinfo a {color:#fff; font-size:11px; }
+#breadcrumbs {
+    left: 7px !important; 
+    padding: 4px 40px;
+    top: 190px !important;
+    z-index: 1 !important;
+}
+#breadcrumbs a {
+    background: url("/static/vmware/modules/downloads/img/slash.png") no-repeat scroll left 4px transparent;
+    color: #999 !important;
+    padding-left: 8px;
+    padding-right:3px;
+}
+#breadcrumbs a:first-child {
+    background: none repeat scroll 0 0 transparent;
+    color: #999999 !important;
+    padding: 0;
+}
+.evalloginbox {margin-top:24px !important;}
+#hinfo img {vertical-align: middle; margin-bottom: .25em;}
+
+#tab_ssr_help .main-container .pagination-wrapper {
+	width : auto;
+}
+
+#tab_ssr_help .pagination-wrapper .results-per-page {
+    margin-left: 0px;
+}
+
+#tab_ssr_help .pagination-nav-ctrl li {
+	margin-top:0px;
+}
+
+/* ########################### .com redesign changes Aug2013 ################################ */
+
+/* ######### EVALS PAGE FIXES ########## */
+#logon {
+    background:none !important;
+    background-color: #E6E6E6 !important;
+    width:330px !important;
+}
+
+#logontab {
+    margin:30px 18px 0 !important;
+    border: 1px solid #D0D0D0 !important;
+    border-radius: 3px;
+}
+
+#logontab ul {
+    height: 40px !important;
+}
+
+#logontab ul li#logontab1, #logontab ul li#logontab2 {
+    width:145px !important;
+    height:40px !important;
+    background:none;
+    background-image: url("../../../common/css/img/logon-normal-grad.png");
+    background-repeat: repeat-x;
+    background-position:0 !important;
+}
+
+#logontab ul li#logontab1{
+    border-radius: 3px 0 0 3px;
+}
+
+#logontab ul li#logontab2{
+    border-radius: 0 3px 3px 0;
+}
+
+#logontab ul li a {
+    font-size: 14px;
+    font-weight: 600 !important;
+    padding: 13px 0 13px 16px !important;
+    color:#363636;
+}
+
+#logontab1.active a, #logontab2.active a {
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+}
+
+
+#logontab ul li#logontab2.active {
+    background-position: 0 0;
+    height: 40px;
+    width:146px;
+}
+
+#logontab ul li.active{
+    background: url("../../../common/css/img/logon-active-grad.png") !important;
+    background-repeat: repeat-x;
+    border-radius: 5px;
+}
+
+#logon p strong {
+    font-weight:500;
+    color:#363636;
+}
+
+#logon p {
+    margin-bottom: 10px;
+    margin-top: 65px;
+    padding: 15px 18px 0;
+    position: absolute;
+    width: 290px;
+    line-height: 16px;
+}
+
+#logon #tab_login, #logon #tab_register {
+    margin: 17px 2px 0 !important;
+    background: none !important;
+}
+
+.logonbottom {display:none;}
+
+input[type="text"]#FirstName_Register_Tab {
+    border: 1px solid #D0D0D0 !important;
+    height: 29px !important;
+    padding: 0 0 0 10px !important;
+    width: 128px !important;
+}
+input[type="text"]#LastName_Register_Tab  {
+    width: 128px !important;
+    border: 1px solid #D0D0D0 !important;
+    height: 29px !important;
+    padding: 0 0 0 10px !important;
+}
+
+input[type="text"]#Email_Register_Tab {
+    width: 281px !important;
+    border: 1px solid #D0D0D0 !important;
+    height: 29px !important;
+    padding: 0 0 0 10px !important;
+}
+
+#evalRegisterTabId div:nth-child(11) { /* First Name */
+    width:140px !important;
+    float:left;
+    margin-right:13px;
+}
+
+#evalRegisterTabId div:nth-child(12) { /* Last Name */
+    width:140px !important;
+    float:left;
+}
+
+#evalRegisterTabId div:nth-child(13) { /* Email */
+    margin-top:45px;
+}
+
+
+#evalRegisterTabId div:nth-child(14){ /* VMWare Partner */
+    width:202px !important;
+    margin-top: 11px;
+}
+
+#evalRegisterTabId div:nth-child(14) label { /* VMWare Partner Label */
+    font-size: 14px !important;
+    color:#363636;
+}
+
+#evalRegisterTabId div:nth-child(16) { /* Continue Button */
+    float:left !important;
+    margin-left: -6px;
+}
+
+#evalRegisterTabId #button-register-tabcenter {
+    font-size: 12px;
+}
+
+#logon #tab_register {
+    margin: 17px 0 0 !important;
+}
+
+#logon form {
+    padding: 29px 18px 8px !important;
+}
+.footerbar p{
+    color: #999 !important;
+}
+
+#logon #tab_login input[type="text"], #logon #tab_login input[type="password"]{
+    border: 1px solid #D0D0D0 !important;
+    height: 29px !important;
+    padding: 0 0 0 10px !important;
+    width: 240px !important;
+}
+
+#logon .ctrlHolder .radio-button-wrapper label{width:80px !important; white-space: nowrap;}
+
+#logon #tab_login #evalLoginId div:nth-child(12) { /* Forgot Password */
+    font-size:14px;
+}
+
+#logon #tab_login #evalLoginId #rememberMe{ /* Checkbox */
+    margin-top: 2px;
+}
+
+#logon #tab_login #evalLoginId div:nth-child(13) label{ /* Remember Me text */
+    font-size:14px;
+}
+
+
+
+/* #### Changes to the second evals page (fusion). Add eval-greenTemp class at the beggining and on the HTML tag #### */
+
+/* ##### Create an Account #### */
+.eval-greenTemp #logon {
+    border-radius: 0;
+    width:478px !important;
+    padding-top: 0px;
+}
+
+.eval-greenTemp #logontab {
+    margin:23px 24px 0 !important;
+    height:44px !important;
+    width: 428px !important;
+}
+
+.eval-greenTemp #logontab ul li{
+    padding: 0 !important;
+}
+
+.eval-greenTemp #logontab ul li#logontab1.active, .eval-greenTemp #logontab ul li#logontab2.active {
+    height: 44px !important;
+}
+
+.eval-greenTemp #logontab ul li#logontab1, .eval-greenTemp #logontab ul li#logontab2 {
+    height: 44px !important;
+    width: 214px !important;
+    margin-right: 0 !important;
+}
+
+.eval-greenTemp #content #logontab ul li a {
+    padding: 10px 6px 0 0 !important;
+}
+
+.eval-greenTemp #logon #tab_register p{
+    margin-top: 0px;
+    padding: 0;
+    position:relative;
+    font-size: 15px !important;
+    line-height: 17px !important;
+    width: 430px;
+}
+
+.eval-greenTemp #logon #tab_register {
+    margin: 17px 24px 0 !important;
+}
+
+.eval-greenTemp #logon #tab_register form {
+    padding: 23px 0 8px !important;
+}
+
+.eval-greenTemp #tab_register #evalRegisterTabId div:nth-child(13), .eval-greenTemp #tab_register #evalRegisterTabId div:nth-child(14){
+    margin-top: 0;
+}
+
+.eval-greenTemp #logon #tab_register input[type="password"], .eval-greenTemp #logon #tab_register input[type="text"] {
+    width: 182px !important;
+    border: 1px solid #D0D0D0;
+    height: 29px;
+    padding: 0 0 0 14px;
+    font-size: 14px !important;
+}
+
+.eval-greenTemp #logon #tab_register select {
+    height: 31px;
+    padding: 5px 8px 4px 10px;
+    width: 198px;
+    border: 1px solid #D0D0D0;
+    margin-bottom: 4px;
+    font-size: 14px !important;
+    background:url("../img/selectBoxGrad.png") repeat-x scroll 0 0 transparent !important;
+    color:#333 !important;
+    font-weight: 500;
+}
+
+.eval-greenTemp #tab_register .leftfields {
+    margin-right: 32px;
+    width: 198px;
+}
+
+.eval-greenTemp #tab_register .leftfields div span.topalign {
+    display:none;
+}
+
+.eval-greenTemp #tab_register .rightfields {
+    margin-right: 0;
+}
+
+.eval-greenTemp #tab_register #evalRegisterTabId div:nth-child(20){
+    margin-top: 18px;
+    margin-bottom: 9px !important;
+}
+
+.eval-greenTemp #tab_register .touDescription {
+    float:none;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 21px;
+    width: 407px;
+}
+
+.eval-greenTemp #tab_register .touCheckbox {
+    margin-right: 8px !important;
+    margin-top: 3px;
+}
+.eval-greenTemp #logon #tab_register .tryfree {
+    font-size: 18px;
+    width:250px;
+    padding-top: 2px !important;
+    padding-left: 21px !important;
+}
+
+.ie .eval-greenTemp #logon #tab_register .tryfree {width:270px;padding-right:30px;}
+.ie9 .eval-greenTemp #logon #tab_register .tryfree,
+.safari .eval-greenTemp #logon #tab_register .tryfree {width:280px;}
+.ie8 .eval-greenTemp #logon #tab_register .tryfree, 
+.ie7 .eval-greenTemp #logon #tab_register .tryfree {width:290px;}
+
+/* --------------------------- */
+
+/* ##### I Have an Account ###### */
+
+.eval-greenTemp #logon #tab_login{
+    margin:17px 24px !important;
+}
+
+
+.eval-greenTemp #logon #tab_login p {
+    margin-top: 0;
+    padding: 0 !important;
+    font-size: 15px;
+    width: 430px;
+}
+
+.eval-greenTemp #logon #tab_login #altEvalLoginId {
+    padding: 29px 0 8px !important;
+}
+
+.eval-greenTemp #logon #tab_login #altEvalLoginId .left {
+    width:250px;
+}
+
+.eval-greenTemp #logon #tab_login #altEvalLoginId .rightbutton {
+    width:140px;
+    margin-right: 36px;
+    margin-top: 6px;
+}
+
+.eval-greenTemp #logon #tab_login #altEvalLoginId .rightbutton input {font-size: 18px;}
+
+
+.eval-greenTemp #logon #tab_login input[type="text"], .eval-greenTemp #logon #tab_login input[type="password"] {
+    border: 1px solid #D0D0D0;
+    float: left;
+    font-size: 14px !important;
+    height: 29px;
+    margin-right: 5px;
+    padding: 0 0 0 14px;
+    width: 180px !important;
+}
+
+.eval-greenTemp #logon #tab_login #altEvalLoginId .left #forgot_pwd_link{ /* Forgot Password */
+    font-size:14px;
+}
+
+.eval-greenTemp #logon #tab_login #altEvalLoginId .left #rememberMe{ /* Checkbox */
+    margin-top: 2px;
+}
+
+.eval-greenTemp #logon #tab_login #altEvalLoginId .left div:nth-child(17) label{ /* Remember Me text */
+    font-size:14px;
+}
+
+/*------------------------------------------------------------------*/
+
+.touErrorDescription {
+    float:none !important;
+    font-size: 14px !important;
+    padding-left: 21px;
+}
+
+.touErrorCheckbox {
+    margin-top:3px;
+}
+
+/* IE fixes */
+
+.ie8 #logon #tab_register input[type="password"], .ie8 #logon #tab_register input[type="text"] {line-height: 29px !important;}
+.ie8 #logon #tab_login input[type="text"], .ie8 #logon #tab_login input[type="password"] {line-height: 29px !important;}
+.ie8 #logontab ul li a, .ie7 #logontab ul li a {font-size: 13px !important;}
+.ie7 #logon p{padding-left:0;line-height: 16px}
+.ie7 #password{margin-right:15px !important;}
+.ie7 #rememberMe{margin-top:-2px !important;background-color:transparent;}
+.ie8 #evalRegisterTabId div.ctrlHolder, .ie7 #evalRegisterTabId div.ctrlHolder {float:left;} 
+.ie8 input[type="text"]#FirstName_Register_Tab, .ie7 input[type="text"]#FirstName_Register_Tab {margin-right:13px;}
+.ie8 input[type="text"]#LastName_Register_Tab, .ie7 input[type="text"]#LastName_Register_Tab {margin-right:0px;}
+.ie7 input[type="text"]#FirstName_Register_Tab, .ie7 input[type="text"]#LastName_Register_Tab, 
+.ie7 input[type="text"]#Email_Register_Tab, .ie7 #username, .ie7 #password {line-height: 28px;}
+.ie7 input[type="text"]#Email_Register_Tab {margin-top:10px;margin-bottom: 10px;}
+.ie7 input[type="radio"] {margin-top:-4px;background-color:transparent;}
+.ie9 input[type="radio"], .ie8 input[type="radio"] {background-color:transparent;}
+.ie7 div.radio-button-wrapper{width:300px;}
+.ie7 #button-register-tabcenter {margin-left:-140px;}
+.ie8 #button-register-tabcenter {margin-left: 0;}
+
+
+/* ###################### Templates changes ########################## */
+
+#content #main {
+    background:none !important;
+    width:1050px !important;
+    padding:96px 45px 0;
+}
+
+#head{padding:0 32px 0 0 !important;}
+
+#content #main a{color: #006990;}
+#content #main a:hover{color: #0095D3;}
+#content #main #head h1{color:#0095D3 !important;}
+
+#content #main #head h1 {
+    padding-top:0;
+    font-size: 40px !important;
+    font-weight: 300;
+    margin-top:-4px !important;
+    margin-bottom: 24px;
+    line-height: 40px;
+}
+
+.dbox hr {
+    width:1050px;
+}
+
+/* ####### */
+
+/* ## vSphere (White Template) changes ## */
+
+#content #main #head p.white strong {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 34px;
+    color:#666;
+}
+
+#head div.tryflex{
+    background:none;
+    color:#387C2C;
+    border-radius: 0;
+    padding:0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+div.dbox {
+    background:none !important;
+    padding:0 !important;
+}
+
+div.tab {
+    padding: 10px 45px 16px 0 !important;
+}
+
+div.tab h2 {color:#387C2C;font-size:28px}
+
+div.tab h3 {color:#387C2C;font-size:26px}
+
+div.evaltabhead ul {
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #CCC;
+}
+
+div.evaltabhead ul li a {
+    background: url("../img/normalarrow.png") no-repeat scroll right 33% #F1F1F1 !important;
+    width:auto !important;
+    padding:11px 17px 11px 4px !important;
+    height:31px !important;
+    min-width: 110px;
+}
+
+div.evaltabhead ul li a:hover, div.evaltabhead ul li.first a:hover, div.evaltabhead ul li.first a.active, 
+div.evaltabhead ul li.last a:hover, div.evaltabhead ul li.last a.active, div.evaltabhead ul li a.active {
+    background: url("../img/hoverarrow.png") no-repeat scroll right 33% #0095D3 !important;
+    color:#FFF !important;
+    margin-left: auto !important;
+}
+
+div.evaltabhead ul li.first {
+    padding-left:0;
+    line-height:normal !important;
+}
+
+div.evaltabhead ul li {
+    padding-left:5px;
+    min-height: 53px;
+    line-height:normal !important;
+}
+
+div.evaltabhead ul li a span {
+    margin-left:0;
+    padding:0;
+}
+
+#content div.evaltabhead ul li a.last {
+    border:none !important;
+}
+
+#hinfo {
+    right:45px;
+    top:25px;
+}
+
+#content #main #head div div a{
+    color:#006990 !important;
+    font-weight: 400 !important;
+}
+
+#content #main #head div div a:hover{
+    color:#0095D3 !important;
+}
+
+.dbox .body .col1 h3, .dbox .body .col2 h3, .dbox .body .col3 h3{
+    color:#006990 !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    padding-top: 0px !important;
+}
+
+#tab_content #hinfo p.white strong{
+    color: #666;
+    font-size: 17px;
+    font-weight: 600;
+    padding-right: 7px;
+}
+#hinfo {
+    right: 37px !important;
+    top: 64px !important;
+}
+
+#tab_content #hinfo p.white strong a {
+    background: url("../img/email.png") no-repeat scroll left 0 transparent;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: -32px;
+    position: absolute;
+    right: 6px;
+    text-indent: 32px;
+}
+.ie7 #tab_content #hinfo p.white strong a{right:10px;}
+
+    /* Cross browser changes */
+.ie9 #content div.evaltabhead ul li {margin-bottom:-2px;}
+.ie8 #content div.evaltabhead ul li, .ie7 #content div.evaltabhead ul li {margin-bottom:-6px;}
+.ie8 #content div.evaltabhead ul, .ie7 #content div.evaltabhead ul {font-size:12px}
+.ie8 #content #main #head h1, .ie7 #content #main #head h1  {font-size:38px !important;}
+.ie8 #content #main #head p.white strong, .ie7 #content #main #head p.white strong {font-size:27px;}
+.chrome #tab_content #hinfo p.white strong a{margin-top:-45px;}
+    /* ## */
+
+/* ###### */
+
+/* ## fusion4 (Green Template) changes ## */
+
+.eval-greenTemp #content #main #head h1 {margin-bottom: 36px;}
+
+.eval-greenTemp #content #main {padding:119px 45px 0;}
+
+.greenBg {
+    background: url("../img/greenTemp-bg.png");
+    height: 600px;
+    margin-bottom: 0;
+    margin-left: -45px;
+    width: 1140px;
+}
+
+.secondCont {
+    margin-top: -558px;
+    position: absolute;
+    width: 531px;
+}
+
+.eval-greenTemp #head {
+    width:540px !important;
+}
+
+.secondCont h2 {
+    color: #FFFFFF !important;
+    font-size: 24px !important;
+    margin-bottom: 0 !important;
+    margin-top:20px;
+}
+.secondCont p a:hover{color: #0095D3 !important;}
+
+.eval-greenTemp #head .evalhead li a{
+    font-size: 15px;
+}
+
+.eval-greenTemp #content #head p {
+    font-size: 16px;
+}
+
+.eval-greenTemp #content #main #head p.white strong {
+    color:#FFF !important;
+    font-weight: 400;
+}
+
+.eval-greenTemp #content #main #head div div a, #content #main #head div.secondCont ul.evalhead li a{color:#FFF !important;}
+#content #main #head div.secondCont p, #content #main #head div.secondCont strong {color:#FFF;}
+
+    /* Cross browser changes */
+.ie .eval-greenTemp #logon #tab_register select {margin-bottom:4px}
+.ie7 .eval-greenTemp #content #logon {position:absolute;margin-left: 573px !important;}
+.ie8 .eval-greenTemp #touCheckboxID {margin-top:15px;}
+.ie8 .eval-greenTemp #touDescription {margin-top:10px;}
+.ie7 .eval-greenTemp input[type="text"], .ie7 .eval-greenTemp input[type="password"]  {line-height:28px !important;}
+.ie7 .eval-greenTemp #logon #tab_register select {margin-bottom:0px}
+.ie7 #tou{margin-top:25px;}
+.ie7 div.#touDescription, .ie7 div.touDescription{margin-top:-20px;}
+.ie7 .eval-greenTemp #logon .ctrlHolder label{margin-top:-18px;margin-left: 20px;}
+.ie7 .eval-greenTemp #password {margin-bottom: 10px;}
+.ie8 .page-b-footer-pattern {z-index:0;}
+.ie8 .category-links {z-index:1 !important;}
+.ie7 #content-container.wide, .ie7 body #container #content-container {margin-top:30px !important;}
+.ie7 .ad-nav{top:-15px !important;}
+.ie7 #isite-tools{top:-17px !important;}
+.ie7 #search-form{top:-16px !important;}
+    /* ## */
+
+/* ###### */
+
+#title_para{
+    padding-top: 10px;
+    font-size: 32px !important;
+    line-height: 36px !important;
+    color: #919191 !important;
+    font-family: "proxima-nova", "Arial", sans-serif !important;
+    font-weight: 300;
+}
+
+#contact{
+    float: right;
+}
+#user_details{
+    width: 334px;
+    height: 121px;
+    background: url(/static/vmware/modules/evals/img/user_contact_full_bg.png);
+    background-repeat: no-repeat;
+}
+#contact_picture{
+    width:63px;
+    height:62px;
+    float:left;
+    background: url(/static/vmware/modules/evals/img/user_contact_bg.png);
+    text-align: center;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+}
+
+#contact_picture img{
+    padding-top: 12px;
+    padding-right: 4.5px;
+}
+#contact_name{
+    width: 230px;
+    float: right;
+    margin-top: 20px;
+}
+#welcome{
+    font-size: 18px !important;
+    padding-top: 5%;
+    color: #919191 !important;
+}
+#logout{
+    margin-top: 3% !important;
+    font-weight: bold;
+    padding-top: 4%;
+    color: #0095D3 !important;
+    font-size: 16px !important;
+}
+
+#separator{
+    background: url(/static/vmware/modules/evals/img/separator.png);
+    background-repeat: repeat-x;
+    border: 0px none;
+    height: 3px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+
+}
+.hol_box_container h1{
+    clear: both;
+    padding-top: 30px;
+}
+.disabled_container{background-color:#DCDEDD;opacity: 0.20;}
+.boxes h2{
+    font-size: 24px;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-right: 25px;
+    height: 83px;
+    color: #FFFFFF;
+}
+.boxes p{
+    font-size: 15px !important;
+    padding-left: 25px;
+    padding-top: 0px;
+    padding-right: 25px;
+    line-height: 20px;
+    height: 72px;
+    color: #FFFFFF !important;
+    margin-top: 12px;
+}
+.box_footer{
+    padding-bottom: 0%;
+    padding-left: 25px;
+    height: 50px;
+    width: 282px;
+    *height: 30px;
+    margin-top: 0px;    
+    margin-bottom: 9px;
+    font-size: 14px !important;
+}
+.launch{
+    width: 281px\9\0;
+    *width: 282px;
+    width: 281px;
+    height: 31px;
+}
+.launch_btn {
+    display: block;
+    float: right;
+    text-align: right;
+    width: 100px;
+}
+.footer_text span{
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    text-align: left;
+    width: 175px;
+    margin-top: 9px;
+}
+.box_footer input {
+    vertical-align: middle;
+    background: -moz-linear-gradient(center top ,#f3f3f3 50%, #f9f9f9 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#f3f3f3), color-stop(100%,#f9f9f9)) !important;
+    color: #797979 !important;
+    font-size: 15px !important;
+    font-weight: normal !important;
+     padding: 6px 8px !important;
+	line-height:15px !important;
+    background: #f9f9f9 !important;
+}
+.box_footer input::-moz-focus-inner { 
+	margin-top:-1px; 
+	margin-bottom: -1px; 
+	margin-left: -2px; 
+	margin-right: -2px; 
+}
+.box_footer .separator{
+    height: 3px;
+    width: 252px;
+    width: 258px\9;
+    margin-left: 0px;
+    border: 0px none !important;
+    background: url(/static/vmware/modules/evals/img/hr_line_full.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 9px;
+}
+
+h1{margin-top: 1%;}
+
+.boxes{
+    float: left;
+    margin-top: 28px;
+    background-repeat: no-repeat;
+    width:331px;
+    height: 271px;
+}
+.box_first{
+    clear: both;
+}
+.box_left{
+    margin-left: 28px;
+}
+.box_dark_blue{
+    background: url(/static/vmware/modules/evals/img/blue_dark_box.png);
+}
+.box_green{
+    background: url(/static/vmware/modules/evals/img/green_box.png);
+}
+.box_blue{
+    background: url(/static/vmware/modules/evals/img/blue_box.png);
+}
+.chrome #tab_content #hinfo p.white strong a{
+        margin-top: -29px\9;
+}
+.hol_container_spacer{
+    height: 85px;
+    clear: both;
+}
+
+/*****  For expired container *****/
+.cntExp{
+    background-color:#f1f6f8 ;
+    background-repeat: no-repeat;
+    width: 688px;
+}
+.alrtImg{
+	float:left;
+	height:157px;
+	padding:40px 27px 0;
+}
+.alrtBox{float:left; width:538px; padding:37px 27px 20px 0;}
+.alrtTitle{color:#333;font-size:21px}
+.alrtTxt{color:#666;font-size:15px;padding-top:7px;}
+#threebtns .button {
+    background: linear-gradient(to bottom, #0095d3 0%, #007fb4 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 2px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.21);
+    color: #FFF !important;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin: 5px 0;
+    padding: 6px 0;
+    text-align: center;
+    width:165px;
+
+}
+#threebtns{
+    margin-top: 18px;
+
+}
+.marLftBtn{margin-left: 10px !important;}
+.holHeadM{width:100%;height:50px;}
+.holHeadCnt{padding:0 0 10px;font-size:20px;font-weight:bold;width:100%;text-align:center;}
+.holHeadSml{font-weight:normal;padding-left:20px}
+.labCont{height:500px;width:100%;border:none;}
+#holErr{margin-top:25px}
+#simplemodal-container a.modalHolClose {
+    background: url("/static/vmware/modules/evals/img/icn_close.png") no-repeat scroll 0 top transparent;
+    cursor: pointer;
+    display: inline;
+    height: 17px;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 17px;
+    z-index: 3200;
+}
+
+.box_footer.grey_out input{
+color:#b3b3b3 !important;
+}
+
+#silentRegDiv.alert-box-wrapper{
+margin: 0 0 15px !important;
+padding: 8px 8px 0 16px !important;
+background-color: #fff9ea;
+border: 1px solid #cccccc;
+color: #000000;
+border-radius: 3px;
+clear: both;
+margin: 40px 0;
+padding: 8px 8px 5px 5px !important;
+}
+
+#silentRegDiv .confirmMsg{
+padding: 0 2px 0 15px;
+position: relative;
+background: url("/static/vmware/modules/evals/img/icon-helpinfo.gif") no-repeat scroll 0px 1px transparent;
+margin: 0 5px !important;
+color: #0c8d63;
+display: inline-block;
+font-weight: bold;
+margin: 5px;
+min-height: 24px;
+}
+#silentRegDiv .alertTitle{
+color: #000;
+font-weight: normal;
+margin-top: 3px;
+padding-left: 18px;
+}
+#silentRegDiv .alertTitle p{font-size:13px !important;}
+#contact{*width:32%;}
+
+#alertAgentDiv .alertAgentMsg {
+    background: url("/static/vmware/modules/evals/img/alert_icon.png") no-repeat scroll 0 1px transparent;
+    color: #0c8d63;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 5px !important;
+    min-height: 24px;
+    padding: 0 2px 0 15px;
+    position: relative;
+}
+
+#alertAgentDiv.alert-box-wrapper {
+    background-color: #fff9ea;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    clear: both;
+    color: #000000;
+    margin: 0 0 15px !important;
+    padding: 8px 8px 5px 5px !important;
+}
+
+#alertAgentDiv .alertTitle{
+color: #000;
+font-weight: normal;
+margin-top: 3px;
+padding-left: 18px;
+}
+#alertAgentDiv .alertTitle p{font-size:13px !important;}

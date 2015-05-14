@@ -1,0 +1,91 @@
+<article class="container-fluid">
+    <div class="row margin-top-30 margin-bottom-30" ng-if="addOnFlag == 0">
+        <div class="col-md-12">
+            <span class="form-required">{{globalVars.noAddOnAvailable}}</span>
+        </div>
+    </div>
+    <div ng-if="addOnFlag == 1">
+        <ul class="list-group serviceDataUl addontable">
+          <li class="row padding-10 addontable-head">
+            <div class="col-md-6 addon-separator"><small>{{globalVars.subscriptionServiceAddon}}</small></div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-sm-2 col-xs-6 addon-separator"><small>{{globalVars.quantity}}</small></div>
+                <div class="col-sm-3 col-xs-6 addon-separator"><small>{{globalVars.billingType}}</small></div>
+                <div class="col-sm-4 col-xs-6 addon-separator"><small>{{globalVars.billingRate}}</small></div>
+                <div class="col-sm-3 col-xs-6"><small>{{globalVars.extendedCost}}</small></div>
+              </div>
+            </div>
+          </li>
+          <li class="margin-top-20 items_wrap" data-ng-repeat="addOnKey in notSorted(addOnData.addons)" data-ng-init="addOnsData = addOnData.addons[addOnKey]">
+            <div class="row"><div class="col-md-12"><label ng-bind-html="addOnKey"></label></div></div>
+            <div data-ng-repeat = "(addOnIndex,addOns) in addOnsData">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12"><span ng-bind-html="addOns[5]"></span></div>
+                        </div>
+                        <div class="row margin-top-10" ng-if="addOns[7][5] != null || addOns[7][5] != undefined">
+                            <div class="col-md-12">                                            
+                                <div class="row">
+                                    <ul class="col-xs-11 col-xs-offset-1">
+                                        <li>
+                                            <span class="bg-support"></span>
+                                            <span ng-bind-html="addOns[7][5]"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-md-6" ng-if="addOns[8].selectedType.paymentTypeID != '0' && addOns[8].dataExist">
+                        <div class="row">
+                            <div class="col-sm-2 col-xs-6">
+                                 <input type="text" style="max-width: 80px;" maxlength="{{globalVars.quantitySize}}" class="form-control text-left" data-ng-model="addOns[8].selectedQty" ng-change="changeAddon(addOnKey, addOns, addOnIndexs)" ng-blur="checkQty(addOns[8].selectedQty, addOns)" ng-style = "addOns[8].txtError">
+                            </div>
+                            <div class="col-sm-3 col-xs-6">
+                                <span ng-if="addOns[3].length > 1">
+                                    <select class="form-control autoWidth" data-ng-model="addOns[8].selectedType" ng-change="changeAddon(addOnKey, addOns, addOnIndex)" ng-options="duration.paymentTypeVal for duration in addOns[8].paymentType" data-width="auto" selectpicker="{container:'body'}">
+                                    </select>
+                                </span>
+                                <span ng-if="addOns[3].length < 2">{{addOns[8].selectedType["paymentTypeVal"]}}</span>
+                                <div class="clearfix visible-xs-block">&nbsp;</div>
+                            </div>
+                            <div class="col-sm-4 col-xs-6" ng-if="addOns[8].noCost == 'N'">
+                                <div>{{addOns[8].selectedCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{addOns[8].billingTypeLabel}}</div>
+                            </div>
+                            <div class="col-sm-3 col-xs-6" ng-if="addOns[8].noCost == 'N'">
+                                <div>{{addOns[8].extendedCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{addOns[8].billingTypeLabel}}</div>
+                            </div>
+                            <div ng-if="addOns[8].noCost == 'Y'" class="col-md-7"><span class=" form-required" ng-bind-html="globalVars.noPriceAssociated"></span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" ng-if="addOns[8].selectedType.paymentTypeID == '0' || !addOns[8].dataExist">
+                        <div class="row text-center">
+                            <div class="col-sm-2 col-xs-6"> - </div>
+                            <div class="col-sm-3 col-xs-6"> - </div>
+                            <div class="col-sm-4 col-xs-6"> - </div>
+                            <div class="col-sm-3 col-xs-6"> - </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-top-15 margin-bottom-15" ng-if="addOns[8].discountText != '' && addOns[8].discountText != undefined && addOns[8].dataExist">
+                    <div class="col-md-12">
+                        <div class="discountInfo">
+                            <span class="discountText">{{globalVars.discountsText}}:</span> <span ng-bind-html="addOns[8].discountText"></span>
+                        </div>
+                        <div ng-if="addOns[8].defaultQuantityError" class="margin-bottom-20 margin-top-10">
+                            <ul class="parsley-errors-list">
+                                <li class="parsley-required">Minimun default quantity needs to be set for this particular addOn</li>
+                            </ul> 
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            
+            
+          </li>                                   
+        </ul>    
+    </div>
+    
+</article>  

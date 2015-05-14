@@ -1,0 +1,60 @@
+//Starlight Progress Bar
+.starlight{
+  .progressBar{
+	border-top:3px solid $starlight-gray-light;
+	border-bottom:3px solid $starlight-gray-light;
+	color:#666;
+	text-transform:uppercase;
+	ol{
+		list-style: none outside none;
+		padding-left:0;
+		margin:20px 0;
+
+		> li{
+			display: inline-block;
+			font-size:16px;
+			margin:0 60px 0 0;
+			width:auto;
+			line-height:31px;
+			&.active{
+				color: #333;
+			}
+			.icons-progress-1-active,
+			.icons-progress-1-inactive,
+			.icons-progress-2-active,
+			.icons-progress-2-inactive,
+			.icons-progress-3-active,
+			.icons-progress-3-inactive,
+			.icons-progress-4-active,
+			.icons-progress-4-inactive,
+			.icons-progress-5-active,
+			.icons-progress-5-inactive,
+			.icons-progress-check-active,
+			.icons-progress-check-inactive{
+				width:28px;
+				height:21px;
+				display:inline-block;
+				float:left;
+				margin: 4px 10px 0 0;
+				padding: 0;
+			}
+			&.progress-passed{
+				color:#333;
+			}
+		}
+	}
+  }
+}
+
+/* Responsive Styling */
+@media all and (min-width:$screen-md) and (max-width:$screen-lg) {
+	.starlight .progressBar ol li{
+		margin-right: 20px;
+	}
+}
+
+@media all and (max-width:$screen-md) {
+	.starlight .progressBar ol li{
+		display: table;
+	}
+}

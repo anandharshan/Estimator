@@ -1,0 +1,162 @@
+<!-- Confirmation... -->
+<article>
+    <article>
+        <div class="bottomBorder estimator_heading ng-scope">
+            <div class="row margin-bottom-14 margin-right-0">
+                <div class="col-md-8">
+                    <h1 class="component-heading font-size-40 margin-bottom-0 ng-binding">{{globalVars.subscriptionCreditEstimator}}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="alertErrorMessageContainer margin-top-10 margin-bottom-10">
+            
+        </div>
+    </article>
+</article>
+<article ng-if="showLoader">
+      <div class="row margin-top-20 margin-bottom-20">
+          <div class="col-md-8-12 text-center">
+              <div class="ajaxSpinner">&nbsp;</div>   
+          </div>
+      </div>
+</article>
+<article ng-if="!showLoader" class="container-fluid">
+    <div class="row margin-top-20 margin-bottom-30">
+        <div class="col-md-8">
+            <div class="row margin-top-10">
+                <div class="col-md-12">{{globalVars.sce_p1}}</div>
+            </div>
+            <div class="row margin-top-10">
+                <div class="col-md-12 font-size-14">{{globalVars.sce_p2}}</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+             <div class="margin-top-10 padding-left-10">
+                <div class="row box-bgBlue estimatorBlueBox">
+                    <div class="col-md-12 padding-left-0 padding-right-0">
+                        <div>
+                           <h4 class="calculationBoxHeader18 estimatorCalculationBox">{{globalVars.totalEstimatedCredits}}</h4>
+                           <span class="intro-text estimatorIntroText">{{(totalServicesCost(serviceData.services))  | number : 0}}</span>
+                           <div class="margin-top-15 estimated_credits_sku"><b>SKU:</b> <span>{{levelSKU()}}</span><span class="infoIcon"><a href="javascript:void(0);" class="info" tooltip-trigger="{{{true: 'mouseenter', false: 'never'}['']}}" tooltip-placement="right" data-tooltip-html-unsafe="{{globalVars.smryToolTip}}">&nbsp;</a></span></div>
+                           <div class="margin-top-5 text-right"><span class="small creditConversionInfo">{{tokenValue}} {{globalVars.credit}} = {{currencySymbol}}{{msrpValue | number : 0}} MSRP</span></div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</article>
+
+
+<article ng-if="!showLoader" class="container-fluid estimator_accordion_container">
+  <div class="row" ng-if="removeAjaxLoader">
+    <span class="col-md-12 text-center margin-bottom-20">
+        <div class="ajaxSpinner">&nbsp;</div> 
+    </span>  
+  </div>
+  <div class="panel-group accordion" id="starlight-accordion">
+    <div class="panel panel-default collapsed " data-ng-repeat="service in serviceData.services" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}">
+        <div class="panel-heading cursor accordion_heading" ng-click="colapse($index);">
+          <span class="glyphicon {{ $index == 0  ? 'glyphicon-chevron-down' : 'glyphicon-chevron-right'}} openaccordion" href="#collapse{{$index}}" data-toggle="collapse" data-parent="#accordion" style="position: absolute;
+    top: 15px;"></span>
+            <div class="panel-title row">
+              <div class="col-md-9 padding-left-55">{{globalVars.estimate}} {{serviceData.services.length - $index}}: <b>{{service.core.serviceName}}</b> - {{service.core.serviceType}} </div>
+              <div class="col-md-3 text-right padding-right-45">{{globalVars.credits}}: {{(costOfService(service)) | number : 0}}</div>
+              <a class="icons-close removeAddon removeService" ng-click="removeService($event,$index)"  ng-disabled="removeAjaxLoader" stop-event='click'>&nbsp;</a>
+            </div>
+        </div>
+        <div id="collapse{{$index}}" class="panel-collapse tokensAccordion collapse {{ $index == 0  ? 'in' : ''}}">
+          <div class="panel-body table accordion-data-padding">
+                <!--Heading Info -->
+                <div class="row table-head">
+                  <div class="col-md-12 padding-left-0 padding-right-0">
+                    <div class="row">
+                      <div class="col-sm-5 col-md-7">{{globalVars.service_Details}}</div>
+                      <div class="visible-xs-block">&nbsp;</div>
+                      <div class="col-xs-3 col-sm-2 col-md-1">{{globalVars.billing_Type}}</div>
+                      <div class="col-xs-3 col-sm-2 col-md-1">{{globalVars.term}}</div>
+                      <div class="col-xs-3 col-sm-1 col-md-1">{{globalVars.qty}}</div>
+                      <div class="col-xs-3 col-sm-2 col-md-1 text-right">{{globalVars.credits}}</div>
+                    </div>
+                  </div>
+                </div>
+                <!--Core Info -->                                    
+                <div class="row table-row">
+                  <div class="col-md-12 padding-left-0 padding-right-0">
+                    <b>{{globalVars.core_Service}}</b>
+                    <div class="row">
+                      <div class="col-sm-5 col-md-7">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="row">
+                              <div class="col-md-12"><span>{{service.core.coreTierInfo}}</span></div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12"><span>{{service.core.longSkuDescription}}</span></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="visible-xs-block">&nbsp;</div>
+                      <div class="col-xs-3 col-sm-2 col-md-1">{{getbillingTypeSting(service.core.defaultPaymentType)}}</div><!--TODO mapping of payment type-->
+                      <div class="col-xs-3 col-sm-2 col-md-1">{{service.core.remainingTerm[2]}} {{globalVars.month_s}}</div>
+                      <div class="col-xs-3 col-sm-1 col-md-1">1</div><!--Hard coded to 1 because there can be only one -->
+                      <div class="col-xs-3 col-sm-2 col-md-1 text-right">{{ceilCost(service.core.extendedCost) | number : 0 }}</div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <!--Add ON Info -->
+                <div class="row table-row" data-ng-repeat="addOnKey in keysOfObj(service.addons)" data-ng-init="addOnsComputeData = service.addons[addOnKey]" ng-if = "service.addons[addOnKey].length > 0">
+                      <div class="col-md-12 padding-left-0">
+                        <b>{{addOnKey}}</b> <span class="addOnTag">{{globalVars.add_on}}</span>
+                      </div>
+                      <div data-ng-repeat = "(addOnIndex,addOn) in addOnsComputeData" class= "row">
+                      <div class="col-sm-5 col-md-7">
+                        <div class="row">
+                            <div class="col-md-12"><span ng-bind-html = "addOn[3]"></span></div><!--Desciption-->
+                            <div class="col-md-12"><span ng-bind-html = "addOn[4]"></span></div><!--Desciption Detailed-->
+                        </div>
+                        <div class="row margin-top-10" ng-if="addOn[7][3] != null || addOn[7][3] != undefined">
+                            <div class="col-md-12">                                            
+                                <span class="bg-support"></span>
+                                <span ng-bind-html = "addOn[7][3]"></span><!--support Desciption-->
+                                <span ng-bind-html = "addOn[7][4]"></span><!--support Desciption Detailed-->
+                            </div>
+                        </div>
+                      </div>
+                      <div class="visible-xs-block">&nbsp;</div>
+                      <div class="col-xs-3 col-sm-2 col-md-1">{{getbillingTypeSting(service.core.defaultPaymentType)}}</div> <!--Billing Type-->
+                      <div class="col-xs-3 col-sm-2 col-md-1">{{service.core.remainingTerm[2]}} {{globalVars.month_s}}</div> <!--Term-->
+                      <div class="col-xs-3 col-sm-1 col-md-1">{{addOn[2][service.core.defaultPaymentType]}}</div><!--Quantity-->
+                      <div class="col-xs-3 col-sm-2 col-md-1 text-right">{{costofEachSingleAddOn(service.addons[addOnKey], addOnIndex) | number : 0}}
+                        <a class="icons-close removeAddon removeAddonPosition"  ng-disabled="removeAjaxLoader" ng-click="removeServiceAddOn($event,$parent.$parent.$parent.$index, addOnKey, addOnIndex)" stop-event='click'></a>
+                      </div><!--Compute Credits-->
+                      <div class="visible-xs-block">&nbsp;</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-heading cursor totalcost_Summary">
+      <span class="glyphicon glyphicon-chevron-right openaccordion" href="#collapse{{$index}}" data-toggle="collapse" data-parent="#accordion" style="visibility:hidden"></span>
+      <div class="panel-title row">
+          <div class="col-md-offset-6 text-right totalcredits">{{globalVars.totalEstimatedCredits}}: <b>{{(totalServicesCost(serviceData.services))  | number : 0}}</b></div><!--Total Cost-->
+      </div>
+    </div>
+</article>
+
+<article ng-if="!showLoader" class="container-fluid">
+  <div class="row margin-top-50 margin-bottom-30">
+    <div class="col-md-offset-6 col-md-6 text-right">
+      <span ng-if="ajaxLoader">
+          <div class="ajaxSpinner">&nbsp;</div> 
+      </span>
+      <a href="{{globalVars.exportExcelSummary}}" ng-click="exportToExcel()" ng-disabled="ajaxLoader" class="btn btn-primary margin-left-20">{{globalVars.exportToExcel}}</a>
+      <a ng-click="goToAddService()" ng-disabled="ajaxLoader" class="btn btn-default margin_right_-15 margin-left-20">{{globalVars.addAnotherService}}</a>
+    </div>
+  </div>
+</article>
+<!-- END OF Confirmation -->

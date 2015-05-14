@@ -1,0 +1,49 @@
+//
+// Pagination (multiple pages)
+// --------------------------------------------------
+//The styling here will remove border from standard bootstrap pagination component. It will also remove the background
+//color on the first 2 items of the pagination, <PREV and NEXT>, and add the proper styling
+.pagination {
+  font-size:18px;
+  > li {
+    > a,
+    > span {
+      line-height: 20px;
+      border: none;
+      font-weight: 600;
+    }
+    &:first-child,
+    &:last-child {
+      > a,
+      > span {
+        font-size:16px;
+        &:hover,
+        &:focus {
+          color: $starlight-blue;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      cursor: default;
+    }
+    &:first-child,
+    &:last-child {
+      > a,
+      > span {
+        cursor: default;
+        &:hover,
+        &:focus {
+          color: $pagination-disabled-color;
+        }
+      }
+    }
+  }
+}

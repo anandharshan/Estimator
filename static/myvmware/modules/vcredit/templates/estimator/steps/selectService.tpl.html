@@ -1,0 +1,62 @@
+<div ng-if="showLoader">
+    <div class="row margin-top-20 margin-bottom-20">
+        <div class="col-md-12 text-center">
+            <div class="ajaxSpinner">&nbsp;</div>   
+        </div>
+    </div>
+</div>
+<div ng-if="!showLoader" class="container-fluid starlight-container-fluid">
+        <div class="row" ng-if="chooseServiceData.productFamilyInfo.length == 0">
+            <div class="form-required col-md-12 margin-top-20">
+                <div class="alert-box">
+                    <div class="alert alert-danger alert-dismissable" role="alert">
+                        <span aria-hidden="true" data-dismiss="alert" class="close icons-alert-close"></span>
+                        <div class="row">
+                            <span class="icons-alert-danger"></span>
+                            <div class="alert-text col-sm-10">
+                                <span>{{globalVars.dataExistError}}</span>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                
+            </div>
+        </div>
+        <div class="row" ng-if="chooseServiceData.productFamilyInfo.length > 0">
+            <div class="col-md-8">
+                <div class="form-horizontal form-entry-container">
+                    <div class="row">
+                        <div class="form-required col-sm-offset-5 col-md-7 margin-top-20">
+                        	{{globalVars.requiredFields}}<br>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group margin-top-20">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.select_a_service}}</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="form-control-static">
+                                	<ul>
+                                        <li data-ng-repeat="service in chooseServiceData.productFamilyInfo" class="radio">
+                                            <input type="radio" name="productName" id="chooseServiceData{{$index}}" data-ng-model="localObj.serviceSel" value="{{service.productFamilyCode}}">
+                                            <label for="chooseServiceData{{$index}}">{{service.productFamilyName}}</label>
+                                        </li>
+                                	</ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row margin-top-30" ng-if="chooseServiceData.productFamilyInfo.length > 0">
+			<div class="col-md-6 text-left"></div>
+			<div class="col-md-6 text-right">
+                <span ng-if="ajaxLoader">
+                        <div class="ajaxSpinner">&nbsp;</div> 
+                </span>
+				<a href="javascript:;" class="btn btn-primary margin-left-20" ng-disabled="localObj.serviceSel.length < 1 || localObj.serviceSel == null || ajaxLoader" ng-click="goToConfigureService()">{{globalVars.continueBtn}}</a>
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,112 @@
+/*
+
+Uniform Theme: Uniform Default
+Version: 1.8
+By: Josh Pyles
+License: MIT License
+---
+For use with the Uniform plugin:
+http://uniformjs.com/
+
+*/
+/* General settings */
+div.checker_vmf_holder span, div.radio_vmf_holder span {
+  background-image: url("../images/input_checks.png");
+}
+
+/* Checkbox */
+div.checker_vmf_holder, div.checker_vmf_holder span, div.checker_vmf_holder input {
+  width: 18px;
+  height: 18px;
+}
+
+div.checker_vmf_holder span {
+  background-position: -114px 0;
+}
+
+div.checker_vmf_holder span.checked {
+  background-position: 0 0;
+}
+
+div.checker_vmf_holder.active span {
+  background-position: -114px 0;
+}
+
+div.checker_vmf_holder.active span.checked {
+  background-position: 0 0;
+}
+
+div.checker_vmf_holder.hover span, div.checker_vmf_holder.focus span {
+  background-position: -114px 0;
+}
+
+div.checker_vmf_holder.hover span.checked, div.checker_vmf_holder.focus span.checked {
+  background-position: 0 0;
+}
+
+div.checker_vmf_holder.hover.active span, div.checker_vmf_holder.focus.active span {
+  background-position: -114px 0;
+}
+
+div.checker_vmf_holder.hover.active span.checked, div.checker_vmf_holder.focus.active span.checked {
+  background-position: 0 0;
+}
+
+div.checker_vmf_holder.disabled, div.checker_vmf_holder.disabled.active {
+  background-position: -114px 0;
+}
+
+div.checker_vmf_holder.disabled span.checked, div.checker_vmf_holder.disabled.active span.checked {
+  background-position: 0 0;
+}
+
+/* Radio */
+div.radio_vmf_holder span {
+  background-position: -38px 0;
+}
+
+div.radio_vmf_holder span.checked {
+  background-position: -76px 0;
+}
+
+div.radio_vmf_holder.active span {
+  background-position: -38px 0;
+}
+
+div.radio_vmf_holder.active span.checked {
+  background-position: -76px 0;
+}
+
+div.radio_vmf_holder.hover span, div.radio_vmf_holder.focus span {
+  background-position: -38px 0;
+}
+
+div.radio_vmf_holder.hover span.checked, div.radio_vmf_holder.focus span.checked {
+  background-position: -76px 0;
+}
+
+div.radio_vmf_holder.hover.active span, div.radio_vmf_holder.focus.active span {
+  background-position: -38px 0;
+}
+
+div.radio_vmf_holder.hover.active span.checked, div.radio_vmf_holder.focus.active span.checked {
+  background-position: -76px 0;
+}
+
+div.radio_vmf_holder.disabled span, div.radio_vmf_holder.disabled.active span {
+  background-position: -38px 0;
+}
+
+div.radio_vmf_holder.disabled span.checked, div.radio_vmf_holder.disabled.active span.checked {
+  background-position: -76px 0;
+}
+
+/* Checker */
+div.checker_vmf_holder {
+  margin-right: 0px;
+}
+
+/* Radio */
+div.radio_vmf_holder {
+  margin-right: 0px;
+}

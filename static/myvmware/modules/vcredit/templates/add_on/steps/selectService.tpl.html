@@ -1,0 +1,83 @@
+<article ng-if="showLoader">
+    <div class="row margin-top-20 margin-bottom-20">
+        <div class="col-md-12 text-center">
+            <div class="ajaxSpinner">&nbsp;</div>   
+        </div>
+    </div>
+</article>
+<article class="container-fluid" ng-if="showPage">
+                            <div class="row margin-top-20 margin-bottom-20">
+                              <!--Edited BUG-00101486-->
+                                <div class="col-md-8 selectServiceCol"><span ng-if="serviceData.services.length > 0">{{globalVars.coreConfigureService}}</span></div>
+                                <!-- Change as per VSPP FRD-->
+                                <div class="col-md-4 padding-0 text-right" ng-if="globalVars.serviceCategory!='VSPP'"><a class="cursor" href="javascript:void(0);" tooltip-html-unsafe="{{htmlTooltip}}" tooltip-trigger="click">{{globalVars.DontSeeService}}</a></div>
+                            </div>
+                    </article>
+                    <article class="container-fluid" ng-if="showPage">
+                        <div class="panel-group tokensAccordion1 accordion" id="starlight-accordion">
+                            <div class="panel panel-default accordion-heading"> 
+                            <!-- accordion-heading class added for the accordion heading container -->
+                                <div class="panel-heading">
+                                  <div class="panel-title1 row" style = "padding-left: 55px !important;">
+                                      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 idHdr">{{globalVars.serviceId}}</div>
+                                      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 typeHdr">{{globalVars.serviceType}}</div>
+                                      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 regionHdr">{{globalVars.region}}</div>
+                                      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 termEndHdr">{{globalVars.termEnding}}</div>
+                                      <div class="col-lg-3 col-md-3 col-sm-9 col-xs-6 termRemHdr">{{globalVars.remainingTerm}}</div>
+                                      <!-- <div class="col-lg-2 col-md-2 col-sm-3 "></div> -->
+                                  </div>
+                                </div>
+                            </div>
+                            <div ng-if="serviceData.services.length == 0" class="margin-top-20">{{globalVars.addOnSltNoData}}</div>
+                            <div ng-if="serviceData.services.length > 0" class="panel panel-default collapsed" data-ng-repeat="data in serviceData.services" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}">
+                                <div class="panel-heading cursor" ng-click="getSkuData(data.id); colapse($index);" style="position:relative;">
+								                  <span class="glyphicon glyphicon-chevron-right openaccordion" href="#collapse{{$index}}" data-toggle="collapse" data-parent="#accordion" style="position:absolute;top: 11px;"></span>
+                                  <div class="panel-title1 row" style = "padding-left: 55px !important;">
+                                      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12" >{{data.id}}</div>
+                                      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">{{data.type}}</div>
+                                      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">{{data.region}}</div>
+                                      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">{{data.term}}</div>
+                                      <div class="col-lg-3 col-md-3 col-sm-9 col-xs-12">{{data.remaining}}
+                                          <span class="pull-right"><a class="btn btn-primary" ng-disabled="!showSelectBtn" ng-click="selectService($index,$event); $event.stopPropagation();">{{globalVars.select}}</a>
+                                          </span>
+                                          <div class="ajaxSpinner hide">&nbsp;</div>
+                                      </div>
+                                      <!-- <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 text-right">                                       
+                                        <a class="btn btn-primary" ng-disabled="!showSelectBtn" ng-click="selectService($index,$event); $event.stopPropagation();">{{globalVars.select}}</a>
+										                    <div class="ajaxSpinner hide">&nbsp;</div>
+                                      </div> -->
+                                  </div>
+                                </div>
+                                <div id="collapse{{$index}}" class="panel-collapse collapse">
+                                  <div class="panel-body table">
+                                        <div class="row" ng-if="!skuObj[data.id]">
+                                          <div class="col-md-12 text-center">
+                                            <div class="ajaxSpinner">&nbsp;</div> 
+                                          </div>
+                                        </div>
+                                        <div class="row table-head" ng-if="skuObj[data.id]">
+                                            <div class="col-md-2">{{globalVars.SKU}}</div>
+                                            <div class="col-md-3">{{globalVars.component}}</div>
+                                            <div class="col-md-2 col-sm-3 col-xs-6">{{globalVars.orderType}}</div>
+                                            <div class="col-md-2 col-sm-3 col-xs-6">{{globalVars.paymentType}}</div>
+                                            <div class="col-md-2 col-sm-3 col-xs-6">{{globalVars.remainingTerm}}</div>
+                                            <div class="col-md-1 col-sm-3 col-xs-6">{{globalVars.qty}}</div>
+                                        </div>                                        
+                                        <div class="row table-row" ng-repeat="skuData in skuObj[data.id].skuDetails" ng-if="skuObj[data.id]">
+                                            <div class="col-md-2">{{skuData[0]}}</div>
+                                            <div class="col-md-3">
+                                               {{skuData[1]}}
+                                            </div>
+                                            <div class="col-md-2 col-sm-3 col-xs-6">{{skuData[2]}}</div>
+                                            <div class="col-md-2 col-sm-3 col-xs-6">{{skuData[3]}}</div>
+                                            <div class="col-md-2 col-sm-3 col-xs-6">{{skuData[4]}}</div>
+                                            <div class="col-md-1 col-sm-3 col-xs-6">{{skuData[5]}}</div>
+                                        </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-top-20">
+                                <div class="col-md-9"><button class="btn btn-default" ng-click="cancelFlow(cancelFn)">{{globalVars.cancelBtn}}</button></div>
+                        </div>
+                    </article>

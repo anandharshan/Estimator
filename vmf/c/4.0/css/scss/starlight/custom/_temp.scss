@@ -1,0 +1,19 @@
+/* refactor the code while implementing header for the page */
+.container > header#tempHeader{
+  margin: 15px 0;
+}
+
+body.starlight #content-container, body.starlight .content-container {
+  background: none repeat scroll 0 0 #FFFFFF;
+  min-height: 600px;
+  overflow: hidden;
+  padding: 20px 45px;
+  width: 100%;
+  @media (max-width: $screen-xs) {
+  	padding: 10px;
+  }
+}
+
+h1#tempOpportunities{
+	margin-top: 0px;
+}

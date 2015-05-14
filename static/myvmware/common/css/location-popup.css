@@ -1,0 +1,258 @@
+body {
+	/*background-color: grey;*/
+}
+
+.clear {
+	clear:both;
+}
+
+#location-option a, #location-select a {
+	color: #4ba8c4;
+	text-decoration: none;/*BUG-00062728*/
+}
+
+#location-option a:hover, #location-select a:hover {
+	text-decoration: underline;/*BUG-00062728*/
+}
+
+/* Location options CSS */
+#location-option {
+	color:#666;
+}
+/*BUG-00062838*/
+#option-right-header .title-sub #geo-form{
+    margin-top: 20px;
+    display: none;
+}
+#option-right-header .title-sub .option-locals{
+    padding-top:5px;
+}
+
+.ie7 #option-right-header{
+	padding-top:15px;
+}
+
+#location-option #option-inner-top {
+	background: url("img/location-option-main-bg-top.png") no-repeat scroll 100% 0 transparent;
+	width: 576px;
+	height:7px;
+}
+
+#location-option #option-inner-mid {
+	background: url("img/location-option-main-bg-mid.png") repeat-y scroll 100% 0 transparent;
+	position: relative;
+    width: 576px;
+}
+
+#location-option #option-inner-bottom {
+	background: url("img/location-option-main-bg-btm.png") no-repeat scroll 100% 0 transparent;
+	width: 576px;
+	height: 9px;
+}
+
+#location-option #option-left {
+	float: left;
+	height: 221px;
+	position: relative;
+    width: 167px;
+}
+#location-option .min #option-left {height:158px;/*Updated to support for additional languages*/}
+#location-option #option-right-content > div {
+	padding: 10px 30px;
+}
+
+#option-left .option-header {
+	color: #FFFFFF;
+    font-size: 21px;
+    font-weight: bold;
+    
+	height: 169px;
+    /*margin: 35px 30px 0;*/
+    overflow: hidden;
+    position: absolute;
+    text-transform: uppercase;
+    top: -7px;
+	left: 1px;
+    width: 165px;
+}
+#option-inner-mid.min .option-header{
+	background: url("img/header-bg-select.png") no-repeat scroll 100% 0 transparent;
+}
+#option-inner-mid.max .option-header{
+	background: url("img/header-bg-option.png") no-repeat scroll 100% 0 transparent;
+}
+#option-left .option-header .option-header-inner {
+	height:169px;
+    /*padding-left:20px;
+	padding-right:20px;*/
+    display: table-cell;
+    vertical-align: middle;
+	font-weight: normal;
+	text-align: center;
+	width: 165px;
+	font-size: 20px;
+}
+.ie7 #option-left .option-header .option-header-inner {
+	margin-top:65px;
+}
+
+#option-left #option-menu {
+	position: relative;
+    top: 130px;
+}
+
+#location-option #option-right {
+	float: left;
+    width: 409px;
+}
+#location-option #option-inner-mid.min #option-right {height: 158px;  /*Updated to support additional languages*/}
+#location-option #option-inner-mid.max #option-right {height: 310px;  /*275*/}
+
+#location-option .option-tabs a {
+	color: #FFF;
+}
+
+#location-option #option-menu ul {
+	list-style-position: outside;
+    list-style-type: none;
+    margin: 0 0 0 1px;
+    padding: 0;
+}
+
+#location-option #option-menu li {
+	height: 36px;
+    width: 165px;    
+}
+
+#location-option #option-menu li a {
+	display: block;
+    font-size: 12px;
+    height: 27px;
+    padding: 9px 0 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#location-option #option-menu li a:hover {
+	background: url("img/menu-hover.png") repeat-x scroll 100% 0 transparent;
+	color:#FFF;
+	text-decoration:none;    
+}
+
+#location-option #option-menu li a.current {
+	background-color: #FFF;
+	color:#333;   
+}
+
+#option-right-content {
+	position: relative;
+}
+
+#option-right-content .option-locals {
+	position: absolute;
+}
+
+#option-right .country-list {
+	/*float: left;*/
+    font-size: 12px;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 153px;
+}
+
+#option-right .country-list li {
+	/*BUG-00062838*/
+	/*line-height: 22px;*/
+	margin:0 0 10px; 
+}
+
+
+
+/* Location Selected CSS */
+#location-select {
+	background: url("img/location-select-bg.png") no-repeat scroll 100% 0 transparent;
+	width:577px;
+	height:141px;
+	color:#666;
+}
+
+#location-select #select-left {
+	background: url("img/header-bg-select.png") no-repeat scroll 100% 0 transparent;
+	float: left;
+	height: 138px;
+    width: 167px;
+}
+
+#location-select .select-header {
+	color: #FFFFFF;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 35px 30px 0;
+    text-transform: uppercase;
+    width: 115px;
+}
+
+#location-select #select-right {
+	float: left;
+	position: relative;
+	width:410px;
+}
+
+#location-select .close-btn, #location-option .close-btn {
+	font-size: 10pt;
+    position: absolute;
+    right: 15px;
+	text-transform: lowercase;
+    top: 2px;
+}
+
+#location-select .close-btn a, #location-option .close-btn a {
+	text-decoration:none;
+	color:#666666;
+}
+
+#location-select .close-btn a:hover, #location-option .close-btn a:hover {
+	cursor:pointer;
+}
+
+#location-select .title, #location-option .title {
+	color: #3F3F3F;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 30px 30px 0;
+}
+
+#location-select .title-sub, #location-option .title-sub {
+	font-size: 11px;
+    font-weight: bold;
+    margin: 16px 30px 0 28px;
+}
+#geo-form input{vertical-align: middle;}
+#location-select .more-options {
+	font-size: 10px;
+	font-weight:bold;
+	margin: 10px 30px 0 28px;
+}
+
+#location-select .divider {
+	color: #4ba8c4;
+}
+
+.close-btn img:hover, #more-options {
+	cursor:pointer;	
+}
+
+/* Shadowbox popup edits */
+#sb-wrapper-inner {
+    border: none;
+}
+
+#sb-body, #sb-loading {
+    background-color: transparent;
+}
+
+#sb-info {
+	display:none;
+}

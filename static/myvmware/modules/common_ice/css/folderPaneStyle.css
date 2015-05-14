@@ -1,0 +1,197 @@
+/* Updated: 12/16/2011 Preejith */
+.folderPane {
+	white-space: nowrap;
+}
+.folderPane li > ul , .folderPane ul li{
+	margin: 0;
+	padding: 0;
+}
+/* #main was added as a workaround to fix css issue for li rendering to override the style set by main.css provided as part of vmTheme */
+#main .folderPane ul li.folderlist {
+	font-family: sans-serif;
+	font-size: 12px;
+	padding: 0;
+	display: block;
+	background: none;
+	border:none;	
+}
+
+.folderPane ul li.folderlist {
+	font-family: sans-serif;
+	font-size: 12px;
+	padding: 0;
+	display: block;
+	background: none;
+	border: 0;
+}
+/*#content-section .tabContent ul li  ul li, .folderPane ul li ul li{
+	margin-left:23px;
+}
+#content-section .tabContent section .folderPane ul ul.expandlist{
+	margin-left:23px;
+}*/
+#content-section .tabContent section .folderPane ul ul.expandlist.top_border{
+	border-top:1px dotted #aaa;
+}
+/* Another workaround to override theme */
+#main  .folderPane ul {
+	margin: 0px 0px 0px 0px;
+}
+.folderPane li > span a.openClose:hover {
+	cursor: pointer;
+}
+#content-section .column .folderPane ul li input{
+	margin-left:0px;
+	margin-right:5px;
+	padding:0px;
+}
+#content-section .column .folderPane ul li.no_child input{
+	margin-left:18px;
+}
+.firefox.mac #content-section .column .folderPane ul li input {
+    margin-top: -3px;
+}
+.folderPane li > span a.openClose{
+	display: inline-block;
+	background: url("/static/myvmware/common/css/img/btn_gray_blue_plus_minus.png") no-repeat scroll -3px -4px transparent;
+    height: 14px;
+    padding-left: 0;
+    padding-right: 3px;
+    width: 15px;
+	vertical-align:middle;
+}
+.folderPane li > span a.openClose.open {
+	background: url("/static/myvmware/common/css/img/btn_gray_blue_plus_minus.png") no-repeat scroll -3px -24px transparent;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.folderPane li > span a.openClose{
+		background-position: -3px -3px;
+	}
+	.folderPane li > span a.openClose.open {
+		background-position: -3px -23px;
+	}
+}
+.folderPane li > span input {
+	vertical-align: middle;
+}
+.folderPane  span.enabled {
+	color: #000000;
+}
+.folderPane  span.disabled {
+	color: #B0B0B0;
+}
+.folderPane span.disabled.serHeader{
+	color: #000000;
+	cursor:default;
+}
+.folderPane ul {
+	list-style-type: none;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+.folderPane span.folderNode {
+	display: block;
+	border-bottom: 1px dotted #AAAAAA;
+	white-space: nowrap;
+	padding-left: 15px;
+	padding-right: 13px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	/* To disable folder name text selection */
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.folderPane span.folderNode span.folderTxt{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	width:125px;
+	display:inline-block;
+	vertical-align:middle;
+}
+.folderPane span.folderNode span.folderTxt.normalWhiteSpace{
+	white-space:normal;
+	word-wrap:break-word;
+}
+.folderPane  li[level="1"] span.folderNode  span.folderTxt{
+	width:125px;
+}
+.folderPane  li[level="2"] span.folderNode  span.folderTxt{
+	width:105px;
+}
+.folderPane  li[level="3"] span.folderNode  span.folderTxt{
+	width:95px;
+}
+.folderPane  li[level="4"] span.folderNode  span.folderTxt{
+	width:60px;
+}
+.folderPane  li[level="5"] span.folderNode  span.folderTxt{
+	width:125px;
+}
+.folderPane span.folderNode a.openClose.vAlignChilds,#content-section .column .folderPane ul li input.vAlignChilds{
+	vertical-align:top;
+	margin-top:2px;
+}
+.folderPane span.folderNode.no_border{
+	border:none;
+}
+.folderPane .noRadio li.no_child span.folderNode {
+	padding-left:36px;
+}
+.folderPane span.selectedFolder {
+	background: #ddeefe;
+}
+/* Style exclusion for tooltip in folderPane*/
+.folderPane span.folderNode .content {
+	white-space: normal;
+}
+/* Fix for IE selected input background white issue */
+.folderPane li  > span.selectedFolder input {
+	background: #006699;
+}
+.loadingDiv  span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.folder-section-header  {
+	padding: 5px 5px 5px 25px;
+	background: #484849;
+	color: #FFFFFF;
+}
+.folder-section-header label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-left: 5px;
+}
+.ajaxLoading span {
+	margin-left: 10px;
+}
+.ajaxLoading {
+	display: none;
+}
+.folderPane li.folderlist span.hover{
+	background-color:#eef7ff;
+}
+.folderPane li.folderlist span.active{
+	background-color:#ddeefe;
+}
+.folderPane ul li.folderlist span{
+	cursor:pointer;
+}
+.folderPane ul li.folderlist span.disable{cursor:default}
+.folderPane .emptyTree{
+	color: #666666;
+    font-size: 13px;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    white-space: normal;
+}
+#userDiv .emptyUser {padding:15px 0 0 15px;}
+#serviceList .folderlist.level2 span.folderNode {padding-left: 51px;}

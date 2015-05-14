@@ -1,0 +1,873 @@
+/*Reset All Elements - reset.css Start*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline}
+body{line-height:1}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
+nav ul{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after, q:before, q:after{content:none}
+a{margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent}
+ins{background-color:#ff9; color:#000; text-decoration:none}
+mark{background-color:#ff9; color:#000; font-style:italic; font-weight:bold}
+del{text-decoration:line-through}
+abbr[title], dfn[title]{border-bottom:1px dotted; cursor:help}
+table{border-collapse:collapse; border-spacing:0}
+hr{display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0}
+input, select{vertical-align:middle}
+/*Reset All Elements - reset.css End*/
+/*Theme Level CSS Start*/
+html, body{height:100%}
+body{margin:0; font:12px Arial,Helvetica,sans-serif; color:#333;}
+.clearfix:before, .clearfix:after{content:"\0020"; display:block; height:0; overflow:hidden}
+.clearfix:after{clear:both}
+.clearfix{zoom:1}
+.clearBoth{clear:both}
+a{color:#39C; text-decoration:none}
+strong{font-weight:bold}
+form, fieldset{margin:0; padding:0; border-style:none}
+img{border:none}
+select, input, textarea, button{font:99% sans-serif}
+.wrap{height:1%; overflow:hidden}
+/*a:hover{text-decoration:underline}
+*/
+/* wrapper */
+.public #container{width:990px; margin:0 auto; position:relative; background:url('img/bg-wrapper.gif') no-repeat #fff; overflow:hidden;}
+.partner #container{width:990px; margin:0 auto; position:relative; background:url('img/ccp_BGHeader.png') no-repeat #fff; overflow:hidden;}
+* html #container{overflow:visible}
+#content-container{min-height:550px; padding:0px 25px}
+* html #content-container{ overflow:visible}
+/* logo styles */
+.vmwarelogo{background: url("img/bg-logo.gif") no-repeat scroll 0 35px transparent;height: 17px;margin-bottom: 12px; margin-left:25px;padding: 25px 0 18px;text-indent: -9999px;width: 113px;}
+.partner .vmwarelogo{position: absolute;background: url("img/ccp_HeaderLogo.png") no-repeat scroll 0 35px transparent;height: 17px;margin-bottom: 12px;padding: 25px 0 18px;text-indent: -9999px;width: 353px;z-index:999;top:0;margin-left:0;}
+.vmwarelogo a{height:100%; display:block}
+.public .banner{background:url('img/bkg_banner_legacy.png') no-repeat scroll 0 0 transparent; height:80px}
+.public .banner .banner_header{font-size:14px; font-weight:bold; color:#b7c000;padding:25px 30px 0}
+.public .banner .banner_description{color:#89cbdf; font-size:10px; text-transform:uppercase;padding:0 30px;}
+.partner .banner{background:url('img/bkg_banner_legacy.png') no-repeat scroll 0 -81px transparent; height:80px}
+.partner .banner .banner_header{font-size:14px; font-weight:bold; color:#ac3413;padding:25px 30px 0}
+.partner .banner .banner_description{color:#ab540f; font-size:10px; text-transform:uppercase;padding:0 30px;}
+.partner .banner .banner_error_header{font-size:22px; font-weight:normal; color:#a23313;padding:17px 15px 0}
+.partner .banner .banner_error_description{color:#333333; font-size:10px; font-weight:bold; text-transform:uppercase;padding:0 15px;}
+.authError{padding: 20px 15px;}
+/* FOOTER */
+#footer{width:990px}
+.footerbar{position:relative; height:35px; padding:15px 0 0 28px; font-size:11px; color:#999; overflow:hidden; ; background:#eee}
+.footerbar p{float:left; margin:1px 0 0; line-height:normal; color:#999}
+.footerbar ul{overflow:hidden; margin:0; padding:0; list-style:none}
+* html .footerbar ul{height:1%; overflow:visible}
+.footerbar ul li{float:left; background:url(//www.vmware.com/files/templates/images/sep-footer.gif) no-repeat 0 50%; padding:0 7px 0 9px; margin:0 1px 0 -1px}
+.footerbar ul a{color:#39c}
+.footerbar ul a:hover{color:#069}
+a.rss{background:url(/files/images/tpl/rss_14x14.png) bottom right no-repeat; padding:0px 20px 0 0; float:right; margin-right:28px}
+/* Footer End */
+/*Theme Level CSS End*/
+/*Common CSS*/
+#content-container table td{    background:url("img/bkg_dotted_line.png") repeat-x scroll 101% bottom transparent;  margin:0; font-size:12px;  font-weight:normal;  padding:6px 6px 6px 15px; vertical-align:middle}
+#content-container .nomargin{margin: 0;}
+input[type="text"], input[type="password"], input[type="file"], input[type="email"], select, textarea, .textarea{ background:none repeat scroll 0 0 #FFF;  border:1px solid #999;  padding:2px}
+.bottomarea{background: url("img/bkg_tabs_bottom.png") repeat-x scroll 0 bottom transparent;padding-bottom:9px;}
+.textRed {color: #D9541E;}
+.badge.topup {background: url('img/bgTopUp.png') no-repeat; width:48px; height:15px;margin-left: 10px;}
+.badge {border-radius: 2px 2px 2px 2px;color: #FFFFFF; display: inline-block; font-size: 11px; text-align:center; font-weight:bold; vertical-align:middle; margin-left: 5px; padding: 1px 2px; position: relative; top: -2px;}
+label.error{color: #D9541E; font-size:11px; display:block; word-wrap: break-word;}
+/************************************
+Buttons Start
+    E.g. Save/Edit/Continue
+*************************************/
+button{width:auto; overflow:visible}
+
+a.button, 
+button, 
+input.button, 
+a.button:hover, 
+button:hover, 
+input.button:hover, 
+a.button:focus, 
+button:focus, 
+input.button:focus{background:#2B75B2 url('img/bg_buttons.png') repeat-x; /* old browsers */background:-moz-linear-gradient(top,#4FB8DC 0%,#399DBF 50%,#2B75B2 100%); /* firefox */background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#4FB8DC),color-stop(50%,#399DBF),color-stop(100%,#2B75B2)); /* webkit */-webkit-background-clip:padding-box;  -moz-background-clip:padding;  background-clip:padding-box; border:none; -webkit-border-radius:3px;  -moz-border-radius:3px;  border-radius:3px 3px 3px 3px !important; color:#FFF; cursor:pointer; font-size:11px; font-weight:bold; margin:5px 0 5px 2px !important; /*important added to fix issue in IE7,IE8 browsers::for addUser 2nd overlay */padding:4px 15px; text-decoration:none !important; text-shadow:none}
+
+a.button, 
+a.button:hover, 
+input.button, 
+input.button:hover, 
+a.button:focus, 
+input.button:focus{display:inline; padding:5px 15px}
+
+a.button.secondary, 
+button.secondary, 
+input.button.secondary{background:#FEFEFE url('img/bg_button_secondary.png') repeat-x; /* old browsers */background:-moz-linear-gradient(top,#FEFEFE 0%,#E3E3E3 100%); /* firefox */background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#FEFEFE),color-stop(100%,#E3E3E3)); /* webkit */border:1px solid #bcbcbc; color:#2A73B1; padding:3px 15px}
+
+a.button.disabled, 
+button.disabled, 
+input.button.disabled, 
+a.button.disabled:hover, 
+button.disabled:hover, 
+input.button.disabled:hover{/*font-family:inherit; */ /*Removing for Mac Button Issue - Adding this back will break height of the button*/background:#b9b9b9; background:-moz-linear-gradient(top,#ccc 0%,#b9b9b9 100%); /* firefox */background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#ccc),color-stop(100%,#b9b9b9)); /* webkit */color:#FFF; text-decoration:none; cursor:auto}
+
+button.secondary.disabled, 
+button.secondary.disabled:hover{background:#FEFEFE url('img/bg_button_secondary.png') repeat-x; /* old browsers */background:-moz-linear-gradient(top,#FEFEFE 0%,#E3E3E3 100%); /* firefox */background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#FEFEFE),color-stop(100%,#E3E3E3)); /* webkit */color:#b8b8b8;-moz-opacity:.80; -ms-filter:â€alpha(opacity=80)â€; filter:alpha(opacity=80); opacity:.80;}
+
+button.lessChar, .button.lessChar, 
+button.lessChar:hover, .button.lessChar:hover, .button.secondary.lessChar, .ie8 button.secondary, .ie8 button.secondary.lessChar{padding:4px 20px}
+.ie9 button.lessChar:hover{padding:5px 15px}
+.ie8 button.lessChar:hover{padding:5px 20px}
+
+a.button.secondary{padding:5px 15px 4px}
+.firefox.mac a.button.secondary{padding:5px 15px}
+
+button.secondary.lessChar{padding:3px 20px}
+
+.ie9 button{height:24px}
+.ie9 .button.secondary{padding:6px 15px}
+.ie9 .button.secondary.lessChar{padding:4px 20px 4.5px}
+
+.ie8 button, .ie9 .button, .ie8 a.button, .ie8 input.button{padding:5px 15px}
+.ie8 button.lessChar{padding:5px 20px}
+
+.ie7 button{padding:3px 15px 4px}
+.ie7 button.secondary, .ie7 button.secondary.lessChar{padding-top:3px; padding-bottom:2px}
+.ie7 button.lessChar, .ie7 button.lessChar:hover{padding:3px 20px 4px}
+
+.ie7 button, .ie7 .button, 
+.ie7 button:hover, .ie7 .button:hover, 
+.ie7 button:focus, .ie7 .button:focus{margin-left:5px !important}
+
+/* FOR OPERA */
+@media not screen and (1){ a.button,button,input.button{ height:24px}
+}
+
+/*Mac Firefox Styles*/
+.mac button, .mac .button{height:24px}
+
+.mac button, .mac button:hover, .mac button:focus{padding:5px 15px}
+
+.mac a.button, .mac a.button:hover, .mac input.button, .mac input.button:hover, .mac a.button:focus, .mac input.button:focus{ padding:5px 15px 6px}
+
+.mac button.secondary, .mac button.secondary:hover, .mac button.secondary:focus{padding:4px 15px}
+
+.mac a.button.secondary, .mac a.button.secondary:hover, .mac a.button.secondary:focus{ padding:4px 15px 5px}
+
+.mac button.secondary.lessChar, .mac button.secondary.lessChar:hover, .mac button.secondary.lessChar:focus{ padding:4px 20px}
+
+.mac button.lessChar, .mac button.lessChar:hover, .mac button.lessChar:focus{padding:5px 20px}
+
+.mac a.button.lessChar, .mac a.button.lessChar:hover, .mac a.button.lessChar:focus{ padding:4px 20px 5px}
+
+/* FOR SAFARI AND CHROME */
+@media screen and (-webkit-min-device-pixel-ratio:0){button,button:focus,button:hover{padding:5px 15px}
+
+button.lessChar, button.lessChar:hover{padding:5px 20px}
+
+button.secondary, button.secondary:hover, button.secondary:focus{padding:4px 15px}
+
+button.secondary.lessChar, button.secondary.lessChar:hover, button.secondary.lessChar:focus{padding:4px 20px}
+
+ a.button, input.button, 
+a.button:focus, input.button:focus, 
+a.button:hover, input.button:hover{ padding:5px 15px 6px}
+
+a.button.secondary, a.button.secondary:hover, a.button.secondary:focus{padding:4px 15px 5px}
+
+a.button.lessChar, a.button.lessChar:hover, a.button.lessChar:focus, 
+a.button.secondary.lessChar, a.button.secondary.lessChar:hover, a.button.secondary.lessChar:focus{ padding:4px 20px 5px}
+}
+
+/* to give a class to only hyperlink not in form of button*/
+a.disabled{text-decoration:none; color:#999; cursor:auto}
+
+/* Alignment */
+.right{text-align:right}
+
+/* Large buttons */
+a.button.wide, 
+button.button.wide{padding-left:35px; padding-right:35px}
+
+/************************************
+Buttons End
+    E.g. Save/Edit/Continue
+*************************************/
+.column-wrapper .progInfo{padding:10px 0 10px 30px}
+.column-wrapper .progInfo .pType{font-weight:bold}
+.column-wrapper .progInfo .pType.pLeft30{padding-left:30px}
+.column-wrapper .progInfo .pName{text-transform:uppercase}
+.column-wrapper .progInfo .editLink{padding-left:8px}
+.column-wrapper .progInfo .editLink a{text-decoration:none; cursor:pointer}
+
+.column-wrapper .eligibility-section{background:url("img/bg_epp_eligible.png") repeat-x scroll 0 0 #ebebeb; width:940px; float:left; border:1px solid #dcdcdc; -webkit-border-radius:5px;    -moz-border-radius:5px; border-radius:5px 5px 5px 5px}
+.column-wrapper .eligibility-section .eligibility-details-container{padding:11px 0 0 17px}
+.column-wrapper .eligibility-section .eligibility-details-container .dTitle{font-size:22px; color:#0c8d63}
+.partner .column-wrapper .eligibility-section .eligibility-details-container .dTitle{color:#ac3413}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-first{width:720px; padding-top:32px; float:left}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-first .skuOrder{float:left; width:300px}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-first .qty{float:left; width:240px}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-first .discount{float:left; width:180px}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-first .detail{font-size:18px; font-weight:bold; padding-top:3px}
+.column-wrapper .eligibility-details-first .detail.greenTxt{color:#0B8D61}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-second{float:left}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-second  #lGraph{position:relative;overflow:hidden;}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-second .graph{background:url('img/config_meter_green.png') no-repeat scroll 0 0 transparent; height:92px; width:182px}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-second .graph.L0{background-position:0 0}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-second .graph.L7{background-position: -185px 0;}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-second .graph.L8{background-position: 0 -94px;}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-second .graph.L9{background-position: -185px -94px;}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-second .graph.L10{background-position: 0 -189px;}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-second .arrow{position: absolute !important; top: 58px; left: 82px;}
+.column-wrapper .eligibility-section .eligibility-details-container .notes{padding-bottom:13px}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-first.vpp .skuOrder{width:210px}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-first.vpp .qty{width:180px}
+.column-wrapper .eligibility-section .eligibility-details-container .eligibility-details-first.vpp .vppPoints{float:left;width:150px}
+.mainContent .selectSF_section .stepHead{padding:20px 0px 15px 15px}
+.mainContent .selectSF_section .stepHead .stepDetail{width:379px; display:inline-block; font-weight:bold; font-size:14px; float:left}
+.mainContent .selectSF_section .stepHead .help{background:url("img/bg_pdf_icon.png") no-repeat scroll right top transparent; cursor:pointer; float:right; padding-right:17px}
+.discount a.discountLevel{color: #3399CC;cursor:pointer}
+.mainContent .column-wrapper{height:403px}
+.mainContent .threeSevenSix{width:376px; float:left}
+.mainContent .fiveSixTwo{width:562px; float:left}
+.mainContent .column-wrapper.cartSection{border-bottom:1px solid #DCDCDC; border-left:1px solid #DCDCDC; border-right:1px solid #DCDCDC; -webkit-border-radius:0 0 5px 5px;  -moz-border-radius:0 0 5px 5px; border-radius:0 0 5px 5px}
+.mainContent .column-wrapper .column header{font-weight:normal; font-size:11px}
+.mainContent .column-wrapper .column header h1{color:#666;padding:5px 0 0px 15px}
+.mainContent .column-wrapper .column .filterSect{padding:6px 10px 7px 15px; background:#eee}
+.mainContent .column-wrapper .column .filterSect .filterVal{float: left;font-size: 12px;height: 18px; margin-right:13px;margin-top: 6px;width:260px;}
+.mainContent .column-wrapper .column .conlumContent{overflow-y:scroll; overflow-x:hidden}
+.mainContent .column-wrapper .column .threeThirty{height:330px}
+.mainContent .column-wrapper .column .twoSeventy{height:285px}
+.mainContent .column-wrapper .column .conlumContent .instText{text-align:center; padding-top:120px}
+.mainContent .column-wrapper .column .conlumContent .instText .main_inst{font-size:14px; display:block; margin-bottom:5px}
+.mainContent .column-wrapper .column table .skuProd{width:215px}
+#content-container .mainContent .column-wrapper .column table td{padding-right:0}
+#content-container .mainContent .column-wrapper .column table .tkns{width:75px; text-align:right}
+.ie7 .mainContent .column-wrapper .column table .tkns, 
+.ie8 .mainContent .column-wrapper .column table .tkns{width:85px}
+@media screen and (-webkit-min-device-pixel-ratio:0){.mainContent .column-wrapper .column table .tkns{width:85px}
+}
+#content-container .conlumContent table .tknVal{padding:0 4px 0 2px; width:45px; text-align:right; height:22px}
+#content-container .conlumContent table .tkns input[disabled="true"]{border:0px solid #FFF; background:none; padding:1px 4px 1px 2px}
+#content-container .cartSection table th span {display: inline;padding-right:0px; color:#666}
+.mainContent .column-wrapper .column .conlumContent table td .mItem, 
+.mainContent .column-wrapper .column .conlumContent table td .mTkns, 
+.mainContent .column-wrapper .column .conlumContent table td .mTotal{/*margin-top:5px; margin-bottom:5px; */}
+.mainContent .column-wrapper .column .conlumContent table td .mQty{padding:0}
+.mainContent .column-wrapper .column .conlumContent table td .sQty{/*margin-bottom:-5px; margin-top:4px; */padding:0}
+.mainContent .column-wrapper .column .conlumContent table td .sItem, 
+.mainContent .column-wrapper .column .conlumContent table td .sTkns, 
+.mainContent .column-wrapper .column .conlumContent table td .sTotal{margin-top:10px; /*margin-bottom:5px; */}
+.mainContent .column-wrapper .column .conlumContent table td .sTotal a{cursor:pointer}
+.column .conlumContent .sItem{background:url(img/bg_link.png) no-repeat; padding-left:19px}
+.mainContent .column-wrapper .column .conlumContent table td .dCart{background:url(img/icon_remove_SFuser.png) no-repeat; display:block; width:16px; height:16px}
+.mainContent .column-wrapper .column .displayTokens{background:none repeat scroll 0 0 #EEE;  border-bottom:1px solid #CCC;  border-top:1px solid #CCC;  color:#333;  font-size:16px;  font-weight:bold;  padding:11px 15px}
+.mainContent .column-wrapper .column .displayTokens .tokensInCart{float:right}
+.mainContent .column-wrapper .column .displayTokens span{vertical-align:middle}
+.mainContent .column-wrapper .column .displayTokens span.isFunds{/*insufficient funds*/color:#d7541e}
+.mainContent .column-wrapper .column .displayTokens span.sFunds{/*sufficient funds*/color:#0b8d61}
+.mainContent .column-wrapper .column .right-btns{text-align:right; padding:7px 16px 7px 10px}
+#content-container #tbl_review tr.linkedRow td{padding-top:0 !important}
+.mainContent table td .subProDisc, 
+.prodTree li.level2 .subProDisc{font-size:11px}
+.mainContent table td .snsTime, 
+.prodTree li.level2 .snsTime, 
+.cartTooltip  .snsTime{font-weight:bold}
+.prodTree li.level2 .showSNS span{vertical-align:middle; display:inline; border:0; padding:0; cursor:auto}
+.mainContent table td .linkedProd, 
+.prodTree li.level2 .linkedProd{padding-left:20px; background:url(img/bg_link.png) no-repeat}
+.prodTree li.level2 .linkedProd{margin-top:15px}
+/*product Tree */
+#main .prodTree ul li{font-family:sans-serif; font-size:12px; padding:0; display:block; background:none; border:none}
+#main .prodTree ul{list-style-type:none;margin:0}
+.prodTree span.pName{display:block; border-bottom:1px dotted #AAA; white-space:nowrap; padding:8px 13px 8px 15px; cursor:pointer; /* To disable folder name text selection */-webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -o-user-select:none; user-select:none}
+.prodTree li a.openClose{display:inline-block; background:url("/static/myvmware/common/css/img/btn_gray_blue_plus_minus.png") no-repeat scroll -3px -4px transparent;     height:14px;     padding-left:0;     padding-right:3px;     width:15px; vertical-align:middle}
+.prodTree li a.openClose.open{background:url("/static/myvmware/common/css/img/btn_gray_blue_plus_minus.png") no-repeat scroll -3px -24px transparent}
+.prodTree li.level1 span{padding-left:30px}
+
+#main .prodTree li.loading_text{padding-left:30px}
+#main .prodTree li.level2{border-bottom:1px dotted #AAA; padding:10px 15px 10px 48px}
+#main .prodTree .fContent li.level2{/* Filter response*/padding-left:14px}
+#main .prodTree .fContent li.level2 a{float:left; cursor:pointer}
+#main .prodTree .fContent li.level2 div.prDisc, #main .prodTree .fContent li.level2 div.linkedProd{margin-left:18px}
+#main .prodTree li.level2 .prTitle{float:left; width:175px; font-weight:bold}
+#main .prodTree li.level2 .prTitle .fnTitle{color:#0B8C63}
+#main .prodTree li.level2 .addBtn{float:right}
+#main .prodTree li.level2 .prDisc{clear:both; padding-top:10px}
+#main .prodTree li.level2 .linkPr{background:url("img/bg_link.png") no-repeat scroll 0 0 transparent; padding-left:20px}
+#main .prodTree li.level1 .inCart, 
+#main .prodTree li.level1 .inCart h4, 
+#main .prodTree li.level1 .inCart .prTitle .fnTitle{color:#999 !important}
+#main .prodTree li.level1 .inCart .cartMsg{color:#0B8C63;font-weight:bold;width:95px}
+/*Prod Tree End*/
+.column-wrapper .section-wrapper{margin-bottom:75px}
+.section-wrapper .column header{background:url("img/epp_config_row_bgs.png") repeat-x scroll 0 0 transparent; height:26px}
+.tabbed_area header{font-weight:bold;position:relative;z-index:500}
+
+#content-container table{font-size:12px;width:100%}
+#content-container table th{background:url("img/epp_config_row_bgs.png") repeat scroll 0 0 transparent;color:#666;font-size:11px;font-weight:bold;  margin:0;padding:6px 0 6px 15px;text-align:left}
+.ie9 #content-container table th{padding:8px 0 6px 15px}
+/* Configurator Topup page start*/
+.column-wrapper .eligibility-section .eligibility-details-options{float:left;width:49.5%}
+.column-wrapper .eligibility-section .eligibility-details-option{background: url("img/bg_banner_discount_topup.png") repeat-x scroll 0 0 #E07800;border: 1px solid #E07F1E;-webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;border-radius: 3px 3px 0px 0px !important;margin-bottom: 12px;margin-right: 20px;margin-top: 20px;width: 439px;}
+.column-wrapper .eligibility-section .eligibility-details-option .option{color:#fff;font-size:15px;font-weight:bold;text-transform:uppercase;padding:6px 0 0 15px}
+.column-wrapper .eligibility-section .eligibility-details-option .optionName{color:#fff;font-size:15px;font-weight:normal;padding: 0 0 0 15px;}
+.column-wrapper .eligibility-section .eligibility-details-option .expires{color:#fff;font-size:12px;font-weight:normal;padding: 0 0 8px 15px;}
+.column-wrapper .eligibility-section .eligibility-details-options .redeemTime{height:35px;margin: 0 20px 0px 15px;width:426px}
+.column-wrapper .eligibility-section .eligibility-details-options .redeemTime .days{color:#0c8d63;font-weight:bold}
+.column-wrapper .eligibility-section .eligibility-details-options .orderDetails{float: left;margin: 0 0 15px 15px;padding-top: 15px;width: 270px;}
+.column-wrapper .eligibility-section .eligibility-details-options .orderDetails .detail{font-weight:bold; float:left;}
+.column-wrapper .eligibility-section .eligibility-details-options .orderDetails .detail.greenTxt{color:#0B8D61}
+.column-wrapper .eligibility-section .eligibility-details-options .orderDetails .name{float:left; width:140px}
+.column-wrapper .eligibility-section .eligibility-details-options .lGraph{float:left;position:relative;overflow:hidden}
+.column-wrapper .eligibility-section .eligibility-details-options .graph{background:url('img/config_meter_green_small.png') no-repeat scroll 0 0 transparent; height:71px; margin-bottom:20px; width:138px}
+.column-wrapper .eligibility-section .eligibility-details-container .lGraph .arrow{position: absolute !important;top: 44px; left: 59px;}
+.column-wrapper .eligibility-section .eligibility-details-options .graph.L0{background-position:0 0}
+.column-wrapper .eligibility-section .eligibility-details-options .graph.L7{background-position:-142px 0}
+.column-wrapper .eligibility-section .eligibility-details-options .graph.L8{background-position:0 -72px}
+.column-wrapper .eligibility-section .eligibility-details-options .graph.L9{background-position:-142px -72px}
+.column-wrapper .eligibility-section .eligibility-details-options .graph.L10{background-position:0px -145px}
+.column-wrapper .eligibility-section .eligibility-details-options .guagel10{background:url('img/config_meter_small_l10.png') no-repeat scroll 0 0 transparent; height:71px; width:138px}
+/* Configurator Topup page end*/
+/*Content Section End*/
+
+/***************************Styles of modal windows in epp legacy****************************/
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+#simplemodal-container{border:none;}
+#simplemodal-container p{margin-bottom:15px;}
+.eppLegacyModal{background: #FFF;padding: 0;width:690px;border:3px solid #CCC;}
+.eppLegacyModal div.header{margin:10px 0 10px 0;width:690px;height:80px;background:url(img/bg_banner_modal.png) 0 0 no-repeat;overflow:hidden;}
+.eppLegacyModal div.header h3{	color:#cccc00;font-size:14px;font-weight: bold;margin:25px 0 0 30px;}
+.eppLegacyModal h3 span.subTitleTxt{color:#99cccc;font-size:11px;display: block;}
+.partner .eppLegacyModal div.header{background:url(img/bg_banner_modal.png) 0 -80px no-repeat;}
+.partner .eppLegacyModal div.header h3{color: #993300;}
+.partner .eppLegacyModal div.header h3 span.subTitleTxt{color: #996600;}
+.eppLegacyModal .elModalContent{
+	border:1px solid #CCC;
+	padding:10px;
+	margin-bottom:10px;
+}
+.eppLegacyModal .elModalContent .selProgram{
+	margin-bottom:15px;
+}
+.eppLegacyModal .elModalContent .selProgram label{
+	font-weight: bold;
+	margin-right:5px;
+	vertical-align: middle;
+}
+.eppLegacyModal .elModalContent .selProgram select.proType{
+	width:160px;
+	vertical-align: middle;
+}
+.eppLegacyModal .elModalContent .fieldRow .fieldGroup{
+	float:left;
+	margin-bottom:10px;
+}
+.eppLegacyModal .elModalContent .fieldRow .fieldGroup label {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.eppLegacyModal .elModalContent em{
+	color:red;
+	padding:0 2px;
+}
+.eppLegacyModal .elModalContent .fieldRow .fieldGroup input{
+	margin-right:5px;
+	vertical-align: middle;
+	width: 160px;
+}
+.eppLegacyModal .elModalContent .buttonPanel button.primary{
+	margin-left:0 !important;
+}
+.eppLegacyModal .elModalContent .fieldRow .fieldGroup .fnOEmail{
+	width: 190px;
+}
+.eppLegacyModal .elModalContent .discLevelContainer{
+	background: #eeeeee;
+	width: 400px;
+	margin: 0 0 15px 130px;
+	padding:10px 15px;
+	border:1px solid #CCC;
+}
+.eppLegacyModal .elModalContent table.discountLevelTbl{
+	border-bottom:1px solid #666;
+	width: 100%;
+}
+.eppLegacyModal .elModalContent table.discountLevelTbl .tHeader td{
+	font-size:14px;
+	font-weight: bold;
+	border-bottom: 1px solid #CCC;
+	padding:3px;
+}
+.eppLegacyModal .elModalContent table.discountLevelTbl tbody td{
+	text-align: center;
+	border-bottom: 1px dotted #999;
+	padding:8px;
+}
+/****************Styles for Partner Central****************/
+#content-container .partner_central .banner_header{padding:20px 0 5px 20px; font-size:22px; font-weight: normal; line-height: 20px}
+#content-container .partner_central .banner_description{padding:0 0 0 20px; color: #333; font-weight: bold}
+#content-container .vppPanel {
+    float: left;
+    width: 700px;
+    margin-top:13px;
+}
+#content-container .vppPanel.singleCol {
+    width: 942px;
+}
+/* COMMENTED BY PREEJITH FOR NEW SUB HEAD STYLES */
+/*#vppHeader1 {
+    background: url("img/header1Mid.png") repeat-x scroll 0 0;
+}
+#vppHeader1 .boxRight {
+    background: url("img/bgsp_corner.png") no-repeat scroll right top;
+}
+#vppHeader1 .titleSpan {
+    background: url("img/bgsp_corner.png") no-repeat scroll left top;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    padding-left: 17px;
+    padding-top: 10px;
+}*/
+/* COMMENTED BY PREEJITH FOR NEW SUB HEAD STYLES */
+#vppHeader1 div{float:left; height:38px;background-image:url("img/bgsp_corner.png");}
+#vppHeader1 .headerLeftCorner{ background-position:left top; width:5px;}
+#vppHeader1 .titleSpan {
+    background: url("img/header1Mid.png") repeat-x scroll 0 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    padding-left: 10px;
+    padding-top: 10px;
+	width:680px;
+}
+#vppHeader1 .titleSpan.nineTwoTwo{
+	width:922px;
+}
+#vppHeader1 .headerRightCorner{ background-position:right top; width:5px;}
+/* COMMENTED BY PREEJITH FOR PANEL BODY */
+#vppPortalPanel .panelBody{
+	background: url("img/vppPortalPanelBody.jpg") repeat-y scroll left top transparent;
+	border-color: #CCC;
+    border-style: solid;
+    border-width: 0 1px;
+    min-height: 475px;
+}
+#vppPortalPanel .panelBody.wide{background: url("img/vppPortalPanelBody_Wide.jpg") repeat-y scroll left top transparent;}
+#vppPortalPanel .panelBody.noBgImg{background:none}
+#content-container .vppPanel.singleCol #contentPanel{
+	width: 735px;
+	/*border-left: 1px solid #CCCCCC;*/
+}
+/* CHanged this part to border and background */
+/*#content-container .vppPanel.singleCol .panelBody{
+	background: url("img/vppPortalPanelBody_Wide.jpg") repeat-y scroll left top transparent;
+}*/
+#content-container .vppPanel.singleCol .panelFooter{
+	background: url("img/vppPortalPanelFooter_Wide.png") no-repeat scroll -2px top transparent;
+}
+.ie7 #vppPortalPanel .panelBody{min-height: 455px}
+#content-container .floatLeft {
+    float: left;
+}
+#vppPortalPanel ul.menu {
+    background-color: #EEE;
+    /*border-right: 1px solid #CCC;*/
+    margin: 0;
+    min-height: 475px;
+    padding: 0;
+    width: 158px;
+}
+#vppPortalPanel ul.menu li {
+    background: url("img/vppPortalPanelMenu.jpg") repeat-x scroll left top transparent;
+    height: 33px;
+    list-style: none outside none;
+    padding: 18px 0 0 12px;
+}
+#vppPortalPanel .menu li a.linkItem:link, 
+#vppPortalPanel .menu li a.linkItem:visited, 
+#vppPortalPanel .menu li a.linkItem:active {
+    color: #3399CC;
+    font-size: 11px;
+    font-weight: bold;
+    padding-left: 5px;
+    text-decoration: none;
+}
+#vppPortalPanel .menu li a.active:link, 
+#vppPortalPanel .menu li a.active:visited, 
+#vppPortalPanel .menu li a.active:active {
+    color: #4D4E53;
+}
+#contentPanel {
+    padding: 20px 20px 0;
+    width: 495px;
+}
+#vppPortalPanel .panelHeader {
+    color: #AC3413;
+    font-size: 22px;
+    margin-bottom:15px;
+}
+#vppPortalPanel p {
+    line-height: 18px;
+    margin: 0 0 18px;
+    padding: 0;
+}
+#vppPortalPanel .panelFooter {
+    background: url("img/vppPortalPanelFooter.png") no-repeat scroll -2px top transparent;
+}
+#promoPane {
+    float: right;
+    margin-left: 18px;
+    width: 220px;
+    margin-top:13px;
+}
+#promoPane .promoGreen {
+    background: url("img/promoGreenBox.jpg") no-repeat scroll left top transparent;
+    padding: 37px 0 0;
+    color:#fff;
+    margin-bottom:10px;
+}
+.promoGreen .promoGreenContent{
+	padding: 0px 20px;
+}
+.promoGreen .promoGreenContent p{
+	font-size:11px;
+	margin-bottom:18px;
+	line-height:18px;
+}
+.promoGreen .promoGreenFooter{
+	background: url("img/promoGreenBoxBottom.jpg") no-repeat;
+	height:6px; 
+	display:block;
+}
+.promoGreen h3 {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left:20px;
+}
+.promoGreen div.greenArrow {
+    background: url("img/greenLink.jpg") no-repeat scroll 0 4px;
+    padding: 0 0 2px 14px;
+}
+.grayBox {
+    background: url("img/grayBoxBottomRight.jpg") no-repeat scroll right bottom;
+    background-position-x:right;
+    background-position-y:bottom;
+    margin: 15px auto 0;
+}
+.grayBox p{
+	font-size:11px;
+	margin-bottom:18px;
+	line-height:18px;
+}
+.grayBox h3{
+	font-size: 14px;
+    font-weight: bold;
+}
+#promoPane h3 a.promoHeadLink:link, .grayBox h3 a.promoHeadLink:visited, .grayBox h3 a.promoHeadLink:active{
+	color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+.grayBox .boxhead {
+    background: url("img/grayBoxHeadRight.jpg") no-repeat scroll right top;
+    background-position-x:right;
+    background-position-y:top;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display:block;
+}
+.grayBox .boxhead .boxHeadLeft {
+    background: url("img/grayBoxHeadLeft.jpg") no-repeat scroll left top;
+    background-position-x:left;
+    background-position-y:top;
+    height: 6px;
+    margin: 0;
+}
+.grayBox .boxbody {
+    background: url("img/grayBoxBottomLeft.jpg") no-repeat scroll left bottom;
+    background-position-x:left;
+    background-position-y:bottom;
+    margin: 0 0 10px 0;
+    padding: 5px 10px 11px;
+}
+#promoPane .grayBoxLink{
+	display:block;
+	color: #548DD4;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+#contentPanel h2{
+	color: #AC3413;
+    font-size: 22px;
+    line-height:20px;
+    font-weight:normal;
+    margin:0 0 10px;
+}
+#contentPanel .activeFunds{margin:0 0 60px}
+.highlightBox{
+	background:#eeeeee;
+	border:1px solid #ccc;
+	padding: 10px 0;
+	margin:0 0 30px 0;
+}
+#contentPanel .panelIntro{
+	margin:0 0 20px 0;
+}
+#contentPanel .searchPanel .column{
+	float:left;
+	padding:0 0 0 20px;
+}
+#contentPanel .searchPanel .column.companyNameCol{
+	width: 216px;
+}
+#contentPanel .searchPanel .column.lastCol{
+	padding-right:0;
+	width:190px;
+	word-wrap: break-word;
+}
+#contentPanel .searchPanel .column .emailInput{
+	width:260px;
+}
+#contentPanel .searchPanel .column .companyNameInput{
+	width:210px;
+}
+#contentPanel .searchPanel .column .vppInput{
+	width:72px;
+}
+#contentPanel .searchPanel .column .searchRow input,
+#contentPanel .searchPanel .column .searchRow button{
+	vertical-align: middle;
+}
+#contentPanel .searchPanel .column button{
+	margin: 0 0 0 20px !important;
+}
+#contentPanel .searchPanel .column h3{font-weight: bold; margin: 0 0 2px 0 }
+#contentPanel .searchPanel .column.lastCol h3{margin-bottom:0px}
+#contentPanel .searchPanel .column h3 span{display:inline-block; vertical-align: middle;}
+#contentPanel .searchPanel .column h3 .cName{float:left; }
+#contentPanel .searchPanel .column h3 .sTip{float:right; font-weight: normal; }
+#contentPanel .searchPanel .column .eg{
+	clear:both;
+	display:block;
+	font-size:10px;
+}
+#content-container .vppPanel .searchResults{
+	margin:0 0 60px;
+}
+#content-container .vppPanel .searchResults .dataTables_wrapper{
+	min-height: 135px;
+}
+#content-container .vppPanel .searchResults .dataTables_empty{
+	padding: 40px 0;
+	text-align:center;
+	font-size: 16px;
+	background:none;
+}
+#content-container .vppPanel table thead{
+	border-left:1px solid #252525;
+}
+#content-container .vppPanel table th {
+	color: #FFF;
+    margin: 0;
+    padding: 4px 5px 4px 15px;
+    background: #383838 url("img/bkg_header_black.png") repeat-x; /*Added back to fix table header background issue **Nina**/
+    text-align: left;
+	font-size: 10px;
+	font-weight:normal;
+	border: 1px solid #252525;
+	border-width: 0 1px 0 0;
+	-webkit-padding-before : 3px;
+}
+#content-container table th span{display: block;padding-right:9px; color:#FFF}
+#content-container table th span.descending, 
+#content-container table th.sorting_desc span.descending{
+	background: url("img/drop_down_arrow.png") no-repeat scroll right 0 transparent;
+}
+#content-container table th span.ascending, 
+#content-container table th.sorting_asc span.descending {
+	background: url("img/drop_up_arrow.png") no-repeat scroll right 0 transparent;
+}
+#content-container .filter-section{margin:0 0 15px}
+#content-container .filter-section .filter-header.filter-header-fund {
+    padding-left: 14px;
+    border-bottom:1px solid #000;
+}
+#content-container .filter-section .filter-header div {
+    font-size: 13px;
+}
+#content-container .filter-section .filter-header .filter-header-fund-first {
+    float: left;
+    width: 464px;
+}
+#content-container .filter-section .fund-header-details-container {
+    background: url("img/bg_gray_gradient.png") repeat-x scroll 0 0 #2F2F32;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px 5px 15px 14px;
+}
+.filter-section .filter-header {
+    background: url("img/bg_filter_header.jpg") repeat-x scroll 0 0 #2F2F32;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 8px 5px 7px 15px;
+    position: relative;
+    z-index: 601;
+}
+#content-container .filter-section .fund-header-details-container .fund-header-details-single {
+    float: none;
+    width: auto;
+}
+#content-container .filter-section .fund-header-details-container .fund-header-details-first.left-sec {
+    float: left;
+    width:69%;
+}
+#content-container .filter-section .fund-header-details-container .fund-header-details-first.right-sec {
+    float: left;
+    width:30%;
+}
+#content-container .filter-section .fund-header-details-container .fund-header-details-first {
+    float: left;
+    width:49%;
+}
+#content-container .filter-section .reviewDetails .fund-header-details-first {
+    float: left;
+    width: 49%;
+}
+#content-container .filter-section .fund-header-details-container ul li {
+    background: none repeat scroll 0 0 transparent;
+    clear: both;
+    list-style: none outside none;
+    padding: 0;
+    margin-bottom: 5px;
+    overflow:hidden;
+}
+#content-container .filter-section .fund-header-details-container ul li div.desc_head {
+    float: left;
+    width: 40%;
+    padding-right:5px;
+}
+#content-container .filter-section .fund-header-details-container .left-sec ul li div.desc_head {
+    float: left;
+    width: 29%;
+}
+#content-container .filter-section .fund-header-details-container .right-sec ul li div.desc_head {
+    float: left;
+    width: 45%;
+}
+#content-container .filter-section .fund-header-details-container .left-sec ul li div.desc_det {
+    float: left;
+    width: 69%;
+}
+#content-container .filter-section .fund-header-details-container .right-sec ul li div.desc_det {
+    float: left;
+    width: 50%;
+}
+#content-container .filter-section .fund-header-details-container .right-sec ul li div.tkn {
+    float: left;
+    width: 99%;
+    background:url('img/bg_tokenOrder.png') no-repeat left center;
+    padding:5px 0 5px 20px;
+}
+#content-container .filter-section .fund-header-details-container ul li div.desc_det {
+    float: left;
+    font-weight: normal;
+    width: 58%;
+    word-wrap: break-word;
+}
+#content-container .filter-section{border:1px solid #000;}
+#content-container .filter-section a {
+    color: #ACE3FF;
+}
+#content-container .filter-section ul li div.desc_det span {
+    display:block;
+}
+/* FOR TOOLTIP STYLE */
+.tooltip_flyout,.tooltip_flyout_def{
+	width:196px;
+	padding:14px 12px 15px 15px;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	background: #f3f3f3; /* Old browsers */
+	background: -moz-linear-gradient(top, #f3f3f3 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f3f3f3 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #f3f3f3 0%,#e5e5e5 100%); /* W3C */
+	position:absolute;
+	z-index:2000;
+}
+.flyout_arrow{
+	background: url("img/tootltip_left_arrow.png") no-repeat scroll center 0 transparent;
+	height: 12px;
+    left: -12px;
+    position: absolute;
+    top: -1px;
+    width: 15px;
+}
+.flyout_arrow_left{
+	background: url("img/tootltip_right_arrow.png") no-repeat scroll center 0 transparent;
+	height: 12px;
+    right: -12px;
+    position: absolute;
+    top: -1px;
+    width: 15px;
+}
+#eppSearchResults_tbl .dataTables_empty .noAccessTitle{
+	margin:0 0 10px;
+}
+#eppSearchResults_tbl .dataTables_empty .noResultsTitle{
+	margin: 25px 0;
+}
+#eppSearchResults_tbl .dataTables_empty .noAccessDisc{
+    font-size: 12px;
+    text-align: left;
+}
+
+/*Partner Search Start*/
+.searchContentPanel{padding: 20px 15px 50px}
+.highlightBox .required {font-style: italic;margin: 0 0 10px !important}
+.highlightBox em{color: #D9541E;font-size: 11px}
+.highlightBox.emailPanel{border: 1px solid #CDCDCD;padding: 10px 10px 20px}
+.highlightBox .emailLabel{float: left;font-weight: bold;margin: 2px 10px 0 0}
+.highlightBox .emailInput {border: 1px solid #AAADB2;float: left;width: 158px}
+.highlightBox .terms {margin:15px 0 10px}
+.highlightBox .terms input[type="checkbox"] {float: left;margin: 0;padding: 0}
+.highlightBox .terms label {float: left;margin: 0 5px;width: 610px}
+.emailPanel button{float:right}
+.emailPanel .errorHolder {float: left;margin: 5px 12px;min-height: 15px;width: 300px;}
+.emailPanel .errorAuHolder {float: left;margin: 5px 0 0 13px;}
+span.tooltip {background: url("img/searchHelpIcon.png") no-repeat scroll 0 0 transparent;cursor: pointer;float: left;height: 14px;margin-left: 5px;margin-top: 4px;text-indent: -99999px;vertical-align: top;width: 14px}
+#vppPortalPanel .panelFooter.noLeftColums {background: url("img/noLeftvppPortalPanelFooter.png") no-repeat scroll -2px top transparent;}
+.results .results_header{background: url("img/bkg_header_black.png") repeat-x scroll 0 0 #2F2F32;border-color: #252525 #252525 #343536;border-style: solid;border-width: 1px 0 0 1px;color: #FFFFFF;font-size: 12px;font-weight: bold;padding: 8px 5px 9px 14px;}
+.results .resultMsg{font-size: 14px;padding: 30px 6px 30px 15px;}
+.results .resultMsg span{float:left;font-size: 12px;margin: 5px 0 0}
+/*Partner Search End*/
+/* Loading Start */
+.loading {margin: 10px auto 0;width: 140px;}
+.loading_big {background: url("img/loading_32.gif") no-repeat scroll 0 0 transparent; color: #666 !important;font:normal 20px Arial !important;height: 32px;	padding:3px 0px 0px 43px !important;text-align:left;display:block}
+.loading_small {background: url("img/loading_24.gif") no-repeat scroll 0 0 transparent;color: #666 !important;font:normal 16px Arial !important;height: 24px;padding:3px 0px 3px 33px !important;text-align:left;display:block}
+ /* Loading End */
+ /* CCP Styles start */
+#content-container{background:#f6f6f6 !important; padding-top: 20px; margin-top:70px;}
+#content-container .ccpCentral .vppPanel{width:710px;}
+.ccpCentral .sectionHeader{background:#58595e;padding:10px 10px 10px 25px;font-size:15px; color:#FFF;}
+.ccpCentral #vppPortalPanel .panelBody{border:1px solid #CCC; background:url("img/ccpPortalPanelBody.jpg") repeat-y scroll left top transparent}
+.ccpCentral #contentPanel{width: 430px;padding: 30px 35px 0 40px;}
+.ccpCentral #vppPortalPanel .panelHeader{font-size:18px;color:#990000}
+.ccpCentral #vppPortalPanel ul.menu{background:none;width: 198px;}
+.breadCrms{font-size:11px; color:#666666;margin-bottom:20px; color: #666;}
+.ccpTitleSec h1{font-size:26px; font-weight: normal; margin:0 0 10px; color:#666666;}
+.ccpTitleSec h2{font-size:18px;font-weight: normal; margin:0 0 15px; color:#990000; width:990px;}
+.ccpReportsFlds dl dt, .ccpReportsFlds dl dd{width:200px;float:left;padding:10px 0;}
+.ie7 .ccpReportsFlds dl dd{width:200px;}
+.ccpReportsFlds dl dt{text-align:right;padding:12px 15px 0 5px;width:150px;}
+.ccpReportsFlds dl dd.btns{padding-top:5px;}
+.ccpReportsFlds input[type="text"]{width:160px;}
+.ccpCentral .reportSec{margin-bottom:25px;}
+.ccpCentral .reportSec.borderBtm{border-bottom:1px solid #CCC;}
+.ccpCentral a.returnLink{background:url('img/bgReturnLink.jpg') no-repeat; padding-left:10px;}
+.ccpCentral #vppPortalPanel ul.menu li{padding: 18px 12px 0 0; text-align:right;}
+.ccpCentral .contactHdr{background:url('img/bgContactHdr.jpg') no-repeat; padding: 5px 0 15px 50px;}

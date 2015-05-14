@@ -1,0 +1,25 @@
+﻿label.common.requiredMessage=필수
+label.common.validEmailIDMessage=잘못된 e-메일 주소입니다.
+label.common.validEmailIDLengthMessage=잘못된 e-메일 주소입니다.
+label.common.validEmailIDNotMatchMessage=이메일 주소가 일치하지 않습니다
+label.common.validPasswordNotMatchMessage=위와 같이 비밀 번호를 입력하세요
+label.common.alphaNumericMessage=, 편지를 숫자를 입력하고 밑줄하십시오
+label.common.phoneNumberMessage=잘못된 전화 번호입니다.
+label.common.maxlengthMessage=보다 더 자세한 내용을 입력하지하시기 바랍니다 {0} 문자.
+label.common.rangelengthMessage=잘못되었습니다. {0} 자 이상 {1} 자 이하여야 합니다.
+label.common.digitMessage=단 숫자를 입력하세요
+label.common.range=사이의 값을 입력하십시오 {0} 과 {1}
+label.common.validAlphaNumericNoSpace=잘못된 사용자 이름
+label.common.selectOne=하나 선택
+label.common.tooshort=너무 짧음
+label.common.weak=약함
+label.common.good=좋음
+label.common.strong=강함
+label.common.loading=로딩 중...
+label.common.defaultPass=암호 보안 수준
+label.common.sameasusername=비밀 번호 사용자 이름과 동일합니다.
+label.common.cancelButtonURL=/kr/web/vmware/login
+label.common.loadingDataForDropDown=데이터로드 중...
+label.common.summation.rangelengthmessage=Enter a number between {0}-{1}.
+label.common.empinCountry.exceedGlobalEmpMessage=전 세계 직원 수를 초과합니다.
+label.common.already.deactivated.error=해당 e-메일 주소는 비활성화되었습니다.  이 오류 메시지를 받은 경우 <a href="http://www.vmware.com/support/us_support.html" target='_blank'>지원 연락처</a>로 문의해 주십시오.

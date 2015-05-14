@@ -1,0 +1,862 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  modal_style.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 04/21/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. INCLUDES
+ * ## 2. MODAL STYLES
+/* ########################################################################### */
+/* ########################################################################### *
+/* ##### MODAL STYLES
+/* ########################################################################### */
+/* Input Text */
+.modalContent input[type=text],.modalContent input[type=password] { 
+  	background: #FFFFFF; /* old browsers */
+  	border: #e2e9ef 1px solid;
+	border-top: #aaadb2 1px solid;
+	font-size: 12px;
+	color: #333;
+	   -moz-border-radius: 3px; /* Firefox */
+	-webkit-border-radius: 3px; /* Safari, Chrome */
+	 -khtml-border-radius: 3px; /* KHTML */
+	        border-radius: 3px; /* CSS3 */
+} 
+.modalContent .input-wrapper input[type=text],.modalContent .input-wrapper input[type=password]{
+	   -moz-border-radius: 3px; /* Firefox */
+	-webkit-border-radius: 3px; /* Safari, Chrome */
+	 -khtml-border-radius: 3px; /* KHTML */
+	        border-radius: 3px; /* CSS3 */
+}
+/* Select */
+.modalContent select {
+	font-size:11px;
+	color:#333;
+  	background: #FFFFFF; /* old browsers */
+	border:1px solid #747474;
+	height:20px;
+ }
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+#simplemodal-container a.modalCloseImg {
+	background:url(/static/vmware/modules/evals/img/icn_close.png) no-repeat !important; 
+	width:53px; 
+	height:17px; 
+	display:inline; 
+	z-index:3200; 
+	position:absolute; 
+	top:12px; 
+	right:15px; 
+	cursor:pointer;
+}
+#simplemodal-container{border:none;}
+.modalContent{
+	background: #FFF;
+	padding: 30px 35px;
+	width: 550px;
+	   -moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	 -khtml-border-radius: 5px; /* KHTML */
+	        border-radius: 5px; /* CSS3 */
+}
+.modalContent.wide{width:790px;}
+.modalContent.narrow{width: 260px;}
+.modalContent .header{border-bottom: 1px solid #d6d6d6;padding-bottom: 10px;}
+.modalContent .body{padding-top:15px;padding-bottom:5px;}
+.modalContent .body p{
+ 	color: #666666;
+	font-size:12px;
+	font-weight:lighter;
+    line-height: 16px;
+    margin-right: 20px;
+}
+.modalContent .ctrlHolder label {font-size: 12px;width: auto;}
+.body .details {
+	background: #666;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 10px;
+	border-bottom: 1px solid #FFF;
+	padding: 7px 7px 10px 45px;
+}
+.body .name,.body .email {font-size: 13px;font-weight: normal;}
+.modalContent .body .title {color: #cecece;font-size: 10px;}
+.body table.withborders {
+	width:100%;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+.modalContent .body .noborders {width:auto;}
+.modalContent .body .noborders.moveRight {
+	width:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:50px;
+}
+.body table.withborders tbody td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 5px;
+	border-bottom: #CCC dotted 1px;
+	font-size: 12px;
+	font-weight: normal;
+	text-indent: 10px;
+}
+.body table.withborders tbody td.center{text-align: center;}
+.body table.withborders thead td {border-bottom: none;}
+.body table.withborders thead .center {text-align: center;border-left:#FFF solid 1px;}
+.body table.withborders th {
+	background: #383838 url("img/bkg_header_black.png") repeat-x;
+	border-right: 1px solid #000;
+	color: #FFF;
+	font-size: 10px;
+	padding: 4px;
+}
+.body table.withborders thead th {
+    border-width: 0 1px 0 0;
+	border-color: #000;
+	padding-left: 12px;
+	text-align: left;
+}
+	.ie7 .body th {position: relative;}
+		.body th a {
+			float: right;
+			display: block;
+			margin-right: 0;
+			background-image: url(img/drop_down_arrow.png);
+			text-indent: -9999px;
+			background-repeat: no-repeat;
+			width: 20px;
+		}
+			.ie7 .body th a {
+				position: absolute;
+				right: 7px;
+				top: 5px;
+				text-decoration: none;
+			}
+.modalContent .footer{
+	border-top: 1px solid #d6d6d6;
+	margin-top:10px;
+	padding-top:15px;
+	padding-right:0px;
+}
+.modalContent .footer.logInFooter{
+	margin:0px;
+	border-top: 0px;
+	height:20px;
+	width:260px;
+	padding-top:0px;
+	padding-bottom:10px;
+}
+.modalContent .footer.logInFooter p{font-size:10px;float:none;}
+.modalContent .footer.wide{
+	border-top: 1px dotted #a9a9ab;
+	margin-top:10px;
+	padding-top:20px;
+	padding-right:0px;
+	margin-left:10px;
+}
+.modalContent .headerTitle{font-size: 24px;color:#666;}
+.modalContent .bodyTitle{
+	font-size:12px;
+	font-weight:900;
+	color:#000;
+	vertical-align:middle;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.modalContent .footerContent{padding-top:20px;padding-bottom:40px;}
+.modalContent .footerQuestion{
+	font-size:11px;
+	font-weight:bold;
+	color:#000;
+	padding:0 0 10px 0px;
+}
+.modalContent .fooerText{
+	font-size:10px;
+	padding:0 0 10px 0px;
+}
+.modalContent .learnMore{
+	background-image:url(img/anchor.png);
+	background-repeat:no-repeat;
+	text-indent:15px;
+	font-size:11px;
+	font-weight:bold;
+}
+.modalContent .bodyTitle img {border: 0;}
+.modalContent .input-wrapper{
+	float:none;
+	padding:0 0 10px 0;
+}
+.modalContent .input-wrapper a{font-size:11px;}
+.modalContent .input-wrapper label{
+	font-size:10px;
+	float:none;
+	color:#000;
+}
+.modalContent .input-wrapper .inputFeild{
+	font-size:10px;
+	float:none;
+	padding-top:4px;
+}
+.modalContent .devider{
+	border-top: 1px dotted #a9a9ab;
+	height:5px;
+}
+.modalContent input.wide, select.wide{width:170px;}
+.modalContent table.noborders tr td {
+	text-align:left;
+	border:0; 
+	padding:5px;
+	border-bottom:none;
+}
+.modalContent .highlight table.noborders tr td {padding: 20px 0 0px 0;}
+.modalContent .highlight table.noborders tr:first-child td {padding: 0;}
+.modalContent .highlight table.noborders tr.subInfo td {padding-top: 5px;}
+.modalContent .highlight table.noborders tr td.label {padding-right: 5px;}
+.modalContent .noborders td {
+	width:auto;
+	font-size: 12px;
+}
+.noborders td.data {
+	padding-left:5px;
+	text-align:left;
+}
+.modalContent .body td.label { 
+	padding-right:2px;
+	text-align:left;
+	/*white-space:nowrap;*/
+	font-size:12px;
+	font-weight:bold;
+	color:#484849;
+}
+.modalContent .body td.label.header { 
+	text-align:left;
+	/*white-space:nowrap;*/
+	font-size:12px;
+	font-weight:bold;
+}
+.modalContent .marginRight {margin-right: 15px;}
+.modalContent .body .searchLabel {
+	line-height:25px;
+	font-size:13px;
+	font-weight:bold;
+	color:#000;
+	border-bottom:none;
+}
+.modalContent .body .searchResult {
+	line-height:25px;
+	text-align:left;
+	font-size:13px;
+	font-weight:bold;
+	color:#666;
+	border-bottom:none;
+}
+.modalContent .body td.label.right { 
+	padding-right:2px;
+	text-align:right;
+	vertical-align:middle;
+	/*white-space:nowrap;*/
+	font-size:11px;
+	font-weight:lighter;
+	color:#000;
+}
+.modalContent ul.tabs {
+	border-bottom: 5px solid #006699;
+	margin: 0;
+}
+ul.license_folders_id, ul.license_folders_id ul{
+	padding: 0;
+}
+.modalContent .tabContent ul.license_folders_id ul li label {
+    padding-left: 30px;
+    width: 160px;
+}
+.modalContent .tabContent  ul li input {margin-left: 15px;}
+.modalContent .tabContent .email, .modalContent .body table.indent {
+	display: block;
+	margin-left: 20px;
+	text-indent: 0;
+}
+.modalContent .centerArrow {padding-top: 100px;}
+.modalContent .footer .buttons .left-btns {float:left;}
+.modalContent .footer .buttons .right-btns {float:right;}
+.modalContent .footer button {cursor:pointer; height: 24px;}
+.modalContent .footer .buttons .button {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+div.filters{padding:3px;}
+.modalContent.column.tabledata {
+	float: left;
+	width: 370px;
+}
+.modalContent .details {
+	background: #666;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 10px;
+	border-bottom: 0;
+	padding: 7px 7px 10px 45px;
+}
+.modalContent .name,.modalContent .email {
+	font-size: 13px;
+	font-weight: normal;
+}
+.modalContent .name img {border: 0;}
+.modalContent .email {text-indent:18px;margin-top: 3px;}
+.modalContent .email a {color: #4cb8e9;}
+.modalContent thead {background: #666;}
+.modalContent thead td {border-bottom: none;}
+.modalContent th {border-width: 0 1px 0 0;}
+.modalContent .remove {
+	display: block;
+	float: left;
+	width: 11px;
+	height: 11px;
+	background: url(img/remove.png) no-repeat;
+	text-indent: -9999px;
+	margin-right: 8px;
+	position: relative;
+	top: 1px;
+}
+.tabContent .section-wrapper { 
+	color:#333;
+	background-color:#FFF;   
+	border-bottom:1px solid #484848;
+}
+.section-wrapper .column {height: 230px;}
+.section-wrapper .column.twoTwenty {
+	background-color:#FFF; 
+	width:211px;
+	float:left; 
+}
+.section-wrapper .column.threeTwenty {
+	background-color:#FFF; 
+	width:324px;
+	float:left; 
+}
+.section-wrapper .column header {
+	/*border-right:2px solid #CCC;*/
+	background: #383838 url("img/bkg_header_black.png") repeat-x; 
+	border-right:1px solid #000; 	
+}
+.section-wrapper .column.threeTwenty header {
+	border-right:1px solid #fff; /* This is added for 4.019a for seperator :: nagaraj*/
+	background: #383838 url("img/bkg_header_black.png") repeat-x; 	
+}
+.section-wrapper .column.fourFive {width: 405px;float:left;}
+.section-wrapper .column.fourZeroZero {width: 400px;float:left;}
+.section-wrapper .column.threeEightFive {width: 385px;float:left; }
+.section-wrapper .column.fiveFifty {
+	width: 550px;
+	float: left;
+	margin-top: 15px;
+}
+.section-wrapper .column h1{
+	padding: 5px 10px 4px;
+	font-size:10px;
+	width:150px;
+	color:#FFF;
+}
+.section-wrapper .column.threeTwenty h1{
+	font-size:10px;
+	width:263px;
+	color:#FFF;
+}
+.section-wrapper .column.twoTwenty.lastColumn {
+	background-color:#FFF; 
+	border-left:2px solid #CCC;
+	width:214px;
+	float:left; 
+}
+.section-wrapper .column.arrow {
+	background-image:url(img/bkg_section_arrow.png);
+	background-repeat:repeat-y;
+	background-color:#FFF; 
+	border-top:1px solid #999;
+	width:34px;
+	float:left; 
+	text-align:center;
+}
+.section-wrapper .column.arrowSection {
+	background-image:url(img/bkg_EditContracts_Btn.png);
+	background-repeat:repeat-y;
+	background-color:#FFF; 
+	border-top:1px solid #999;
+	width:34px;
+	float:left; 
+	text-align:center;
+}
+.section-wrapper .column.arrow .cenerArrow{padding-top:95px;}
+.section-wrapper .column .scroll {
+    border-right: 1px solid #FFFFFF;
+	height: 92%;
+	overflow-y: scroll;
+}
+.section-wrapper .column .scroll ul li{
+	border-bottom: medium none;
+    color: #333333;
+    display: block;
+	font-size:11px;
+    margin:0;
+   padding: 5px 0;
+}
+.section-wrapper .column .scroll .email{
+	font-size:10px;
+	color:#999;
+}
+.tabContent .thinLine{
+	height:1px;
+	background-color:#484848;
+}
+.searchArea {
+    background: url("img/bkg_searchbar.png") repeat-x scroll 0 -2px transparent;
+	border-right: 1px solid #FFFFFF; /*Added border for section seperator*/
+    height: 35px;
+    margin-top: 0;
+    padding-left: 12px;
+    padding-top: 2px;
+}
+.searchArea.withGrayGap{
+	background-color:#484848;
+	background-image:url(img/bkg_search_editContracts.png);
+	background-repeat:no-repeat;
+}
+.searchArea input[type="text"] {
+    background: url("img/bkg_searchArea.png") repeat scroll 0 0 transparent;
+    border: 0 none;
+    border-radius: 0 0 0 0;
+    color: #999999;
+    height: 19px;
+    padding-left: 10px;
+    padding-right: 24px;
+    width: 168px;
+}
+.column .supportLevelTitle {
+	font-size:12px;
+	font-weight:bold;
+	color:#000;
+}
+.column .subInfo {
+	font-size:9px;
+	color:#000;
+}
+.column .availableInfo{padding-left:40px;}
+.mySupportContracts{float:right;margin-top: 10px;}
+.modalContent .warning {
+    background: #fff9e9 url(img/warning_small.png) no-repeat 10px 10px;
+    border: 1px solid #ddddce;
+	   -moz-border-radius: 3px; /* Firefox */
+	-webkit-border-radius: 3px; /* Safari, Chrome */
+	 -khtml-border-radius: 3px; /* KHTML */
+	        border-radius: 3px; /* CSS3 */
+    color: #666666;
+    font-size: 12px;
+    margin: 15px 0 20px;
+    padding: 15px 15px 15px 40px;
+}
+.modalContent .warning p {font-weight:bold;color:#000000;}
+.modalContent .errmsg {color:#d9541e !important}
+.modalContent .header .errmsg {
+	font-size: 15px;
+	font-style: italic;
+}
+.modalContent  .warningctrls{margin: 20px 0pt 10px 20px;}
+.body table.withborders tbody td.indent{text-indent:20px;}
+.body table.withborders tbody td.indent input{vertical-align:baseline;}
+.body table.withborders tbody td.indent30{text-indent:30px;}
+.body table.incHeight tbody td{
+	vertical-align:middle;
+	padding:5px 0;
+}
+.modalContent .footer2{
+	height:50px;
+	margin-top:10px;
+	width:512px;
+}
+.modalContent .footer2 .buttons .right-btns{float:right;}
+.modalContent .body td.label.rightalign{ /*Right align a table cell*/
+	text-align:right !important /*Added important as only single style is included and no issues, even if it is coupled with other class*/
+}
+.modalContent .body .addDescription{ /* Additional description having more space on top and right*/
+	margin:20px 20px 0 0;
+	line-height:20px;
+}
+.modalContent .body td.label.moreSize{ /* Few labels are greater in size and left aligned*/
+	text-align:left;
+	font-size:12px;
+}
+.modalContent .body td.subhead{ /* Sub heading in a table -  Used for 4.006c & 4.006d*/
+	background-color:#eeeeee;
+	border-bottom:0px;
+	font-size:11px;
+	border-top:2px solid #FFF
+}
+.modalContent .body p.description.moremargin{ /* Assigning more margin to description*/margin:10px 0 20px 0px}
+.modalContent .body.moremargin{ /* Assigning more margin to body*/margin:0px 15px}
+.pleft5{padding-left:5px !important}
+.mleft15{margin-left:15px !important}
+.tleft{text-align:left !important}
+.modalContent .body p.licenseFolder{   /* Add style to License Folder descriptive text*/
+	padding: 10px 0 0px;
+	font-weight:bold;
+	color:#4c4e53;
+	font-size:15px;
+}
+.body table.incHeight tbody td.vspace{
+	vertical-align:top;
+	padding:5px 0 12px;
+}
+.body table.incHeight thead th{
+	padding:5px 0 5px 10px;
+	vertical-align:middle;
+}
+.tabBorder{
+	background-color:#484848;
+	border-bottom:1px solid #FFFFFF;
+	height:5px;
+}
+.tabbed_box_1 {
+  margin: 15px 0 0;
+  position: relative;
+}
+.section-wrapper .column.threeTen {
+    background-color: #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: 4px solid #DEDEDE;
+    float: left;
+    width: 280px;
+}
+.section-wrapper .column.threeTwenty {
+    background-color: #FFFFFF;
+    border-right: 4px solid #DEDEDE;
+    float: left;
+    width: 323px;
+}
+.section-wrapper .column .scroll ul.block li{
+	display:block;
+	margin-left:0px;
+}
+/*.modalContent .tabContent ul.block .email{display:inline;}*/
+.searchArea button.button {
+  padding-top: 2px;
+  width: 75px;
+}
+.section-wrapper .column.threeTen .searchArea {
+    border-right: 1px solid #FFFFFF;
+    padding-top: 5px;
+}
+.tabContent .section-wrapper.noborder{border:0px;}
+.section-wrapper .column .scroll.heightAdjust {height: 76%;}
+.modalContent .body td.label div.folder{float:left;}
+.modalContent .body td.label div.edit{
+	float: right; 
+	margin-right: 2px;
+}
+.modalContent .body td.label div.path{
+	clear: both; 
+	margin-left: 21px;
+}
+/*4.019a & 4.019b start */
+.section-wrapper p{font-size:11px !important}
+.section-wrapper table td{
+	padding-left: 18px;
+    padding-top: 5px;
+	font-size:11px;
+	font-weight:bold
+}
+.section-wrapper input.moreWidth[type="text"]{
+	width:206px;
+	border-radius:0
+}
+.section-wrapper .footer {
+    border-top: 1px dotted #a9a9ab;
+    height: 60px;
+    margin-left: 19px;
+    margin-top: 20px;
+    padding-top: 10px;
+    width:90%
+}
+.section-wrapper .footer a{text-decoration:underline}
+#content_4 .section-wrapper .column{height:305px !important}
+/*4.019a & 4.019b start */
+/*4.019c start */
+.section-wrapper .column .scroll ul#license_folders_id ul li label {padding-left: 15px;}
+.section-wrapper .column .scroll ul#license_folders_id label {
+ 	line-height:20px;
+	font-size:11px;
+}
+.section-wrapper .column .scroll ul#license_folders_id input[type="checkbox"]{vertical-align:middle}
+.section-wrapper .column .scroll ul#license_folders_id ul.expandlist li label {padding-left: 34px;}
+.section-wrapper .column .scroll ul#license_folders_id li{display:table-row-group}
+.section-wrapper .column ul div.headerRow{
+	background: none repeat scroll 0 0 #EEEEEE;
+    border-top: 1px solid #FFF;
+    padding-left: 5px;
+    width: 560px;
+}
+.section-wrapper .column ul div.subRow{
+	border-top: 2px solid #FFF;
+    padding-left: 5px;
+    width: 560px;
+}
+/*4.019c end *//* 6.004 Replace IT Super User Start*/
+.tabbed_box_2 {
+    margin: 5px 0 0 0;
+    position: relative;
+}
+.section-wrapper .column .superUserQn{
+	border-top: 1px solid #acacac;
+    font: bold 11px arial;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.section-wrapper table.noPadding td{
+	padding-left: 0;
+    vertical-align: text-top;	
+}
+.section-wrapper .column .scroll .email.inline{display:inline;}
+.section-wrapper .column .scroll .users{
+	padding-top:10px;
+	padding-left: 10px;
+}
+.section-wrapper .column .scroll .users p {
+	margin-bottom: 10px;
+	padding-left: 0;
+}
+.section-wrapper .column.threeOneOne {
+    background-color: #FFFFFF;
+    border-right: 4px solid #DEDEDE;
+    float: left;
+    width: 311px;
+}
+.section-wrapper .column.threetwoTwo {
+    background-color: #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: 4px solid #DEDEDE;
+    float: left;
+    width: 322px;;
+}
+.section-wrapper .column h1.withborder273{
+	padding:4px 10px;
+	width:273px;
+	border-right:1px solid #fff;
+}
+.section-wrapper .column h1.withborder284{
+	padding:4px 10px;
+	width:284px;
+	border-right:1px solid #fff;
+}
+.section-wrapper .column .textStrong {font-weight: bold;}
+.section-wrapper .column .fixedWidth {width: 90px;}
+/* 6.004 Replace IT Super User end*//* 6.004a Replace IT Super User Confirmation start*/
+.body table.singleRow td{padding:15px 50px 15px 0}
+.body table.alignTop td{vertical-align:text-top !important;}
+.body .replaceSection{
+	margin:10px 0px 20px 0; 
+	font-size: 12px;
+}
+.body .replaceSection .warning.nomargin{margin:0px}
+.replaceSection h1 {font-size: 12px;}
+/* 6.004a Replace IT Super User Confirmation end*/
+/* START 6.005 Find Folder */
+#findFolderContent ul.block {
+	margin-left: 0px;
+	margin-top: 10px;
+}
+#findFolderContent .section-wrapper .column .scroll ul.block li {
+	margin-bottom: 10px;
+	background: url("img/bkg_dotted_line.png") repeat-x scroll 0 bottom;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	font-size: 12px;
+}
+#findFolderContent li input {margin-right: 4px;}
+#findFolderContent .folderPath {
+	display: block;
+	margin-left: 20px;
+	color: #999;
+}
+/* END 6.005 Find Folder*/
+.modalContent .body section.scrollable{
+	height:390px;
+	overflow:auto;
+}
+.modalContent .body table.incHeight tbody td.vspace2{
+	vertical-align:top;
+	padding:12px 0;
+}
+.modalContent .body table.withborders tbody td.noborders, .body table.withborders tbody.noborders td{
+	border-bottom:0px !important;
+	margin:0px
+}
+.modalContent .body table.withborders.nomargin{margin:0px;}
+.modalContent .body div.partnerDiv{margin:20px 0px 0px 0px;}
+	.modalContent .partnerDiv input {margin-right: 9px;}
+		.modalContent .partnerDiv section input {margin-right: 0;}
+.modalContent .body section.indent30{margin:5px 0 5px 25px}
+.modalContent .body section div.scrollable{
+	height:259px;
+	overflow:auto;
+	border-bottom:1px solid #666
+}
+.modalContent .body td.subhead.border{
+	border-left:1px solid #fff;
+	width:15px;
+}
+.modalContent .body section .horLine{
+	border-top:1px solid #000;
+	height:2px
+}
+/*4.019d start */
+.modalContent .folder_grey{
+	background: url("/static/myvmware/common/css/img/folder_gray.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 13px;
+    margin-right: 8px;
+    position: relative;
+    text-indent: -9999px;
+    top: 1px;
+    width: 14px;
+}
+.tabbed_box_3{
+    margin: 15px 0 0 0;
+    position: relative;
+}
+.section-wrapper .column.threeSeventy {
+    background-color: #FFFFFF;
+    border-right: 1px dotted #eaeaea;
+    float: left;
+    width: 370px;
+}
+.section-wrapper .column.h330{height:330px;}
+.modalContent .body table.alignLeft {
+	margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+}
+.modalContent .body table.alignLeft  td{padding-left:5px;}
+.modalContent .body p.data{line-height:15px !important;}
+.modalContent div.headerRow {
+	border-top: 5px solid #006699;
+	margin: 0;
+	height:1px;
+}
+.modalContent .body div.accountUserSection{margin:10px 30px 15px 10px;}
+.modalContent .devider.margin{margin-right:10px;}
+/*4.019d start */
+.modalContent .highlight {
+	border: 1px solid #CCC;
+	background: #EEE;
+	padding: 15px;
+	margin-top: 15px;
+}
+.modalContent .highlight td {color: #333333;}
+.modalContent .column.tabledata {margin-top: 15px;}
+.modalContent .productName {
+	font-size: 15px;
+	color: #4c4e53;
+	font-weight: bold;
+	margin: 15px 0;
+}
+.modalContent .highlight .productName {
+	margin-top: 0;
+	color: #333;
+}
+.modalContent .textStrong label {font-weight: bold;}
+.modalContent table .note {color: #666;}
+.modalContent .border-right {border-right: 2px solid #eaeaea;}
+.margin20 {margin:20px;}
+.padding20 {padding:20px;}
+.bdrRt1px {border-right:1px solid #CCCCCC;}
+/* START licenseKeyHistoryContent */
+#licenseKeyHistoryContent
+#licenseKeyHistoryContent table span.time {color: #8b8b8b;margin-left: 10px;}
+#licenseKeyHistoryContent .column.scroll {height: 300px;overflow-y: scroll;}
+/* END licenseKeyHistoryContent */
+/*New Downlads/Evals modal popup styles :: Raghavendra Vooka*/
+.modalContent .widerInputs input{width: 280px;padding:3px;}
+.modalContent .widerInputs select {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #AAADB2 #E2E9EF #E2E9EF;
+    border-style: solid;
+    border-width: 1px;
+    height:auto;
+    padding:3px;
+    width:288px;
+}
+.modalContent.dwnlds input[type="text"], .modalContent.dwnlds input[type="password"] { border-radius:0}
+.modalContent .widerInputs input.smaller{width: 110px;}
+.modalContent input[placeholder], [placeholder], *[placeholder], select.placeholder{color:#999 !important;}
+.modalContent input[placeholder].errbox, [placeholder].errbox, *[placeholder].errbox, select.placeholder.errbox{color:#ff0000 !important;}
+.modalContent .widerInputs { margin-bottom:20px;}
+.mrgnRt20px {margin-right:20px;}
+.mrgnBt20px {margin-bottom:20px;}
+.modalContent.dwnlds  label.genErr, label.err{
+	display:block;
+	color:#ff0000;
+	margin-bottom:2px;
+}
+.modalContent.dwnlds  label.err{
+	font-size: 11px;
+    font-style: italic;
+    margin: 0;
+    position: absolute;
+}
+.modalContent.dwnlds .errbox{
+	background-color:#fff0d6;
+	border:1px solid #ff0000;
+}
+/**/
+.modalContent.dwnlds{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    padding: 20px;
+    width: 550px;
+}
+.modalContent.dwnlds.SixZeroZero{width:600px;}
+.modalContent.dwnlds .body {padding-bottom: 0; padding-top: 15px;}
+.modalContent.dwnlds .header {
+    border-bottom: 1px solid #D6D6D6;
+    line-height: 20px;
+    padding-bottom: 5px;
+}
+.modalContent.dwnlds .header.noborder .headerTitle {font-size: 22px;}
+#simplemodal-container a.modalCloseImg {
+    background: url("/static/vmware/modules/evals/img/icn_close.png") no-repeat scroll 0 0 transparent !important;
+    cursor: pointer;
+    display: inline;
+    height: 17px;
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    width: 53px;
+    z-index: 3200;
+}
+#simplemodal-container a.modalCloseImg {
+	background:url("/static/vmware/modules/evals/img/icn_close.png") top right no-repeat  !important; }
+.modalContent.dwnlds .widerInputs select.errbox {
+    background-color: #FFF0D6;
+    border: 1px solid #FF0000;
+    color: #FF0000;
+}
+.modalContent.dwnlds span.holder{display:inline-block}
+/* Including override for font size of select */
+.modalContent select {
+	font-size:12px;
+}
+.mrgnLt170px {margin-left:170px;}
+.mrgnLt310px {margin-left:310px;}
+.errbox::-webkit-input-placeholder {
+    color: #FF0000 !important;
+}
+.errbox:-moz-placeholder {
+    color: #FF0000 !important;
+}

@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:ng="http://angularjs.org" class="ng-app"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Reskinning :: Homepage</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width" />
+	
+	<link rel="stylesheet" href="vmf/c/4.0/css/liferay.css">
+	<link rel="stylesheet" href="//lmpimage2.vmware.com/vmf/c/4.0/css/starlight.css">
+
+	<link rel="stylesheet" href="static/myvmware/common/css/home_starlight.css">
+	
+	<link rel="stylesheet" href="//lmpimage2.vmware.com/vmf/m/flexSlider/4.0/css/flexslider_r.css">	
+	<link rel="stylesheet" href="//lmpimage2.vmware.com/vmf/m/datatable/4.0/css/starlight.css">
+	
+    <script src="//lmpimage2.vmware.com/vmf/c/4.0/js/vmf.js"></script>
+    <script src="//lmpimage2.vmware.com/vmf/m/datatable/4.0/js/dataTables.js"></script>
+	
+    <script src="//lmpimage2.vmware.com/vmf/m/flexSlider/4.0/js/flexslider-min.js"></script>
+
+	
+	 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>		  
+		  <link rel="stylesheet" href="vmf/c/4.0/css/ie.css">
+		  <script src="vmf/c/4.0/js/vmf-liferay-ie.js"></script>
+          <script src="js/pseudoIE/html5shiv.js"></script>
+          <script src="js/pseudoIE/respond.min.js"></script>
+    <![endif]-->
+	<!--[if IE 7 ]> 
+	<script src="resources/css/ie7.css"></script>
+	<link rel="stylesheet" href="/resources/css/reskinning_ie7.css">
+	<![endif]-->
+  <!--[if IE 8 ]> 
+  <script src="resources/css/ie7.css"></script>
+  <link rel="stylesheet" href="/resources/css/reskinning_ie8.css">
+  <![endif]-->
+	
+    <script type="text/javascript">
+        if (!Object.keys) {
+          Object.keys = (function () {
+            'use strict';
+            var hasOwnProperty = Object.prototype.hasOwnProperty,
+                hasDontEnumBug = !({toString: null}).propertyIsEnumerable('toString'),
+                dontEnums = [
+                  'toString',
+                  'toLocaleString',
+                  'valueOf',
+                  'hasOwnProperty',
+                  'isPrototypeOf',
+                  'propertyIsEnumerable',
+                  'constructor'
+                ],
+                dontEnumsLength = dontEnums.length;
+
+            return function (obj) {
+              if (typeof obj !== 'object' && (typeof obj !== 'function' || obj === null)) {
+                throw new TypeError('Object.keys called on non-object');
+              }
+
+              var result = [], prop, i;
+
+              for (prop in obj) {
+                if (hasOwnProperty.call(obj, prop)) {
+                  result.push(prop);
+                }
+              }
+
+              if (hasDontEnumBug) {
+                for (i = 0; i < dontEnumsLength; i++) {
+                  if (hasOwnProperty.call(obj, dontEnums[i])) {
+                    result.push(dontEnums[i]);
+                  }
+                }
+              }
+              return result;
+            };
+          }());
+        }
+    </script>
+</head>
+
+	<!--[if IE 7 ]> <body class=" controls-visible signed-in private-page liferay starlight ie7 lt-ie8"> <![endif]-->
+	<!--[if IE 8 ]> <body class=" controls-visible signed-in private-page liferay starlight ie8"> <![endif]-->
+	<!--[if IE 9 ]> <body class=" controls-visible signed-in private-page liferay starlight ie9"> <![endif]-->
+	<!--[if (gt IE 9)]><body class="controls-visible signed-in private-page liferay starlight"><![endif]-->
+	<!--[if !IE]><!--><body class="controls-visible signed-in private-page liferay starlight"><!--<![endif]-->
+    <section class="page-eyebrow">
+		<div class="starlight container-fluid fluid-width">
+			<div class="page-eyebrow">
+				<nav class="eyebrow-menu menu-eyebrow">
+					<a class="menu-link-quick">Quick Links <span class="glyphicon glyphicon-chevron-down"></span></a>
+					<div class="starlight-eyebrow-quick">
+						<!-- <a title="Select a Country/Region" href="/in/worldwide.html" class="pull-left user-locale">
+							<span class="icons-locale_bg"></span>English
+						</a> -->
+						<div id="vmbar">
+						<div class="vmbar-vmware" id="localeSelector">
+							<span class="icons-locale_bg"></span><a href="#" class="locale-selector" data-toggle="modal" data-target="#myModal">English</a>
+						</div>
+						</div>
+						<ul class="user_options pull-right nav-level-1"> 
+							<li><a class="menu-item-quick" target="_blank" href="https://www.vmware.com">VMware.com</a></li>							
+							<li><a class="menu-item-quick" target="_blank" href="https://www.vmware.com">Store</a></li>													
+							<li class="has-subnav user_options">
+								<a title="User" class="dropdown-toggle menu-item-quick">
+									Partners
+									<span class="glyphicon glyphicon-chevron-down"></span>
+								</a>
+								<ul class="dropdown-menu nav-level-2" role="menu">
+									<li><a href="https://my-test15.vmware.com/group/vmware/alerts">Partner 1</a></li>
+								</ul>
+							</li>
+							<li class="has-subnav user_options">
+								<a title="User" class="dropdown-toggle menu-item-quick">
+									John Cooper 
+									<span class="glyphicon glyphicon-chevron-down"></span>
+								</a>
+								<ul class="dropdown-menu nav-level-2" role="menu">
+									<li><a href="https://my-test15.vmware.com/group/vmware/alerts">Logout</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</section>
+    <section class="starlight container-fluid page-container fluid-width">
+           <header class="header">                
+                <nav role="navigation" class="navbar nav-menu" id="homePageNavigator">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <!-- This is completely optional -->
+                        <div class="navbar-header">
+							<a class="page-logo-my" href="/" title="vmware"></a><span class="brand"></span>
+                            <button data-target=".nav-menu-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse nav-menu-collapse pull-right margin-top-10">
+                            <ul class="nav navbar-nav nav-level-1">
+                                <li id="ProductsNav"><a href="#" title="Products" alt="Products" target="_top" class="menu-item-primary-1">Products</a>
+									<ul class="nav-level-2 nav-col-2">
+											<li>
+												<div class="row">
+													<div class="col-md-6">
+														<div class="header">Manage My Products</div>
+														<div class="links">
+															<a href="#">My Products</a>
+															<a href="#">License Keys</a>
+															<a href="#">Download History</a>
+															<a href="#">Register Product</a>
+															<a href="#">My Evaluations</a>
+														</div>
+														<div class="header">Manage My Subscription Services</div>
+														<div class="links">
+															<a href="#">My Subscription Services</a>
+															<a href="#">Add-On Requests</a>
+															<a href="#">Purchase New Service</a>
+															<a href="#">Purchase Add-On</a>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="header">All Products &amp; Programs</div>
+														<div class="links">
+															<a href="#">All Products</a>
+															<a href="#">Trial &amp; Free Products</a>
+															<a href="#">Product Patches</a>
+															<a href="#">Beta Program</a>
+															<a href="#">Virtual Appliances</a>
+															<a href="#">Beta Program</a>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+								</li>
+                                <li id="AccountsNav">
+									<a href="#" title="Accounts" alt="Accounts" target="_top" class="menu-item-primary-1">Accounts</a>
+									<ul class="nav-level-2 nav-col-2">
+											<li>
+												<div class="row">
+													<div class="col-md-6">
+														<div class="header">Manage Accounts</div>
+														<div class="links">
+															<a href="#">Account Summary</a>
+															<a href="#">Users &amp; Permissions</a>
+															<a href="#">Account Activities</a>
+															<a href="#">Reports</a>
+														</div>
+														
+													</div>
+													<div class="col-md-6">
+														<div class="header">View Purchases</div>
+														<div class="links">
+															<a href="#">Order History</a>
+															<a href="#">Subscription Billing Statements</a>
+														</div>
+														<div class="header">Manage Funds</div>
+														<div class="links">
+															<a href="#">Enterprise Purchasing Token</a>
+															<a href="#">Cloud Credit</a>
+															<a href="#">Subscription Funds</a>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+								</li>                               
+                                <li id="SupportNav"><a href="#" title="Support" alt="Support" target="_top" class="menu-item-primary-1">Support</a>
+									<ul class="nav-level-2 nav-col-2">
+											<li>
+												<div class="row">
+													<div class="col-md-6">
+														<div class="header">Support</div>
+														<div class="links">
+															<a href="#">Get Support</a>
+															<a href="#">Support Requests History</a>
+															<a href="#">Support By Product</a>
+															<a href="#">Support Contracts</a>
+														</div>														
+													</div>
+													<div class="col-md-6">
+														<div class="header">Resources &amp; Tools</div>
+														<div class="links">
+															<a href="#">Support Center</a>
+															<a href="#">Knowledge Base</a>
+															<a href="#">Partner Locator</a>
+															<a href="#">License Tool Tracker</a>
+															<a href="#">Product Documentation</a>
+															<a href="#">Support Tools</a>
+															<a href="#">Communities</a>
+															<a href="#">Training</a>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+								</li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </header>             
+			  <div class="navbar content-holder secNavWrap" role="navigation">
+				<div class="">
+				  <div class="sec_nav">
+					<ul class="nav navbar-nav row">
+						<li>
+							<a href="#">
+								<span class="spriteHolder sprite-reports_icon">&nbsp;</span>
+								<div>View and Download Products</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="spriteHolder sprite-icon_license_keys">&nbsp;</span>
+								<div>Manage License keys</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="spriteHolder sprite-icon_get_support">&nbsp;</span>
+								<div class="getSupportDiv">Get Support</div>
+							</a>
+						</li>             
+						<li>
+							<a href="#">
+								<span class="spriteHolder sprite-alerts_icon">&nbsp;</span>
+								<span class="alert-circle">26</span>
+								<div class="viewAlertsDiv">View Alerts</div>
+							</a>
+						</li>             
+						<li>
+							<a href="#">
+								<span class="spriteHolder sprite-users_icon">&nbsp;</span>
+								<div>Manage Users and Permissions</div>
+							</a>
+						</li>             
+						<li>
+							<a href="#">
+								<span class="spriteHolder sprite-services_icon">&nbsp;</span>
+								<div>Subscription services</div>
+							</a>
+						</li>             
+						<li class="border0">
+							<a href="#">
+								<span class="spriteHolder sprite-icon_download">&nbsp;</span>
+								<div>Download reports</div>
+							</a>
+						</li>             
+					</ul>
+				  </div><!--/.nav-collapse -->
+				</div><!--/.container-fluid -->
+			  </div>
+            <div class="container-fluid">
+			<div class="contentBg row">
+                <div class="col-md-12">					
+                    <div class="row">
+                        <div class="col-md-8 leftSideContentHldr">
+                            <div class="margin-left-20 margin-right-20">
+                            <div class="leftContainer searchKb">
+                                <div class="kbWrap">
+                                    <h3 class="margin-top-30">Search Support</h3>
+                                    <input type="text" class="form-control margin-top-20 searchSupport" placeholder="Enter any keyword (vsphere, vcenter... etc)">
+                                </div>
+                            </div>
+                            <div class="leftContainer supportReqs margin-top-30">
+                                <div class="supportWrap">
+                                   <h3>Support Requests</h3>
+                                   <div class="reqWrap">
+                                       <div class="reqInfo">
+                                           <div class="row">
+                                               <div class="col-md-2">Status Open</div>
+                                               <div class="col-md-3">SR <span class="bluetext">12238887710</span></div>
+                                               <div class="col-md-3">Account <span class="bluetext">522780708</span></div>
+                                               <div class="col-md-4 text-right">Last Updated 12/4/2013</div>
+                                           </div>
+                                           <div class="row">
+                                               <div class="col-md-12">Issue Description cant see vlan on virtual machine number 5 in location los angeles on April 14 ...</div>
+                                           </div>
+                                       </div>
+                                        <div class="reqInfo">
+                                           <div class="row">
+                                               <div class="col-md-2">Status Open</div>
+                                                <div class="col-md-3">SR <span class="bluetext">12238887710</span></div>
+                                               <div class="col-md-3">Account <span class="bluetext">522780708</span></div>
+                                               <div class="col-md-4 text-right">Last Updated 12/4/2013</div>
+                                           </div>
+                                           <div class="row">
+                                               <div class="col-md-12">Issue Description cant see vlan on virtual machine number 5 in location los angeles on April 14 ...</div>
+                                           </div>
+                                       </div>
+                                        <div class="reqInfo">
+                                           <div class="row">
+                                               <div class="col-md-2">Status Open</div>
+                                                <div class="col-md-3">SR <span class="bluetext">12238887710</span></div>
+                                               <div class="col-md-3">Account <span class="bluetext">522780708</span></div>
+                                               <div class="col-md-4 text-right">Last Updated 12/4/2013</div>
+                                           </div>
+                                           <div class="row">
+                                               <div class="col-md-12">Issue Description cant see vlan on virtual machine number 5 in location los angeles on April 14 ...</div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="margin-top-20">
+                                       <a href="#">View all</a>
+                                       <a href="" class="btn btn-primary pull-right">Get Support</a>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="leftContainer containerLayout">
+                                <div class="evalHolder">
+                                   <h3>My Evaluations
+                                    <a data-toggle="popover" class="my-eval-popover-wrapper my-evaluations-popover" title="popover on top">
+                                    </a>
+                                   </h3>
+                                   <div class="evalWrap">
+                                        <div class="evalRow">                                    
+                                           <div class="row">
+                                               <div class="col-md-5"><span class="bluetext">Hands on Lab</span></div>
+                                               <div class="col-md-3">Exp 10-12-2014</div>
+                                               <div class="col-md-4 text-right">30 Days Remaining</div>
+                                           </div>
+                                        </div>
+                                        <div class="evalRow">                                    
+                                           <div class="row">
+                                               <div class="col-md-5"><span class="bluetext">Hands on Lab</span></div>
+                                               <div class="col-md-3">Exp 10-12-2014</div>
+                                               <div class="col-md-4 text-right">30 Days Remaining</div>
+                                           </div>
+                                        </div>
+                                   </div>
+                                   <div class="margin-top-20">
+                                       <a href="#">View all</a>
+                                       <a href="" class="btn btn-primary pull-right">Start New Eval</a>
+                                   </div>
+                                </div>
+                            </div> 
+                            <div class="leftContainer containerLayout">
+                                <div class="evalHolder">
+                                   <h3>Subscription services</h3>
+                                   <div class="row">
+                                       <div class="col-md-5 margin-top-10 subscription-left-box">
+											<div class="borderBox">26 subscription Funds <span class="bluetext">View Funds</span></div>
+									   </div>
+                                       <div class="col-md-7 margin-top-10 subscription-right-box">
+											<div class="borderBox">
+												<span class="spriteHolder sprite-alert-warning_20"></span><span class="redtext padding-left-10"> 3 funds expiring soon</span>  <span class="bluetext">View Expiring Funds</span>
+											</div>
+									   </div>
+                                   </div>
+                                   <table class="table margin-top-20 table-responsive starlight" id="subscription">
+                                       <thead>
+                                            <tr>
+                                                <th>Service ID <span class="datatable-sort"></span></th>
+                                                <th>Service Status <span class="datatable-sort"></span></th>
+                                                <th>Service Type <span class="datatable-sort"></span></th>
+                                                <th>Remaining term <span class="datatable-sort"></span></th>
+                                            </tr>
+                                        </thead>
+                                   </table>
+                                   <div class="margin-top-20">
+                                       <a href="#">View all</a>
+                                       <a href="" class="btn btn-primary pull-right">View all Services</a>
+                                   </div>
+                                </div>
+                            </div>  
+                            <div class="leftContainer containerLayout">
+                                <div class="evalHolder">
+                                   <h3>Alerts</h3>                                  
+                                   <table class="table table-responsive starlight" id="alerts">
+                                       <thead>
+                                            <tr>
+                                                <th>Account <span class="datatable-sort"></span></th>
+                                                <th>Unread <span class="datatable-sort"></span></th>
+                                                <th>Latest Alert <span class="datatable-sort"></span></th>
+                                            </tr>
+                                        </thead>
+                                   </table>
+                                   <div class="margin-top-20">
+                                       <a href="#">View all</a>
+                                   </div>
+                                </div>
+                            </div>  
+                            </div>                          
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="rightContainer padding-right-30">
+                                <div class="greyBg">
+                                    <div class="padding-top-30 padding-left-30 padding-bottom-20">
+                                        <h3>Accounts</h3>
+                                        <div class="accRow">
+                                            <div class="title">Agility Worldwide Inc - Amer <span class="defaultText">default</span></div>
+                                            <div>234234234887</div>
+                                        </div>
+                                         <div class="accRow">
+                                            <div class="title">Agility Worldwide Inc - Amer</div>
+                                            <div>234234234887</div>
+                                        </div>
+                                         <div class="accRow">
+                                            <div class="title">Agility Worldwide Inc - Amer</div>
+                                            <div>234234234887</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lGreyBg">
+                                    <div class="padding-top-30 adHolder">
+                                        <div class="sprite-ad1"></div>
+                                    </div>
+                                    <div class="padding-top-30 adHolder">
+                                         <div class="sprite-ad1"></div>
+                                    </div>
+                                    <div class="leftListWrap topBorderGreen margin-top-30">
+                                        <h3>Sign up for</h3>
+                                        <p>Vmware Vcloud Air Disaster Recovery</p>
+                                        <ul>
+                                            <li class="list1"><span class="bluetext">Protect your data in case of emergency</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="leftListWrap topBorderGreen">
+                                        <h3>Try our cloud services</h3>
+                                        <ul class="margin-top-20">
+                                            <li class="list1"><span class="bluetext">Extend your cloud network power</span></li>
+                                            <li class="list2"><span class="bluetext">Get 90 days free horizon DaaS</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="leftListWrap topBorderBlue">
+                                        <h3>Featured Training Courses</h3>
+                                        <ul class="trainingList">
+                                            <li>
+                                                <div class="bluetext">vCenter Site Recover Manager</div>
+                                                <div>June 23 - Jul 1, 2014, 9am - 5pm<br>
+                                                    Denver CO, United states
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="bluetext">Get 90 days free horizon DaaS</div>
+                                                 <div>June 23 - Jul 1, 2014, 9am - 5pm<br>
+                                                    Denver CO, United states
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					</div>
+                </div>
+            </div>
+            <div class="container-fluid row margin-top-30">
+                  <div class="contentBg col-md-12 padding-left-30 productSlider">
+                    <h3>Featured Products</h3>
+                    <div class="flexslider">
+                      <ul class="slides productCarousal">                       
+                         <li>
+                          <img src="vmf/c/4.0/images/reskinning/product1.png" />
+                          <a class="bluetext prodName">Vmware Fusion 6 professional</a>
+                          <div class="greytext">Virtual machines on Mac or PC</div>
+                          <div class="redtext">30% off December Only</div>
+                          <div>
+                            <a class="bluetext padding-right-10 border-right-1">Buy Online</a>
+                            <a class="bluetext padding-left-10"> Upgrade </a>
+                          </div>
+                        </li>
+                        <li>
+                           <img src="vmf/c/4.0/images/reskinning/product1.png" />
+                          <a class="bluetext prodName">Vmware Fusion 6 professional</a>
+                          <div class="greytext">Virtual machines on Mac or PC</div>
+                          <div class="redtext">30% off December Only</div>
+                          <div>
+                            <a class="bluetext padding-right-10 border-right-1">Buy Online</a>
+                            <a class="bluetext padding-left-10"> Upgrade </a>
+                          </div>
+                        </li>
+                        <li>
+                           <img src="vmf/c/4.0/images/reskinning/product1.png" />
+                          <a class="bluetext prodName">Vmware Fusion 6 professional</a>
+                          <div class="greytext">Virtual machines on Mac or PC</div>
+                          <div class="redtext">30% off December Only</div>
+                          <div>
+                            <a class="bluetext padding-right-10 border-right-1">Buy Online</a>
+                            <a class="bluetext padding-left-10"> Upgrade </a>
+                          </div>
+                        </li>
+                        <li>
+                           <img src="vmf/c/4.0/images/reskinning/product1.png" />
+                          <a class="bluetext prodName">Vmware Fusion 6 professional</a>
+                          <div class="greytext">Virtual machines on Mac or PC</div>
+                          <div class="redtext">30% off December Only</div>
+                          <div>
+                            <a class="bluetext padding-right-10 border-right-1">Buy Online</a>
+                            <a class="bluetext padding-left-10"> Upgrade </a>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="vmf/c/4.0/images/reskinning/product1.png" />
+                          <a class="bluetext prodName">Vmware Fusion 6 professional</a>
+                          <div class="greytext">Virtual machines on Mac or PC</div>
+                          <div class="redtext">30% off December Only</div>
+                          <div>
+                            <a class="bluetext padding-right-10 border-right-1">Buy Online</a>
+                            <a class="bluetext padding-left-10"> Upgrade </a>
+                          </div>
+                        </li>
+                        <li>
+                          <img src="vmf/c/4.0/images/reskinning/product1.png" />
+                          <a class="bluetext prodName">Vmware Fusion 6 professional</a>
+                          <div class="greytext">Virtual machines on Mac or PC</div>
+                          <div class="redtext">30% off December Only</div>
+                          <div>
+                            <a class="bluetext padding-right-10 border-right-1">Buy Online</a>
+                            <a class="bluetext padding-left-10"> Upgrade </a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>  
+            </div>
+        </section>
+    <!-- Background divs -->
+    <div class="page-b-header-gradient">
+    </div>
+    <div class="reskinningFooterWrap">
+		<div class="container-fluid fluid-width">			
+			<div class="row footerLinksHolder">
+				<div class="col-md-3 linksWrap border0">
+					<div class="linkHdr">About My Vmware</div>
+					<ul>
+						<li><a href="#">Top 10 things to know</a></li>
+						<li><a href="#">My vmware FAQ</a></li>
+						<li><a href="#">Index of My Vmware Articles</a></li>
+						<li><a href="#">Managing Folders in My VMware</a></li>						
+					</ul>
+				</div>
+				<div class="col-md-3 linksWrap">
+					<div class="linkHdr">Vmware Technology</div>
+					<ul>
+						<li><a href="#">Virtualization</a></li>
+						<li><a href="#">Data Center Virtualization</a></li>
+						<li><a href="#">Desktop Virtualization</a></li>
+						<li><a href="#">Virtualizing Enterprise Applications</a></li>						
+						<li><a href="#">Cloud Computing</a></li>						
+						<li><a href="#">Hybrid Cloud</a></li>						
+						<li><a href="#">Private Cloud Computing</a></li>						
+						<li><a href="#">Software-Defined Data Center</a></li>						
+						<li><a href="#">End-User Computing</a></li>						
+					</ul>
+				</div>
+				<div class="col-md-3 linksWrap">
+					<div class="linkHdr">Try &amp; Purchase</div>
+					<ul>
+						<li><a href="#">Vmware Hands-on Lab</a></li>
+						<li><a href="#">Virtual Applications Marketplace</a></li>
+						<li><a href="#">Vmware Purchasing Programs</a></li>
+						<li><a href="#">Partner Locator</a></li>					
+					</ul>
+				</div>
+				<div class="col-md-3 linksWrap">
+					<div class="linkHdr">Community</div>
+					<ul>
+						<li><a href="#">VMTN Communities</a></li>
+						<li><a href="#">VMware Blogs</a></li>
+						<li><a href="#">Community Terms of Use</a></li>
+						<li><a href="#">Developer Center</a></li>					
+					</ul>
+				</div>
+			</div>
+			
+			
+			<footer class="footerbar">
+				<p>Copyright &copy; 2014 VMware, Inc. All rights reserved.</p>
+				<ul class="footer-nav-links">
+					<li><a title="Contact Us" href="//www.vmware.com/company/contact/">Contact Us</a></li>
+					<li><a title="Terms of Use" href="//www.vmware.com/help/legal.html">Terms of Use</a></li>
+					<li><a title="Privacy" href="//www.vmware.com/help/privacy.html">Privacy</a></li>
+					<li><a title="Accessibility" href="//www.vmware.com/accessibility.html">Accessibility</a></li>
+					<li><a title="Site Index" href="//www.vmware.com/site_index.html">Site Index</a></li>
+					<li><a title="Help" href="//www.vmware.com/help/">Help</a></li>
+					<li><a title="Feedback" href="javascript:;" class="footer-feeback">Feedback</a></li>
+				</ul>
+            </footer>
+		</div>
+    </div>
+    <!-- ##################### -->
+</body>
+</html>
+
+<script type="text/javascript">
+
+var localVars = {
+	'iconsPath' : '/images/icons/'
+}
+
+ $(document).ready(function() {
+ 
+	$('.menu-link-quick').on('click',function(){
+		$(this).toggleClass('active');
+		$('.starlight-eyebrow-quick').toggleClass('active');
+	});
+ 
+	$('.menu-item-primary-1').on('click',function(){
+			$(this).toggleClass('is-active');
+			$(this).parent().toggleClass('is-active');
+			$(this).next().toggleClass('parentClicked');		
+	});
+ 
+ 	 $(".my-eval-popover-wrapper").popover({
+        html: true,
+        trigger: 'manual',
+        container: $(this).attr('id'),
+        placement: 'top',
+        content: function () {
+            $return = '<div class="hover-hovercard"></div>';
+        }
+    }).on("mouseenter", function () {
+        var _this = this;
+        $(this).popover("show");
+        $(this).siblings(".popover").on("mouseleave", function () {
+            $(_this).popover('hide');
+        });
+    }).on("mouseleave", function () {
+        var _this = this;
+        setTimeout(function () {
+            if (!$(".popover:hover").length) {
+                $(_this).popover("hide")
+            }
+        }, 100);
+    });
+ 
+	$('.flexslider').flexslider({
+		animation: "slide",
+		animationLoop: false,
+		itemWidth: 350,
+		start: function(slider){
+			$('.flexslider').resize();
+		}
+	});
+
+	var subscriptionTbl = vmf.patterns.dataTable("#subscription", {
+		"sAjaxSource": "json/home/sdpFundInfoDataTable.json",
+		"paging": false,
+		"bFilter": false,
+		"bInfo": false,
+		"sPaginationType": "starlight",
+		"fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
+			$('td:eq(3)', nRow).html(aData[5]);
+			
+			switch(aData[1]){
+				
+				case "Active" : 
+					$('td:eq(1)', nRow).html( '<div class="sprite-alert-success_20">'+aData[1]+'</div>' );
+					break;
+				case "Cancelled" : 
+					$('td:eq(1)', nRow).html( '<div class="icon-cancelled">'+aData[1]+'</div>' );
+					break;
+				case "Expired" : 
+					$('td:eq(1)', nRow).html( '<div class="sprite-alert-warning_20">'+aData[1]+'</div>' );
+					break;
+				default :
+					$('td:eq(1)', nRow).html(aData[1]);				
+			}
+		}
+    });
+	
+	var alertsTbl = vmf.patterns.dataTable("#alerts", {
+		"sAjaxSource": "json/home/alertList.json",
+		//"paging": false,
+		"bFilter": false,
+		"bInfo": false,
+		"sPaginationType": "starlight"
+    });
+	
+  
+});
+
+
+
+</script>
+
+<!-- script to load sidemenu in the template library project -->
+<script src="/TemplateLibrary/BootSideMenu.js"></script>

@@ -1,0 +1,72 @@
+/* --------- File Upload ------------ */
+/* --- Plupload ---- */
+.plupload_file_status {color: #777;}
+.plupload_file_status span {color: #42454A;}
+.plupload_file_size, .plupload_file_status, .plupload_progress {width: 80px;}
+.plupload_file_size, .plupload_file_status, .plupload_file_action {text-align: right;}
+.plupload_filelist .plupload_file_name {width: 205px}
+.plupload_file_action {float: right;width: 16px;height: 16px;margin-left: 15px;}
+.plupload_file_action * {display: none;width: 16px;height: 16px;}
+.plupload_progress, .plupload_upload_status {display: none;float:left;margin-top:-1px;}
+.plupload_progress_container {margin-top: 3px;border: 1px solid #CCC;background: #FFF;padding: 1px;}
+.plupload_progress_bar {width: 0px;height: 7px;background: #CDEB8B;}
+.plupload_scroll .plupload_filelist_header .plupload_file_action, .plupload_scroll .plupload_filelist_footer .plupload_file_action {margin-right: 17px;}
+.plupload_clear,.plupload_clearer {clear: both;}
+.plupload_clearer, .plupload_progress_bar {display: block;font-size: 0;line-height: 0;}
+
+/* --- Custom Upload Wrapper --- */
+.uploadWrapper #FileContainer{margin-bottom:20px;}
+.uploadWrapper #dropArea{width:550px;height:65px;background-color:#FBFBFB;border: 2px solid #EBEBEB;text-align:center;margin-bottom:15px;padding-top:45px;color:#444;}
+.uploadWrapper #dropArea.draggingFile{border: 2px solid #DADADA;}
+.uploadWrapper #dropArea.draggingFileHover{border: 2px solid #DADADA;background-color:#EBEBEB;}
+.uploadWrapper .fileItem{background-color:#F4F4F4;width:550px;height:25px;font-size:.8em;padding:2px 2px 2px 2px;vertical-align:middle;margin:0 0 3px 0;}
+.uploadWrapper #filelist .completed, .uploadWrapper #filelist .cancelled{background-color:#FFF; color:#A9A9A9;}
+.uploadWrapper #filelist .name{display:inline; font-size:1.1em;float:left;}
+.uploadWrapper #filelist .saving{background-color:#fff;}
+.uploadWrapper #filelist .cancel{margin-left:5px;}
+.uploadWrapper .fileItem .fileInfo{float:right;height:25px;}
+.ie7 .uploadWrapper .fileItem .fileInfo{margin-top:-16px;}
+.uploadWrapper .fileItem a{}
+.uploadWrapper .size{float:left;margin-right:5px;}
+.uploadWrapper .percentComplete{margin-left:5px;}
+.uploadWrapper #filelist .completed .plupload_progress_bar{background-color:#D5D5D5;}
+.uploadWrapper #fileSelectMsg {font-size:.9em; color:#444;}
+.uploadWrapper #pickfiles {font-size:.9em;}
+.uploadWrapper .renameLink{margin:0 0 0 10px;}
+.uploadWrapper .fileRename input{margin:0 10px 0 0; width:200px;}
+.uploadWrapper .fileRename input.warning{border: solid 3px red;}
+.uploadWrapper .fileRename{font-size:.9em;}
+
+
+#uploadContainer {
+    border: 1px solid;
+    width: 100%;
+}
+/*#uploadContainer .fileinput-button, #uploadContainer .btn, #uploadContainer .fileinput-button:hover, #uploadContainer .btn:hover, #uploadContainer .fileinput-button:focus, #uploadContainer .btn:focus{*/
+ #uploadContainer .btn, #uploadContainer .btn:hover, #uploadContainer .btn:focus{
+	float : none !important;
+	margin:0px;
+	cursor:pointer;
+	font-size : 14px;
+}
+#uploadContainer  .fileinput-button input {
+    height: 24px !important;
+    opacity: 0 !important;
+    width: 14px !important;
+}
+
+#uploadContainer .row  {
+	margin:0px 
+}
+
+#uploadContainer  .span7 , #uploadContainer .span5{
+    width:100%;
+}
+#uploadContainer   [class*="span"] {
+    float: none ;
+    margin:0
+}
+
+.table-striped tbody > tr:nth-child(2n+1) > td, .table-striped tbody > tr:nth-child(2n+1) > th {
+    background-color: #F9F9F9 !important;
+}

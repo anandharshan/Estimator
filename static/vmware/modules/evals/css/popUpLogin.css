@@ -1,0 +1,300 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+html, body{
+overflow:hidden !important;
+}
+
+@font-face {
+    font-family: "proxima-nova";
+    font-style: normal;
+    font-weight: 100;
+    src: url("/files/fonts/framework/ProximaNova-ThinWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-ThinWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: italic;
+    font-weight: 100;
+    src: url("/files/fonts/framework/ProximaNova-ThinItWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-ThinItWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: normal;
+    font-weight: 300;
+    src: url("/files/fonts/framework/ProximaNova-LightWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-LightWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: italic;
+    font-weight: 300;
+    src: url("/files/fonts/framework/ProximaNova-LightItWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-LightItWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/files/fonts/framework/ProximaNova-RegWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-RegWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: italic;
+    font-weight: normal;
+    src: url("/files/fonts/framework/ProximaNova-RegItWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-RegItWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: normal;
+    font-weight: 600;
+    src: url("/files/fonts/framework/ProximaNova-SboldWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-SboldWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: italic;
+    font-weight: 600;
+    src: url("/files/fonts/framework/ProximaNova-SboldItWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-SboldItWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/files/fonts/framework/ProximaNova-BoldWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-BoldWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: italic;
+    font-weight: 700;
+    src: url("/files/fonts/framework/ProximaNova-BoldItWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-BoldItWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: normal;
+    font-weight: 800;
+    src: url("/files/fonts/framework/ProximaNova-XboldWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-XboldWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: italic;
+    font-weight: 800;
+    src: url("/files/fonts/framework/ProximaNova-XboldItWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-XboldItWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: normal;
+    font-weight: 900;
+    src: url("/files/fonts/framework/ProximaNova-BlackWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-BlackWeb.woff") format("woff");
+}
+@font-face {
+    font-family: "proxima-nova";
+    font-style: italic;
+    font-weight: 900;
+    src: url("/files/fonts/framework/ProximaNova-BlackItWeb.eot%3Fiefix") format("eot"), url("/files/fonts/framework/ProximaNova-BlackItWeb.woff") format("woff");
+}
+
+.tile-lgreen {
+    background-color: #6db33f;
+}
+.tile-dgreen {
+    background-color: #387c2c;
+}
+.tile-lblue {
+    background-color: #0095d3;
+}
+.tile-lgreen, .tile-dgreen, .tile-lblue, .tile-lgreen h3, .tile-dgreen h3, .tile-lblue h3 {
+    color: white;
+}
+.button-white {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 2px;
+    color: #000;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+    width: 151px;
+}
+.button-white + a {
+    color: white;
+    padding-left: 21px;
+}
+.button-white + a:hover {
+    text-decoration: underline !important;
+}
+.tile-image {
+    opacity: 0.6;
+    width: 99px;
+}
+.tile-head {
+    font-size: 32px;
+    font-weight: normal;
+}
+a.button-white.mr-b10:hover {
+    color: #000;
+}
+.error-message {
+    color: red;
+	font-size: 11px !important;
+	font-weight: bold;
+	margin-bottom:7px !important;
+}
+
+#button-login.buttonlg, #button-register-tabcenter.buttonlg {
+    background: linear-gradient(to bottom, #0095d3 0%, #007fb4 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0095d3), color-stop(50%,#007fb4)) !important ;
+    border-radius: 2px;
+    background-image:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwOTVkMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDdmYjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+")
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.21)\9\0;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095d3', endColorstr='#007fb4',GradientType=0 )\9\0;
+    color: white;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin: 5px 0;
+    padding: 5px 20px;
+    text-align: center;
+    border: 1px;
+    cursor: pointer;
+	text-shadow: none;
+}
+.hide_cntnr {
+    display: none;
+}
+.shw_cntnr {
+    display: block;
+}
+#logon {
+    float: none !important;
+	color:#333;
+	width:350px;
+	font-family:"proxima-nova";
+}
+.popup_lbwidth {
+    height: 267px;
+    width: 368px;
+}
+.popup_lbcontent {
+}
+.popup_lbinput {
+    margin: 5px 0;
+}
+.popup_lbRme { 
+    margin-top: 15px !important; 
+}
+.popup_lbform {
+    padding-top: 0;
+}
+.popup_lbBgHeight {
+    margin: 2px 2px 0 !important;
+    min-height: 225px !important;
+}
+.popup_lblogon {
+    margin: 0 !important;
+}
+.popup_lbinnercnt {
+    padding: 1px 20px 0 !important;
+}
+#pupLogin label, #pupreg label {
+    padding-bottom: 5px;
+}
+#pupLogin input[type="text"] {
+    height: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 98%;
+}
+input[type="radio"]{
+margin-top:5px;
+}
+.CFloatLeft {
+    float: left;
+}
+#LgnBtn {
+    clear: right;
+    float: left;
+    width: 37%;
+}
+#Frgpwd {
+    float: left;
+    padding-top: 14px;
+    width: 55%;
+}
+#btnFpwdcnt {
+    height: 30px;
+}
+#evalLoginId, #evalRegisterTabId {
+    margin: 0 40px 25px;
+}
+#tab_register h3 {
+    margin: 0 40px 15px;
+}
+#tab_login h3{
+    margin: 0 40px 20px;
+}
+#Frgpwd a {
+    padding-top: 5px;font-size:14px;
+	color: #006990;
+	text-decoration:none;
+}
+#Frgpwd a:hover{
+	color: #0095d3;
+	text-decoration:none;
+}
+.Fnam, .Lnam {
+    float: left;
+    width: 50%;
+}
+.Fnam input, .Lnam input {
+    width: 78% !important;
+}
+#evalRegisterTabId input[type="text"], #evalLoginId input[type="password"], #evalLoginId input[type="text"] {
+    background: url("/static/vmware/modules/evals/img/inputBg.jpg") repeat no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #d0d0d0;
+    color: #b4b4b4;
+    height: 26px;
+    margin-top: 10px;
+    padding: 0 10px;
+    width: 89%;
+    height: 15px\9;
+    padding-top: 8px\9;
+    padding-bottom: 6px\9;
+}
+#Email_Register_Tab {
+    width: 96%;
+}
+#tab_register div, #evalLoginId div {
+    margin-bottom: 12px;
+	font-size:14px;
+}
+h3{
+font-size:22px;
+color: #333333;
+font-weight: 600;
+line-height: 1.2;
+}
+.portlet-layout{
+	 display: block !important;
+}
+
+#evalRegisterTabId{
+*margin-left:0px !important;
+}
+#tab_register h3{
+*margin-left:0px !important;
+}
+#tab_register{
+*padding-left:3px !important;
+}
+.Fnam, .Lnam{
+*margin-bottom:8px !important;
+}
+#LgnBtn input[type=button]{
+*padding-left:10px !important;
+*padding-right:10px !important;
+}

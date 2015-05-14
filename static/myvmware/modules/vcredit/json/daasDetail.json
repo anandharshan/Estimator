@@ -1,0 +1,74 @@
+{
+    "wrapper": {
+        "customerType": null,
+        "isXaasFund": "",
+        "eaAccount": "qatest1436",
+        "eaAccountNumber": "313377584",
+        "customerNumber": "7897292256",
+        "isStorageEnabled": null,
+		"serviceName" : "VMware DaaS Horizon OnDemand",
+		"service" : "vCloud Hybrid Service",
+        "fundInfo": {
+            "name": "SPP_11911615_1",
+            "fundGroupId": "GRP10369",
+            "trueUp": "1",
+            "fundBalance": "1580.66667",
+            "redemptionCurrency": "USD",
+            "redemptionCurrencySymbol": "$",
+            "fundCurrencySymbol": "$",
+            "isXaasFund": 1,
+            "fundExpiration": "2015-08-17"
+        },
+        "priceList": null,
+        "paymentType": null,
+        "storageType": null,
+        "crossRefSKUMap": null,
+        "currency": [
+            {
+                "USD": [
+                    "U.S.Dollar",
+                    "$"
+                ]
+            },
+            "USD"
+        ],
+        "partner": [
+            [
+                {
+                    "id": "VMware",
+                    "name": "VMwareInc."
+                },
+				{
+                    "id": "VMware1",
+                    "name": "ABC."
+                }
+            ],
+            "VMware"
+        ],
+        "region": null,
+        "serviceType": null,
+        "promotion": {
+						"promoCode": null,
+						"promoText": null
+		},
+		"rightSec":{
+			"header":"VMware Horizon Air",
+			"desc":"VMware Horizon Air delivers a host of Subscription Services that provide you with virtualized and remote desktops and applications through a single platform, supporting end users with access to all of their Windows and online resources through one unified workspace.",
+			"linkText":"Learn More",
+			"linkUrl":"#"
+		},
+        "redemptionNotes" : [
+            "Alabama", 
+            "Alaska", 
+            "Arizona", 
+            "Arkansas",
+            "California", 
+            "Colorado",
+            "Connecticut", 
+            "Delaware",
+            "Notes 1",
+            "Notes 2",
+            "Notes 3"
+        ]
+    }
+}

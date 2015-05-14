@@ -1,0 +1,14 @@
+{
+	"productFamilyInfo":[
+		{
+			"productFamilyCode":"DAAS-SERVICE",
+	        "productFamilyName": "VMware Horizon Air",
+	        "resourceId": "serviceConfigurationUrl"
+	    },
+	    {
+			"productFamilyCode":"VC-HYBRID-SERVICE",
+	        "productFamilyName": "VMware vCloud Air",
+	        "resourceId": "serviceConfigurationUrl"
+	    }
+    ]
+}

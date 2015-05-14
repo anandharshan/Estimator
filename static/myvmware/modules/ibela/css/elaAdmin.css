@@ -1,0 +1,194 @@
+.elaAdminContainer , 
+.elaRulesContentContainer , 
+.sub-container-wrapper {
+    padding: 2px 0 0 0;
+}
+
+.elaAdminContainer .elaProfileContentContainer h4{
+	padding: 10px 0px;
+}
+
+.elaAdminContainer .fLeft{
+	float:left;
+}
+
+.elaAdminContainer .fRight{
+	float:right;
+}
+
+.elaAdminContainer .elaProfileContentContainer .label-field {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	padding: 1px 0 0 0;
+}
+.elaAdminContainer .actionContainer .select-field{
+	padding: 2px;
+	margin: 0;
+	width: 110px;
+	border: 1px solid #ccc;
+}
+.matchRulesContainer #profileBasedID {
+	width: 200px;
+}
+.elaAdminContainer .xElaRAteProfileSelection{
+	margin-right:15px;
+	width: 175px;
+}
+.elaAdminContainer .sfdcProfileSelection{
+	width: 303px;
+} 
+.elaAdminContainer .elaProfileContentContainer .profilecontent {
+    float: left;
+}
+
+.elaAdminContainer .clear{
+    clear: both;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    width: 0;
+}
+.elaAdminContainer .textRight{
+	text-align: right;
+}
+.elaAdminContainer .profileViewTable tr td {
+    background: none !important;
+    padding: 0 0 5px !important;
+    
+}
+/*.quotAssetViewID {
+    display: inline-block;
+    margin: 5px 20px !important;
+}*/
+.elaAdminContainer .elaProfileContentContainer .matchProfilecontent {
+	width: 100px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.elaAdminContainer .elaProfileContentContainer .matchProfile {
+    font-size: 20px;
+}
+.elaAdminContainer .elaProfileContentContainer .saveProfileResults {
+	margin: 19px 0px 0px 0px !important;
+}
+
+
+#elaRulesContentContainer .matchRulesTable{
+	border:1px solid #efefef;
+}
+#elaRulesContentContainer .profileViewTable  td.col_1,#elaRulesContentContainer th.col_1{
+	width:30%;
+}
+#elaRulesContentContainer .profileViewTable  td.col_2,#elaRulesContentContainer .profileViewTable  td.col_3,#elaRulesContentContainer th.col_2,#elaRulesContentContainer th.col_3{
+	width: 35%;
+}
+
+.matchRulesTable .parentRuleName{
+	font-weight:bold;
+	text-indent :0px;
+}
+
+.matchRulesTable td{
+	text-indent :10px;
+}
+
+.matchRulesTableContainer{
+	margin:0px 0 0 0;
+}
+
+.rulesContainer{
+	float:left;
+	width:300px;
+}
+
+
+.elaAdminContainer .errorMessage{	
+	margin-bottom:15px;
+	color: #b94a48;
+	padding: 8px 35px 8px 14px;
+	border: 1px solid #fbeed5;
+	color: #b94a48;
+	background-color: #f2dede;
+	border-color: #eed3d7;
+}
+
+.elaAdminContainer .main-container-wrapper{
+	margin:10px 0 0 0;
+}
+.matchRulesTable tr td select {
+	width: 100px;
+}
+.matchRulesTable tr td .countRow input{
+	width: 40px;
+	margin: 5px 5px 0px 0px;
+}
+.matchRulesTable tr td .countRow select{
+	margin: 5px;
+}
+.matchRulesTable tr td .countRow label,.ruleOperatorlabel{
+	width: 60px;
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+}
+
+
+.elaAdminContainer .elaRulesContentContainer .label-field, 
+.elaAdminContainer .elaCatRulesContentContainer .label-field{
+	margin:0 10px 0 0px;
+	font-weight:bold;
+}
+.elaAdminContainer .elaRulesContentContainer .select-field,
+.elaAdminContainer .elaCatRulesContentContainer .select-field{
+	margin:0 30px 0 0px;
+}
+
+.elaAdminContainer .actionContainer{
+	background:#efefef;
+	padding:10px 0;
+	text-indent:10px;
+}
+
+
+.elaAdminContainer .buttonContainer{
+    background: none repeat scroll 0 0 #EFEFEF;
+    border-top: 1px solid #CCCCCC;
+    clear: both;
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* ------------------------------ catRulesTable :: Look and Feel ---------------------------------------*/
+.catRulesTable .operatorCount label{
+	padding:2px 0px;
+	width:58px;
+	font-weight:bold;
+	float:left;
+}
+
+.catRulesTable .ruleDD{
+	width:110px;
+}
+
+.catRulesTable .ruleHd input{
+	margin-left:60px;
+}
+
+.catRulesTable .operatorCount .countRow{
+	margin:0 5px 5px 0;
+}
+
+.catRulesTable .operatorCount  .ruleOperatorDD {
+	width:55px;
+	margin:0 0 5px 0;
+}
+
+.catRulesTable .operatorCount .countRow input {
+	width:19px;
+	margin:0 5px 0 0;
+}

@@ -1,0 +1,47 @@
+.floatRight {
+	float: right;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.resetEmailLabel {
+	width: 80px;
+}
+
+.errorMessage {
+	color: #FF0000;
+}
+
+.password {
+	color: #ccc;
+	margin-top: 5px;
+	margin-right: 10px;
+	width: 200px;
+}
+
+.invalidPassword {
+	float: left;
+	margin-left: 80px;
+	color: #FF0000;
+}
+
+.section {
+	width: 400px;
+	float: right;
+}
+
+.rows {
+	width: 100%;
+	clear: both;
+	float: left;
+}
+/*direct css class effecting other areas of page, so created selector with multiple elements*/
+#main.clearfix,#spacer.clearfix,#resetEmailForm .clearfix{
+	clear: both;
+}
+
+.resetEmailLabel {
+	padding: 8px 0 0 0;
+}

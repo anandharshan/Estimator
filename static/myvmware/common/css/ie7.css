@@ -1,0 +1,130 @@
+.ie7 .bottomBorderWhite{width:100%;} /*added to fix the border issue in ie7 subscription page*/
+.ie7 .starlight .page-eyebrow .eyebrow-menu ul li.user_options .nav-level-2{
+position: absolute; min-width:90px;top:21px; width:auto;left: 4px;}
+.ie7 .starlight .page-eyebrow .eyebrow-menu ul li.user_options span.glyphicon-chevron-down {
+float:none;
+}
+.ie7 .liferay.starlight .page-eyebrow .eyebrow-menu ul li a.menu-item-quick {
+    padding:3px 12px 15px 12px;
+}
+
+.ie7 .liferay.starlight  .container{padding:0px;}
+.ie7. .liferay.starlight .container #ng-app{padding-left:45px;padding-right:45px;}
+
+body.lt-ie8 .col-xs-1, body.lt-ie8 .col-xs-2, body.lt-ie8 .col-xs-3, body.lt-ie8 .col-xs-4, body.lt-ie8 .col-xs-5, body.lt-ie8 .col-xs-6, body.lt-ie8 .col-xs-7, body.lt-ie8 .col-xs-8, body.lt-ie8 .col-xs-9, body.lt-ie8 .col-xs-10, body.lt-ie8 .col-xs-11, body.lt-ie8 .col-xs-12, body.lt-ie8 .col-sm-1, body.lt-ie8 .col-sm-2, body.lt-ie8 .col-sm-3, body.lt-ie8 .col-sm-4, body.lt-ie8 .col-sm-5, body.lt-ie8 .col-sm-6, body.lt-ie8 .col-sm-7, body.lt-ie8 .col-sm-8, body.lt-ie8 .col-sm-9, body.lt-ie8 .col-sm-10, body.lt-ie8 .col-sm-11, body.lt-ie8 .col-sm-12, body.lt-ie8 .col-md-1, body.lt-ie8 .col-md-2, body.lt-ie8 .col-md-3, body.lt-ie8 .col-md-4, body.lt-ie8 .col-md-5, body.lt-ie8 .col-md-6, body.lt-ie8 .col-md-7, body.lt-ie8 .col-md-8, body.lt-ie8 .col-md-9, body.lt-ie8 .col-md-10, body.lt-ie8 .col-md-11, body.lt-ie8 .col-md-12, body.lt-ie8 .input-group, body.lt-ie8 .row, body.lt-ie8 .content, body.lt-ie8 .navbar-brand, body.lt-ie8 .nav, body.lt-ie8 .nav-tabs, body.lt-ie8 .panel-group, body.lt-ie8 .panel, body.lt-ie8 section, body.lt-ie8 .dropdown-menu, body.lt-ie8 .dropdown-toggle, body.lt-ie8 .navbar-default .container-fluid, body.lt-ie8 .starlight-container-fluid, body.lt-ie8 .starlight-step-container, body.lt-ie8 .starlight-cont, body.lt-ie8 .starcont-header, body.lt-ie8 .startcont-content, body.lt-ie8 .starcont-footer, body.lt-ie8 form, body.lt-ie8 fieldset, body.lt-ie8 .nav-pills li, body.lt-ie8 header, body.lt-ie8 table.dataTable, body.lt-ie8 footer {
+  box-sizing: border-box;
+ // behavior: url(/vmf/c/4.0/css/htc/boxsizing.htc);
+}
+
+
+/* line 177, scss/token.scss */
+.lt-ie8 .modal-body .col-md-12 {
+  width: 100% !important;
+}
+/* line 181, scss/token.scss */
+.lt-ie8 .configDashBox .btn-group {
+  margin-left: 80px;
+}
+/* line 185, scss/token.scss */
+.lt-ie8 .configDashBox .btn-group .dropdown-toggle {
+  padding-bottom: 6px;
+}
+/* line 189, scss/token.scss */
+.lt-ie8 .tooltip {
+  filter: none !important;
+}
+
+.ie7 .starlight .tooltip {z-index:3050;background-color:#EEE !important;}
+.ie8 .starlight .detailDiv ul,.ie7 .starlight .detailDiv ul{margin-top:0;}
+/*************Dashboard IE 7 styles ****************/
+body.lt-ie8 .ie7Border {height:79px;}
+/*body.lt-ie8 .ie7Border .text-right{padding-top:22px;}*/
+body.lt-ie8 .ie7Border2 {height:40px;margin-top:10px;}
+body.lt-ie8 .dashboardBal .bottomBorderWhite {margin-top:-15px;}
+body.lt-ie8 .starlight-cont .text-center .btn-group {margin-top:5px !important;}
+body.lt-ie8.starlight-cont {margin-top:0;}
+body.lt-ie8 .renameEdit  {height:60px !important;}
+.ie8 .renameEdit {height:60px;}
+
+/*************Dashboard IE 7 styles ****************/
+/*************Add user IE 7 Styles*****************/
+body.lt-ie8 .form  {float: left; width: 45%;behavior:none !important;box-sizing: content-box !important;}
+body.lt-ie8 .success  {float: left; width: 45%;behavior:none !important;box-sizing: content-box !important;}
+body.lt-ie8 .addSection {width: 100%; float: left;behavior:none !important;box-sizing: content-box !important;}
+body.lt-ie8 .addUserFields {width:160px;padding-left:0;}
+body.lt-ie8 .addSection .col-sm-5 {float: left;padding-right:0;behavior:none !important;box-sizing: content-box !important;}
+body.lt-ie8 .addUserGrp .col-sm-10 {float: left;padding-right:0;behavior:none !important;box-sizing: content-box !important;}
+
+/*body.lt-ie8 .addUserFields input {width:178px !important;}
+body.lt-ie8 .controls label {margin-right:46px;}
+*************Add user IE 7 Styles*****************
+*/
+.ie7 .dashboard .renameDiv{min-height:50px !important;margin-bottom:20px;min-width:400px !important;}
+.ie7.starlight .detailDiv .list-inline > li{padding-left:1px;padding-right:1px;}
+
+
+
+/*************Subscription Flow fix ****************/
+body.ie7 h1,body.ie8 h1{ margin-top:0px;font-size:38px;margin-bottom:10px;}
+body.ie8 .ie7Border:first-child{height:55px!important;}
+body.ie7 .ie7Border:first-child {height:55px!important;}
+body.lt-ie8 .ie7Border .text-right{padding-top:0px;margin-top:0px;}
+body.ie8 .ie7Border .text-right{padding-top:0px;margin-top:0px;}
+body.ie7 .detailDiv .list-inline,body.ie8 .detailDiv .list-inline {width:100%; }
+body.ie7 .detailDiv ul,body.ie8 .detailDiv ul{margin-left:0px;}
+body.ie8 .detailDiv .list-inline > li {padding-left:1px!important;padding-right:1px!important;}
+body.ie7 .configDashBox p{min-height:30px;padding-right:10px;}
+
+body.ie8 .configDashBox{min-height:230px;}
+body.ie7 .row  .col-md-4:first-child{
+  z-index: 100;
+}
+body.ie7 .starlight .progressBar{position: relative; margin-top: -10px; padding:10px 10px 13px 0px;}
+body.ie8 .starlight .progressBar{position: relative; padding:10px 10px 5px 0px;}
+body.ie7 .starlight .progressBar ol,body.ie8 .starlight .progressBar ol{width:100%;}
+body.ie7 .starlight .progressBar ol li,body.ie8 .starlight .progressBar ol li{display:inline; float:left;}
+body.ie7  input[type="radio"]{margin-top:1px;margin-left:-5px;display:inline!important;}
+body.ie7  input[type="checkbox"]{margin-top:0px;margin-left:0px;background-color:transparent;}
+body.ie8  input[type="radio"]{margin-top:5px;margin-left:-15px;padding-right:0px;background-color:inherit;display:inline!important;}
+body.ie8  input[type="checkbox"]{margin-top:5px;margin-left:-10px;padding-right:0px;background-color:inherit;}
+body.ie8 .removeUserModal input[type="checkbox"],body.ie7 .removeUserModal input[type="checkbox"]{float:left;padding-right:0px;padding-left:15px;}
+body.ie8 .removeUserModal .termsContent{position:relative;top:-15px;}
+body.ie7 .removeUserModal .termsContent{float:none;}
+body.ie7 .radio label,body.ie8 .radio label{font-weight:normal!important; font-family:"proxima-nova-regular", "Arial", sans-serif;}
+body.ie7  .box-bgBlue span h4,body.ie7  .box-bgBlue h3{margin-top:5px;margin-bottom:5px;}
+body.ie8  .box-bgBlue span h4,body.ie8  .box-bgBlue h3{margin-top:5px;margin-bottom:5px;}
+body.ie7 .addontable,body.ie8 .addontable{display:inline;}
+
+body.ie7 .marginTop.detailDiv,body.ie8 .marginTop.detailDiv{margin-top:0px;}
+body.ie7 .modal-body .form-group,body.ie8 .modal-body .form-group{width:100%}
+body.ie7 .items_wrap .col-md-2 input[type="text"]{width:30px!important;}
+/*body.ie7 .balanceVal, body.ie8 .balanceVal {filter:alpha(opacity=70)}*/
+body.ie7  input[type="text"],body.ie8  input[type="text"]{line-height:2em;}
+body.ie7 .footerbar ul,body.ie8 .footerbar ul{margin-left:0px;}
+body.ie7 .intro-text,body.ie8 .intro-text{line-height:43px;}
+body.ie7 .regionHdr{padding-left:25px!important;}
+body.ie7 .termEndHdr{padding-left:22px!important;}
+body.ie7 .termRemHdr{padding-left:23px!important;}
+body.ie7 .fade.modal-backdrop{filter:alpha(opacity=70);}
+body.ie7 #modal_localeSelect .modal-body,body.ie8 #modal_localeSelect .modal-body{padding-left:30px!important;}
+body.ie7 #modal_localeSelect .close,body.ie8 #modal_localeSelect  .close{filter:none!important;border:0px;outline:0px;}
+body.ie7 #vmbar{float:left;display:inline;}
+body.ie7 .vmbar-vmware#localeSelector{display:inline;}
+body.ie7  #breadcrumb .breadcrumb  li {border-right-color: #ccc; border-right-width: 1px; border-right-style: solid; margin-right: 5px;}
+body.ie7  #breadcrumb .breadcrumb  li  span{padding-right: 5px;}
+body.ie7  #breadcrumb .breadcrumb  li.last{border-right-width: 0px;}
+/*body.ie7 .ie7Border .margin-top-20,body.ie8 .ie7Border .margin-top-20{margin-top:3px;}*/
+body.ie7 .tooltip{z-index:1010;}
+body.ie7 .sidList .col-md-7{z-index:999;}
+body.ie7 .sidList ul,body.ie8 .sidList ul{margin-top:7px!important;}
+body.ie7  .modal .modal-header .close,body.ie8  .modal .modal-header .close{filter:none!important;border:0px;outline:0px;}
+body.ie7  [disabled].btn,body.ie8  [disabled].btn{filter:none;}
+body.ie7 .nav-menu ul.nav-level-1 li:first-child+li+li+li+li+li ul.nav-level-2,body.ie8 .nav-menu ul.nav-level-1 li:first-child+li+li+li+li+li ul.nav-level-2 {
+  left: auto;
+}
+body.ie7 .header .brand{display:inline;float:left;}
+body.ie7 .ie7Border2  .dropdown-menu{top:23px;}
+body.ie7 .page-b-footer-pattern,body.ie8 .page-b-footer-pattern{background-image:url('/files/images/framework/page-b-background.png');bottom:0px;}
+body.ie7 .page-b-footer-gradient,body.ie8 .page-b-footer-gradient{bottom:0px;}
+body.ie7 select.form-control,body.ie8 select.form-control {display:block!important;}
+body.ie7 .bootstrap-select,body.ie8  .bootstrap-select{display:none;}

@@ -1,0 +1,630 @@
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. LAYOUT & GLOBAL
+ * ## 2. ALERTS
+/* ########################################################################### */
+/* ########################################################################### *
+/* ##### LAYOUT & GLOBAL
+/* ########################################################################### */
+
+html, body {
+	background: url(img/bkg_dots.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	height:100% /* BUG-00022272 */
+}
+#breadcrumb li {
+	vertical-align: top;
+}
+#header-container {
+	z-index: 200;
+}
+.portlet-column-content.empty {
+	padding:0;
+}
+
+#header-container header {
+	max-width: 1600px;
+	margin: 0 auto;
+	min-height: 90px;
+}
+
+#content-container-wrapper {
+	background: url(img/bkg_body_tile.png) repeat-x 0px -1px;
+	z-index: 1;
+	min-width: 980px;
+	height:auto /* BUG-00022272 */
+}
+
+#content-container {
+	min-width: 980px;
+	margin: 0 auto;
+}
+
+aside {
+	word-wrap: break-word;
+}
+
+#content-section {
+	background: #FFF; /* Fallback for old browsers */
+	background: rgba(255,255,255,.8);
+	border: 1px solid #888;
+	-moz-border-radius: 7px;
+		 border-radius: 7px;
+	padding: 25px 19px 35px 19px;
+	z-index: 2;
+	position: relative;
+}
+
+#footer-container {
+	margin-top: 15px;
+}
+
+#footer-container.indent {
+	margin-left: 50px;
+}
+
+/* 1 Column Layout */
+.column-one #content-section {
+	margin-left: 10px;
+	margin-right: 10px;
+	/*min-width: 924px;*/
+}
+
+/* 2 Column Layout */
+.column-two aside {
+	width: 226px;
+	float: left;
+	margin-left: 11px;
+}
+
+.column-two #content-section {
+	margin-left: 255px;
+	width: 680px;
+}
+
+/* 2 Column Collapse */
+.column-two-collapse {
+
+}
+
+	.column-two-collapse aside {
+		width: 200px;
+		margin-left: 10px;
+		position: absolute;
+		left: 0;
+	}
+	
+		.column-two-collapse aside .asideSection {
+			margin-right: 20px;
+		}
+
+	.column-two-collapse #content-section {
+		/*width: 870px;*/
+		max-width:1490px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		position: relative;
+		left:0px;
+		background: #FFF;
+	}
+	
+	
+
+.closed #content-section {
+	margin-left: 60px;
+	min-height: 260px;
+}
+
+	.ie7 .closed #content-section,
+	.ie8 .closed #content-section {
+		margin-left: 58px;
+	}
+
+.open #content-section {
+	margin-left: 256px;
+}
+
+/* 2 Column Together */
+.column-two-together {
+
+}
+
+    .column-two-together #content-wrapper {
+        background: #FFF; /* Fallback for old browsers */
+        background: rgba(255,255,255,.8);
+        border: 1px solid #888;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        padding: 25px 19px 35px 19px;
+        z-index: 2;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+        .column-two-together #content-section {
+            background: none;
+            border: none;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            padding: 25px 0 35px 30px;
+        }
+        
+    .column-two-together aside {
+		width: 200px;
+		margin-left: 0;
+		float: left;
+	}
+        
+    .column-two-together #content-section {
+		-moz-border-radius: 0;
+			 border-radius: 0;
+        float: left;
+		width: 685px;
+        padding-top: 0;
+	}
+
+/* Links */
+a, a:active{
+	outline: none;
+}
+
+a:focus {
+	-moz-outline-style: none;
+}
+a, a:visited {
+	color: #39C;
+	text-decoration: none;
+}
+
+a:hover, a.hover {
+	color: #39C;
+	text-decoration: underline;
+}
+
+#main {
+	position: relative;
+	zoom:1;
+}
+
+/* Lists */
+#main ul {
+	margin: 0;
+	padding: 0;
+}
+
+	#main ul li {
+		list-style: none;
+		padding: 4px 0 4px 15px;
+		background: url(img/bullet_square_green.gif) no-repeat left center;
+	}
+	
+	#main ul li.withNoBackground {
+		list-style: none;
+		padding: 4px 0 12px 0px !important;
+		background: none;
+	}
+	#main ul li:last-child {
+		padding-bottom: 4px;
+	}
+	
+	#main ol li {
+		padding: 4px 0 4px 0;
+	}
+
+/************************************
+			Buttons Start
+	    E.g. Save/Edit/Continue
+*************************************/
+
+a.button,
+button,
+input.button,
+a.button:hover,
+button:hover,
+input.button:hover,
+a.button:focus,
+button:focus,
+input.button:focus {
+	background: #2B75B2 url('img/bg_buttons.png') repeat-x; /* old browsers */
+	background: -moz-linear-gradient(top, #4FB8DC 0%, #399DBF 50%, #2B75B2 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4FB8DC), color-stop(50%,#399DBF), color-stop(100%,#2B75B2)); /* webkit */
+	-webkit-background-clip: padding-box;
+	   -moz-background-clip: padding;
+	        background-clip: padding-box;
+	border: none;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px 3px 3px 3px !important;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 5px 0 5px 2px !important; /*important added to fix issue in IE7, IE8 browsers::for addUser 2nd overlay */
+	padding:4px 15px;
+	text-decoration:none !important;
+	text-shadow: none;
+}
+
+a.button, 
+a.button:hover, 
+input.button, 
+input.button:hover, 
+a.button:focus, 
+input.button:focus{
+	display: inline;
+	padding: 5px 15px;
+}
+
+a.button.secondary,
+button.secondary,
+input.button.secondary{
+	background: #FEFEFE url('img/bg_button_secondary.png') repeat-x; /* old browsers */
+	background: -moz-linear-gradient(top, #FEFEFE 0%, #E3E3E3 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#E3E3E3)); /* webkit */
+	border: 1px solid #bcbcbc;
+	color: #2A73B1;
+	padding: 3px 15px;
+}
+
+a.button.disabled,
+button.disabled,
+input.button.disabled,
+a.button.disabled:hover,
+button.disabled:hover,
+input.button.disabled:hover{
+	/*font-family:inherit;*/ /*Removing for Mac Button Issue - Adding this back will break height of the button*/
+	background:#b9b9b9;
+	background: -moz-linear-gradient(top, #cccccc 0%, #b9b9b9 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#b9b9b9)); /* webkit */
+	color:#FFF;
+	text-decoration:none;
+	cursor:auto;
+}
+
+button.lessChar, .button.lessChar, 
+button.lessChar:hover, .button.lessChar:hover, .button.secondary.lessChar, .ie8 button.secondary , .ie8 button.secondary.lessChar, .ie8 button.secondary.lessChar:hover{
+	padding:4px 20px;
+}
+.ie9 button.lessChar, .ie9 button.lessChar:hover{
+	padding:5px 20px;
+}
+.ie8 button.lessChar:hover{
+	padding:5px 20px;
+}
+
+a.button.secondary{
+	padding:5px 15px 4px;
+}
+.firefox.mac a.button.secondary{
+	padding:5px 15px;
+}
+
+button.secondary.lessChar {
+	padding:3px 20px;
+}
+
+.ie9 button{
+	height:24px;
+}
+.ie9 .button.secondary{
+	padding:6px 15px;
+}
+.ie9 .button.secondary.lessChar, .ie9 .button.secondary.lessChar:hover,.ie9 button.secondary.lessChar, .ie9 button.secondary.lessChar:hover{
+	padding:4px 20px 4.5px;
+}
+
+.ie8 button, .ie9 .button,.ie8 a.button, .ie8 input.button{
+	padding:5px 15px;
+}
+.ie8 button.lessChar{
+	padding:5px 20px;
+}
+
+.ie7 button{
+	padding:3px 15px 4px;
+}
+.ie7 button.secondary, .ie7 button.secondary.lessChar, .ie7 button.secondary:hover,.ie7 button.secondary.lessChar:hover{
+	padding-top:3px;
+	padding-bottom:2px;
+}
+.ie7 button.lessChar,.ie7 button.lessChar:hover{
+	padding:3px 20px 4px
+}
+
+.ie7 button, .ie7 .button,
+.ie7 button:hover, .ie7 .button:hover,
+.ie7 button:focus, .ie7 .button:focus{
+	margin-left:5px !important;
+}
+
+/* FOR OPERA */
+@media not screen and (1)
+{
+   	a.button, button, input.button {
+        height:24px;
+    }
+}
+
+/*Mac Firefox Styles*/
+
+.mac button, .mac .button{
+	height:24px;
+}
+
+.mac button, .mac button:hover, .mac button:focus{
+	padding:5px 15px; 
+}
+
+.mac a.button, .mac a.button:hover, .mac input.button, .mac input.button:hover, .mac a.button:focus, .mac input.button:focus {
+    padding: 5px 15px 6px;
+}
+
+.mac button.secondary, .mac button.secondary:hover, .mac button.secondary:focus{
+	padding:4px 15px;
+}
+
+.mac a.button.secondary, .mac a.button.secondary:hover, .mac a.button.secondary:focus{
+  padding: 4px 15px 5px;
+}
+
+.mac button.secondary.lessChar, .mac button.secondary.lessChar:hover, .mac button.secondary.lessChar:focus{
+    padding: 4px 20px;
+}
+
+.mac button.lessChar, .mac button.lessChar:hover, .mac button.lessChar:focus{
+	padding:5px 20px
+}
+
+.mac a.button.lessChar, .mac a.button.lessChar:hover, .mac a.button.lessChar:focus{
+  padding: 4px 20px 5px;
+}
+
+/* FOR SAFARI AND CHROME */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	button, button:focus, button:hover{
+		padding:5px 15px;
+	}
+	
+	button.lessChar, button.lessChar:hover {
+		padding:5px 20px;
+	}
+		
+	button.secondary, button.secondary:hover, button.secondary:focus{
+		padding:4px 15px;
+	}
+	
+	button.secondary.lessChar, button.secondary.lessChar:hover, button.secondary.lessChar:focus{
+		padding:4px 20px;
+	}
+	
+    a.button, input.button,
+	a.button:focus, input.button:focus,
+	a.button:hover, input.button:hover{
+        padding:5px 15px 6px;
+    }
+	
+	a.button.secondary , a.button.secondary:hover, a.button.secondary:focus{
+		padding:4px 15px 5px;
+	}
+	
+	a.button.lessChar, a.button.lessChar:hover, a.button.lessChar:focus,
+	a.button.secondary.lessChar, a.button.secondary.lessChar:hover, a.button.secondary.lessChar:focus{
+		 padding:4px 20px 5px;
+	}
+}
+
+/* Modal Views Buttons*/
+/*
+.modalContent a.button,
+.modalContent button,
+.modalContent input.button {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left:5px;
+	padding:5px 15px;
+	height:24px;
+	vertical-align:middle;
+}
+*/
+/* E.g. Cancel */
+
+/*#content-section a.button.secondary,
+#content-section button.secondary,
+#content-section input.button.secondary*/ 
+
+
+/* for disabled buttons */
+/*#content-section a.button.disabled,
+#content-section button.disabled,
+#content-section input.button.disabled,
+#content-section a.button.disabled:hover,
+#content-section button.disabled:hover,
+#content-section input.button.disabled:hover */
+
+/*a.button.disabled:hover,
+button.disabled:hover,
+input.button.disabled:hover {
+	cursor:auto;
+	text-decoration:none;
+	color:#FFF;
+}*/
+
+/* to give a class to only hyperlink not in form of button*/
+a.disabled{
+	text-decoration: none;
+	color: #999;
+	cursor:auto;
+}
+
+/*
+.modalContent a.button.secondary,
+.modalContent button.secondary,
+.modalContent input.button.secondary {
+	margin-left:5px;
+	text-align:center;
+	vertical-align:middle;
+	padding:4px 15px;
+	height:24px;
+}*/
+
+/*
+	.ie7 a.button.secondary {
+		position: relative;
+		top: 0;
+		left: -5px;	
+		padding: 2px 15px 3px 15px;
+	}
+	
+	.ie7 .modalContent a.button.secondary {
+		height:24px;
+		vertical-align:middle;
+	}
+.ie7 a.button.primary,
+.ie8 a.button.primary,
+.ie9 a.button.primary  {
+	padding: 5px 15px 5px 15px;
+}
+.ie7 button.primary,
+.ie8 button.primary {
+	padding: 4px 15px 5px 15px;
+}
+
+.ie9 button.primary  {
+	padding: 5px 15px 6px 15px;
+}
+
+#content-section a.button,
+#content-section a.button.primary {
+	padding: 5px 15px 6px 15px;
+}
+#content-section a.button.secondary {
+	padding: 4px 15px 4px 15px;
+	border-radius: 3px 3px 3px 3px !important;
+}
+#content-section input.button.primary,
+#content-section input.primary {
+	padding: 4px 15px 4px 15px;
+	height:24px !important;
+}
+.ie7 input.button.secondary,
+.ie7 input.secondary {
+	padding: 4px 15px 4px 15px;
+	border-radius: 3px 3px 3px 3px !important;
+}
+.ie7 input.button.primary,
+.ie7 input.primary {
+	padding: 4px 15px 5px 15px;
+}
+
+#content-section input.button.secondary,
+#content-section input.secondary {
+	padding: 3px 15px 4px 15px;
+	border-radius: 3px 3px 3px 3px !important;
+}
+#content-section button.secondary {
+	padding: 3px 15px;
+	height:24px !important;
+}
+#content-section button.button,
+#content-section button.primary {
+	padding: 4px 15px 5px 15px;
+	height:24px !important;
+}
+a.button.cancel, button.cancel {
+    background: -moz-linear-gradient(center top , #FEFEFE 0%, #EEEEEE 100%) repeat scroll 0 0 transparent !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#EEEEEE)); /* webkit 
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+    color: #999999 !important;	
+}
+*/
+
+/* Alignment */
+.right {
+	text-align: right;
+}
+
+/* Large buttons */
+a.button.wide,
+button.button.wide {
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+/************************************
+			Buttons End
+	    E.g. Save/Edit/Continue
+*************************************/
+
+/*Sidebar Content*/
+
+#content-wrapper .sidebar {
+}
+
+	#content-wrapper .sidebar p {
+		border-top: 1px solid #CCC;
+		padding: 10px 0;
+		margin-top: 5px;
+	}
+		#content-wrapper .sidebar p.bulletLink a {
+			background: url("../img/anchor.png") no-repeat;
+			display:block;
+			height:12px;
+			padding-left:15px;
+		}
+	
+		#content-wrapper .sidebar p a{
+			font-size: 12px;
+		}
+		
+#content-wrapper .sidebar footer {
+	border-bottom: 1px dashed #999;
+	border-top: 1px dashed #999;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	background: url(img/btn_get_help.png) no-repeat 0 7px;
+	text-indent: 25px;	
+}
+
+
+/* ########################################################################### *
+/* ##### ALERTS
+/* ########################################################################### */
+
+/* Alerts - Override Liferay styles */
+
+.has-alerts {
+	margin-top: 80px;
+}
+
+.popup-alert-notice .message, .popup-alert-warning .message {
+	width: 870px;
+	margin: 10px auto 0 auto;
+	padding: 10px 20px 20px 70px;
+}
+
+.popup-alert-notice, .popup-alert-warning {
+	height: 80px;
+    background: #FFF9EA;
+    border-bottom: 1px solid;
+    font-size: 1.1em;
+    font-weight:normal;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    overflow: hidden;
+	padding: 0px;
+}
+
+.popup-alert-warning .message,
+.popup-alert-notice .message {
+	background: url("img/ico-alert.gif") no-repeat 0 5px;
+}

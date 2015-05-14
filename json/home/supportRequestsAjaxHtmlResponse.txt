@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>2014-09-15</td>
+            <td>
+                <a href=
+                "/group/vmware/support-requests?p_p_id=summaryRequests_WAR_itsupport&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_summaryRequests_WAR_itsupport_action=renderSummaryRequestDetailsForm&_summaryRequests_WAR_itsupport_requestNumber=14451799409&_summaryRequests_WAR_itsupport_status=Open">
+                14451799409</a><br>
+
+                <p>Hello, qatest0055: 364571507: Your order for VMware vCloud
+                Hybrid Service - Dedicated Cloud A1A - Offline Data Transfer -
+                One Time Charge is pending provisioning. In order to complete
+                the provisioning process, we require that you complete...</p>
+            </td>
+
+            <td class="statusCol">Open</td>
+        </tr>
+
+        <tr>
+            <td>2014-09-03</td>
+
+            <td>
+                <a href=
+                "/group/vmware/support-requests?p_p_id=summaryRequests_WAR_itsupport&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_summaryRequests_WAR_itsupport_action=renderSummaryRequestDetailsForm&_summaryRequests_WAR_itsupport_requestNumber=14451288508&_summaryRequests_WAR_itsupport_status=Open">
+                14451288508</a><br>
+
+                <p>Academic VMware vCloud Hybrid Service - Virtual Private
+                Cloud A1A - Offline Data Transfer - One Time Charge is pending
+                provisioning</p>
+            </td>
+
+            <td class="statusCol">Open</td>
+        </tr>
+
+        <tr>
+            <td>2014-09-07</td>
+
+            <td>
+                <a href=
+                "/group/vmware/support-requests?p_p_id=summaryRequests_WAR_itsupport&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-1&p_p_col_count=1&_summaryRequests_WAR_itsupport_action=renderSummaryRequestDetailsForm&_summaryRequests_WAR_itsupport_requestNumber=14451786509&_summaryRequests_WAR_itsupport_status=Open">
+                14451786509</a><br>
+
+                <p>Hello, qatest0055: 364571507: Your order for VMware vCloud
+                Hybrid Service - Dedicated Cloud A1A - Offline Data Transfer -
+                One Time Charge is pending provisioning. In order to complete
+                the provisioning process, we require that you complete...</p>
+            </td>
+
+            <td class="statusCol">Open</td>
+        </tr>
+    </table>
+</body>
+</html>

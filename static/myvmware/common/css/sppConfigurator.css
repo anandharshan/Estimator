@@ -1,0 +1,51 @@
+#breadcrumb{
+display:none !important;
+}
+@media (max-width: 991px) { 
+  .accountFundInfo{
+    padding-left: 31px;
+    padding-top: 10px;
+  }
+  
+  .accountFundInfo .changeAccount{
+    margin-top: 10px;
+  }
+
+  .config_help{
+    padding-top: 10px;
+  }
+/*  .idHdr, .typeHdr, .regionHdr, .termEndHdr, .termRemHdr {
+  	padding-left: 10px !important;
+  }*/
+}
+@media (max-width: 991px) { 
+  .accountFundInfo{
+    padding-left: 31px;
+    padding-top: 10px;
+  }
+  .accountFundInfo .changeAccount{
+    margin-top: 10px;
+  }
+  .config_help{
+    padding-top: 10px;
+  }
+  .admin{
+    padding-right: 15px;
+    margin-bottom: 10px;
+  }
+  .box-bgBlue .borderRightWhite{
+  	border: 0px;
+  }
+  .box-bgBlue .borderLeftWhite{
+  	border: 0px;
+  	padding-left: 0px;
+  	padding-top: 10px;
+  }
+  .boder-right-1{
+  	border: 0px;
+  }
+  .border-left-1-margin{
+  	border: 0px;
+  	padding-left: 5px;
+  }
+}

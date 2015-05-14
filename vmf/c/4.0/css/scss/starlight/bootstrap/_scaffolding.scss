@@ -1,0 +1,20 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+// Links
+
+//Added to change the text-decoration from underline to none
+a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $starlight-blue;
+  }
+}
+
+body {
+	background: none repeat scroll 0 0 #6A6B6F;
+    position: relative;
+}

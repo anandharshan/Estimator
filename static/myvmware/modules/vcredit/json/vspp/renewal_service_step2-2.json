@@ -1,0 +1,707 @@
+{
+    "wrapper": {
+        "core": {
+            "commitInfo": {
+                "name": "VSPP Air Identifier",
+                "id": "XXX",
+                "threshold": "500",
+                "currentConsumption": "10000.32",
+                "commitLevel": "20000",
+                "redemptionCurrency": "USD",
+                "redemptionCurrencySymbol": "$"
+            },
+            "serviceID": "M287557341",
+            "serviceTerm": "12 months",
+            "serviceName": "VMware Horizon Air",
+            "serviceType": "VMware Horizon Air Desktop Advanced",
+            "region": "US",
+            "storage": "VMware Horizon Air Desktop Advanced",
+            "paymentMethod": null,
+            "partner": "VMware Inc.",
+            "offeringPartner": [
+                [
+                    {
+                        "id": "1",
+                        "name": "Partner Name"
+                    },
+                    {
+                        "id": "2",
+                        "name": "VMware Inc"
+                    }
+                ],
+                "2"
+            ],
+            "defaultPaymentType": "2",
+            "cost": "2500",
+            "pricelist": [
+                "MSRP",
+                "-10769157587923222057810132984"
+            ],
+            "remainingTerm": [
+                365,
+                0,
+                12,
+                0
+            ],
+            "term": "12 months",
+            "currency": [
+                "$",
+                "U.S.Dollar"
+            ],
+            "longSkuDescription": "US Data Center - Qty 50 x Advanced desktop (2vCPU, 4GB vRAM, 60GB HD), includes management portal and public IP for remote access, account administration fee and 2 gold patterns",
+            "eaAccount": "qatest1436",
+            "eaAccountNumber": "313377584",
+            "recurringCost": null,
+            "prepaidTerm": "12",
+            "storageType": [
+                {
+                    "NO STORAGE": "NO STORAGE"
+                },
+                "NO STORAGE"
+            ],
+            "coreServiceSku": "DSD-ACADT-12MT0-C1S",
+            "crossRefSKUMap": {
+                "ADV DESKTOP_36_MTH_Annually_NO STORAGE": [
+                    "DSD-ACADT-36AT0-C1S",
+                    "26400"
+                ],
+                "STD DESKTOP_1_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACSDT-01MT0-C1S",
+                    "2450"
+                ],
+                "ADV DESKTOP_12_MTH_Prepaid_NO STORAGE": [
+                    "DSD-ACADT-12PT0-C1S",
+                    "30000"
+                ],
+                "ADV DESKTOP_36_MTH_Prepaid_NO STORAGE": [
+                    "DSD-ACADT-36PT0-C1S",
+                    "79200"
+                ],
+                "ADV DESKTOP_12_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACADT-12MT0-C1S",
+                    "2500"
+                ],
+                "ENT DESKTOP_36_MTH_Annually_NO STORAGE": [
+                    "DSD-ACEDT-36AT0-C1S",
+                    "52800"
+                ],
+                "ENT DESKTOP_24_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACEDT-24MT0-C1S",
+                    "4650"
+                ],
+                "STD DESKTOP_36_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACSDT-36MT0-C1S",
+                    "1540"
+                ],
+                "HOST APPS SRV_36_MTH_Annually_NO STORAGE": [
+                    "DSD-ACHAP-36AT0-C1S",
+                    "31680"
+                ],
+                "ADV DESKTOP_24_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACADT-24MT0-C1S",
+                    "2325"
+                ],
+                "STD DESKTOP_12_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACSDT-12MT0-C1S",
+                    "1750"
+                ],
+                "ENT DESKTOP_12_MTH_Prepaid_NO STORAGE": [
+                    "DSD-ACEDT-12PT0-C1S",
+                    "60000"
+                ],
+                "STD DESKTOP_24_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACSDT-24MT0-C1S",
+                    "1628"
+                ],
+                "ADV DESKTOP_1_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACADT-01MT0-C1S",
+                    "3500"
+                ],
+                "HOST APPS SRV_1_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACHAP-01MT0-C1S",
+                    "4200"
+                ],
+                "HOST APPS SRV_12_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACHAP-12MT0-C1S",
+                    "3000"
+                ],
+                "STD DESKTOP_24_MTH_Prepaid_NO STORAGE": [
+                    "DSD-ACSDT-24PT0-C1S",
+                    "39060"
+                ],
+                "HOST APPS SRV_24_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACHAP-24MT0-C1S",
+                    "2790"
+                ],
+                "STD DESKTOP_24_MTH_Annually_NO STORAGE": [
+                    "DSD-ACSDT-24AT0-C1S",
+                    "19530"
+                ],
+                "STD DESKTOP_12_MTH_Prepaid_NO STORAGE": [
+                    "DSD-ACSDT-12PT0-C1S",
+                    "21000"
+                ],
+                "ENT DESKTOP_36_MTH_Prepaid_NO STORAGE": [
+                    "DSD-ACEDT-36PT0-C1S",
+                    "158400"
+                ],
+                "ADV DESKTOP_24_MTH_Annually_NO STORAGE": [
+                    "DSD-ACADT-24AT0-C1S",
+                    "27900"
+                ],
+                "ENT DESKTOP_24_MTH_Prepaid_NO STORAGE": [
+                    "DSD-ACEDT-24PT0-C1S",
+                    "111600"
+                ],
+                "STD DESKTOP_36_MTH_Annually_NO STORAGE": [
+                    "DSD-ACSDT-36AT0-C1S",
+                    "18480"
+                ],
+                "ENT DESKTOP_1_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACEDT-01MT0-C1S",
+                    "7000"
+                ],
+                "HOST APPS SRV_36_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACHAP-36MT0-C1S",
+                    "2640"
+                ],
+                "HOST APPS SRV_12_MTH_Prepaid_NO STORAGE": [
+                    "DSD-ACHAP-12PT0-C1S",
+                    "36000"
+                ],
+                "ENT DESKTOP_36_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACEDT-36MT0-C1S",
+                    "4400"
+                ],
+                "HOST APPS SRV_24_MTH_Annually_NO STORAGE": [
+                    "DSD-ACHAP-24AT0-C1S",
+                    "33480"
+                ],
+                "ADV DESKTOP_24_MTH_Prepaid_NO STORAGE": [
+                    "DSD-ACADT-24PT0-C1S",
+                    "55800"
+                ],
+                "STD DESKTOP_36_MTH_Prepaid_NO STORAGE": [
+                    "DSD-ACSDT-36PT0-C1S",
+                    "55440"
+                ],
+                "HOST APPS SRV_24_MTH_Prepaid_NO STORAGE": [
+                    "DSD-ACHAP-24PT0-C1S",
+                    "66960"
+                ],
+                "ENT DESKTOP_12_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACEDT-12MT0-C1S",
+                    "5000"
+                ],
+                "ADV DESKTOP_36_MTH_Monthly_NO STORAGE": [
+                    "DSD-ACADT-36MT0-C1S",
+                    "2200"
+                ],
+                "HOST APPS SRV_36_MTH_Prepaid_NO STORAGE": [
+                    "DSD-ACHAP-36PT0-C1S",
+                    "95040"
+                ],
+                "ENT DESKTOP_24_MTH_Annually_NO STORAGE": [
+                    "DSD-ACEDT-24AT0-C1S",
+                    "55800"
+                ]
+            },
+            "coreServices": [
+                {
+                    "tenantType": "STD DESKTOP",
+                    "defaultFlag": "N",
+                    "tenantName": "VMware Horizon Air Desktop Standard",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "1 months",
+                                        "1_MTH",
+                                        [
+                                            "2"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "2",
+                                            "1"
+                                        ],
+                                        "Y"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "3",
+                                            "2",
+                                            "1"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "3",
+                                            "2",
+                                            "1"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                },
+                {
+                    "tenantType": "HOST APPS SRV",
+                    "defaultFlag": "N",
+                    "tenantName": "VMware Horizon Air Apps",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "1 months",
+                                        "1_MTH",
+                                        [
+                                            "2"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "2",
+                                            "1"
+                                        ],
+                                        "Y"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "3",
+                                            "2",
+                                            "1"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "3",
+                                            "2",
+                                            "1"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                },
+                {
+                    "tenantType": "ADV DESKTOP",
+                    "defaultFlag": "Y",
+                    "tenantName": "VMware Horizon Air Desktop Advanced",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "1 months",
+                                        "1_MTH",
+                                        [
+                                            "2"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "2",
+                                            "1"
+                                        ],
+                                        "Y"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "3",
+                                            "2",
+                                            "1"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "3",
+                                            "2",
+                                            "1"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                },
+                {
+                    "tenantType": "ENT DESKTOP",
+                    "defaultFlag": "N",
+                    "tenantName": "VMware Horizon Air Desktop Enterprise",
+                    "storage": [
+                        {
+                            "NO STORAGE": {
+                                "storageName": "NO STORAGE",
+                                "terms": [
+                                    [
+                                        "1 months",
+                                        "1_MTH",
+                                        [
+                                            "2"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "2",
+                                            "1"
+                                        ],
+                                        "Y"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "3",
+                                            "2",
+                                            "1"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "3",
+                                            "2",
+                                            "1"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        "NO STORAGE"
+                    ]
+                }
+            ],
+            "serviceStartDate": "2014-12-02",
+            "termStartDate": "2015-01-02",
+            "termEndDate": "2016-01-02",
+            "paymentType": [
+                "2",
+                "1"
+            ],
+            "tenantType": null,
+            "isDCFormSubmitted": null,
+            "submitFlag": 1,
+            "managePermission": 1,
+            "encodedServiceID": "nqa5m88ZtrJ9ulB5IdTWLQ",
+            "priceUpdateFlag": false,
+            "storageEnabled": false,
+            "horizon": false
+        },
+        "supportLevelType": null,
+        "paymentType": [
+            {
+                "paymentTypeID": "0",
+                "paymentTypeVal": "Promotion"
+            },
+            {
+                "paymentTypeID": "1",
+                "paymentTypeVal": "Prepaid"
+            },
+            {
+                "paymentTypeID": "2",
+                "paymentTypeVal": "Monthly"
+            },
+            {
+                "paymentTypeID": "3",
+                "paymentTypeVal": "Annually"
+            },
+            {
+                "paymentTypeID": "4",
+                "paymentTypeVal": "One Time"
+            }
+        ],
+        "addons": {
+            "HD Storage": [
+                [
+                    "DSD-AAHD1M-C",
+                    "HD Storage",
+                    {
+                        "2": "0"
+                    },
+                    [
+                        "2"
+                    ],
+                    "2",
+                    "VMware Horizon DaaS - HD Storage - US - Addon Subscription<br/>US Data Center - Virtual Hard Disk 1 TB additional Storage",
+                    {
+                        "Monthly": {
+                            "1_99999": [
+                                "360.00",
+                                "DSD-AAHD1-01MT0-C1S",
+                                "VMware Horizon DaaS - HD Storage - US - Addon Subscription - 1 Monthly Payments"
+                            ]
+                        }
+                    },
+                    [],
+                    {},
+                    {},
+                    [],
+                    [],
+                    "",
+                    {}
+                ]
+            ],
+            "Direct Connect - Horizon DaaS": [
+                [
+                    "DSD-ADC10M-C",
+                    "Direct Connect - Horizon DaaS",
+                    {
+                        "2": "0"
+                    },
+                    [
+                        "2"
+                    ],
+                    "2",
+                    "VMware Horizon DaaS - Direct Connect 10Gbps Port Subscription - US - Direct Connect<br/>US Data Center - Direct Connect 10 Gbps port charge. Does not include line charge. Do not order at same time as other add-ons.",
+                    {
+                        "Monthly": {
+                            "1_99999": [
+                                "350.00",
+                                "DSD-ADC10-01MT0-C1S",
+                                "VMware Horizon DaaS - Direct Connect 10Gbps Port Subscription - US - Direct Connect - 1 Monthly Payments"
+                            ]
+                        }
+                    },
+                    [],
+                    {},
+                    {},
+                    [
+                        "Direct Connect - Horizon DaaS",
+                        10
+                    ],
+                    [],
+                    "",
+                    {}
+                ],
+                [
+                    "DSD-ADC01M-C",
+                    "Direct Connect - Horizon DaaS",
+                    {
+                        "2": "0"
+                    },
+                    [
+                        "2"
+                    ],
+                    "2",
+                    "VMware Horizon DaaS - Direct Connect 1Gbps Port Subscription - US - Direct Connect<br/>US Data Center - Direct Connect 1 Gbps port charge. Does not include line charge. Do not order at same time as other add-ons.",
+                    {
+                        "Monthly": {
+                            "1_99999": [
+                                "105.00",
+                                "DSD-ADC01-01MT0-C1S",
+                                "VMware Horizon DaaS - Direct Connect 1Gbps Port Subscription - US - Direct Connect - 1 Monthly Payments"
+                            ]
+                        }
+                    },
+                    [],
+                    {},
+                    {},
+                    [
+                        "Direct Connect - Horizon DaaS",
+                        1
+                    ],
+                    [],
+                    "",
+                    {}
+                ]
+            ],
+            "Advanced Desktop": [
+                [
+                    "DSD-AAADTM-C",
+                    "Advanced Desktop",
+                    {
+                        "2": "1"
+                    },
+                    [
+                        "2"
+                    ],
+                    "2",
+                    "VMware Horizon DaaS - Advanced Desktops - US - Addon Subscription<br/>US Data Center - Qty 50 x Advanced desktop (2vCPU, 4GB vRAM, 60GB HD), includes management portal and public IP for remote access,? account administration fee and 2 gold patterns",
+                    {
+                        "Monthly": {
+                            "1_99999": [
+                                "3500.00",
+                                "DSD-AAADT-01MT0-C1S",
+                                "VMware Horizon DaaS - Advanced Desktops - US - Addon Subscription - 1 Monthly Payments"
+                            ]
+                        }
+                    },
+                    [],
+                    {},
+                    {},
+                    [],
+                    [],
+                    "",
+                    {}
+                ]
+            ],
+            "Enterprise Desktop": [
+                [
+                    "DSD-AAEDTM-C",
+                    "Enterprise Desktop",
+                    {
+                        "2": "0"
+                    },
+                    [
+                        "2"
+                    ],
+                    "2",
+                    "VMware Horizon DaaS - Enterprise Desktops - US - Addon Subscription<br/>US Data Center - Qty 50 x Enterprise desktop (4vCPU, 8GB vRAM, 120GB HD), includes management portal and public IP for remote access,?account administration fee and 2 gold patterns",
+                    {
+                        "Monthly": {
+                            "1_99999": [
+                                "7000.00",
+                                "DSD-AAEDT-01MT0-C1S",
+                                "VMware Horizon DaaS - Enterprise Desktops - US - Addon Subscription - 1 Monthly Payments"
+                            ]
+                        }
+                    },
+                    [],
+                    {},
+                    {},
+                    [],
+                    [],
+                    "",
+                    {}
+                ]
+            ],
+            "Hosted Apps Server": [
+                [
+                    "DSD-AAHAPM-C",
+                    "Hosted Apps Server",
+                    {
+                        "2": "0"
+                    },
+                    [
+                        "2"
+                    ],
+                    "2",
+                    "VMware Horizon DaaS - Hosted Apps - US - Addon Subscription<br/>US Data Center - Qty 5 x Hosted Apps Server (20vCPU, 30GB vRAM, 100GB HD), includes management portal and public IP for remote access,?account administration fee and 2 gold patterns",
+                    {
+                        "Monthly": {
+                            "1_99999": [
+                                "4200.00",
+                                "DSD-AAHAP-01MT0-C1S",
+                                "VMware Horizon DaaS - Hosted Apps - US - Addon Subscription - 1 Monthly Payments"
+                            ]
+                        }
+                    },
+                    [],
+                    {},
+                    {},
+                    [],
+                    [],
+                    "",
+                    {}
+                ]
+            ],
+            "Standard Desktop": [
+                [
+                    "DSD-AASDTM-C",
+                    "Standard Desktop",
+                    {
+                        "2": "0"
+                    },
+                    [
+                        "2"
+                    ],
+                    "2",
+                    "VMware Horizon DaaS - Standard Desktops - US - Addon Subscription<br/>US Data Center - Qty 50 x Standard desktop (1vCPU, 2GB vRAM, 30GB HD), includes management portal and public IP for remote access,?account administration fee and 2 gold patterns",
+                    {
+                        "Monthly": {
+                            "1_99999": [
+                                "2450.00",
+                                "DSD-AASDT-01MT0-C1S",
+                                "VMware Horizon DaaS - Standard Desktops - US - Addon Subscription - 1 Monthly Payments"
+                            ]
+                        }
+                    },
+                    [],
+                    {},
+                    {},
+                    [],
+                    [],
+                    "",
+                    {}
+                ]
+            ],
+            "THIN APP": [
+                [
+                    "DSD-AATAPM-C",
+                    "THIN APP",
+                    {
+                        "2": "0"
+                    },
+                    [
+                        "2"
+                    ],
+                    "2",
+                    "VMware Horizon DaaS - ThinApp - US - Addon Subscription<br/>US Data Center - Includes access to ThinApp Packager, ThinApp Client and Workstation (for admin usage) for usage with VMware Horizon DaaS desktops and hosted apps.",
+                    {
+                        "Monthly": {
+                            "1_99999": [
+                                "14.00",
+                                "DSD-AATAP-01MT0-C1S",
+                                "VMware Horizon DaaS - ThinApp - US - Addon Subscription - 1 Month - Monthly Payments"
+                            ]
+                        }
+                    },
+                    [],
+                    {},
+                    {},
+                    [],
+                    [],
+                    "",
+                    {}
+                ]
+            ]
+        },
+        "redemptionNotes": null,
+        "addonRedemptionNotes": null
+    }
+}

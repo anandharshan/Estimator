@@ -1,0 +1,22 @@
+<article class="container-fluid">
+    <div class="alertErrorMessageContainer margin-top-10">
+        
+    </div>
+	<!--div class="alert-box margin-top-10" ng-if="alertWarning">
+        <div class="alert alert-warning alert-dismissable">
+            <a type="button" class="close icons-alert-close" data-dismiss="alert" aria-hidden="true"></a>
+            <div class="row">
+                <span class="icons-alert-warning"></span>
+                <div class="alert-text col-sm-10">
+                    <span ng-bind-html="alertWarningMessage"></span>
+                </div>
+            </div>
+        </div>
+    </div-->
+
+    <div class="row margin-top-20" ng-if="alertServiceDetailLink">
+        <div class="col-md-9">
+            <a href="{{globalVars.goToAllServiceURL}}">{{globalVars.goToAllServiceText}}</a>
+        </div>
+    </div>
+</article>

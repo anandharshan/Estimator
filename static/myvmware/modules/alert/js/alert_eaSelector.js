@@ -1,0 +1,12 @@
+vmf.ns.use("ice");
+ice.eaSelector.impl={
+	beforeEaSelectorChange:function(){
+		$('#applyFilter').attr("disabled","disabled");
+	},
+	afterEaSelectorChange_success:function(){   
+		$('#applyFilter').removeAttr("disabled");
+	},
+	afterEaSelectorChange_error:function(){
+		alert(eaSelectorDropDownErrorMsg);
+	}
+};

@@ -1,0 +1,54 @@
+<article class="container-fluid" ng-if="isXaasFund">
+		<!-- <div class="row margin-top-20 margin-bottom-20">
+		   <div class="col-md-12 margin-top-10"><span class="intro-text completeMessage">{{globalVars.success}}</span></div>                 
+		</div> -->
+		<div class="row">
+			<div class="col-md-8 margin-top-10 lightGrey"><span>{{globalVars.orderSubmit}}</span>
+				<span class="referenceIdCash margin-top-20">{{globalVars.referenceIdCashFlowText}}{{ref_id}} </span>
+			</div>
+			<!-- <div class="col-md-12"><span>{{ref_id}}</span></div> -->
+			<div class="col-md-4">
+	            <div>
+	               <div class="rightSecHead"><h4 class="ng-binding">{{globalVars.manageService}}</h4></div>
+	               <div class="margin-top-10 ng-binding">
+	                   {{globalVars.manageServiceText}}
+	               </div>
+	               <div class="margin-top-10">
+	                <a class="ng-binding" href="{{globalVars.goToAllServiceURL}}" target="_blank">{{globalVars.goToAllServiceText}}</a>
+	               </div>
+	            </div>
+	       </div>
+		</div>
+</article>
+<article class="container-fluid" ng-if="!isXaasFund">
+		<!-- <div class="row margin-top-20 margin-bottom-20">
+		   <div class="col-md-12"><span class="intro-text">{{globalVars.success}}</span></div>                 
+		</div> -->
+		<div class="row margin-top-20">
+			<div class="col-md-8"><span>{{globalVars.hasSubmitted}}</span>
+			<span class="referenceIdCash margin-top-20">{{globalVars.referenceIdCashFlowText}}{{completeObjLocal.requestNumber}} </span>	
+			</div>
+			<div class="col-md-4">
+                    <!-- <div class="box-bgBlue"> -->
+                    <div>
+                       <div class="rightSecHead"><h4 class="ng-binding">{{globalVars.manageService}}</h4></div>
+                       <div class="margin-top-10 ng-binding">
+                           {{globalVars.manageServiceText}}
+                       </div>
+                       <div class="margin-top-10">
+                        <a class="ng-binding" href="{{globalVars.goToAllServiceURL}}" target="_blank">{{globalVars.goToAllServiceText}}</a>
+                       </div>
+                    </div>
+               </div>
+		</div>
+
+</article>
+<!-- <article class="container-fluid" ng-if="!isXaasFund">
+		<div class="row margin-top-20">
+			<div class="col-md-9">
+				<a href="{{globalVars.goToAllServiceURL}}">{{globalVars.goToAllServiceText}}</a>
+			</div>
+		</div>
+</article> -->
+
+       

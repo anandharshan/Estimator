@@ -1,0 +1,240 @@
+// this file demonstrates how to use the CSS PIE extension for
+// legacy versions of Internet Explorer. In many cases, PIE will allow
+// you to style in CSS things that you'd have to do using image chops otherwise.
+//
+// Note: Each element that has PIE enabled on it will add about 10ms to your page load.
+@import "compass/css3/pie";
+@import "compass/css3";
+
+// Set this to wherever you end up putting your behavior file.
+//
+// **Note:** this file must be served as a root-relative resource or
+// else IE will interpret it as relative to the current webpage
+// instead of the stylesheet.
+//
+// **Also Note:** this file must be delivered with a mime-type of:
+//
+//    text/x-component
+$pie-behavior: url("/vmf/c/4.0/css/htc/PIE.htc");
+
+// It is suggested that you use Sass's @extend directive to apply the PIE
+// behavior to your elements. Setting this variable will tell the `pie` mixin
+// to extend it. Or you can just extend the base class yourself.
+$pie-base-class: pie-element;
+
+
+
+          // There are two approaches to creating PIE elements
+          // The default approach is to make the element position: relative.
+          .pie-element {
+            // relative is the default, so passing relative
+            // is redundant, but we do it here for clarity.
+            @include pie-element(relative);
+          }
+
+          .bordered {
+            @include pie; // Because $pie-base-class is set, this results in an extend of .pie-element. 
+            @include border-radius(5px);
+          }
+
+          .gradient {
+            @include pie; // Because $pie-base-class is set, this results in an extend of .pie-element.
+            @include background(linear-gradient(#f00, #00f));
+          }
+
+
+          // But sometimes this messes up your positioning
+          // So you can also use z-indexing. In this case
+          // an ancestor element before or having the first
+          // opaque background should be marked as a pie-container
+          // which gives it a z-index of 0 (actually any z-index
+          // can be provided to the pie-container mixin).
+          // And then the pie element itself should be given
+          // a z-index of -1.
+          .pie-container {
+            @include pie-container;
+          }
+
+          .z-pie-element {
+            // this will get a z-index of 0, you can pass a z-index value if you want
+            @include pie-element(z-index);
+          }
+
+          // This is just a simple example of how to use the z-index approach.
+          .widget {
+            @extend .pie-container;
+            h3 {
+              @include pie(z-pie-element); // This will extend .z-pie-element instead of .pie-element
+            }
+          }
+
+
+          // Lastly, you can just include the pie-element mixin directly if you need to do a one-off:
+          .has-gradient {
+            @include pie-element(relative);
+            @include background(linear-gradient(#f00, #00f));
+          }
+
+          //starlight gradient classes
+          .starlight .btn-default,
+          .starlight-filter .btn-default {
+            filter: none !important;
+            @include pie-element(relative);
+            @include background(linear-gradient(#ffffff, #e6e6e6));
+          }
+
+          .starlight .btn-default:hover,
+          .starlight-filter .btn-default:hover {
+            filter: none !important;
+            @include pie-element(relative);
+            @include background(linear-gradient(#ffffff, #d7d7d7));
+          }
+          
+          .starlight .btn-primary,
+          .starlight-filter .btn-primary {
+            filter: none !important;
+            @include pie-element(relative);
+            @include background(linear-gradient(#0095d3, #007fb4));
+          }
+
+          .navbar-default{
+            filter: none !important;
+            @include pie-element(relative);
+            @include background(linear-gradient(#ffffff 0%, #f7f7f7 6%, #f1f1f1 93%, #ececec 98%, #d0d0d0 100%));
+          }
+          
+          .navbar-default .navbar-nav > li > a:hover, 
+          .navbar-default .navbar-nav > li > a:focus{
+            zoom: 1;
+            @include pie-element(relative);
+            @include background(linear-gradient(#ececec, #ffffff));
+          }
+
+          .navbar-default .navbar-nav > .active > a, 
+          .navbar-default .navbar-nav > .active > a:hover, 
+          .navbar-default .navbar-nav > .active > a:focus,
+          .navbar-default .navbar-nav > .open > a, 
+          .navbar-default .navbar-nav > .open > a:hover, 
+          .navbar-default .navbar-nav > .open > a:focus{
+            filter: none !important;
+            @include pie-element(relative);
+            @include background(linear-gradient(#6a6b6f 0%, #363638 100%));
+          }
+
+          @media (max-width: 767px){
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus{
+              filter: none !important;
+              @include pie-element(relative);
+              @include background(linear-gradient(#ececec 0%, #f1f1f1 6%, #f7f7f7 93%, #ffffff 98%, #d0d0d0 100%));
+            }
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a, 
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, 
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+              filter: none !important;
+              @include pie-element(relative);
+              @include background(linear-gradient(#6a6b6f 0%, #363638 100%));
+            }
+          }
+
+          .progress-striped .progress-bar,
+          .progress-striped .progress-bar-success,
+          .progress-striped .progress-bar-info,
+          .progress-striped .progress-bar-warning,
+          .progress-striped .progress-bar-danger{
+            filter: none !important;
+            @include pie-element(relative);
+            @include background(linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent));
+          }
+
+          .carousel-control.left{
+            filter: none !important;
+            @include pie-element(relative);
+            @include background(linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%));
+          }
+
+          .carousel-control.right{
+            filter: none !important;
+            @include pie-element(relative);
+            @include background(linear-gradient(rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%));
+          }
+
+          .starlight .header .nav-menu ul.nav-level-1 > li a.menu-item-primary-1{
+            //filter: none !important;
+            //@include pie-element(relative);
+            //@include background(linear-gradient(#ffffff 0%, #f7f7f7 6%, #f1f1f1 93%, #ececec 99%));
+          }
+
+          .page-b-header-gradient{
+            @include background(linear-gradient(#1f1f21 0%, #6a6b6f 99%));
+          }
+
+          .page-b-footer-gradient{
+            @include background(linear-gradient(transparent 0%, #38393c 99%));
+          }
+
+          .page-b-footer-pattern {
+            @include background(url("../images/starlight/footer-pattern-lg.png") no-repeat scroll right bottom);
+          }
+
+          @media all and (max-width: 992px) {
+            .page-b-footer-pattern {
+              @include background(url("../images/starlight/footer-pattern-sm.png") no-repeat scroll right bottom);
+            }
+          }
+
+          
+          
+          //bootstrap round-corner classes
+          .img-circle,
+          .img-rounded,
+          .img-thumbnail,
+          .table-bordered,
+          select,textarea,input,code,pre,kbd,pre,
+          .input-group-addon,
+          .dropdown-menu,
+          .form-control,
+          .well,
+          .breadcrumb,
+          .pagination,
+          .pager li > a,.pager li > span,
+          .modal-content,
+          .tooltip-inner,
+          .popover,
+          .popover-title,
+          .thumbnail,.img-thumbnail,
+          .label,
+          .badge,
+          .progress,
+          .carousel-indicators li,
+          .jumbotron {
+            zoom: 1;
+            behavior: $pie-behavior;
+          }
+          .alert,
+          .panel-default{
+            @include pie-element(relative);
+          }
+
+          select.form-control{
+            behavior: none;
+          }
+
+          // fix for css3-pie issue - dropdowns
+          .dropdown-toggle.pie_first-child{
+            ~ css3-container{
+              z-index: -1 !important;
+            }
+            &.pie_focus ~ css3-container{
+              z-index: 1000 !important;
+            }
+          }
+
+          .select-drop{
+            css3-container{
+              z-index: -1 !important;
+            }
+            &.open css3-container{
+              z-index: 1000 !important;
+            }
+          }

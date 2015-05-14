@@ -1,0 +1,18 @@
+//Custom Styling for Starlight Tables.
+
+//Style A
+
+.starlight-table-A {
+	thead {
+		background-color: $starlight-blue-dark;
+		color: #FFF;
+	}
+	tbody {
+		background-color: $starlight-bg-gray;
+		color: $starlight-gray-dark;
+	}
+	th,td {
+			font-weight:400;
+			text-align: center;
+	}
+}

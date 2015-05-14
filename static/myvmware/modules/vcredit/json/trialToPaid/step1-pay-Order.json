@@ -1,0 +1,59 @@
+{
+    "wrapper": {
+        "serviceName": "vRealize Air Compliance",
+        "trialID": "M12345678",
+        "serviceID": null,
+        "expiryDate": "2015-04-12",
+        "productFamilyCode": "MGMT-BUSINESS-UNIT",
+        "fundGroupPaymentMethod": [
+            {
+                "eaNumber": "112318756",
+                "eaName": "Suresh Sadanandam",
+                "fundDetails": [
+                    {
+                        "id": "5GRFNHtfUZ7UeesFQ99YUQ",
+                        "name": "SPP_12057025",
+                        "balance": "1863.00",
+                        "expiry": "2016-10-12",
+                        "currency": "$",
+                        "redemptionCurrency": "USD",
+                        "groupId": null
+                    },
+                    {
+                        "id": "5GRFNHtfUZ7UeesFQ88YUQ",
+                        "name": "SPP_12057075",
+                        "balance": "1863.00",
+                        "expiry": "2016-10-12",
+                        "currency": "$",
+                        "redemptionCurrency": "USD",
+                        "groupId": null
+                    }
+                ]
+            },
+            {
+                "eaNumber": "156222488",
+                "eaName": "Suresh Sadanandam",
+                "fundDetails": [
+                    {
+                        "id": "5GRFNHtfUZ7UeesFQ77YUQ",
+                        "name": "SPP_12057045",
+                        "balance": "1863.00",
+                        "expiry": "2016-10-12",
+                        "currency": "$",
+                        "redemptionCurrency": "USD",
+                        "groupId": null
+                    },
+                    {
+                        "id": "5GRFNHtfUZ7UeesFQ66YUQ",
+                        "name": "SPP_12057035",
+                        "balance": "1863.00",
+                        "expiry": "2016-10-12",
+                        "currency": "$",
+                        "redemptionCurrency": "USD",
+                        "groupId": null
+                    }
+                ]
+            }
+        ]
+    }
+}

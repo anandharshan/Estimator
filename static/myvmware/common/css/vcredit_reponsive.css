@@ -1,0 +1,14 @@
+@media (max-width: 991px) { 
+  .accountFundInfo{
+    padding-left: 31px;
+    padding-top: 10px;
+  }
+  
+  .accountFundInfo .changeAccount{
+    margin-top: 10px;
+  }
+
+  .config_help{
+    padding-top: 10px;
+  }
+}

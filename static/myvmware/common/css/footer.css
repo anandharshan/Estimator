@@ -1,0 +1,167 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  footer.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 04/21/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. FOOTER (Direct copy from VMware.com)
+/* ########################################################################### */
+
+
+/* ########################################################################### *
+/* ##### FOOTER (Direct copy from VMware.com)
+/* ########################################################################### */
+
+/* to fix space issue by hiding hidden form for IE7*/
+#hrefFm {
+	display:none;
+}
+.category-links{
+	background: #eee;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	height:1%;
+	overflow:hidden;
+	background:#eee url(//www.vmware.com/files/templates/images/divider-links.gif) no-repeat 0 14px;
+}
+.category-links .frame{
+	width:960px;
+	margin:0 -20px 0 0;
+	padding:20px 0 28px;
+	overflow:hidden;
+}
+.category-links .frame div{
+	float:left;
+	width:200px;
+	margin:0 20px 0 0;
+	padding:0 0 0 20px;
+}
+.category-links h3{
+	font-size:13px;
+	margin:0;
+	color:#666;
+}
+.category-links ul{
+	margin:6px 0 0;
+	padding:0;
+	list-style:none;
+	font-size:11px;
+}
+.category-links ul li{line-height:16px;background:none;padding:0;}
+.category-links ul a{color:#737373;}
+.category-links ul a:hover{color:#4d4e53;}
+.footerbar{
+/*	width:990px; */
+/*	margin:-50px auto 0; */
+	position:relative;
+	height:35px;
+	padding:0 0 0 12px;
+	font-size:11px;
+	color:#999;
+	overflow:hidden;;
+}
+.footerbar p{
+	float:left;
+	margin:1px 0 0;
+	line-height:normal;
+	color:#999;
+}
+.footerbar ul{
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+* html .footerbar ul{
+	height:1%;
+	overflow:visible;
+}
+/*#navigation-bottom li {
+	float:left;
+	background:url(//www.vmware.com/files/templates/images/sep-footer.gif) no-repeat 0 50%;
+	padding:0 7px 0 9px;
+	margin:0 1px 0 -1px;
+}*/
+.footerbar ul a{color:#39c;}
+.footerbar ul a:hover{color:#069;}
+
+#footer {
+	width: 922px;
+	height: 70px;
+	background: url(/files/images/tpl/background-footer.gif) no-repeat;
+	font-size: 10px;
+	line-height: 34px;
+	padding: 0 14px 0 14px;
+	position: relative;
+	color: #999999;
+	clear: both;
+    _padding-top:10px;
+}
+
+#footer p {
+	display: inline;
+}
+
+#footer a.rss {
+	position: absolute;
+	top: 8px;
+	right: 13px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 16px;
+	height: 16px;
+	background: url(/files/images/tpl/rss.gif) no-repeat;
+	padding:0px;
+}
+
+#navigation-bottom {
+	margin: 0 0 0 12px;
+	padding: 0;
+	list-style: none;
+	display: inline;
+}
+
+#footer-container .footerbar ul li {
+	display: inline;
+	float:left;
+	/*background: url(/files/images/tpl/separator.gif) no-repeat 0 4px;*/
+	background:url(//www.vmware.com/files/templates/images/sep-footer.gif) no-repeat 0 50% !important;
+	margin: 0 6px 0 0;
+	padding: 0 0 0 10px;
+	_background-image: expression( (this===this.parentNode.childNodes[0]) ? "none" : "auto");
+	_padding-left: expression( (this===this.parentNode.childNodes[0]) ? "none" : "auto");
+}
+
+#footer-container .footerbar ul li:first-child{
+	background-image: none !important;
+	padding-left: 8px;
+}
+/*
+#navigation-bottom li a {
+	color: #999999;
+	text-decoration: none;
+	background: #F3F3F3;
+}
+
+#navigation-bottom li a:hover {
+	text-decoration: underline;
+}
+*/
+
+a.rss {
+	background: url(img/rss_14x14.png) bottom right no-repeat; 
+	padding: 0px 20px 0 0;
+	float:right;
+	margin-right:11px;
+	height:14px;
+}
+
+.plusIcon {
+	border: none;
+	margin-left: 5px;
+}

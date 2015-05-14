@@ -1,0 +1,84 @@
+            <article ng-if="showLoader">
+                <div class="row margin-top-20 margin-bottom-20">
+                    <div class="col-md-12 text-center">
+                        <div class="ajaxSpinner">&nbsp;</div>   
+                    </div>
+                </div>
+            </article>
+            <section ng-if="!showLoader">
+                <article class="container-fluid">
+                        <div class="row margin-top-20 margin-bottom-20">
+                            <div class="col-md-5">
+                                <h4>{{addOnData.core.serviceName}}</h4>
+                                <a class="btn-link" ng-click="gotoConfigure()">{{globalVars.changeConfiguration}}</a>             
+									<div class="margin-top-20">
+	                                    <div>{{addOnData.core.longSkuDescription}}</div>
+	                                </div>
+                            </div>    
+                            <div class="col-md-7">
+                                <div class="row box-bgBlue">
+                                    <div class="col-md-6 padding-left-0 borderRightWhite">
+                                        <div>
+                                            <h4 class="calculationBoxHeader18">{{globalVars.serviceCost}} ({{addOnData.core.pricelist[0]}})</h4>
+                                           <!--h3><span class="small">{{globalVars.serviceCost}} ({{addOnData.core.pricelist[0]}})</span></h3-->
+                                           <span class="intro-text">{{addOnData.core.cost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}
+                                                <span ng-if="addOnData.core.defaultPaymentType == '2'"> {{globalVars["payment_type2"]}}</span>
+                                                <span ng-if="addOnData.core.defaultPaymentType == '3'"> {{globalVars["payment_type3"]}}</span>
+                                           </span>
+                                           <div class="margin-top-5">{{globalVars.term}}: {{addOnData.core.term}}</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 borderLeftWhite">
+                                        <div>
+                                            <h4 ng-if="(ttlOneTimeCost == 0 || ttlOneTimeCost == null) && (ttlPrepaidCost == 0 || ttlPrepaidCost == null) && (ttlMonthlyCost == 0 || ttlMonthlyCost == null) && (ttlYearlyCost == 0 || ttlYearlyCost == null)" class="calculationBoxHeader18">{{globalVars.addOnRecurringCost}}</h4>
+                                           <!--span ng-if="(ttlOneTimeCost == 0 || ttlOneTimeCost == null) && (ttlPrepaidCost == 0 || ttlPrepaidCost == null) && (ttlMonthlyCost == 0 || ttlMonthlyCost == null) && (ttlYearlyCost == 0 || ttlYearlyCost == null)"><h4>{{globalVars.addOnRecurringCost}}</h4></span-->
+                                            
+                                            <div ng-if="ttlOneTimeCost > 0" class="margin-bottom-10">
+                                                <h4 class="calculationBoxHeader18">{{globalVars.addOnOneTime}} ({{addOnData.core.pricelist[0]}})</h4>
+                                                <!--span><strong>{{globalVars.addOnOneTime}} ({{addOnData.core.pricelist[0]}})</strong></span-->
+                                                <span class="intro-text intro-text-24">{{ttlOneTimeCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</span></div>
+                                            <div ng-if="ttlMonthlyCost > 0" class="margin-bottom-10">
+                                                <h4 class="calculationBoxHeader18">{{globalVars.addOnMonthlyCost}} ({{addOnData.core.pricelist[0]}})</h4>
+                                                <!--span><strong>{{globalVars.addOnMonthlyCost}} ({{addOnData.core.pricelist[0]}})</strong></span-->
+                                                <span class="intro-text intro-text-24">{{ttlMonthlyCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{globalVars["payment_type2"]}}</span></div>
+                                            <div ng-if="ttlPrepaidCost > 0" class="margin-bottom-10">
+                                                <h4 class="calculationBoxHeader18">{{globalVars.addOnPrepaidCost}} ({{addOnData.core.pricelist[0]}})</h4>
+                                                <!--span><strong>{{globalVars.addOnPrepaidCost}} ({{addOnData.core.pricelist[0]}})</strong></span-->
+                                                <span class="intro-text intro-text-24">{{ttlPrepaidCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</span></div>
+                                            <div ng-if="ttlYearlyCost > 0">
+                                                <h4 class="calculationBoxHeader18">{{globalVars.addOnAnnualCost}} ({{addOnData.core.pricelist[0]}})</h4>
+                                                <!--span><strong>{{globalVars.addOnAnnualCost}} ({{addOnData.core.pricelist[0]}})</strong></span-->
+                                                <span class="intro-text intro-text-24">{{ttlYearlyCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}  {{globalVars["payment_type3"]}}</span></div>
+                                            
+                                            <span ng-if="(ttlOneTimeCost == 0 || ttlOneTimeCost == null) && (ttlPrepaidCost == 0 || ttlPrepaidCost == null) && (ttlMonthlyCost == 0 || ttlMonthlyCost == null) && (ttlYearlyCost == 0 || ttlYearlyCost == null)">{{globalVars.chooseAddOn}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                </article>
+                <ng-addon-table></ng-addon-table>
+                <article class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 margin-bottom-30">
+                            {{globalVars.bulkDiscountMsg}}
+                        </div>
+                        <!--div class="alert-box col-md-8 margin-top-10">
+                            <div class="alert alert-info alert-dismissable" role="alert">
+                                <div class="row">
+                                    <span class="icons-alert-info"></span>
+                                    <div class="alert-text col-sm-11">
+                                        <span>{{globalVars.bulkDiscountMsg}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div-->
+                     </div>                    
+                     <div class="row margin-top-10">
+                            <div class="col-xs-6 text-left"><a class="btn btn-default" ng-click="gotoConfigure()">{{globalVars.backBtn}}</a></div>
+                            <div class="col-xs-6 text-right">
+                                <a class="btn btn-primary" ng-click="goToReview()" ng-disabled="!validSelectedData || !trueUpError">{{globalVars.reviewOrderBtn}}</a>
+                                <a class="btn btn-default margin-left-20" ng-click="cancelFlow(cancelFn)">{{globalVars.cancelBtn}}</a></div>
+                    </div>
+                </article>
+            </section>

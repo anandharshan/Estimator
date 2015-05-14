@@ -1,0 +1,90 @@
+@import "compass/reset";
+@import "compass"; 
+
+//@import "icons/*.png";
+//@include all-icons-sprites;
+
+/* Include the basic fonts */
+@import "starlight/custom/proximaFont";
+@import "starlight/alpha_star";
+/******* Include all the bootstrap files and its overrides w.r.t starlight theme - START *******/
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "starlight/bootstrap/variables"; //Added for Starlight
+@import "bootstrap/mixins";
+
+// Reset
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "starlight/bootstrap/scaffolding"; //Added for Starlight
+@import "bootstrap/type";
+@import "starlight/bootstrap/type"; //Added for Starlight
+@import "bootstrap/code";
+@import "bootstrap/grid"; 
+/*@import "tables";
+@import "starlight/bootstrap/tables";*/ //Added for Starlight
+@import "bootstrap/forms";
+@import "starlight/bootstrap/forms"; //Added for Starlight
+@import "bootstrap/buttons";
+@import "starlight/bootstrap/buttons"; //Added for Starlight
+
+// Components
+@import "bootstrap/component-animations";
+@import "bootstrap/glyphicons"; 
+@import "bootstrap/dropdowns";
+@import "starlight/bootstrap/dropdowns"; //Added for Starlight
+@import "bootstrap/button-groups";
+@import "bootstrap/input-groups";
+@import "starlight/bootstrap/input-groups"; //Added for Starlight
+@import "bootstrap/navs";
+@import "starlight/bootstrap/navs"; //Added for Starlight
+@import "bootstrap/navbar";    // Remove once merged with custom
+@import "starlight/bootstrap/navbar";  // Remove once merged with custom
+@import "bootstrap/navbarcustom";
+@import "starlight/bootstrap/navbarcustom"; //Added for Starlight Liferay
+@import "bootstrap/breadcrumbs";
+@import "starlight/bootstrap/breadcrumbs"; //Added for Starlight
+@import "bootstrap/pagination";
+@import "starlight/bootstrap/pagination"; //Added for Starlight
+@import "bootstrap/pager";
+@import "bootstrap/labels";
+@import "bootstrap/badges";
+@import "bootstrap/jumbotron";
+@import "bootstrap/thumbnails";
+@import "bootstrap/alerts";
+@import "starlight/bootstrap/alerts"; //Added for Starlight
+@import "bootstrap/progress-bars";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/panels";
+@import "starlight/bootstrap/panels"; //Added for Starlight
+@import "bootstrap/wells";
+@import "bootstrap/close";
+
+// Components w/ JavaScript
+@import "bootstrap/modals";
+@import "starlight/bootstrap/modals"; //Added for Starlight
+@import "bootstrap/tooltip";
+@import "starlight/bootstrap/tooltip"; //Added for Starlight
+@import "bootstrap/popovers";
+@import "bootstrap/carousel";
+@import "bootstrap_custom_plugins/select";
+@import "starlight/bootstrap_custom_plugins/select";
+@import "custom_form_elements/uniform.default";
+@import "starlight/custom_form_elements/uniform.default";
+
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+@import "bootstrap/responsive-embed";
+
+/******* Include all the bootstrap files and its overrides w.r.t starlight theme - END *******/
+
+/* Include the custom css - specific for starlight theme */
+@import "starlight/custom"; // starlight custom css
+
+/* over-writing normalise bootstrap styles */
+@import "starlight/bootstrap/normalize";

@@ -1,0 +1,242 @@
+		<section>
+                <!-- Content -->
+                <section>
+                    <article>
+                        <div class="bottomBorder ie7Border">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h1 class="component-heading">{{globalVars.VSPPAir}}</h1>
+                                </div>
+                            </div>
+                        </div>				    
+                    </article>
+                    <article ng-if="showLoader">
+                            <div class="row margin-top-20 margin-bottom-20">
+                                <div class="col-md-12 text-center">
+                                    <div class="ajaxSpinner">&nbsp;</div>   
+                                </div>
+                            </div>
+                    </article>
+                    <article>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="dashboardAlertBoxContainer" class="alertBoxMainContainer"></div>
+                            </div>
+                        </div>
+                    </article>
+                    <div data-ng-repeat= "accountDetails in accountInfo">
+                    <article ng-if="!showLoader"  class="clearfix">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="dropdown-toggle vsppSubHeader" data-toggle="dropdown" ><span class="vsppIdentifier">{{accountDetails["VSPPAirCommit"]}}</span><small ng-if="accountDetails.isAdmin" class="renameLnk"><a href="javascript:void(0);" data-ng-click = "rename($index)">{{globalVars["rename"]}}</a></small></h3> 
+                            </div>
+                            <div class="col-md-6 changeNameCont" style="display:none">
+                            <!-- temporary styling inline-->
+
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="VsppRename" data-parsley-alphaNumWithSpace data-parsley-required-message="{{globalVars['requiredFundname']}}" data-parsley-required data-parsley-alphaNumWithSpace-message="{{globalVars['invalidFundName']}}" data-parsley-trigger="blur change keyup keypress" ng-enter="save($scope)" ng-escape ="" ng-blur="validateRename($index)" ng-keyup="validateRename($index)" ng-change="vsppCurrentIdentifier" maxlength="50" ng-model="vsppCurrentIdentifier" />
+                            </div>
+                                <a type="submit" class="btn btn-primary" ng-disabled = "disableSave == true" ng-click = "save($index)">{{globalVars["Apply"]}}</a>
+                                <a type="button" class="btn btn-default" ng-click = "cancel($index)">{{globalVars["cancel"]}}</a>
+                            </div>                             
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">                            
+                                <div class="balanceDeatails col-md-12">
+                                    <h5 class="col-md-12">{{globalVars.currentCosumption}}<span style="position:absolute;"><a href="javascript:void(0);" class = "info" tooltip-trigger="{{{true: 'mouseenter', false: 'never'}['']}}" tooltip-placement="right" data-tooltip-html-unsafe="Current Consumption is not the same as billing amount." >&nbsp;</a></span></h5>
+                                    <div class="col-md-12 balanceVal {{(accountDetails.currentCosumption < 0 && 'balanceValNegative')}}"><span class="CurrentCosumption">{{accountDetails.accountInfo.currentCosumption | customCurrency:accountDetails.accountInfo.currencySymbol}}</span> / {{globalVars.month}}</div>
+                                    <div class="col-md-12"><span class="msrp">{{globalVars.commitLevel}}</span></div>
+                                    <div class="col-md-12 bottomBorderWhite commitLevelCont {{(accountDetails.commitLevel < 0 && 'balanceValNegative')}}"><span class="commitLevelBal">{{accountDetails.accountInfo.commitLevel| customCurrency:accountDetails.accountInfo.currencySymbol}} / {{globalVars.month}}</span></div>
+                                    <div class="col-md-12">
+                                        <div class="row"><span class="col-md-6 msrp">{{globalVars.balance}}</span><small> <span class="col-md-6 balanceValNegative padding-right-0 text-right" ng-if="accountDetails.accountInfo.thresholdFlag">{{globalVars.thresholdlimitReached}}</span></small></div>
+                                        <div class="{{(accountDetails.accountInfo.balance < 0 && 'balanceValNegative')}}">{{accountDetails.accountInfo.balance | customCurrency:accountDetails.accountInfo.currencySymbol}} / {{globalVars.month}}</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 margin-top-20 row btnCont" ng-if="!accountDetails.accountInfo.subscriptionServiceFlag">
+                                        <span class="col-md-3"></span>
+                                        <span class="padding-right-0 col-md-6 text-right font-size-14" ng-if="!accountDetails.accountInfo.thresholdFlag">{{globalVars.vsspStartTxt}}</span>
+                                        <span class="col-md-6 balanceValNegative padding-right-0 text-right font-size-14" ng-if="accountDetails.accountInfo.thresholdFlag">{{globalVars.learnAboutTxt}}</span>
+                                        <span class="padding-right-0 text-right col-md-3"><a ng-click="redeem($index)" class="btn btn-primary" ng-disabled="accountDetails.accountInfo.thresholdFlag"><!-- <span class="cartImg"></span> -->{{globalVars.startBtn}}</a></span>              
+                                    </div>
+                                    <div class="col-md-12 margin-top-20 row padding-right-0" ng-if="accountDetails.accountInfo.subscriptionServiceFlag">
+                                        <span class="col-md-2"></span>
+                                        <span class="col-md-6 balanceValNegative padding-right-0 text-right font-size-14" ng-if="accountDetails.accountInfo.thresholdFlag">{{globalVars.learnAboutTxt}}</span>
+                                        <span class="col-md-6 padding-right-0 text-right font-size-14" ng-if="!accountDetails.accountInfo.thresholdFlag">{{globalVars.configuratorTxtMsg}}</span>
+                                         <span class="col-md-4 text-right padding-right-0">
+                                        <a ng-click="redeem($index)" class="btn btn-primary" ng-disabled="accountDetails.accountInfo.thresholdFlag"><!-- <span class="cartImg"></span> -->{{globalVars.addServices}}</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="row">
+                                    <div class="col-md-7 vsspDetailscont">
+                                <!-- <div class="row">
+                                    <h4 class="col-md-6">Program</h4>
+                                    <h5 class="col-md-6">{{vspplistObj.Program}}</h5>
+                                </div> -->
+                                <div class="row">
+                                    <h5 class="col-md-6 topMarginZero">{{globalVars.account}}</h5>
+                                    <span class="col-md-6">{{accountDetails.accountInfo.accountId}} - {{accountDetails.accountInfo.accountName}}</span>
+                                </div>
+                                <div class="row">
+                                    <h5 class="topMarginZero col-md-6">{{globalVars.iAssetContract}}#</h5>
+                                    <span class="col-md-6">{{accountDetails.accountInfo.iAssetContract}}</span>
+                                </div>
+                                <div class="row">
+                                    <h5 class="topMarginZero col-md-6">{{globalVars.aggregator}}</h5>
+                                    <span class="col-md-6">{{accountDetails.accountInfo.aggregator}}</span>
+                                </div>
+                                <div class="row">
+                                    <h5 class="topMarginZero col-md-6">{{globalVars.currencyCode}}</h5>
+                                    <span class="col-md-6">{{accountDetails.accountInfo.currencyCode}} ({{accountDetails.accountInfo.currencySymbol}})</span>
+                                </div>
+                                <div class="row">
+                                    <h5 class="topMarginZero col-md-6">{{globalVars.contractTerm}}</h5>
+                                    <span class="col-md-6">{{accountDetails.accountInfo.contractTerm}} {{globalVars.months}}<span style="position:absolute;"><a href="javascript:void(0);" class = "info" tooltip-trigger="{{{true: 'mouseenter', false: 'never'}['']}}" tooltip-placement="right" data-tooltip-html-unsafe="Contract is set to Auto Renewal" >&nbsp;</a></span></span>
+                                </div>
+                                <div class="row">
+                                    <h5 class="topMarginZero col-md-6">{{globalVars.startDate}}</h5>
+                                    <span class="col-md-6">{{accountDetails.accountInfo.startDate}}</span>
+                                </div>
+                                <div class="row">
+                                    <h5 class="topMarginZero col-md-6">{{globalVars.endDate}}</h5>
+                                    <span class="col-md-6">{{accountDetails.accountInfo.endDate}}</span>
+                                    <small><a href="#" class="col-md-6 iassetLink">{{globalVars.iAssetTxt}}</a></small>
+                                </div>
+                               <!--  <div class="row">
+                                    <span class="col-md-6"></span>
+                                    <small><a href="#" class="col-md-6 iassetLink">{{globalVars.iAssetTxt}}</a></small>
+                                </div> -->
+                                <!-- <div class="row">
+                                    <h5 class="col-md-6">Billing Cycle</h5>
+                                    <h5 class="col-md-6">{{vspplistObj.billingCycle}}</h5>
+                                </div> -->
+                                    </div>
+                                    <div class="col-md-5 vsppUserDetailscont">
+                                        <div class="row">
+                                            <h5 class="col-md-4 topMarginZero">{{globalVars.admin}}</h5>
+                                            <ul class="col-md-8">
+                                                <li data-ng-repeat= "(key,value) in accountDetails.users[0]" ng-if="key == accountDetails.users[accountDetails.users.length-1][0]"><span>{{value}} <span class="badgeBrown">{{globalVars.admin}}</span></span></li>    
+                                                <a href="">{{globalVars.change}}</a>
+                                            </ul> 
+                                            
+                                        </div>
+                                        <div class="row">
+                                            <h5 class="col-md-4 topMarginZero">{{globalVars.users}}</h5>
+                                            <ul class="col-md-8">
+                                                <li data-ng-repeat= "(key,value) in accountDetails.users[0] | orderBy:'name'" ng-if="key != accountDetails.users[accountDetails.users.length-1][0]">
+                                                    <span>{{value}}</span>
+                                                </li>
+                                                <ul  class="list-inline ng-scope">
+                                        <li><a ng-click="addUser($index)" href="javascript:void(0);" class="ng-binding">{{globalVars.add}}</a></li>
+                                        <li class="remove"><a ng-click="users($index)" href="javascript:void(0);" class="ng-binding">{{globalVars.remove}}</a></li>
+                                    </ul>
+                                            </ul>
+                                             
+                                        </div>
+                                        <!-- <h4 class="col-md-3">Admin</h4> -->
+
+                               <!--  <div class="row">
+                                    <h4 class="topMarginZero col-md-6">Contract Term</h4>
+                                    <span class="col-md-6">{{accountInfo.contractTerm}}<span style="position:absolute;"><a href="javascript:void(0);" class = "info" tooltip-trigger="{{{true: 'mouseenter', false: 'never'}['']}}" tooltip-placement="bottom" data-tooltip-html-unsafe="Contract is set to Auto Renewal" >&nbsp;</a></span></span>
+                                </div>
+                                <div class="row">
+                                    <h4 class="topMarginZero col-md-6">Start Date</h4>
+                                    <span class="col-md-6">{{accountInfo.startDate}}</span>
+                                </div>
+                                <div class="row">
+                                    <h4 class="topMarginZero col-md-6">End Date</h4>
+                                    <span class="col-md-6">{{accountInfo.endDate}}</span>
+                                </div>
+                                 <div class="row">
+                                    <span class="col-md-6"></span>
+                                    <a href="#" class="col-md-12 iassetLink">Payments and Billing on iAsset</a>
+                                </div> -->
+                                <!-- <h4 class="col-md-3">Users</h4>
+                                <div class="col-md-9">
+                                    <ul>
+                                        <li data-ng-repeat= "user in vspplistObj.user"><h5>{{user.username}} <span ng-if="user.isAdmin==true" class="badgeBrown">Admin</span></h5></li>
+                                    </ul> 
+                                    <ul  class="list-inline ng-scope">
+                                        <li><a ng-click="addUser()" href="javascript:void(0);" class="ng-binding">Add User...</a></li>
+                                        <li class="remove"><a ng-click="users()" href="javascript:void(0);" class="ng-binding">Remove User...</a></li>
+                                    </ul>
+                                    <div class="col-md-3" ng-if="subscriptionServiceFlag"><button class="btn btn-primary"><span class="cartImg"></span>Add Services</button></div>
+                                </div> -->
+                                    </div>
+                                </div>
+                               <!--  <div class="row margin-top-30">
+                                <div class="col-md-3">
+                                    <h4 class="col-md-12 topMarginZero ">Users</h4>
+                                </div>
+                                <div class="col-md-3" ng-if="vspplistObj.partitionedData.fristRow.length>=1">
+                                    <span class="col-md-12" data-ng-repeat= "user in vspplistObj.partitionedData.fristRow">{{user.username}} <span ng-if="user.isAdmin==true" class="badgeBrown">Admin</span></span>                      
+                                    <a href="#" class="col-md-3" ng-if="vspplistObj.partitionedData.fristRow.length<3">Edit</a>
+                                </div>
+                                <div class="col-md-3" ng-if="vspplistObj.partitionedData.secRow.length>=1">
+                                    <span class="col-md-12" data-ng-repeat= "user in vspplistObj.partitionedData.secRow">{{user.username}}</span>
+                                    <a href="#" class="col-md-3" ng-if="vspplistObj.partitionedData.secRow.length<3">Edit</a>
+                                </div>
+                                <div class="col-md-3" ng-if="vspplistObj.partitionedData.thRow.length>=1">
+                                    <span class="col-md-12">{{vspplistObj.partitionedData.thRow[0].username}}</span>
+                                    <a href="#" class="col-md-12">2 more Users</a>
+                                    <a href="#" class="col-md-12">Edit</a>
+                                </div>
+                                <div class="col-md-3" ng-if="vspplistObj.partitionedData.thRow.length==0 || vspplistObj.partitionedData.thRow.length== undefined">
+                                    <a href="#" class="col-md-12">Edit</a>
+                                </div>
+                                
+                                </div> -->
+                            </div>
+                        </div>
+                    </article>
+                    <article  class="subscriptionServiceDt clearfix" ng-if="!showLoader">
+                        <div class="row">
+                            <h4 class="col-md-11 ">{{globalVars.subscriptionServices}}</h4>
+                            <a class="col-md-1 margin-top-15 text-right" href="#">{{globalVars.export}}</a>
+                            <div class="col-md-12"> 
+                                <!-- <a class="col-md-1" href="#">Print</a>
+ -->            
+                                <!--  <div class="abc col-md-2">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage Columns <span class="caret"></span></a>
+                                    <ul class="dropdown-menu ssListOf">
+                                         <li data-ng-repeat= "titel in ssDTDyanamicCoulmns"><input type="checkbox"  ng-click="addCoumns($index,titel.isVisible)"  na-modal="titel.isVisible" ng-checked="titel.isVisible" styel="display:inline-block">{{titel.columnHeading}}</li>
+                                    </ul>
+
+                                 </div> -->
+                                 <table id="subscriptionServiceTable{{$index}}" ng-bind="{{displaySubscriptionServiceTable(accountDetails.serviceDetails,$index)}}" class="starlight withPadding dataTable">
+                                    
+                                 </table>
+                            </div>
+                        </div>
+                    </article>
+                    </div>
+                   <!--  <article ng-if="subscriptionServiceFlag" class="subscriptionServiceDt" ng-if="!showLoader">                        
+                        <div>
+                            <div class="row col-md-12">
+                            <h4 class="col-md-8">Subscription Service</h4>
+                            <div class="margin-top-15"> 
+                            <a class="col-md-1" href="#">Print</a>
+                            <a class="col-md-1" href="#">Export</a>
+                            <div class="abc col-md-2">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage Columns <span class="caret"></span></a>
+                                <ul class="dropdown-menu ssListOf"> 
+                                <form name="myForm">                                   
+                                    <li data-ng-repeat= "titel in ssDTDyanamicCoulmns"><input type="checkbox"  ng-click="addCoumns($index,titel.isVisible)"  na-modal="titel.isVisible" ng-checked="titel.isVisible" styel="display:inline-block">{{titel.columnHeading}}</li>
+                                
+                                    <li><input ng-change="addCoumns($index)" type="checkbox" name="Service ID" ng-true-value="'true'" ng-false-value="'false'" checked> Remaining Term</li>
+                                    <li><input ng-change="addCoumns($index)" type="checkbox" name="Service ID" ng-true-value="'true'" ng-false-value="'false'" checked> Cost per month</li>
+                                    <li><input ng-change="addCoumns($index)" type="checkbox" name="Service ID" ng-true-value="'true'" ng-false-value="'false'">rstartDate</li>
+                                </ul> 
+                                </div>
+                                </div>
+                        </div>
+                            <table id="subscriptionServiceTable" class="starlight withPadding noBg dataTable"></table>
+                        </div>
+                    </article> -->
+                </section>
+
+                <!-- Content End -->             
+		</section>

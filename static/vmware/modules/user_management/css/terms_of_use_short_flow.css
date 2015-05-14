@@ -1,0 +1,261 @@
+#main {
+	background: #fff!important;
+}
+#container #breadcrumbs a {
+	color:#eee !important;
+}
+#container #breadcrumbs {
+	color:#eee !important;
+	padding-left:46px !important;
+}
+#header {
+	background:url("/static/vmware/common/css/img/bg_header_player.png") no-repeat !important;
+	color:#fff;
+	margin-top:-20px !important;
+	padding:20px 20px !important;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+#header h1 {
+	color:#fff;
+}
+#tab_download {
+	margin-top:20px;
+}
+#content .notes {
+	float:right;
+	font-size:18px;
+	font-weight:bold;
+	color:#666;
+	text-transform:uppercase;
+	width:20%;
+	border:1px solid #ccc;
+	background:#f5f8fb;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eff4f9));
+	background-image: -webkit-linear-gradient(top, #fff, #eff4f9);
+	background-image: -moz-linear-gradient(top, #fff, #eff4f9);
+	background-image: -ms-linear-gradient(top, #fff, #eff4f9);
+	background-image: -o-linear-gradient(top, #fff, #eff4f9);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px;
+	text-align:center;
+	padding:8px 0;
+}
+.f60 {
+	font-size:60px; line-height:60px;
+}
+.f18 {
+	font-size:18px;
+}
+.f13 {
+	font-size:13px;
+}
+.fcgrn {
+	color:#0c8d63;
+}
+div.title {
+	margin:20px 25px 20px;
+	float:left;
+	width:70%;
+}
+.f14 {
+	font-size:14px;
+}
+.products-section-content table {
+	border:1px solid #ccc;
+	border-collapse:separate;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px;
+	background:#f5f8fb;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eff4f9));
+	background-image: -webkit-linear-gradient(top, #fff, #eff4f9);
+	background-image: -moz-linear-gradient(top, #fff, #eff4f9);
+	background-image: -ms-linear-gradient(top, #fff, #eff4f9);
+	background-image: -o-linear-gradient(top, #fff, #eff4f9);
+	border-spacing:7px;
+	padding:0px 10px;
+}
+.products-section-content table th {
+	color:#666;
+	background:none !important;
+	font-weight:bold;
+	font-size:11px;
+	padding:0px 5px 0px 7px;	
+}
+.products-section-content table tbody td {
+	color:#666;
+	background:inherit;
+	font-weight:bold;
+	padding-left:8px;
+	font-size:16px;
+}
+.products-section-wrapper .products-section-head {
+	background:none;
+	border:none;
+	border-bottom: 1px solid #000;
+	font-size: 10px;
+	font-weight: bold;
+	padding:5px 5px 8px;
+	margin:2px;
+}
+.helptxt {
+	float:right;
+	font-weight:bold;
+	font-size:12px;
+}
+.products-content-category {
+	border:none;
+}
+.products-content-binary-wrapper .products-content-binary {
+	border:none;
+	padding:5px 0px 15px;
+	border-bottom: 1px dashed #CCCCCC;
+	margin-bottom: 10px;
+}
+.products-content-binary-body .binary-fileTitle {
+	font-weight:bold;
+	font-size:20px;
+	color:#0c8d63;
+}
+.products-content-binary-body .binary-fileTitle .desc {
+	color:#333;
+	font-weight:bold;
+	font-size:14px;
+	display:inline;
+	padding:0px;
+	margin:0px;
+}
+.products-content-binary-wrapper .products-content-binary-body {
+	width:70%;
+	padding-top:10px;
+}
+.products-content-binary-wrapper .downloadManager {
+	float:right;
+	padding-right:0px;
+	margin:0px;
+}
+.products-content-binary .binary-description {
+	font-weight:normal;
+	clear:both;
+	margin:5px 0px 10px 20px;
+	border:1px solid #D2D2D2;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	padding:15px 15px 10px;
+	background: url("/static/vmware/common/css/img/bg_moredetails.png") repeat-x scroll bottom center;
+	display:none;
+}
+.products-content-binary .binary-description .label {font-size:11px; font-weight:bold; display:block;}
+.products-content-binary .binary-description p {
+	margin-bottom:10px;
+}
+.showline {
+	line-height:25px;
+}
+.sign {
+	margin-right:8px;
+	height:20px;
+	width:11px;/*cursor:pointer;*/
+}
+.showtxt.off {
+	background:url(//www.vmware.com/files/images/buttons/button_collapse.gif) no-repeat left 7px;
+	display:block;
+	height:18px;
+	padding-left:18px;
+}
+.showtxt.on {
+	background:url(//www.vmware.com/files/images/buttons/button_expand.gif) no-repeat left 7px;
+	display:block;
+	height:18px;
+	padding-left:18px;
+}
+.showtxt {
+	display:inline;
+	font-weight:bold;
+	font-size:14px;
+}
+a.btn_download {
+	background: url("/static/vmware/common/css/img/bg_download_witharrow.png") no-repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	height: 36px;
+	padding-left: 30px;
+	padding-top: 10px;
+	text-decoration: none;
+	width: 150px;
+}
+.products-content-binary-wrapper .manualDownloadLink {
+	padding-top:5px;
+	margin-bottom:5px;
+}
+
+.red{color:#f00;}
+.f16{font-size:16px;}
+.f15{font-size:15px;}
+.padding10 {padding:10px;}
+#main .sub-box3{width:99%;margin-left:10px;}
+#main .sub-box3 .columns{width:100%; background:none;}
+#main .sub-box3 .columns .col{width:30%;}
+#main .sub-box3 .columns .col h3{color:#666;margin-bottom:2px !important;}
+#main .sub-box3 .columns .col ul{margin:0; padding:0;}
+#main .sub-box3 .columns .col ul li{
+background:url("/static/vmware/common/css/img/bg_login_bullet.gif") no-repeat 0 6px; 	
+		padding: 0 0 0 7px;
+		margin:0;
+}
+
+.italic {
+    font-style: italic;
+}
+#tab_content{margin:10px 20px; color:#333;}
+#tab_content p{margin-bottom:8px;}
+
+h2 {
+	margin-bottom: 0px !important;
+    padding-top: 0px !important;
+}
+
+#content-container.dPlayer, #content-container.wide {
+    margin-top: -22px !important;
+}
+
+body #content-container.dPlayer #content, body #content-container.wide #content  {
+    margin: 0 0 0 -25px !important;
+    padding: 0 0 0 25px !important;
+}
+
+.ctrlHolder .eula iframe{
+	background-color: #FFF;
+	border: #b7b8ba 1px solid;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 240px;
+	clear: both;
+	margin-top: 20px;
+	padding:0px;
+	width:100%;
+}
+.topline {border-top:1px solid #ccc; margin-top:6px; padding-top:15px;}
+#main fieldset {margin-bottom:10px;}
+#main .link-wrapper {
+    padding-top: 10px;
+    text-align: right;
+}
+button.light, a.light{color:#228bc0 !important;}
+
+#warning-message {background: none repeat scroll 0% 0% rgb(255, 249, 234); margin: 10px 0px 15px; padding-bottom: 10px;}
+#warning-message .message-holder {
+	background: url(img/ico-alert.gif) 10px left no-repeat;
+	padding: 20px 20px 20px 65px;
+}
+.err {color:#f00;}

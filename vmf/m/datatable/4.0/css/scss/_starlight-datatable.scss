@@ -1,0 +1,565 @@
+$header_gradient_top_color: 			#EDEDED;
+$header_gradient_bottom_color: 			#DADADA;
+
+$sorted_header_gradient_top_color: 		#DEDEDE;
+$sorted_header_gradient_bottom_color: 	#C3C3C3;
+
+$even_row_bg_color: 					#F6F6F6;
+$odd_row_bg_color: 						#FFFFFF;
+
+$sorted_column_even_row_element_bg_color: rgba(0,0,0,0);
+$sorted_column_odd_row_element_bg_color: rgba(0,0,0,0);
+
+$table_border_color: 					#E9E9E9;
+$th_border_color: 						#F1F1F1; 
+$td_border_color: 						#F2F2F2;
+
+//@import "datatable/*.png";
+
+
+table.dataTable.starlight{
+	/* Gradient background for the column-headers - START */
+	thead th {
+		@include gradient-vertical($start-color: $header_gradient_top_color, $end-color: $header_gradient_bottom_color);
+		border-bottom: none;
+
+		&.sorting_asc, &.sorting_desc{
+			@include gradient-vertical($start-color: $sorted_header_gradient_top_color, $end-color: $sorted_header_gradient_bottom_color);
+		}
+	/*	&.sorting_asc .datatable-sort{
+			@include datatable-sprite(asc);
+		}
+		&.sorting_desc .datatable-sort{
+			@include datatable-sprite(desc); 
+		} */
+	}
+	/* Gradient background for the column-headers - END */
+
+	thead th, tbody td{
+		//padding: 8px 20px;
+		color:#333;
+		font-size: 16px;
+	}
+
+	/* Background colors for the rows and sorted columns' cells - START */
+	tr{
+		&.even { background-color: $even_row_bg_color; }
+		&.odd { background-color: $odd_row_bg_color; }
+		&.even td{
+			&.sorting_1,
+			&.sorting_2,
+			&.sorting_3 {
+				background-color: $sorted_column_even_row_element_bg_color;
+			}
+		}
+		&.odd td{
+			&.sorting_1,
+			&.sorting_2,
+			&.sorting_3 {
+				background-color: $sorted_column_odd_row_element_bg_color;
+			}
+		}
+	}
+	/* Background colors for the rows and sorted columns' cells - END */
+
+	/* Borders for the table and elements - START */
+	tr{
+		th{
+			border-right: 1px solid $th_border_color;
+		}
+		td{
+			border-right: 1px solid $td_border_color;
+		}
+		th:last-child, td:last-child{
+			border-right-width: 0px;
+		}
+	}
+	/* Borders for the table and elements - END */
+
+	/* reflow table related css */
+	&.reflowTable{
+		
+	}
+}
+
+/** This element is out of the rendered dom element, as this is created by the plugin-code 
+ *  So, unable to wrap it inside the theme-class
+ */
+.dataTables_wrapper{
+	overflow-x: auto;
+    overflow-y: hidden;
+    table.dataTable{
+    	border:2px solid #E6E6E6;
+    }
+	.dataTables_processing{
+		background-color:transparent;
+		border:none;
+		margin-top:0;
+	}
+}
+
+@media only all and (max-width : $screen-lg)  {
+	table.dataTable.starlight {
+		font-size:14px;
+	}
+}
+
+//Starlight Pagination Customization
+
+//Pagination re-styling
+.starlight{
+  .dataTables_wrapper{
+	.dataTables_paginate{
+	  float:left;
+	  margin-top: 5px;
+	}
+	//"full_numbers" pagination
+	.dataTables_paginate.paging_full_numbers{
+	  margin-top:10px;
+	  margin-bottom: 10px;
+	  .first, 
+	  .last{
+		display:none;
+	  }
+	  a.paginate_button{
+		padding:6px 12px;
+		background-color:transparent;
+		border: 0 none;
+		color:$starlight-blue-dark !important;
+		margin:0;
+		cursor: pointer;
+		&:hover{
+		  background-color: $starlight-gray-light;
+		  border-radius:0px;
+		}
+		&.previous,
+		&.next{
+		  &:hover{
+		    color:$starlight-blue !important;
+		    background-color: transparent;
+		  }
+		}
+	  }
+
+	  span{
+		a.paginate_active{
+		  margin:0;
+		  padding:6px 12px;
+		  color: #FFF !important;
+		  border-radius:0px;
+		  background-color: $starlight-blue;
+		  border:0 none;
+		}
+	  }
+	}
+	//"starlight" pagination (plugin)
+	.dataTables_paginate.paging_starlight{
+	  font-size: 14px;
+	  color:#333;
+	  .paginate_button{
+	  	width:26px;
+	    height:26px;
+	    display: inline-block;
+	    border-radius:4px;
+	    vertical-align: top;
+		&.previous{
+		  background: url("images/starlight_pagination_arw_left.png") no-repeat scroll 50% 50%;
+		  margin-right: 15px;
+		  background-color:$starlight-blue;
+		  &.paging_disabled{
+		  	background-color:#BCBCBC;
+		  }
+		}
+		&.next{
+		  background: url("images/starlight_pagination_arw_right.png") no-repeat scroll 50% 50%;
+		  background-color:$starlight-blue;
+		  &.paging_disabled{
+		  	background-color:#BCBCBC;
+		  }
+		}
+	  }
+	  .paginate_page{
+		margin-right:5px;
+	  }
+	  .paginate_input{
+	    width:31px;
+	    height:26px;
+	    padding-left:11px;
+	  }
+	  .paginate_of{
+	  	margin-right: 15px;
+	  }
+	}
+	.dataTables_length{
+	  float:none;
+	  position: absolute;
+	  bottom: -7px;
+	  right:0;
+	  label{
+	  	font-family: $font-family-proxima-nova-regular;
+	  	font-weight: normal;
+	    font-size:0;
+	  	select{
+	  	  font-size: 14px;
+	  	  display:inherit;
+	  	  padding: 3px 3px 2px;
+	  	  option{
+	  	  	border-right:1px solid #BCBCBC;
+	  	  }
+	  	}
+	  }
+	}
+  }
+  .sorting_asc{
+  	.datatable-sort{
+	  background:url("images/table_basic_arw_up.png") no-repeat scroll 0 0 transparent;
+	  display: inline-block;
+	  height: 5px;
+	  width: 8px;
+      vertical-align:middle;
+	}
+  }
+  .sorting_desc{
+  	.datatable-sort{
+	  background:url("images/table_basic_arw_down.png") no-repeat scroll 0 0 transparent;
+	  display: inline-block;
+	  height: 5px;
+	  width: 8px;
+      vertical-align:middle;
+	}
+  }
+}
+
+
+/*@media (min-width: $screen-xs-min) {
+    
+}*/
+
+
+table.dataTable.starlight#sampleTable {
+	tbody td .cell-label,
+	tbody th .cell-label { 
+		display: none;
+		
+		@media (max-width: $screen-xs) {
+            display: inline-block;
+            float: left;
+			padding: .4em; 
+			width: 45%;
+        }
+	}
+
+	tbody th .cell-content,
+	tbdoy td .cell-content{
+		@media (max-width: $screen-xs) {
+			display: inline-block;
+			float: left;
+			width: 55%;
+		}
+	}
+
+	thead td, 
+	thead th {
+		@media (max-width: $screen-xs) {
+			display: none;
+		}
+	}
+
+	tbody td, 
+	tbody th {
+		@media (max-width: $screen-xs) {
+		    clear: left;
+		    float: left;
+		    width: 100%;
+		}
+	}
+}
+
+.starlight{
+  .dataTable{
+  	width:100%;
+  	thead{
+	  th{
+	  	font-family: $font-family-proxima-nova-semibold;
+	  	padding:5px 10px 5px 20px;
+	  	font-weight:normal;
+	  }
+  	}
+  	tbody{
+	  td{
+	  	padding-left:20px;
+	  }
+  	  .row-selected, 
+  	  .row-checked{
+        background-color: #0095D3 !important;
+        color:#FFF;
+        a,
+        a:hover,
+        span{
+      	  color: #FFF;
+        }
+        td{
+  	  	  border-right: 1px solid #FFF;
+  	  	}
+  	  	.icons-icn_warning{
+  	  	  background: url('images/icn_alert_reminder_alt.png') no-repeat scroll 0 0 transparent;
+  	  	}
+  	  	.icons-icn_danger{
+  	  	  background: url('images/icn_alert_urgent_alt.png') no-repeat scroll 0 0 transparent;
+  	  	}
+  	  	.icons-icn_new_window{
+  	  		background: url('images/icn_new_window_wht.png') no-repeat scroll 0 0 transparent;
+  	  	}
+  	  	.icons-icn_arrow_dwn_gray{
+  	  	  background: url('images/icn_arrow_dwn_wht.png') no-repeat scroll 0 0 transparent;
+  	  	}
+  	  	.table-tooltip-content{
+  	  	  a{
+  	  	  	color:$starlight-blue-dark;
+  	  	  	&:hover{
+  	  	  	  color: $starlight-blue;
+  	  	  	}
+  	  	  }
+  	  	  .icons-icn_arrow_dwn_gray{
+  	  	  	background: url('images/icn_arrow_dwn_gray.png') no-repeat scroll 0 0 transparent;
+  	  	  	&:hover{
+  	  	  	  background: url('images/icn_arrow_dwn_blue.png') no-repeat scroll 0 0 transparent;
+  	  	  	}
+  	  	  }
+  	  	}
+  	  	.table-salesRepName{
+  	  	  color:#FFF;
+  	  	}
+  	  	.custom-arrow-down{
+  	  	  border-bottom-color:#FFF;
+  	  	}
+      }
+      .table-data-cell{
+        display: block;
+        white-space: nowrap;
+      }
+      .table-quotes{
+	    border-radius:2px;
+	    padding:3px 8px;
+	    &:hover{
+	      background-color:$starlight-blue;
+	      color:#FFF;
+        }
+      }
+      .table-requestType{
+        font-size: 12px;
+        color:$starlight-gray-solid;
+      }
+      .table-eaName{
+        width:150px;
+        font-size: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .table-contractText{
+        font-size: 12px;
+        color:$starlight-gray-solid;
+        width:250px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .table-data-cell.table-requestStatus {
+	    float: right;
+	    text-align: right;
+	    margin-top: -39px;
+	    width: 90px;
+	    text-overflow: ellipsis;
+	    overflow: hidden;
+	  }
+	  tr{
+	  	&:hover{
+	  	  background-color: #E5EBF1;
+	  	}
+	  }
+  	}
+  	.allRequestTableCell.requestUnread {
+  	  .table-data-cell{
+  		font-family: $font-family-proxima-nova-semibold;	
+  	  }
+  	}
+  	b.cell-label{
+        display: none !important;
+    }
+    .table-cell-tooltip{
+      position: absolute;
+      margin-top: 10px;
+      margin-left: -3px;
+      .table-tooltip-content{
+      	background-color:#FFF;
+      	padding:8px 8px 8px 16px;
+      	box-shadow:0 8px 8px 0 rgba(0, 0, 0, 0.5);
+      	position:absolute;
+      	left: -35px;
+      	font-size: 14px;
+      	min-width: 180px;
+      	border-radius:4px;
+      	.table-tooltip-title{
+      	  display: block;
+      	  font-weight: bold;
+      	  color:#333;
+      	}
+      	span{
+      	  color:#333;
+      	}
+      	a{
+      	  color:$starlight-blue-dark;
+      	  &:hover{
+      	  	color:$starlight-blue;
+      	  }
+      	}
+      }
+      .custom-arrow-down{
+		border-bottom: 15px solid #FFF;
+	    border-left: 10px solid transparent;
+	    border-right: 10px solid transparent;
+	    height: 0;
+	    width: 0;
+	  }
+    }
+    .table-cell-download-tooltip{
+      position: absolute;
+      .table-tooltip-content{
+      	background-color:#FFF;
+      	padding:5px;
+      	box-shadow:0 8px 8px 2px rgba(0, 0, 0, 0.5);
+      	position:absolute;
+      	left: -5px;
+      	top:-6px;
+      	font-size: 14px;
+      	min-width: 70px;
+      	border-radius:4px;
+      	ul{
+      	  list-style-type: none;
+      	  padding:0;
+      	  margin:0;
+      	  li{
+      	  	margin-bottom: 5px;
+      	  	&:hover{
+      	  	  .icons-icn_arrow_dwn_gray{
+      	  	  	background: url('images/icn_arrow_dwn_blue.png') no-repeat scroll 0 0 transparent;
+      	  	  }
+      	  	}
+      	  }
+      	}
+      }
+    }
+    .table-salesRepName{
+      color:$starlight-blue-dark;
+      cursor: pointer;
+      &:hover{
+      	color: $starlight-blue;
+      }
+      .table-cell-tooltip{
+      	margin-top:-4px;
+      	margin-left: 30px;
+      	.table-tooltip-content{
+      	  left:-120px;
+      	  min-width: 160px;
+      	  padding-left:10px;
+      	}
+      }
+    }
+  }
+  .dataTables_filter{
+    display: none !important;
+  }
+  .dataTables_wrapper table.dataTable{
+  	border:1px solid #E6E6E6;
+  }
+  .bulk-actions{
+  	background:url("images/table_bulkaction_panel_gradient.png") repeat-x;
+  	padding-left:15px;
+  	line-height: 32px;
+  	vertical-align: text-top;
+  	.bulk-label{
+      font-size: 14px;
+      font-family: $font-family-proxima-nova-regular-it;
+      color:#888;
+	}
+  	.bulk-options{
+      list-style-type: none;
+      margin-bottom: 0;
+      padding-left: 0;
+      li{
+        font-size: 15px;
+        display:inline;
+        padding-right: 6px;
+        &.last-item{
+          border-right:0;
+        }
+      }
+    }
+  }
+
+.icons-icn_new_window{
+	display: inline-block;
+	width:11px;
+	height:11px;
+  }
+  .icons-icn_arrow_dwn_blue,
+  .icons-icn_arrow_dwn_gray{
+  	display: inline-block;
+	width:17px;
+	height:18px;
+	vertical-align: text-bottom;
+  }
+  .icons-icn_new_window,
+  .icons-icn_arrow_dwn_blue,
+  .icons-icn_arrow_dwn_gray,
+  .icons-icn_danger,
+  .icons-icn_warning,
+  .paginate_button{
+  	cursor: pointer;
+  }
+  .icons-icn_warning{
+  	vertical-align: text-top;
+  }
+}
+@media all and (min-width:$screen-md) and (max-width:$screen-lg) {
+  .starlight{
+  	.dataTable{
+  	  tbody{
+  	  	.table-data-cell{
+	  	  &.table-eaName,
+	  	  &.table-contractText{
+	  	  	width: 550px;
+	  	  }
+  	      &.table-requestStatus{
+  	      	width: 150px;
+  	      }
+	  	}
+  	  }
+    }
+  }
+}
+
+@media all and (max-width:$screen-md) {
+  .starlight{
+  	.dataTable{
+  	  tbody{
+  	  	.table-data-cell{
+	  	  &.table-eaName,
+	  	  &.table-contractText{
+	  	  	width: 350px;
+	  	  }
+  	      &.table-requestStatus{
+  	      	width: 150px;
+  	      }
+	  	}
+  	  }
+    }
+  }
+}
+
+/* Group label change */
+table.starlight.dataTable td.group{
+  background-color:#f1f6f8;
+  .groupLabel{
+              font-weight:bold;
+			 }
+    }

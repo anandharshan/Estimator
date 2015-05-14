@@ -1,0 +1,29 @@
+.starlight{
+	.btn {
+		font-family: $font-family-proxima-nova-regular;
+	}
+}
+.starlight,
+.starlight-filter{
+	.btn-default{
+		@include gradient-vertical($start-color: #FFF, $end-color: $starlight-gray-light);
+		&:hover{
+			@include gradient-vertical($start-color: #FFF, $end-color: #D7D7D7);
+		}
+	}
+
+	.btn-primary{
+		@include gradient-vertical($start-color: $starlight-blue, $end-color: #007FB4);
+		&:hover{
+			background-image:none;
+			background-color: $starlight-blue-dark;
+		}
+	}
+
+	.btn.disabled, .btn[disabled]{
+		background-image:none;
+		color:#fff;
+		background-color: #DBDBDB;
+		border-color: #DBDBDB;
+	}
+}

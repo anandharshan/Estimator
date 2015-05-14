@@ -1,0 +1,979 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  support_getHelp.css
+ * ##### VERSION: v1.0
+ * ##### UPDATED: 09/12/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. CONTENT.CSS OVERRIDE STYLES
+ * ## 2. SUPPORT GET HELP STYLES
+ * ## 3. FILTER SECTION
+ * ## 4. VIEW ARTICLE POP UP WINDOW
+/* ########################################################################### */
+
+
+/* ########################################################################### *
+/* ##### CONTENT.CSS OVERRIDE STYLES
+/* ########################################################################### */
+.column-wrapper { 
+    border-top: 0px;
+}
+
+#content-section section.step1 h3 {
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+#content-section section.step1 .supportedProds{
+    margin-bottom: 15px;
+}
+#content-section section.step1 .supportedProds .myProdHeader{
+    float: left;
+    padding-top:2px;
+}
+input.optionsHolder, 
+input.optionsHolder:focus {
+    padding: 0 0 2px;
+}
+.firefox.mac #content-section section.step1 .supportedProds .myProdHeader{
+    padding-top:1px;
+}
+.firefox.mac .inputHolderClass{
+    padding: 0 15px 3px 5px;
+}
+.firefox.mac input.optionsHolder, 
+.firefox.mac input.optionsHolder:focus {
+    padding: 0;
+    height: 11px;
+}
+.safari.mac #content-section section.step1 .supportedProds .myProdHeader{
+    padding-top:0px;
+}
+.safari.mac .inputHolderClass{
+    padding: 0 15px 3px 5px;
+}
+.safari.mac input.optionsHolder, 
+.safari.mac input.optionsHolder:focus {
+    padding: 0;
+    height: 11px;
+}
+#content-section section.step1 .myProdHeader span.myProdsTitle{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight:bold;
+    vertical-align: baseline;
+}
+#content-section section.step1 .myProdHeader span.accountSelect {
+    border-left: 1px dotted #999;
+    color: #666;
+    font-size: 11px;
+    font-weight: normal;
+    margin: 0 10px 0 5px;
+    padding-left: 5px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+}
+#content-section section.step1 .supportedProds .eaSelectHolder{
+    font-size: 11px;
+    vertical-align: middle
+}
+#content-section section.step1 .supportedProds .eaSelectHolder select {
+    width: 300px;
+}
+
+/* ########################################################################### *
+/* ##### SUPPORT GET HELP STYLES
+/* ########################################################################### */
+#content-section .getHelpMain{
+    margin-top:10px;
+}
+
+#content-section .getHelpMain input[type=text] { 
+    background: #FFFFFF;
+    border:#747474 1px solid; 
+    height:18px;
+    font-size:11px;
+    color:#333;
+} 
+
+/* Select */
+#content-section .getHelpMain select {
+    font-size:11px;
+    color:#333;
+    background: #FFFFFF;
+    border:1px solid #747474;
+    width: 220px;
+}
+.resultsData select {
+    font-size:11px;
+    color:#333;
+    background: #FFFFFF;
+    border:1px solid #747474;
+    height:20px;
+}
+.getHelpMainTitle{
+    font-size:14px;
+    padding:8px 0 8px 0;
+}
+.getHelpMain .getHelpColumn:hover,  .getHelpMain .getHelpColumnInner:hover{
+    cursor: pointer;
+}
+.getHelpMain .getHelpColumn.active:hover, .getHelpMain .getHelpColumnInner.active:hover{
+    cursor: auto;
+}
+.getHelpMain .getHelpColumn, .getHelpMain .getHelpColumnInner {
+    background: url('img/bkg_support_getHelp_Normal.png') no-repeat transparent;
+    float: left;
+    height: 125px;  
+    padding: 14px 30px 0;
+}
+.getHelpMain .getHelpColumnInner {
+    background: url('img/bkg_support_getHelp_Normal.png') no-repeat transparent;
+    height:70px;
+}
+.columGap, .columGapInner{
+    float:left;
+    background:url("img/bkg_support_ColumGap.png") repeat-x scroll 0 bottom transparent;
+    width: 15px;
+}
+.getHelpMain .columGap{
+    height: 140px;  
+}
+.getHelpMain .columGapInner{
+    height:84px;  
+}
+
+.refinePanel .columGap{
+    height: 276px;
+}
+
+.getHelpMain .getHelpColumn.active , .getHelpMain .getHelpColumnInner.active {
+    background: url('img/bkg_support_getHelp.png') no-repeat transparent;
+    border: none;
+    height: 145px; 
+
+}
+.getHelpMain .getHelpColumnInner.active {      
+    background: url('img/bkg_support_getHelp_small.png') no-repeat transparent;
+    height: 90px;
+}
+
+.getHelpMain .getHelpColumn#customer, .getHelpMain .getHelpColumnInner#customer {
+    margin-right: 0px;
+}
+
+.getHelpColumn .getHelpSelection, .getHelpColumnInner .getHelpSelection{
+    float:left;
+}
+
+.getHelpColumn .getHelpContent{
+    /*margin-left:25px;  */
+    width:220px;
+}
+.getHelpColumnInner .getHelpContent{
+    margin-top:0px; 
+    width: 220px;   
+}
+
+.getHelpContent .getHelpHeader{
+    color: #333;
+    font-size:15px;
+    font-weight:bold;
+    padding-bottom:9px;
+    font-family:arial;
+    height:35px;  /*This height is fixed to fix select boxes alignment issue */
+}
+
+.getHelpContent .getHelpInfo{
+    padding-bottom:9px;
+    color:#666;
+    height:44px;
+}  
+.getHelpMain .getHelpColumn.active .getHelpContent .getHelpHeader,
+.getHelpMain .getHelpColumnInner.active .getHelpContent .getHelpHeader,
+.getHelpMain .getHelpColumn.active .getHelpContent .getHelpInfo ,
+.getHelpMain .getHelpColumnInner.active .getHelpContent .getHelpInfo {
+    color: #FFF;
+}
+
+#content section.step1 {
+    margin: 0;
+    /*border-bottom:1px solid #999;*/
+}
+#content-section section.step1 header h2{
+    padding-bottom: 5px;
+ /*   text-transform: capitalize;
+    border-bottom: 1px solid #c1c1c3;*/
+}
+#content section.step1 header h1 {
+    margin-bottom: 0;
+    color: #FFF;
+    font-size: 13px;
+    border-bottom: none;
+}
+
+#content section.step1 header p {
+    color:#666666;
+}
+
+#content section.step1 .productDetails{
+    background-color:#484849;
+    padding-top: 0px;
+    margin-top:8px;
+    font-size:14px;
+    font-weight:bold;
+    color:#FFF;
+} 
+.productDetails .supportLevel{
+    padding-left:50px;  
+}
+
+.topBar {
+    background: #484849;
+    padding: 5px 30px;
+    color: #FFF;
+    height:12px;
+}
+
+.productsBar {
+    border-top:1px solid #FFF;
+    background: #666;
+    padding: 5px 30px;
+    color: #FFF;
+}
+
+.productsBar a {
+    color: #ACE3FF;
+    font-weight: bold;
+}
+
+.products{
+    margin: 0;
+
+}
+.products input[type="radio"]{
+    vertical-align: middle;
+}
+.products .noProducts-Msg{
+    font-size: 16px;
+    height: 150px;
+    padding-top: 10px;
+    text-align: center;
+}
+.resultsData{
+    margin: 0px;
+}
+
+.resultsData .resultsDataTitle,
+.queryListTitle, 
+#content-section .resultsData h4 {
+    background: #2F2F32 url(img/bg_filter_header.jpg) repeat-x;
+    border: 1px solid #252525;
+    color: white;
+    padding: 3px 5px 3px 15px;
+    /* font-weight: bold;*/
+    font-size: 10px;
+}
+
+.resultsData .paginationHeader{
+    border-bottom:1px dashed #999;
+    padding:10px 0 10px;
+    height:20px;
+}
+.resultsData .paginationLeft{
+    float:left;
+}
+.resultsData .paginationFooter{
+    padding:10px 0 10px;
+    height:20px;
+}
+
+.resultsData .pageNavigation{
+    float:right;
+    width:325px;
+    text-align:right;
+}
+.resultsData .resultsLocation{
+    padding-right:10px;
+}
+.resultsData .backBtn{
+}
+.resultsData .nextBtn{
+}
+.resultsData .resultItem{
+    padding: 10px 0 18px 24px;    
+    background: url("img/bkg_dotted_line.png") repeat-x scroll 0 bottom #FFFFFF;
+}
+.resultsData .resultItemTitle{
+    font-size:15px;
+    /*font-weight:bold;*/
+    padding-bottom:0px;
+}
+.resultsData .itemDescription{
+    font-size:12px;
+    margin-bottom: 15px;
+}
+.resultsData .itemFooter{
+    font-size:10px;
+    font-weight:bold;
+    color:#000
+}
+.resultsData .itemRating{
+    padding-bottom:14px;
+}
+.resultsData .ratingLabel{
+    float:left;
+    padding-right:2px;
+}
+.resultsData .ratingStars{
+    float:left;
+    position:static;
+    width:60px;
+    height:12px;
+    text-indent:-9999px;
+    /*background-image:url(img/rating_Star.png);*/
+    background-image:url(img/rating_Star_brown.png);
+    background-repeat:repeat-x;
+
+}
+.resultsData .ratingStars.rating_1{
+    width:12px;
+}
+.resultsData .ratingStars.rating_2{
+    width:24px;
+}
+.resultsData .ratingStars.rating_3{
+    width:36px;
+}
+.resultsData .ratingStars.rating_4{
+    width:48px;
+}
+.resultsData .ratingStars.rating_5{
+    width:60px;
+}
+.resultsData .dateDetails{
+    clear:left;
+    padding-bottom:1px;
+}
+.resultsData .dateDetails .dateValues{
+    font-weight: normal;
+}
+.product{
+    padding: 15px 0 15px 10px;
+    list-style:none;
+    background:none;
+    position: relative;
+    border-bottom:1px dotted #999;
+}
+.product.open{      
+    padding-bottom: 0px;
+}
+.product .subproduct {
+    margin-left: 27px;
+    margin-top:0px;
+    display: none;
+}
+.product .subproduct .product {
+    padding-left: 25px;
+}
+.product .subproduct .product .subproduct {
+    margin-left: -13px;
+}
+.subproduct .incDetail{
+    font-size:10px;
+    color:#666666;
+    padding-left: 38px;
+    margin:5px 0 0 0;
+}
+.subproduct .incDetail span{
+    float:left;
+    margin-right:10px;
+}
+
+.product .openClose {
+    position: absolute;
+    display: block;
+    height: 16px;
+    width: 13px;
+    top: 12px;
+    left: 12px;
+    background:url(img/btn_gray_blue_plus_minus.png) no-repeat;
+    background-position: top;
+}
+
+
+#content .product .subproduct .product .subproduct ul{
+    margin-top:5px;
+}
+#content .product .subproduct .product .subproduct ul li{
+    padding-left: 38px;
+}
+.product .openClose.open {
+    background-position: bottom;
+    top: 16px;
+    left: 12px;
+}
+
+.product.topItem {
+    border-top: none;
+}
+.product.lastItem {
+    border-bottom: none;
+}
+
+#content .productTitle{
+    padding-left:40px;
+}
+#content .product .subproduct .product .productTitle{
+    padding-left: 25px;
+}
+.productTitle span.incSupport{
+    border-left:1px dotted #999999;
+    margin-left: 13px;
+    padding-left: 13px;
+    font-size:11px;
+    color:#999999;
+}
+
+#content section .product ul {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+#content section .product ul.hasIncSup{
+    margin-top: 4px;
+}
+.subproduct label {
+    padding-left:5px;
+    vertical-align: middle;
+}
+
+#content .products li{
+    list-style:none;
+    background:none;
+    padding: 7px 0 8px 15px;
+    border-top: 1px dotted #999;
+}
+#content .products li:last-child{
+    padding-bottom:8px;
+}
+.refinePanel {
+    padding:10px 0 0 0;
+    margin-bottom:0px;
+} 
+
+.refinePanel .refinePanelDescription {
+    background:url(img/bg_refine_panel_updated.png) no-repeat;
+    float: left;
+    width:544px;
+    height: 270px;
+    padding: 16px;
+}
+
+.refinePanelDescription .ctrlHolder {
+    margin: 0px 0px 5px 0px;
+    float:left;
+}
+
+.refinePanelDescription .input-wrapper{
+    float:none;
+}
+
+.refinePanelDescription .popularTags {
+    clear:both;
+    height:30px;
+    overflow-y:hidden;
+    line-height:14px;
+}
+.refinePanelDescription .popularTags.scrollable {
+    height:58px;
+}
+
+.refinePanelDescription .expandTags{
+    float:right;
+    margin-top:7px;
+    /*margin-right:5px;*/
+    font-weight:bold;
+}
+
+.refinePanelDescription .popularTags .popularTag a {
+    color: #A7E4FF
+}
+
+.refinePanelDescription .expandTags a.showMore{
+    background:url(img/btn_arrow_expand.png) no-repeat;
+    padding-left:17px;
+}
+.refinePanelDescription .expandTags a.minimize{
+    background:url(img/btn_arrow_minimize.png) no-repeat;
+    padding-left:17px;
+}
+.refinePanelDescription .ctrlHolder label {
+    float: left;
+    margin-bottom: 5px;
+    color: #FFF;
+    /*width: 178px;*/
+    margin-right: 5px;
+    font-size: 12px;
+    /*width:100%;*/
+} 
+
+
+.refinePanelDescription .ctrlHolder textarea {
+    float: left;
+    width: 540px;
+    min-height: 55px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    overflow:auto;
+    resize:none;
+    padding: 0 0 0 2px;
+}
+
+.refinePanel .continue_panel{
+    border-bottom: 1px solid #CCCCCC;
+    background: #EFEFEF;
+    float: left;
+    display: block;
+    height: 275px;
+    overflow: hidden;
+    width: 278px;
+}
+
+.refinePanel .continue_panel_header {
+    background: #2F2F32 url(img/bg_filter_header.jpg) repeat-x;
+    border: 1px solid #252525;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: bold;      
+    padding: 10px 15px 10px;
+}
+.refinePanel .continue_panel_header .continue_panel_sub_header {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.refinePanel .continuePanel_lower {
+    background: #EFEFEF;
+    padding: 18px 15px 30px;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    height:275px;
+}
+
+.refinePanel .continue_panel .continuePanel_lower .continuePanel_title{
+    font-size:12px;
+    font-weight:bold;
+    color: #666;
+    padding-bottom:15px;
+}
+
+.refinePanel .continue_panel .continuePanel_lower .continuePanel_note{
+    font-size:11px;
+    color: #666;;
+    padding-bottom:30px;
+}
+
+.refinePanel .continue_panel .continuePanel_lower .continuePanel_button{
+    margin:0 0 5px 0;
+}
+.continuePanel_button button{
+    margin-left:0 !important;
+    padding: 4px 12px !important;
+}
+#content-section .refinePanel p {
+    /*margin: 10px 0 7px 0;*/
+    margin-bottom:4px;
+    color: #FFF;
+    font-style: italic;
+    clear:left;
+}
+
+/*#content-section .refinePanel .keyWord-wrapper span.textGreen span{
+    vertical-align:middle;
+    line-height: 16px;
+}*/
+/*#content-section .refinePanel .keyWord-wrapper span.textGreen a.removeIcon{
+    background:url(img/remove2.png) no-repeat;
+    display:inline-block;
+    width: 13px;
+    height:14px;
+    vertical-align: middle;
+    margin-left: 2px;
+}
+#content-section .keyWord-wrapper a, 
+#content-section .keyWord-wrapper a:active{
+    color: #9fda52;
+}
+#content-section .keyWord-wrapper a:hover{
+    color: #a1e847;
+}
+#content-section .refinePanel .keyWord-wrapper{
+    width:auto;
+    min-height:18px;
+    max-height:34px;
+    overflow-y:hidden;  
+}
+ie7 #content-section .refinePanel .keyWord-wrapper,
+ie8 #content-section .refinePanel .keyWord-wrapper{
+    min-height:18px;
+    max-height:34px;
+    overflow-y:hidden; 
+}
+*/
+
+
+.refinePanel .refinePanelInput {
+    width: 400px;
+}
+
+.refinePanel .refinePanelButton {
+    margin-left: 5px;
+}
+
+.refinePanel .tagsLabel{
+    color:#FFF;
+    font-weight: bold;
+    float: left;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.refinePanel .popularTagsSection{
+    clear:both;
+    padding-bottom:3px;
+}
+
+.refinePanel .popularTagsSection .input-wrapper {
+    color: #CCC;
+}
+.refinePanel .popularTagsSection .input-wrapper span{
+    padding-right:3px;
+}
+.refinePanel .popularTagsSection .input-wrapper a{
+    color: #A7E4FF;
+    white-space: nowrap;
+}
+
+.queryList{
+    /*margin: 15px 0px 70px 10px; */ 
+}
+
+.queryList .query{
+    padding: 15px;
+    position: relative;
+    border-bottom:1px dotted #999;
+    font-size:15px;
+    font-weight:normal;
+}
+
+.buttonPanel{
+    padding:10px 0 10px 10px;
+    text-align:right;
+} 
+
+.buttonPanel .buttonPanelLabel{
+    float:left;
+    text-align:left;
+    font-size:10px;
+    width:350px;
+    padding-top:0px;
+}
+
+.buttonPanel .buttonPanelLinks {
+    margin-top: 10px;
+}
+
+.buttonPanel .panelQuestion{
+    font-size:10.5px;
+    font-weight:bold;
+    /*margin-left:300px;*/
+}
+
+.ie7 .refinePanel input {
+    position: relative;
+    top: -5px;
+}
+
+/* ########################################################################### *
+/* ##### FILTER SECTION 
+/* ########################################################################### */
+.filter-section .filter-header {
+    padding: 7px 12px;
+}
+
+#content-container .filter-section .filter-content {
+    background: #666;
+    padding: 12px 10px 10px 13px;
+}
+
+#content-container .filter-section .filter-content label {
+    color: #FFF;
+    font-size:11px;
+}
+
+
+#content-container .filter-section .filter-content .refinePanelInput {
+    width:650px;
+    margin-right:5px;
+}
+
+#content-container .filter-section .filter-content .refinePaneButton {
+    margin-left: 3px;
+}
+
+/* ########################################################################### *
+/* ##### VIEW ARTICLE POP UP WINDOW
+/* ########################################################################### */
+
+/**Override Header.css styles***/
+html, body {
+    background: none;
+}
+/*
+#vmbar {
+ min-width: 575px;
+}
+
+#vmbar .vmbar-vmware {
+ width: 575px;
+}
+*/
+
+
+.view_article {
+    background-color: #FFF;
+    color: #333;
+    padding: 10px 10px 40px 10px;
+    font-size: 12px;
+    width: 575px;
+    height: 545px;
+}
+
+.view_article h2 {
+    margin: 0 0 16px;
+    font-size: 22px;
+    color: #0C8D63;
+    font-weight: normal;
+}
+
+.view_article h4 {
+    color: #F90;
+    margin: 15px 10px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 5px 10px 10px;
+    font-weight: bold;
+    border-top: 1px solid #A1C2E1;
+    border-bottom: 1px solid #A1C2E1;
+    word-wrap: break-word;
+}
+
+.view_article p {
+    margin: 0px 0px 15px 20px;
+}
+
+.view_article ul,
+.view_article ol {
+    margin: 0px 0px 15px 40px;
+}
+
+.view_article span.instruction_message {
+    font-family: Courier New;
+
+}
+
+/*  Loading wrapper */
+.loadingWrapper{
+    width:100%;
+    text-align:center;
+    padding-top:40px;
+    padding-bottom: 40px;
+    padding-left:43%;
+}
+/* to increase the width for label in Support TSR form*/
+/*Fix for #BUG-00078286 */
+.support_request_step1 .ctrlHolder label{
+    width:240px;
+}
+
+
+/* Classes added to modify get support section - part of lean road map changes */
+.productDetailWrapper{
+    border-top:1px solid #999;
+}
+.productDetailWrapper, #myProductContainer .loadingWrapper{
+    float: left;   
+    width:100%;
+}
+.pdWrapperLeft {    
+    float: left;
+    width: 70%;
+    min-height: 229px;
+}
+.pdWrapperRight{
+    background-color: #e5e5e5; 
+    width:329px;     
+    min-height: 229px;
+    float: right;
+    padding-left: 20px;
+    border-right: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+.pdWrapperRight h3{
+    margin: 22px 0 0 0 !important; 
+    padding: 0 0 26px 0 !important;      
+}
+.pdWrapperRight p{
+    width: 85%;
+    margin-left: 2px;    
+    clear: both;
+}
+.pdWrapperRight h3, .pdWrapperRight ul#bContainer{
+    background: url('img/slSeparator.png') no-repeat left bottom transparent;    
+}
+.pdWrapperRight ul#bContainer {
+    list-style: none;
+    padding: 0 0 40px 0;    
+    float: left;
+    width: 100%; 
+    margin: 15px 0 18px 0 !important;
+}
+.pdWrapperRight ul#bContainer li{
+    float: left;
+    margin-right: 6px;
+    min-width: 60px;
+    width: auto;
+}
+.bottomarea ul#linkContainer{
+    list-style: none;    
+    float: right;    
+    margin: 15px 0 18px 0 !important;
+}
+.bottomarea ul#linkContainer li{    
+    float: left;
+    height: auto;
+    width: auto;
+    margin-left: 5px;
+}
+.ratingLabel{
+    display: none;
+}
+.getHelpColumnInner .getHelpInfo, .pdWrapperLeft .resultsData h4{
+    display: none;
+}
+.pdWrapperLeft .input-wrapper, .pdWrapperLeft .dl-content-left{
+    float: left;
+    width: 100%;
+}
+.ie7 .pdWrapperLeft #dl-content-left{
+    min-height: 100px;    
+    border: 1px solid #FFFFFF;
+    overflow:hidden ; 
+}
+.pdWrapperLeft .searchContainer{    
+    display: block;
+    width: 60%;
+    margin: 25px auto 10px auto; 
+    padding-top:3px; 
+    border: 1px solid #B5B5B5;
+    border-radius: 5px 5px 5px 5px;                       
+}
+.productDetailWrapper .bottomarea{
+    background: url("img/bkg_tabs_bottom_new.png") repeat-x scroll 0 top transparent;
+}
+.problem_descripText:focus{
+    outline: none;
+}
+.pdWrapperLeft .problem_descripText, .pdWrapperLeft .problem_descripText:focus, 
+.pdWrapperLeft .problem_descripText:hover, .pdWrapperLeft .problem_descripText:active{    
+    margin: 0 0 3px 3px;    
+    border: none;    
+    color: #6E6E6E;
+    font-size: 16px;
+    height: 23px;   
+    padding-top: 3px;
+    width: 88%;
+    resize:none;
+    background: transparent;
+    text-align:left;
+}
+.pdWrapperLeft .btnSearchSubmit, .pdWrapperLeft .btnSearchSubmit:hover, 
+.pdWrapperLeft .btnSearchSubmit:focus, .pdWrapperLeft .btnSearchSubmit:active{
+    margin-left: 0px;
+    width: 25px;
+    cursor: pointer;
+    height: 27px;
+    border: none;
+    float: right;
+    background: url("img/searchIconSupport.png") #FFFFFF center center no-repeat;
+}
+#deadEndFlowMessageDisplay{
+    display: block;
+   }
+#deadEndFlowMessageDisplay ul{
+    margin: 12px 0 0 0;    
+}
+#deadEndFlowMessageDisplay ul li{
+    list-style:disc;
+    margin: 0 0 0 20px;
+}
+.productDetailWrapper .pdWrapperLeft{
+    border-left: 1px solid #949494;
+    border-bottom: 1px solid #949494;
+    margin-right: -1px;
+}
+.pdWrapperLeft .resultsData{
+    width: 100%;
+    float: left;
+}
+.pdWrapperLeft .resultsData .resultsDataTitle,
+.pdWrapperLeft .queryListTitle, 
+.pdWrapperLeft #content-section .resultsData h4 {
+    background: none;
+    border: none;
+    color: white;
+    padding: 3px 5px 3px 15px;
+    /* font-weight: bold;*/
+    font-size: 10px;
+}
+.selectionDetails{
+    float: left;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+.selectionDetails ul li{
+    float: left;
+    color: #656565 !important;
+    font-size: 16px !important;
+}
+
+.selectionDetails .selectedIssue, .selectionDetails .selectedProduct{
+    font-weight:bold;
+}
+.selectionDetails .keyWord-wrapper{
+    margin-right: 20px;
+    
+}
+.deadEndInfo{
+    border: 1px solid #9b9d9e;
+    border-radius: 5px;
+    background-color: #e7f0f8;
+    margin-top: 30px !important;
+    padding: 24px 24px 24px 34px;
+}
+.deadEndAnother{
+    display: none;
+}
+
+#deadEndFlowMessageDisplay b{
+    font-weight: bold;
+}
+input[type=text]::-ms-clear {
+    display: none;
+}
+.ie7 .btnSearchSubmit{
+    /*margin-top: -30px;*/
+}

@@ -1,0 +1,196 @@
+/*
+	All Styles copied from inline stylesheet of https://www.vmware.com/licensemgmt/license/summary.lic template
+*/
+div.dcca-box {
+	position: relative;        
+	margin-bottom: 20px;    
+}        
+	div.dcca-box div.msg-box {        
+		width: 620px;    
+	}        
+		div.dcca-box div.msg-box h1 {        
+			color: #7D9BC6;        
+			font-size: 30px;        
+			margin: 0 0 5px 0;    
+		}        
+		
+		div.dcca-box div.msg-box div.warning {        
+			background: #fffeeb;        
+			border: 2px solid #ede3bd;        
+			padding: 8px;        
+			margin-top: 10px;    
+		}        
+		
+			div.dcca-box div.msg-box div.warning h3 {        
+				margin: 0 0 5px 0;        
+				background: url(/static/vmware/common/css/img/ico-alert_small_transparent.gif) no-repeat 0 2px;        
+				padding: 0 0 0 20px;    
+			}        
+			
+	div.dcca-box div.lic-box {        
+		position: absolute;        
+		right: -10px;        
+		_right: 0;        
+		top: 40px;        
+		padding: 6px 12px 6px 10px;    
+	}        
+	
+		div.dcca-box div.lic-box div.title {        
+			width: 227px;        
+			height: 27px;        
+			background: url(/static/vmware/common/css/img/lr-bg.png) no-repeat top left;    
+		}        
+		
+			div.dcca-box div.lic-box div.title h3 {        
+				color: #fff;        
+				font-size: 120%;        
+				padding: 5px 0 5px 15px;        
+				margin: 0;    
+			}        
+			
+		div.dcca-box div.lic-box div.body {        
+			border: #ccc solid 1px;        
+			border-top: none;        
+			height: 87px;        
+			width: 224px;        
+			background: url(/static/vmware/common/css/img/lr-body-bg.png) repeat-x top left;    
+		}        
+		
+		div.dcca-box div.lic-box ul li a {        
+			background: url(/static/vmware/common/css/img/ico_help.png) no-repeat 0 -1px;        
+			height: 16px;        
+			padding-left: 23px;        
+			display: block;    
+		}        
+			div.dcca-box div.lic-box ul li a.ico_help {        
+				background: url(/static/vmware/common/css/img/ico_help.png) no-repeat 0 -1px;    
+			}        
+			
+			div.dcca-box div.lic-box ul li a.ico_info {        
+				background: url(/static/vmware/common/css/img/ico_info.png) no-repeat 0 -1px;    
+			}        
+			
+			div.dcca-box div.lic-box ul li a.ico_demo {        
+				background: url(/static/vmware/common/css/img/ico_demo.png) no-repeat 0 -1px;    
+			}        
+			div.dcca-box div.lic-box ul li a.ico_print {        
+				background: url(/static/vmware/common/css/img/ico_print.png) no-repeat 0 -1px;    
+			}        
+			
+			div.dcca-box div.lic-box ul {        
+				padding: 5px 0 0 0;        
+				margin: 0;    
+			} 
+			
+#helpBox ul li {        
+	font-size: 11px;        
+	display: block;        
+	padding: 2px 0 2px 10px;        
+	background: none;    
+} 
+
+#c2cBox {        
+	position: absolute;        
+	right: 3px;        
+	_right: 12px;        
+	top: 165px;        
+	padding-left: 4px;        
+	background: url(/static/vmware/common/css/img/btn-left-light.png) no-repeat 0 0;        
+	height: 25px;       
+	width: 222px;    
+} 
+
+	#c2cBox div.right {        
+		height: 25px;        
+		padding-right: 4px !important;        
+		background: url(/static/vmware/common/css/img/btn-right.png) no-repeat top right;    
+	}
+	
+	#c2cContent a.chat {        
+		background: url(/static/vmware/common/css/img/chat_btn.gif) no-repeat top left;    
+	} 
+	
+	#c2cContent a.email {        
+		background: url(/static/vmware/common/css/img/email_btn.gif) no-repeat top left;    
+	}
+	
+	#c2cContent {        
+		background: url(/static/vmware/common/css/img/btn-bg.png) repeat-x top left;        
+		height: 17px;        
+		border-top: 1px solid #ccc;        
+		border-bottom: 1px solid #ccc;        
+		padding: 4px 0 1px 10px;    
+	}
+	
+	#c2cContent a {        
+		padding-left: 20px;    
+	}
+	
+/* Edited By nagaraj */
+
+#content div.summarySection{
+	background: none repeat scroll 0 0 #F1F4F9;
+    border: 1px solid #A1C2E5;
+    border-collapse: collapse;
+	padding:30px;
+}
+
+#content table.basic{
+	border: 1px solid #8AB2D7;
+    border-collapse: collapse;
+    font-size: 12px;
+    padding: 0;
+}
+
+#content table.basic .header{
+	background: none repeat scroll 0 0 #8AB2D7;
+    color: white;
+    font-weight: 700;
+}
+
+#content table.basic tr.even{
+	background-color:#fff;
+}
+
+#content table.basic tr > td + td + td{
+	text-align:right;
+}
+
+#content .dcca-box .btn-box2.alignRight{
+	float:right
+}
+
+#content .dcca-box .btn-box2 .left {        
+	background: url("/static/vmware/common/css/img/launch_vmware_bg_left.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 23px;
+    width: 3px;    
+} 
+
+#content .dcca-box .btn-box2 div.right {        
+	height: 23px;        
+	width:3px;
+	background: url(/static/vmware/common/css/img/launch_vmware_bg_right.png) no-repeat top right;    
+	float:left    
+}
+
+#content .dcca-box .btn-box2 div.center{
+	background: url("/static/vmware/common/css/img/launch_vmware_bg_center.png") repeat-x scroll right top transparent;
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    height: 23px;
+    padding-top: 3px;
+    text-align: center;
+    vertical-align: middle;
+    width: 134px;   	
+}
+
+#content div.linksSection{
+	margin-top: 40px;
+}
+
+#content .addLinks{
+	font-weight:bold;
+	font-size:16px
+}

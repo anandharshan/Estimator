@@ -1,0 +1,40 @@
+{
+    "locales": [
+        {
+            "fullySupported": "Y",
+            "cCode": "CN",
+            "locale": "CN",
+            "lang": "简体中文"
+        },
+        {
+            "fullySupported": "Y",
+            "cCode": "FR",
+            "locale": "FR",
+            "lang": "Français"
+        },
+        {
+            "fullySupported": "Y",
+            "cCode": "US",
+            "locale": "EN",
+            "lang": "English"
+        },
+        {
+            "fullySupported": "Y",
+            "cCode": "DE",
+            "locale": "DE",
+            "lang": "Deutsch"
+        },
+        {
+            "fullySupported": "Y",
+            "cCode": "JP",
+            "locale": "JP",
+            "lang": "日本語"
+        },
+        {
+            "fullySupported": "N",
+            "cCode": "KR",
+            "locale": "KR",
+            "lang": "한국어"
+        }
+    ]
+}

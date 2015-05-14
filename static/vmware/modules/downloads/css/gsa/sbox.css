@@ -1,0 +1,133 @@
+#container #content-container {
+    overflow:visible !important;
+}
+
+div.sbox_cont {
+    border: 1px solid #999;
+    cursor: pointer;
+    position:absolute;
+}
+
+div.sbox_cont div.header {
+    float: left;
+    background: #9fda52;
+}
+
+div.sbox_cont div.header div.lbl {
+    float: left;
+    background: #f0f0f0;
+}
+
+div.sbox_cont div.header div.lbl div, div.sbox_cont div.header div.btn div {
+    padding: 2px 5px 2px 5px;
+}
+
+div.sbox_cont div.header div.btn {
+    float: right;
+    text-align: center;
+}
+
+div.sbox_cont div.header div.btn div {
+    background: url("http://www.vmware.com/files/images/sbox/arrow.gif") no-repeat 2px 2px;
+    text-indent: -9999px;
+}
+
+div.sbox_cont div.body {
+    clear: both;
+}
+
+div.sbox_cont div.body ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position:absolute;
+    left:-1px;
+    display:none;
+    border-top: 1px solid #999;
+    height:270px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	width:166px;
+}
+
+div.sbox_cont div.body ul li {
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-weight: normal;
+}
+
+div.sbox_cont div.body ul li a {
+    padding: 2px 5px 2px 5px;
+    display: block;
+    margin: 0;
+    color: #000;
+    background: #fff;
+}
+
+div.sbox_cont div.body ul li div.sbLabel {
+    padding: 2px 5px 2px 5px;
+    display: block;
+    margin: 0;
+    color: #000;
+    background: #fff;
+    font-weight:bold;
+    cursor:default;
+    font-size: 10px;
+}
+
+div.sbox_cont div.body ul li a {
+    padding: 2px 5px 2px 5px;
+    display: block;
+    margin: 0;
+    color: #000;
+    background: #fff;
+    font-size: 10px;
+}
+
+div.sbox_cont div.body ul li a.selected {
+    background: #99ccff;
+}
+
+div.sbox_cont div.body ul li a:hover {
+    background: #ccc;
+    text-decoration: none !important;
+}
+
+div#products_sbox_promo div { height: 69px; }
+div#archives_sbox_promo div { height: 200px; }
+
+select#products_sbox_select { width: 185px; }
+select#archives_sbox_select { width: auto; }
+
+div#products_sbox { position: absolute; top:225px; right: 227px; }
+div#products_sbox_home { position: absolute; top:66px; right: 204px; }
+div#products_sbox_search { position: absolute; top:350px; right: 229px; }
+/*div#archives_sbox { position: absolute; top:660px; left: 518px; }*/
+
+div#products_sbox_home div.body ul,	
+div#products_sbox_search div.body ul,	
+div#products_sbox div.body ul {	
+	height:300px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	width:200px;	
+	border-bottom:1px solid #999999;
+	border-right:1px solid #999999;
+}
+div#archives_sbox {
+	float:left;
+}
+div#archives_sbox_heading {
+	float:left;
+	padding-right: 15px;
+}
+div#archives_sbox div.body ul {	
+	height:auto;
+	overflow-x:hidden;
+	overflow-y:auto;
+	width:auto;
+}
+div#archives_sbox div.sbox_cont div.header { background: #3399CC; }

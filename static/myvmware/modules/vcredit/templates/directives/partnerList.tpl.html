@@ -1,0 +1,84 @@
+<section tabindex="-1" role="dialog"  aria-hidden="true" class="overlay">
+
+	<div class="modal-header partnerModalhead">
+        <span class="close" ng-click="cancelPartner()" aria-hidden="true" data-dismiss="modal"></span>
+		<h3 class="modal-title">{{globalVars.selectOfferingPartner}}</h3>
+	</div>
+	<div class="modal-body partnerModalBody">
+	<div class="row margin-top-20" ng-if="partnerListError==true || noPartner != null">
+       <div class="alert-box col-md-12 margin-top-10">
+            <div class="alert alert-danger alert-dismissable" role="alert">
+                <div class="row">
+                    <span class="icons-alert-warning"></span>
+                    <div class="alert-text col-sm-10">
+                        <p ng-if="partnerListError==true">{{globalVars.partnerListErrorText}}</p>
+                        <p ng-if="noPartner != null">{{noPartner}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+                <p ng-bind-html="globalVars.partnerModalText">
+                </p>
+            </div>
+    </div>
+    <div class="row partnerFilterSection">
+        <div class="col-md-3 padding-left-10 padding-right-10 offering-drop">
+            <!-- <select id="country" ng-model="localObj.countriesModel" ng-options="key as value for (key , value) in countries" ng-change="filterCountryPartner(localObj.countriesModel)" selectpicker="{container:'body'}">
+                
+            </select> -->
+            <select id="country" ng-model="localObj.countriesModel" ng-options="country.countryCode as country.countryName  for country in countries track by country.countryCode" ng-change="filterCountryPartner(localObj.countriesModel)" selectpicker="{container:'body'}" data-size="8" data-width="100px">
+              <option value="" ng-if="false"></option>  
+            </select>
+        </div>
+        <div class="col-md-3 padding-left-10 padding-right-10 offering-drop">
+            <select id="province" ng-model="localObj.provinceModel"  ng-options="key as value for (key , value) in province" ng-change="filterProvincePartner(localObj.provinceModel)" selectpicker="{container:'body'}" data-size="8" ng-disabled="isEmptyState(province)">
+                <option value="">{{globalVars.selectStateText}}</option>
+            </select>
+        </div>
+        <div class="col-md-3 padding-left-10 padding-right-10">
+            <input class="form-control partner-list-search" ng-model="localObj.searchText" placeholder="{{globalVars.enter_partner_name}}"/>
+        </div>
+        <div class="col-md-2 padding-left-10 padding-right-10">
+            <a class="btn btn-primary" ng-click="applySearch()">{{globalVars.find}}</a>
+        </div> 
+    </div>
+    
+
+   
+    
+    
+    <div class="row filteredContent">
+            <div class="col-md-12 form-control-static partnerListContainer">
+                <div  class="radio partList" ng-repeat="partner in partnersList = (partners | filter:localObj.searchTextApply:strict) | orderBy : 'name'">
+                    <input type="radio" id="partnerName{{$index}}"  name="partnerName" ng-value="partner.partnerId" ng-model="localObj.selectedPartner">
+                    <label for="partnerName{{$index}}">
+                        <span class="fontPNovaSBold">{{partner.name}}</span>&nbsp;({{partner.address}})
+                    </label>
+                    <div class="row addressInfo">
+                        <div class="col-md-12"></div>
+                    </div>
+                </div>
+				<div class="margin-top-20 text-center" ng-if="(partnersList.length == 0) && !(showModalLoader)">
+					{{globalVars.noOfferingPartnerError}}
+				</div>
+                <article ng-if="showModalLoader">
+                    <div class="row margin-top-20 margin-bottom-20">
+                        <div class="col-md-12 text-center">
+                            <div class="ajaxSpinner">&nbsp;</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+    </div> 
+	
+    </div>           
+	
+	
+	<div class="modal-footer">
+		<a class="btn btn-primary" ng-disabled="!(localObj.selectedPartner.length > 0)" ng-click="savePartner()">{{globalVars.btnSave}}</a>
+    <a class="btn btn-default" ng-click="cancelPartner()">{{globalVars.cancelBtn}}</a>
+	</div>	
+</section>

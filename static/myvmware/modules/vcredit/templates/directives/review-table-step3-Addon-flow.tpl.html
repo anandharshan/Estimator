@@ -1,0 +1,182 @@
+<article class="container-fluid">
+    <ul class="list-group serviceDataUl addontable">
+      <li class="row padding-10 addontable-head">
+        <div class="col-md-3 addon-separator"><small>{{globalVars.subscriptionServiceAddon}}</small></div>
+        <div class="col-md-9">
+          <div class="row horizon" ng-if="addOnData.core.horizon">
+            <div class="col-sm-1 col-xs-4 addon-separator"><small>{{globalVars.quantity}}</small></div>
+			<div class="col-sm-2 col-xs-4 addon-separator"><small>{{globalVars.supportLevel}}</small></div>
+            <div class="col-sm-2 col-xs-4 addon-separator"><small>{{globalVars.billingType}}</small></div>
+            <div class="col-sm-2 col-xs-4 addon-separator"><small>{{globalVars.billingRate}}</small></div>
+            <div class="col-sm-2 col-xs-4 addon-separator"><small>{{globalVars.billingTerm}}</small></div>
+            <div class="col-sm-3 col-xs-4"><small>{{globalVars.proratedExtendedCost}}</small></div>
+          </div>
+		   <div class="row" ng-if="!addOnData.core.horizon">
+            <div class="col-sm-2 col-xs-6 addon-separator"><small>{{globalVars.quantity}}</small></div>
+            <div class="col-sm-2 col-xs-6 addon-separator"><small>{{globalVars.billingType}}</small></div>
+            <div class="col-sm-3 col-xs-4 addon-separator"><small>{{globalVars.billingRate}}</small></div>
+            <div class="col-sm-2 col-xs-4 addon-separator"><small>{{globalVars.billingTerm}}</small></div>
+            <div class="col-sm-3 col-xs-4"><small>{{globalVars.proratedExtendedCost}}</small></div>
+          </div>
+        </div>
+      </li>
+      <!--li class="row margin-top-20 items_wrap" data-ng-repeat = "(addOnKey, addOnsData) in ref_addOnObj.addons"  ng-if = "addOnsData.selectedNode"-->
+      <li class="margin-top-20 items_wrap" data-ng-repeat="addOnKey in notSorted(ref_addOnObj.addons)" data-ng-init="addOnsData = ref_addOnObj.addons[addOnKey]" ng-if="ref_addOnObj.addons[addOnKey].selectedNode">
+                <div class="row"><div class="col-md-12"><label ng-bind-html="addOnKey"></label></div></div>
+                <div class="row" data-ng-repeat = "addOns in addOnsData"  ng-if = "addOns[8].selected=='selected'">
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-12"><span ng-bind-html="addOns[5]"></span></div>
+                        </div>
+						<!--div class="row skuName" ng-if="addOnPase">
+                            <div class="col-md-12"><span class="small">{{addOns[8].selectedAddonSKU[0]}}</span></div>
+                        </div-->
+						<div class="row margin-top-10" ng-if="addOns[7][5] != null || addOns[7][5] != undefined">
+							<div class="col-md-12">                                            
+								<div class="row">
+									<ul class="col-xs-11 col-xs-offset-1">
+										<li>
+											<span class="bg-support"></span>
+											<span ng-bind-html="addOns[7][5]"></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!--div class="row skuName" ng-if="addOnPase">
+								<div class="col-md-11 col-md-offset-1"><span class="small">{{addOns[8].selectedAddonSKU[1]}}</span></div>
+							</div-->
+						</div>
+                    </div>
+                    <div class="col-md-9" ng-if="addOns[8].selectedType.paymentTypeID != '0'">
+                        <div class="row horizon" ng-if="addOnData.core.horizon">
+                            <div class="col-sm-1 col-xs-4">
+								<span  class="labelForm">{{addOns[8].selectedQty}}</span>
+								<!--<span class="labelForm row" ng-click="enableEdit($event)">edit</span>-->
+								<span class="editForm"  style="display:none;">
+									<input type="text" style="max-width: 80px;" maxlength="{{globalVars.quantitySize}}" class="form-control text-left" data-ng-model="addOns[8].selectedQty" ng-change="changeAddon(addOnKey, addOns)" ng-blur="checkQty(addOns[8].selectedQty, addOns)">
+								 </span>
+								 <span class="center-block">
+										<a class="labelForm btn-link" ng-click="enableEdit($event)">{{globalVars.editBtn}}</a>
+										<a class="editForm btn-link" style="display:none;" ng-click="disableEdit($event)">{{globalVars.saveBtn}}</a>
+								</span>
+								<span class="center-block">
+									<span class="icons-close removeAddon" ng-click="removeAddon(addOnKey, addOns)"></span>
+								</span>
+                            </div>
+							<div class="col-sm-2 col-xs-4 {{addOns[8].uniqueClass}}">
+								<span  class="labelForm">{{addOns[8].supportLevelList[addOns[8].selectedSupportLevel]}}</span>
+								
+								<!--span class="labelForm row" ng-click="enableEdit($event)" ng-if="addOns[3].length > 1">edit</span-->
+									<span class="editForm" style="display:none;">
+										<span  ng-if="addOns[11].length > 1" class="editForm">
+											<select class="form-control autoWidth" data-ng-model="addOns[8].selectedSupportLevel" ng-change="changeSupportLevel(addOnKey, addOns)" ng-options="supportLevel.supportLevelID as supportLevel.supportLevelLabel for supportLevel in addOns[8].supportLevelType" data-width="auto" selectpicker="{container:'body'}">
+											</select>
+										</span>
+									<span ng-if="addOns[11].length < 2" class="editForm">{{addOns[8].supportLevelList[addOns[8].selectedSupportLevel]}}</span>
+								</span>
+								<span class="center-block">
+										<a class="labelForm btn-link" ng-click="enableEdit($event)" ng-if="addOns[11].length > 1">{{globalVars.editBtn}}</a>
+										<a class="editForm btn-link" style="display:none;" ng-click="disableEdit($event)" ng-if="addOns[11].length > 1">{{globalVars.saveBtn}}</a>
+										<div class="visible-xs-block" ng-if="addOns[3].length < 2">&nbsp;</div>
+								</span>
+								<div class="visible-xs-block">&nbsp;</div>
+                            </div>
+                            <div class="col-sm-2 col-xs-4">
+								<span  class="labelForm">{{addOns[8].selectedType.paymentTypeVal}}</span>
+								
+								<!--span class="labelForm row" ng-click="enableEdit($event)" ng-if="addOns[3].length > 1">edit</span-->
+									<span class="editForm" style="display:none;">
+										<span  ng-if="addOns[3].length > 1" class="editForm">
+											<select class="form-control autoWidth" data-ng-model="addOns[8].selectedType" ng-change="changeAddon(addOnKey, addOns)" ng-options="duration.paymentTypeVal for duration in addOns[8].paymentType" data-width="auto" selectpicker="{container:'body'}">
+											</select>
+										</span>
+									<span ng-if="addOns[3].length < 2" class="editForm">{{addOns[8].selectedType["paymentTypeVal"]}}</span>
+								</span>
+								<span class="center-block">
+										<a class="labelForm btn-link" ng-click="enableEdit($event)" ng-if="addOns[3].length > 1">{{globalVars.editBtn}}</a>
+										<a class="editForm btn-link" style="display:none;" ng-if="addOns[3].length > 1" ng-click="disableEdit($event)">{{globalVars.saveBtn}}</a>
+										<div class="visible-xs-block" ng-if="addOns[3].length < 2">&nbsp;</div>
+								</span>
+								<div class="visible-xs-block">&nbsp;</div>
+                            </div>
+                            <div class="col-sm-2 col-xs-4" ng-if="addOns[8].noCost == 'N'">
+                                <div>{{addOns[8].selectedCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{addOns[8].billingTypeLabel}}</div>
+                            </div>
+                            <div class="col-sm-2 col-xs-4" ng-if="addOns[8].noCost == 'N'">
+	                            <div>{{addOns[8].billingTermText}}</div>
+	                        </div>
+							<div class="col-sm-3 col-xs-4" ng-if="addOns[8].noCost == 'N'">
+                                <div>{{addOns[8].proratedExtendedCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</div>
+                            </div>
+							<div ng-if="addOns[8].noCost == 'Y'" class="col-md-7"><span class=" form-required" ng-bind-html="globalVars.noPriceAssociated"></span></div>
+                        </div>
+						
+						<div class="row" ng-if="!addOnData.core.horizon">
+                            <div class="col-sm-2 col-xs-6">
+								<span  class="labelForm">{{addOns[8].selectedQty}}</span>
+								<!--<span class="labelForm row" ng-click="enableEdit($event)">edit</span>-->
+								<span class="editForm"  style="display:none;">
+									<input type="text" style="max-width: 80px;" maxlength="{{globalVars.quantitySize}}" class="form-control text-left" data-ng-model="addOns[8].selectedQty" ng-change="changeAddon(addOnKey, addOns)" ng-blur="checkQty(addOns[8].selectedQty, addOns)">
+								 </span>
+								 <span class="center-block">
+										<a class="labelForm btn-link" ng-click="enableEdit($event)">{{globalVars.editBtn}}</a>
+										<a class="editForm btn-link" style="display:none;" ng-click="disableEdit($event)">{{globalVars.saveBtn}}</a>
+								</span>
+								<span class="center-block">
+									<span class="icons-close removeAddon" ng-click="removeAddon(addOnKey, addOns)"></span>
+								</span>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+								<span  class="labelForm">{{addOns[8].selectedType.paymentTypeVal}}</span>
+								
+								<!--span class="labelForm row" ng-click="enableEdit($event)" ng-if="addOns[3].length > 1">edit</span-->
+									<span class="editForm" style="display:none;">
+										<span  ng-if="addOns[3].length > 1" class="editForm">
+											<select class="form-control autoWidth" data-ng-model="addOns[8].selectedType" ng-change="changeAddon(addOnKey, addOns)" ng-options="duration.paymentTypeVal for duration in addOns[8].paymentType" data-width="auto" selectpicker="{container:'body'}">
+											</select>
+										</span>
+									<span ng-if="addOns[3].length < 2" class="editForm">{{addOns[8].selectedType["paymentTypeVal"]}}</span>
+								</span>
+								<span class="center-block">
+										<a class="labelForm btn-link" ng-click="enableEdit($event)" ng-if="addOns[3].length > 1">{{globalVars.editBtn}}</a>
+										<a class="editForm btn-link" style="display:none;" ng-click="disableEdit($event)">{{globalVars.saveBtn}}</a>
+										<div class="visible-xs-block" ng-if="addOns[3].length < 2">&nbsp;</div>
+								</span>
+								<div class="visible-xs-block">&nbsp;</div>
+                            </div>
+                            <div class="col-sm-3 col-xs-4" ng-if="addOns[8].noCost == 'N'">
+                                <div>{{addOns[8].selectedCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{addOns[8].billingTypeLabel}}</div>
+                            </div>
+                            <div class="col-sm-2 col-xs-4" ng-if="addOns[8].noCost == 'N'">
+	                            <div>{{addOns[8].billingTermText}}</div>
+	                        </div>
+							<div class="col-sm-3 col-xs-4" ng-if="addOns[8].noCost == 'N'">
+                                <div>{{addOns[8].proratedExtendedCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</div>
+                            </div>
+							<div ng-if="addOns[8].noCost == 'Y'" class="col-md-8"><span class=" form-required" ng-bind-html="globalVars.noPriceAssociated"></span></div>
+                        </div>
+						
+                    </div>
+                    <div class="col-md-8" ng-if="addOns[8].selectedType.paymentTypeID == '0'">
+	                   	<div class="row text-center" ng-if="addOnData.core.horizon">
+                            <div class="col-sm-1 col-xs-4"> - </div>
+                            <div class="col-sm-2 col-xs-4"> - </div>
+                            <div class="col-sm-2 col-xs-4"> - </div>
+                            <div class="col-sm-2 col-xs-4"> - </div>
+                            <div class="col-sm-2 col-xs-4"> - </div>
+                            <div class="col-sm-3 col-xs-4"> - </div>
+                        </div>
+                        
+                        <div class="row text-center" ng-if="!addOnData.core.horizon">
+                            <div class="col-sm-2 col-xs-6"> - </div>
+                            <div class="col-sm-2 col-xs-6"> - </div>
+                            <div class="col-sm-3 col-xs-4"> - </div>
+                            <div class="col-sm-2 col-xs-4"> - </div>
+                            <div class="col-sm-3 col-xs-4"> - </div>
+                        </div>
+	                </div>
+	                <div class="visible-xs-block">&nbsp;</div>
+                </div>           
+      </li>                                  
+    </ul>
+</article>  

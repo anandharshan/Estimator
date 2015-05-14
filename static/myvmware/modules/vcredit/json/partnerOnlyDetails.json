@@ -1,0 +1,55 @@
+{
+    "partners": [
+        {
+            "partnerId": "10012723",
+            "name": "Reliance",
+            "address": "3405HillviewAvenue",
+            "country": "India",
+            "state": "Rajasthan",
+            "countryCode": "IND",
+            "stateCode": "RJ",
+			"directReseller": false
+        },
+        {
+            "partnerId": "10034796",
+            "name": "Wipro",
+            "address": "3405HillviewAvenue",
+            "country": "India",
+            "state": "Karnataka",
+            "countryCode": "IND",
+            "stateCode": "KA",
+			"directReseller": false
+        },
+         
+        {
+            "partnerId": "17812798",
+            "name": "Some Test XYZ",
+            "address": "3405HillviewAvenue",
+            "country": "India",
+            "state": "Andhra Pradesh",
+            "countryCode": "IND",
+            "stateCode": "AP",
+			"directReseller": false
+        },
+        {
+            "partnerId": "100983498",
+            "name": "Some Test ABC",
+            "address": "3405HillviewAvenue",
+            "country": "India",
+            "state": "Maharashtra",
+            "countryCode": "IND",
+            "stateCode": "MH",
+			"directReseller": true
+        },
+		{
+            "partnerId": "1023483498",
+            "name": "direct Reseller",
+            "address": "Some test address",
+            "country": "United States",
+            "state": "California",
+            "countryCode": "US",
+            "stateCode": "CA",
+			"directReseller": true
+        }
+    ]
+}

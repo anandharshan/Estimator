@@ -1,0 +1,25 @@
+﻿label.common.requiredMessage=必要
+label.common.validEmailIDMessage=有効な電子メールIDを入力してください
+label.common.validEmailIDLengthMessage=有効な電子メールIDを入力してください
+label.common.validEmailIDNotMatchMessage=メールアドレスが一致しない
+label.common.validPasswordNotMatchMessage=上記のようにパスワードを入力してください
+label.common.alphaNumericMessage=、文字を数字だけを入力し、アンダースコアしてください
+label.common.phoneNumberMessage=電話番号が無効です
+label.common.maxlengthMessage={0}文字以上を入力して下さい。
+label.common.rangelengthMessage=無効。する必要があります{0}である - {1}文字の長さ。
+label.common.digitMessage=数字だけを入力してください
+label.common.range={0}と{1}の間の値を入力してください
+label.common.validAlphaNumericNoSpace=無効なユーザー名
+label.common.selectOne=選択してください
+label.common.tooshort=あまりにも短
+label.common.weak=弱い
+label.common.good=良好な
+label.common.strong=強力
+label.common.loading=ロード中です。
+label.common.defaultPass=パスワードの強度
+label.common.sameasusername=パスワードはユーザ名と同じです。
+label.common.cancelButtonURL=/jp/web/vmware/login
+label.common.loadingDataForDropDown=データのロード...
+label.common.summation.rangelengthmessage=Enter a number between {0}-{1}.  
+label.common.empinCountry.exceedGlobalEmpMessage=全世界の社員数を超えています.
+label.common.already.deactivated.error=このメール アドレスは無効になりました。このメッセージに心当たりがない場合は、<a href="http://www.vmware.com/support/us_support.html" target='_blank'>サポート</a>にお問い合わせください

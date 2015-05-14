@@ -1,0 +1,12 @@
+.contextMenu {width:150px;background:#fff;position:absolute;z-index:1000;display:none;border:1px solid #aaa;}
+.contextMenu ul {margin:0;padding:0;}
+.contextMenu ul li {list-style:none;}
+.contextMenu ul li.paddingT10 {	padding-top:10px;}
+.contextMenu ul li.paddingB10 {	padding-bottom:10px;}
+.contextMenu ul li a {color:#000;text-decoration:none;display:block;width:130px;padding:10px;}
+.contextMenu ul li a.hover {background-color:#eef7ff;}
+.contextMenu ul li.inactive a {color:#aaa;cursor:default;}
+.icon_more {width:15px;height:15px;background:url("img/bg_actionmenu_sprite.png") no-repeat scroll 0 0 transparent;position:absolute;top:9px;right:20px;display:none;}
+.icon_more.hover {background:url("img/bg_actionmenu_sprite.png") no-repeat scroll 0 -16px transparent}
+.icon_more.inactive{background:url("img/bg_actionmenu_sprite.png") no-repeat scroll 0 0 transparent;}
+.icon_more.activeBtn{background:url("img/bg_actionmenu_sprite.png") no-repeat scroll 0 -16px transparent;}

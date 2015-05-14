@@ -1,0 +1,108 @@
+//
+// Panels
+// --------------------------------------------------
+
+// Collapsable panels (aka, accordion)
+//
+// Wrap a series of panels in `.panel-group` to turn them into an accordion with
+// the help of our collapse JavaScript plugin.
+
+.starlight .accordion.panel-group { //Added the ID to this styling to limit these properties to the Accordion component
+  //Styling for the Starlight Accordion's heading
+  //Custom column widths to ensure that 7 elements can fit in the col-sm-8 accordion. 
+  .col-cust-md{
+    float: left;
+    padding: 0 10px;
+    position: relative;
+    width: 130px;
+    white-space: nowrap;
+  }
+  .col-cust-sm{
+    float: left;
+    padding: 0 10px;
+    position: relative;
+    width: 80px;
+    white-space: nowrap;
+  }
+  .col-cust-lg{
+    float: left;
+    padding: 0 10px;
+    position: relative;
+    min-width: 155px;
+    white-space: nowrap;
+  }
+  .accordion-heading{ //Class added to provide certain styling for the header of the Accordion
+    .panel-heading{
+      background-color: $starlight-blue-dark;
+      color: #FFF;
+      border-radius:0px;
+      border:1px solid $starlight-blue-dark;
+      a:hover{
+        color: #FFF;
+      }
+    }
+    .panel-title{
+      font-size: 14px;
+      &.panel-first-item{
+        margin-left: -15px;
+      }
+    }
+  }
+  .accordion-element{
+    .panel-title{
+      font-size: 15px;
+      padding-top: 6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &.panel-first-item{
+        margin-left: -15px;
+      }
+      &.panel-last-item{
+        padding-right:0;
+      }
+      &.download-panel{
+        padding-top: 0;
+        overflow: visible;
+        text-overflow: inherit;
+      }
+    }
+    a{
+      color:$starlight-blue-dark;
+      &:hover{
+        color:$starlight-blue;
+      }
+    }
+  }
+  //Stying for the different elements on the accordion
+  .panel {
+    border-radius: 0px;
+    clear: both;
+    overflow: visible;
+    margin-bottom:0;
+    + .panel {
+      margin-top: 0px;
+    }
+    .panel-heading{
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+  .panel-heading {
+    background-color: $starlight-bg-gray;
+  } 
+  .downloadOption {
+    .selectDownloadOption{
+      font-size: 13px;
+      margin-right: 0;
+    }
+    ul li a:hover{
+      background-color:#E1F2F7;
+    }
+  }
+  button.selectDownloadOption,
+  button.dropdown-toggle{
+    &:focus{
+      box-shadow:none;
+    }
+  }
+}

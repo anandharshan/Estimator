@@ -1,0 +1,126 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  summary.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 05/03/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. SUMMARY PAGE
+/* ########################################################################### */
+
+
+/* ########################################################################### *
+/* ##### SUMMARY PAGE
+/* ########################################################################### */
+
+
+.summary-column-left p,
+.summary-column-middle p,
+.summary-column-right p {
+	padding-left:25px;
+}
+
+.column-wrapper .searchSection{
+	margin-left:25px;
+	border-top:1px dotted #999;
+	border-bottom:1px dotted #999;
+	padding-top:9px;
+	padding-bottom:5px;
+	overflow:hidden;
+	width:273px;
+}
+
+.column-wrapper .searchFeild{
+	width:220px;
+	height:24px;
+	background-image:url(img/bkg_searchArea.png);
+	background-repeat:no-repeat;
+	padding-left:10px;
+	padding-right:10px;
+	float:none;
+}
+.column-wrapper .searchFeild .searchBtn{
+	background:url(img/btn_zoomIcon.png) no-repeat scroll 0 0 transparent;
+	display:inline-block;
+	width:15px;
+	height:17px;
+	vertical-align: middle;
+}
+
+.searchFeild input[type="text"] { 
+	width:180px;
+	height:18px;
+	color:#333;
+	background:none;
+	border:none;
+	padding-top:3px;
+	vertical-align: middle;
+}
+
+.column-wrapper .searchButton select{
+	width:168px;
+	margin-top:6px;
+	float:left;
+}
+
+/*.column-wrapper .searchSection .searchButton #searchbtt{
+	width: 100px;
+}*/
+
+.column-wrapper .searchButton a.button{
+	float:right;
+	margin-left:5px;
+}
+
+#content .summaryGraySection ul li{
+	background: none;
+	padding-left: 0px;
+}
+
+.summaryGraySection{
+	border: 1px solid #CCC;
+	background: #f0f0f0; /* Old browsers */
+	background: -moz-linear-gradient(top, #f0f0f0 0%, #e8e8e8 52%, #e0e0e0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(52%,#e8e8e8), color-stop(100%,#e0e0e0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f0f0f0 0%,#e8e8e8 52%,#e0e0e0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f0f0f0 0%,#e8e8e8 52%,#e0e0e0 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #f0f0f0 0%,#e8e8e8 52%,#e0e0e0 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #f0f0f0 0%,#e8e8e8 52%,#e0e0e0 100%); /* W3C */
+	height:auto;
+	padding: 25px 15px 25px 15px;
+	width:825px;
+}
+
+.summaryGraySection ul li {
+	list-style: none;
+	padding: 4px 0 4px 15px;
+	background: none;
+}
+
+.summaryGraySection .gray_content{ }
+
+.summaryGraySection .column {
+	float: left;
+	width:260px;
+	height:auto;
+	padding-left:15px;
+}
+
+	#content-section .summaryGraySection .column h3 {
+		color:#666;
+	}
+
+	.summaryGraySection .column ul li{
+		line-height:5px;
+		height:auto;		
+	}
+	.column-wrapper .summary-column-footer{
+		margin-right:0px;
+	}
+	.summary-column-footer .anchorLink{
+		background:url(img/anchor.png) no-repeat;
+		padding-left:14px;
+	}

@@ -1,0 +1,175 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  permissions.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 04/21/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. COPY PERMISSIONS
+/* ########################################################################### */
+
+
+/* ########################################################################### *
+/* ##### COPY PERMISSIONS
+/* ########################################################################### */
+
+.possibleUsersList label,
+.removeUsersList span {
+display: block;
+font-size: 12px;
+white-space:nowrap;
+}
+
+.possibleUsersList span.email {
+	margin-left: 37px;
+	font-size: 11px;
+	color: #666;
+	white-space:nowrap;
+	display:block;
+}
+
+	.ie8 .possibleUsersList span.email,
+	.ie9 .possibleUsersList span.email{
+		margin-left: 42px;
+	}
+
+.removeUsersList span.email {
+	margin-left: 35px;
+	font-size: 11px;
+	color: #666;
+	margin-top:0
+}
+
+#content-section .removeUsersList .remove {
+	background: url("img/btn_remove_red.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	float: left;
+    height: 14px;
+    margin-left: 13px;
+	margin-right: 8px;
+	text-indent: -9999px;
+	top: 3px;
+    width: 14px;
+}
+
+
+.permissionsToCopy .more-details {
+	margin-left: 20px;
+	margin-right: 5px;
+}
+
+#tabbed_box_1 .tabContent ul.permissionsToCopy li,
+#tabbed_box_2 .tabContent ul.permissionsToCopy li {
+	margin: 10px 0;
+	padding-left:15px;
+}
+
+ul.permissionsToCopy li div {
+	font-size: 12px;
+}
+
+ul.permissionsToCopy li div span {
+	color: #999;
+	display:table-caption;
+	width:100px;
+}
+
+ul.permissionsToCopy li div span em {
+	color: #000;
+	white-space:nowrap;
+}
+
+
+.permissionsToCopy .openClose {
+	background: url("img/btn_gray_blue_plus_minus.png") no-repeat scroll -5px -3px transparent;
+	display: block;
+    float: left;
+	height: 14px;
+	margin-right: 5px;
+	position: relative;
+	top: -1px;
+    width: 13px;
+}
+
+.permissionsToCopy .openClose.open {
+	background-position: -5px -23px;
+}
+
+.column-wrapper .column.twoFiveZero {
+float: left;
+    width: 270px;
+}
+
+#content-container .permissionsToCopy table {
+	margin-top: 5px;
+}
+
+#content-container .permissionsToCopy table td {
+	background: url("img/bkg_dotted_line.png") repeat-x scroll 0 top transparent;
+}
+
+#content-container .permissionsToCopy table td {
+	padding: 6px 0px 6px 10px;
+}
+
+#content-container table td.space {
+	width: 20px;
+	padding: 0;
+}
+
+#content-container table td.yesNo {
+	width: 20px;
+	padding: 5px 0 6px 0;
+}
+
+#content-container table td.lock {
+	width: 20px;
+	padding: 5px 0 6px 5px;
+}
+
+.fiveFourEight p {
+	padding: 10px 10px 10px 21px;
+	font-size: 12px;
+}
+
+	.users .title {
+		color: #333;
+		font-size: 12px;
+		font-weight: bold;
+		padding-bottom:10px;
+		border-bottom: dotted 1px #B7B8BA;
+		margin-bottom: 15px;
+	}
+	
+	.title span {
+		font-weight: normal;
+		color: #666;	
+	}
+	
+	.users .user-wrapper {
+		border-bottom: 1px dotted #999999;
+		color: #666666;
+		display: block;	
+		margin-bottom: 5px;
+		padding: 8px 0 8px 14px;
+	}
+	
+		.user-wrapper .name {
+			float: left;
+			font-size: 11px;
+			font-weight: bold;
+			width: 48%;
+			
+		}
+		
+		.user-wrapper .email {
+			font-size: 11px;
+			display: inline-block;
+			margin: 0;
+			width:48%
+		}
+		
+.servicePane .more-details{margin-left:40px}
+.servicePane .noborder span.folderNode{border:none}

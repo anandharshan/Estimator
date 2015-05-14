@@ -1,0 +1,66 @@
+{
+    "new": {
+        "MGMT-BUSINESS-UNIT": {
+            "description": "vRealize Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+        "DAAS-SERVICE": {
+            "description": "VMware Horizon Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+        "VC-HYBRID-SERVICE-PRAXIS": {
+            "description": "VMware vCloud Air OnDemand",
+            "resourceId": "praxisSignUpNewService"
+        },
+        "VC-HYBRID-SERVICE": {
+            "description": "VMware vCloud Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+		"DAAS-SERVICE-PRAXIS": {
+            "description": "VMware DaaS Horizon OnDemand",
+            "resourceId": "serviceConfigurationUrl"
+        }
+    },
+    "add-on": {
+        "MGMT-BUSINESS-UNIT": {
+            "description": "vRealize Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+        "DAAS-SERVICE": {
+            "description": "VMware Horizon Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+        "VC-HYBRID-SERVICE": {
+            "description": "VMware vCloud Air",
+            "resourceId": "serviceConfigurationUrl"
+        }
+    },
+    "renewal": {
+        "MGMT-BUSINESS-UNIT": {
+            "description": "vRealize Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+        "DAAS-SERVICE": {
+            "description": "VMware Horizon Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+        "VC-HYBRID-SERVICE": {
+            "description": "VMware vCloud Air",
+            "resourceId": "serviceConfigurationUrl"
+        }
+    },
+    "header": {
+        "eaAccountName": "qatest0055",
+        "eaAccountNumber": "364571507",
+        "fundName": "Costco Worldwide",
+        "fundGroupId": null,
+        "balance": "-250000",
+        "isXaasFund": "1",
+        "redemptionCurrency": "USD",
+        "redemptionCurrencySymbol": "$",
+        "trueUp" : "0",
+        "activeServices" : true
+        
+    },
+    "praxisProdFamilyArray":["VC-HYBRID-SERVICE-PRAXIS","DAAS-SERVICE-PRAXIS"]
+}

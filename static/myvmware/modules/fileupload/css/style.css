@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/*
+ * jQuery File Upload Plugin CSS Example 1.0.1
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2012, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+.hide{
+	display: none;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.clear{
+	clear: both;
+	padding:0px;
+	margin:0px;
+	height:0px;
+	width:0px;
+}
+.mockInputDiv{
+	border: 1px solid #CCCCCC;
+	border-radius: 2px 2px 2px 2px;
+	height: 22px;
+	margin-right: 28px;
+	margin-top: 3px;
+	padding: 4px 5px 2px;
+	width: 240px;
+}
+.fileupload-progress{
+	width: 345px;
+	margin-left: 0px !important;
+}
+.altUploadLink{
+	margin-left: 5px;
+}
+.btn-primary{
+	background: #2B75B2 url('//www.vmware.com/files/images/fce/bg_buttons.png') repeat-x !important; /* old browsers */
+	background: -moz-linear-gradient(top, #4FB8DC 0%, #399DBF 30%, #2B75B2 80%) !important; /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4FB8DC), color-stop(30%,#399DBF), color-stop(80%,#2B75B2)) !important; /* webkit */
+	text-shadow: none !important;
+	border-radius: 2px !important;
+	font-size: 11px !important;
+	padding: 2px 13px 3px !important;
+	border-style: none !important;
+	border-width: 0px !important;
+}
+/* for addSRattachment page */
+.altUploadTextContainer {
+    height: 25px;
+    margin: 0 0 0 15px !important;
+}
+#anchorPageAfterUpload {
+    height: 95px;
+}
+/* for updateSRattachment page */
+.htmlUploadDiv .altUploadTextContainer{
+	margin-left: 0px;
+	margin-top: -15px;
+}
+.marginTop5{
+	margin-top: 5px;
+}
+.selectedFilesContainer{
+	height: 95px;
+}
+.selectedFilesContainer .ctrlHolder{
+	margin-right: 0px;
+}
+.progress{
+	margin-bottom: 0px !important;
+	height: 26px;
+}
+/*css overrding for progress bar - START*/
+.progress-success.progress-striped .bar, .progress-striped .bar-success{
+	background-color: #399DBF !important;
+	background-image: none !important;
+}
+.progress.active .bar{
+	animation: none !important;
+}
+.progress-success.progress-striped .bar.completed{
+	background-color: #00B800 !important;
+}
+/*css overrding for progress bar - END*/
+.textEllipsis{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: inherit;
+}
+
+/* remove bottom space for the applet container */
+.noBottomSpaces{
+	margin-bottom: 0px !important;
+	padding-bottom: 0px !important;
+}
+.fileupload-progress .progressBG{
+	background: url("../img/bgApplet-x.gif") repeat-x scroll 0 0 transparent !important;
+	border: 1px solid #CCCCCC;
+}
+.whiteBG{
+	background: #fff;
+	margin-top: 10px;
+	padding-top: 3px;
+	height: 85px;
+}
+.relative{
+	position: relative;
+}
+.htmlUploadDiv{
+	position: absolute;
+	top: 135px;
+	left:0px;
+	width: 420px;
+}
+.customLabel{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 10px;
+}
+#htmlUploadContainer{
+	visibility: hidden;
+}
+html.ie .progress{
+	height: 22px;
+}
+.progress-animated.progress-success.progress-striped .bar, .progress-striped .bar-success{
+	background: url("../img/progressbar.gif") repeat-x scroll 0 0 transparent !important;
+	filter: none;
+}
+#appletUploadContainer{
+	height: 113px;
+}

@@ -1,0 +1,126 @@
+
+{  
+   "entity":{  
+      "identifierDetails":[  
+         {  
+            "identifierId":"11111",
+            "encodedIdentifierId":"1111aaaa",
+            "identifierName":"VSPP Air Identifier",
+            "accountName":"Costco Worldwide",
+            "accountNumber":"11278302",
+            "currentCosumption":"1233.988",
+            "commitLevel":"1233.988",
+            "balance":"1111",
+            "contractNumber":"<12345>",
+            "aggregatorName":"EDM Tunes",
+            "currencyCode":"USD",
+            "currencySymbol":"$",
+            "thresholdLimit":"10000",
+            "thresholdFlag":false,
+            "isCommitAdmin":true,
+            "contractTerm":"24",
+            "startDate":"03/15/2014",
+            "endDate":"03/15/2016",
+            "customerNumber":"123",
+            "users":[  
+               {  
+                  "customerNumber":"002",
+                  "lastName":"abc",
+                  "firstName":"cde",
+                  "email":"abc@email.com",
+                  "isAdminRole":true
+               },
+               {  
+                  "customerNumber":"003",
+                  "lastName":"abc1",
+                  "firstName":"cde1",
+                  "email":"cde1@abc1.com",
+                  "isAdminRole":false
+               },
+               {  
+                  "customerNumber":"0004",
+                  "lastName":"abc1",
+                  "firstName":"cde1",
+                  "email":"cde1@abc1.com",
+                  "isAdminRole":false
+               }
+            ]
+         },
+         {  
+            "identifierId":"1111",
+            "encodedIdentifierId":"1111aaaa",
+            "identifierName":"VSPP Air Identifier",
+            "accountName":"Costco Worldwide",
+            "accountNumber":"11278302",
+            "currentCosumption":"1233.988",
+            "commitLevel":"1233.988",
+            "balance":"1111",
+            "contractNumber":"<12345>",
+            "aggregatorName":"EDM Tunes",
+            "currencyCode":"USD",
+            "currencySymbol":"$",
+            "thresholdLimit":"10000",
+            "thresholdFlag":true,
+            "contractTerm":"24",
+            "isCommitAdmin":true,
+            "startDate":"03/15/2014",
+            "endDate":null,
+            "customerNumber":"123",
+            "users":[  
+               {  
+                  "customerNumber":"123",
+                  "lastName":"abc",
+                  "firstName":"cde",
+                  "email":"abc@email.com",
+                  "isAdminRole":true
+               },
+               {  
+                  "customerNumber":"1234",
+                  "lastName":"one",
+                  "firstName":"two",
+                  "email":"two@one.com",
+                  "isAdminRole":false
+               }
+            ]
+         }
+         ,
+         {  
+            "identifierId":"1111",
+            "encodedIdentifierId":"1111bbbbbb",
+            "identifierName":"VSPP Air Identifier",
+            "accountName":"Costco Worldwide",
+            "accountNumber":"11278302",
+            "currentCosumption":"1233.988",
+            "commitLevel":"1233.988",
+            "balance":"1111",
+            "contractNumber":"<12345>",
+            "aggregatorName":"EDM Tunes",
+            "currencyCode":"USD",
+            "currencySymbol":"$",
+            "thresholdLimit":"10000",
+            "thresholdFlag":true,
+            "contractTerm":"24",
+            "isCommitAdmin":true,
+            "startDate":"03/15/2014",
+            "endDate":null,
+            "customerNumber":"123",
+            "users":[  
+               {  
+                  "customerNumber":"123",
+                  "lastName":"abc",
+                  "firstName":"cde",
+                  "email":"abc@email.com",
+                  "isAdminRole":true
+               },
+               {  
+                  "customerNumber":"1234",
+                  "lastName":"three",
+                  "firstName":"four",
+                  "email":"four@three.com",
+                  "isAdminRole":false
+               }
+            ]
+         }
+      ]
+   }
+}

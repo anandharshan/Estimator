@@ -1,0 +1,16 @@
+<section tabindex="-1" role="dialog" aria-labelledby="removeUserModal" aria-hidden="true" class="overlay" id="removeUserModal">
+    <div class="modal-header">
+        <span class="close" data-dismiss="modal" aria-hidden="true" ng-click="modalClose()"></span>
+        <h3 class="modal-title">{{globalVars.noPermissions}}</h3>
+    </div>
+    <span class="errorMessage">{{removeErrorMessage}}</span>
+    <div class="modal-body clearfix">
+        <p>You do not have sufficient permissions to purchase Add-ons. Go to <a href="/group/vmware/users-permissions"> My Permissions</a> to request access. </p> 
+     
+   </div>
+    <!-- Content End -->
+    <div class="modal-footer clearfix">
+        <a href="{{globalVars.addonExportURL}}&_VM_serviceInstanceIdForAddons={{ServiceId}}&_VM_nfrInstance=false&_VM_internalInstance=false"  class="btn btn-primary"  ng-click = "close()">{{globalVars.availableAddons}}</a>
+        <a href="javascript:void(0);" class="btn btn-default" ng-click = "close()">{{globalVars["cancel"]}}</a>
+    </div>
+</section>

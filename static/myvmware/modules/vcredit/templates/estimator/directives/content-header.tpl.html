@@ -1,0 +1,40 @@
+<article>
+    <div class="bottomBorder" style="margin: 0px;">
+        <div class="row margin-bottom-14 margin-right-0">
+            <div class="col-md-8">
+                <h1 class="component-heading font-size-40 margin-bottom-0">{{pageHeader}}</h1>
+            </div>
+            <div class="estimator_heading ng-scope">
+                <div class="row margin-bottom-14 margin-right-0">
+                    <div ng-if='!firstTimeUser' class="col-md-3 margin-top-20 estimated_credits pull-right">
+                        <div>
+                            <a data-toggle="dropdown" href="javascript:void(0);" ng-click="functionForTagging()" class="dropdown-toggle btn-link ng-binding estimate_credit_text">{{globalVars.totalEstimatedCredits}}:
+                                <span class="estimated_credits_amount">{{totalCartAmount | number : 0}}<span class="caret"></span></span>
+                            </a>
+                            <div class="dropdown-menu estimator_popover">
+                                <ul>
+                                    <li class="prdouctName" ng-repeat="product in creditCartInfo">
+                                        <span class= "estimateLabel">{{globalVars.estimate}} {{creditCartInfo.length - $index}}:</span>
+                                        <span class="est_service_label">{{product.serviceName}}</span>
+                                        <span ng-if = "((product.serviceName) != (product.serviceType))" class="est_service_label"> - {{product.serviceType}}</span>
+                                        <div class="est_service_credit">{{globalVars.creditNeeded}} {{product.cost | number : 0}}&nbsp;{{(product.currentCredit == true) && globalVars.configurationInProgress || ''}}</div>
+                                    </li>
+                                </ul>
+                                <a ng-click= "showModalPopupToGoTOSumaryPage()" class="btn-link font-size-14">{{globalVars.viewConsolidatedEstimate}}
+                                    <span class="glyphicon glyphicon-chevron-right chevron-link"></span> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-if='firstTimeUser' class="col-md-3 margin-top-20 estimated_credits pull-right">
+                        <div>
+                            <a class="dropdown-toggle btn-link ng-binding estimate_credit_text">{{globalVars.totalEstimatedCredits}}:
+                                <span class="estimated_credits_amount">{{totalCartAmount | number : 0}}</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

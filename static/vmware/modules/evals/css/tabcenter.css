@@ -1,0 +1,243 @@
+#content-container.wide #content {
+	margin:-64px 0 0 -25px;
+}
+#main {
+    background: url(/static/vmware/modules/evals/img/bg_header.png) repeat-x scroll 0 0 transparent;
+    padding: 57px 25px 32px 25px;
+    width: 940px;
+}
+#head {
+	width:600px; 
+    padding:0 18px;
+}
+#head h1 {
+	font-size:30px; 
+    color:#fff;
+	padding-top: 20px;
+	margin: 0 0 18px;
+}
+.white {
+	color:#fff;
+}
+#tab_content{
+	clear:both; 
+}
+ul.evalhead {
+	list-style:outside; 
+	margin:0px; 
+	padding:0px 20px; 
+	float:left; 
+	font-size:13px;
+}
+#content .evalhead li {
+	margin-top:7px;
+}
+.dbox {
+	padding:20px; width:100%;
+}
+#logon {
+	background:url(/static/vmware/modules/evals/img/bg_logon1.png) no-repeat; 
+	width:288px; 
+	float:right; 
+	margin-top:-6px;
+}
+#logon p {
+	padding:20px 20px 0px 20px; 
+	margin-bottom:10px;
+}
+#logontab {
+	margin:0 9px 10px;
+}
+#logontab ul {
+	list-style:none outside none; 
+	margin:0px; 
+	padding:0px; 
+	height:24px;
+	text-align: center;
+}
+#logontab ul li {
+	background:url(/static/vmware/modules/evals/img/bg_logontab.png) no-repeat; 
+	float:left; 
+	display:inline; 
+	height:24px; 
+	margin:0; 
+	padding:0;
+}
+#logontab ul li a {
+	display:block; 
+	height:24px; 
+	padding:5px 6px 0px 12px;
+}
+#logontab ul li#logontab1.active {
+	background-position: 0 0; 
+	font-weight:bold; 
+	color:#333;
+	height:34px;
+}
+#logontab1.active a, #logontab2.active a {
+	font-weight:bold; 
+	color:#333;
+}
+#logontab ul li#logontab1 {
+	background-position: 0 -36px; 
+	width:139px;
+	height: 34px;
+}
+#logontab ul li#logontab2 {
+background-position: 0 -36px;
+width: 131px;
+height: 34px;
+}
+#logontab ul li#logontab2.active {
+	background-position:0 0; 
+	height:34px; 
+	position:24px 0;
+}
+#logon #tab_login, #logon #tab_register {
+	background:url(/static/vmware/modules/evals/img/bg_log.png) no-repeat; 
+	height:200px; margin:0px 9px;
+}
+#logon form {
+	padding: 15px;
+}
+#logon input[type="text"], #logon input[type="password"] {
+	width:230px; 
+	height:15px;
+	margin-bottom:4px; 
+	padding:2px;
+}
+#logon .desc {
+	font-size:11px; 
+	color:#999; 
+	width:140px; 
+	float:left;
+}
+.green {
+	color:#0c8d63; 
+	font-weight:bold; 
+	font-size:18px;
+}
+#tabcenterinfo {
+    background:url(/static/vmware/modules/evals/img/bg_logon.png) no-repeat;
+    height:288px;
+    width:288px;
+    float:right;
+    margin-top:20px;
+}
+#tabcenterinfo p {
+    padding:20px 20px 0px 20px;
+    margin-bottom:10px;
+}
+#logout_link {
+	margin: 0 0 20px 0;
+    padding: 0;
+    font-size: 10px;
+    font-weight: bold;
+}
+#tabSolo {
+    width: 100%;
+}
+#tabSolo #left .solo_inner {
+    margin: 30px 0px 0px 20px;
+}
+#tabSolo #left #feature_content {
+    width: 100%;
+}
+#tabinfobox {
+	background:url(/static/vmware/modules/evals/img/bg_login1new.png) no-repeat; 
+	width:284px; 
+	float:right; 
+	margin-top:-6px;
+}
+#tabinfobox p {
+	margin-bottom: 5px;
+	padding: 20px 20px 0px;
+}
+.tabinfoboxbottom {
+    background: url(/static/vmware/modules/evals/img/bg_logonold.png) no-repeat scroll left bottom transparent;
+    float: right;
+    height: 10px;
+    width: 284px;
+}
+.logonbottom {
+    background: url(/static/vmware/modules/evals/img/bg_logon.png) no-repeat scroll left bottom transparent;
+    float: right;
+    height: 10px;
+    width: 288px;
+}
+.logonbottom {
+    background: url(/static/vmware/modules/evals/img/bg_logonold.png) no-repeat scroll left bottom transparent;
+    float: right;
+    height: 10px;
+    width: 288px;
+}
+.loggedInBottom {
+	clear: both;
+    float: right;
+    margin-bottom: 65px;
+    width: 284px;
+}
+.ie7 .loggedInBottom {
+    background: url(/static/vmware/modules/evals/img/bg_logon.png) no-repeat scroll left bottom transparent;
+    clear: both;
+    float: right;
+    margin-bottom: 65px;
+    width: 284px;
+    height: 8px;
+}
+#tabinfobox p {
+    margin: 0px !important;
+    padding: 6px 14px 0 !important;
+	font-size:12px; 
+	color:#333;
+}
+#tabinfobox p.name {
+	font-size:22px; 
+	padding:0px 14px 4px !important; 
+	ling-height: auto
+}
+#tabinfobox p.c666 {color:#666;}
+#tabinfobox .line {
+	border-top:1px solid #cacace;  
+	line-height:2px; 
+	margin: 10px 10px 0px;
+}
+.evalloginbox {
+	float:right; 
+	width:284px; 
+	background:url(/static/vmware/modules/evals/img/bg_logon1.png) no-repeat top left; 
+}
+.evalloginbox #tabinfobox.inner {
+	background:url(/static/vmware/modules/evals/img/bg_newlog1.png); 
+	width:270px; 
+	margin:10px 0px 0px 7px; 
+	float:none; 
+	padding:5px 0px 20px 0px;
+}
+.evalloginbox #tabinfobox.inner a.button,
+.evalloginbox #tabinfobox.inner button{
+	margin-left:0;
+}
+/*.evalloginbox .strip {
+	background:url(/static/vmware/modules/evals/img/bg_newstrip.png) no-repeat top left; 
+	padding:0px 26px; 
+	height:41px; 
+	border-top:1px solid #dadbdb;
+}
+
+.evalloginbox .note {
+	font-size:12px; 
+	color:#666; 
+	margin:0px; 
+	line-height:41px; 
+	float:left; 
+	width:206;
+}
+.evalloginbox .day {
+	font-size:26px;
+	font-weight:bold; 
+	color:#333; 
+	float:left; 
+	line-height:38px;
+}
+*/

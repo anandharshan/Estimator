@@ -1,0 +1,256 @@
+.productDetailsSection {
+  background: #2F2F32 url(img/bg_gray_gradient.png) repeat-x;
+  color: #FFF;
+  margin-bottom: 10px;
+  padding: 15px;  
+  font-size: 12px;
+}
+.productDetails {
+  border-bottom: #B7B8BA 1px solid;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 5px 300px 7px 0px;
+  margin-left:15px;
+  color: #666;
+  position: relative;
+  word-wrap:break-word;
+} 
+  .productDetails span {
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    right:0px;
+    top:10px;
+  }
+  .productDetails .supportLevel {padding-left:50px;}
+
+.requesterDetailsColumn{
+  float:left;
+  width:49%;
+}
+.requesterDetailsColumn .second{
+  float:left;
+  width:400px;
+}
+.requesterDetails .requesterDetailsColumn .label{
+  position:static;
+  width:35%;
+  display:block;
+  float:left;
+  font-weight: bold;
+  word-wrap:break-word;
+}
+.requesterDetails .requesterDetailsColumn .detail{
+	float:left;
+	width:60%;
+	color:#FFF;
+	display:block;
+	word-wrap:break-word;
+}
+  .requesterDetails .requesterDetailsColumn .detail a{color: #ACE3FF;}
+.productDetails .productDetailsColumn .title{
+  font-size:10px;
+  color:#999;
+}
+/*added from old*/
+#content-section .support_request_step1 fieldset {margin-left:15px;}
+#content-section .support_request_step1 .header{
+	background: #2F2F32 url(img/bg_filter_header.jpg) repeat-x;
+	color: white;
+	/*height: 34px;*/
+	font-size:12px;
+	border:1px #000 solid;
+}
+#content-section .support_request_step1 .header h2{
+	font-size:16px;
+	font-weight:bold;
+	border:0px !important;
+	margin:0px;
+	padding-bottom:5px;
+}
+#content section.attach-files .header h2{
+	padding-bottom:5px;
+	border-bottom:1px solid #B7B8BA;
+}	
+#content section.attach-files table td{padding: 10px 5px 10px 15px;}	
+#content-section .support_request_step1 .ctrlHolder select{
+	width: 220px;	
+	border: 1px solid #999999;
+}
+#content-section .support_request_step1 .ctrlHolder input[type="text"],#content-section .support_request_step1 .ctrlHolder input[type="email"]{width: 215px;}
+#content-section .support_request_step1 .ctrlHolder input[type="checkbox"] {
+    width: 10px;
+    margin-right: 5px;
+}
+#content-section .support_request_step1 .input-wrapper.issueDescription textarea{
+	width:380px;
+	height: 150px;
+}
+#content-section .support_request_step1 fieldset h2,
+#content-section form fieldset h2  {
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom:8px;
+}
+  #content-section form fieldset h2.required  {position: relative;}
+    #content-section form fieldset h2.required span  {
+      font-size: 12px;
+      font-style: italic;
+      font-weight: normal;
+      float: right;
+      margin-right: 10px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+textarea {
+  width: 317px;
+  min-height: 70px;
+  padding: 5px;
+  margin-bottom:5px;
+}
+.placeholder{color: #999;}
+.uploadModule .ctrlHolder {
+  margin-left: 0;
+  font-size: 11px;
+}
+.uploadModule textarea {width: 185px;}
+.ie7 .uploadModule textarea {width: 165px;}
+.uploadModule label {width: 89px;}
+.uploadModule .title {
+  font-weight: bold;
+  font-size: 11px;
+  color: black;
+  padding-bottom: 3px;
+}
+/*added from old*/
+#content-section .ctrlHolder.widerNote{
+	clear:both;
+	margin-left:0px;
+	margin-bottom:0px;
+	margin-right:0px;
+}
+#content-section .ctrlHolder.widerNote .note.wide,
+#content-section .support_request_step1 .note.wide{
+	color:#666;
+	width:590px;
+	font-size: 12px;
+}
+#content-section .ctrlHolder.widerNote .note.wide.error_msg,
+#content-section .support_request_step1 .note.wide.error_msg{
+	margin-left:0px;
+}
+#content-section .ctrlHolder.widerNote .note.wide label.error,
+#content-section .support_request_step1 .note.wide label.error{
+	font-size:12px;
+	margin-left:0;
+}
+#content-section .ctrlHolder.widerNote .note.wide p{
+	float:left;
+	width:560px;
+	margin-bottom:0px;
+	color:#333;
+}
+#content-section .attach-files textarea{
+	width: 352px;
+	resize: none;
+}
+#content-section .attach-files .input-wrapper.issueDescription{
+	margin-bottom:10px;
+}
+/*End added from old*/
+.ctrlHolder .attachFileButton {
+	text-align: right;
+	margin-top:10px;
+}
+  .ctrlHolder .attachFileButton .note {width: auto;}
+.buttonPanel{
+  padding:10px 0px 10px 10px;
+  text-align:right;
+} 
+#content-section .table-horizontal h2{
+	border-bottom:1px solid #ccc; 
+	padding-bottom:5px; 
+	margin-bottom:20px
+}
+  .buttonPanel .buttonPanelLabel{
+    float:left;
+    text-align:left;
+    font-size:10px;
+    width:300px;
+  }
+  .buttonPanel .panelQuestion{
+    font-size:10.5px;
+    font-weight:bold;
+  }
+  .buttonPanel .panelAttention{
+    font-size:10.5px;
+    font-weight:bold;
+    color:#F00;
+  }
+.support-content-wrapper {margin: 10px 10px 30px 10px;}
+.requesterDetailsItem {margin-bottom: 5px;}
+.ie7 .buttonPanelLabel {width: 280px;}
+/*Override content.css*/
+#content-section .ctrlHolder .note {font-size: 11px;}
+  .ctrlHolder .note.italic {font-style: italic;}
+.input-wrapper .note {width: 300px;}
+.input-wrapper input[type="file"]{width: 307px;}
+#content-container table thead {background: #252525 url("img/bkg_header_black.png") repeat-x;}
+#content-container table thead th {color: #FFF;}
+#content-container table td.attachmentName {width: 100px}
+#content-container table td.fileType {width: 70px}
+#content-container table td.size {width: 70px}
+#content-container table td.dateTime {width: 125px}
+.bottomarea {padding-top: 0px;}
+.buttons {text-align: right;}
+#content-section section .attention p {font-size: 12px;}
+#content-section section .attention p:first-child{margin-bottom:3px;}
+  .attention strong {color: #d9541e; }
+.ctrlHolder {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+#content-section .tabbed_area section.renewal-info,#content-section .tabbed_area section.additional-info{padding-left:15px;}
+#addAttachmentTbl {
+	color:#000;
+	margin-left:15px;
+}
+#prefered_partner{width:170px; padding: 3px 0 5px;}
+#prefered_partner textarea#preferred_partner{border:0;display:none; !important;}
+.changeContainer { float: left; } /* padding-top: 9px; removed */
+.partner_data { padding-bottom:9px; }
+/*#selPartner{margin-top:3px} */
+#partnervalidation {margin-left: 231px;}
+#partnerCountryErrorMsg, #partnerNameErrorMsg{
+	display: block;
+    float: left;
+    margin-left: 217px;
+}
+#partnerNameErrorMsg{
+  width: 350px;
+}
+.ie7 #partnerName{
+  bottom: 149px;
+}
+#partnerStateErrorMsg{
+	display: block;
+    margin-left: 412px;
+    width: 162px;
+}	
+/*#partnerStateErrorMsg{float:right;}*/
+.nobold{font-weight:normal;}
+.errmsg {color:#D9541E !important;}
+.ie7 #time_zone,
+.ie8 #time_zone {
+	width:330px !important;
+}
+.input-wrapper.issueDescription a.tooltip, 
+.input-wrapper.issueDescription button.tooltip{
+	margin: 0px 0 0px 1px !important;
+	vertical-align: top !important;
+}
+#description_default{float:left;}
+/*SDP*/
+#svcInstances table {width:340px;}
+#svcInstances .dataTables_wrapper {min-height:75px;}

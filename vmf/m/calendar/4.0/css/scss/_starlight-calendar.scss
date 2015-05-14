@@ -1,0 +1,113 @@
+.starlight{
+	/* months header */
+	.datepick-month th{
+		&{
+			border-color: transparent;
+		}
+		&, a{
+			background-color: transparent;
+			color: black;
+			font-weight: bold;
+		}
+	}
+
+	.datepick-month td .datepick-today{
+		background-color: transparent;
+	}
+
+	/* backgrounds and borders for all the TDs - START */
+	.datepick-month td{
+		border-width: 0px;
+		background-color: transparent;
+		.datepick-weekend{
+			background-color: transparent;
+		}
+		.datepick-highlight {
+			background-color: transparent;
+			border-color: #0099CC;
+		}
+		.datepick-other-month{
+			border: 1px solid transparent;
+		}
+
+		/* background for selected-date items */
+		.datepick-selected, .datepick-month td a.datepick-selected:hover{
+			background-color: #CBF1FD;
+			border-color: #CBF1FD;
+			color: #3489B2;
+		}
+	}
+	/* backgrounds and borders for all the TDs - END */
+
+	/* Color and bg-color of Every date in the calendar - START */
+	.datepick-month a{
+		background-color: transparent;
+		border: 1px solid transparent;
+		color: #0099CC;
+	}
+	/* Color and bg-color of Every date in the calendar - END */
+
+
+	/* headers of individual internal calendars - START */
+	.datepick-month-header, .datepick-month-header select, .datepick-month-header input{
+		background-color: #FFFFFF;
+		color: #000;
+	}
+	/* headers of individual internal calendars - END */
+
+
+	/* border for full-datepicker-popup - START */
+	.datepick{
+		border-radius: 0px;
+		border-color: #CCCCCC;
+		box-shadow: 1px 1px 3px #CCCCCC;
+	}
+	.datepick-month{
+		border-top-width: 0px;
+		border-bottom-width: 0px;
+		border-left-width: 0px;
+		border-right: 1px solid #CCCCCC;
+		margin: 5px 0;
+	}
+	.datepick-month:last-child{
+		border-right-width: 0px; 
+	}
+	/* border for full-datepicker-popup - END */
+	.datepick-nav,
+	.datepick-ctrl{
+		display: none;
+	}
+	.hasDatepick{
+	    background: url("images/calendar_icon.png") no-repeat 95% center #FFF !important; 
+	    border: 1px solid #ccc;
+	    cursor: auto !important;
+	    margin-right: 0 !important;
+	    margin-top: 6px;
+	}
+
+	.datepick-popup.selectToDate{
+		.datepick-hovered{
+			background-color: #CBF1FD;
+			border-color: #CBF1FD;
+			color: #3489B2;
+		}
+	}
+	.datepick-month{
+		.starlight-datepick-next,
+		.starlight-datepick-prev{
+			display: inline-block;
+			width: auto;
+			padding: 0 5px;
+			display: none;
+			&:hover{
+				background-color: transparent;
+			}
+		}
+		&.first .starlight-datepick-prev{
+			display: inline-block;
+		}
+		&.last .starlight-datepick-next{
+			display: inline-block; 
+		}
+	}
+}

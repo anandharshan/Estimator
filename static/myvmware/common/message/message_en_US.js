@@ -1,0 +1,2 @@
+label.common.ie6.unsupportedMessage=You are using an unsupported browser. <br />VMware does not support Internet Explorer 6 or lower so some parts of the website may not display properly. <br />Upgrade your browser to Internet Explorer 7 or higher for the best experience.
+label.common.enterValidEmailIDformat=Please enter a valid Email format.

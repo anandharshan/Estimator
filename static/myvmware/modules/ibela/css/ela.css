@@ -1,0 +1,1896 @@
+/* =================== :: Commmon Styling Selectors :: ===================*/ 
+
+.clearfix {
+  *zoom: 1;
+  clear:both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+h1,h2,h3{
+	margin-bottom:10px;
+	color:#333;	
+}
+
+h1{ font-size:20px; }
+h2{ font-size:18px; }
+h3{ font-size:16px; }
+h4{font-size:14px; font-weight:bold;padding:0 0 10px 0}
+
+
+/* =================== :: Research Account Form :: ===================*/ 
+
+.researchAcctContainer .profile a {
+    border-right: 1px dotted #666666;
+    padding: 0 5px;
+}
+.researchAcctContainer .profile a.userFeedBackbtn {
+    border: none;
+    padding-right: 0px;
+}
+
+.researchAcctContainer .helpCourse {
+    clear: both;
+    display: block;
+    float: right;
+    text-align: left;
+    margin-top: 2px;
+}
+
+
+.researchAcctContainer{	
+	width:100%; 
+}
+
+.researchAcctContainer .fLeft{
+	float:left;
+}
+
+.researchAcctContainer .fRight{
+	float:right;
+}
+
+.researchAcctContainer .header-fixed { 
+    position: fixed; 
+    top: 0px; 
+    display:none;
+}
+
+.researchAcctContainer .addScroll {
+	overflow-x:scroll;
+	*overflow-y:hidden;
+	*position: relative;
+}
+
+
+.researchAcctContainer .dataTableContainer{
+	clear:both;
+}
+.accountLookupSearchbtn {
+	width: 100%;
+	clear: both;
+	text-align: right;
+}
+.accountLookupSearchbtn p {
+    font-size: 11px !important;
+    font-weight: bold;
+    margin: 0 !important;
+}
+ 
+.legend{
+	float: right;
+} 
+   
+/* .researchAcctContainer #researchAccountsForm,
+.researchAcctContainer #manageSavedEAForm{
+	padding:10px;
+}  */
+ 
+.filter-content-wrapper {
+	background: #F0F0F0;
+	position: relative;
+}
+.acc-filter-header{
+	background: #2f2f32 url(/static/myvmware/common/css/img/bg_filter_header.jpg) repeat-x;
+	border-top: 1px solid #030303;
+	border-left: 0px solid #030303;
+	border-right: 1px solid #030303;
+	border-bottom: 0;
+	font-weight: bold;
+	font-size: 11px;
+	padding: 8px 5px 7px 15px;
+
+
+
+}
+.researchAcctContainer .acc-filter-header.active a{
+	background: url(/static/myvmware/common/css/img/btn_arrow_expand.png) no-repeat 0 0;
+	display: block;
+	padding-left: 17px;
+	padding-top: 2px;
+	color: #fff;
+}
+.researchAcctContainer .acc-filter-header a{
+	background: url(/static/myvmware/common/css/img/btn_arrow_right.png) no-repeat 0 0;
+	display: block;
+	padding-left: 17px;
+	padding-top: 2px;
+	color: #fff;
+	
+}
+#eaDataTable_filter {
+	float: right;
+	margin: 10px 5px 10px 0px;
+}
+
+
+#researchAccountsForm .bottom-area{
+	width:435px;
+	float:left;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+ 
+#researchAccountsForm .bottom-area .deepSearch{
+	padding:0;
+	float: left;
+}
+#researchAccountsForm .bottom-area  span{
+	padding-top: 1px;
+	float: left;
+	padding-left: 2px;
+}
+
+#researchAccountsForm .bottom-area  span.first{
+	margin-right:10px;
+}
+ 
+#manageSavedEAForm .bottom-area{
+	margin:0 0 0 110px;
+	float:left;
+	clear: both;
+}
+
+.researchAcctContainer .rowscontainer {
+	float: left;
+	width: 100%;
+}
+ 
+ 
+.researchAcctContainer .rows{
+	float:left;
+	width:100%;	
+	clear:both;
+	margin: 0 0 6px 0;
+} 
+
+.researchAcctContainer .radio-primarykey{
+	float:left;
+	display:none;
+}
+
+.researchAcctContainer .primaryKeyMessage{
+	float:left;
+	padding:5px 0 0 10px;
+	color:#87C03D;
+	font-weight:bold;
+}
+
+.researchAcctContainer .radiogrp{
+	float:left;
+	width:16px;
+	height:16px;
+	margin:4px 5px 0 0px;
+}
+
+.researchAcctContainer .input-wrapper{
+	float:left;
+	width:312px;
+	
+}
+
+.researchAcctContainer .icons{ 
+	background:url(/static/myvmware/common/css/img/small_minimize_maximize_button.png); 
+	text-indent: 99999px;
+	width:16px;
+	height:16px; 
+}
+
+
+.researchAcctContainer .radiogrp{
+	width:16px;
+	height:17px; 
+	background:url(/static/myvmware/common/css/img/icon_Default.png);
+	opacity:0.5;
+	 /* works for IE 5+. */
+    filter:alpha(opacity=30); 
+
+    /* works for IE 8. */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+ 
+.researchAcctContainer .radiogrp.checked{ 
+	opacity: 1;
+	 /* works for IE 5+. */
+    filter:alpha(opacity=100); 
+
+    /* works for IE 8. */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.dataTable .even{
+	background-color: #F6F6FF;
+}
+
+#researchAcctContainer .dataTable .groupRow,
+#researchAcctContainer .dataTable .group{
+	background-color: #666;
+	color:#FFF;
+	font-weight:bold;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+}
+#researchAcctContainer .dataTable .disabledRow{
+     background: #ccc;
+     color: #efefef;
+}
+
+#researchAcctContainer .paging_full_numbers {
+	height: 22px;
+	line-height: 22px;
+	width: auto;
+	margin: 20px 0 0 0;
+
+}
+
+ 
+
+#researchAccountsForm .label-field{
+	padding:0 0 10px 0;
+	font-weight:bold;
+	display:block;
+	cursor:default;
+}
+
+#researchAccountsForm .input-field{	
+ 	padding:2px 5px;
+ 	float:left;
+ 	height:17px;
+ 	font-size:12px;
+ 	width:300px;
+ 	border:1px solid #ccc;
+  
+}
+.researchAcctContainer .dataTableActionBtns input[disabled='disabled']{
+	width: auto;
+	height: auto;
+	float: none;
+}
+
+.researchAcctContainer .add, 
+.researchAcctContainer .del{
+	float:left; 
+	margin:4px 0 0 5px;
+	text-indent: -9999px;	
+}
+
+.researchAcctContainer .icons.add{	 
+	background-position:0px 0;
+	text-indent: -9999px;
+}
+
+.researchAcctContainer .icons.del{	 
+	background-position:0 16px; 
+}
+
+ 
+.researchAcctContainer .dataTableInnerContainer{
+	width:100%;
+	clear:both;
+	/*overflow-x:scroll;*/
+}
+
+ 
+.researchAcctContainer .dataTable{
+ 	clear:both; 	
+  	border:1px solid #dedede;  	
+  	width:100%;
+}
+
+.researchAcctContainer .dataTable .tooltipText{
+ 	color:#3399CC;
+}
+
+.researchAcctContainer .dataTable .strong{
+ 	color:#6DC815;
+ 	font-weight:bold;
+}
+
+.researchAcctContainer .dataTable .weak{
+ 	color:#C6110D;
+ 	font-weight:bold;
+}
+
+
+#researchAcctContainer .dataTable .checkedRow,
+#researchAcctContainer .dataTable .even.checkedRow{
+ 	background:#efefef;
+}	
+
+#researchAcctContainer .dataTable .checkedRow td{ 	 
+ 	border-bottom:1px solid #ccc;
+ 	color: #999;  	
+}
+
+.researchAcctContainer .dataTableActionBtns{
+	width: 100%;
+	text-align:right;
+	clear: both;
+	margin-bottom: 5px;
+	margin-right: 0px;
+}
+.researchAcctContainer .dataTableActionBtns .dataRefresh {
+    float: left;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.dataTableActionBtns a.button {
+	*margin: 0px 5px 0px 0px !important;
+	*padding: 6px 15px;
+	*vertical-align: middle;
+}
+
+.researchAcctContainer .slide{
+	clear:both;
+	width:100%;
+}
+ 
+
+#saveAccountsModalWindow  .errorMessageWindow, #errorMsgRelationWindow,
+.researchAcctContainer .errorMessage,.accountLookupContainer .errorMessage{	
+	margin-bottom:15px;
+	color: #b94a48;
+	padding: 8px 35px 8px 14px;
+	border: 1px solid #fbeed5;
+	color: #b94a48;
+	background-color: #f2dede;
+	border-color: #eed3d7;
+}
+ 
+ 
+#saveAccountsModalWindow .saveEaYes {
+	margin: 5px 0px 10px 5px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+#saveAccountsModalWindow  .saveEaNo {
+	margin: 5px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+#saveAccountsModalWindow  .selectID {
+	margin: 10px 0px 10px 5px;
+}
+
+#saveAccountsModalWindow  .submitSaveEa {
+	margin-top: 10px;
+	margin-left: 222px;
+}
+
+#saveAccountsModalWindow textarea{
+    padding:0;
+	margin:0;
+	font-size:12px;
+	margin:0;
+	width:250px;
+	height:50px;
+	border:1px solid #ccc;
+	
+}
+
+/* =================== :: Show Relationship Form :: ===================*/ 
+.manageSavedEaHeader {
+    margin-bottom: 5px;
+}
+.manageSavedEaHeader > h4 {
+    display: inline-block;
+	*display:inline;
+    zoom:1;
+    width: 200px;
+}
+#publishEaModalWindow #simplemodal-container {
+    border: medium none;
+    width: 505px !important;
+}
+.filterContainer {
+	width: 650px;
+	border: 1px solid #CCCCCC;
+    float: right;
+    padding: 10px 20px;
+	margin-bottom: 20px;
+}
+.filterContainer label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+    width: 64px;
+}
+.filterContainer  label.labelexclude{
+	margin: 3px 0px 0px 0px;
+}
+.filterContainer .filterButtons .exclude {
+    margin-right: 3px;
+    vertical-align: middle;
+}
+.filterButtons{
+	text-align: center;
+	 clear: both;
+}
+.filterContainer .filterInput{
+    width: 200px;
+	border: 1px solid #CCCCCC;
+    font-size: 12px;
+    height: 17px;
+    padding: 2px 5px;
+	}
+	
+.filterContainer > button {
+    margin-left: 255px !important;
+}
+.searchContainer {
+    clear: both;
+    float: left;
+    width: 630px;
+}
+
+.closeWindow,.closeWindow:hover {
+    margin-left: 168px !important;
+}
+.alignKeys .addToPrimaryList,.addToPrimaryList:hover {
+    margin-right: 77px !important;
+}
+.alignKeys {
+    margin-left: 42px;
+}
+#manageSavedEAForm .filterContainer {
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: 489px;
+}
+#manageSavedEAForm  .filterContainer .filterInput {
+    border: 1px solid #CCCCCC;
+    font-size: 12px;
+    height: 17px;
+    padding: 2px 5px;
+    width: 150px;
+}
+#manageSavedEAForm  .researchAcctContainer .fRight {
+    float: right;
+    width: 200px;
+}
+#manageSavedEAForm  .tableFilterContainer {
+    border: 1px solid #CCCCCC;
+    margin: 0 0 10px;
+    width: 200px;
+}
+#manageSavedEAForm .tableFilterContainer .rulesHd {
+    background: none repeat scroll 0 0 #666666;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 5px 0;
+    width: 200px;
+}
+#manageSavedEAForm  .tableFilterContainer .rulesContainer {
+    height: 79px;
+    margin: 0 !important;
+    overflow-y: scroll;
+    width: 200px;
+}
+#manageSavedEAForm .tableFilterContainer .rulesContainer li {
+    background: none repeat scroll 0 0 transparent !important;
+    border-bottom: 1px solid #EFEFEF;
+    padding: 5px 0 5px 10px !important;
+    width: 170px;
+}
+#manageSavedEAForm  .tableFilterContainer .rulesContainer li .ruleName {
+    display: inline-block;
+    width: 109px;
+}
+#manageSavedEAForm  .tableFilterContainer .rulesContainer li .strong {
+    display: inline-block;
+	margin-right: 0px;
+
+}
+#publishEaModalWindow .modalContent {
+    width: 450px;
+}
+
+.modalContent .body p.displayFooter {
+    margin-bottom: 5px;
+    margin-top: 9px;
+}
+
+#manageSavedEAForm .row-form{
+	width:100%;
+	float:left;
+	margin-bottom:10px;
+}
+
+#manageSavedEAForm .label-field{
+	width: 92px;
+	float:left;
+	text-align:right;
+	margin-right:20px;
+	font-weight:bold;
+	padding:1px 0 0 0;
+}
+
+#manageSavedEAForm .span-label-field{
+	width:150px;
+	float:left;
+	text-align:right;
+	margin-right:10px;
+	font-weight:bold;
+	padding:1px 0 0 0;
+}
+
+#manageSavedEAForm .input-field{
+ 	padding:2px 5px;
+ 	float:left;
+ 	height:17px;
+ 	font-size:12px;
+ 	width:150px;
+ 	border:1px solid #ccc;
+ 	margin-left:10px;
+	margin-right: 10px;	
+}
+
+#manageSavedEAForm .select-field{
+	padding:2px;
+	float:left;
+	margin:0;
+	width:142px;
+	border:1px solid #ccc;
+}
+
+#manageSavedEAForm .select-field.secondary {
+    margin-right: 10px;
+}
+
+#manageSavedEAForm .textarea-field{
+	padding:0;
+	margin:0;
+	float:left;
+	font-size:12px;
+	margin:0;
+	width:250px;
+	height:50px;
+	border:1px solid #ccc;
+}
+
+ 
+/* overriding autosuggest css - START */
+.researchAcctContainer .searchRelContainer{
+    float:left;
+    width: 600px;
+}
+
+.researchAcctContainer .savedStatus{
+    float:left;
+    width:371px;
+	margin-top: 10px;
+}
+.researchAcctContainer .lastUpdated{
+    float:right;
+    margin-right: 438px;
+}
+.lastUpdated .spanText {
+    margin-right: 20px;
+}
+.researchAcctContainer .input_wraper {
+    width: 261px;
+    display: inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.researchAcctContainer .expand{
+
+	background:#383838;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px 0;
+	float: left;
+}
+
+.researchAcctContainer .expand a{
+	background:url(/static/myvmware/common/css/img/btn_expand_collapse.png) no-repeat;
+	font-weight: bold;
+	background-position: 0px -25px;
+	color: #fff;
+	text-decoration: none;
+	float: right;
+	clear: both;
+	width: 18px;
+	height: 12px;
+	margin-right: 10px;
+}
+
+.researchAcctContainer .expand a.close{
+	background-position: 0px -5px;
+}
+
+#researchAccountsForm ul.as-selections,#manageSavedEAForm ul.as-selections{
+    margin:0;
+    border: none;
+    box-shadow: none;
+    overflow:visible; /* added by Avishek */ 
+}
+#researchAccountsForm ul.as-selections li.as-original input,#manageSavedEAForm ul.as-selections li.as-original input{
+    /*
+    padding: 2px;
+    height: auto;
+    width: 100%;
+    */
+    font-size: inherit;
+                
+}
+#researchAccountsForm ul.as-selections li.as-original,#manageSavedEAForm ul.as-selections li.as-original{
+    margin: 0 4px 0 0;
+    padding: 0;
+    display: block;
+    float: none;
+}
+#researchAccountsForm ul.as-list,#manageSavedEAForm ul.as-list{
+    background: #FFFFFF;
+    border-radius: 0px;
+    box-shadow: 1px 2px 3px #222222; 
+    z-index: 101;
+    margin-top:23px;
+    *margin-top:0;
+}
+#researchAccountsForm ul.as-list li,#manageSavedEAForm ul.as-list li{
+    font-size: 12px;
+    padding:5px; /* Modified*/
+    background:none;/* Modified*/
+    border-bottom:1px solid #efefef;
+    display:block;
+}
+#researchAccountsForm li.as-result-item.active,#manageSavedEAForm li.as-result-item.active{
+    border-color: transparent;
+    text-shadow: none;
+    background-color: #69737d;
+    color: #FFFFFF;
+}
+#researchAccountsForm li.as-result-item,
+#researchAccountsForm li.as-message,
+#manageSavedEAForm li.as-result-item,
+#manageSavedEAForm li.as-message{
+    border: medium none;
+    border-radius: 0px;
+}
+#manageSavedEAForm .savedRelTypeCont ul,#manageSavedEAForm .savedRelSecTypeCont ul{
+	overflow:visible;
+}
+
+
+/* overriding autosuggest css - END */
+
+.researchAcctContainer .bottomLeft{
+	float: left;
+    margin-left: 22px;
+    margin-top: 3px;
+    width: 178px;
+	font-weight: bold;
+	font-size: 11px;
+}
+.researchAcctContainer ul.tabs{
+	clear: both!important;
+
+}
+.researchAcctContainer .researchAccBtn{
+	float:left;
+
+}
+
+#researchAccountsForm .bottomLeft p {
+	margin-bottom: 5px;
+}
+
+/* ======================== DataTable :: START :: Vertical Column Headers ======================== */
+
+#researchAcctContainer .dataTable tbody tr td.strength {
+     padding: 9px 0 8px 5px !important;
+}
+
+#researchAcctContainer .dataTable th {
+     vertical-align: bottom;
+}
+
+#researchAcctContainer .dataTable th.vh {
+     width: 25px !important;
+     padding: 0;
+}
+
+#researchAcctContainer .dataTable th.vh span {
+     display: block;
+     height: 115px;
+     background: url(img/ELATableHeading1.png) no-repeat;
+}
+
+#researchAcctContainer .dataTable th.vh.ruleCompanyMaster span {
+	width:25px;
+    background-position: 0 0;
+}
+
+#researchAcctContainer .dataTable th.vh.ruleSavedEA span {
+	width:25px;
+    background-position: -25px 0;
+}
+
+#researchAcctContainer .dataTable th.vh.ruleDuns span {
+	width:25px;
+    background-position: -50px 0;
+}
+
+#researchAcctContainer .dataTable th.vh.ruleOrderBooking span {
+	width:25px;
+    background-position: -75px 0;
+}
+
+#researchAcctContainer .dataTable th.vh.ruleCases span {
+	width:25px;
+    background-position: -100px 0;
+}
+
+#researchAcctContainer .dataTable th.vh.hist span {
+	 width:25px;
+     background-position: -125px 0;
+}
+
+#researchAcctContainer .dataTable th.vh.ruleEmailDomain span {
+     width:25px;
+	 background-position: -150px 0;
+}
+
+#researchAcctContainer .dataTable th.vh.ruleNormalizedName span {
+	width:25px;
+     background-position: -175px 0;
+}
+
+#researchAcctContainer .dataTable th.vh.address span {
+	width:25px;	
+	background-position: -200px 0;
+}
+
+#researchAcctContainer .dataTable th.vh.ruleContact span {
+     width:25px;
+	 background-position: -225px 0;
+}
+
+#researchAcctContainer .dataTable th.vh.ruleEla span {
+     width:25px;
+	 background-position: -250px 0;
+}
+
+#researchAcctContainer .dataTable th.vh.manual span {
+     width:25px;
+     background-position: -275px 0;
+}
+
+#researchAcctContainer th.wrapColumn{
+	width:110px;
+}
+#researchAcctContainer td.wrapColumn{
+	width:110px;
+}
+#researchAcctContainer td.sites.wrapColumn{
+	width: 35px;
+}
+
+/* ======================== DataTable :: END:: Vertical Column Headers ======================== */
+span.profile{
+  float: right;
+  margin-right: 16px;
+  padding: 5px 10px;
+  text-align : right;
+}
+
+/*#researchAccountsForm .dataTables_scrollBody.fixed {
+     height: 200px!important;
+}
+*/
+
+#researchAcctContainer .dataTable tbody .wrapText,
+#researchAcctContainer .dataTable tbody .openDtModal{
+	width: 100px;
+	word-wrap:break-word;
+	float:left;
+	overflow:hidden;/* fixing bug-59011*/
+}
+
+.dataTable tbody .wrapText{
+	width: 75px;
+	word-wrap:break-word;
+	float:left;
+	overflow:hidden;/* fixing Bug : 00063252 */
+}
+
+
+#researchAcctContainer .dataTable tbody td.sites .openDtModal{
+	width: 35px;
+}
+
+/*----------------for manages ea tab---------------------------*/
+.relationSearch, .relationSearchNoRecords{
+	clear: both;
+	border-top: 6px solid #c7c7c7;
+	padding-top:10px;
+} 
+
+#manageSavedEAForm .warning-msg{
+	margin:0;	
+}
+
+.idType {
+margin-left: 10px;
+}
+.researchAcctContainer #manageSavedEAForm .relationSearch h4{
+	margin-top: 5px;
+	padding-bottom:10px;
+
+}
+
+#manageSavedEAForm{
+	padding-top:10px;
+}
+.researchAcctContainer #manageSavedEAForm ul li {
+	text-decoration: none;
+	display: block;
+	background: none;
+	margin: 5px 0px;
+}
+.researchAcctContainer #manageSavedEAForm .accountRelated{
+	border-bottom:1px solid;
+}
+/*----------------for manages ea tab---------------------------*/
+
+#researchAccountsForm ul.as-list li.as-message, 
+#manageSavedEAForm ul.as-list li.as-message {
+     display:none;
+}
+
+.footer strong{
+ text-decoration: underline;
+}
+
+
+
+
+
+
+
+/* ########################################################################### *
+/* ##### TABLES
+/* ########################################################################### */
+
+#simplemodal-container table {
+	border-color: #FFF;
+    border-width: 0 0 0px 0px;
+    border-style: solid;
+    font-size: 12px;
+    width: 100%;
+	cellpadding: 0;
+}
+
+.ie7 #simplemodal-container table{
+	width: 100%;
+}
+#simplemodal-container table thead{
+	border-left:1px solid #252525;
+}
+#simplemodal-container table th {
+	color: #FFF;
+    margin: 0;
+    padding: 4px 5px 4px 15px;
+    background: #383838 url("img/bkg_header_black.png") repeat-x; /*Added back to fix table header background issue **Nina**/
+    text-align: left;
+	font-size: 10px;
+	font-weight:normal;
+	border: 1px solid #252525;
+	border-width: 0 1px 0 0;
+	-webkit-padding-before : 3px;
+}
+#simplemodal-container #productSummaryTableParent table th{padding:3px 5px 5px 15px;}
+.firefox.mac #simplemodal-container #productSummaryTableParent table th,.chrome.mac #simplemodal-container #productSummaryTableParent table th{padding:5px 5px 4px 15px;}
+.ie7 #simplemodal-container table th {padding-top:3px;}
+.ie8 #simplemodal-container table th{padding-bottom:5px;}
+.firefox.mac #simplemodal-container table th{padding-top:3px;}
+.firefox.mac #simplemodal-container table#tbl_upgradelic th,.firefox.mac #simplemodal-container table#tbl_downgradelic th,
+.chrome.mac #simplemodal-container table#tbl_upgradelic th,.chrome.mac #simplemodal-container table#tbl_downgradelic th{padding-top:4px;}
+#simplemodal-container table.pad_oneFive thead tr th{
+	padding-left:14px;
+}
+
+#simplemodal-container table td {
+    margin: 0;
+    padding: 9px 5px 8px;/*changed left padding from 15px to 0-praneet*/
+	background: url("img/bkg_dotted_line.png") repeat-x scroll 101% bottom transparent;
+}
+div.dataTables_scrollBody table tbody tr td {padding-left:15px !important;} /*specific to datatable table tds*/
+#simplemodal-container table td.pad_top_three{
+	padding-top:3px;
+}
+#simplemodal-container table.pad_oneFive tbody tr td{
+	padding-left:14px;
+}
+#simplemodal-container table tr td.with_moredetails{
+	padding-left:11px;
+}
+	#simplemodal-container table td.noborder{
+		border:none;
+		background:none;
+	}
+	#simplemodal-container table td.dataTables_empty.leftalgn{
+		text-align:left;
+		font-weight:normal;
+	}
+
+	/*Fix for additional left borders in Firefox*/
+	@-moz-document url-prefix() { #simplemodal-container table td {
+ 		border: 0px #FFF solid; }
+    }
+	#simplemodal-container div.withFirstChildPad table td:first-child{
+		padding-left:15px;
+		width:216px;
+	}
+
+#simplemodal-container table.expanded td {
+    padding: 15px 10px 13px 13px;
+}
+
+#simplemodal-container table td.pad_left{
+	padding-left: 35px;
+}
+#simplemodal-container table td img{
+	margin-right:10px;
+}
+#simplemodal-container table td.center.no_rght_margin img{
+	margin-right:0px;
+}
+#simplemodal-container table td.spacer{
+	padding:10px;
+}
+
+#simplemodal-container table td.productName {
+	font-weight: bold;
+}
+
+	.ie7 #simplemodal-container table td.productName{
+		width: 310px;
+	}
+
+	.ie8 #simplemodal-container table td.productName {
+		width: 320px;
+	}
+	
+#simplemodal-container table tr:first-child td {
+	border-top: none;
+}
+
+	#simplemodal-container table tr.open td:first-child {
+		background: none;
+	}
+
+#simplemodal-container table tr.more-details td {
+	padding-top: 0px;
+	padding-left: 4px;
+}
+
+#simplemodal-container table tr.nopad_lic td{
+	padding:0px;
+}
+#simplemodal-container table td.textBlack {
+	color: #000;
+}
+#simplemodal-container table tr td:last-child {
+	/*padding-right: 0;*/
+}
+
+#simplemodal-container table.contract_view_tbl tr{
+	cursor:pointer;
+}
+	
+#simplemodal-container table.contract_view_tbl tr td{
+	padding:8px 0px 8px 15px;
+	border:none;
+}
+#simplemodal-container table tr.hover td{
+	background:url("img/bkg_dotted_line.png") repeat-x scroll 0 bottom #EEF6FF;
+	cursor:pointer;
+}
+
+#simplemodal-container table tr.active td{
+	background:url("img/bkg_dotted_line.png") repeat-x scroll 0 bottom #def;
+}
+
+
+/*#simplemodal-container table.contract_view_tbl tr td:first-child{ //Commented: Earlier first child is Radio button
+	text-align: center;
+    width: 42px;
+	padding-left:0px
+}*/
+#simplemodal-container table.contract_view_tbl tr td:last-child{
+	width:70px;
+}
+.showDtModalWindow .modalContent {
+	width: 600px;
+}
+
+/* To set minimum height for table body container to 150px :: to avoid scroll when it has one records */
+#showDtModalWindow .modalContent .dataTables_scrollBody{
+	height:150px!important;
+}
+
+.textRed {
+	color: #D9541E;
+}
+
+.textBlue {
+	color: #1170a0;
+}
+
+.textGreen {
+	color: #090;
+}
+
+#simplemodal-container table tr.row_header{
+	color: #000000;
+	font-weight:bold;
+	background-color:#eee;
+}
+#simplemodal-container table tr.row_header td{
+	padding: 11px 10px 9px 13px;
+	border:none;
+}
+
+#simplemodal-container table tbody tr  td.child{
+	padding-left:40px;
+}
+#simplemodal-container table tr.selected td{
+	background-color: #def;
+	/*color: #FFF;
+	font-weight: bold;*/
+}
+	/*#simplemodal-container table tr.selected td:first-child{
+		background-color: #FFFFFF;
+	}*/
+	
+	#simplemodal-container table tr.selected td.spacer,
+	#simplemodal-container table tr:hover td.spacer {
+		background: #FFF;
+	}
+	
+#simplemodal-container .table-wrapper {
+	padding-bottom: 10px;
+	background: url("img/bkg_tabs_bottom_new.png") repeat-x scroll 0 bottom transparent;
+}	
+	#simplemodal-container .table-wrapper table td{
+		padding-left:15px;
+	}
+	#simplemodal-container .table-wrapper .tdOpenCloseButton{
+		width:4%;
+	}
+	#simplemodal-container .table-wrapper .tdAccount{
+		width:26%;
+	}
+	#simplemodal-container .table-wrapper .tdAccess{
+		width: 70%;
+	}
+	#simplemodal-container .table-wrapper.fixedTable table {
+		table-layout: fixed;
+		word-wrap: break-word;
+	}
+	#simplemodal-container .table-wrapper table .updateCol{
+		width:15%;
+	}
+	#simplemodal-container .table-wrapper table .descripText{
+		width:70%;
+	}
+	#simplemodal-container .table-wrapper table .statusCol{
+		width:15%;
+	}
+	#simplemodal-container .table-wrapper .accounts_details {
+		background: #EEE;
+		border: 1px solid #CCC;
+		padding: 15px;
+		margin: 15px 0px;
+	}
+	#simplemodal-container .accounts .link_account_view{
+		margin-bottom:10px;
+	}
+
+		#simplemodal-container .table-wrapper .accounts_details h4 {
+			border-bottom: 1px solid #b5b6b8;
+			margin-top: 15px;
+			margin-bottom: 5px;
+			padding-bottom: 5px;
+			position: relative;
+		}
+
+			#simplemodal-container .table-wrapper .accounts_details h4 span {
+				font-weight: normal;
+				font-style: italic;
+				float: right;
+				margin-right: 10px;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+
+			}
+			#simplemodal-container .table-wrapper .productColumn{
+				width: 220px;
+				word-wrap:break-word;
+			}
+			#simplemodal-container .table-wrapper .evalsProductColumn{
+				width: 200px;
+				word-wrap:break-word;
+			}
+			#simplemodal-container .table-wrapper .dateColumn{
+				width: 100px;
+				word-wrap:break-word;
+			}
+			
+			#simplemodal-container .table-wrapper td.btnColumn span {
+				border-right:1px dotted #AAAAAA;
+				padding-right:5px;
+				margin-right: 5px;
+			}
+			
+#simplemodal-container td .button {
+	margin-right: 5px;
+	margin-top: -4px;
+}
+
+#simplemodal-container .table-wrapper .link-wrapper {
+	padding: 4px 15px;
+}
+
+#simplemodal-container table .center {
+	text-align: center;
+}
+
+#simplemodal-container tr.clickable {
+	cursor: pointer;
+}
+
+#simplemodal-container tr.clickable:hover td {
+	background-color: #EEF6FF;	
+}
+/*#simplemodal-container table tr.clickable:hover td:first-child {
+	background-color: #FFF;
+}
+#simplemodal-container table tr.selected:hover td {
+	background-color: #069;
+}
+/*#simplemodal-container table tr.selected:hover td:first-child {
+	background-color: #FFF;
+}*/
+.bell {
+	width: 20px;
+}
+
+.upgradeAvailable {
+	color: #F00;
+}
+
+.urgent {
+	color: #F00;
+}
+
+#simplemodal-container .table-wrapper .linkHolder {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding: 0 0 0 5px;
+	font-weight: bold;
+	
+}
+
+
+/* To fix BUG-00013798 we need below class */
+#simplemodal-container .linkHolder ul li.getHelp a{
+	background: url("img/quicklinks.png") no-repeat scroll 2px -186px transparent;
+    color: #228BC0;
+    display: block;
+    font-size: 12px;
+    padding: 10px 16px 9px 27px;
+}
+/*For linkhoder in Accounts Widget*/
+#simplemodal-container .accounts .table-wrapper .linkHolder {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 0;
+	font-weight: bold;
+	
+}
+	#simplemodal-container .accounts .table-wrapper .account_length{
+		background: url("img/bkg_dotted_line.png") repeat-x scroll 0 bottom transparent;
+		padding-bottom:10px;
+		margin-bottom:15px;
+	}
+	#simplemodal-container .linkHolder .wrap {
+		width: 200px;
+		float: left;
+		margin: 0 10px 0 0;
+	}
+	#simplemodal-container .accounts .linkHolder .wrap.firstcolumn{
+		margin-left:15px;
+	}
+	#simplemodal-container .accounts header h5{
+		font-size:12px;
+		font-weight:normal;
+		text-transform:none;
+	}
+	#simplemodal-container .support .linkHolder .wrap{
+		font-size:13px;
+		width: 212px;
+	}
+	#simplemodal-container .table-wrapper .linkHolder ul.wrap li{
+		background: url("img/bullet_square_green.gif") no-repeat scroll left center transparent;
+		padding: 4px 0 4px 15px;
+	}
+		#simplemodal-container .linkHolder .noListStyle {
+			list-style: none;
+			float: left;
+			margin: 0 10px 0;
+			font-size:13px;
+		}
+		#simplemodal-container .linkHolder .noListStyle li.getHelp a{
+			background: url("img/quicklinks.png") no-repeat scroll 2px -186px transparent;
+			font-size:13px;
+			padding: 0 16px 0 27px;
+		}
+		#simplemodal-container .linkHolder .noListStyle li {
+			list-style: none;
+			background: none;
+			font-size:13px;
+			padding-top: 4px;
+			padding-bottom: 3px;
+			padding-left: 0;
+		}
+		
+		#simplemodal-container .linkHolder .noListStyle li img {
+			vertical-align: middle;
+			margin-right: 5px;
+		}
+		#simplemodal-container .linkHolder .noListStyle li.supContract a{
+			background: url("../img/btn_sup_contracts.png") no-repeat;
+			padding-left:25px;
+			padding-top:1px;
+			display:block;
+			height:20px;
+		}
+/* ##### TABLES WITH SOLID BORDER ##### */
+.solid-border { }
+
+#simplemodal-container .solid-border table td {
+	background: url("img/bkg_dotted_line.png") repeat-x scroll 0 bottom transparent;
+}
+
+#simplemodal-container .solid-border table td.tdAlert {
+	background:none!important;
+}
+
+	/*Fix for additional left borders in Firefox*/
+	@-moz-document url-prefix() { #simplemodal-container .solid-border table td {
+ 		border: 0px #FFF solid; }
+    }
+
+#simplemodal-container .solid-border table td.spacer {
+	border-top: none;
+}
+
+
+/*===================  Account Lookup :: Section :: START ====================*/
+
+/*.researchAcctContainer .researchAccountsForm .vmStarAccountContainer{
+	width:49%;
+	float:left;
+	
+}
+
+.researchAcctContainer .researchAccountsForm .eaNosContainer{
+	width:48%;
+	float:left;
+	padding-left:10px;
+}
+
+.researchAccountsForm .bottom-area{
+	width:100%;
+	text-align:center;
+	display:inline-block;
+	*zoom:1;
+	background:#efefef;
+	margin-top:5px;
+	border-top:1px solid #dedede;
+	padding:10px 0 10px 0;
+	 
+}
+ 
+
+.researchAccountsForm  legend {
+	margin-bottom: 5px;
+	padding:0;
+	text-align:left;
+	font-weight:bold;
+}
+
+.researchAccountsForm  fieldset{
+   border:1px solid #ccc;
+   padding:5px 10px;
+   display:inline-block;
+   *zoom:1px;
+   
+}
+ 
+
+.researchAccountsForm .deepSearch {
+	padding: 0;
+	display:inline-block;
+    *zoom:1px;
+    vertical-align:top;
+}
+.researchAccountsForm .bottom-area  label {
+	padding-top: 1px;
+	display:inline-block;
+    *zoom:1px;
+	padding-left: 2px;
+}
+
+.researchAccountsForm .bottom-area  label.first {
+	margin-right: 10px;
+}
+
+.researchAccountsForm .bottom-area  .buttonContainer {
+	vertical-align:top;
+	margin:2px 0 0 0;
+	display:inline-block;
+    *zoom:1px;
+}
+*/
+#accountLookupModalWindow .footer {
+	text-align: right;
+}
+.accountLookupContainer {
+    display:inline-block;
+    *zoom:1px;
+	width: 100%;
+}
+
+#accountLookupModalWindow .modalContent {
+	width:650px;
+}
+
+.accountLookupContainer .section-wrapper {
+	background: #efefef;
+	display: inline-block;
+	width: 100%;
+	padding: 10px 0 0 0;
+	text-indent: 10px;
+}
+
+.searchCriteriaSection {
+	background: #666;
+	padding: 10px;
+}
+
+.searchCriteriaSection label {
+	color: #ccc;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 0 5px 0;
+}
+
+#accountLookupContainer .section-wrapper p{
+	font-size:12px!important;
+}
+
+.accountLookupContainer .searchCriteriaSection  .searchCriteria {
+	border: 1px solid #333;
+	width: 165px;
+	height: 24px;
+	font-size: 12px;
+}
+
+.accountLookupContainer .searchCriteriaSection .searchField {
+	font-size: 12px;
+	border: 1px solid #333;
+	width: 250px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+	border-radius: 0px;
+	padding: 5px;
+}
+
+.searchCriteriaSection .col {
+	margin: 0 10px 0 0;
+	display: inline-block; 
+	zoom: 1; 
+	*display: inline;
+}
+
+.resultAccountsContainer {
+	width: 100%;
+	background: #efefef;
+	float: left;
+}
+
+.resultAccountsContainer h2 {
+	font-size: 13px;
+	padding: 0 0 0px 0;
+	margin:0 0 5px 0;
+}
+
+.resultListSection {
+	float: left;
+	width: 343px;
+	padding: 10px;
+	background: #efefef;
+	border: 1px solid #ccc;
+	border-right: none;
+	height: 232px;
+}
+
+#accountLookupContainer .addToListSection {
+	float: right;
+	padding: 10px;
+	width: 263px;
+	border: 1px solid #ccc;
+	background: #efefef;
+	height: 232px;
+}
+#accountLookupContainer .resultListSection p{
+	margin-bottom: 5px;
+	margin-right: 0px;
+}
+#accountLookupContainer .resultListSection p span {
+	margin-right: 5px;
+	font-weight: bold;
+	font-size: 12px;
+	display: inline-block;
+    *display:inline;
+    *zoom:1;
+
+}
+
+#accountLookupContainer .selectallResult {
+    margin-bottom: 2px;
+    vertical-align: middle;
+}
+#accountLookupContainer .resultSelection {
+	text-align: right;
+	display: inline-block;
+	margin-left: 85px;
+}
+
+ .resultAccountsContainer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 11px;
+}
+
+.resultAccountsContainer .resultContent {
+	border: 1px solid #ccc;
+	height: 155px;	
+	overflow-y: scroll;
+	margin-bottom: 7px;
+}
+
+.resultAccountsContainer .addToListSection ul {
+	list-style: none;
+	margin: 0;
+	height: 73px;
+	overflow-y: scroll;
+	margin-bottom:8px;
+	padding: 0;
+	font-size: 11px;
+	border: 1px solid #ccc;
+}
+
+
+.resultAccountsContainer .addToListSection h2 span {
+	 color:#FF0000;
+}
+.researchAcctContainer .hideen {
+    display: none;
+}
+
+.resultAccountsContainer ul li {
+	background: #dedede;
+	padding: 5px 5px;
+	border-bottom: 1px solid #fff;
+	cursor: pointer;
+}
+
+.resultAccountsContainer ul li.selected {
+	background: #666;
+	padding: 5px 5px;
+	color: #FFF;
+	border-bottom: 1px solid #fff;
+}
+
+.resultAccountsContainer ul li[data-type="EA"] {
+	/* background: url(img/e-icon.png) no-repeat right center;*/
+	  
+}
+
+.resultAccountsContainer ul li[data-type="SFDC"] {
+	 
+}
+
+.accountLookupContainer .accountId {
+	width: 107px;
+	display: inline-block;
+	padding: 0 5px;
+	vertical-align: top;
+	font-weight: bold;
+	word-wrap: break-word
+
+}
+
+.accountLookupContainer .accountName {
+
+	display: inline-block;
+	padding: 0 5px;
+	width: 100px;
+	word-wrap: break-word;	
+
+}
+
+.accountLookupContainer .contacts {
+	width: 75px;
+	display: inline-block;
+	padding: 0 5px;
+	vertical-align: top;
+	font-weight: bold;
+	word-wrap: break-word;
+	text-align: center;
+}
+
+.hide{
+	display:none;
+}
+#saveAccountsModalWindow .modalContent {
+    width: 609px;
+}
+#saveAccountsModalWindow .modalContent .body {
+    width: 608px;
+}
+
+#quotableAssetsModelWindow .modalContent .body {
+    width: 664px;
+}
+#quotableAssetsModelWindow .modalContent {
+    width: 640px;
+}
+
+/* ########################################################################### *
+/* ##### CHILD TABLE CONTENT
+/* ########################################################################### */
+.child-table { }
+
+#simplemodal-container .tabbed_area .activitiesLog table table.child-table {
+	margin-left: -4px;
+}
+
+#simplemodal-container table td table.child-table {
+	width: 100%;
+	border-bottom: 0px;
+}
+
+#simplemodal-container table td table.child-table.wide {
+	width: 102%;
+	border-bottom: 0px;
+}
+
+#simplemodal-container table tbody td table.child-table tbody td {
+	padding: 15px 10px 13px 13px;
+}
+
+#simplemodal-container table td table.child-table td {
+	background: url("img/bkg_dotted_line.png") repeat-x scroll 0 bottom transparent;
+	border-top: 0px;
+}
+
+#simplemodal-container table td table.child-table tr:last-child td {
+	background: none;
+}
+
+.modalContent .body p.bodyHeader {
+	font-size: 18px;
+	padding-left: 4px;
+}
+
+.modalContent .addScroll {
+	overflow-x: scroll;
+}
+
+#selectOppQuote{
+	width:105px;
+}
+
+#errorMsgWindow{
+	margin-bottom:15px;
+	color: #b94a48;
+	padding: 8px 35px 8px 14px;
+	border: 1px solid #fbeed5;
+	color: #b94a48;
+	background-color: #f2dede;
+	border-color: #eed3d7;
+}
+
+#statusMsg{
+	font-size: 14px;
+	padding: 5px 5px 5px 0px;
+}
+/*-----------Saved Ea Lookup code -------START-------------*/
+ .showNames ul li {
+    list-style: none outside none;
+    margin-bottom: 7px;
+}
+ .nameSearchInput {
+    height: 16px;
+    margin: 0 10px;
+}
+.showNames h6 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.showNames .inputEl {
+	width: 5%;
+	display: inline-block;
+	padding-left: 0px;
+}
+.showNames .accountSerchName {
+	width: 65%;
+	display: inline-block;
+}
+.showNames .accountSerchNumber {
+	width: 30%;
+	display: inline-block;
+}
+.searchHeadings li {
+	background: #eee;
+	padding: 10px;
+}
+.searchHeadings {
+	margin: 0px;
+}
+.searchRelContainer .ajaxfire {
+	margin: 0px !important;
+}
+.searchRelContainer .searchEaNames {
+    background: url("/static/myvmware/common/css/img/search_icon.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 16px;
+    margin-top: 3px;
+    text-indent: -99999px;
+    width: 16px;
+}
+/*-----------Saved Ea Lookup code -------END-------------*/
+.tblError{
+	background-color: #CCCCCC;
+    font-size: 14px;
+    text-align: center;
+}
+
+.simplemodal-container .help {
+	display: inline-block;
+	*display: inline;
+	zoom:1;
+	vertical-align: bottom;
+	width: 16px;
+	height: 16px;
+	background: url(/static/myvmware/common/css/img/btn_help.png) no-repeat 0px 0px;
+	text-indent: -9999px;
+}
+
+/*--------------Filter results ------------------*/
+.tableFilterContainer{
+     width:300px;
+     border:1px solid #ccc;
+     margin:0 0 10px 0;
+}
+
+
+.tableFilterContainer .rulesContainer{
+     width:300px;
+     height:79px;
+     overflow-y: scroll;
+     margin:0!important;
+     
+}
+
+.tableFilterContainer .rulesHd{
+     background:#666;
+     padding:5px 0;
+     width:300px;
+     color:#FFF;
+     display:inline-block;
+    *zoom:1px;
+}
+
+.tableFilterContainer .ruleNameHd{
+     width:150px;
+     display:inline-block;
+    *zoom:1px;
+    font-weight:bold;
+    padding:0 0 0 10px;
+}
+
+
+.tableFilterContainer .ruleStrongHd, .tableFilterContainer .ruleWeakHd{
+     width:65px;
+     display:inline-block;
+    *zoom:1px;
+    font-weight:bold;
+}
+
+
+.tableFilterContainer .rulesContainer li{
+     background:none!important;
+     padding:5px 0 5px 10px!important;
+     border-bottom:1px solid #efefef;
+     width:267px;
+}
+
+
+.tableFilterContainer .rulesContainer li .ruleName{
+     width:152px;
+     display:inline-block;
+    *zoom:1px;
+}
+
+.tableFilterContainer .rulesContainer li .strong{
+     margin-right:50px;
+     display:inline-block;
+    *zoom:1px;
+     
+}
+
+
+.tableFilterContainer .rulesContainer li .weak{
+     display:inline-block;
+    *zoom:1px;
+     
+}
+/*-------------------End of Filter results ---------------------*/
+.message{
+	padding: 4px;
+	background-color: rgba(20,20,30,0.3);
+	display: inline-block;
+	color: white;
+	width: 190px;
+	margin-left: 5px;
+}
+/*---BI dashboard redirect changes----*/
+.loadingWrapper {
+	       padding-bottom: 40px;
+	       padding-left: 43%;
+	       padding-top: 40px;
+	       text-align: center;
+	       width: 100%;
+	     }
+	    .loading {
+	      margin: 10px auto 0;
+	      width: 150px;
+	    }
+	.loading_big {
+	    background: url("/static/myvmware/common/css/img/loading_32.gif") no-repeat scroll 0 0 transparent;
+	    color: #666666 !important;
+	    display: block;
+	    font: 20px Arial !important;
+	    height: 32px;
+	    padding: 3px 0 0 43px !important;
+	    text-align: left;
+	}
+
+/*---BI dashboard redirect changes----*/	
+.genericError{
+	background-color: #CCCCCC;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 12px;
+}
+
+#researchAccountsForm .clearAllBtn {
+    margin-left: 7px !important;
+}
+#userFeedBackModalWindow .bottomArea {
+    text-align: right;
+}
+
+#userFeedBackModalWindow label {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    font-weight: bold;
+}
+#userFeedBackModalWindow select{
+	border: 1px solid #333;
+	width: 165px;
+	height: 24px;
+	font-size: 12px;
+}
+.warnMessage{
+  color : red;
+}
+
+/* --------------------------------  User Preferences modal window  ------------------------------------*/
+#userPreferencesModalWindow .userfilterContainer .userPreferencerulesContent ul{
+  margin: 0px;
+}
+#userPreferencesModalWindow .userfilterContainer .userPreferencerulesContent ul li {
+  list-style-type: none;
+    padding: 4px 0 4px 0px;
+}
+
+#userPreferencesModalWindow .userfilterContainer label {
+    display: inline-block;
+    width: 100px;
+    *display: inline;
+    *zoom:1;
+}
+#userPreferencesModalWindow .userFilterContent > p {
+    margin: 0 ;
+    padding: 4px 0 4px 0px;
+}
+#userPreferencesModalWindow .ruleNameHd, .userFilterContent > h6 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#userPreferencesModalWindow .userPreferencerulesContent.fLeft {
+    width: 250px;
+}
+#userPreferencesModalWindow .bottomArea {
+    text-align: right;
+    clear: both;
+}
+a.showMore{
+ color : blue;
+ text-decoration: none;
+ font-size: 11px;
+}
+
+a.showMore.disabled{
+	text-decoration: none;
+	color: #999;
+	cursor: auto;
+}
+
+.relationSearchContent div > h4{
+	display : inline-block;
+}
+.manageSavedEaHeader > span, a.refreshTab {
+	color: blue;
+}

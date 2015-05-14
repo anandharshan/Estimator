@@ -1,0 +1,85 @@
+div.sbox_cont {
+    border: 1px solid #999;
+    cursor: pointer;
+    position:relative;
+}
+
+div.sbox_cont div.header {
+    float: left;
+    background: #a3c2e8;
+}
+
+div.sbox_cont div.header div.lbl {
+    float: left;
+    background: #f0f0f0;
+}
+
+div.sbox_cont div.header div.lbl div, div.sbox_cont div.header div.btn div {
+    padding: 2px 5px 2px 5px;
+}
+
+div.sbox_cont div.header div.btn {
+    float: right;
+    text-align: center;
+}
+
+div.sbox_cont div.header div.btn div {
+    background: url(/files/images/sbox/arrow.gif) no-repeat 2px 2px;
+    text-indent: -9999px;
+}
+
+div.sbox_cont div.body {
+    clear: both;
+}
+
+div.sbox_cont div.body ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position:absolute;
+    left:-1px;
+    display:none;
+    border-top: 1px solid #999;
+}
+
+div.sbox_cont div.body ul li {
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    padding: 0 !important;
+    margin: 0;
+}
+
+div.sbox_cont div.body ul li a {
+    padding: 2px 5px 2px 5px;
+    display: block;
+    margin: 0;
+    color: #000;
+    background: #fff;
+}
+
+div.sbox_cont div.body ul li div.sbLabel {
+    padding: 2px 5px 2px 5px;
+    display: block;
+    margin: 0;
+    color: #000;
+    background: #fff;
+    font-weight:bold;
+}
+
+div.sbox_cont div.body ul li a {
+    padding: 2px 5px 2px 5px;
+    display: block;
+    margin: 0;
+    color: #000;
+    background: #fff;
+}
+
+div.sbox_cont div.body ul li a.selected {
+    background: #99ccff;
+}
+
+div.sbox_cont div.body ul li a:hover {
+    background: #ccc;
+    text-decoration: none;
+}

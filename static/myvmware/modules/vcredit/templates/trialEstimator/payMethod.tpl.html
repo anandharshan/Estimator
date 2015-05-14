@@ -1,0 +1,79 @@
+<!-- Template #1.... Initial Setup -->
+<article ng-if="showLoader">
+    <div class="row margin-top-20 margin-bottom-20">
+        <div class="col-md-12 text-center">
+            <div class="ajaxSpinner">&nbsp;</div>   
+        </div>
+    </div>
+</article>
+<article ng-if="!showLoader">
+	<h1>{{globalVars.howToBuy}}</h1>
+	<hr/>
+	<div class="alertErrorMessageContainer margin-top-10 margin-bottom-10"></div>
+	<div class="margin-bottom-30">
+		<div class="row">
+			<div class="col-md-2 ">
+				<label>{{globalVars.trialName}}</label>
+			</div>
+			<div class="col-md-6">
+				{{paymentOrder.serviceName}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 ">
+				<label>{{globalVars.trialId}}</label>
+			</div>
+			<div class="col-md-6">
+				{{paymentOrder.trialID}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 ">
+				<label>{{globalVars.expiryDate}}</label>
+			</div>
+			<div class="col-md-6">
+				{{paymentOrder.expiryDate}}
+			</div>
+		</div>
+	</div>
+	<div class="margin-bottom-30" ng-if="purchaseOrderSelect">
+		<span>{{globalVars.fundDetected}}</span>
+	</div>
+	<div class="form-group row">
+		<div class="col-md-12" ng-if="purchaseOrderSelect">
+			<div class="radio">
+				<input type="radio" id="subscriptionFund" name="purchaseType" ng-model="localObj.payOption" value="SF" ng-change="continueBtn()" /><label for="subscriptionFund">{{globalVars.paySubscriptionFund}}</label>
+			</div>
+			<div class="padding-left-25" ng-if="localObj.payOption == 'SF'">
+				<div class="margin-bottom-20" data-ng-repeat="subcriptionFund in paymentOrder.fundGroupPaymentMethod">
+					<p><strong>{{globalVars.account}}: {{subcriptionFund.eaNumber}} - {{subcriptionFund.eaName}}</strong></p>
+					<div class="radio" data-ng-repeat="fundDetail in subcriptionFund.fundDetails">
+						<input type="radio" id="{{fundDetail.name}}" name="fundList" value="{{fundDetail.id}}" ng-model="localObj.subscriptionFund" ng-change="continueBtn()" />
+						<label for="{{fundDetail.name}}">{{fundDetail.name}} <span class="greyText">{{globalVars.balance}} {{fundDetail.currency+fundDetail.balance}}, {{globalVars.expiry}} {{fundDetail.expiry}}</span></label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="radio" ng-if="purchaseOrderSelect">
+				<input type="radio" id="purchaseOrder" name="purchaseType" ng-model="localObj.payOption" value="PO" ng-change="continueBtn()" />
+				<label for="purchaseOrder">{{globalVars.payPurchanceOrder}}</label>
+			</div>
+			<div class="margin-bottom-30"  ng-if="!purchaseOrderSelect">
+				<span>{{globalVars.noFundDetected}}</span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row margin-top-30">
+		<div class="col-md-6 text-left"></div>
+		<div class="col-md-6 text-right">
+			<span ng-if="ajaxLoader">
+                    <div class="ajaxSpinner">&nbsp;</div> 
+            </span>
+			<a class="btn btn-primary margin-left-20" ng-disabled="continueBtnDisable || ajaxLoader" ng-click="payMethodContinue()">{{globalVars.continueBtn}}</a>
+			<a class="btn btn-default margin-left-20" ng-click="cancelFlow()">{{globalVars.cancelBtn}}</a>
+		</div>
+	</div>
+</article>
+<!-- END OF TEMPLATE #1 -->

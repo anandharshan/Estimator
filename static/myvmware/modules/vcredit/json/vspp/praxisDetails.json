@@ -1,0 +1,54 @@
+{
+    "wrapper": {
+        "customerType": null,
+        "isXaasFund": "",
+        "eaAccount": "qatest1436",
+        "eaAccountNumber": "313377584",
+        "customerNumber": "7897292256",
+        "isStorageEnabled": null,
+		"serviceName" : "VMware vCloud Air Virtual Private Cloud OnDemand 1",
+		"service" : "vCloud Hybrid Service",
+        "commitInfo": {
+            "name": "VSPP Air Identifier",
+            "id":"XXX",
+            "threshold":"500",
+            "currentConsumption":"10000.32",
+            "commitLevel":"20000",
+            "redemptionCurrency": "USD",
+            "redemptionCurrencySymbol": "$",
+            "expirationDate": "2015-03-21"
+        },
+        "priceList": null,
+        "paymentType": null,
+        "storageType": null,
+        "crossRefSKUMap": null,
+        "currency": [
+            {
+                "USD": [
+                    "U.S.Dollar",
+                    "$"
+                ]
+            },
+            "USD"
+        ],
+        "partner": [
+            [
+                {
+                    "id": "VMware",
+                    "name": "VMwareInc."
+                },
+				{
+                    "id": "VMware1",
+                    "name": "ABC."
+                }
+            ],
+            "VMware"
+        ],
+        "region": null,
+        "serviceType": null,
+        "promotion": {
+						"promoCode": null,
+						"promoText": null
+		}
+    }
+}

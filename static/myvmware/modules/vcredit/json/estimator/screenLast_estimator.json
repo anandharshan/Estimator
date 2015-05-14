@@ -1,0 +1,201 @@
+{
+    "wrapper": {
+        "currencySymbol" : "$",
+        "currencyCode" : "USD",
+        "sppTokenToMSRP": {
+            "tokenValue": "1",
+            "msrpValue": "100"
+        },
+        "serviceList": [
+            {
+                "id": "11111",
+                "core": {
+                    "customerType": "COMMERCIAL",
+                    "serviceTerm": "12 months",
+                    "serviceName": "VMware Horizon Air Desktop Enterprise",
+                    "serviceType": "VMware Horizon Air Desktop Enterprise",
+                    "region": "UK",
+                    "defaultPaymentType": "2",
+                    "cost": "5667",
+                    "remainingTerm": [
+                        365,
+                        0,
+                        12,
+                        0
+                    ],
+                    "currency": [
+                        "$",
+                        "U.S.Dollar"
+                    ],
+                    "coreTierInfo": "Academic VMware vCloud Air - Virtual Private Cloud A3A - Core Subscription - SSD Accelerated - 12 month Prepaid",
+                    "longSkuDescription": "US - California Data Center - 10 GHz allocated vCPU 20GB vRAM 2TB SSDAccelerated Storage 10Mbps Internet Bandwidth 2 Public IPs and Production",
+                    "coreServiceSku": null,
+                    "crossRefSKUMap": null,
+                    "extendedCost": "68004"
+                },
+                "addons": {
+                    "Standard Storage": [
+                        [
+                            "HSD-A1AS1-C",
+                            "Standard Storage",
+                            {
+                                "2": "5"
+                            },
+                            "Academic VMware vCloud Air - Virtual Private Cloud A3A - SSD-Accelerated Storage Subscription - 12 month Monthly - Tier 1",
+                            "US - California Data Center - 2 TB SSD-Accelerated Storage",
+                            "346",
+                            "20760",
+                            []
+                        ],
+                        [
+                            "HSD-A1AS1-C",
+                            "Standard Storage",
+                            {
+                                "2": "5"
+                            },
+                            "Academic VMware vCloud Air - Virtual Private Cloud A3A - SSD-Accelerated Storage Subscription - 12 month Monthly - Tier 1",
+                            "US - California Data Center - 2 TB SSD-Accelerated Storage",
+                            "500",
+                            "6000",
+                            []
+                        ]
+                    ],
+                    "Compute": [
+                        [
+                            "HSD-A1AS1-C",
+                            "Compute",
+                            {
+                                "2": "1"
+                            },
+                            "Academic VMware vCloud Air - Virtual Private Cloud A3A - Compute Subscription - 12 month Monthly - Tier 1",
+                            "US - California Data Center - 10 GHz allocated vCPU 20GB vRAM. Must be ordered with Production Support",
+                            "346",
+                            "4152",
+                            [
+                                "HSD-A5ASP-A",
+                                "Compute",
+                                {
+                                    "2": "1"
+                                },
+                                "Academic VMware vCloud Air - Virtual Private Cloud A3A - Production Support Subscription - 12 month Monthly - Tier 1",
+                                "US - California Data Center - Technical Support, 24 Hour Sev 1 Support -- 7 days a week. Must be ordered with every unit of Compute.",
+                                "300",
+                                "3600"
+                            ]
+                        ]
+                    ]
+                }
+            },
+            {
+                "id": "22222",
+                "core": {
+                    "customerType": "Academic",
+                    "serviceTerm": "12 months",
+                    "serviceName": "VMware vCloud Air",
+                    "serviceType": "Virtual Private Cloud A3A",
+                    "region": "UK",
+                    "defaultPaymentType": "1",
+                    "cost": "8000",
+                    "remainingTerm": [
+                        365,
+                        0,
+                        12,
+                        0
+                    ],
+                    "currency": [
+                        "$",
+                        "U.S.Dollar"
+                    ],
+                    "longSkuDescription": "US - California Data Center - 10 GHz allocated vCPU 20GB vRAM 2TB SSDAccelerated Storage 10Mbps Internet Bandwidth 2 Public IPs and Production Support",
+                    "coreServiceSku": null,
+                    "crossRefSKUMap": null,
+                    "extendedCost": "96000"
+                },
+                "addons": {
+                    "Standard Storage": [
+                        [
+                            "HSD-A1AS1-C",
+                            "Standard Storage",
+                            {
+                                "1": "5"
+                            },
+                            "Academic VMware vCloud Air - Virtual Private Cloud A3A - SSD-Accelerated Storage Subscription - 12 month Prepaid - Tier 1",
+                            "US - California Data Center - 2 TB SSD-Accelerated Storage",
+                            "800",
+                            "4000",
+                            []
+                        ]
+                    ],
+                    "Compute": [
+                        [
+                            "HSD-A1AS1-C",
+                            "Compute",
+                            {
+                                "1": "1"
+                            },
+                            "Academic VMware vCloud Air - Virtual Private Cloud A3A - Compute Subscription - 12 month Prepaid - Tier 1",
+                            "US - California Data Center - 10 GHz allocated vCPU 20GB vRAM. Must be ordered with Production Support",
+                            "600",
+                            "600",
+                            [
+                                "HSD-A5ASP-A",
+                                "Compute",
+                                {
+                                    "1": "1"
+                                },
+                                "Academic VMware vCloud Air - Virtual Private Cloud A3A - Production Support Subscription - 12 month Prepaid - Tier 1",
+                                "US - California Data Center - Technical Support, 24 Hour Sev 1 Support -- 7 days a week. Must be ordered with every unit of Compute.",
+                                "200",
+                                "200"
+                            ]
+                        ]
+                    ]
+                }
+            }
+        ],
+        "paymentType": [
+            {
+                "paymentTypeID": "0",
+                "paymentTypeVal": "Promotion"
+            },
+            {
+                "paymentTypeID": "1",
+                "paymentTypeVal": "Prepaid"
+            },
+            {
+                "paymentTypeID": "2",
+                "paymentTypeVal": "Monthly"
+            },
+            {
+                "paymentTypeID": "3",
+                "paymentTypeVal": "Annually"
+            },
+            {
+                "paymentTypeID": "4",
+                "paymentTypeVal": "One Time"
+            }
+        ],
+        "levelSkuList": [
+            {
+                "minValue": "0",
+                "maxValue": "10000",
+                "sku": "SPP-CREDIT-C-L1"
+            },
+            {
+                "minValue": "10001",
+                "maxValue": "20000",
+                "sku": "SPP-CREDIT-C-L2"
+            },
+            {
+                "minValue": "20001",
+                "maxValue": "200000",
+                "sku": "SPP-CREDIT-C-L3"
+            },
+            {
+                "minValue": "200001",
+                "maxValue": "9999999",
+                "sku": "SPP-CREDIT-C-L4"
+            }
+        ]
+    }
+}

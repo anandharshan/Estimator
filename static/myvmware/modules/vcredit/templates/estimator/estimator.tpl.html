@@ -1,0 +1,91 @@
+<!-- Template #1.... Initial Setup -->
+<article ng-if="showLoader">
+    <div class="row margin-top-20 margin-bottom-20">
+        <div class="col-md-12 text-center">
+            <div class="ajaxSpinner">&nbsp;</div>   
+        </div>
+    </div>
+</article>
+<article ng-if="!showLoader">
+	<h1>{{globalVars.PurchaseNewService}}</h1>
+	<hr/>
+	<div class="alertErrorMessageContainer margin-top-10 margin-bottom-10">
+        
+    </div>
+	<div class="margin-bottom-30" ng-if="estimateData.showPriceList == true">
+		<span>{{globalVars.vpnTrueSubtitle}}</span>
+	</div>
+	<div class="margin-bottom-30" ng-if="estimateData.showPriceList == false">
+		<span>{{globalVars.vpnFalseSubtitleTop}}</span><br>
+		<span>{{globalVars.vpnFalseSubtitleBottom}}</span>
+	</div>
+	
+	<div class="row" ng-if="estimateData.showPriceList != true">
+		<div class="col-md-2 initial_label">
+			<label>{{globalVars.country}}</label>
+			<span class="infoIcon"><a href="javascript:void(0);" class="info" tooltip-trigger="{{{true: 'mouseenter', false: 'never'}['']}}" tooltip-placement="right" data-tooltip-html-unsafe="{{globalVars.countryTooltip}}">&nbsp;</a></span>
+		</div>
+		<div class="col-md-6">
+    		
+    			<select class="form-control hidden-xs" ng-options="co.val for co in countrySelection" data-ng-model="localObj.countrySel" data-width="400px" data-size="6" selectpicker="{container:'body'}" data-live-search="true" searchBoxPlaceHolderText = "{{globalVars.countrySelectBoxPlaceholder}}" liveSearchIconClass ="liveSearchZoomIcon">
+    			</select>
+
+    			<select class="form-control visible-xs-block" ng-options="co.val for co in countrySelection" data-ng-model="localObj.countrySel" style ="max-width: 400px;">
+    			</select>
+    		
+		</div>
+	</div>
+	
+	
+
+	
+	<div class="row" ng-if="estimateData.showPriceList == true">
+		<div class="col-md-2 initial_label">
+			<label>{{globalVars.priceList}}</label>
+			<span class="infoIcon"><a href="javascript:void(0);" class="info" tooltip-trigger="{{{true: 'mouseenter', false: 'never'}['']}}" tooltip-placement="right" data-tooltip-html-unsafe="{{globalVars.currencyToolTip}}">&nbsp;</a></span>
+		</div>
+		<div class="col-md-6">
+    		
+    			<select class="form-control hidden-xs" ng-options="pr.val for pr in priceSelection" data-ng-model="localObj.priceListSel" data-width="400px" data-size="6" selectpicker="{container:'body'}" >
+    				<option value="">{{globalVars.selectPriceList}}</option>
+    			</select>
+
+    			<select class="form-control visible-xs-block" ng-options="pr.val for pr in priceSelection" data-ng-model="localObj.priceListSel" style ="max-width: 400px;">
+    				<option value="">{{globalVars.selectPriceList}}</option>
+    			</select>
+
+		</div>
+	</div>
+	
+
+	<div class="row margin-top-25">
+		<div class="col-md-2 initial_label">
+			<label>{{globalVars.customerType}}</label>
+			<span class="infoIcon"><a href="javascript:void(0);" class="info" tooltip-trigger="{{{true: 'mouseenter', false: 'never'}['']}}" tooltip-placement="right" data-tooltip-html-unsafe="{{ (estimateData.showPriceList) && globalVars.internalCustomerTypeTooltip || globalVars.customerTypeTooltip}}">&nbsp;</a></span>
+		</div>
+		<div class="col-md-6 ">
+    			
+    			<select class="form-control hidden-xs" ng-options="key as value for (key, value) in estimateData.customerType" data-ng-model="localObj.custTypeSel" data-width="400px" data-size="6" selectpicker="">
+    				<option value=''>{{globalVars.selectCustomerType}}</option>
+    			</select>
+
+    			<select class="form-control visible-xs-block" ng-options="key as value for (key, value) in estimateData.customerType" data-ng-model="localObj.custTypeSel" style ="max-width: 400px;">
+    				<option value=''>{{globalVars.selectCustomerType}}</option>
+    			</select>
+
+		</div>
+	</div>
+	
+
+	
+	<div class="row margin-top-30">
+		<div class="col-md-6 text-left"></div>
+		<div class="col-md-6 text-right">
+			<span ng-if="ajaxLoader">
+                    <div class="ajaxSpinner">&nbsp;</div> 
+            </span>
+			<a class="btn btn-primary margin-left-20" ng-disabled="((showPriceList == false && (localObj.custTypeSel == '' || localObj.custTypeSel == null || localObj.custTypeSel == undefined || localObj.countrySel.currencyCode == '')) || (showPriceList == true && (localObj.custTypeSel == '' || localObj.custTypeSel == null || localObj.custTypeSel == undefined || localObj.priceListSel == '' || localObj.priceListSel== undefined || localObj.priceListSel == null))) || ajaxLoader" ng-click="chooseService()">{{globalVars.continueBtn}}</a>
+		</div>
+	</div>
+</article>
+<!-- END OF TEMPLATE #1 -->

@@ -1,0 +1,118 @@
+<article class="container-fluid" ng-if="!isPraxisFlow">
+		<!-- <div class="row margin-top-20 margin-bottom-20">
+		   <div class="col-md-12 margin-top-10"><span class="intro-text completeMessage">{{globalVars.success}}</span></div>                 
+		</div> -->
+		<div class="row">
+			<div class="col-md-8 margin-top-10 lightGrey"><span>{{globalVars.orderSubmit}}</span>
+				<span class="referenceIdCash margin-top-20">{{globalVars.referenceIdCashFlowText}}{{ref_id}} </span>
+				<div class="margin-top-20" ng-if="convertFlow">
+					<span><b>{{cancelServiceHeader}}</b></span>
+					<p>{{globalVars.cancelService}}</p>
+				</div>
+			</div>
+			<!-- <div class="col-md-12"><span>{{ref_id}}</span></div> -->
+			<div class="col-md-4">
+	            <div>
+	               <div class="rightSecHead"><h4 class="ng-binding">{{globalVars.manageService}}</h4></div>
+	               <div class="margin-top-10 ng-binding">
+	                   {{globalVars.manageServiceText}}
+	               </div>
+	               <div class="margin-top-10">
+	                <a class="ng-binding" href="{{globalVars.goToAllServiceURL}}" target="_blank">{{globalVars.goToAllServiceText}}</a>
+	               </div>
+	            </div>
+	       </div>
+		</div>
+		<!-- <div class="row margin-top-20">
+			<div class="col-md-9">
+				<a href="{{globalVars.goToAllServiceURL}}">{{globalVars.goToAllServiceText}}</a>
+			</div>
+		</div> -->
+</article>
+
+
+<article class="container-fluid" ng-if="isPraxisFlow">
+		<div class="row margin-top-20">
+			<div class="col-md-12">
+				<h2><span class="icons-alert-success"></span><span class="headingContent praxisCompleteHeading">{{globalVars.success_noexl}}</span></h2>
+			</div>
+		</div>
+		<div class="row margin-top-20">
+			<div class="col-md-8">
+				<div ng-if="!isDaasFlow">
+					<p>
+						{{praxisComplete_p1_1}}					
+					</p>
+					<p>
+						{{globalVars.praxisComplete_p1_4}}
+						<!-- <a href="{{globalVars.learnPricingLinkURL}}" target="_blank">{{globalVars.learnAboutPricingText}}</a> -->
+					</p>
+					<p>
+						<div class="margin-top-20"><b>{{globalVars.leftSupportText}}</b></div>
+					</p>
+					<div>
+						{{globalVars.leftSupportTextDesc}}
+					</div>
+				</div>
+
+				<div ng-if="isDaasFlow">
+					<p ng-bind-html="daasComplete_p1_1"></p>
+					
+					<div class="margin-top-20">
+						<a href="#" class="btn btn-primary">{{globalVars.visitConfiguration}}</a>
+					</div>
+					
+					<p class="margin-top-20">
+						{{globalVars.daasComplete_p1_2}}
+					</p>
+				</div>
+
+				<div ng-if="completeObjLocal.wrapper.promotionDetails.length > 0">
+					<div class="margin-top-20"><b>{{globalVars.useYourPromoCredit}}
+					</b></div>
+					<div>
+						<p ng-repeat="promoDetails in completeObjLocal.wrapper.promotionDetails">{{promoDetails}}</p>
+					</div>
+				</div>
+				
+				<div ng-if="!isDaasFlow">
+					<div class="margin-top-20"><b>{{globalVars.praxisComplete_usage}}
+					</b></div>
+					<div>
+						<p>{{praxisComplete_p1_6}}</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="" >
+				
+					<div>
+						<div class="box-right-praxis"><b>{{globalVars.manageService}}</b></div>
+						<div class="margin-top-10">{{globalVars.manageServiceDesc}}
+						</div>
+						<div class="margin-top-10">
+							<a href="{{globalVars.serviceDetailsPageUrl}}" target="_blank">
+							<strong>{{globalVars.goToAllServicesText}}</strong></a>
+						</div>
+					</div> <!--BUG-00112727 {{(globalVars.serviceCategory == 'VSPP' && -->
+					<div class="margin-top-20">
+						<div class="payUseborder"><b>{{globalVars.payForWhatYouUse}}</b></div>
+						<div class="margin-top-10">{{globalVars.payForWhatYouUseDesc}}
+						</div>
+						<div class="margin-top-10">
+							<a class="margin-top-10" href="{{globalVars.learnPricingLinkURL}}" target="_blank">{{globalVars.learnPricingLinkText}}</a>
+						</div>
+					</div>
+					<div class="margin-top-20 margin-bottom-20" ng-if="globalVars.serviceCategory != 'VSPP'">
+						<div class="supportborder"><b>{{globalVars.rightSupportText}}</b></div>
+						<div class="margin-top-10">{{(isDaasFlow) && globalVars.rightDaasSupportTextDesc || globalVars.rightSupportTextDesc}}
+						</div>
+						<div class="margin-top-10">
+							<a class="margin-top-10" href="{{(isDaasFlow) && globalVars.rightDaasSupportTextLink || globalVars.rightSupportTextLink}}" target="_blank">{{globalVars.rightSupportTextLinkDesc}}</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</article>
+       

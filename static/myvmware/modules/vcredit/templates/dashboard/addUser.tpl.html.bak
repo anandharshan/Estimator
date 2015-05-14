@@ -1,0 +1,160 @@
+<section tabindex="-1" role="dialog" aria-labelledby="addUserModal" aria-hidden="true" class="overlay" id="addUserModal">
+    <!--<h2>{{displayModalErrorMessage}}</h2>-->
+
+    <div class="modal-header">
+        <div class = "row">  
+        <div class="{{globalVars.serviceData != 'VSPP' && 'col-md-9' || 'col-md-11'}}">
+            <h3 class="modal-title ng-binding">{{globalVars.addNewUser}}</h3>
+        </div>
+        <div class="col-md-2 text-right margin-top-negative2" ng-if = "globalVars.serviceData != 'VSPP'">
+            <a class="help_link border-left-0" href="{{globalVars.manageUsers}}" target="_blank">
+                <span class="help_icon"></span>
+                <span class="help_text">{{globalVars.help}}</span>
+            </a>
+        </div>
+        <div class="col-md-1">
+            <span class="close" data-dismiss="modal" aria-hidden="true" ng-click="modalClose()"></span>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal-body clearfix">
+        <div class="addDescription row">
+            <div class="col-md-12">
+                {{globalVars.addDescription}}<!--<a href="{{loginPageUrl}}"> {{addDescription2}} </a>{{addDescription3}}-->
+            </div>
+        </div>
+        <!--<div class="margin-bottom-20 row">
+            <div class="col-md-12">
+                <strong>{{globalVars["fundName"]}}</strong> : {{oldFundName}}
+            </div>
+        </div>-->
+        <div class="row margin-top-20" ng-if="displaySaveError != null">
+           <div class="alert-box col-md-12 margin-top-10">
+                <div class="alert alert-danger alert-dismissable" role="alert">
+                    <div class="row">
+                        <span class="icons-alert-danger"></span>
+                        <div class="alert-text col-sm-10">
+                            <p>{{displaySaveError}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <section class="clearfix">
+            <section class="col-md-6 form">
+                <article>
+                    <div class="addStep addSection">{{globalVars["step1_info"]}}</div>
+                    <div class="container-fluid starlight-container-fluid addSection">
+                        <label class="form-required col-sm-offset-1">{{globalVars["all_req"]}}</label>
+
+                        <form class="form-horizontal" role="form" id="addUserForm" data-validate="parsley">
+                            <div class="form-group">
+                                <label for="firstName" class="col-sm-5 control-label-left">{{globalVars["fname"]}}:</label>
+                                <div class="col-sm-7 padding-left-0 addUserFields">
+                                    <input class="form-control" id="firstName" name="firstname" data-ng-model="firstName" ng-disabled="disableClear==true" ng-keyup="userEmpty()" data-required="true" data-trigger="change" placeholder="{{globalVars.fname}}" data-parsley-required-message="{{globalVars.fnameRequired}}" data-parsley-required data-parsley-trigger="blur">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" class="col-sm-5 control-label-left">{{globalVars["lname"]}}:</label>
+                                <div class="col-sm-7 padding-left-0 addUserFields">
+                                    <input class="form-control" id="lastName" data-ng-model="lastName" ng-disabled="disableClear==true" ng-keyup="userEmpty()" data-required="true" data-trigger="change" placeholder="{{globalVars.lname}}" data-parsley-required-message="{{globalVars.lnameRequired}}" data-parsley-required data-parsley-trigger="blur">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-sm-5 control-label-left">{{globalVars["email"]}}:</label>
+                                <div class="col-sm-7 padding-left-0 addUserFields">
+                                    <input type="email" class="form-control" id="inputEmail" data-ng-model="email" ng-disabled="disableClear==true" ng-keyup="userEmpty()" data-required="true" data-trigger="change" placeholder="{{globalVars.emailAddress}}" data-parsley-type="email" data-parsley-required-message="{{globalVars.emailRequired}}" data-parsley-required data-parsley-type-message="{{globalVars.invalidEmailAddress}}" data-parsley-trigger="blur">
+                                </div>
+                            </div>
+                            <div class="form-group addUserGrp">
+                                <div class="col-sm-12 text-right">
+                                    <a ng-disabled="continueBtn==true" ng-click="add()" class="btn btn-primary" href="javascript:void(0);" disabled="disabled" type="submit">{{globalVars["continue"]}}</a>
+                                    <a ng-disabled="disableClear==true" ng-click="clearFields(); tagClear()" class="btn btn-default margin-left-20 margin-right-0" href="javascript:void(0);">{{globalVars["clear"]}}</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </section>
+
+            <section class="col-md-6 success">
+                <article ng-if="showModalLoader">
+                            <div class="row margin-top-20 margin-bottom-20">
+                                <div class="col-md-12 text-center">
+                                    <div class="ajaxSpinner">&nbsp;</div>
+                                </div>
+                            </div>
+                </article>
+                <article ng-if="fundTrue==true">
+                    <div class="addStep">{{globalVars["step2_info"]}}</div>
+                    <div class="container-fluid starlight-container-fluid">
+                        
+                        
+
+                        <h4 ng-if="fundTrue==true" class="margin-bottom-0">{{globalVars["newUser"]}}:</h4>
+                        <span ng-if="JaLocale==false">{{addedName}}<br></span>
+                        <span ng-if="JaLocale==true">{{addedJaName}}<br></span>
+                        <span>{{addedEmail}}</span>
+                        <!--p ng-if="validTrue==true">{{globalVars.validUser}}</p>
+                        <p ng-if="emsTrue==true">{{globalVars.validEmsUser}}</p>
+                        <p ng-if="errorTrue==true">{{globalVars.errorUser}}<a href="{{loginPageUrl}}"> {{errorUser2}}</a></p-->
+                         <!--alert info box-->
+                        <div class="row margin-top-20 margin-left-0">
+                           <div class="alert-box col-md-12 margin-top-10 padding-right-0 margin-left-0">
+                                <div class="alert alert-info alert-dismissable padding-right-20" role="alert">
+                                    <div class="row">
+                                        <span class="icons-alert-info"></span>
+                                        <div class="alert-text col-sm-10 normal-text padding-right-0 margin-left-15">
+                                            <p ng-if="validTrue==true && globalVars.serviceData != 'VSPP'">{{acc_name}}</p>
+                                            <p ng-if="validTrue==true && globalVars.serviceData == 'VSPP'">{{globalVars.validUser}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--ends--> 
+                        <!--alert info box-->
+                        <div class="row margin-top-20 margin-left-0">
+                           <div class="alert-box col-md-12 margin-top-10 padding-right-0 margin-left-0">
+                                <div class="alert alert-danger alert-dismissable padding-right-20" role="alert">
+                                    <div class="row">
+                                        <span class="icons-alert-danger"></span>
+                                        <div class="alert-text col-sm-10 normal-text padding-right-0 margin-left-15">
+                                            <p ng-if="emsTrue==true">{{globalVars.validEmsUser}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--ends--> 
+                        
+                        <div class="row margin-top-20 margin-left-0">
+                           <div class="alert-box col-md-12 margin-top-10 padding-right-0 margin-left-0">
+                                <div class="alert alert-warning alert-dismissable padding-right-20" role="alert">
+                                    <div class="row">
+                                        <span class="icons-alert-warning"></span>
+                                        <div class="alert-text normal-text col-sm-10 padding-right-0 margin-left-15">
+                                            <p ng-if="errorTrue==true">{{errorUser}}</p>
+											<a href="{{globalVars.registrationUrl}}" class="vmwareprofile-link">{{globalVars.errorUser2}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <p ng-if="errorTrue==true">{{errorUser}}<a href="{{loginPageUrl}}"> </a></p> -->
+                    </div>
+                </article>
+            </section>
+        </section>
+		<span class="errorMessage">{{displayModalErrorMessage}}</span>
+    </div>
+    <!-- Content End -->
+    <div class="modal-footer clearfix">
+        <a href="javascript:void(0);" class="btn btn-default pull-left" ng-if="resetFlag==true" ng-click="resetAdd()">{{globalVars["reset"]}}</a>
+        <a href="javascript:void(0);" class="btn btn-primary" ng-click="confirmAdd()" ng-disabled="confirmDisable==true">{{globalVars["confirm"]}}</a>
+        <a href="javascript:void(0);" class="btn btn-default margin-right-0" ng-click="close('addUser')">{{globalVars["cancel"]}}</a>
+    </div>
+</section>

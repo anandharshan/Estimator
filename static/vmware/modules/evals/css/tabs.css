@@ -1,0 +1,160 @@
+.infobox .infotab {
+    padding: 0 0 16px !important;
+    border: none !important;
+    width: default !important;
+}
+.infobox ul {
+	width: auto !important;
+}
+#header {
+	overflow: hidden;
+}
+#header .overlay h1 {
+	color:#7D9BC6;
+	font-size:30px;
+}
+#header p {
+	padding-top:5px;
+}
+#header p.bold {
+	color: #ff9933;
+	font-size: 14px;
+	font-weight: bold;
+	padding:0;
+	line-height: 20px;
+}
+#headblock {
+	overflow: hidden;
+	padding-bottom:10px;
+	_zoom: 1;
+}
+#headblock_left { float: left; width:460px; padding-right:15px; }
+#headblock_right { float: right; width:160px; _width:0%; }
+#infobox_content {
+	width: auto;
+	height: auto;
+	float:right;
+}
+.infobox ul { line-height:14px; }
+#infobox_content ul li {
+	border: 1px solid transparent !important;
+}
+div.tabhead ul {
+	margin:0 0 -6px 0 !important;
+	_margin:0 0 -1px 0 !important;
+}
+/*
+div.tabhead ul li {
+	padding: 5px 0 !important;
+}
+*/
+div.dbox div.body {
+	background-color: #FFF !important;
+	border:none !important;
+	padding:10px;
+}
+#content li.download {
+	border-top: none;
+}
+
+div.dbox div.body table span.pdesc,
+div.dbox div.body table span.pmd5 {
+        padding:5px 0;
+        color:#666;
+}
+div.dbox div.body table span.pdesctitle,
+div.dbox div.body table span.pmd5title {
+        padding:5px 0;
+        font-size: 10px;
+        text-transform:uppercase;
+        color: #333333;
+        font-weight: bold;
+}
+div.dbox div.body table span.plink a {
+	color: #999;
+	font-size: 8pt;
+}
+div.dbox div.body table span.plinkdlm a {
+	font-size: 8pt;
+}
+#tab_download .title {
+	padding: 5px;
+	background:#FFFFFF url(/static/vmware/modules/evals/img/bg_shadebox.gif);
+	border-top:1px solid #A1C2E2;
+	border-bottom:1px solid #A1C2E2;
+	font-size: 16px;
+	color: #7D9BC6;
+	margin-bottom: 5px;
+}
+a.tab_button {
+	/* Sliding right image */
+	background: transparent url(/static/vmware/modules/evals/img/button_right_05.png) no-repeat scroll top right; 
+	display: block;
+	float: left;
+	height: 35px; /* CHANGE THIS VALUE ACCORDING TO IMAGE HEIGHT */
+	margin-right: 6px;
+	padding-right: 20px; /* CHENGE THIS VALUE ACCORDING TO RIGHT IMAGE WIDTH */
+	/* FONT PROPERTIES */
+	text-decoration: none;
+}
+a.tab_button span {
+	/* Background left image */ 
+	background: transparent url(/static/vmware/modules/evals/img/button_left_05.png) no-repeat; 
+	display: block;
+	line-height: 22px; /* CHANGE THIS VALUE ACCORDING TO BUTTONG HEIGHT */
+	padding: 7px 0 5px 18px;
+} 
+a.tab_button:hover span{
+	text-decoration:underline;
+}
+div.announcements ul.list li.download {
+	/*background: #FFFFFF !important;*/
+}
+div.tab {
+	padding: 10px 0 !important;
+	width:auto !important;
+}
+div.tab .title {
+	color: #ff9900;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+div.tabgroupname {
+	background:#FFFFFF url(/static/vmware/modules/evals/img/bg_shadebox.gif) repeat-x scroll 0 0;
+	border-top:1px solid #A1C2E2;
+	color: #7d9bc6;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px;
+}
+div.tabgroupdesc {
+	color:#666666;
+	padding: 0 10px 10px 10px;
+}
+div.dbox div.body table.binaries {
+	background:none !important;
+}
+div.dbox div.body hr {
+	margin:10px 0;
+	border-color: #efefef;
+}
+#ptoggle {
+	padding:10px 15px 15px 0;
+}
+.tplus {
+	background:transparent url(/static/vmware/modules/evals/img/box-plus.gif) no-repeat scroll 0 12px;
+	cursor: pointer;
+}
+.tminus {
+	background:transparent url(/static/vmware/modules/evals/img/box-minus.gif) no-repeat scroll 0 12px;
+	cursor: pointer;
+}
+table.toggle-details {
+	margin: 0 auto 0;
+	_margin-left: 20px;
+}
+.toprowlicense {
+	/*background:#FFFFFF url(/static/vmware/modules/evals/img/bg_shadebox.gif) repeat-x scroll 0 0;
+	border-top:1px solid #A1C2E2; */
+}

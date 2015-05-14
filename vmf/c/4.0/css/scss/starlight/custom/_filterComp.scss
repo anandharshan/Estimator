@@ -1,0 +1,229 @@
+// Starlight Filter Component
+.starlight{
+  .filter-panel {
+	margin-top: 5px;
+	background-color: $starlight-bg-gray;
+	border-color:$starlight-bg-gray;
+	border-radius:0px;
+	margin-bottom:30px;
+	clear:both;
+	.panel-body{
+		padding:5px 10px 10px;
+		.filter-reset{
+			overflow: hidden;
+			margin-bottom: 5px;
+			.filter-by-text{
+				font-size: 12px;
+				color:#999;
+			}
+			.resetFilter{
+				font-size: 12px;
+			}
+		}
+		.btn-group-holder{
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			.filterSelection{
+				margin-top: 5px;
+				.selectedItem{
+					width: inherit;
+					@include text-overflow();
+					.itemSelectedLabel{
+					  margin-left: 28px;
+					}
+				}
+				.icons-close{
+					vertical-align: middle;
+					margin-bottom: 2px;
+					cursor: pointer;
+				}
+			}
+			.btn{
+				font-size: 14px;
+				padding:6px 10px;
+				.filter-caret{
+					background:url("../images/icons/filter_btn_arw.png") no-repeat scroll 0 0;
+					display: inline-block;
+				    height: 8px;
+				    margin-left: 5px;
+				    vertical-align: inherit;
+				    width: 13px;
+				}
+			}
+			.open{
+				.btn,
+				.btn:hover{
+					background-image: none;
+					background-color:$starlight-blue !important;
+					border:1px solid $starlight-blue !important;
+					color:#FFF;
+					.filter-caret{
+						background:url("../images/icons/filter_btn_arw_selected.png") no-repeat scroll 0 0;
+					}
+				}	
+			}
+			ul li{
+				.icons-icn_danger{
+					margin-right: 10px;
+					vertical-align: text-top;
+				}
+				.icons-icn_warning{
+					margin-right: 10px;
+				}
+			}
+			.filterSearch .filterSearchText{
+				font-size: 14px;
+			}
+			.requested-by-field{
+				margin-left: 10px;
+				margin-right: 0;
+			}
+		}
+		.btn-group {
+			margin-right: 8px;
+		}
+		&.panel{
+			margin-bottom: 5px;
+		}
+		.selectedItem{
+			font-size: 12px;
+			color: $starlight-gray-dark;
+			.icons-close{
+				margin: 0 5px 0 6px;
+			}
+			.addContSelection{
+				margin-left: 30px;
+			}
+		}
+		.hasDatepick{
+			width: 200px;
+		}
+	}
+  }
+}
+
+
+.icons-close{
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+
+.icons-icn_info{
+	display:inline-block;
+	width:14px;
+	height:14px;
+}
+
+.icons-icn_danger{
+	display:inline-block;
+	width:16px;
+	height:16px;
+}
+
+.icons-icn_warning{
+	display:inline-block;
+	width:16px;
+	height:13px;
+}
+
+//Responsive Styling
+
+@media only all and (max-width:$screen-lg){
+  .starlight {
+  	.filter-panel {
+	  .btn-group-holder{
+	    margin-right:-10px;
+	  }
+	}
+  }
+}
+
+@media only all and (max-width:640px){
+	.starlight {
+	  .filter-panel {
+	    .btn-group-holder{
+		  display:table;
+		}
+	  }
+	}
+}
+
+/* ##################### Horizontal Filter List Component ##################### */
+.starlight{
+	.hor-filter-list{
+		margin-top:2px;
+		.col-lg-2{
+			width:auto;
+			padding-right:0;
+			.hor-filter-item{
+				label{
+					font-family: $font-family-proxima-nova-regular;
+					font-weight:normal;
+					vertical-align:sub;
+					font-size: 16px;
+					border-right: 1px solid #C7C7C7;
+					padding-right:15px;
+					color:$starlight-blue-dark;
+					cursor: pointer;
+					&:hover{
+						color:$starlight-blue;
+					}
+					input[type="radio"]{
+						display: none;
+						&:checked + span{
+							cursor:default;
+							color:#333;
+							&+span{
+								cursor:default;
+								color:#333;
+							}
+						}
+					}
+				}
+			}
+			.hor-filter-item-last{
+				label{
+					border-right:0 none;
+				}
+			}
+		}
+	}
+}
+
+@media only all and (max-width:$screen-lg){
+	.starlight .hor-filter-list{
+		margin-top: 5px;
+		.col-lg-2{
+			width:auto;
+			float:left;
+		}
+		.hor-filter-item.oppty-incumbent-fx{
+			padding-left:0px;
+		}
+	}
+}
+
+@media only all and (max-width:$screen-sm){
+	.starlight .hor-filter-list{
+		.right-separator{
+			border-right:0 none;
+		}
+	}
+}
+
+@media only all and (max-width:640px){
+	.starlight .hor-filter-list{
+		.col-lg-2{
+			display: table;
+			float:none;
+			.hor-filter-item{
+				label{
+					border-right:0 none;
+				}
+			}
+		}
+	}
+}
+

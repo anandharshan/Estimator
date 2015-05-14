@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:ng="http://angularjs.org" class="ng-app"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Your Tokens</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="stylesheet" href="/vmf/c/4.0/css/liferay.css">
+    <link rel="stylesheet" href="/static/myvmware/common/css/vcredit.css">
+    <link rel="stylesheet" type="text/css" href="/static/myvmware/common/css/sppConfigurator.css"/>
+	
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="/vmf/c/4.0/css/ie.css" />
+		<link rel="stylesheet" href="/static/myvmware/common/css/ie7.css" />	
+		<script src="/vmf/c/4.0/js/vmf-liferay-ie.js"> </script>
+    <![endif]-->
+	
+     <script src="/vmf/c/4.0/js/vmf.js" type="text/javascript"></script> 
+     <script src="/vmf/m/angular/4.0/js/angular.min.js" type="text/javascript"></script>
+     <script src="/static/myvmware/modules/vcredit/js/common/ajaxService.js" type="text/javascript"></script>
+	 <script type="text/javascript" src="/vmf/m/foresee/foresee-trigger.js"></script>
+
+		<script src="/static/myvmware/modules/vcredit/js/dynamicComboBox.js" type="text/javascript"></script>
+    <script src="/static/myvmware/modules/vcredit/js/common/ajaxService.js"></script>
+    <script src="/static/myvmware/modules/vcredit/js/configurator.js"></script>
+    <script src="/static/myvmware/modules/vcredit/js/services.js"></script>
+    <script src="/static/myvmware/modules/vcredit/js/addons.js"></script>
+    <script src="/static/myvmware/modules/vcredit/js/renewal.js"></script>
+
+    <script type="text/javascript">
+        if (!Object.keys) {
+          Object.keys = (function () {
+            'use strict';
+            var hasOwnProperty = Object.prototype.hasOwnProperty,
+                hasDontEnumBug = !({toString: null}).propertyIsEnumerable('toString'),
+                dontEnums = [
+                  'toString',
+                  'toLocaleString',
+                  'valueOf',
+                  'hasOwnProperty',
+                  'isPrototypeOf',
+                  'propertyIsEnumerable',
+                  'constructor'
+                ],
+                dontEnumsLength = dontEnums.length;
+
+            return function (obj) {
+              if (typeof obj !== 'object' && (typeof obj !== 'function' || obj === null)) {
+                throw new TypeError('Object.keys called on non-object');
+              }
+
+              var result = [], prop, i;
+
+              for (prop in obj) {
+                if (hasOwnProperty.call(obj, prop)) {
+                  result.push(prop);
+                }
+              }
+
+              if (hasDontEnumBug) {
+                for (i = 0; i < dontEnumsLength; i++) {
+                  if (hasOwnProperty.call(obj, dontEnums[i])) {
+                    result.push(dontEnums[i]);
+                  }
+                }
+              }
+              return result;
+            };
+          }());
+        }
+    </script>
+</head>
+<body class="starlight liferay">
+    <section class="page-eyebrow">
+    <div class="starlight container">
+        <div class="page-eyebrow">
+            <nav class="eyebrow-menu menu-eyebrow">
+                <a href="javascript:void(0);" class="menu-link-quick">Quick Links </a>
+                <div class="starlight-eyebrow-quick">
+                    <!-- <a title="Select a Country/Region" href="/in/worldwide.html" class="pull-left user-locale">
+							<span class="icons-locale_bg"></span>English
+						</a> -->
+                    <div class="vmbar-vmware" id="localeSelector">
+                        <span class="icons-locale_bg "></span> <a href="#" class="locale-selector " data-toggle="modal" data-target="#myModal">English</a>
+                        <a href="#" class="locale-selector hidden">English</a>
+                    </div>
+                    <ul class="user_options pull-right nav-level-1">
+
+                        <div id="p_p_id_MyVMWareHeaderPortlet_WAR_itcrossfunctional_" class="portlet-boundary portlet-boundary_MyVMWareHeaderPortlet_WAR_itcrossfunctional_  portlet-static portlet-static-end  ">
+                            <a id="p_MyVMWareHeaderPortlet_WAR_itcrossfunctional"></a>
+
+                            <section class="portlet" id="portlet_MyVMWareHeaderPortlet_WAR_itcrossfunctional">
+                                <div class="portlet-content">
+
+                                    <div class=" portlet-content-container" style="">
+
+                                        <div class="portlet-body">
+
+                                            <li>
+
+                                                <a target="_blank" class="menu-item-quick" href="//www.vmware.com/">  VMware.com </a>
+                                            </li>
+                                            <li><a href="//www.vmware.com/vmwarestore/" role="button" class="menu-item-quick">Store</a>
+                                            </li>
+
+                                            <li class="has-subnav user_options">
+                                                <a title="User" href="javascript:;" class="dropdown-toggle menu-item-quick">
+		qatest 0055						
+		<span class="glyphicon glyphicon-chevron-down"></span>
+	</a>
+
+                                                <ul class="dropdown-menu nav-level-2 user_options" role="menu">
+                                                    <li class="userID hidden"> <a title="User" href="javascript:;" class="menu-item-quick">qatest0055@vmware.com</a>
+                                                    </li>
+                                                    <li>Customer # 9521319442 </li>
+                                                    <li><a href="https://my-dev13.vmware.com/group/vmware/alerts">Alerts</a>
+                                                    </li>
+                                                    <li><a id="pThemeProfileID" href="https://my-dev13.vmware.com/group/vmware/profile">Profile</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://my-dev13.vmware.com/c/portal/logout" onclick="javascript: oo_beta_lgout.show();">  Logout </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <!-- <li class="has-subnav user_options">
+	<a title="User" href="javascript:;" href="javascript:;" class="dropdown-toggle menu-item-quick">
+		$user_first_name $user_last_name 
+		<span class="glyphicon glyphicon-chevron-down"></span></a>
+	<ul class="dropdown-menu nav-level-2" role="menu">
+		<li class="userID hidden"> <a title="User" href="javascript:;">$user_email_address</a></li>
+		<li><a href="$msgBundle.getMessage("alerts.url", null, $locale)">$msgBundle.getMessage("alerts.label", null, $locale)</a></li>
+		<li><a id="pThemeProfileID" href="$msgBundle.getMessage("profile.url", null, $locale)">$msgBundle.getMessage("profile.label", null, $locale)</a></li>
+	</ul>
+</li>
+<li><a class="menu-item-quick" href="$msgBundle.getMessage("sign_out_url", null, $locale)" onclick="javascript: FSR.stopTracker();">$msgBundle.getMessage("logout", null, $locale)</a></li> 
+<li><a class="menu-item-quick" target="_blank" href="$msgBundle.getMessage("vmware.url", null, $locale)">$msgBundle.getMessage("vmware.com", null, $locale)</a></li> -->
+
+
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</section>
+    <section class="starlight container page-container">
+           <header class="header">
+			<nav class="navbar nav-menu" role="navigation"> 
+		    <a title="vmware" href="/" class="page-logo-my"></a><span class="brand"></span>
+			<div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <!-- This is completely optional -->
+                        
+                        <!-- Collect the nav links, forms, and other content for toggling    NAVBAR ********************** -->
+                        <div class="collapse navbar-collapse nav-menu-collapse pull-right margin-top-10 homePageNavigator" id="homePageNavigator">
+                            <ul class="nav navbar-nav nav-level-1">
+																					
+																					
+							                                <li id="navHeader_1"><a href="javascript:;" title="Products" alt="Products" target="_top" class="menu-item-primary-1">Products</a>
+																			<ul class="nav-level-2 nav-col-2">
+												<li>
+													<div class="row">
+																											<div class="col-md-6">
+															
+															<div class="header">Manage My Products</div>
+															<div class="links">
+																																<a href="/lan_code/group/vmware/downloads#tab1">My Products</a>
+																																<a href="/group/vmware/my-licenses">License Keys</a>
+																																<a href="/group/vmware/my-downloads">My Download History</a>
+																																<a href="https://www-dev13.vmware.com/account/secure/productRegistration.do?action=existingCustomer" target="_blank">Product Registration</a>
+																																<a href="/group/vmware/myeval">My Evaluations</a>
+																															</div>
+															
+															
+														</div>
+																											<div class="col-md-6">
+															
+															<div class="header">Manage My Subscription Services</div>
+															<div class="links">
+																																<a href="/group/vmware/subscription-services">Subscription Services</a>
+																																<a href="/group/vmware/add-on-requests">Add-On Requests</a>
+																															</div>
+															
+															
+														</div>
+																											<div class="col-md-6">
+															
+															<div class="header">All Products &amp; Programs</div>
+															<div class="links">
+																																<a href="/lan_code/group/vmware/downloads#tab2">All Products</a>
+																																<a href="https://www-dev13.vmware.com/try-vmware" target="_blank">Trial &amp; Free Products</a>
+																																<a href="/lan_code/group/vmware/patch">Product Patches</a>
+																																<a href="http://communities-dev13.vmware.com/community/vmtn/beta" target="_blank">Beta Programs</a>
+																																<a href="http://www.vmware.com/appliances" target="_blank">Virtual Appliances</a>
+																																<a href="/lan_code/group/vmware/eppenroll">VMware Purchasing Programs</a>
+																																<a href="http://www.vmware.com/vmwarestore/" target="_blank">Online Store</a>
+																															</div>
+															
+															
+														</div>
+																											
+													</div>
+												</li>
+											</ul>
+									
+								</li>
+																						
+							                                <li id="navHeader_2"><a href="javascript:;" title="Accounts" alt="Products" target="_top" class="menu-item-primary-1">Accounts</a>
+																			<ul class="nav-level-2 nav-col-2">
+												<li>
+													<div class="row">
+																											<div class="col-md-6">
+															
+															<div class="header">Manage Accounts</div>
+															<div class="links">
+																																<a href="/group/vmware/my-account">Account Summary</a>
+																																<a href="/group/vmware/users-permissions">Users &amp; Permissions</a>
+																																<a href="/lan_code/group/vmware/support-contract-history">Account Activities</a>
+																																<a href="/group/vmware/reports">Reports</a>
+																															</div>
+															
+															
+														</div>
+																											<div class="col-md-6">
+															
+															<div class="header">View Purchases</div>
+															<div class="links">
+																																<a href="/lan_code/group/vmware/support-contract-history?_VM_orderHistory=true">Order History</a>
+																																<a href="/group/vmware/billing-statements">Subscription Billing Statements</a>
+																															</div>
+															
+															
+														</div>
+																											<div class="col-md-6">
+															
+															<div class="header">Manage Funds</div>
+															<div class="links">
+																																<a href="/group/vmware/epp-overview">Enterprise Purchasing Token</a>
+																																<a href="/group/vmware/ccp-overview">Cloud Credit</a>
+																																<a href="/group/vmware/my-subscription-funds">Subscription Funds</a>
+																															</div>
+															
+															
+														</div>
+																											
+													</div>
+												</li>
+											</ul>
+									
+								</li>
+																						
+							                                <li id="navHeader_3"><a href="javascript:;" title="Support" alt="Products" target="_top" class="menu-item-primary-1">Support</a>
+																			<ul class="nav-level-2 nav-col-2">
+												<li>
+													<div class="row">
+																											<div class="col-md-6">
+															
+															<div class="header">Support</div>
+															<div class="links">
+																																<a href="/group/vmware/get-help">Get Support</a>
+																																<a href="/group/vmware/support-requests">Support Request History</a>
+																																<a href="/group/vmware/support-contracts">Support by Product</a>
+																																<a href="/lan_code/group/vmware/support-contract-history?_VM_contractHistory=true">Support Contracts</a>
+																															</div>
+															
+															
+														</div>
+																											<div class="col-md-6">
+															
+															<div class="header">Resource &amp; Tools</div>
+															<div class="links">
+																																<a href="https://www-dev13.vmware.com/lan_code/support" target="_blank">Support Center</a>
+																																<a href="http://kb.vmware.com/selfservice/microsites/microsite.do" target="_blank">Knowledge Base</a>
+																																<a href="http://partnerlocator.vmware.com/" target="_blank">Partner Locator</a>
+																																<a href="https://www-dev13.vmware.com/support/tracksn.portal" target="_blank">License Tool Tracker</a>
+																																<a href="https://www-dev13.vmware.com/lan_code/support/support-resources/pubs" target="_blank">Product Documentation</a>
+																																<a href="/group/vmware/support-tools1" target="_blank">Support Tools</a>
+																																<a href="/group/vmware/communities" target="_blank">Communities</a>
+																																<a href="http://mylearn.vmware.com/MgrReg/login.cfm" target="_blank">Training</a>
+																															</div>
+															
+															
+														</div>
+																											
+													</div>
+												</li>
+											</ul>
+									
+								</li>
+															                                                              
+                                
+                            </ul>
+                        </div><!-- /.navbar-collapse  END-->
+                    </div>
+		</nav>
+
+						</header>       
+            <section  class="content-container" id="ng-app" ng-app="configurator">
+
+                <!-- Content -->
+                <div ui-view="configurator-view"></div>
+                <!-- Content End -->
+
+            </section>
+          
+
+        </section>
+		
+	<div id="footer-container">
+    <div id="p_p_id_MyVMWareFatFooterPortlet_WAR_itcrossfunctional_" class="portlet-boundary portlet-boundary_MyVMWareFatFooterPortlet_WAR_itcrossfunctional_  portlet-static portlet-static-end  ">
+        <a id="p_MyVMWareFatFooterPortlet_WAR_itcrossfunctional"></a>
+        <section class="portlet" id="portlet_MyVMWareFatFooterPortlet_WAR_itcrossfunctional">
+            <div class="portlet-content">
+                <div class=" portlet-content-container" style="">
+                    <div class="portlet-body">
+                        <div class="reskinningFooterWrap">
+                            <div class="container-fluid fluid-width">
+                                <div class="row footerLinksHolder">
+                                    <div class="col-md-3 linksWrap border0">
+                                        <div class="linkHdr">About My Vmware</div>
+                                        <ul>
+                                            <li><a href="//kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&amp;docType=ex&amp;bbid=TSEBB_1334373573903&amp;url=&amp;stateId=1%200%20454816648&amp;dialogID=454806944&amp;docTypeID=DT_KB_1_1&amp;externalId=2017468&amp;sliceId=1&amp;rfId=">Top 10 things to know</a> </li>
+                                            <li><a href="//kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&amp;docType=ex&amp;bbid=TSEBB_1334365725551&amp;url=&amp;stateId=1%200%20454816648&amp;dialogID=454806944&amp;docTypeID=DT_KB_1_1&amp;externalId=2014350&amp;sliceId=2&amp;rfId=">My vmware FAQ</a> </li>
+                                            <li><a href="//kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&amp;docType=kc&amp;externalId=2020793&amp;sliceId=1&amp;docTypeID=DT_KB_1_1&amp;dialogID=454806944&amp;stateId=1%200%20454816648">Index of My Vmware Articles</a> </li>
+                                            <li><a href="#">Managing Folders in My VMware</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 linksWrap">
+                                        <div class="linkHdr">Vmware Technology</div>
+                                        <ul>
+                                            <li><a href="//www.vmware.com/end-user-computing.html">End-User Computing</a> </li>
+                                            <li><a href="//www.vmware.com/cloud-computing/hybrid-cloud.html">Hybrid Cloud</a> </li>
+                                            <li><a href="//www.vmware.com/software-defined-datacenter/index.html">Software-Defined Data Center</a> </li>
+                                            <li><a href="//www.vmware.com/virtualization/">Virtualization</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 linksWrap">
+                                        <div class="linkHdr">Try &amp; Purchase</div>
+                                        <ul>
+                                            <li><a href="//hol.vmware.com/">Vmware Hands-on Lab</a> </li>
+                                            <li><a href="//www.vmware.com/appliances">Virtual Applications Marketplace</a> </li>
+                                            <li><a href="://my.vmware.com/group/vmware/eppenroll">Vmware Purchasing Programs</a> </li>
+                                            <li><a href="//partnerlocator.vmware.com/">Partner Locator</a> </li>
+                                            <li><a href="//www.vmware.com/vmwarestore/">Online Store</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 linksWrap">
+                                        <div class="linkHdr">Community</div>
+                                        <ul>
+                                            <li><a href="://communities.vmware.com/community/vmtn">VMTN Communities</a> </li>
+                                            <li><a href="//blogs.vmware.com/">VMware Blogs</a> </li>
+                                            <li><a href="//www.vmware.com/community_terms">Community Terms of Use</a> </li>
+                                            <li><a href="//developercenter.vmware.com/web/dp">Developer Center</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="p_p_id_MyVMWareFooterPortlet_WAR_itcrossfunctional_" class="portlet-boundary portlet-boundary_MyVMWareFooterPortlet_WAR_itcrossfunctional_  portlet-static portlet-static-end  ">
+        <a id="p_MyVMWareFooterPortlet_WAR_itcrossfunctional"></a>
+        <section class="portlet" id="portlet_MyVMWareFooterPortlet_WAR_itcrossfunctional">
+            <div class="portlet-content">
+                <div class=" portlet-content-container" style="">
+                    <div class="portlet-body">
+                        <footer class="wrapper">
+                            <div class="footerbar">
+                                <p>Copyright © 2014 VMware, Inc. All rights reserved.</p>
+
+                                <ul class="footer-nav-links">
+                                    <li>
+                                        <a title="Contact Us" target="_blank" href="//www.vmware.com/company/contact/">     Contact Us    </a>
+                                    </li>
+                                    <li>
+                                        <a title="Terms of Use" href="/web/vmware/terms-of-use?mode=view">     Terms of Use    </a>
+                                    </li>
+                                    <li>
+                                        <a title="Privacy" target="_new" href="//www.vmware.com/help/privacy.html">     Privacy    </a>
+                                    </li>
+                                    <li>
+                                        <a title="Accessibility" href="//www.vmware.com/accessibility.html">Accessibility</a>
+                                    </li>
+                                    <li>
+                                        <a title="Site Index" href="//www.vmware.com/site_index.html">Site Index</a>
+                                    </li>
+                                    <li>
+                                        <a title="Help" href="//www.vmware.com/help/">Help</a>
+                                    </li>
+                                    <li><a href="javascript:void(0);">
+				Feedback</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+    <!-- Background divs -->
+    <div class="page-b-header-gradient">
+    </div>
+    <div class="page-b-footer-gradient">
+    </div>
+    <!-- ##################### -->
+</body>
+</html>
+
+<script>
+vmf.include("parsley");
+    var vcredit =   {
+        "globalVars" : {
+			"serviceCategory" : "VSPP",
+			"payment_type1" : 'for 12 months',
+			"payment_type2" : '/ month',
+			"payment_type3" : '/ year',
+			"payment_type4" : "",
+			"months": 'Month(s)',
+			"days": 'Day(s)',
+			"years": 'Years',
+			"serviceType_error" : 'Please select a sevice type.',
+			"term_error" : 'Please select a term.',
+			"ajax_error_header" : 'Error',
+			"ajax_error_body" : 'Content is not available',
+			"modal_ok" : 'Ok',
+			"modal_cancel" : 'Cancel',
+			"trueup_header" : 'Oops!',
+			"trueup_text1"  : 'This order as configured will result in you exceeding the VSPP monthly spending limit established by your Aggregator, {0}. Please contact {0} to have your VSPP monthly spending limit increased.',
+			"trueup_learnmore" : 'Learn more',
+			"fund_text" : 'Fund',
+			"modal_close" : 'Close',
+			"msrp" : 'MSRP',
+			"allServicesLinkTxt" : 'Go to All Services page.',
+			"vcredit_path" : "/static/myvmware/modules/vcredit/",
+			//New Service flow URL
+			//step 1
+			"getServicesUrl" : "/static/myvmware/modules/vcredit/json/vspp/serviceDetails.json?test=abc",
+
+			"praxisSignUpNewService": "/static/myvmware/modules/vcredit/json/vspp/praxisDetails.json?sss=55",
+			"praxisPromoCodeValidation" : "/static/myvmware/modules/vcredit/json/vspp/changePromotion.json",
+			"praxisSubmitNewService" : "/static/myvmware/modules/vcredit/json/vspp/submitPromotion.json?wfdf=3232",
+			//"submitServiceUrl" : "/static/myvmware/modules/vcredit/json/vspp/updated_addOn_service.json",
+			//step 2 changed path for testing
+			"submitServiceUrl" : "/static/myvmware/modules/vcredit/json/vspp/updated_addOn_service.json",
+			//step 3
+			"step3SubmitUrl" : "/static/myvmware/modules/vcredit/json/vspp/complete_success.json",
+			//"fetchAddonServiceDetailsUrl" : "/static/myvmware/modules/vcredit/json/vspp/updated_addOn_service.json",
+			//Addon flow URL
+			//step 1 
+			"addonsGetServicesUrl" : "/static/myvmware/modules/vcredit/json/vspp/addOn_service.json?test=abc",
+			//"addonsGetServicesUrl" : "/static/myvmware/modules/vcredit/json/vspp/addOn_service.json",
+			"selectServiceUrl" : "/static/myvmware/modules/vcredit/json/vspp/sku_details.json",
+			//step 2changed path for testing
+			"submitAddonServiceURL" : "/static/myvmware/modules/vcredit/json/vspp/updated_addOn_service.json",
+			//"submitAddonServiceURL" : "/static/myvmware/modules/vcredit/json/vspp/updated_addOn_service.json",
+			//step 3
+			"step3AddonSubmitUrl" : "/static/myvmware/modules/vcredit/json/vspp/complete_success.json",
+
+			//redirect flows
+			"renewAddonConfigForExistingServiceUrl" : "/static/myvmware/modules/vcredit/json/vspp/renewal_service_step2_from_ext.json?test=abc",
+			"addonConfigForExistingServiceUrl" : "/static/myvmware/modules/vcredit/json/vspp/addOn_service_from_ext.json?test=abc",
+			"postBackUrlFromExtLink" : "",
+
+			//Renewal flow URL
+			//step 1 
+			"getServiceRenewalURL": "/static/myvmware/modules/vcredit/json/vspp/addOn_service.json?test=abc",
+			"selectServiceRenewalURL": "/static/myvmware/modules/vcredit/json/vspp/sku_details.json",
+			//step 2 Changed path for testing....
+			"submitAddonRenewalServiceURL": "/static/myvmware/modules/vcredit/json/vspp/renewal1_service_step2.json",
+			"applyCoreRenewalServiceURL" : "/static/myvmware/modules/vcredit/json/vspp/renewal_service_step2-2.json",
+			//step 3
+			"step3RenewalSubmitURL": "/static/myvmware/modules/vcredit/json/vspp/complete_success.json",
+			"getConfiguratorOptionsUrl" : "/static/myvmware/modules/vcredit/json/vspp/configurator.json",
+			"balance_text" : 'Fund Balance',
+			"trueup_text2"  : 'about how to purchase more credit.',
+			"config_page_content" : 'The configurator helps accurately select items for new and add-on Subscription Service transaction.',
+			"addonsServiceToolTip1" : 'Services shown are those that are part of the VSPP Commitment Contract',
+			"addonsServiceToolTip2" : "Go to All Services page to view a full list of services.",
+			"changeFundModalUrl" : "/static/myvmware/modules/vcredit/json/vspp/changeFund.json",
+			"submitSelectedFundUrl" : "/static/myvmware/modules/vcredit/json/vspp/configuratorResponse.json",
+			"configHomeUrl":"vspp_configurator.html?_VM_flow=addon",
+			"serviceDetailsPageUrl" : "/group/vmware/all-services",
+			"directConnectAvailableQuota" : "/static/myvmware/modules/vcredit/json/vspp/directConnect.json",
+			"success": 'Success!',
+			"orderSubmit" : 'You will receive an order confirmation email.',
+			"referenceId" : 'Your reference ID is {0}.',
+			"configSelectedService" : 'Configure add-on service to the selected service.',
+			"viewServiceDetails" : 'View service details.',
+			"serviceId" : 'Service ID',
+			"serviceType" : 'Service Type',
+			"region" : 'Region',
+			"termEnding" : 'Term Ending',
+			"remainingTerm" : 'Remaining Term',
+			"monthlyServiceCost" : 'Monthly Service Cost',
+			"annuallyServiceCost" : 'Annual Service Cost',
+			"addOnOneTime" : 'Add-on One Time',
+			"chooseAddOn" : 'Select Add-ons below',
+			"addOnRecurringCost" : 'Recurring Cost of New Add-ons',
+			"AddOnRecurringCost" : 'Recurring Cost of New Add-ons',
+			"addOnMonthlyCost" : 'Add-on Monthly Cost',
+			"addOnPrepaidCost" : 'Add-on Prepaid Cost',
+			"addOnAnnualCost" : 'Add-on Annual Cost',
+			"addOnOneCost" : 'Add-on One Time Cost',
+			"backBtn" : 'Back',
+			"reviewOrderBtn" : 'Review Order',
+			"cancelBtn" : 'Cancel',
+			"SubmitBtn" : 'Submit',
+			"continueBtn" : 'Continue',
+			"applyBtn" : 'Apply',
+			"revertBtn" : 'Revert',
+			"editBtn" : 'edit',
+			"saveBtn" : 'save',
+			"showCalculations" : 'Show calculations',
+			"hideCalculations" : 'Hide calculations',
+			"dueNow" : 'Due Now',
+			"monthlyCostService" : 'Monthly Cost for the Service',
+			"annualCostService" : 'Annual Cost for the Service',
+			"orderTotal" : 'Total Order Commitment',
+			"coreServiceMCost" : 'Core Service Monthly Cost',
+			"addOnServiceMCost" : 'Add-on Service Monthly Cost',
+			"coreServiceACost" : 'Core Service Annually Cost',
+			"AddOnServiceACost" : 'Add-on Service Annually Cost',
+			"coreServiceTotal" : 'Core Service Total',
+			"addOnServiceTotal" : 'Total Cost of Add-ons',
+			"submitNotification" : 'All orders are final. Once submitted, your order cannot be cancelled.',
+			"agree" : 'I agree to the',
+			"termsConditions" : 'Terms &amp; Conditions',
+			"coreConfigureService" : 'Select the service to which you would like to modify service terms and add-on service',
+			"DontSeeService" : "Looking for another Subscription Service?",
+			"SKU" : 'SKU',
+			"component" : 'Component',
+			"orderType" : 'Order Type',
+			"paymentType" : 'Billing Type',
+			"qty" : 'Quantity',
+			"select" : 'Select',
+			"changeConfiguration" : 'Change configuration',
+			"serviceCost" : 'Service Cost',
+			"term" : 'Term',
+			"requiredFields" : 'All fields are required.',
+			"service" : 'Service',
+			"selectRegion" : 'Select a region to display Service type.',
+			"storage" : 'Storage',
+			"partner" : 'Offering Partner',
+			"currency" : 'Currency',
+			"selectBelow" : 'Select your service options.',
+			"invalCombination" : 'Price details not available for the selected combination',
+			"ReviewConfiguration" : 'Review Core service Configuration',
+			"payment" : 'Payment',
+			"NoAddOnService" : 'No Add ON selected for this service.',
+			"successModified" : 'Success! Your Subscription Service configuration has been modified.',
+			"serviceStartDate" : 'Service Start Date',
+			"termStart" : 'Term Start',
+			"termEnd" : 'Term End',
+			"serviceTerm" : 'Service Term',
+			"offeringPartner" : 'Offering Partner',
+			"paidWith" : 'Paid Using',
+			"coreService" : 'Subscription Service',
+			"billingType" : 'Billing Type',
+			"addOnService" : 'Add-on Service',
+			"Cost" : 'Cost',
+			"newService" : 'New Service',
+			"ConfigureNewService" : 'Sign up for a new Subscription Service.',
+			"selectStart" : 'Select to Start',
+			"toggleDropdown" : 'Toggle Dropdown',
+			"configureCapacity" : 'Configure additional capacity or support for an existing Subscription Service.',
+			"ConfigureRenewal" : 'Configure the renewal of an existing Subscription Service.',
+			"pricingTerms" : 'Any pricing or terms &amp; conditions statement go here.',
+			"renewalService" : 'Renewal Service',
+			"directConnect" : 'Direct Connect Add-on Limit Exceeded',
+			"directConnectErr" : 'You have reached your limit for Direct Connect and cannot purchase anymore.',
+			"noAddOns" : 'No add-ons to display...',
+			"quantity" : 'Quantity',
+			"billingRate" : 'Billing Rate',
+			"supportLevel" : 'Support Level',
+			"billingTerm" : 'Billing Term',
+			"proratedExtendedCost" : 'Prorated Extended Cost',
+			"extendedCost" : 'Extended Cost',
+			"noPriceAssociated" : 'Rate information is unavailable at this time. Please contact your VMware Account Executive for pricing details.',
+			"selectDifferentFund" : 'Select a Different fund',
+			"account" : 'Account',
+			"balance" : 'balance',
+			"expires" : 'expires',
+			"monthlyRecurringTotal" : 'Monthly Recurring Total',
+			"recurringTotal" : 'Recurring Total',
+			"oneTOrPrepaidTotal" : 'One Time/Prepaid Total',
+			"prepaid" : 'Prepaid',
+			"oneTime" : 'One Time',
+			"addOnRequest" : 'Add-on Request',
+			"hasSubmitted" : 'has been submitted to',
+			"notificationEmail" : 'You will receive notification by email and/or My VMware alert on the status of your order',
+			"backToService" : 'Back to service details page',
+			"administratorService" : 'Administrator of Service',
+			"administratorServiceText": 'The primary administrator of this service is the technical point of contact between your organization and VMware. Indicate below whether you would like to designate administrator for this service.',
+			"primaryAdministrator": 'Yes, I am the primary administrator of this service.',
+			"nonPrimaryadministrator" : 'No, I am not the primary administrator of this service.',
+			"administratorDetails" : 'Enter the primary administrator contact for this service.',
+			"administratorFirstName" : 'First Name',
+			"administratorLastName" : 'Last Name',
+			"administratorEmailAddress" : 'Email Address',
+			"change" : 'Change',
+			"tokenFlag":"",
+			"submitBtnTextNotXaas" : 'Submit',
+			"noFundMessage" : 'No Funds available for display',
+			"renewalBtnText" : 'Review Order',
+			"renewalBtnTextNotXaas" : 'Request Order',
+			"addonHeaderNotXaas" : 'Purchase Add-ons',
+			"addonMessageNotXaas" : '* Prices shown are VMware estimated maximum prices and do not include taxes. Final pricing is subject to the terms and conditions of your Offering Partner and will be reflected on your invoice.',
+			"isNotXaasRenewalPageMessage1" : 'Negotiated discounts will be applied at the time of invoice.',
+			"isNotXaasRenewalPageMessage2" : 'Your cost may be lower, depending upon any special negotiated pricing, payment terms and conditions with the fering Partner. The invoice sent by the Offering Partner will contain final pricing.',
+			"isNotXaasRenewalPageMessage3" : '* Prices shown are VMware estimated maximum prices and do not include taxes. Final pricing is subject to the terms and conditions with your Offering Partner and will be reflected in your invoice.',
+			"goToAllServiceText" : 'Go to All Services page.',
+			"goToAllServiceURL" : '/group/vmware/all-services',
+			"sidDetailsUrl":'/group/vmware/subscription-services?_VM_action=viewSubscriptionDetails',
+			"dashboardURL" : '/vsppdashboard.html#/',
+			"addOnRequest": 'Add-on Request',
+			// Praxis flow 
+
+			"praxisHeader" : 'Sign Up for VMware vCloud Air Virtual Private Cloud OnDemand',
+			"useYourPromoCredit" : 'Promotional Credits Applied',
+			"trackUsage" : 'Manage Your Subscription Services',
+			"manageService" : 'Manage Your Service',
+			"payForWhatYouUse" : 'Pay for Only What You Use',
+			"manageServiceDesc": 'You can go to the All Services page and find this service to view usage and billing details. You can also manage your payment method, file, technical support request and more.',
+			"goToAllServicesText" : 'Back to All Services',
+			"payForWhatYouUseDesc" : 'Usage charges start when you first deploy your resources. Monthly usage is billed in arrears.',
+			"learnPricingLinkText" : 'Learn about pricing',
+			"pricingEstimatorText" : 'Estimate Credits Needed',
+			"pricingEstimatorDesc" : 'Use the Estimator tool to determine the Subscription Credits needed to fund new Subscription Services and Add-ons.',
+			"goToEstimatorLinkText" : 'Go to Estimator',
+			"enterPromoCodeText" : 'Enter Promotional Code (optional)',
+			"forText": 'for',
+			"invalidPromoCode" : 'This promotional code is not valid',
+			"managePermissionText": "You do not have permission to purchase Subscription Service Add-ons. Go to <a href=\'#\'>My Permissions<\/a> to request access.",
+			"praxisHeaderDescription":"Click Submit to sign up for a new {0} Subscription Service using the vCloud Air Network account shown below.",
+			"accountName" : 'Account Name',
+			"accountNumber" : 'Account Number',
+			"fundExpiration" : 'Contract End Date',
+
+			"praxis_para1_1" : 'Your vCloud Air Network will be charged only after you consume resources in the ',
+			"praxis_para1_2" : 'Once you select a vCloud Air Network account as the payment method for your Subscription Service, you cannot modify the account used for this payment or select another payment method.',
+			"portal_text" : "portal",
+
+			"signUpFor" : 'Sign Up for', 
+			//"praxisComplete_p1_1" : 'You have completed your',          
+			//"praxisComplete_p1_2" : 'order for account',          
+			//"praxisComplete_p1_3" : '. You will receive an email that explains how to log in to', You have completed {0} order for account {1}. BUG-00111371
+			"praxisComplete_p1_1" : 'Your order has been submitted. You will receive an email that explains how to log in to VMware vCloud Air and deploy resources and services that you can use to build applications within minutes.',
+			"praxisComplete_p1_4" :  'You are charged for usage only after you deploy your new resources. Monthly usage is billed in arrears.',
+			"praxisComplete_p1_5" :  'and deploy resources and services that you can use to build applications within minutes.',
+			"praxisComplete_p1_6":'Look for Service ID {0} on your myVMware account {1} to see details about this vCloud Air OnDemand service. vCan Contract Name {2} will be debited for this subsciprtion service.',
+			"praxisComplete_usage": 'Track Your Usage and Billing',
+			"using" : 'using',  
+			"accessThe" : 'Visit the',
+			"praxisServiceDetailsLinkText1" : 'Subscription Service Details page for Service ID:',
+			"praxisServiceDetailsLinkText2" : 'to view more information about this Subscription Service. You can manage your other services from the',
+			"inYourAccount" : 'in your account',
+
+			"selectOfferingPartner" : 'Select an Offering Partner',
+			"selectPartnerText" : 'Your Offering Partner can view your Subscription Fund balance, the approximate date that the balance will be depleted, and basic information about this Subscription Service. They cannot view usage data such as XXXX or XXXX.',
+
+			"fundAccessText1": 'You do not have access to {0} fund to redeem Add-ons for this service. Contact',
+			"fundAccessText2": 'to invite you to the fund.',
+			"goToEstimatorLinkURL" : 'http://vcloud.vmware.com/service-offering/pricing/pricing-calculator/',
+			"selectedServiceDetailURL" : "#",
+			"learnPricingLinkURL" : 'http://vcloud.vmware.com/service-offering/pricing',
+			"directConnectAlertHeader" : 'Direct Connect Add-on Limit Exceeded',
+			"directConnectAlertBody" : 'You have reached your limit for Direct Connect and cannot purchase anymore.',
+			"addOnFlowExcelImportURL" : "https://my-test15.vmware.com/group/vmware/configure-service/-/consumer/WSRP_10132_939d62c9__138b__4981__add9__aaab012b80ba/normal/view/cacheLevelPage/WDNOa2NGTmxjblpwWTJWRGIyNW1hV2QxY21GMGIzSlFiM0owYkdWMFgxZEJVbDlwZEhOa2NGOTNjM0p3UFRFbVgzTmtjRk5sY25acFkyVkRiMjVtYVdkMWNtRjBiM0pRYjNKMGJHVjBYMWRCVWw5cGRITmtjRjlmVmsxZlpuVnVaRWR5YjNWd1NVUTlkbWRTVkRaaU5IWjJUVkJWWldWelJsRTVPVmxWVVEqKg**?p_p_lifecycle=2&p_p_resource_id=addonFLowExcel&p_p_col_id=column-1&p_p_col_count=1&_WSRP_10132_939d62c9__138b__4981__add9__aaab012b80ba_wsrp-resourceCacheability=cacheLevelPage&_WSRP_10132_939d62c9__138b__4981__add9__aaab012b80ba__VM_fundGroupID=vgRT6b4vvMPUeesFQ99YUQ",
+			"exportText" : 'Export',
+			"removeAddonText" : 'Are you sure you want to remove?',
+			"removeAddonHeaderText" : 'Removing Addon',
+			"buttonLabelYes" : 'Yes',
+			"buttonLabelNo" : 'No',
+			"noSidsForFundGroup" : 'There are currently no Subscription Services associated with this Fund.',
+			"addOnSltNoData" : 'There are no active subscription services for which to purchase Add-Ons.',
+			"renewalSltNoData" : 'There are no subscription services that are eligible for renewal at this time.',
+			"andText" : 'and',
+			"configureService" : 'CONFIGURE SERVICE',
+			"PurchaseNewService" : 'Purchase a Subscription Service',
+			"addAdditionalCapacity" : 'ADD ADDITIONAL CAPACITY',
+			"reviewAndSubmit" : 'REVIEW & SUBMIT',
+			"complete" : 'COMPLETE',
+			"sltExistingService" : 'SELECT AN EXISTING SERVICE',
+			"purchaseAddons" : 'Purchase Add-ons',
+			"addCapacity" : 'ADD ADDITIONAL CAPACITY',
+			"modifyCoreAddonService" : 'MODIFY SERVICE TERMS',
+			"serviceRenewalConfiguration" : 'Renew a Subscription Service',
+			"subscriptionServiceAddon" : 'Subscription Service Add-on',
+			"NAtext": "N/A",
+			"termsAndConditionsUrl":'http://www.vmware.com/pdf/invoice_terms.pdf',
+			"quantityText":"Quantity",
+			"discountsText": "Discounts",
+			"done_text" : "Done",
+			"success_noexl" : "Complete",
+			"bulkDiscountMsg" : "Maximum billing rate. Billing rate will be updated based on quantity selected. Bulk discount available.",
+			"allServicesPageText" : "All Services Page",
+			"redemptionNotes":"Tag (optional)",
+			"notesPlaceholder":"Add a Note",
+			"configuratorPageTitle":'Configurator',
+			"currentCost":'Current Cost',
+			"directConnectHeader" : 'Direct Connect Add-On',
+			"directConnectMessage" : 'You must have a contracted relationship with a telco partner in order for us to complete the provisioning process.',
+			"directConnectKeep" : 'Keep Direct Connect Add-on',
+			"directConnectRemove" : 'Remove Direct Connect Add-on',
+        	"select_to_start":"Select to Start",
+        	"aggregator": "Aggregator",
+        	"dueNowTooltip": 'This is a one-time payment for the Subscription Service and Add-ons you have selected, including all annual, prepaid, one-time, and first month costs. You will be charged immediately after submitting your order.',
+        	"monthlyCostServiceTooltip": "Reflects the total recurring monthly costs for Subscription Services through the end of the term.",
+        	"annualCostServiceTooltip": "Reflects the annual cost for prepaid Subscription Services through the end of the term." ,
+        	"orderTotalTooltip":  "Reflects the total commitment cost for the full term of the Subscription Services.",
+        	"newSubscriptionCost": "New Subscription Cost",
+        	"prjMonthlyCost": "Projected Monthly Cost",
+        	"new": "New",
+        	"balance_Cap": "Balance",
+        	"currentMonthlyCost": "Current Monthly Cost",
+        	"commitLevel": "Commit Level",
+        	"prjCost" : "Projected Cost",
+        	"currentCost" : "Current Cost",
+        	"coreServiceCost" : "Core Service Cost",
+        	"modal_confirm" : "Confirm",
+        	"tagPlaceholder": "Enter a Tag",
+        	"redemptionTag_Tooltip": "You have the option to enter a descriptive tag for this order. You can use tags to sort and organize orders in the vCAN Portal. Any tag you enter can be selected on future orders.",
+        	"monthlyCost" : "Monthly Cost",
+        	"annualCost" : "Annual Cost",
+        	"prepaidCost" : "Prepaid Cost",
+			"addOnSubmitNotificationTitle" : "All orders are final. Once submitted, your order cannot be cancelled.",
+			"confirm" : "Confirm",
+        	"confirm_message" : "Do you want to exit this page? You will lose your current service configuration.",
+			"coreServicePCost" : "Core Service Prepaid Cost",
+			"coreServiceMTotal" : "Core Service Monthly Total",
+			"coreServiceATotal" : "Core Service Annually Total",
+			"coreServicePTotal" : "Core Service Prepaid Total",
+			"success": 'Your Order has been Submitted.',
+			"orderSubmit" : 'You will receive an order confirmation via email.',
+			"referenceId" : 'Your Request ID is {0}.',
+        	"offeringPartner2":"Partner",
+        	"redemptionNotes_withoutOptional":"Tag",
+			"manageServiceText":"Visit the Subscription Service Details page to view billing details, manage your payment method, file a technical support request, and more.",
+        	"referenceIdCashFlowText":"You reference ID is ",
+        	"vsppName" : "vCan Contract Name",
+        	"currentBalance" : "Current Balance",
+        	"commitmentLevel" : "Commitment Level",
+        	"addOnSubmitNotification": 'Add-on costs are prorated based on the date your service is provisioned. The costs shown above were estimated using the date of your order as the service provisioning date. Actual costs may vary from this estimate and any difference will either be credited to or debited from your fund balance at the time of billing. To learn more, visit KB Article <a href="http://kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&docType=kc&externalId=2094482&sliceId=1&docTypeID=DT_KB_1_1&dialogID=456128111&stateId=1%200%20456126701" target="_blank"> 2094482 </a>',
+        	"help" : "Help",
+        	"configurator_KBArticle_link":"http://kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&docType=kc&externalId=2094491&sliceId=1&docTypeID=DT_KB_1_1&dialogID=459506788&stateId=0%200%20459516403",
+        	"newService1ConfigureService" : "http://kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&docType=kc&externalId=2094381&sliceId=1&docTypeID=DT_KB_1_1&dialogID=459534138&stateId=0%200%20459530490",
+        	"ServiceRenewal1SelectanExistingService":"http://kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&docType=kc&externalId=2094400&sliceId=1&docTypeID=DT_KB_1_1&dialogID=459534187&stateId=0%200%20459530676",
+        	"addonService3ReviewandSubmit":"http://kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&docType=kc&externalId=2094482&sliceId=1&docTypeID=DT_KB_1_1&dialogID=459506614&stateId=0%200%20459508992",
+        	"newOnDemandServicePraxis":"http://kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&docType=kc&externalId=2094388&sliceId=1&docTypeID=DT_KB_1_1&dialogID=459534103&stateId=0%200%20459530373",
+        	"onDemandSwitchingPaymentMethod" : "http://kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&docType=kc&externalId=2094393&sliceId=1&docTypeID=DT_KB_1_1&dialogID=459534168&stateId=0%200%20459530569",
+        	"noAddOnAvailable" : "No Add-ons are available for this Subscription Service",
+			"quantitySize" : '5',
+			"emailDomain" : "email@domain.com",
+			"fnameRequired" : "First Name required",
+			"lnameRequired" : "Last Name required",
+			"emailRequired" : "Email required",
+			"invalidEmail" : "Invalid email address"
+        }
+    }
+
+</script>

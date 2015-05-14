@@ -1,0 +1,25 @@
+<section tabindex="-1" role="dialog" aria-labelledby="paymentMethodModal" aria-hidden="true" class="overlay">
+    <div class="modal-header">
+        <span class="close" data-dismiss="modal" aria-hidden="true" ng-click="cancel()"></span>
+        <h3 class="modal-title">{{globalVars.changePaymentRequestHeader}}</h3>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+               {{globalVars.changePaymentRequestMessage}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 form-control-static">
+                <div class="checkbox">
+                    <input type="checkbox" id="reviewCheck" ng-model="getReviewed"/>
+                    <label for="reviewCheck">{{globalVars.changePaymentRequestReviewed}}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+		<a type="button" class="btn btn-primary" data-ng-model="getReviewed" ng-click="continuePaymentCheck(getReviewed)" ng-disabled="!getReviewed">{{globalVars.continueBtn}}</a>
+		<a type="button" class="btn btn-default" ng-click="cancel()">{{globalVars.cancelBtn}}</a>
+    </div>
+</section>

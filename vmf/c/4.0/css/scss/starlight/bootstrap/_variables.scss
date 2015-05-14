@@ -1,0 +1,222 @@
+//All variables specific to Starlight Theme. New and Existing (overwritten) variables. 
+//If not defined here, variables set in bootstrap (_variables.scss) are being used.
+
+//== Colors
+//
+// Starlight Colors
+// Primary Palette (use for headers, background, buttons)
+$starlight-blue-navy:	#003D79 !default;
+$starlight-blue-dark:	#006990 !default;
+$starlight-blue:		#0095D3 !default;
+$starlight-blue-light:	#89CBDF !default;
+$starlight-green:		#387C2C !default;
+$starlight-green-light:	#6DB33F !default;
+$starlight-yellow:		#C3CD23 !default;
+$starlight-required:	#E00000 !default;
+// 
+
+//Neutral Palette (use for dividers, body text, etc)
+$starlight-gray:		#666 !default;
+$starlight-gray-dark:   #333 !default;
+$starlight-gray-solid:  #717074 !default;
+$starlight-gray-light:	#E6E6E6 !default; /* Divider color */
+//
+
+//Background Palette (use for container and modules backgrounds)
+$starlight-bg-white:	#FFF !default;
+$starlight-bg-blue:		#E1F2F7 !default;
+$starlight-bg-gray-dark: #E6E6E6 !default;
+$starlight-bg-gray:		#F1F6F8 !default;
+$starlight-bg-gray-light: #F1F1F1 !default;
+//
+
+//== Scaffolding
+//
+// ## Settings for some of the most global styles.
+
+// Background color for `<body>`.
+$body-bg:               #fff !default;
+// Global text color on `<body>`.
+$text-color:            $starlight-gray;
+
+// Global textual link color.
+$link-color:            $starlight-blue-dark;
+// Link hover color
+$link-hover-color:      $starlight-blue;
+
+
+//== Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-proxima-nova-thin:  		"proxima-nova-thin","Arial",sans-serif;
+$font-family-proxima-nova-thin-it:  	"proxima-nova-thin-it","Arial",sans-serif;
+$font-family-proxima-nova-light:  		"proxima-nova-light","Arial",sans-serif;
+$font-family-proxima-nova-light-it:  	"proxima-nova-light-it",sans-serif;
+$font-family-proxima-nova-regular:  	"proxima-nova-regular","Arial",sans-serif;
+$font-family-proxima-nova-regular-it:  	"proxima-nova-regular-it","Arial",sans-serif;
+$font-family-proxima-nova-semibold:  	"proxima-nova-semibold","Arial",sans-serif;
+$font-family-proxima-nova-semibold-it:  "proxima-nova-semibold-it","Arial",sans-serif;
+$font-family-proxima-nova-bold:  		"proxima-nova-bold","Arial",sans-serif;
+$font-family-proxima-nova-bold-it:  	"proxima-nova-bold-it","Arial",sans-serif;
+$font-family-proxima-nova-extrabold:  	"proxima-nova-extrabold","Arial",sans-serif;
+$font-family-proxima-nova-extrabold-it: "proxima-nova-extrabold-it","Arial",sans-serif;
+$font-family-proxima-nova-black:  		"proxima-nova-black","Arial",sans-serif;
+$font-family-proxima-nova-black-it: 	"proxima-nova-black-it","Arial",sans-serif;
+
+$font-family-base:        $font-family-proxima-nova-regular;
+
+$icon-font-path: "/vmf/c/4.0/css/fonts/bootstrap/";
+
+
+
+
+$font-size-base:          16px; //Modified according to Starlight Theme
+
+//Specific for Heading elements. Additional variables added for Intro Text and Alternate Intro Text 
+//(last 2 variables each block)
+$font-size-h1:            40px;
+$font-size-h2:            28px;
+$font-size-h3:            22px;
+$font-size-h4:            18px;
+$font-size-h5:            16px;
+$font-size-h6:            12px;
+$font-size-intro:		  32px !default;
+$font-size-alt-intro:	  24px !default;
+
+$line-height-h1:		  48px !default;
+$line-height-h2:		  34px !default;
+$line-height-h3:		  26px !default;
+$line-height-h4:		  24px !default;
+$line-height-h5:		  22px !default;
+$line-height-h6:		  1.1 !default;
+$line-height-intro:		  38px !default;
+$line-height-alt-intro:	  32px !default;
+
+$color-h1:				  $starlight-blue !default;
+$color-h2:				  $starlight-green !default;
+$color-h3:				  $starlight-gray-dark !default;
+$color-h4:				  $starlight-green !default;
+$color-h5:				  $starlight-gray !default;
+$color-h6:				  $starlight-gray !default;
+$color-intro:			  $starlight-gray !default;
+
+//Added to include anchor tags within Heading elements
+$color-h1-a:			  $starlight-blue !default;
+$color-h2-a:			  $starlight-green !default;
+$color-h3-a:		      $starlight-blue-dark !default;
+$color-h4-a:			  $starlight-blue-dark !default;
+$color-h5-a:			  $starlight-blue-dark !default;
+$color-h6-a:			  $starlight-gray !default;
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+
+
+// Navbar links
+$navbar-default-link-color:                #333;
+$navbar-default-link-hover-bg:             #777;
+$navbar-default-link-active-color:         #FFF;
+$navbar-default-link-active-bg:            #6A6B6F;
+
+
+
+
+//== Navs
+//
+//##
+
+//=== Shared nav styles
+
+
+//== Tabs
+$nav-tabs-border-color:                     $starlight-blue; //
+$nav-tabs-active-link-hover-bg:             $starlight-blue; //
+
+//== Pills
+$nav-pills-border-radius:                   0px;
+$nav-pills-active-link-hover-bg:            $starlight-blue;
+$nav-pills-active-link-hover-color:         #FFF;
+
+//== Pagination
+//
+//##
+// Changed variables to provide exact color palette according to the new Starlight Numeric Pagination
+$pagination-color:                     $starlight-blue-dark;
+$pagination-bg:                        transparent;
+
+$pagination-hover-color:               $starlight-blue-dark;
+$pagination-hover-bg:                  $starlight-bg-gray-dark;
+$pagination-hover-border:              transparent;
+
+$pagination-active-bg:                 $starlight-blue;
+$pagination-active-border:             transparent;
+
+$pagination-disabled-color:            #999;
+$pagination-disabled-bg:               transparent;
+$pagination-disabled-border:           transparent;
+
+/* Overriding the breadcrumb related variables - START */
+$breadcrumb-color: 						#999;
+$breadcrumb-bg: 						transparent;
+$breadcrumb-active-color:				$breadcrumb-color;
+$breadcrumb-padding-horizontal:			0;
+$breadcrumb-margin-bottom: 				10px; /* newly created variable */
+/* Overriding the breadcrumb related variables - END */
+
+/* Top Navigation specific styles */
+$starlight-eyebrow-gray:				#3B3B3F !default;
+
+/* Forms */
+$starlight-base-input-height: 			37px !default;
+
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+$state-success-text:             $starlight-gray-dark;
+$state-success-bg:               #e2f0d9;
+$state-success-border:           #6db33f;
+
+$state-info-text:                $starlight-gray-dark;
+$state-info-bg:                  $starlight-bg-blue;
+$state-info-border:              $starlight-blue;
+
+$state-warning-text:             $starlight-gray-dark;
+$state-warning-bg:               #fff5eb;
+$state-warning-border:           #ff8400;
+
+$state-danger-text:              $starlight-gray-dark;
+$state-danger-bg:                #f7e4e4;
+$state-danger-border:            #e00000;
+
+//== Alerts
+//
+//## Define alert colors, border radius, and padding.
+
+//$alert-padding:               15px !default;
+//$alert-border-radius:         $border-radius-base !default;
+//$alert-link-font-weight:      bold !default;
+
+$alert-success-bg:            $state-success-bg;
+$alert-success-text:          $state-success-text;
+$alert-success-border:        $state-success-border;
+
+$alert-info-bg:               $state-info-bg;
+$alert-info-text:             $state-info-text;
+$alert-info-border:           $state-info-border;
+
+$alert-warning-bg:            $state-warning-bg;
+$alert-warning-text:          $state-warning-text;
+$alert-warning-border:        $state-warning-border;
+
+$alert-danger-bg:             $state-danger-bg;
+$alert-danger-text:           $state-danger-text;
+$alert-danger-border:         $state-danger-border;
+
+$tooltip-arrow-color: #333333;
+$tooltip-background-color: #333333;

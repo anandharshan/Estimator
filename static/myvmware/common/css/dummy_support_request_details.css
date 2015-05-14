@@ -1,0 +1,1288 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  support_request_details.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 05/05/2011
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. SUPPORT REQUEST DETAILS
+/* ########################################################################### */
+
+#content-section .support-details-wrapper {
+    margin-bottom: 15px !important;
+}
+
+.support-details-wrapper .input-wrapper .note {
+    width: 155px;;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 11px;
+}
+
+#support-details-content .input-wrapper textarea {
+    width: 262px;
+    height:100px;
+    resize:none;
+    min-height: 100px;
+    padding:6px;
+}
+#content-section #sel_wantTo{
+    width:auto;
+}
+.support-details-wrapper header {
+    background: white;
+    color: #000;
+    padding-top: 5px;
+    padding-left: 15px;
+    border-bottom: 1px solid #c1c1c3;
+    margin-bottom: 15px;
+}
+
+/*.support-details-wrapper header .ctrlHolder {
+    margin-left: 15px;
+}*/
+
+.support-details-wrapper header .ctrlHolder label {
+    width: auto;
+    font-size: 13px;
+    padding-top:3px;
+}
+
+.support-details-wrapper header select {
+    font-size: 13px;
+}
+
+.ie7 #tabbed_box_1 .support-details-wrapper header select {
+    width:auto;
+}
+.support-details-wrapper h4 {
+    margin-bottom: 15px
+}
+
+.support-details-wrapper .ctrlHolder {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom:5px;
+}
+#support-details-content .support-details-wrapper .ctrlHolder{
+    margin-bottom:15px;
+    padding: 0;
+}
+#content-section .support-details-wrapper label {
+    color:#333333;
+    width: 105px;
+    margin-right: 5px;
+}	
+#content-section .support-details-wrapper .selSection label { /*Done by rvooka BUG-00029802: 10/Feb/2012*/
+    color: #0C8D63;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+    width: auto;
+}
+#content-section .error label,
+#content-section label.error{
+    color:red !important;
+}
+#support-details-content .eaSelector{
+    border-right:0px;	
+    margin:0px;
+    padding:0px;
+    float:right;
+}
+#support-details-content .eaSelector select{
+    width:210px;
+}
+
+.support-details-wrapper .ctrlHolder .attachButton {
+    text-align: right;
+}
+.support-details-wrapper .ctrlHolder .attachButton .note {
+    width: auto;
+    font-size: 11px;
+}
+
+#content-section .support-details-wrapper .ctrlHolder select.long {
+    width: 245px;
+}
+
+#content-section .support-details-wrapper .support-details-content-footer p {
+    color: #666;
+    font-size: 11px;
+    font-weight: normal;
+    padding-top: 5px;
+    margin-right: 160px;	
+    text-align: left;
+    margin-bottom:0;
+}
+#support-details-content p.required {
+    font-style: italic;
+    color: #666;
+    border-bottom:none !important;
+    padding:0;
+}
+.support-details-wrapper p.required em {
+    color: red;
+}
+
+.support-details-wrapper p span.instruction_text {
+    color:#189948;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*.support-details-wrapper .details-holder-section {
+    margin-bottom: 10px;
+}*/
+.details-holder-section .section-header {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.ie7 .section-header span{
+    padding-top:3px;
+    vertical-align: middle;
+}
+.details-holder-section .details-holder-content {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background:#eeeeee;
+    padding:14px 5px 0px 15px;
+    border: 1px solid #CDCDCD;
+    line-height: 12px;
+}
+/*Firefox Fix*/
+@-moz-document url-prefix() { 
+    .details-holder-section .details-holder-content  {
+    padding:13px 5px 0px 15px;
+}
+}
+.safari.mac .details-holder-section .details-holder-content{
+    padding:13px 5px 0px 15px;
+}
+.details-holder-section .section-header a.openClose {
+    background: url("img/btn_gray_blue_plus_minus.png") no-repeat scroll -5px 0 transparent;
+    display: inline-block;
+    width: 13px;
+    height: 17px;
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
+}
+
+.details-holder-section .section-header .openClose.open {
+    background: url(img/btn_gray_blue_plus_minus.png) no-repeat -5px -20px;
+}
+
+.support-details-wrapper .details-holder {
+    font-size: 11px;
+    margin-bottom: 15px;
+    padding: 0px;
+}
+
+.details-holder .details-field {
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+    float: left;
+    width: 35%;
+    margin-right: 10px;
+    word-wrap: break-word;
+}
+
+.details-holder .details-field-name {
+    float: left;
+    font-size: 12px;
+    color: #666;
+    width: 200px;
+    word-wrap: break-word;
+}
+.details-holder .details-field-name.issueDis {
+    clear:left;
+    padding-left:10px;
+    width: 95%;
+}
+.details-holder .details-field-name .file-detail{
+    margin-bottom:10px;
+}
+#content .support-details-wrapper .details-field-name p {
+    padding: 0;
+    margin: 0;
+    color: #666;
+}
+
+/**** SUPPORT REQUEST DETAILS OVERVIEW (Left Hand side of the page)****/
+.support-details-overview-main{
+    /*background:url(img/bkg_supportDevider.png) repeat-y center top;*/
+}
+.support-details-wrapper #support-details-overview-wide {
+    float:left;
+    width: 45%;
+    border-right: none;
+    padding-top: 10px;
+    margin-left: 2%;
+}
+
+#support-details-overview-wide .details-field-name {
+    width:60%;
+}
+
+#support-details-overview .support-details-overview-footer {
+    margin-left: 18px;
+    border-bottom: 1px solid #7b7b7b;
+}
+#support-details-overview .support-details-overview-footer .footer-header {
+    padding: 3px 5px 3px 14px;
+    background: url("img/bg_filter_header.jpg") repeat-x scroll 0 0 #2F2F32;
+    color:#FFFFFF;
+    font-size: 11px;
+    border: 1px solid #272727;
+}
+.support-details-overview-footer .activity-type {
+    font-weight: bold;
+    color: #333;
+    float: none;
+    padding:5px 0px 8px 10px;
+    border-bottom: 1px dotted #CCCCCC;
+}
+
+.support-details-overview-footer .activity-type a{
+    background: url(img/btn_gray_blue_plus_minus.png) no-repeat;
+    margin-right: 5px;
+    width: 17px;
+    height: 17px;
+    display: -moz-inline-box;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    vertical-align: baseline;
+}
+.support-details-overview-footer .activity-type a.open {
+    background: url(img/btn_gray_blue_plus_minus.png) no-repeat 0 -20px;
+}
+.support-details-overview-footer .activity-type .activityContent {
+    font-weight: normal;
+    margin-left: 23px;
+    word-wrap: break-word;
+    background:#eeeeee;
+    border: 1px solid #cccccc;
+    margin-top: 5px;
+    margin-bottom: 10px !important;
+    padding: 15px;
+}
+
+/**** SUPPORT REQUEST DETAILS CONTENT (Right Hand side of the page) ****/	
+#content-section .support-details-wrapper #support-details-content {
+    /*float: left;*/
+    width: 46%;	
+    padding: 0 0 0 2%; 
+}
+#support-details-content .messageHolder.fixedWidth{
+    width:270px;
+} 
+
+#content-section #support-details-content .sup_content {
+   border: 1px solid #CCC;
+   padding: 14px 15px 15px;
+   background-color: #EEE;
+}
+
+#content-section #support-details-content .sup_content em{			
+    color:#d9541e;
+}
+#content-section .sup_content label.error {
+    width: auto;
+    margin-left:0;
+}
+#content-section .input-wrapper .error
+{
+    margin-left:0px;
+
+}
+#content-section #support-details-content .sup_content.noBkgrd {
+    border: 0px solid #CCC;
+    background-color: #FFF;
+}
+#content-section .sup_content.noBkgrd .ins_text{
+    text-align:center;
+    font-size:16px;
+    color:#333;
+    margin-top:10px;
+}
+#content-section #support-details-content .title {	
+    color: #333;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+    margin-bottom: 5px; 
+}
+
+#content-section #support-details-content .uploadModule {
+    background: none;
+    float: right;
+    padding: 10px 0px 10px 10px;
+    width: 270px;
+}
+
+#content-section #support-details-content .uploadModule .uploadedFileTitle {
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#content-section #support-details-content .support-details-content-footer {
+    text-align: right;
+    float: right;
+    padding: 0;
+}
+#content-section #support-details-content .support-details-content-footer .ctrlHolder.buttons{
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+#content-section .support-details-wrapper .support-details-content-footer button {
+    margin: 0 0 0 5px !important
+}	
+
+/**** BUTTONS ****/	
+.minimize-button {
+    background: url(img/small_minimize_maximize_button.png) no-repeat 0 -16px;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    display: -moz-inline-box;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+.maximize-button {
+    background: url(img/small_minimize_maximize_button.png) no-repeat;
+}
+.support-details-wrapper .support-details-wrapper-footer {
+    text-align: right;
+    float: right;
+    color: black;
+    padding-top: 10px;
+    padding-left: 200px;
+    margin-bottom: 10px;
+    width:670px;
+}
+
+.support-details-wrapper-footer p {
+    float:left;
+    color: #000;
+    width:490px;
+    margin-right:5px;
+}
+
+.support-details-wrapper-footer button {
+    float: right;
+    margin-left: 5px;
+}
+
+.support-details-wrapper-footer .additional-info {
+    margin-top: 5px;
+    padding-top: 5px;
+    color: #4C4E53;
+    position: relative;
+}
+
+.support-details-wrapper-footer .additional-info a {
+    margin: 0;
+}
+
+.additional-info img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* tooltip styles for support request details.*/	
+a.tooltip, 
+button.tooltip, 
+input.tooltip{
+    margin: 3px 0 0 4px !important;
+    vertical-align: middle !important;	
+}
+.chrome.mac a.tooltip, 
+.chrome.mac button.tooltip, 
+.chrome.mac input.tooltip{
+    margin-top: 1px !important;
+    vertical-align: middle !important;
+}
+.input-wrapper a.tooltip, 
+.input-wrapper button.tooltip, 
+.input-wrapper input.tooltip{
+    margin: 3px 0 5px 1px !important;
+    vertical-align: middle !important;	
+}
+.chrome.mac .input-wrapper a.tooltip, 
+.chrome.mac .input-wrapper button.tooltip, 
+.chrome.mac .input-wrapper input.tooltip{
+    margin: 3px 0 5px 1px !important;
+    vertical-align: middle !important;
+}
+
+.input-wrapper.issueDescription a.tooltip,
+.input-wrapper.issueDescription button.tooltip,
+.input-wrapper.issueDescription input.tooltip {
+    margin: 0px 0 0px 1px !important;
+    vertical-align: top !important;	
+}
+.chrome.mac .input-wrapper.issueDescription a.tooltip,
+.chrome.mac .input-wrapper.issueDescription button.tooltip,
+.chrome.mac .input-wrapper.issueDescription input.tooltip{
+    margin-top: 0px !important;
+    vertical-align: top !important;	
+}
+
+/* styles for file upload popup */
+.fileSrHeader{
+    overflow: hidden;
+    width: 100%; 
+	border-bottom:1px solid #DEDEDE;
+	padding-bottom: 3px;
+}
+.fileSrHeader #fuHeading{
+	padding-right:15px;
+}
+.fileSrHeader ul{
+    margin: 0px !important;
+}
+#fsrPopupMainContainer .fileSrFooter, #progressStateContainer{
+    float: left;
+    width: 100%;
+}
+
+.fileSrFooter{
+    border-top:1px solid #d6d6d6;
+    margin-top: 20px;
+}
+.fileSrFooter ul li, .fileSrHeader ul li{
+    padding: 10px;
+    list-style: none;
+    float: left;
+}
+.fileSrFooter .alignRight{
+    float: right !important;
+}
+.fileSrFooter ul li{
+    padding-right: 0;
+	padding-bottom:0;
+}
+.fileSrHeader ul li{
+    padding: 0;  
+	color: #666666;
+	font-weight: normal;
+}
+.fileSrHeader .uploadHeader{
+    border-right: 1px dotted #DEDEDE;
+	max-width: 60%;
+	font-size:24px;
+}
+.fileSrHeader .srNo{
+    padding:10px 0 0 15px;
+}
+.fileSrHeader #srNumber{
+    font-weight: bold;
+}
+.progressStateContainer{
+    margin:0 0 20px 0px !important;
+}
+.progressStateContainer li{
+    float: left;
+    list-style: none;
+    width: 32%;
+    font-weight: bold;
+}
+#simplemodal-container {
+    border: medium none;
+    height: auto !important;
+    max-height: 600px;  
+    min-height: 500px;
+}
+.simplemodal-wrap{
+	float: left;
+    height: auto;
+    outline: 0 none;
+    width: 100%;
+}
+#simplemodal-container a.help {
+    background: url("img/btn_help.png") no-repeat scroll 0 top rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: inline;
+    font-size: 0;
+    height: 16px;
+    position: absolute;
+    right: 34px;
+    top: 35px;
+    width: 16px;
+    z-index: 3200;
+    color: #000000;
+}
+#simplemodal-container .modalCloseImgCustom {
+    cursor: pointer;
+    display: inline;
+    height: 16px;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 16px;
+    z-index: 3200;
+}
+
+#fsrPopupMainContainer{
+    float: left;
+    height: auto;
+    max-height: 500px;
+    min-height: 330px;
+}
+.templateContainer{
+    float: left;
+    max-height: 135px;
+    overflow: auto;
+    width: 575px;
+	min-height: 5px;
+}
+#fsrPopupMainContainer .defaultdesc{
+    margin: 10px 0 0 0;
+    min-height:14px;
+}
+#fsrPopupMainContainer .msgContainer{
+	margin-top:10px;
+}
+#headerDesc{
+    margin-bottom: 24px;
+}
+#slowConnectionDesc{
+    font-style: italic;
+}
+#fsrPopupMainContainer .fileDropZone{
+    border:1px dotted #cccccc; 
+    height: 155px;
+    float: left;    
+    width: 550px;
+    background-color: #eeeeee;
+    margin-top: 18px;
+}
+#fsrPopupMainContainer .fileDropZone p{
+    text-align:center;
+    padding-top: 77px;
+    color: #4c4e53;
+}
+.fsrRightPanelData{
+    float: right;
+    width: 99%;
+    min-height: 200px;
+    /*border: 1px solid #DEDEDE;*/
+    padding: 2%;
+}
+#uploadedFilecount{
+    display: block;
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+.fsrRightPanelData .attachedFileName{
+    margin: 10px 0;
+}
+.fsrRightPanelData .uploadTimeStamp,.fsrRightPanelDataSRD .uploadTimeStamp{
+    font-size: 11px;
+
+}
+.fsrAddComment, .fsrHideComment{
+    float: right;
+}
+
+.fsrRightPanelDataSRD .fsrAddComment, .fsrRightPanelDataSRD .fsrHideComment{
+    float: none;
+}
+
+.alignFiledata{
+    margin: 8px 0;
+}
+
+.fsrRightPanelDataSRD .attachedFileName{
+	font-weight:bold;
+	font-size:14px;
+	line-height:18px;
+	color: #656565;
+}
+.fsrRightPanelDataSRD dl.commentSectionSRD dd{
+	line-height:18px;
+	font-size: 11px;
+	color: #989898;
+}
+.fsrRightPanelData .commentDescription,.fsrRightPanelDataSRD .commentDescription{
+    width: 97%;
+    border-radius:5px;
+    margin: 8px 0 8px 0;
+    padding: 2%;
+    min-height: 106px;
+}
+.alignFiledata .totalChars{
+    font-style: italic;
+}
+.fsrRightPanelDataSRD .commentDescription{
+    width: 95%;   
+}
+.fsrRightPanelData  .commentError,.fsrRightPanelDataSRD  .commentError{
+    color: #FF0000;
+}
+.existingComment{
+    clear: both;
+	width: 97%;
+    border: 1px solid #cccccc;
+    background-color: #eeeeee;
+    padding: 2%;
+    margin: 10px 0 3px 0;
+}
+.fsrRightPanelDataSRD  .existingComment{
+	width:auto;
+}
+.existingComment p{
+    word-wrap:break-word !important;
+	font-size:11px !important;
+}
+.rightPanelHeadingContainer{
+    /*border-bottom: 1px dotted #c5c5c7;*/
+    width: 100%;
+}
+.commentSection{
+    border-bottom: 1px dotted #aaaaaa;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+.fsrRightPanelDataSRD  .commentSection{
+    margin-bottom: 30px;
+	overflow:hidden;
+	border-bottom:0;
+	padding-bottom:auto;
+}
+.commentsSection{
+	clear:both;
+}
+.commentSection dt h4{
+    font-size: 14px !important;
+    clear: both;
+}
+.commentSection dd{
+    margin-left:0px !important;
+}
+.fontNormal{
+    font-size:12px; 
+    font-weight:normal;
+}
+.fsrRightPanelData .selectedFilesContainer{
+    height: 32px;
+}
+
+/* Begin Styles for success message*/
+#successMessage{    
+    width: 98%;
+    padding: 0.5em  1% 0.5em 1%;
+    border-radius: 5px;
+    margin: 15px 0 5px 0;
+    border: 1px solid #56ab2b;    
+    background-color: #eaf3dd;
+    height: 36px;
+}
+#successMessage h3{
+    color: #3d6d0f;  
+    width: auto;
+    float: left;
+}
+#successMessage h3, .closeSuccessMsg{
+    margin: 0.8em 0 0 0;
+}
+.closeSuccessMsg, .copyIcon, .printIcon, #simplemodal-container .modalCloseImgCustom{
+    background: url('img/fsr/fsrSprite.png') left top no-repeat;
+}
+.showTick{
+    float: left;
+    width: 16px;
+    height: 16px; 
+    margin: 12px 10px 10px;
+    background: url('img/fsr/fsrSprite.png') left top no-repeat;
+}
+.closeSuccessMsg, #simplemodal-container .modalCloseImgCustom{
+    background-position: -21px -2px;
+    cursor: pointer;
+    float: right;
+    height: 16px;
+    width: 16px;
+    text-decoration: none;
+}
+.btnUploadHeader{
+    display: inline-block;
+    margin: 11px 0 0 10px !important;  
+}
+/* End Styles for success message*/
+
+.srDetailHeader h3{
+    width: auto;
+    color:#FFFFFF!important;
+    padding-top: 0px!important;
+}
+.srDetailHeader ul{
+    list-style: none;
+    width: 30%;
+    float: right;
+    background: none;
+    margin: 14px 0 14px 15px!important;
+}
+.srConfHeader ul{
+    list-style: none;
+    background: none;
+    float: left;
+    margin: 14px 0 14px 0px!important;
+}
+.srDetailHeader ul li, .srConfHeader ul li{
+    float: left;
+    background: none!important;
+    color:#FFFFFF;
+    padding: 0px 0 0px 15px!important;
+}
+.srDetailHeader, .srConfHeader{
+    width: 100%;
+    float: left;
+    border-radius: 5px;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+}
+.srDetailHeader .headerWidth{
+    width:40%;
+    float: left;
+    margin: 14px 0 14px 15px!important;
+}
+.srHeaderFields{
+    float: right;
+    width: 55%;
+}
+.srHeaderFields div{
+    width: 48%;
+    float: left;
+}
+.srDetailData{
+    background-color: #e4e4e4;
+    float: left;
+    width:96%;
+    padding: 2%;
+    background: -webkit-linear-gradient(#fdfdfd, #e3e3e3); 
+    background: -o-linear-gradient(#fdfdfd, #e3e3e3); 
+    background: -moz-linear-gradient(#fdfdfd, #e3e3e3); 
+    background: linear-gradient(#fdfdfd, #e3e3e3); 
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+}
+.srDetailSection, .srSection{
+    float: left;
+    width: 33%;
+    margin: 0px;
+}
+.srSection{
+    width: 25%;
+}
+
+/* Styles to update right container */
+.srRightContainer{
+    float: right;
+}
+.rightPanelHeadingContainer ul{
+    background: none;
+    width: 100%;
+    float: left;
+}
+#main  .rightPanelHeadingContainer ul li{
+    float: left;
+    background: none;
+    padding: 4px 0 4px 0px;
+}
+#main .rightPanelHeadingContainer .uploadHcontainer li{
+    width: 49%;
+    padding: 4px 0 4px 0px;
+}
+#fsrRightPanelDataSRD  .rightPanelHeadingContainer .uploadHcontainer li{
+	padding-top:0;
+}
+#main .rightPanelHeadingContainer .attachmentHeading{
+    font-size: 15px;
+    font-weight: bold;
+}
+#fsrRightPanelDataSRD  .rightPanelHeadingContainer .attachmentHeading{
+   	background: url("img/attachment.png") no-repeat left top transparent;
+	padding-left:19px;
+}
+.fsrRightPanelDataSRD .rightPanelHeadingContainer{
+	margin-bottom:10px;
+}
+.rightPanelHeadingContainer .bottomBorder {
+    border-bottom:1px solid #cccccc;
+}
+.fsrRightPanelData .bottomBorderDotted, .fsrRightPanelDataSRD .bottomBorderDotted{
+     border-bottom:1px dotted #cccccc;
+}
+.fsrRightPanelData .alignUploadPadding,.fsrRightPanelDataSRD .alignUploadPadding{
+    padding-bottom: 14px!important;
+   
+}
+.rightPanelHeadingContainer .attachDesc{
+    width: 65%;    
+}
+.rightPanelHeadingContainer .attachBtn{
+    width: 35%;
+}
+.rightPanelHeadingContainer .attachFileSize{
+    float: right;
+    text-align: center; 
+    padding-right: 5px;
+}
+.rightPanelHeadingContainer .textAlignCenter{
+    text-align: center;
+}
+.fontWeightBold{
+    font-weight: bold!important;
+}
+#fsrPopupMainContainer .success{
+	color:#299873;
+	text-align:center;
+}
+#fsrPopupMainContainer .error{
+	color:#fe0000;
+}
+.progressFileName{
+    float: left;
+    width: 94%;
+    height: 29px;
+}
+.progressFileName ul{
+    list-style: none;
+    float: left;
+    width: 98%;
+    margin: 7px 0 0 0;
+    left: 0px;
+}
+
+.progress,.progress-download{
+    margin: 14px 0 0 0px !important;
+    height: 29px;
+    background-color: #eeeeee;
+    border: 1px solid #b2b2b2;
+    float: left;
+    width: 100%;
+}
+.progress .bar{
+    margin-bottom: -30px !important;
+}
+.progress .bar,.progress-download{
+	background-color:#a0da52;
+/*    border: 1px solid #b2b2b2;*/
+    border-radius: 3px;    
+}
+.textAlignCenter{
+    text-align: center;
+}
+.textAlignRight{
+    text-align: right;
+}
+.progressFileName ul li{
+    float: left;
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.fileName{
+    text-overflow:ellipsis;
+    font-weight: bold;
+    width:150px;
+    padding-left: 10px;
+}
+.actualProgress{
+    text-overflow:ellipsis;
+    font-weight: normal;
+	margin-left:10px;
+}
+.progressBarTime, .uploadSuccess, .progressFileName .error{
+    width: 92px;
+}
+.no-cors .actualProgress,.no-cors .progressBarTime{
+	visibility:hidden;
+}
+.no-cors .progressStateContainer{
+	display:none !important;
+}
+.no-cors .fileupload-progress{
+	min-height:55px;
+}
+
+.progressFileName .timeLeft{
+    width: 70px;
+}
+.errorCloseRetryDelete, .closeProgress, .uploadSuccess{
+    float: right !important;
+}
+.uploadSuccess{
+    margin-right: -30px;
+    font-weight: bold;
+}
+.errorCloseRetryDelete span{
+    display:inline-block;
+    margin: 0px 5px;
+    padding-top: 0px !important;
+}
+.retryUpload{
+    color: #1e83b7;
+}
+.successmsgAlign{
+    margin-top: -30px;
+}
+.errorCloseRetryDelete .closeProgressMsg, .uploadSuccess .closeProgressMsg{
+    background: url("img/fsr/closeProgress.png") no-repeat left bottom transparent;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    display: inline-block;
+}
+.errorCloseRetryDelete .deleteFile{
+    /* background: url("img/fsr/deleteSuccess.png") no-repeat left center transparent;*/
+}
+.errorCloseRetryDelete .hideInline{
+    display: none!important;
+}
+.errorCloseRetryDelete .errorMsg, .error .errorMsg{
+    color:#fe0000;
+    background: url("img/fsr/error.png") no-repeat left center transparent;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.files .progress, .files .progress-download {
+    width: 96% !important;
+}
+#addFiles span.btn, #addFiles span.btn:hover{
+    background: #2B75B2 url('img/bg_buttons.png') repeat-x; /* old browsers */
+    background: -moz-linear-gradient(top, #4FB8DC 0%, #399DBF 50%, #2B75B2 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4FB8DC), color-stop(50%,#399DBF), color-stop(100%,#2B75B2)); /* webkit */
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px 3px 3px 3px !important;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 11px!important;
+    font-weight: bold!important;
+    margin: 5px 0 5px 2px !important; /*important added to fix issue in IE7, IE8 browsers::for addUser 2nd overlay */
+    padding:2px 15px;
+    text-decoration:none !important;
+    text-shadow: none;
+	/*line-height:18px;*/
+}
+/*styles moved from style.css*/
+.hide{
+    display: none;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}	
+
+/* IE 7 Specific style to fix UI issues on popup and right panel */
+.ie7 .rightPanelHeadingContainer .attachFileSize{
+    float: right;
+    width: 73%;
+}
+.ie7 .btnUploadHeader{
+    width:50%;
+}
+
+.ie7 #fsrPopupMainContainer, .ie8 #fsrPopupMainContainer, 
+.ie9 #fsrPopupMainContainer{
+    height: auto;
+    max-height: 500px;
+    min-height: 200px;
+}
+
+/* Fix - Mac issues */
+#fsrRightPanelData .mac .button{
+    height: 0px!important;
+}
+/* button height issue fixes */
+.firefox #addFiles span.btn, 
+.firefox #addFiles span.btn:hover{
+   line-height:18px;
+}
+.ie10 #addFiles span.btn, 
+.ie10 #addFiles span.btn:hover{
+    line-height:16px;
+}
+.ie9 #addFiles span.btn, .ie9 #addFiles span.btn:hover, 
+.ie8 #addFiles span.btn, .ie8 #addFiles span.btn:hover{
+    line-height:20px;
+}
+
+.fup_loading{
+	background: url("img/loading_24.gif") no-repeat scroll 0 0 transparent;
+	float: right;
+	height: 24px;
+	padding: 3px 0 3px 33px !important;
+	width: 24px;
+}
+.loading-animation2{
+	background: url("img/loading_24.gif") no-repeat scroll 0 0 transparent;
+	height: 24px;
+	width: 24px;
+	margin: 0 auto;
+	margin-top:10px;
+}
+.ie7 .fileSrFooter ul,
+.ie8 .fileSrFooter ul,
+.ie9 .fileSrFooter ul{
+    width: 215px;
+}
+.ie7 .fileinput-button INPUT{
+	font-size:17px;
+}
+.ie8 .fileinput-button INPUT{
+	font-size:18px;
+}
+
+
+
+
+
+
+
+
+#main .navigation_btns {
+	background: none;
+    float: right;
+    margin-top: 0;
+	margin-right: 35px;
+}
+
+#main .navigation_btns .i_want_btns button{
+    border: 1px solid #3399CC;
+    padding: 5px 12px;
+}
+
+
+.srd-wrapper-new #support-details-overview {
+    float: left;
+    width: 73%;
+	padding:0;
+}
+#content-section .srd-wrapper-new #support-details-content{
+	float:left;
+	width:27%;
+	padding:0
+}
+
+#fsrRightPanelDataSRD{
+	padding-left:25px;
+}
+.dr-row-main-details .dr-row{
+	overflow: hidden;
+}
+.support_request_details .details-requester{
+	background-color:#ededed;
+	padding: 20px 35px 25px;
+}
+.support_request_details .status-info,.support_request_details .req-num-info{
+	float: left;
+    overflow: hidden;
+}
+.support_request_details .status-info{
+	margin-left:30px;
+	width:53%;
+}
+.support_request_details .status-info .status-info-col2{
+	width:52%;
+}
+.support_request_details .dr-row-sub-details{
+	margin-top:40px;
+}
+.support_request_details .quote-field{
+    float: left;
+    font-size: 12px;
+    text-transform: none;
+	 line-height: 21px;
+}
+.support_request_details  .pr10{
+	padding-right:10px;
+}
+
+.support_request_details  .mt10{
+	margin-top:10px;
+}
+.support_request_details  .pl5{
+	padding-left:5px;
+}
+
+.dr-row-sub-details .group1,.dr-row-more-details .group1{
+	width:57%;
+	float:left;
+}
+.dr-row-sub-details .group2,.dr-row-more-details .group2{
+	width:43%;
+	float:left;
+}
+
+.dr-row-sub-details .group1 .col1,.dr-row-sub-details .group2 .col1,.dr-row-more-details .group1 .col1,.dr-row-more-details .group2 .col1{
+	clear:both;
+	width:48%;
+	float:left;
+	font-weight:bold;
+	word-wrap:break-word;
+}
+.dr-row-sub-details .group1 .col2,.dr-row-sub-details .group2 .col2, .dr-row-more-details .group1 .col2,.dr-row-more-details .group2 .col2{
+	width:52%;
+	float:left;
+	word-wrap:break-word;
+}
+.support_request_details  .sr-issue-description{
+	margin-top:25px;
+}
+.support_request_details  .issue-description{
+	font-size:12px;
+	line-height:17px;
+	margin-bottom: 30px;
+	word-wrap:break-word;
+}
+.support_request_details  .requester-details-section,.support_request_details  .kb-article-holder{
+	border-bottom: 1px solid #B7B8BA;
+    margin-bottom: 25px;
+}
+.support_request_details  .kb-article-content {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.support_request_details  .heading2{
+	color:#656565;
+	font-size:20px;
+}
+.notes-holder-section .notes-left{
+	width:160px;
+}
+.notes-holder-section #addnotes{
+	height:98px;
+	width:99.5%;
+}
+.support_request_details  .recent-activity{
+	border-bottom: 1px solid #B7B8BA;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+.support_request_details  .recent-activity-note{
+	padding-left:160px;
+	height:138px;
+}
+.support_request_details  .recent-activity-content{
+	float:left;
+	font-size:12px;
+	width:74%;
+}
+.support_request_details  .recent-activity-left{
+	float:left;
+	margin-right:25px;
+	font-size:12px;
+	width:135px;
+}
+.support_request_details  .recent-activity-left .contents{
+	float:right;
+}
+.support_request_details  .recent-activity-left .date-1{
+	color:#989898;
+	padding-top:5px;
+	text-align: right;
+}
+.support_request_details  #addNotesBtn{
+	padding:5px 12px;
+	position:static !important;
+}
+.showmore a{
+	background: url("img/arrow_down_blue.png") no-repeat scroll right 4px transparent;
+	font-weight: bold;
+	padding-right: 15px;
+	text-decoration: none;
+}
+.showmore a.open {background: url(img/arrow_up_blue.png) no-repeat right 4px;}
+.support_request_details, .notes-holder-section{
+	color:#333;
+}
+.srdModal .required-txt{
+	margin-bottom:0;
+	margin-top:10px;
+}
+.srdModal  .ctrlHolder label{
+	width:20%;
+	font-weight:bold;
+	margin-left:0;
+}
+.srdModal  .ctrlHolder textarea{
+	width:95%;
+	height:109px;
+}
+
+.srdModal  .input-wrapper{
+	float:left;
+	width:80%;
+}
+
+#change_account_folder .labelForReason,#change_account_folder .labelForFolder{
+	width:20%;
+}
+#change_account_folder .ctrlHolder label, #change_account_folder .input-wrapper{
+	width:auto;
+	float:none;
+}
+
+#simplemodal-container .srdModal .help{
+	top:12px;
+	right:40px;
+}
+#change_account_folder select{
+	width:250px;
+}
+#change_account_folder p.empty{
+	height:30px;
+}
+.srdModal  .modalContent .body{
+	padding-top:20px;
+}
+.srdModal .note{
+	padding-top:4px;
+}
+.popUpMessageHolder{
+	position:relative;
+	color:#FE0000;
+}
+.notes-holder-section .popUpMessageHolder{
+	padding-left: 160px;
+	top:-15px;
+}
+.popUpMessageHolder .popUpErrMsg{
+	position:absolute;
+}
+.ie9 .secondary.button.cancelAndReset{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#simplemodal-container .blockUI.blockOverlay{
+	z-index:3201 !important;
+}
+#change_account_folder .popUpMessageHolder{
+	padding-bottom:15px;
+}
+#simplemodal-container .blockUI.blockOverlay{
+	z-index:3201 !important;
+}
+.requestStatus{
+	vertical-align:top;
+}

@@ -1,0 +1,56 @@
+<section>
+<ng-bread-crumb b-link1='{{globalVars.expFund_link1}}' b-link2='{{globalVars.expFund_link2}}' b-link3='{{globalVars.expFund_link3}}'></ng-bread-crumb>
+		
+        <!-- Content -->
+        <section>
+            
+            <article>
+				<div>
+					<div class="row">
+						<div class="col-md-6">
+							<h1 class="component-heading">{{globalVars.expFund_expire}}</h1>
+						</div>
+						<div class="activeFundsLink col-md-6">
+							<a class="funds_link" href="{{globalVars.ActiveFundsLinkURL}}">{{globalVars.ActiveFundsLinkText}}</a>
+							<a class="help_link" href="{{globalVars.expiredFunds}}" target="_blank">
+								<span class="help_icon"></span>
+								<span class="help_text">{{globalVars.help}}</span>
+							</a>
+						</div>
+						
+					</div>
+				</div>
+			</article>
+            <article ng-if="showLoader">
+				<div class="row margin-top-20 margin-bottom-20">
+					<div class="col-md-12 text-center">
+						<div class="ajaxSpinner">&nbsp;</div>   
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="alertBoxMainContainer margin-top-10"></div>
+					</div>
+				</div>
+			</article>
+         	<article ng-if="showExpiredTable">
+                <div class="container-fluid starlight-container-fluid">
+                    <table id="expiredTable" class="starlight withPadding noBg"> 
+			            <thead>
+				            <tr>
+				                <th>{{globalVars.expFund_orderNum}}</th>
+				                <th>{{globalVars.expFund_expDate}}</th>
+				                <th>{{globalVars.expFund_reports}}</th>
+								<th></th>
+								<th></th>
+				            </tr>
+			            </thead>
+        			</table>
+                   </div>
+            </article>
+          
+        </section>
+    <!-- Content End -->             
+</section>

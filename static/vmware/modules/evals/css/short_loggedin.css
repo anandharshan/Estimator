@@ -1,0 +1,645 @@
+#main {
+	background: #fff!important;
+}
+/*#container #breadcrumbs a {
+	color:#eee !important;
+}
+#container #breadcrumbs {
+	color:#eee !important;
+	padding-left:46px !important;
+}*/
+#header {
+/*	background:url("/static/vmware/common/css/img/bg_header_player.png") no-repeat !important; */
+	color:#fff;
+/*	margin-top:-20px !important; 
+	padding:20px 20px !important; */
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+#header h1 {
+	color:#fff;
+	margin-top:5px;
+}
+/*#tab_download {
+	margin-top:20px;
+}*/
+#content .notes {
+	float:right;
+	font-size:18px;
+	font-weight:bold;
+	color:#666;
+	text-transform:uppercase;
+	width:20%;
+	border:1px solid #ccc;
+	background:#f5f8fb;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eff4f9));
+	background-image: -webkit-linear-gradient(top, #fff, #eff4f9);
+	background-image: -moz-linear-gradient(top, #fff, #eff4f9);
+	background-image: -ms-linear-gradient(top, #fff, #eff4f9);
+	background-image: -o-linear-gradient(top, #fff, #eff4f9);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px;
+	text-align:center;
+	padding:8px 0;
+}
+.f60 {
+	font-size:60px; line-height:60px;
+}
+.f18 {
+	font-size:18px;
+}
+.f13 {
+	font-size:13px;
+}
+.fcgrn {
+	color:#0c8d63;
+}
+div.title {
+	/*margin:20px 25px 20px; */
+	float:left;
+	width:70%;
+}
+.f14 {
+	font-size:14px;
+}
+.products-section-content table {
+	border:1px solid #ccc;
+	border-collapse:separate;
+/*	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-khtml-border-radius: 5px; */
+/*	background:#FFF;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#eff4f9));
+	background-image: -webkit-linear-gradient(top, #fff, #eff4f9);
+	background-image: -moz-linear-gradient(top, #fff, #eff4f9);
+	background-image: -ms-linear-gradient(top, #fff, #eff4f9);
+	background-image: -o-linear-gradient(top, #fff, #eff4f9); */
+	border-spacing:7px;
+	padding:0px 10px;
+}
+.products-section-content table th {
+/*	color:#333; */
+	background:none !important;
+	font-weight:bold;
+/*	font-size:10px; 
+	padding:0px 5px 0px 7px;	*/
+}
+.products-section-content table tbody td {
+/*	border-top: 1px solid #999; */
+	color:#333;
+	background:inherit;
+/*	font-weight:normal; */
+	padding-left:8px;
+/*	font-size:16px; */
+}
+.products-section-wrapper .products-section-top {
+	background:none;
+	border:none;
+	border-bottom: 1px solid #ccc;
+	font-size: 10px;
+	font-weight: bold;
+	padding:5px 5px 8px;
+	margin:2px;
+}
+.helptxt {
+	float:right;
+	font-weight:bold;
+	font-size:12px;
+}
+.products-content-category {
+	border:none;
+}
+.products-content-binary-wrapper .products-content-binary {
+	border:none;
+	padding:5px 0px 15px;
+	border-bottom: 1px dotted #CCCCCC;
+	margin-bottom: 10px;
+}
+.products-content-binary-body .binary-fileTitle {
+	font-weight:bold;
+	font-size:20px;
+/*  color:#0c8d63; */
+}
+.products-content-binary-body .binary-fileTitle .desc {
+	color:#333;
+	font-weight:bold;
+	font-size:14px;
+	display:inline;
+	padding:0px;
+	margin:0px;
+}
+.products-content-binary-wrapper .products-content-binary-body {
+	width:70%;
+	padding-top:10px;
+}
+.products-content-binary-wrapper .downloadManager {
+	float:right;
+	padding-right:0px;
+	margin:0px;
+}
+.products-content-binary .binary-description {
+	font-weight:normal;
+	clear:both;
+	margin:5px 0px 10px 20px;
+	border:1px solid #D2D2D2;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	padding:15px 15px 10px;
+	background: url("/static/vmware/common/css/img/bg_moredetails.png") repeat-x scroll bottom center;
+	display:none;
+}
+.products-content-binary .binary-description .label {font-size:11px; font-weight:bold; display:block;}
+.products-content-binary .binary-description p {
+	margin-bottom:10px;
+}
+.showline {
+	line-height:25px;
+}
+.sign {
+	margin-right:8px;
+	height:20px;
+	width:11px;/*cursor:pointer;*/
+}
+.showtxt.off {
+	background:url(/static/vmware/common/css/img/button_collapse.gif) no-repeat left 7px;
+	display:block;
+	height:18px;
+	padding-left:18px;
+}
+.showtxt.on {
+	background:url(/static/vmware/common/css/img/button_expand.gif) no-repeat left 7px;
+	display:block;
+	height:18px;
+	padding-left:18px;
+}
+.showtxt {
+	display:inline;
+	font-weight:bold;
+	font-size:14px;
+}
+/* a.btn_download {
+	background: url("/static/vmware/common/css/img/bg_download_witharrow.png") no-repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	height: 36px;
+	padding-left: 30px;
+	padding-top: 10px;
+	text-decoration: none;
+	width: 150px;
+} */
+
+a.btn_download {
+	background: url("/static/vmware/modules/evals/img/btn_download_right.png") no-repeat scroll right 0 transparent;
+	height: 46px;
+	float:right;
+	margin-bottom:10px;
+	cursor:pointer;
+}
+
+a.btn_download:hover{
+	text-decoration:none!important;
+}
+
+a.btn_download span{
+	background: url("/static/vmware/modules/evals/img/btn_download_left.png") no-repeat scroll left 0; 
+	line-height:46px; 
+	padding: 0px 0px 0 26px; 
+	display:block; 
+	text-decoration: none; 
+	margin-right:48px; 
+	color: #FFFFFF; 
+	font-size: 20px; 
+	font-weight: bold;
+} 
+.products-content-binary-wrapper .manualDownloadLink {
+	padding-top:5px;
+	margin-bottom:5px;
+}
+
+.red{color:#f00;}
+.f16{font-size:16px;}
+.f15{font-size:15px;}
+.padding10 {padding:10px;}
+#main .sub-box3{width:99%;/*margin-left:10px;*/}
+#main .sub-box3 .columns{width:100%; background:none;}
+#main .sub-box3 .columns .col{width:30%;}
+#main .sub-box3 .columns .col h3{color:#333;margin-bottom:20px !important;font-size:18px;font-weight:600;}
+#main .sub-box3 .columns .col ul{margin:0; padding:0;}
+#main .sub-box3 .columns .col ul li{
+background:url("/static/vmware/common/css/img/bg_login_bullet.gif") no-repeat 0 6px; 	
+		padding: 0 0 0 7px;
+		margin:0;
+}
+
+.italic {
+    font-style: italic;
+}
+#tab_content{margin:10px 20px; color:#333;}
+#tab_content p{margin-bottom:8px;}
+
+.ctrlHolder .eula {
+	background-color: #FFF;
+	border: #b7b8ba 1px solid;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 240px;
+	clear: both;
+	margin-top: 20px;
+	padding:16px;
+}
+.eula p {line-height:16px;}
+.topline {border-top:1px solid #ccc; margin-top:6px; padding-top:15px;}
+#main fieldset {margin-bottom:10px;}
+#main .link-wrapper {
+    padding-top: 10px;
+    text-align: right;
+}
+button.light, a.light{color:#228bc0 !important;}
+/* styling for download thank you to override styles coming from global css*/
+div.div_thk_u .inner {
+	padding-bottom: 15px;
+    padding-top: 12px;
+}
+.btns {
+	height: 46px;
+}
+.btns .lt, .btns .md, .btns .rt{
+	float:left;
+	height:46px
+}
+.btns .lt {
+	background: url("/static/vmware/modules/evals/img/buttons_h.png") no-repeat scroll 1px 0 transparent;
+	width:5px;
+}
+.btns .rt {
+	background: url("/static/vmware/modules/evals/img/buttons_h.png") no-repeat scroll 0 -47px transparent;
+	width:6px;
+}
+.btns.arrow  .rt  {
+	background: url("/static/vmware/modules/evals/img/buttons_h.png") no-repeat scroll 0 -94px transparent;
+	padding-right:40px
+}
+.btns .md{
+	background: url("/static/vmware/modules/evals/img/btn_bg.png") repeat-x scroll 0 0 transparent;
+    border-radius: 0 0 0 0 !important;
+    font-size: 20px;
+    margin: 0;
+    padding: 0 5px
+}
+.btns.arrow .md{padding: 0 5px 0 15px;}
+.ie .btns.arrow button.md{padding: 0 5px 0 15px !important;}
+
+/* ############ Andres' changes ########## */
+
+#tab_download {
+	margin-top:-10px;
+}
+
+#header {
+    background:none !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    margin-top: 100px !important;
+}
+
+body #content #main #header h1 {
+	margin: -15px 0 20px !important;
+}
+
+#main {
+	padding: 0 45px !important;
+    width: 1050px;
+}
+
+#container #breadcrumbs {
+    color: #969696 !important;
+    padding-left: 46px !important;
+ /*   left: 222px !important; */
+    top: 176px !important;
+}
+
+#container #breadcrumbs a {
+    color: #969696 !important;
+}
+
+div.title {
+	margin: 20px 25px 20px 0;
+}
+
+#content #main div.tab {
+    padding: 10px 0 16px !important;
+    color: #6F6F6F;
+    font-size: 14px;
+}
+
+/* Days remaining area */
+
+#main #tab_download .notes div.f60 {
+	border-left: 2px solid #448744;
+    color: #FFFFFF !important;
+    float: none !important;
+    font-size: 90px !important;
+    padding-left: 22px !important;
+    padding-right: 6px;
+    padding-top: 3px;
+}
+
+#main #tab_download .notes div.f18px {
+	font-size: 14px;
+    font-weight: 400;
+    margin-top: -4px;
+}
+
+#main #tab_download .notes div.f13 {
+	font-size: 16px !important;
+    font-weight: 400;
+ /*   margin-right: 14px !important; */
+}
+
+#main #tab_download .notes div.f13 span {
+	color: #FFFFFF !important;
+    font-size: 20px;
+    font-weight: 600 !important;
+} 
+
+div.title div.divbg{
+	background-image: url("../img/evalbannerbg.png");
+    height: 200px;
+    left: 0;
+    margin-top: -2px;
+    margin-left: -45px;
+    width: 1140px;
+}
+
+div.title div.divbg + p{
+	margin-top: 40px !important;
+}
+
+#tab_download .title .divbg p {
+	color: #FFFFFF !important;
+    font-size: 35px !important;
+    line-height: 32px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    margin-top: 49px;
+    width: 473px;
+    position:absolute;
+}
+
+#tab_download .title .divbg p.red{ /*For Expiration Page*/
+	margin-top: 79px;
+}
+
+#tab_download .title .divbg p.red b{
+	font-weight: 300;
+}
+
+#tab_download .title p {
+	margin:15px 0 0;
+}
+
+#tab_download .title .evalInfo p, #main div.tab p, #main div.tab strong {line-height: 26px;}
+
+.divbg p strong{
+	font-weight: 300;
+	line-height: 43px;
+}
+
+.notes {
+	border: medium none !important;
+    color: #FFFFFF !important;
+    left: 537px;
+    margin-top: 72px;
+    position: absolute;
+    text-transform: none !important;
+    width: 34% !important;
+    z-index: 1;
+    background: transparent !important;
+}
+
+div.title {
+    margin: 20px 25px 20px 0;
+}
+
+#content .title .divBg p:nth-child(2){
+	margin-top: 223px;
+}
+
+.spanEnjoy{
+	color: #387C2C !important;
+    font-size: 32px !important;
+    line-height: 36px;
+}
+
+div.evalInfo {
+	padding-top: 11px;
+    width: 980px;
+}
+
+div.evalInfo p{
+	font-size: 15px !important;
+    line-height: 18px;
+}
+
+.evalDash{
+	font-size: 15px !important;
+    line-height: 18px;
+}
+
+.products-content-binary-body .binary-fileTitle {color:#297F1E;}
+
+#tab_download div.clear h2{padding-left: 0;}
+
+#main .sub-box3 .columns .col p>a{font-size:15px;font-weight: 500;}
+
+div.title div.divbg2{
+	background-image: url("../img/evalbannerbg.png");
+    height: 200px;
+    left: 0;
+    margin-top: -2px;
+    margin-left: -45px;
+    width: 1140px;
+}
+
+div.title div.divbg2 + p{margin-top: 40px !important;}
+
+#tab_download .title .divbg2 p {
+	color: #FFFFFF !important;
+    font-size: 35px !important;
+    font-weight: 300;
+    line-height: 43px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    margin-top: 49px;
+    position: absolute;
+    width: 430px;
+}
+
+.spanEnjoy2{
+	color: #387C2C !important;
+    font-size: 32px !important;
+    font-weight: 300;
+}
+
+div.evalInfo2 {
+    width: 960px;
+}
+
+div.evalInfo2 p{
+	line-height: 20px;
+}
+
+
+div.title div.divbg2{
+	background-image: url("../img/evalbannerbg.png");
+    height: 200px;
+    left: 0;
+    margin-top: -2px;
+    margin-left: -45px;
+    width: 1140px;
+}
+
+div.title div.divbg2 + p{margin-top: 40px !important;}
+
+#tab_download .title .divbg2 p {
+	color: #FFFFFF !important;
+    font-size: 35px !important;
+    font-weight: 300;
+    line-height: 43px;
+    margin-bottom: 20px;
+    margin-left: 45px;
+    margin-top: 49px;
+    position: absolute;
+    width: 430px;
+}
+
+.spanEnjoy2{
+	color: #387C2C !important;
+    font-size: 32px !important;
+    font-weight: 300;
+}
+
+div.evalInfo2 {width: 960px;}
+div.evalInfo2 p{line-height: 20px;}
+
+#main #tab_download div.exp div.f18px {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 !important;
+    text-align: left;
+}
+
+#main #tab_download div.exp div.f13 {
+	font-size: 16px !important;
+    font-weight: 400;
+    text-align: center;
+}
+
+#main #tab_download div.exp div.f13 span {
+	color: #FFFFFF !important;
+    font-size: 20px;
+    font-weight: 600 !important;
+} 
+
+.products-section-content table th{
+	color:#666;
+	font-size: 12px;
+	padding:18px 5px 0 7px;
+}
+.products-section-content table tbody td{
+	border-top:none;
+	font-weight: 500;
+	font-size: 22px;
+	padding-top: 0px
+}
+
+.products-section-content table tbody td span.txtgreen{color:#0095D3;}
+.products-section-content table{background:#FFF;border-bottom: none;}
+.downloadManager .btns .lt, .downloadManager .btns .md, .downloadManager .btns.arrow .rt{background:none repeat scroll 0 0 #0095D3;}
+.downloadManager .btns.arrow .md{
+	padding: 0 0 0 40px;
+	font-size: 16px;
+    font-weight: 600;
+}
+.downloadManager .btns .lt{border-radius:4px 0 0 4px;}
+.downloadManager .btns.arrow .rt{border-radius: 0 4px 4px 0;}
+#tab_download div#licspacer {padding-bottom: 0;}
+#tab_download div.products-section-wrapper{border:1px solid #CCC;}
+
+#tab_download .products-section-top{
+	font-size:14px;
+	color:#666;
+	padding: 15px 20px 0 21px;
+	border-bottom: none;
+}
+
+.products-content-category, .products-content-binary-wrapper .products-content-binary{padding-top: 0;}
+.products-content-category{padding-left: 24px;}
+#tab_download .products-content-binary-body .binary-fileTitle{
+	color:#333;
+	font-weight: 500;
+	font-size: 22px;
+}
+
+.products-content-binary-body .binary-fileTitle .desc{
+	color:#666;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.products-content-binary-wrapper .downloadManager {padding-right: 11px;}
+.helptxt a{
+	font-size: 15px;
+    font-weight: 400;
+    margin-top: 76px;
+    position: absolute;
+    right: 67px;
+}
+.products-content-binary-body .showline{margin-top: 20px;}
+.showline .showtxt{
+	font-weight:500;
+	background: none;
+	padding-left: 0;
+}
+.products-content-binary{border-bottom: none !important;}
+
+.products-content-binary .binary-description{
+	background: #F1F1F1;
+    border: medium none;
+    border-radius: 0;
+    margin: 10px 0 10px;
+    padding: 15px 15px 10px 22px;
+}
+
+.products-content-binary .binary-description p{
+	color:#666;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 22px;
+}
+.products-content-binary .binary-description span.label{font-size: 14px;}
+
+/* Cross browser fixes */
+.ie8 #content #header > h1, .ie7 #content #header > h1 {font-size: 38px !important;}
+.ie8 #tab_download .title .divbg p, .ie7 #tab_download .title .divbg p{font-size:33px !important;}
+.ie7 div.evalInfo {padding-top: 48px;}
+.ie7 .customLeftRemDay div.f60.fcgrn{padding-top:5px;padding-bottom:2px;}
+.ie8 #tab_download .title .divbg2 p, .ie7 #tab_download .title .divbg2 p {font-size: 32px !important;}
+.ie8 .spanEnjoy2, .ie7 .spanEnjoy2 {font-size: 30px !important;}
+/* */
+
+.customLeftRemDay {
+    float: left;
+}
+.customRightRemDay {
+    float: left;
+}

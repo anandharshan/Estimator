@@ -1,0 +1,2547 @@
+{
+
+    "wrapper": {
+		"isVPN":false,
+        "customerType": "COMMERCIAL",
+		"country": "United States of America",
+        "isXaasFund": "1",
+        "eaAccount": "qatest0055",
+        "eaAccountNumber": "364571507",
+        "customerNumber": "9521319442",
+        "isStorageEnabled": "Y",
+        "fundInfo": {
+            "name": "Costco Worldwide",
+            "fundGroupId": null,
+            "trueUp": "0",
+            "fundBalance": "200000",
+            "redemptionCurrency": "USD",
+            "redemptionCurrencySymbol": "$",
+            "fundCurrencySymbol": "$",
+            "isXaasFund": 0,
+            "fundAccess": 0,
+            "fundExpiration": "",
+            "fundOwner": "",
+            "fundOwnername": ""
+        },
+        "priceList": [
+            "MSRP",
+            "MSRP"
+        ],
+        "serviceName": "VMware vCloud Air",
+        "serviceIdentifier": "VSPP Air Identifier",
+        "paymentType": [
+            {
+                "Monthly": [
+                    "Monthly",
+                    "Monthly"
+                ],
+                "Prepaid": [
+                    "Prepaid",
+                    "Prepaid"
+                ]
+            },
+            ""
+        ],
+        "storageType": [
+            {
+                "ACC STORAGE": "SSD Accelerated Storage",
+                "STD STORAGE": "Standard Storage",
+                "N/A": "N/A"
+            },
+            ""
+        ],
+        "crossRefSKUMap": {
+            "DC_1_MTH_Monthly_COMMERCIAL_US - Nevada_ACC STORAGE": [
+                "HSD-A1ACR-01MT0-C2S",
+                "1283.5"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_US - Nevada_ACC STORAGE": [
+                "HSD-A1ACR-12MT0-C2S",
+                "8597"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_US - Nevada_ACC STORAGE": [
+                "HSD-A1ACR-12PT0-C1S",
+                "181545"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_US - Nevada_ACC STORAGE": [
+                "HSD-A1ACR-24MT0-C2S",
+                "8239"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_US - Nevada_ACC STORAGE": [
+                "HSD-A1ACR-24PT0-C1S",
+                "348270"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_US - Nevada_ACC STORAGE": [
+                "HSE-A1ACR-36MT0-C1S",
+                "0"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_US - Nevada_ACC STORAGE": [
+                "HSD-A1ACR-36PT0-C1S",
+                "210232"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSD-A1ACS-01MT0-C1S",
+                "8595"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSD-A1ACS-12MT0-C1S",
+                "8251"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSD-A1ACS-12PT0-C1S",
+                "96952"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSD-A1ACS-24MT0-C1S",
+                "7907"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSD-A1ACS-24PT0-C1S",
+                "140777"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSD-A1ACS-36MT0-C1S",
+                "7564"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSD-A1ACS-36PT0-C1S",
+                "266101"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_US - Virginia_ACC STORAGE": [
+                "HSD-A2ACR-01MT0-C2S",
+                "8955"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_US - Virginia_ACC STORAGE": [
+                "HSD-A2ACR-12MT0-C2S",
+                "8597"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_US - Virginia_ACC STORAGE": [
+                "HSD-A2ACR-12PT0-C1S",
+                "101012"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_US - Virginia_ACC STORAGE": [
+                "HSD-A2ACR-24MT0-C2S",
+                "8239"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_US - Virginia_ACC STORAGE": [
+                "HSD-A2ACR-24PT0-C1S",
+                "193428"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_US - Virginia_ACC STORAGE": [
+                "HSE-A2ACR-36MT0-C1S",
+                "0"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_US - Virginia_ACC STORAGE": [
+                "HSD-A2ACR-36PT0-C1S",
+                "277247"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_US - Virginia_STD STORAGE": [
+                "HSD-A2ACS-01MT0-C1S",
+                "8595"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_US - Virginia_STD STORAGE": [
+                "HSD-A2ACS-12MT0-C1S",
+                "8251"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_US - Virginia_STD STORAGE": [
+                "HSD-A2ACS-12PT0-C1S",
+                "96952"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_US - Virginia_STD STORAGE": [
+                "HSD-A2ACS-24MT0-C1S",
+                "7907"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_US - Virginia_STD STORAGE": [
+                "HSD-A2ACS-24PT0-C1S",
+                "185652"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_US - Virginia_STD STORAGE": [
+                "HSD-A2ACS-36MT0-C1S",
+                "7564"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_US - Virginia_STD STORAGE": [
+                "HSD-A2ACS-36PT0-C1S",
+                "266101"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_US - California_ACC STORAGE": [
+                "HSD-A3ACR-01MT0-C2S",
+                "8955"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_US - California_ACC STORAGE": [
+                "HSD-A3ACR-12MT0-C2S",
+                "8597"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_US - California_ACC STORAGE": [
+                "HSD-A3ACR-12PT0-C1S",
+                "101012"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_US - California_ACC STORAGE": [
+                "HSD-A3ACR-24MT0-C2S",
+                "8239"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_US - California_ACC STORAGE": [
+                "HSD-A3ACR-24PT0-C1S",
+                "193428"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_US - California_ACC STORAGE": [
+                "HSE-A3ACR-36MT0-C1S",
+                "0"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_US - California_ACC STORAGE": [
+                "HSD-A3ACR-36PT0-C1S",
+                "277247"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_US - California_STD STORAGE": [
+                "HSD-A3ACS-01MT0-C1S",
+                "8595"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_US - California_STD STORAGE": [
+                "HSD-A3ACS-12MT0-C1S",
+                "8251"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_US - California_STD STORAGE": [
+                "HSD-A3ACS-12PT0-C1S",
+                "96952"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_US - California_STD STORAGE": [
+                "HSD-A3ACS-24MT0-C1S",
+                "7907"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_US - California_STD STORAGE": [
+                "HSD-A3ACS-24PT0-C1S",
+                "185652"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_US - California_STD STORAGE": [
+                "HSD-A3ACS-36MT0-C1S",
+                "7564"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_US - California_STD STORAGE": [
+                "HSD-A3ACS-36PT0-C1S",
+                "266101"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_US - Texas_ACC STORAGE": [
+                "HSD-A4ACR-01MT0-C2S",
+                "8955"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_US - Texas_ACC STORAGE": [
+                "HSD-A4ACR-12MT0-C2S",
+                "8874"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_US - Texas_ACC STORAGE": [
+                "HSD-A4ACR-12PT0-C1S",
+                "101012"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_US - Texas_ACC STORAGE": [
+                "HSD-A4ACR-24MT0-C1S",
+                "8"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_US - Texas_ACC STORAGE": [
+                "HSD-A4ACR-24PT0-C1S",
+                "193428"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_US - Texas_ACC STORAGE": [
+                "HSE-A4ACR-36MT0-C1S",
+                "0"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_US - Texas_ACC STORAGE": [
+                "HSD-A4ACR-36PT0-C1S",
+                "277247"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_US - Texas_STD STORAGE": [
+                "HSD-A4ACS-01MT0-C1S",
+                "8595"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_US - Texas_STD STORAGE": [
+                "HSD-A4ACS-12MT0-C1S",
+                "8251"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_US - Texas_STD STORAGE": [
+                "HSD-A4ACS-12PT0-C1S",
+                "96952"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_US - Texas_STD STORAGE": [
+                "HSD-A4ACS-24MT0-C1S",
+                "7907"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_US - Texas_STD STORAGE": [
+                "HSD-A4ACS-24PT0-C1S",
+                "185652"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_US - Texas_STD STORAGE": [
+                "HSD-A4ACS-36MT0-C1S",
+                "7564"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_US - Texas_STD STORAGE": [
+                "HSD-A4ACS-36PT0-C1S",
+                "266101"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSD-A5ACR-01MT0-C1S",
+                "8955"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSD-A5ACR-12MT0-C1S",
+                "8597"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSD-A5ACR-24MT0-C1S",
+                "8239"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSD-A5ACR-24PT0-C1S",
+                "193428"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSD-A5ACR-36MT0-C1S",
+                "7880"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSD-A5ACR-36PT0-C1S",
+                "277247"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSD-A5ACS-01MT0-C1S",
+                "8595"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSD-A5ACS-12MT0-C1S",
+                "8251"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSD-A5ACS-12PT0-C1S",
+                "96952"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSD-A5ACS-24MT0-C1S",
+                "7907"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSD-A5ACS-24PT0-C1S",
+                "185652"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSD-A5ACS-36MT0-C1S",
+                "7564"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSD-A5ACS-36PT0-C1S",
+                "266101"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_UK - Slough_ACC STORAGE": [
+                "HSD-B1ACR-01MT0-C2S",
+                "10148"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_UK - Slough_ACC STORAGE": [
+                "HSD-B1ACR-12MT0-C2S",
+                "9742"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_UK - Slough_ACC STORAGE": [
+                "HSD-B1ACR-12PT0-C1S",
+                "114464"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_UK - Slough_ACC STORAGE": [
+                "HSD-B1ACR-24MT0-C2S",
+                "9336"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_UK - Slough_ACC STORAGE": [
+                "HSD-B1ACR-24PT0-C1S",
+                "219187"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_UK - Slough_ACC STORAGE": [
+                "HSD-B1ACR-36MT0-C2S",
+                "8930"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_UK - Slough_ACC STORAGE": [
+                "HSD-B1ACR-36PT0-C1S",
+                "314167"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSD-B1ACS-01MT0-C1S",
+                "9743"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSD-B1ACS-12MT0-C1S",
+                "9353"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSD-B1ACS-12PT0-C1S",
+                "109897"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSD-B1ACS-24MT0-C1S",
+                "8963"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSD-B1ACS-24PT0-C1S",
+                "210441"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSD-B1ACS-36MT0-C1S",
+                "8574"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSD-B1ACS-36PT0-C1S",
+                "301632"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_UK - Chessington_ACC STORAGE": [
+                "HSD-B2ACR-01MT0-C1S",
+                "10148"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_UK - Chessington_ACC STORAGE": [
+                "HSD-B2ACR-12MT0-C1S",
+                "9742"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_UK - Chessington_ACC STORAGE": [
+                "HSD-B2ACR-12PT0-C1S",
+                "114464"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_UK - Chessington_ACC STORAGE": [
+                "HSD-B2ACR-24MT0-C1S",
+                "9336"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_UK - Chessington_ACC STORAGE": [
+                "HSD-B2ACR-24PT0-C1S",
+                "219187"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_UK - Chessington_ACC STORAGE": [
+                "HSD-B2ACR-36MT0-C1S",
+                "8930"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_UK - Chessington_ACC STORAGE": [
+                "HSD-B2ACR-36PT0-C1S",
+                "314167"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_UK - Chessington_STD STORAGE": [
+                "HSD-B2ACS-01MT0-C1S",
+                "9743"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_UK - Chessington_STD STORAGE": [
+                "HSD-B2ACS-12MT0-C1S",
+                "9353"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_UK - Chessington_STD STORAGE": [
+                "HSD-B2ACS-12PT0-C1S",
+                "109897"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_UK - Chessington_STD STORAGE": [
+                "HSD-B2ACS-24MT0-C1S",
+                "8963"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_UK - Chessington_STD STORAGE": [
+                "HSD-B2ACS-24PT0-C1S",
+                "210441"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_UK - Chessington_STD STORAGE": [
+                "HSD-B2ACS-36MT0-C1S",
+                "8574"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_UK - Chessington_STD STORAGE": [
+                "HSD-B2ACS-36PT0-C1S",
+                "301632"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSD-C1ACR-01MT0-C1S",
+                "8955"
+            ],
+            "DC_5_MTH_Prepaid_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSD-C1ACR-05PT0-C1P",
+                "140"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSD-C1ACR-12PT0-C1S",
+                "101012"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSD-C1ACR-24MT0-C1S",
+                "8239"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSD-C1ACR-24PT0-C1S",
+                "193428"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSD-C1ACR-36MT0-C1S",
+                "7880"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSD-C1ACR-36PT0-C1S",
+                "277247"
+            ],
+            "DC_1_MTH_Monthly_COMMERCIAL_C1A_STD STORAGE": [
+                "HSD-C1ACS-01MT0-C1S",
+                "8595"
+            ],
+            "DC_5_MTH_Prepaid_COMMERCIAL_C1A_STD STORAGE": [
+                "HSD-C1ACS-05PT0-C1P",
+                "170"
+            ],
+            "DC_12_MTH_Monthly_COMMERCIAL_C1A_STD STORAGE": [
+                "HSD-C1ACS-12MT0-C1S",
+                "8251"
+            ],
+            "DC_12_MTH_Prepaid_COMMERCIAL_C1A_STD STORAGE": [
+                "HSD-C1ACS-12PT0-C1S",
+                "96952"
+            ],
+            "DC_24_MTH_Monthly_COMMERCIAL_C1A_STD STORAGE": [
+                "HSD-C1ACS-24MT0-C1S",
+                "7907"
+            ],
+            "DC_24_MTH_Prepaid_COMMERCIAL_C1A_STD STORAGE": [
+                "HSD-C1ACS-24PT0-C1S",
+                "185652"
+            ],
+            "DC_36_MTH_Monthly_COMMERCIAL_C1A_STD STORAGE": [
+                "HSD-C1ACS-36MT0-C1S",
+                "7564"
+            ],
+            "DC_36_MTH_Prepaid_COMMERCIAL_C1A_STD STORAGE": [
+                "HSD-C1ACS-36PT0-C1S",
+                "266101"
+            ],
+            "DR2C-VCHS_1_MTH_Monthly_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSR-A1ACR-01MT0-C2S",
+                "832"
+            ],
+            "DR2C-VCHS_12_MTH_Monthly_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSR-A1ACR-12MT0-C2S",
+                "752"
+            ],
+            "DR2C-VCHS_12_MTH_Prepaid_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSR-A1ACR-12PT0-C1S",
+                "8968"
+            ],
+            "DR2C-VCHS_24_MTH_Prepaid_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSR-A1ACR-24PT0-C1S",
+                "17172"
+            ],
+            "DR2C-VCHS_36_MTH_Prepaid_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSR-A1ACR-36PT0-C1S",
+                "24613"
+            ],
+            "DR2C-VCHS_1_MTH_Monthly_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSR-B1ACR-01MT0-C2S",
+                "953"
+            ],
+            "DC-INT_12_MTH_Monthly_COMMERCIAL_US - New Jersey_N/A": [
+                "HSS-A5ACR-12MT0-C1S",
+                "8597"
+            ],
+            "DC-INT_12_MTH_Prepaid_COMMERCIAL_US - New Jersey_N/A": [
+                "HSS-A5ACR-12PT0-C1S",
+                "101012"
+            ],
+            "DC-INT_24_MTH_Monthly_COMMERCIAL_US - New Jersey_N/A": [
+                "HSS-A5ACR-24MT0-C1S",
+                "8597"
+            ],
+            "DC-INT_24_MTH_Prepaid_COMMERCIAL_US - New Jersey_N/A": [
+                "HSS-A5ACR-24PT0-C1S",
+                "101012"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_US - Nevada_ACC STORAGE": [
+                "HSV-A1ACR-01MT0-C2S",
+                "1389"
+            ],
+            "VPC_3_MTH_Prepaid_COMMERCIAL_US - Nevada_ACC STORAGE": [
+                "HSV-A1ACR-03PT0-C1S",
+                "4166"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_US - Nevada_ACC STORAGE": [
+                "HSV-A1ACR-12MT0-C2S",
+                "1237"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_US - Nevada_ACC STORAGE": [
+                "HSV-A1ACR-12PT0-C1S",
+                "15661"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_US - Nevada_ACC STORAGE": [
+                "HSV-A1ACR-36PT0-C1S",
+                "33406"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSV-A1ACS-01MT0-C1S",
+                "1169"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSV-A1ACS-12MT0-C1S",
+                "1122"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSV-A1ACS-12PT0-C1S",
+                "13186"
+            ],
+            "VPC_24_MTH_Prepaid_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSV-A1ACS-24PT0-C1S",
+                "25250"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSV-A1ACS-36MT0-C1S",
+                "844"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_US - Nevada_STD STORAGE": [
+                "HSV-A1ACS-36PT0-C1S",
+                "29691"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_US - Virginia_ACC STORAGE": [
+                "HSV-A2ACR-01MT0-C2S",
+                "1079"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_US - Virginia_ACC STORAGE": [
+                "HSV-A2ACR-12MT0-C2S",
+                "1036"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_US - Virginia_ACC STORAGE": [
+                "HSV-A2ACR-12PT0-C1S",
+                "12171"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_US - Virginia_ACC STORAGE": [
+                "HSV-A2ACR-36MT0-C2S",
+                "950"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_US - Virginia_ACC STORAGE": [
+                "HSV-A2ACR-36PT0-C1S",
+                "33406"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_US - Virginia_STD STORAGE": [
+                "HSV-A2ACS-01MT0-C1S",
+                "959"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_US - Virginia_STD STORAGE": [
+                "HSV-A2ACS-12MT0-C1S",
+                "921"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_US - Virginia_STD STORAGE": [
+                "HSV-A2ACS-12PT0-C1S",
+                "10818"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_US - Virginia_STD STORAGE": [
+                "HSV-A2ACS-36MT0-C1S",
+                "844"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_US - Virginia_STD STORAGE": [
+                "HSV-A2ACS-36PT0-C1S",
+                "29691"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_US - California_ACC STORAGE": [
+                "HSV-A3ACR-01MT0-C2S",
+                "1079"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_US - California_ACC STORAGE": [
+                "HSV-A3ACR-12MT0-C2S",
+                "1036"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_US - California_ACC STORAGE": [
+                "HSV-A3ACR-12PT0-C1S",
+                "12171"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_US - California_ACC STORAGE": [
+                "HSV-A3ACR-36MT0-C2S",
+                "950"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_US - California_ACC STORAGE": [
+                "HSV-A3ACR-36PT0-C1S",
+                "33406"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_US - California_STD STORAGE": [
+                "HSV-A3ACS-01MT0-C1S",
+                "959"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_US - California_STD STORAGE": [
+                "HSV-A3ACS-12MT0-C1S",
+                "921"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_US - California_STD STORAGE": [
+                "HSV-A3ACS-12PT0-C1S",
+                "10818"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_US - California_STD STORAGE": [
+                "HSV-A3ACS-36MT0-C1S",
+                "844"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_US - California_STD STORAGE": [
+                "HSV-A3ACS-36PT0-C1S",
+                "29691"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_US - Texas_ACC STORAGE": [
+                "HSV-A4ACR-01MT0-C2S",
+                "460"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_US - Texas_ACC STORAGE": [
+                "HSV-A4ACR-12MT0-C2S",
+                "1282"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_US - Texas_ACC STORAGE": [
+                "HSV-A4ACR-12PT0-C1S",
+                "12171"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_US - Texas_ACC STORAGE": [
+                "HSV-A4ACR-36MT0-C2S",
+                "1192"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_US - Texas_ACC STORAGE": [
+                "HSV-A4ACR-36PT0-C1S",
+                "33406"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_US - Texas_STD STORAGE": [
+                "HSV-A4ACS-01MT0-C1S",
+                "959"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_US - Texas_STD STORAGE": [
+                "HSV-A4ACS-12MT0-C1S",
+                "921"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_US - Texas_STD STORAGE": [
+                "HSV-A4ACS-12PT0-C1S",
+                "10818"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_US - Texas_STD STORAGE": [
+                "HSV-A4ACS-36MT0-C1S",
+                "844"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_US - Texas_STD STORAGE": [
+                "HSV-A4ACS-36PT0-C1S",
+                "29691"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSV-A5ACR-01MT0-C1S",
+                "1289"
+            ],
+            "VPC_3_MTH_Monthly_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSV-A5ACR-03MT0-C1S",
+                "1289"
+            ],
+            "VPC_3_MTH_Prepaid_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSV-A5ACR-03PT0-C1S",
+                "3867"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSV-A5ACR-12MT0-C1S",
+                "1237"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSV-A5ACR-12PT0-C1S",
+                "14540"
+            ],
+            "VPC_24_MTH_Monthly_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSV-A5ACR-24MT0-C1S",
+                "1186"
+            ],
+            "VPC_24_MTH_Prepaid_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSV-A5ACR-24PT0-C1S",
+                "27842"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSV-A5ACR-36MT0-C1S",
+                "1134"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_US - New Jersey_ACC STORAGE": [
+                "HSV-A5ACR-36PT0-C1S",
+                "39907"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSV-A5ACS-01MT0-C1S",
+                "1169"
+            ],
+            "VPC_3_MTH_Monthly_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSV-A5ACS-03MT0-C1S",
+                "1169"
+            ],
+            "VPC_3_MTH_Prepaid_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSV-A5ACS-03PT0-C1S",
+                "3507"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSV-A5ACS-12MT0-C1S",
+                "1122"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSV-A5ACS-12PT0-C1S",
+                "13186"
+            ],
+            "VPC_24_MTH_Monthly_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSV-A5ACS-24MT0-C1S",
+                "1075"
+            ],
+            "VPC_24_MTH_Prepaid_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSV-A5ACS-24PT0-C1S",
+                "25250"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSV-A5ACS-36MT0-C1S",
+                "1029"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_US - New Jersey_STD STORAGE": [
+                "HSV-A5ACS-36PT0-C1S",
+                "36192"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_UK - Slough_ACC STORAGE": [
+                "HSV-B1ACR-01MT0-C2S",
+                "1493"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_UK - Slough_ACC STORAGE": [
+                "HSV-B1ACR-12MT0-C2S",
+                "1202"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_UK - Slough_ACC STORAGE": [
+                "HSV-B1ACR-12PT0-C1S",
+                "14120"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_UK - Slough_ACC STORAGE": [
+                "HSV-B1ACR-36MT0-C2S",
+                "1102"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_UK - Slough_ACC STORAGE": [
+                "HSV-B1ACR-36PT0-C1S",
+                "38755"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSV-B1ACS-01MT0-C1S",
+                "1100"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSV-B1ACS-12MT0-C1S",
+                "1056"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSV-B1ACS-12PT0-C1S",
+                "12407"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSV-B1ACS-36MT0-C1S",
+                "968"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_UK - Slough_STD STORAGE": [
+                "HSV-B1ACS-36PT0-C1S",
+                "34054"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_UK - Chessington_ACC STORAGE": [
+                "HSV-B2ACR-01MT0-C1S",
+                "1252"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_UK - Chessington_ACC STORAGE": [
+                "HSV-B2ACR-12MT0-C1S",
+                "1202"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_UK - Chessington_ACC STORAGE": [
+                "HSV-B2ACR-12PT0-C1S",
+                "14120"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_UK - Chessington_ACC STORAGE": [
+                "HSV-B2ACR-36MT0-C1S",
+                "1102"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_UK - Chessington_ACC STORAGE": [
+                "HSV-B2ACR-36PT0-C1S",
+                "38755"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_UK - Chessington_STD STORAGE": [
+                "HSV-B2ACS-01MT0-C1S",
+                "1100"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_UK - Chessington_STD STORAGE": [
+                "HSV-B2ACS-12MT0-C1S",
+                "1056"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_UK - Chessington_STD STORAGE": [
+                "HSV-B2ACS-12PT0-C1S",
+                "12407"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_UK - Chessington_STD STORAGE": [
+                "HSV-B2ACS-36MT0-C1S",
+                "968"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_UK - Chessington_STD STORAGE": [
+                "HSV-B2ACS-36PT0-C1S",
+                "34054"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSV-C1ACR-01MT0-C1S",
+                "1289"
+            ],
+            "VPC_3_MTH_Monthly_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSV-C1ACR-03MT0-C1S",
+                "1289"
+            ],
+            "VPC_3_MTH_Prepaid_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSV-C1ACR-03PT0-C1S",
+                "3867"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSV-C1ACR-12MT0-C1S",
+                "1237"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSV-C1ACR-12PT0-C1S",
+                "14540"
+            ],
+            "VPC_24_MTH_Monthly_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSV-C1ACR-24MT0-C1S",
+                "1186"
+            ],
+            "VPC_24_MTH_Prepaid_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSV-C1ACR-24PT0-C1S",
+                "27842"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSV-C1ACR-36MT0-C1S",
+                "1134"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_C1A_ACC STORAGE": [
+                "HSV-C1ACR-36PT0-C1S",
+                "39907"
+            ],
+            "VPC_1_MTH_Monthly_COMMERCIAL_C1A_STD STORAGE": [
+                "HSV-C1ACS-01MT0-C1S",
+                "1169"
+            ],
+            "VPC_3_MTH_Monthly_COMMERCIAL_C1A_STD STORAGE": [
+                "HSV-C1ACS-03MT0-C1S",
+                "1169"
+            ],
+            "VPC_3_MTH_Prepaid_COMMERCIAL_C1A_STD STORAGE": [
+                "HSV-C1ACS-03PT0-C1S",
+                "3507"
+            ],
+            "VPC_12_MTH_Monthly_COMMERCIAL_C1A_STD STORAGE": [
+                "HSV-C1ACS-12MT0-C1S",
+                "1122"
+            ],
+            "VPC_12_MTH_Prepaid_COMMERCIAL_C1A_STD STORAGE": [
+                "HSV-C1ACS-12PT0-C1S",
+                "13186"
+            ],
+            "VPC_24_MTH_Monthly_COMMERCIAL_C1A_STD STORAGE": [
+                "HSV-C1ACS-24MT0-C1S",
+                "1075"
+            ],
+            "VPC_24_MTH_Prepaid_COMMERCIAL_C1A_STD STORAGE": [
+                "HSV-C1ACS-24PT0-C1S",
+                "25250"
+            ],
+            "VPC_36_MTH_Monthly_COMMERCIAL_C1A_STD STORAGE": [
+                "HSV-C1ACS-36MT0-C1S",
+                "1029"
+            ],
+            "VPC_36_MTH_Prepaid_COMMERCIAL_C1A_STD STORAGE": [
+                "HSV-C1ACS-36PT0-C1S",
+                "36192"
+            ]
+        },
+        "currency": [
+            {
+                "USD": [
+                    "U.S.Dollar",
+                    "$"
+                ]
+            },
+            "USD"
+        ],
+        "partner": [
+            [
+                {
+                    "id": "10012795",
+                    "name": "xyz",
+                    "address": "3405HillviewAvenue",
+                    "country": "United States",
+                    "state": "Michigan",
+                    "countryCode": "US",
+                    "stateCode": "MI"
+                },
+                {
+                    "id": "VMware",
+                    "name": "VMware Inc."
+                }
+            ],
+            "10012795"
+        ],
+        "region": [
+            {
+                "US - New Jersey": "US - New Jersey",
+                "UK - Slough": "UK - Slough",
+                "US - California": "US - California",
+                "US - Nevada": "US - Nevada",
+                "US - Virginia": "US - Virginia",
+                "C1A": "C1A",
+                "UK - Chessington": "UK - Chessington",
+                "US - Texas": "US - Texas"
+            },
+            ""
+        ],
+        "serviceType": {
+            "US - New Jersey": [
+                {
+                    "serviceName": "VMware vCloud Air Dedicated Cloud",
+                    "tenantType": "DC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Dedicated Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                },
+                {
+                    "serviceName": "vCloud Internal Service",
+                    "tenantType": "DC-INT",
+                    "licenseType": "COMMERCIAL",
+                    "description": "vCloud Internal Service",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "N/A": {
+                                "storageName": "N/A",
+                                "terms": [
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                },
+                {
+                    "serviceName": "VMware vCloud Air Virtual Private Cloud",
+                    "tenantType": "VPC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Virtual Private Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "3 months",
+                                        "3_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "3 months",
+                                        "3_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                }
+            ],
+            "UK - Slough": [
+                {
+                    "serviceName": "VMware vCloud Air Dedicated Cloud",
+                    "tenantType": "DC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Dedicated Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                },
+                {
+                    "serviceName": "VMware vCloud Air Disaster Recovery",
+                    "tenantType": "DR2C-VCHS",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Disaster Recovery",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                },
+                {
+                    "serviceName": "VMware vCloud Air Virtual Private Cloud",
+                    "tenantType": "VPC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Virtual Private Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                }
+            ],
+            "US - California": [
+                {
+                    "serviceName": "VMware vCloud Air Dedicated Cloud",
+                    "tenantType": "DC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Dedicated Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                },
+                {
+                    "serviceName": "VMware vCloud Air Virtual Private Cloud",
+                    "tenantType": "VPC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Virtual Private Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                }
+            ],
+            "US - Nevada": [
+                {
+                    "serviceName": "VMware vCloud Air Dedicated Cloud",
+                    "tenantType": "DC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Dedicated Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                },
+                {
+                    "serviceName": "VMware vCloud Air Disaster Recovery",
+                    "tenantType": "DR2C-VCHS",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Disaster Recovery",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                },
+                {
+                    "serviceName": "VMware vCloud Air Virtual Private Cloud",
+                    "tenantType": "VPC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Virtual Private Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "3 months",
+                                        "3_MTH",
+                                        [
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                }
+            ],
+            "US - Virginia": [
+                {
+                    "serviceName": "VMware vCloud Air Dedicated Cloud",
+                    "tenantType": "DC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Dedicated Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                },
+                {
+                    "serviceName": "VMware vCloud Air Virtual Private Cloud",
+                    "tenantType": "VPC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Virtual Private Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                }
+            ],
+            "C1A": [
+                {
+                    "serviceName": "VMware vCloud Air Dedicated Cloud",
+                    "tenantType": "DC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Dedicated Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "5 months",
+                                        "5_MTH",
+                                        [
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "5 months",
+                                        "5_MTH",
+                                        [
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                },
+                {
+                    "serviceName": "VMware vCloud Air Virtual Private Cloud",
+                    "tenantType": "VPC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Virtual Private Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "3 months",
+                                        "3_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "3 months",
+                                        "3_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                }
+            ],
+            "UK - Chessington": [
+                {
+                    "serviceName": "VMware vCloud Air Dedicated Cloud",
+                    "tenantType": "DC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Dedicated Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                },
+                {
+                    "serviceName": "VMware vCloud Air Virtual Private Cloud",
+                    "tenantType": "VPC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Virtual Private Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                }
+            ],
+            "US - Texas": [
+                {
+                    "serviceName": "VMware vCloud Air Dedicated Cloud",
+                    "tenantType": "DC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Dedicated Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "24 months",
+                                        "24_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                },
+                {
+                    "serviceName": "VMware vCloud Air Virtual Private Cloud",
+                    "tenantType": "VPC",
+                    "licenseType": "COMMERCIAL",
+                    "description": "VMware vCloud Air Virtual Private Cloud",
+                    "defaultFlag": "N",
+                    "storage": [
+                        {
+                            "ACC STORAGE": {
+                                "storageName": "SSD Accelerated Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ]
+                                    ]
+                                ]
+                            }
+                        },
+                        {
+                            "STD STORAGE": {
+                                "storageName": "Standard Storage",
+                                "terms": [
+                                    [
+                                        "1 month",
+                                        "1_MTH",
+                                        [
+                                            "Monthly"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "12 months",
+                                        "12_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ],
+                                    [
+                                        "36 months",
+                                        "36_MTH",
+                                        [
+                                            "Monthly",
+                                            "Prepaid"
+                                        ],
+                                        "N"
+                                    ]
+                                ]
+                            }
+                        },
+                        ""
+                    ]
+                }
+            ]
+        },
+        "promotion": null,
+        "service": null
+    }
+
+}

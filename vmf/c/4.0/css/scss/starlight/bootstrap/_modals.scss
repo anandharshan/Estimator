@@ -1,0 +1,73 @@
+.starlight{
+  .modal {
+    overflow-y: auto;
+    .modal-header{
+    	padding:26px 6px 26px 29px;
+    	h3{
+        margin:0;
+        line-height: 26px;
+      }
+    	.close{
+        width:18px;
+        height:18px;
+        display:inline-block;
+        background:url("../images/icons/close_blue.png") no-repeat;
+    	  margin-right:10px;
+    	  margin-top:0;
+        opacity: 1;
+        &:hover{
+          opacity: 1;
+        }
+    	}
+    }
+    .modal-body{
+    	padding:20px 40px 30px;
+    }
+    .modal-footer{
+      padding:0 40px 30px;
+    	border-top:0;
+    }
+  }
+  &.modal-open, 
+  .modal-open .navbar-fixed-top, 
+  .modal-open .navbar-fixed-bottom {
+    overflow-y: auto;
+  }
+  &.liferay.modal-open, 
+  &.liferay .modal-open .navbar-fixed-top, 
+  &.liferay .modal-open .navbar-fixed-bottom {
+    overflow-y: hidden;
+  }
+  label input[type="file"] {
+    position: fixed;
+    top: -1000px;
+  }
+  .starlight_file_input{
+    margin-top:10px;
+    padding:0;
+    label{
+      padding:0;
+    }
+    span {
+      display: inline-block;
+    }
+    .fakeTextbox {
+      border-radius: 4px 0px 0px 4px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 75%;
+    }
+    .fakeButton {
+      border-radius: 0px 4px 4px 0px;
+      margin: 0;
+      width: 25%;
+    }
+  }
+  #addAttachmentModal .modal-footer .btnAttachSelectedFile{
+    margin-right: 0;
+  }
+  .attachment-subtitle{
+    font-size:15px;
+  }
+}

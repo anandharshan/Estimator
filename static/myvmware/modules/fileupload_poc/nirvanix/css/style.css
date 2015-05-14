@@ -1,0 +1,45 @@
+body {
+	font-family: "trebuchet ms", "times new roman", times, serif;
+	font-size: -1em;
+}
+
+.appletdisplay {
+	min-width: 800;
+	background: #6666EE;
+	margin: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.applet {
+	margin-top: 5px; 
+	margin-left: 10px;
+}
+
+.filedisplay {
+	color: #EEEEEE;
+	margin-left: 10px;
+}
+
+.uploadbtn {
+	margin-left: 10px;
+}
+
+input {
+ color:#6666EE;
+ height: 20px;
+ margin-bottom: 4px;
+ font: bold 84% 'trebuchet ms',helvetica,sans-serif;
+ background-color:#FEFEFE;
+ border:1px solid;
+ border-color: #696 #363 #363 #696;
+}
+
+input[disabled] {
+ color:#2222AA;
+ height: 20px;
+ margin-bottom: 4px;
+ font: bold 84% 'trebuchet ms',helvetica,sans-serif;
+ background-color:#AAAAAA;
+ border:1px solid;
+ border-color: #696 #363 #363 #696;
+}

@@ -1,0 +1,175 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  header.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 08/02/2011
+/* ########################################################################### *
+/* ######  MY VMWARE LOGIN WIDGET 
+/* ########################################################################### */
+
+/**Override the width of the nav from public site (.com)**/
+.ad-nav {
+	width: 98%;
+}
+
+/*My Vmware Login Widget in header*/		
+.my_vmware {
+	background: url("img/bg_myvmware.png") no-repeat scroll right top transparent;
+    font-size: 11px;
+    height: 24px;
+	position: absolute;
+	right: -5px;
+    top: 38px;
+    width: 103px;
+}
+
+.my_vmware.loggedIn {
+	background: url(img/bg_myvmware_logged_in.png) no-repeat right top;
+}
+
+	.my_vmware a {
+		color: #3399CC;
+		display: inline-block;
+		font-weight: bold;
+		height: 14px;
+		margin: 3px 0 0 1px;
+		padding: 3px 0 0 8px;
+	}
+	
+	.my_vmware.loggedIn a {
+		color: #FFF;
+	}
+	
+	.my_vmware a:hover {
+		text-decoration: none;
+	}
+	
+.my_vmware_dropdown_box {
+	background: #FFFFFF;
+    border-top: 8px solid #3889C5;
+    box-shadow: 1px 0 7px #B7B8BA;
+	display: none;
+    left: -146px;
+    padding: 0;
+	position: absolute;
+    top: 23px;
+	width: 250px;
+	z-index: 3000;
+}
+	.my_vmware_dropdown_box .my_vmware_dropdown_content {
+		padding: 10px 15px 0px 15px;
+	}
+	
+	.my_vmware_dropdown_box h1 {
+		border-bottom: 1px solid #bebfc0;
+		color: #666;
+		font-size: 14px;
+		font-weight: bold;
+		margin-bottom: 8px;
+		padding-bottom: 5px;		
+	}
+	
+	.my_vmware_dropdown_box .ctrlHolder {
+		margin-left: 0px;
+		margin-bottom: 15px;
+		margin-right: 0px;
+		padding: 0;
+	}
+	
+	.my_vmware_dropdown_box .ctrlHolder label {
+		font-weight: normal;
+		font-size: 12px;
+		margin-bottom: 5px;
+		width: 190px;
+	}
+	
+	.my_vmware_dropdown_box .ctrlHolder input {
+		margin-right: 5px;
+	}
+	
+		
+	.my_vmware_dropdown_box p {
+		font-size: 12px;
+	}
+	
+	.my_vmware_dropdown_box .ctrlHolder p {
+		text-align: left;
+	}
+		.my_vmware_dropdown_box .ctrlHolder p a {
+			padding: 0;
+			margin-left: 0;
+		}
+		
+		.my_vmware_dropdown_box .ctrlHolder p em, .ctrlHolder label em {
+			color: red;
+		}
+		
+		.my_vmware_dropdown_box a.button {
+			color: #FFF;
+			display: inline;
+			padding: 5px 14px;
+			margin-left: 0;
+		}
+		
+.my_vmware_gray_box {	
+	background: #EEEFF1;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	box-shadow: 1px 3px 7px #B7B8BA;
+	font-size: 12px;
+	padding: 5px 15px 15px 15px;
+}
+	.my_vmware_gray_box h2 {
+		color: #000;
+		font-size: 12px;
+		font-weight: bold;
+		margin-bottom: 10px;
+		
+		
+	}
+	
+	.my_vmware_gray_box p,
+	.my_vmware_dropdown_content p{
+		margin-bottom: 10px;
+	}
+	
+	.my_vmware_gray_box h3 {
+		border-bottom: 1px solid #bebfc0;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		padding-bottom: 5px;
+		text-transform: uppercase;
+	}
+	
+	.my_vmware_gray_box p a {
+		margin: 0px;
+		padding: 0;
+	}
+	
+	.my_vmware_gray_box p.register {
+		text-align: right;
+	}
+	
+	.my_vmware.loggedIn .my_vmware_gray_box a,
+	.my_vmware.loggedIn .my_vmware_dropdown_content a {
+		color: #3398CC;
+		margin-left: 0;
+		font-weight: normal;
+		padding: 2px 0 10px 0px;
+		
+	}
+	
+	.my_vmware_gray_box ul {
+		margin-left: 0px;
+		margin-bottom: 10px;
+	}
+	
+	.my_vmware_gray_box ul li {
+		background: none;
+		list-style: none;
+	}

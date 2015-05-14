@@ -1,0 +1,21 @@
+<section tabindex="-1" role="dialog"  aria-hidden="true" class="overlay modal_confirm">
+
+	<div class="modal-header">
+        <span class="close" aria-hidden="true" data-dismiss="modal" ng-click="cancelConfirmWindow()"></span>
+	</div>
+
+	<div class="modal-body">
+		<div class="row">
+			<div class="col-md-2 ">
+				<img src ="/static/myvmware/common/img/Icons-(32x32)_High-Orange.png" class="alertImg"></img>
+			</div>
+        	<div class="col-md-9 labelstyle">{{modalData.body}}</div>
+        </div>
+    </div>           
+	
+	<div class="modal-footer">
+		<a class="btn btn-primary" ng-click="continueConfirmWindow()">{{modalData.okText}}</a>
+        <a class="btn btn-default" ng-click="cancelConfirmWindow()">{{modalData.cancelText}}</a>
+	</div>
+
+</section>

@@ -1,0 +1,131 @@
+.video img {
+	border:0;
+	width: auto;
+}
+.video p{margin-top:0;}
+.ie7 div.portlet-column{overflow:visible;}
+#content-container.wide{margin-top: -22px;}
+body #content-container.wide #content{
+    padding:0;
+    width:1140px !important;
+}
+.eppLoginHeader .tabbed_box .tabbed_area .main-container-wrapper{
+	background: url("../img/bg_header_eppLogin.png") repeat-y scroll right 0 #206F96 !important;
+    margin-top: 0;
+    padding: 50px 25px 0;
+    width: 1090px;
+}
+#content-container .eppLoginHeader #breadcrumbs{
+    left: 25px;
+    position: absolute;
+    top: 35px;
+}
+#content-container .eppLoginHeader #breadcrumbs, #content-container .eppLoginHeader #breadcrumbs a {color: #ACE4FF !important;}
+#content-container .eppLoginHeader .contactLink{position: absolute;top: 164px;right:26px;padding:4px 0;}
+#content-container .eppLoginHeader .contactLink a{ color: #FFFFFF !important;font-size: 11px;}
+#content-container .eppLoginHeader .tabbed_area .main-container-wrapper .main-container{
+    padding-top:15px; 
+    width: 750px;
+}
+#content-container .eppLoginHeader .tabbed_area .main-container-wrapper .main-container p{
+	margin-bottom:15px; 
+	padding:0; 
+	font-size: 14px;
+	line-height: 18px;
+}
+.eppLoginHeader .main-container, .eppLoginHeader .main-container p{color:#fff !important;}
+.eppLoginHeader .links{width:auto; padding:0; margin:0 !important; list-style:none; background:none}
+.eppLoginHeader .links .link{
+	line-height: 17px;
+    margin:0;
+    padding:0;
+    list-style:disc inside none;
+    color:#fff !important;
+}
+.eppLoginHeader .links .link .pdf{
+	background:url(../img/icon_pdf.png) no-repeat right center; 
+	line-height: 17px;
+    padding: 0 18px 0 0;
+    margin:0;
+    width:auto;
+    text-decoration: underline;
+    color:#fff !important;
+}
+#content-container.wide .twoColum-Wrapper {
+    background:url("../img/bg-sphere-two-columns.gif") no-repeat scroll 868px 0px transparent; 
+    padding: 0 25px;
+    overflow: hidden;
+}
+#content-left {
+    float: left;
+    margin: 4px 0 0;
+    width: 865px;
+}
+.left-wrapper{margin: 0; padding: 0 20px 0 0;}
+.left-wrapper .leftTabContent{padding-left:10px}
+.leftTabContent p{
+    margin:0 0 15px;
+    font-size:12px !important;
+}
+#content-container .left-wrapper .leftTabContent ul li{margin-left:30px; list-style: disc; margin-bottom: 15px;}
+#content-container .left-wrapper .leftTabContent ol{margin-left:30px;}
+#content-container .left-wrapper .leftTabContent table.stepTbl td{vertical-align: top;}
+#content-container .left-wrapper .leftTabContent .footNotes{font-size:10px !important;}
+.left-wrapper p span.footerText{font-size:8px;}
+#content-right{
+    margin-top:0px;
+    padding-top:20px;
+    width:220px;
+}
+#content-right a, .partnersLogin a{color: #ACE4FF !important;}
+#content-right .white-Box a{color: #3399CC !important;}
+#content-right .white-Box a.pdf{
+    background:url(../img/icon_pdf.png) no-repeat right center; 
+    padding: 0 18px 0 0;
+    font-size:12px;
+}
+.ie7 #content-right .white-Box a.pdf{padding-right:15px;}
+#content-right .white-Box{margin-bottom:20px;}
+.ie7 #content-header-container .right-side-panel .partnersLogin a{vertical-align: baseline !important;}
+#content-container .eppLoginHeader .right-side-panel .login-Box-Wrapper{margin-top:10px;}
+.eppLoginHeader .right-side-panel .partnersLogin{
+	background:url(../img/bgEppLoginPartners.png) no-repeat 0 bottom;
+	padding:10px 10px 15px 20px;
+	color:#fff;
+	margin-bottom:10px;
+}
+.eppLoginHeader .right-side-panel .partnersLogin p{line-height:12px; margin:0 !important;color:#fff;}
+.eppLoginHeader .right-side-panel .partnersLogin h3{color:#fff; margin:0 0 10px 0; padding:0;}
+#content-container .eppLoginHeader .right-side-panel .login-Box-Wrapper.sharpCorners{border-radius: 3px 3px 0 0 !important;}
+#content-container .eppLoginHeader .login-Box .noProfile h3, #content-container .eppLoginHeader .login-Box .noProfile p{margin:0; padding:0}
+.twoColum-Wrapper .promo-style{padding:20px; margin-bottom:20px; height:auto}
+.twoColum-Wrapper .promo-style h3, .promo-style p{margin:0 0 18px; line-height: 12px;}
+.twoColum-Wrapper .promo-style a.calc{font-weight:bold; margin:0; padding:0;}
+.twoColum-Wrapper .product-questions ul li {font-weight: bold; margin: 0;padding: 0 10px 0 26px;}
+.twoColum-Wrapper .product-questions ul li:first-child {margin-bottom: 10px}
+.twoColum-Wrapper .product-questions a{font-size:11px;}
+.twoColum-Wrapper .product-questions h3{font-weight:bold}
+.twoColum-Wrapper .product-questions .holder{padding: 20px 42px 20px 18px;}
+.eppLoginHeader .login-Box .linksPanel {border-top:1px solid #ccc; padding-top:10px}
+.eppLoginHeader .my_vmware_gray_box p.register{text-align:left;}
+.eppLoginHeader .my_vmware_gray_box p.register a{padding-left: 16px !important;}
+.eppLoginHeader .loggedIn p{margin-top:0;}
+.eppLoginHeader .loggedIn p a{cursor:pointer}
+.eppLoginHeader .loggedIn p.userName{font-size: 22px; line-height: 24px;}
+#content-container .eppLoginHeader .userType p{margin-bottom:0;}
+#content-container .eppLoginHeader .lastSec{margin-bottom:5px;}
+#content-container .eppLoginHeader .lastSec button{margin-bottom:0 !important}
+#content-container .eppLoginHeader .login-Box.noBgBox{background:none;padding: 0;}
+#content-container .eppLoginHeader .login-Box.noBgBox .subSec{background:#EFEFEF; margin-bottom:5px;padding: 15px;}
+.spHolder{margin-bottom:30px;border-bottom:1px solid #ccc;}
+.tbl_spList .fLeft{float:left !important}
+.tbl_spList .fRight{float:right !important}
+.tbl_spList{border-collapse: collapse;}
+.tbl_spList td{border:1px solid #ccc;padding:5px;}
+.tbl_spList .imgHolder img{width:100%;}
+.tbl_spList .imgHolder{width:100px;height:100%;margin-right:15px;overflow:hidden;}
+.tbl_spList .imgHolder.apple{background:url('../img/ccp_icon_apple.png') no-repeat center center transparent}
+.tbl_spList .imgHolder.att{background:url('../img/ccp_icon_att.png') no-repeat center center transparent}
+.tbl_spList .imgHolder.cisco{background:url('../img/ccp_icon_cisco.png') no-repeat center center transparent}
+.tbl_spList .spContent{width:85%;}
+.tbl_spList .spContent b{font-weight:bold;}

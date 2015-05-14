@@ -1,0 +1,25 @@
+#simplemodal-overlay {
+	background-color:#000000;
+	cursor:wait;
+}
+#simplemodal-container {
+	background-color:#FFFFFF;
+	border:3px solid #CCCCCC;
+	height:auto;
+	width:auto;
+	padding:10px;
+	text-align:center;
+}
+#simplemodal-container a.modalCloseImg {
+	cursor:pointer;
+	display:inline;
+	height:29px;
+	position:absolute;
+	right:-18px;
+	top:-15px;
+	width:25px;
+	z-index:3200;
+}
+#simplemodal-container #basicModalContent {
+	padding:8px;
+}

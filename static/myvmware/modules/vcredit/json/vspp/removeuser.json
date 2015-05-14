@@ -1,0 +1,23 @@
+{
+	"userInfo" : [{
+			"userId" : "002",
+			"userName" : "Scott Hernandez",
+			"emailAddress" : "ScottHernandez@VMWARE.COM"
+		},
+		{
+			"userId" : "003",
+			"userName" : "Mathew Colbert",
+			"emailAddress" : "MathewColbert@VMWARE.COM"
+		},
+		{
+			"userId" : "004",
+			"userName" : "James Smith",
+			"emailAddress" : "JamesSmith@VMWARE.COM"
+		},
+		{
+			"userId" : "005",
+			"userName" : "R.K. Venkatesh",
+			"emailAddress" : "RVenkatesh@VMWARE.COM"
+		}
+	]
+}

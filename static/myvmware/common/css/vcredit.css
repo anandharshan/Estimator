@@ -1,0 +1,2203 @@
+/* phone portrait width */
+/* phone landscape width */
+/* Portrait tablet */
+/* Landscape tablet */
+/* desktop */
+/* Large desktop */
+/* line 29, scss/token.scss */
+h1 {
+  margin-top: 0px;
+}
+
+/* line 32, scss/token.scss */
+h4 {
+  color: black;
+}
+
+/* line 38, scss/token.scss */
+h3 span.form-required {
+  font-size: 15px;
+}
+
+/*a{
+  @include anchor();
+}*/
+/* line 49, scss/token.scss */
+#content-container ul, .content-container ul {
+  padding-left: 0px;
+}
+/* line 52, scss/token.scss */
+#content-container ul li, .content-container ul li {
+  list-style: none outside none;
+}
+/* line 56, scss/token.scss */
+#content-container ul.nav-pills li, .content-container ul.nav-pills li {
+  width: 335px;
+}
+/* line 63, scss/token.scss */
+#content-container article .with-border, .content-container article .with-border {
+  border: 1px solid #e0e0e0;
+}
+/* line 65, scss/token.scss */
+#content-container article .with-border div.col-md-4, .content-container article .with-border div.col-md-4 {
+  padding-right: 0px;
+}
+/* line 67, scss/token.scss */
+#content-container article .with-border div.col-md-4 .starlight-cont, .content-container article .with-border div.col-md-4 .starlight-cont {
+  margin-bottom: 0px;
+}
+/* line 73, scss/token.scss */
+#content-container .block, .content-container .block {
+  display: block;
+}
+/* line 76, scss/token.scss */
+#content-container .text-right, .content-container .text-right {
+  text-align: right;
+}
+/* line 79, scss/token.scss */
+#content-container .text-left, .content-container .text-left {
+  text-align: left;
+}
+/* line 83, scss/token.scss */
+#content-container .config-form label, .content-container .config-form label {
+  font-family: "proxima-nova-light", "Arial", sans-serif;
+  color: #666666;
+  font-weight: normal;
+}
+/* line 91, scss/token.scss */
+#content-container div.row.element-container, .content-container div.row.element-container {
+  margin-bottom: 20px;
+}
+/* line 95, scss/token.scss */
+#content-container div.row.element-container span select.form-control, .content-container div.row.element-container span select.form-control {
+  width: 250px;
+  margin-bottom: 10px;
+}
+/* line 102, scss/token.scss */
+#content-container div.row.primaryAdministrator, .content-container div.row.primaryAdministrator {
+  margin-bottom: 10px;
+}
+/* line 106, scss/token.scss */
+#content-container div.row .billingAddresssForm div.row, .content-container div.row .billingAddresssForm div.row {
+  margin-bottom: 10px;
+}
+
+/* line 113, scss/token.scss */
+.standard-configuration-info > div.pull-right {
+  width: 374px;
+  text-align: right;
+  margin-bottom: 15px;
+  display: inline;
+}
+
+/* line 123, scss/token.scss */
+.navBarCustom > li a, .navBarCustom > li a:hover, .navBarCustom > li a:focus, .navBarCustom > li.open a, .navBarCustom > li.open a:hover, .navBarCustom > li.open a:focus {
+  background: none;
+  color: #fff;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 5px 15px !important;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  /* line 123, scss/token.scss */
+  .navBarCustom > li a, .navBarCustom > li a:hover, .navBarCustom > li a:focus, .navBarCustom > li.open a, .navBarCustom > li.open a:hover, .navBarCustom > li.open a:focus {
+    padding: 5px !important;
+    font-size: 14px;
+  }
+}
+@media (min-width: 979px) {
+  /* line 138, scss/token.scss */
+  .navBarCustom li.navBorder > a {
+    padding-right: 25px !important;
+    border-right: 2px solid #5E5F5E !important;
+  }
+  /* line 142, scss/token.scss */
+  .navBarCustom li.navBorder + li.navBorderAfter a {
+    padding-left: 25px !important;
+  }
+}
+/* line 147, scss/token.scss */
+.navBarCustom .dropdown .dropdown-menu {
+  background-color: #262629;
+}
+@media (max-width: 768px) {
+  /* line 152, scss/token.scss */
+  .navBarCustom .dropdown .dropdown-menu {
+    background-color: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 159, scss/token.scss */
+  .mainNav {
+    margin-left: 20px !important;
+  }
+}
+@media (min-width: 768px) {
+  /* line 166, scss/token.scss */
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 0px !important;
+  }
+}
+/* line 172, scss/token.scss */
+.lt-ie8 select.form-control {
+  height: auto !important;
+}
+
+/* line 177, scss/token.scss */
+.lt-ie8 .modal-body .col-md-12 {
+  width: 100% !important;
+}
+/* line 181, scss/token.scss */
+.lt-ie8 .configDashBox .btn-group {
+  margin-left: 80px;
+}
+/* line 185, scss/token.scss */
+.lt-ie8 .configDashBox .btn-group .dropdown-toggle {
+  padding-bottom: 6px;
+}
+/* line 189, scss/token.scss */
+.lt-ie8 .tooltip {
+  filter: none !important;
+}
+
+@media (max-width: 768px) {
+  /* line 177, scss/token.scss */
+  .header .page-logo {
+    margin: 18px 0 0 !important;
+  }
+
+  /* line 181, scss/token.scss */
+  .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+
+  /* line 186, scss/token.scss */
+  .navBarCustom.navbar-right {
+    margin-top: 0px !important;
+  }
+  /* line 190, scss/token.scss */
+  .navBarCustom.mainNav {
+    margin-bottom: 0px !important;
+  }
+}
+/* line 196, scss/token.scss */
+.bottomBorder {
+  border-bottom: 1px solid #E6E6E6;
+  /*margin: 10px 0;*/
+  margin-top:6px;
+}
+
+/* line 200, scss/token.scss */
+.bottomBorderWhite {
+  border-bottom: 1px solid white;
+  margin: 10px 0;
+}
+
+/* line 205, scss/token.scss */
+.customListBorder {
+  border-right: 1px solid #E6E6E6;
+  padding-right: 10px !important;
+}
+
+/* line 210, scss/token.scss */
+h1 small, h1 .small, .h1 small, .h1 .small, h2 small, h2 .small, .h2 small, .h2 .small, h3 small, h3 .small, .h3 small, .h3 .small {
+  font-size: 80%;
+}
+
+/* line 214, scss/token.scss */
+.serviceDataUl li {
+  list-style: none;
+}
+
+/* line 218, scss/token.scss */
+.greyBg {
+  background-color: #ccc;
+}
+
+/* line 222, scss/token.scss */
+.reviewOrderWrap > .row {
+  margin-bottom: 10px;
+}
+
+/* line 226, scss/token.scss */
+.tableHdr {
+  padding: 10px 0;
+  background-color: #ccc;
+}
+
+/* line 231, scss/token.scss */
+.fRed {
+  color: #EF3B23;
+}
+
+/* line 235, scss/token.scss */
+.configDashBox {
+    background-color: #f1f6f8;
+    border: 1px solid #f1f6f8;
+    margin: 13px 0;
+    padding: 0 0 30px;
+    text-align: center;
+}
+
+/* line 244, scss/token.scss */
+.items_wrap {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #E6E6E6;
+}
+/* line 248, scss/token.scss */
+.items_wrap > .row {
+  margin-bottom: 3px;
+}
+
+/* line 253, scss/token.scss */
+.font-size-38 {
+  font-size: 38px;
+}
+
+/* line 257, scss/token.scss */
+.panel-title {
+  font-size: 16px;
+}
+
+/* line 261, scss/token.scss */
+.box-bgGrey {
+  padding: 10px;
+  background-color: #eee;
+}
+/* line 270, scss/token.scss */
+.starlight .progressBar ol > li {
+  margin: 0 31px 0 0;
+  color: #999999;
+}
+.starlight .progressBar ol > li.visited{
+  color: #333333;
+}
+.starlight .progressBar ol > li.active {
+  font-family: "proxima-nova-semibold", "Arial", sans-serif;
+}
+/* line 275, scss/token.scss */
+html.lt-ie8 input[type="radio"], html.lt-ie8 input[type="checkbox"] {
+  margin-top: 0px !important;
+}
+/* line 276, scss/token.scss */
+html.lt-ie8 .starlight .progressBar ol > li {
+  float: left;
+}
+/* line 279, scss/token.scss */
+html.lt-ie8 .starlight .progressBar ol {
+  display: inline-block;
+  padding: 20px 0px !important;
+}
+/* line 283, scss/token.scss */
+html.lt-ie8 .form-horizontal .radio, html.lt-ie8 .form-horizontal .checkbox {
+  padding-top: 0px !important;
+  min-height: auto !important;
+}
+/* line 287, scss/token.scss */
+html.lt-ie8 strong {
+  font-weight: bold !important;
+}
+
+/* line 293, scss/token.scss */
+.starlight .accordion .panel-body.table .table-head {
+  font-family: proxima-nova-thin;
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+/* line 299, scss/token.scss */
+.starlight .accordion .panel-body.table .table-row {
+  border-top: 1px solid #e6e6e6;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+/* line 306, scss/token.scss */
+.starlight .btn-primary, .starlight .btn-default {
+  font-size: 14px;
+  font-family: "proxima-nova-semibold", "Arial", sans-serif;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.075);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 314, scss/token.scss */
+.starlight .btn-default {
+  color: #666;
+}
+
+/* line 324, scss/token.scss */
+.starlight .modal .overlay .modal-footer {
+  background-color: #e3e3e3;
+  padding: 23px 40px;
+  border-radius: 0 0 4px 4px;
+}
+/* line 328, scss/token.scss */
+.starlight .modal .overlay .modal-footer .btn-primary, .starlight .modal .overlay .modal-body .btn-primary, .starlight .modal .overlay .modal-footer .btn-default, .starlight .modal .overlay .modal-body .btn-default {
+  margin-right: 10px;
+}
+
+.modal-body .btn + .btn{
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+/* line 333, scss/token.scss */
+.starlight .modal.overlay-lg .modal-dialog {
+  width: 770px;
+}
+.starlight .modal .modal-header{
+    padding-left: 40px;
+}
+
+@media (min-width: 992px) {
+  /* line 339, scss/token.scss */
+  .tokensAccordion .col-md-1 {
+    width: 11.333%;
+  }
+
+  /* line 340, scss/token.scss */
+  .tokensAccordion .panel-body .col-md-1 {
+    width: 10.333%;
+  }
+
+  /* line 341, scss/token.scss */
+  .tokensAccordion .panel-body .col-md-3 {
+    width: 19%;
+  }
+
+  /* line 342, scss/token.scss */
+  .tokensAccordion .panel-body .col-md-2 {
+    width: 14.6%;
+  }
+
+  /* line 343, scss/token.scss */
+  .tokensAccordion .panel-body .col-md-4 {
+    width: 30%;
+  }
+}
+/* line 346, scss/token.scss */
+.radio label, .checkbox label {
+  color: inherit;
+  font-family: inherit;
+}
+
+/* line 351, scss/token.scss */
+.form-required {
+    color: #d9541e;
+    font-size: 14px;
+}
+
+/* line 355, scss/token.scss */
+.box-bgBlue {
+    background-color: #ecf5fc;
+    padding: 30px 20px 20px 30px;
+}
+
+.calculationBoxHeader18{
+  font-family: "proxima-nova-semibold","Arial",sans-serif;
+  font-size: 18px;
+  margin: -5px 0 3px;
+  color: #387c2c;
+}
+
+.intro-text-24{
+  font-size: 24px!important;
+}
+
+.padding-left-5{
+  padding-left: 5px !important;
+}
+
+/* line 360, scss/token.scss */
+.padding-left-10 {
+  padding-left: 10px !important;
+}
+
+/* line 364, scss/token.scss */
+.padding-left-20 {
+  padding-left: 20px !important;
+}
+
+/* line 368, scss/token.scss */
+.margin-left-20 {
+  margin-left: 20px !important;
+}
+
+/* line 372, scss/token.scss */
+.cursor {
+  cursor: pointer;
+}
+
+/* line 376, scss/token.scss */
+.lBlue {
+  color: #9DDCF8;
+}
+
+/* line 380, scss/token.scss */
+.autoWidth {
+  width: auto;
+}
+
+/* line 384, scss/token.scss */
+.formAlign .row {
+  margin-bottom: 7px;
+}
+
+/* line 388, scss/token.scss */
+ul.addontable li.addontable-head {
+  background-image: -webkit-linear-gradient(top, #ededed 0%, #dadada 100%);
+  background-image: -o-linear-gradient(top, #ededed 0%, #dadada 100%);
+  background-image: linear-gradient(to bottom, #ededed 0%, #dadada 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEDEDED', endColorstr='#FFDADADA', GradientType=0);
+  border-bottom: none;
+}
+
+/* line 397, scss/token.scss */
+ul.addontable li.addontable-head .addon-separator {
+  border-right: 1px solid #f1f1f1;
+}
+
+/* line 401, scss/token.scss */
+.starlight .form-horizontal .radio {
+  padding-top: 0;
+  padding-left:0;
+}
+.starlight.liferay .radio, .starlight.liferay .checkbox{padding-left:0;}
+/* line 406, scss/token.scss */
+#calculationsBox h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 412, scss/token.scss */
+.bg-support {
+  /*background: url("/static/myvmware/common/css/img/bg_link.png") no-repeat;*/
+  background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+  background-position: 0 -151px; width: 18px; height: 15px;
+  display: inline-block;
+  float: left;
+ /** height: 15px;
+  width: 20px;**/
+}
+
+/*********************Dashboard Styles starts here*********************/
+/* line 423, scss/token.scss */
+.dashboard .starlight-cont {
+  background-color: #f1f6f8;
+  padding: 25px 25px 5px;
+ /* margin-top: 5px;*/
+}
+/* line 426, scss/token.scss */
+.dashboard .starlight-cont .text-center {
+  padding-bottom: 15px;
+}
+
+.renameEdit {margin-bottom: 7px;}
+/* line 430, scss/token.scss */
+.dashboard .service {
+  padding: 5px 8px 5px 11px;
+}
+.msrp {color: #333333; font-family: "proxima-nova-regular"; font-size: 16px;}
+/* line 434, scss/token.scss */
+.dashboard .users .margin-top-30 {
+  margin-top: 17px;
+  clear: both;
+}
+.dashboard .topMarginZero {
+  margin-top: 0;
+}
+/* line 437, scss/token.scss */
+.dashboard .users .margin-top-30 li {
+  width: 37%;
+  float: left;
+}
+/* line 440, scss/token.scss */
+.dashboard .users .margin-top-30 li h4 {
+  margin-top: -3px;
+}
+/* line 446, scss/token.scss */
+.dashboard .owner {
+  background: #d3d3d3;
+  padding: 4px;
+  border-radius: 4px;
+  color: #fff;
+}
+/* line 452, scss/token.scss */
+.dashboard .info,.vsppDashboard .info {
+  background-image: url("/vmf/c/4.0/images/bg_alert_spite.png");
+  display: block;
+  height: 14px;
+  width: 14px;
+  margin-top: 3px;
+  margin-left: 5px;
+  background-position: 0 -428px;
+  outline: none;
+}
+
+/* line 462, scss/token.scss */
+.bottom {
+  float: left;
+  width: 100%;
+  padding: 18px 15px;
+  background: #ECECEC;
+}
+/* line 467, scss/token.scss */
+.bottom p {
+  float: right;
+}
+
+/* line 471, scss/token.scss */
+.addDescription {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* line 478, scss/token.scss */
+.form {
+  padding-left: 0;
+}
+/* line 482, scss/token.scss */
+.form form label span {
+  color: #FF0000;
+}
+/* line 485, scss/token.scss */
+.form form p label {
+  float: left;
+  width: 40%;
+}
+/* line 489, scss/token.scss */
+.form form p input {
+  width: 58%;
+}
+
+/* line 495, scss/token.scss */
+.formBtns {
+  width: 100%;
+  float: left;
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* line 501, scss/token.scss */
+.addStep {
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* line 507, scss/token.scss */
+.required {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+/* line 512, scss/token.scss */
+.addModal {
+  /*Temporary */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  min-height: 0 !important;
+  padding-bottom: 0 !important;
+  width: 750px !important;
+}
+
+/* line 520, scss/token.scss */
+.addWrapper {
+  /*Temporary */
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+/* line 525, scss/token.scss */
+.remuser {
+  max-height: 150px;
+  overflow-y: auto;
+}
+/* line 528, scss/token.scss */
+.remuser label {
+  padding-left: 0;
+}
+/* line 530, scss/token.scss */
+.remuser label input {
+  margin-top: 0 !important;
+  vertical-align: middle;
+}
+
+/* line 536, scss/token.scss */
+.modalClose {
+  float: right;
+  margin: 10px 35px;
+}
+
+/* line 543, scss/token.scss */
+.fundName {
+  margin-bottom: 13px;
+  margin-left: 20px;
+}
+/* line 547, scss/token.scss */
+.removeUserModal {
+  padding-left: 0 !important;
+}
+
+/* line 548, scss/token.scss */
+.removeDescription {
+  margin-bottom: 6px;
+}
+
+/* line 550, scss/token.scss */
+.termsInput {
+  display: block;
+  float: left;
+  margin-top: 10px;
+}
+
+/* line 554, scss/token.scss */
+.termsContent {
+  float: left;
+  display: block;
+  margin-bottom: 7px;
+}
+.removeUserModal .termsContent {
+  float: right;
+}
+.headFnd .renameLnk {font-size: 16px;}
+.addSection .addUserFields input{padding-left: 15px;color: #333333;}
+.addUserGrp .btn-primary {margin-right: 20px;}
+
+/*********************Dashboard Styles endss here*********************/
+/*********************Configurator Admin starts*********************/
+/* line 560, scss/token.scss */
+.admin {
+  padding-right: 0;
+}
+/* line 562, scss/token.scss */
+.admin h2 {
+  color: #000;
+  opacity: 0.6;
+}
+
+/* line 568, scss/token.scss */
+.adminLogin h3 {
+  font-size: 17px;
+}
+
+/* line 574, scss/token.scss */
+.adminform .addSection {
+  margin-left: 1%;
+  margin-bottom: 30px;
+}
+/* line 579, scss/token.scss */
+.adminform .adminFields {
+  margin-right: 35px;
+}
+/* line 582, scss/token.scss */
+.adminform .formFields {
+  padding-right: 0;
+  padding-left: 43px;
+}
+
+/* line 587, scss/token.scss */
+.newServiceBtnWrap {
+  width: 100%;
+  float: left;
+}
+
+/* line 591, scss/token.scss */
+.margin-top-0 {
+  margin-top: 0;
+}
+
+/*********************Configurator Admin ends*********************/
+
+/*** Data table change may be moved to core later **/
+/* line 543, scss/token.scss */
+table.starlight.dataTable.withPadding td {
+  padding: 10px 20px;
+  border: 1px solid #f2f2f2;
+}
+
+/*** Vinoth's changes need to be changed to SCSS ***/
+/* line 551, scss/token.scss */
+.badgeBrown {
+  /*background: none repeat scroll 0 0 #707070;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 69%;
+  padding: 0 3px;*/
+  background:#f1f1f1;
+  border-radius: 0 !important;
+  color: #000;
+  font-size: 11px;
+  padding: 5px 7px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* line 558, scss/token.scss */
+.customListBorder {
+  border-right: 1px solid #e6e6e6;
+}
+
+/* line 561, scss/token.scss */
+.csvDownload {
+  background: url(/vmf/c/4.0/images/bg_alert_spite) no-repeat;
+  background-position: 0 -215px;
+   width: 16px;
+   height: 16px;
+   padding-top: 0;
+  padding-right: 25px !important;
+}
+
+/* line 565, scss/token.scss */
+.detialsDiv {
+  width: 40%;
+  float: left;
+}
+
+/* line 569, scss/token.scss */
+.detailDiv {
+  width: 60%;
+  float: left;
+  margin-bottom: 10px;
+}
+/* line 572, scss/token.scss */
+.detailDiv.marginTop {
+  margin-top: 10px;
+}
+
+.partnerWrapper .detialsDiv h5, .partnerWrapper .detailDiv{
+	margin-bottom: 0;
+}
+
+.accountWrapper .detialsDiv h5, .accountWrapper .detailDiv {
+	line-height: 18px;
+    margin: 0;
+}
+
+/* line 576, scss/token.scss */
+.renameDiv {
+  margin-bottom: 25px;
+  margin-top: 16px;
+  position:relative;
+  padding-left: 0;
+  display: none;
+}
+.renameDiv .parsley-errors-list {
+  position: absolute;
+  top: 35px;
+}
+
+/* line 643, scss/token.scss */
+.renameFundName {
+  width: 44%;
+  float: left;
+  margin-right: 15px;
+}
+/* line 581, scss/token.scss */
+.renameTxtBox {
+  width: 44%;
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 586, scss/token.scss */
+.serviceCost {
+  font-size: 90%;
+  padding-left:15px !important;
+}
+
+/* line 589, scss/token.scss */
+.serviceCostCurr {
+  font-size:16px;
+}
+
+/* line 593, scss/token.scss */
+.balanceVal {
+font-size: 24px;
+margin: 3px 0;
+color: #333333;
+opacity: 0.7;
+float: left;
+width: 100%;
+}
+
+/* line 598, scss/token.scss */
+.balanceCnt {
+  /*padding: 0 0 15px;*/
+  padding-left: 0px;
+}
+
+/* line 602, scss/token.scss */
+.renameLnk {
+  border-left: 1px solid #ccc;
+  padding-left: 15px;
+  font-family:"proxima-nova-regular";
+}
+
+/* line 606, scss/token.scss */
+i, cite, em, var, address, dfn {
+  font-style: italic;
+}
+
+/* line 610, scss/token.scss */
+.currSymbol {
+  padding-right: 2px;
+}
+
+/* line 623, scss/token.scss */
+.fundNameHead {
+  /*padding-right: 15px;*/
+  color: #387c2c;
+  /*float: left;*/
+}
+
+/* line 628, scss/token.scss refer line number 804
+.currSymbol {
+  padding-right: 5px;
+}
+*/
+/* line 629, scss/token.scss */
+.trueBadge {
+  background: none repeat scroll 0 0 #C3CD23;
+  color: #fff;
+  display: block;
+  float: left;
+  font-size: 9px;
+  height: 15px;
+  line-height: 14px;
+  margin: 26px 10px 0 0;
+  padding: 1px 2px 1px 3px;
+}
+
+.trueBadge-header{
+    background: none repeat scroll 0 0 #C3CD23;
+    color: #fff;
+    font-size: 67%;
+    margin-left: 7px;
+    padding: 2px 5px;
+}
+
+/* line 641, scss/token.scss */
+.ellipsisText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0px 2px !important;
+}
+h4.topMarginZero{
+	margin-top:0;
+}
+/* line 650, scss/token.scss */
+.errorMessage {
+  width: 100%;
+  color: #e00000;
+}
+
+/* line 654, scss/token.scss */
+.form {
+  padding-left: 0;
+}
+/* line 656, scss/token.scss */
+.form .form-required {
+  width: 100%;
+  text-align: center;
+}
+/* line 662, scss/token.scss */
+.form form label span {
+  color: #FF0000;
+}
+
+/***********Add on style**************/
+/* line 668, scss/token.scss */
+.glyphicon-chevron-right, .glyphicon-chevron-down {
+  float: left;
+}
+
+/* line 672, scss/token.scss */
+.panel-title .col-md-2 {
+  width: 15.66666%;
+}
+
+/* line 676, scss/token.scss */
+.openaccordion {
+  color: #cccccc;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+/*conversion to SCSS required*/
+/* line 682, scss/token.scss */
+.starlight .accordion.panel-group .panel .panel-heading {
+  padding-left: 5px;
+}
+
+/* line 683, scss/token.scss */
+.starlight .accordion.panel-group .accordion-heading .panel-title {
+  padding-left: 27px;
+}
+
+/********************Add on ends*****************/
+/*************configurator home page****************/
+/* line 688, scss/token.scss */
+.configDashBox h2 {
+    display: inline-block;
+    *display: inline;
+    height: 48px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    zoom: 1;
+}
+
+.configDashBox p {
+    height: 46px;
+    margin: 0 3px 20px;
+}
+
+.btn-caret .btn .caret {
+    margin-left: 25px;
+    margin-right: -10px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .configDashBox h2{
+    padding-left: 0px;
+    font-size: 22px;
+  }
+}
+
+/* line 695, scss/token.scss */
+.newServices {
+  background: url(/static/myvmware/common/css/img/icn_config_options.png);
+  background-position: 0 -53px;
+  width: 48px;
+  height: 48px;
+  display: block;
+  float: left;
+}
+
+/* line 702, scss/token.scss */
+.addOn {
+  background: url(/static/myvmware/common/css/img/icn_config_options.png);
+  background-position: 0 0;
+  width: 48px;
+  height: 48px;
+  display: block;
+  float: left;
+}
+
+/* line 709, scss/token.scss */
+.renewal {
+  background: url(/static/myvmware/common/css/img/icn_config_options.png);
+  background-position: 0 -106px;
+  width: 42px;
+  height: 42px;
+  display: block;
+  margin-right: 5px;
+  float: left;
+}
+
+/* line 717, scss/token.scss */
+.headingContent {
+    color: #387c2c;
+    display: block;
+    float: left;
+    font-family: "proxima-nova-semibold","Arial",sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+/*************configurator home page****************/
+.borderRightWhite {
+  border-right: 2px solid #ffffff;
+}
+.borderLeftWhite{
+  border-left: 2px solid #ffffff;
+  margin-left: -2px;
+}
+body.liferay.starlight #content-container {
+    padding-bottom: 55px;
+}
+ul.dropdown-menu .csvDownload {
+  background: url("/vmf/c/4.0/images/icon_excel.png") no-repeat;
+  background-position: 0 0;
+  width: 16px;
+  height: 19px;
+  padding-top: 0;
+  padding-right: 25px !important;
+  margin-left: 15px;
+}
+ul.dropdown-menu.dashboardDropdown {
+    padding: 0 !important;
+}
+ul.dropdown-menu.dashboardDropdown li {
+    padding: 5px 0;
+}
+ul.dropdown-menu.dashboardDropdown li:hover{
+    background-color: #e1f2f7;
+}
+.remove {
+    border-left: 1px solid #999A9A;
+    padding-left:8px !important;
+}
+.ie7 ul.list-inline li,.ie8 ul.list-inline li,.ie9 ul.list-inline li,.ie10 ul.list-inline li{
+  display: inline;
+  zoom:1;
+  padding: 0px 0px 0px 1px;
+}
+
+.starlight .parsley-errors-list {
+	color: #e00000;
+	font-weight: normal;
+	margin: 2px 0 0 2px;
+	font-family: "proxima-nova-regular", "Arial", sans-serif;
+	list-style: none;
+	position:absolute;
+}
+ul.parsley-errors-list li {
+	background: url("/vmf/c/4.0/images/icons/icn_danger.png") no-repeat scroll 0 transparent;
+	padding-left: 20px;
+}
+.box-bgBlue #fullCalc h3{margin-top:15px;}
+.box-bgBlue .fullCalc h3{margin-top:15px !important;}
+.starlight .detailDiv .list-inline > li{padding-left:3px;padding-right:3px;}
+.ie9.starlight .detailDiv .list-inline > li,.ie8.starlight .detailDiv .list-inline > li{padding-left:3px;padding-right:3px;}
+
+
+
+/*************Praxis Flow Start****************/
+/* line 784, scss/token.scss */
+.praxisFundInfoWrap .fundLabel {
+  width: 150px;
+  display: inline-block;
+}
+
+/*************Praxis Flow End****************/
+
+.addontable .horizon .col-md-1,.addontable .horizon .col-md-2,.addontable .horizon .col-md-3{
+	padding-left:5px;
+	padding-right:5px;
+}
+.addontable-head small{
+	font-size:14px;
+}
+
+
+/************* Accordion styles - to be merged to main accordion styles **********/
+
+.accordion .panel .panel-heading{
+  color: #0095D3;
+}
+
+.accordion .panel.collapsed .panel-heading{
+  color: #666 !important;
+}
+
+.selectServiceCol {width: 65.6667%;}/* Edited for BUG-00101486*/
+.margin-right-24 {margin-right : 24px;}/* edited for jp locale*/
+.btn-padding-right-0 {padding-right: 0;padding-left: 10px;}/* edited for BUG-00111247*/
+
+.openaccordion.glyphicon-chevron-right{
+  background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+  background-position: 0 -609px; width: 9px; height: 15px; 
+}
+
+.openaccordion.glyphicon-chevron-down{
+ background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+background-position: 0 -561px; width: 15px; height: 9px; 
+ }
+
+.openaccordion{
+  text-indent: -3333px;
+  width: 17px;
+  height: 17px;
+  margin: 4px 0 0 10px;
+  display: inline-block;
+}
+
+/************* Accordion styles End */
+
+.form-inline .btn{
+  margin-top: 10px;
+}
+.icons-icn_warning {
+	background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+    background-position: 0 -523px; width: 16px; height: 13px;
+    margin-right: 5px;
+}
+.text-error{
+  border-color: #ef3b23 !important;
+}
+.icons-alert-success {
+  
+  background: url("/static/myvmware/common/css/img/icon_success_alerts_53x53.png") no-repeat;
+  background-position: 0 -87px; width: 27px; height: 27px;  
+  display: block;
+  float: left;
+  
+  margin-right: 10px;
+  margin-top: 2px;
+  
+}
+/******************expired funds datatable style  changes***********************/
+.liferay table.dataTable.starlight thead th {
+  color: #333;
+  font-size: 14px;
+}
+.liferay table.dataTable.starlight thead {
+  height:40px;
+}
+
+table.dataTable.starlight.noBg tr.even,table.dataTable.starlight.noBg tr.odd {
+    background-color: white;
+}
+
+table.dataTable.starlight.noBg tr.even:hover,table.dataTable.starlight.noBg tr.odd:hover {
+    background-color: #e5ebf1;
+}
+
+.liferay .groupLabel{
+color:#777777;
+}
+
+#configureServiceContainer .form-horizontal .form-group{
+  margin-bottom:15px;
+}
+
+.serviceCostHdr{
+  margin:0 0 3px;
+  font-family: "proxima-nova-semibold", "Arial", sans-serif;
+  font-size:18px;
+}
+
+/*******gaurav canges************/
+.intro-text {
+  color: #333 !important;
+}
+/*******gaurav canges ends************/
+
+.reviewOrderWrap h3 {
+  font-size: 18px;
+}
+
+a.exportCus {
+  background: url("/static/myvmware/common/css/img/export_bg.png") no-repeat;
+  float: right;
+  line-height: 18px;
+  margin-bottom: 7px;
+  padding-left: 20px;
+}
+.removeAddon {
+	background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+  background-position: 0 -171px; width: 16px; height: 16px; 
+  cursor: pointer;
+}
+/***********progress bar style for active*****************/
+.icons-progress-1-active{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+background-position: 0 -830px; width: 28px; height: 21px; 
+}
+.icons-progress-2-active{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+background-position: 0 -882px; width: 28px; height: 21px;
+}
+.icons-progress-3-active{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+background-position: 0 -934px; width: 28px; height: 21px; 
+}
+.icons-progress-4-active{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+background-position: 0 -986px; width: 28px; height: 21px; 
+}
+.icons-progress-5-active{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+background-position: 0 -1038px; width: 28px; height: 21px;
+}
+/************* Progress bar styles for active ends *************/
+/*************(liferay)***********************************/
+/************* Progress bar styles for inactive*************/
+.icons-progress-1-inactive{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+   background-position: 0 -856px; width: 28px; height: 21px; 
+}
+
+.icons-progress-2-inactive{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+   background-position: 0 -908px; width: 28px; height: 21px; 
+}
+
+.icons-progress-3-inactive{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+  background-position: 0 -960px; width: 28px; height: 21px; 
+}
+.icons-progress-4-inactive{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+background-position: 0 -1012px; width: 28px; height: 21px;  	
+}
+.icons-progress-5-inactive{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+background-position: 0 -1064px; width: 28px; height: 21px; 
+}
+/************* Progress bar styles for inactive ends *************/
+.icons-alert-close {
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+   background-position: 0 0; width: 18px; height: 18px; 
+}
+.icons-alert-danger {
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+   background-position: 0 -23px; width: 27px; height: 27px; 
+}
+.icons-alert-success {
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+   background-position: 0 -87px; width: 27px; height: 27px; 
+  
+}
+.icons-alert-warning {
+	background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+    background-position: 0 -119px; width: 27px; height: 27px; 
+}
+.starlight .modal .modal-header .close{
+ background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+ background-position: 0 -192px; width: 18px; height: 18px; 
+}
+/****************liferay ends************************/
+
+/******************alpha_star**********************/
+body.liferay.starlight .icons-locale_bg{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+background-position: 0 -728px; width: 35px; height: 16px; 
+}
+
+body.liferay.starlight #localeSelector .icons-locale_bg{cursor: pointer;}
+
+/******************alpha_star ends**********************/
+
+/************* Progress bar styles for visited *************/
+
+.visited .icons-progress-1-inactive{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+  background-position: 0 -629px; width: 28px; height: 21px; 
+}
+
+.visited .icons-progress-2-inactive{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+  background-position: 0 -655px; width: 28px; height: 21px; 
+}
+
+.visited .icons-progress-3-inactive{
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+  background-position: 0 -681px; width: 28px; height: 21px; 
+}
+
+/************* END - Progress bar styles for visited *************/
+
+
+/******************progress check*********************************/
+.icons-progress-check-inactive {
+  background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+  background-position: 0 -1186px; width: 29px !important; height: 22px !important; 
+}
+
+.icons-progress-check-active{
+  background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+  background-position: 0 -1159px; width: 29px !important; height: 22px !important; 
+}
+/******************progress Check ends****************************/
+/************* Progress bar styles hack for chrome *************/
+
+@media only screen and (min-width : 1224px) {
+    /* fix for the defect  BUG-00116938, BUG-00116949, BUG-00117026, BUG-00117035, BUG-00117039
+	.progressBar ol{
+    height: 31px;
+  }*/
+}
+
+/************* End Progress bar styles *************/
+
+/***************************new changes by gaurav********************/
+body.liferay.starlight input[type="checkbox"], body.liferay.starlight input[type="radio"] {
+    display: none;
+}
+body.liferay.starlight #dockbar input[type="checkbox"], body.liferay.starlight #dockbar input[type="radio"] {
+    display: inline;
+}
+input[type="radio"] + label:before,input[type="checkbox"] + label:before {
+    vertical-align: middle;
+}
+input[type="radio"] + label:before {
+    background: url("/static/myvmware/common/img/input_checks.png") no-repeat scroll -38px center transparent;
+}
+input[type="checkbox"] + label:before {
+    background: url("/static/myvmware/common/img/input_checks.png") no-repeat scroll -114px center transparent;
+}
+input[type="checkbox"] + label:before, input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    height: 19px;
+    margin-right: 5px;
+    text-indent: 20px;
+    vertical-align: text-top;
+    width: 19px;
+}
+.ie7 input[type="checkbox"] + label:before,.ie7 input[type="radio"] + label:before ,.ie8 input[type="checkbox"] + label:before,.ie8 input[type="radio"] + label:before{
+width: 0px;
+}
+
+.ie7 input[type="checkbox"], .ie7 input[type="radio"] ,.ie8 input[type="checkbox"], .ie8 input[type="radio"]{
+    display: block !important;
+	
+}
+input[type="checkbox"]:checked + label:before {
+    background: url("/static/myvmware/common/img/input_checks.png") no-repeat scroll 0 center transparent;
+}
+input[type="radio"]:checked + label:before {
+     background: url("/static/myvmware/common/img/input_checks.png") no-repeat scroll -76px center transparent;
+}
+input[type="radio"]:disabled + label:before {
+    background: url("/static/myvmware/common/img/input_checks.png") no-repeat scroll -152px center transparent;
+}
+.removeUserModal div.radio{margin-left:20px;}
+
+/**************select box changes***************/
+button.selectpicker .caret{
+border-left: 6px solid transparent;border-right: 6px solid transparent; border-top: 8px solid;
+}
+.bootstrap-select.btn-group .btn.selectpicker .caret{
+right:10px;
+margin-top:-3px;
+}
+.dropup button.selectpicker .caret, .navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 8px solid;
+}
+.starlight .btn-default.selectpicker {
+    color: #333;
+    font-family: "proxima-nova-regular", "Arial", sans-serif;
+}
+.starlight .btn-default.selectpicker  .filter-option{
+    margin-right:5px;
+}
+.bootstrap-select.form-control:not([class*="span"]) {
+    width: auto;
+}
+.accountFundInfo{
+font-size:14px;
+padding:2px 10px 0 0;
+}
+.changeAccount{
+/*float:right;*/
+padding-right:0px;
+padding-left: 0px;
+/*font-size:13px;*/
+/*text-align:right;*/
+margin-top:20px;
+}
+.starlight.liferay .margin-right-0{margin-right:0;}
+.starlight-cont .balanceCnt .expire_starts{ 
+  font-size: 14px;
+  width: 170%;
+}
+/*.SubscriptionHeading {
+    margin-bottom: 30px;
+}*/
+.redeemPadding {
+    padding-right: 0px;
+}
+.starlight-cont.marginbottom15px {
+    margin-bottom: 15px;
+}
+.discountInfo {
+  color: #999999;
+  font-size: 14px;
+}
+.discountText {
+  font-family: "proxima-nova-semibold","Arial",sans-serif;
+  color: #666;
+}
+.dashboard  .sidList ul, .dashboard  .detailDiv ul.list-unstyled{margin-bottom:5px;}
+.margin-bottom-3 {
+    margin-bottom: 3px;
+}
+
+.boder-left-1{
+  border-left : 1px solid #BABABA;
+}
+
+.boder-right-1{
+  border-right : 1px solid #BABABA;
+}
+
+.border-left-1-margin{
+  border-left : 1px solid #BABABA;
+  margin-left: -1px;
+}
+
+#dashboardAlertBoxContainer .alert-box{
+margin-top:10px;
+}
+
+.errorContainer .modal-title {
+  background: url("/static/myvmware/common/css/img/icon_warning_alerts_64x64.png") no-repeat scroll 0px 0px rgba(0, 0, 0, 0);
+  height: 60px;
+  text-indent: 80px;
+  color: #ff8600;
+  padding-top: 18px;
+  margin-top: 30px !important;
+  margin-left: 15px !important;
+}
+
+.balanceError{
+  background: url("/static/myvmware/common/css/img/ico_alert_red.png") 0px 0px no-repeat;
+  display: inline-block;
+  width: 23px;
+  height: 19px;
+}
+
+.errorContainer .modal-header{
+  padding-bottom: 0 !important;
+  border-bottom: 0 !important;
+  padding-top: 15px !important;
+}
+
+.errorContainer .modal-body {
+   padding: 10px 40px 30px 44px !important;
+}
+
+.fontPNovaSBold{
+font-family: "proxima-nova-semibold", "Arial", sans-serif;
+}
+
+.fRed2{
+  color: #de0000;
+}
+
+.padding-top-11 {
+padding-top: 11px;
+}
+
+.paraWrap p{
+  margin-top:20px;
+}
+
+.icons-alert-info {
+background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+  background-position: 0 -55px; width: 27px; height: 27px; 
+}
+.balanceValNegative {
+color: #e00000;
+}
+
+.padding-0{
+  padding:0 !important;
+}
+/***********dashboard changes**********/
+.fndBalance{
+line-height:16px;
+}
+.padding-left-0 {
+  padding-left: 0px;
+}
+.padding-right-0 {
+  padding-left: 0px;
+}
+.expireInfo{
+font-size:14px;
+}
+.calculationSidebar{
+  width: 330px;
+}
+.calculationSidebar.affix {
+    top: 40px;
+}
+.calculationSidebar.affix-bottom {
+    position: absolute;
+    top: auto;
+}
+@media (min-width: 992px) and (max-width: 1200px){
+  .calculationSidebar {
+    width: 280px;
+  }
+  .calculationSidebar.affix {
+      top: 40px;
+  }
+}
+/* Desktop
+------------------------- */
+@media (max-width: 980px) {
+  .calculationSidebar {
+    top: 0;
+    width: 218px;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+}
+
+/* Tablet to desktop
+------------------------- */
+@media (min-width: 768px) and (max-width: 979px) {
+  .calculationSidebar{
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .calculationSidebar.affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
+}
+/* Tablet
+------------------------- */
+@media (max-width: 767px) {
+  /* Sidenav */
+  .calculationSidebar {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .calculationSidebar.affix {
+    position: static;
+    width: auto;
+    top: 0;
+  }
+}
+
+/***********Vsppdashboard changes**********/
+.vsppDashboard .balanceDeatails {
+    background: #f1f6f8;
+    padding: 20px;
+}
+  .vsppDashboard .commitLevelCont {
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+.vsppDashboard  .vsppSubHeader{
+  color: #387c2c;
+}
+.vsppDashboard  .vsppSubHeader .caret {
+  color: #000;
+}
+.vsppDashboard  .vsppListOf li,.vsppDashboard .ssListOf li {
+    padding: 3px 0px 3px 10px;
+    cursor: pointer;
+}
+.vsppDashboard  .vsppListOf,.vsppDashboard .ssListOf{
+  padding: 0px;
+}
+.vsppDashboard .subscriptionServiceDt {
+  margin-top: 30px;
+}
+.vsppDashboard .balanceDeatails h5 {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.vsppDashboard .balanceDeatails .msrp{
+  font-size: 90%;
+}
+.vsppDashboard .btnCont{
+  padding-right: 0px;
+}
+.vsppDashboard .renameLnk {
+    font-size: 16px;
+}
+.vsppDashboard  .font-size-14 {
+  font-size: 14px;
+}
+.vsppDashboard .topMarginZero{
+  margin-top:0px;
+}
+.vsppDashboard table.dataTable.starlight.withPadding{
+  padding: 0px;
+}
+/*.vsspDetailscont h5,.vsspDetailscont h4,.vsppUserDetailscont h5,.vsppUserDetailscont h4 {
+  margin-bottom: 0px;
+}*/
+body.liferay.starlight .vsppDashboard input[type="checkbox"], body.liferay.starlight .vsppDashboard input[type="radio"] {
+    display: inline-block;
+    vertical-align: text-top;
+}
+.cartImg {
+    background: url('/static/myvmware/common/css/img/bg_cart.png');
+    width: 20px;
+    height: 17px;
+    display: inline-block;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    padding-right: 34px;
+}
+ .starlight .vsppDashboard .breadcrumb > li + li:before {
+    content: ">";
+}
+span.alertIcon01, span.alertIcon02, span.alertIcon03, span.alertIcon04, span.alertIcon05, span.alertIcon06, span.alertIcon07, span.alertIcon08, 
+span.alertIcon09, span.alertIcon11, span.alertIcon12, span.alertIcon13, span.alertIcon14, span.alertIcon15, span.alertIcon16, span.alertIcon17, 
+span.alertIcon18, span.alertIcon19, span.alertIcon21, span.alertIcon22, span.alertIcon23, span.alertIcon24, span.alertIcon25, span.alertIcon26, 
+span.alertIcon27, span.alertIcon28, span.alertIcon29, span.alertIcon31, span.alertIcon32, span.alertIcon33, span.alertIcon34, span.alertIcon35, 
+span.alertIcon36, span.alertIcon37, span.alertIcon38, span.alertIcon39, span.alertIcon4, span.alertIcon5, span.alertIcon7 { width:20px; height:19px; display:inline-block; }
+
+span.alertIcon01, span.alertIcon02, span.alertIcon03, span.alertIcon04, span.alertIcon05, span.alertIcon06, span.alertIcon07, span.alertIcon08, 
+span.alertIcon09, span.alertIcon11, span.alertIcon12, span.alertIcon13, span.alertIcon14, span.alertIcon15, span.alertIcon16, span.alertIcon17, 
+span.alertIcon18, span.alertIcon19 { background: url("img/Table_Starlight_Basic_Expired_icon.png") no-repeat scroll 0 0 transparent; }
+
+td.alertColor01, td.alertColor02, td.alertColor03, td.alertColor04, td.alertColor05, td.alertColor06, td.alertColor07, td.alertColor08, 
+td.alertColor09, td.alertColor11, td.alertColor12, td.alertColor13, td.alertColor14, td.alertColor15, td.alertColor16, td.alertColor17, 
+td.alertColor18, td.alertColor19, td.alertColor4 { color:#FF0000 !important; }
+
+td.alertColor31, td.alertColor32, td.alertColor33, td.alertColor34, td.alertColor35, td.alertColor36, td.alertColor37, td.alertColor38, 
+td.alertColor39 { color:#55b400 !important; }
+table.dataTable.starlight tbody td.alertColor7{color: #006990;}
+
+td.alertColor21, td.alertColor22, td.alertColor23, td.alertColor24, td.alertColor25, td.alertColor26, td.alertColor27, td.alertColor28, 
+td.alertColor29 { color:#FF9513 !important; }
+
+td.alertColor5{color: #666 !important;}
+
+span.alertIcon21, span.alertIcon22, span.alertIcon23, span.alertIcon24, span.alertIcon25, span.alertIcon26, span.alertIcon27, span.alertIcon28, 
+span.alertIcon29 { background: url("img/status_icon.png") no-repeat scroll 0 -17px transparent; }
+
+span.alertIcon31, span.alertIcon32, span.alertIcon33, span.alertIcon34, span.alertIcon35, span.alertIcon36, span.alertIcon37, span.alertIcon38, 
+span.alertIcon39 { background: url("img/Table_Starlight_Basic_Active_icon.png") no-repeat scroll 0 0 transparent; }
+
+span.alertIcon4 { background: url("img/status_icon.png") no-repeat scroll -16px -16px transparent; }
+
+span.alertIcon7 { background: url("img/Table_Starlight_Basic_under_Provisioning_icon.png") no-repeat scroll 0 0 transparent;}
+
+span.alertIcon5 { background: url("img/Table_Starlight_Basic_inactive_icon.png") no-repeat scroll 0 0 transparent;}
+
+span.alertIcon22 {background: url("img/status_icon.png") no-repeat scroll 4px -16px transparent;}
+.vsppDashboard .changeNameCont{
+  padding-left: 0px;
+  margin: 10px 0px 25px 0px;
+}
+.vsppDashboard .vsppIdentifier{
+  padding-right: 10px;
+}
+.vsppDashboard .iassetLink {
+  padding-right: 0px;
+}
+.vsppDashboard .vsppUserDetailscont ul li {
+  margin-bottom: 7px;
+}
+.font-size-40 {
+  font-size: 40px;
+}
+.line-height-30 {
+  line-height: 30px;
+}
+.starlight .margin-top-20{
+  margin-top: 20px;
+}
+.starlight .margin-bottom-17{
+  margin-bottom: 17px;
+}
+select.config-selectbox{
+  width:280px;
+}
+select.config-selectbox + div.btn-group.bootstrap-select.form-control.config-selectbox{
+  width:280px;
+}
+select.config-selectbox + div.btn-group.bootstrap-select.form-control.config-selectbox .dropdown-menu.open{
+  min-width: 310px;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  select.config-selectbox + div.btn-group.bootstrap-select.form-control.config-selectbox{
+    width:210px;
+  }
+
+  select.config-selectbox + div.btn-group.bootstrap-select.form-control.config-selectbox .dropdown-menu.open{
+    min-width: 240px;
+  }
+  select.config-selectbox{
+     width:210px;
+  }
+}
+ul.dropdown-menu.inner.selectpicker > li{
+  height: 30px;
+}
+
+.dropdown-menu > li > a{
+  padding: 3px 15px;
+}
+
+#calculationsBox .info {
+  background-image: url("/vmf/c/4.0/images/bg_alert_spite.png");
+  display: inline-block;
+  line-height: 14px;
+  height: 14px;
+  width: 14px;
+  margin-top: 3px;
+  margin-left: 5px;
+  background-position: 0 -428px;
+}
+.vsppDashboard span.alertTxtSpace {
+  margin-top: 3px;
+  margin-right: 3px;
+}
+/***************gaurav Changes starts*****************/
+#breadcrumb{
+margin-bottom:15px;
+}
+.rightSecHead h4{
+margin-top:0px;
+border-bottom:3px solid #74B229;
+ margin-bottom: 17px;
+padding-bottom: 8px;
+}
+
+.lightGrey{
+color:#333333;
+}
+
+.greyText {
+	color:#949494;
+}
+
+.completeMessage{
+  color: #387c2c !important;
+  font-size:28px !important;
+  font-family: "proxima-nova-regular","Arial",sans-serif !important;
+}
+.vsspDetailscont h5,.vsppUserDetailscont h5 {
+  text-align: right;
+}
+/*******gaurav canges ends************/
+/*****************scss to be added*****************/
+.addressInfo {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: -5px;
+    margin-left: 0;
+    padding-bottom: 9px;
+}
+.partnerListContainer{
+max-height: 280px;
+overflow: auto;
+
+}
+.payType {
+
+  display: block;
+    font-size: 12px;
+}
+.referenceIdCash{
+display: block;
+}
+
+.disabledAnchor{
+cursor: auto;
+}
+.dispPartnerNewService{
+   margin-top: -9px;
+    padding-left: 40px;
+} 
+.dispPartner{
+   margin-top: -4px;
+    padding-left: 75px;
+}
+.partnerInView{
+  display:block;
+}
+
+.noFundUsers{
+  margin-left: 0;
+    margin-top: -5px;
+  }
+  .expiration_msg .icons-icn_danger {
+    background-position: 0 -463px;
+}
+/*****************scss to be added ends*****************/
+.starlight .margin-bottom-14{
+  margin-bottom: 14px;
+}
+
+.dashboard .padding-bottom-15  {
+  padding-bottom: 15px;
+}
+.standard-info-icon {
+  background-image: url("/vmf/c/4.0/images/bg_alert_spite.png");
+  display: inline-block;
+  line-height: 14px;
+  height: 14px;
+  width: 14px;
+  margin-top: 3px;
+  margin-left: 5px;
+  background-position: 0 -428px;
+}
+.opaque{
+  opacity:0.7;
+}
+.wider .modal-dialog{
+width:780px;
+
+}
+.wider .modal-dialog .bootstrap-select{
+width:100%!important;
+
+}
+.partnerFilterSection{
+  background: none repeat scroll 0% 0% #F1F5F8; 
+  padding-top: 15px; 
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.filteredContent{
+  margin-top:0px;
+  margin-right: 0px;
+}
+
+
+/* Changes done on Dashboard due to CR-00116246. SCSS also changed */
+
+.users .detailDiv{
+  margin-bottom: 23px;
+}
+
+.sid_list h5.SubscriptionHeading{
+  margin-bottom: 29px;
+}
+.fund_users_list li{
+  margin-bottom: 5px;
+}
+
+.expiration_msg{
+  display: block;
+}
+
+.expiration_msg .icons-icn_danger{
+  vertical-align: middle !important;
+}
+
+.expiration_msg .icons-icn_warning{
+  vertical-align: middle !important;
+}
+.expiration_msg .expiration_text_danger{
+  font-size: 14px;
+  margin-left: 5px;
+}
+.expiration_msg .expiration_text_warning{
+  font-size: 14px;
+  margin-left: 5px;
+}
+.expiration_msg .expiration_text_danger{
+  color: #E00000;
+}
+.expiration_msg .expiration_text_warning{
+  color: #FDB813;
+}
+/*Custom style for Redemption Tag start*/
+.vmComboBox .vmComboBoxInput.dynamicSearchBox{
+   width: 379px;
+}
+.dynamicCBDropDownForPraxisFlow{
+  max-height: 130px !important; 
+  width: 415px !important;
+}
+.dynamicCBDropDown{
+  max-height: 80px !important; 
+  width: 415px !important; 
+}
+.inputboxForRedemptionTag{
+  width: 434px !important;
+}
+/*Custom style for Redemption Tag end*/
+.activeFundsLink{
+  text-align: right;
+   padding-top: 23px;
+}
+/*style for empty cloud */
+.cloudImg {
+  background: url("/static/myvmware/common/css/img/emptycloud.png") no-repeat;
+  width : 424px;
+  height: 254px;
+  margin: auto;
+  margin-top: 10%;
+}
+.cloudImgCont {
+  width: 427px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+.VSPPseparator {
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 20px;
+}
+
+.VSPPseparatorlast {border-bottom : 0;}
+.emptyResp {
+  height: 600px;
+  border: 1px solid #e6e6e6;
+  border-top: 0;
+  margin-top: -1px;
+}
+.tAndC{
+display: inline-block;
+top:-22px;
+position: relative;
+left:30px;
+}
+
+.infoIcon .info {
+    background-image: url("/vmf/c/4.0/images/bg_alert_spite.png");
+    background-position: 0 -428px;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    margin-left: 5px;
+    margin-top: 3px;
+    width: 14px;
+}
+
+.box-right-praxis{
+padding-bottom: 10px;
+border-bottom: 3px solid #a8cf78;
+
+}
+.payUseborder{
+padding-bottom: 10px;
+border-bottom: 3px solid #8ECBE0;
+
+}
+.supportborder{
+padding-bottom: 10px;
+border-bottom: 3px solid #146992;
+  
+}
+.praxisCompleteHeading{
+  padding-top: 7px;
+  padding-left: 7px;
+}
+
+/*Modal window Styles*/
+.confirm_window .modal-content .modal-header{
+  border-bottom:none;
+}
+.confirm_window .modal-content .modal-header.modal-header-style{
+  padding-top:15px;
+  padding-top:20px;
+}
+.confirm_window .alertImg{
+  width: 60px;
+  height: 50px;
+}
+.confirm_window .modal-content{
+  width:75%;
+  margin: auto
+}
+.modal-content .labelstyle{
+  padding-left: 43px;
+}
+.modal-content .confirm_modal_bodystyle{
+  padding-left: 0px;
+  font-size: 18px;
+  font-family: "proxima-nova-semibold", "Arial", sans-serif;
+}
+.margin_right_-15{
+  margin-right: -15px;
+} 
+
+.modal-content .modal_header_style{
+  font-size: 18px;
+  font-family: "proxima-nova-semibold", "Arial", sans-serif;
+}
+/*Modal window Styles*/
+
+/* Help icon related styling */
+.help_funds{
+  padding-top: 20px;
+}
+.funds_link{
+  padding-right: 6px;
+}
+.help_link{
+  padding-left: 10px;
+  border-left: 1px solid #CECECE;
+}
+.help_icon{
+  background: url("/static/myvmware/common/css/img/Icon_Starlight_Help_16X16.png") no-repeat center center;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: sub;
+}
+.help_text{
+  padding-left: 2px;
+  font-size: 14px;
+}
+.config_help{
+  padding: 20px 0 0;
+}
+.trueBadge-header{
+  vertical-align: middle;
+}
+.accountFundInfo{
+  padding-right: 0;
+}
+.accountFundInfo .account_fund{
+  padding: 0;
+}
+.accountFundInfo .account_fund .account_title{
+  margin-right: 6px;
+}
+.help_link.border-left-0{
+  border-left:0px;
+}
+.margin-top-negative2{
+  margin-top: -2px
+}
+
+#removeUserModal .help_link {
+	padding-left:0 !important;
+}
+
+/******************offering partner selection***********/
+.partnerModalBody{
+
+  padding-bottom: 20px!important;
+}
+.partnerModalhead{
+  height:65px!important;
+}
+.radio.partList {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+/******************offering partner selection ends***********/
+.margin-right-0{
+  margin-right: 0px !important;
+}
+.margin-left-0{
+  margin-left: 0px !important;
+}
+.padding-right-20{
+  padding-right: 20px !important;
+}
+.padding-left-25{
+  padding-left: 25px !important;
+}
+.vmwareprofile-link{
+  color: #666;
+  font-family: "proxima-nova-regular","Arial";
+  word-wrap: break-word;
+}
+.starlight .alert-box .alert .alert-text.normal-text{
+  font-family: "proxima-nova-regular","Arial";
+}
+.margin-left-15{
+  margin-left: 15px !important;
+}
+.margin-bottom-35{
+  margin-bottom: 35px !important;
+}
+.starlight .partnerFilterSection .btn-default.selectpicker .filter-option{
+  float: none !important;
+  margin-bottom: -6px;
+}
+.font-proxima-normal{
+  font-family: "proxima-nova-regular";
+  font-weight: normal;
+}
+/***********/
+.partner-list-search{
+  font-size: 14px;
+  color: #999;
+}
+.padding-right-10{
+  padding-right: 10px !important;
+}
+.offering-drop span.filter-option{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/*new style added*/
+
+.starlight .modal.confirm-modal .modal-dialog {
+  width: 400px;
+}
+.starlight .modal.confirm-modal .modal-dialog .modal-header {
+  border-bottom: 0 none;
+  padding: 15px 16px 20px 40px;
+}
+.starlight .modal.confirm-modal .modal-dialog .modal-header.header_seperator{
+  border-bottom: 1px solid #e5e5e5;
+}
+.starlight .modal.confirm-modal .modal-dialog .modal-header span.close{
+   margin-right: 0 !important;
+}
+
+.starlight .modal.confirm-modal .modal-dialog .modal-body .confirm-icon {
+  width: 59px;
+  height: 52px;
+  float: left;
+  background: url("/static/myvmware/common/img/alert_large.png");
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background-size: 100%;
+}
+.starlight .modal.confirm-modal .modal-dialog .modal-body .alert-icon {
+  width: 59px;
+  height: 59px;
+  float: left;
+  background: url("/static/myvmware/common/img/error_large.png");
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background-size: 100%;
+}
+.starlight .modal.confirm-modal .modal-dialog .modal-body .info-icon {
+  width: 59px;
+  height: 59px;
+  float: left;
+  background: url("/static/myvmware/common/img/info_large.png");
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background-size: 100%;
+}
+.starlight .modal.confirm-modal .modal-dialog .modal-body .confirm-msg p {
+  font-family: "proxima-nova-semibold", "Arial", sans-serif;
+}
+.starlight .modal.confirm-modal .modal-dialog .modal-footer {
+  background-color: #E6E6E6;
+  border-radius: 0 0 6px 6px;
+  padding: 25px 40px;
+}
+
+.starlight .modal.confirm-modal .modal-dialog .modal-footer .btn.btn-default.margin-left-20 {
+    margin-right: 0;
+   margin-left:16px !important;
+}
+body.liferay.starlight .addontable-head small {
+	white-space: normal !important;
+}
+/* styles by saritha*/
+@media (min-width: 400px) and (max-width: 979px) {
+  
+  .trueBadge{margin:6px;}
+  .balanceCnt .col-md-6{width:50%;  float: left;}
+  .sidList  .list-inline.row > li {
+    float: left;
+                }
+
+}
+@media (min-width: 320px) and (max-width: 400px){
+  .renameFundName {width: 100%;}
+  .renameDiv .btn, .changeNameCont .btn {margin-top: 27px;}
+  .sbtn {margin-left: 15px;}/* added class specific to the resolution .changeNameCont > .btn:first-child*/
+   
+}
+@media only screen and (max-width: 400px) {
+  .trueBadge{margin:6px;}
+  .balanceCnt .col-md-6{width:50%;  float: left;}
+.sidList  .list-inline > li{display:block;}
+.sidList .list-inline{margin-bottom:10px !important}
+                h3.headFnd{ word-wrap:break-word;}
+}

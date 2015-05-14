@@ -1,0 +1,58 @@
+{
+    "new": {
+        "MGMT-BUSINESS-UNIT": {
+            "description": "vRealize Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+        "DAAS-SERVICE": {
+            "description": "VMware Horizon Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+        "VC-HYBRID-SERVICE-PRAXIS": {
+            "description": "VMware vCloud Air OnDemand",
+            "resourceId": "praxisSignUpNewService"
+        },
+        "VC-HYBRID-SERVICE": {
+            "description": "VMware vCloud Air",
+            "resourceId": "serviceConfigurationUrl"
+        }
+    },
+    "add-on": {
+        "MGMT-BUSINESS-UNIT": {
+            "description": "vRealize Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+        "DAAS-SERVICE": {
+            "description": "VMware Horizon Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+        "VC-HYBRID-SERVICE": {
+            "description": "VMware vCloud Air",
+            "resourceId": "serviceConfigurationUrl"
+        }
+    },
+    "renewal": {
+        "MGMT-BUSINESS-UNIT": {
+            "description": "vRealize Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+        "DAAS-SERVICE": {
+            "description": "VMware Horizon Air",
+            "resourceId": "serviceConfigurationUrl"
+        },
+        "VC-HYBRID-SERVICE": {
+            "description": "VMware vCloud Air",
+            "resourceId": "serviceConfigurationUrl"
+        }
+    },
+    "header": {
+        "eaAccountName": "OS33, Inc.",
+        "eaAccountNumber": "643001856",
+        "commitName": "AIR_11990072",
+        "commitID": "75",
+        "balance": "200000.0",
+        "redemptionCurrency": "USD",
+        "redemptionCurrencySymbol": "$"
+    }
+
+}

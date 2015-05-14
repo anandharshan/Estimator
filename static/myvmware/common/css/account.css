@@ -1,0 +1,72 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  account.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 05/26/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. ACTIVITIES LOG
+/* ########################################################################### */
+
+
+/* ########################################################################### *
+/* ##### ACTIVITIES LOG
+/* ########################################################################### */
+
+#content-container .activitiesLog table .more-details {
+	border: none;
+}
+
+#content-container .activitiesLog table table {
+	width: 90%;
+}
+
+#content-container .activitiesLog table table td {
+	border: none;
+}
+
+table span.time {
+	color: #8b8b8b;
+}
+
+/*.subDetails {
+	border-bottom: 1px solid #ccc;
+}*/
+
+.subRow {
+	margin-bottom: 5px;
+}
+
+.tileColumn {
+	width: 275px;	
+	text-align: right;
+}
+
+#content .activitiesLog  td.tileColumn {
+	width: 275px;	
+	text-align: right;
+}
+
+#content .activitiesLog table td table.child-table.wide {
+	width: 95%;
+}
+
+#content .activitiesLog table td table.child-table td {
+	border-bottom: none;
+}
+
+.filter-section .ctrlHolder .note {
+	width: 235px;
+	color: #BBB;
+}
+
+.filter-content-wrapper .ctrlHolder label.errorHolder {
+	width: 235px;
+}
+
+.filter-section .errorMsg {
+	color: #FA6666;
+	padding-left: 10px;
+}

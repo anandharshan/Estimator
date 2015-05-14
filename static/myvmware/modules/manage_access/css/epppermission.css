@@ -1,0 +1,8 @@
+#fundList .folderlist.level2 span.folderNode{padding-left:51px}
+.tabContent ul li.o label{background: url("img/user_o.png") no-repeat scroll right 3px transparent;padding-right: 15px;width: auto;}
+.details .user{margin-bottom:15px}
+.details .title{font-size:11px}
+.details .owner .title{background: url("img/user_o.png") no-repeat scroll 0 0 transparent;padding-left: 17px;}
+.tabbed_area .eppPerPane .details{padding:8px 7px 13px 15px}
+#userPermissionPane table tr.perText td .userP{padding-bottom:10px}
+.badge.primary{background: #30afd4;background-image: -webkit-gradient(linear,left bottom,left top,color-stop(1, rgb(48,175,212)),color-stop(0, rgb(90,193,222)));background-image: -moz-linear-gradient(center bottom,rgb(48,175,212) 100%,rgb(90,193,222) 0%);font-size: 11px;font-weight: bold;padding: 0px 3px;position: relative;top: 0px;}

@@ -1,0 +1,56 @@
+/* Ads */
+
+.activitiesFooter .ads-wrapper {
+	font-weight: normal;
+	color: #FFF;
+	margin-right: 20px;
+	font-size: 12px;
+	float: right;
+
+}
+
+	.ads-wrapper .adHeader {
+		font-size: 18px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	
+	#content-section section .ads-wrapper p {
+		margin-bottom: 20px;
+		margin-top: 5px;
+		
+	}
+	
+	.ads-wrapper .ad {
+		float: left;
+		margin-left: 15px;
+	}
+	
+	.ads-wrapper .adOne {
+		background: url(img/promobox_grey.jpg) no-repeat;
+		padding: 5px 10px 5px 15px;
+		width: 275px;
+		height: 116px;
+		margin-top: 20px;
+		text-align: left;
+				
+	}
+	
+	.ads-wrapper .adTwo {
+		background: url(img/promobox_pattern.jpg) no-repeat;
+		padding: 5px 10px 5px 15px;
+		width: 275px;
+		height: 116px;
+		margin-top: 20px;
+		text-align: left;
+	}
+	
+	.ads-wrapper .adFooter {
+		font-weight: bold;
+		color: #FFF;
+		margin-right: 5px;
+		font-size: 14px;
+	}
+	.height81{
+	 height: 81% ! important;
+	}

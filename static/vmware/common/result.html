@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<!--
+/*
+ * jQuery Iframe Transport Plugin Redirect Page 2.0.1
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Iframe Transport Plugin Redirect Page</title>
+</head>
+<body>
+<script>
+
+var qs = decodeURIComponent(window.location.search.slice(1)).split("&"),resp={},param;
+for(param=0; param<qs.length; param++){
+	var temp = qs[param].split("=");
+	resp[temp[0]] = temp[1];
+}
+
+var response = '<?xml version="1.0" encoding="UTF-8"?><PostResponse><Location></Location><Bucket>'+(resp['bucket'] || '')+'</Bucket><Key>'+(resp['key']||'')+'</Key><ETag>'+(resp['etag']||'')+'</ETag></PostResponse>';
+
+document.body.innerText=document.body.textContent=response;
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<article>
+    <div class="bottomBorder" style="margin: 0px;" ng-if="showFundInfoSection">
+        <div class="row margin-bottom-14 margin-right-0">
+            <div class="col-md-7">
+                <h1 class="component-heading font-size-40 margin-bottom-0">{{pageHeader}}</h1>
+            </div>
+            <!--div class="col-md-6 margin-top-15 accountFundInfo" ng-if="globalVars.serviceCategory == 'VSPP'">
+                <div class="row margin-right-0">
+                    <div class="ellipsisText text-right col-md-12" title="{{serviceIdentifier}}">
+                        <strong>{{serviceIdentifier}}</strong>                    
+                    </div>
+                </div>
+            </div-->
+            <div class="col-md-4 accountFundInfo" ng-if="showProgressBar">
+    			<div class="row margin-right-0" ng-if="globalVars.serviceCategory == 'VSPP'">
+                    <div class="ellipsisText text-left col-md-7" title="{{eaAccountDisplay}}">
+                        <strong>{{globalVars.accountName}}&nbsp;:</strong><br><span>{{eaAccountDisplay}}</span>                    
+                    </div>
+                    <div class="ellipsisText text-right col-md-5" title="{{identifierName}}">
+                        <br>{{identifierName}}
+                    </div>
+                </div>
+    			
+                <div class="row margin-right-0" ng-if="isXaasFund && globalVars.serviceCategory != 'VSPP'">
+                    <div class="account_fund {{changeFund && 'col-md-9' || 'col-md-12'}}">
+                        <div class="ellipsisText" title="{{eaAccountDisplay}}">
+                            <strong class="account_title">{{globalVars.account}}</strong>
+                            <span>{{eaAccountDisplay}}</span>                   
+                        </div>
+                        <div class="ellipsisText text-left" ng-if="isXaasFund"  title="{{getFund}} {{getBalance | customCurrency:currency:currencyLocale}}">
+                            <strong>{{globalVars.fund_text}}</strong>&nbsp;<span class="trueBadge-header" ng-if="trueUp == '1'" >{{globalVars["trueUp"]}}</span>
+                            {{getFund}}&nbsp;
+                            <span class=" {{(getBalance < 0 && 'balanceValNegative')}}">{{getBalance | customCurrency:currency:currencyLocale}} </span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 changeAccount text-left" ng-if="changeFund">
+                        <a class="btn-link"  href="javascript:void(0);" ng-click="openChangeFund()">{{globalVars.changeFund}}</a>
+                    </div>
+                </div>
+    			
+    			<div class="row margin-right-0" ng-if="!isXaasFund && globalVars.serviceCategory != 'VSPP'">
+                    <div class="col-md-12 ellipsisText text-right margin-top-20" title="{{eaAccountDisplay}}">
+                        <strong>{{globalVars.account}} :</strong> <span>{{eaAccountDisplay}}</span>                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 text-right config_help">
+                <a class="help_link" href="{{helpURL}}" target = "_blank">
+                    <span class="help_icon"></span>
+                    <span class="help_text">{{globalVars.help}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bottomBorder" style="margin: 0px;" ng-if="!showFundInfoSection && !successPage">
+        <div class="row margin-bottom-10 margin-right-0">
+            <div class="col-md-11">
+                <h1 class="component-heading font-size-38">{{pageHeader}}</h1>
+            </div>
+            <div class="col-md-1 text-right config_help">
+                <a class="help_link" href="{{globalVars.newOnDemandServicePraxis}}" target = "_blank">
+                    <span class="help_icon"></span>
+                    <span class="help_text">{{globalVars.help}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</article>

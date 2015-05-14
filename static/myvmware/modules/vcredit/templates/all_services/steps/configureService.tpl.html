@@ -1,0 +1,464 @@
+<article ng-if="showLoader && !showPage">
+    <div class="row margin-top-20 margin-bottom-20">
+        <div class="col-md-12 text-center">
+            <div class="ajaxSpinner">&nbsp;</div>   
+        </div>
+    </div>
+</article>
+<article id="configureServiceContainer" ng-if="showPage && !localObj.isPraxisFlow">
+    <div class="container-fluid starlight-container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-horizontal form-entry-container">
+                    <div class="row">
+                        <div class="form-required col-sm-offset-5 col-md-7 margin-top-20">{{globalVars.requiredFields}}<br>
+                            <!--div ng-if="serviceTypeError == true">{{config.serviceType_error}}</div-->
+                            <!--div ng-if="serviceTermError == true">{{config.term_error}}</div-->
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-group margin-top-20">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.service}}</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="form-control-static">{{serviceData.serviceName}}</div>
+                            </div>
+                        </div>                                            
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.region}}</label>
+                            </div>
+                            
+                            <div class="col-sm-7 form-control-static">
+                                <div class="radio" data-ng-repeat="(getRegionKey,getRegions) in serviceData.region[0]">
+                                    <input type="radio" id="chkServiceData{{$index}}" name="rRegion" ng-model="serviceData.region[serviceData.region.length-1]" ng-value="getRegionKey" ng-change="changeRegion(getRegionKey);"><label for="chkServiceData{{$index}}">{{getRegions}}</label>
+                                </div>
+                            </div>
+                        </div>                                          
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.serviceType}}</label>
+                            </div>
+                            <div class="col-sm-7 form-control-static">                                                    
+                                <div class="radio" data-ng-repeat="getServiceType in serviceData.serviceType[serviceData.region[serviceData.region.length-1]]">
+                                        
+                                            <input type="radio" id="chkServiceName{{$index}}" name="rSType"  ng-checked="{{ getServiceType.defaultFlag == 'Y' }}" ng-click="changeService(getServiceType);">
+											<label for="chkServiceName{{$index}}">
+												{{getServiceType.serviceName}}
+											</label>                                                       
+                                </div> 
+                                <div ng-if="serviceTypeCount == 0" class="form-required">{{globalVars.selectRegion}}</div>
+                            </div>
+                        </div>
+                        <div class="form-group" ng-if="serviceData.isStorageEnabled == 'Y'">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.storage}}</label>
+                            </div>
+                            <div class="col-sm-7 form-control-static" ng-if="storageCount !== 0">
+                                <div data-ng-repeat="getServiceType in serviceData.serviceType[serviceData.region[serviceData.region.length-1]]" ng-if="getServiceType.defaultFlag == 'Y'">
+                                   <div data-ng-repeat="stData in getServiceType.storage">
+                                        <div class="radio" data-ng-repeat="(stDataKey,stDataVal) in stData">
+                                            <input type="radio" id="chkStorageType{{$parent.$index}}" required="" name="rStorageType" ng-model="serviceData.storageType[serviceData.storageType.length-1]" ng-value="stDataKey" ng-change="changeStorage(stDataKey)"><label for="chkStorageType{{$parent.$index}}">{{stDataVal.storageName}}</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 form-control-static" ng-if="storageCount == 0">
+                                <div class="radio" data-ng-repeat="(stDataKey, stDataVal) in serviceData.storageType[0]">
+                                    <input type="radio" id="chkStorageCount{{$index}}" required="" name="rStorageType1" ng-model="serviceData.storageType[serviceData.storageType.length-1]" ng-value="stDataKey"><label for="chkStorageCount{{$index}}">{{stDataVal}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" ng-if="serviceTermError !== true">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.term}}</label>
+                            </div>
+                            <div class="col-sm-7 form-control-static">
+                                <div data-ng-repeat="getServiceType in serviceData.serviceType[serviceData.region[serviceData.region.length-1]]" ng-if="getServiceType.defaultFlag == 'Y'">
+                                    <div data-ng-repeat="storage in getServiceType.storage">
+                                        <div class="radio" data-ng-repeat="getTerm in storage[serviceData.storageType[serviceData.storageType.length-1]].terms">
+                                                    <input type="radio" id="chkTerm{{$index}}" required="" name="rLength" ng-checked="{{ getTerm[3] == 'Y' }}" ng-click="changeTermLength(getTerm[1])"><label for="chkTerm{{$index}}">{{getTerm[0]}}
+                                            </label>
+                                        </div>
+                                    </div> 
+                                </div>                                           
+                            </div>
+                        </div>                                            
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.paymentType}}</label>
+                            </div>
+                            <div class="col-sm-7 form-control-static" ng-if="paymentTypeCount !== 0">
+                                 <div data-ng-repeat="getServiceType in serviceData.serviceType[serviceData.region[serviceData.region.length-1]]" ng-if="getServiceType.defaultFlag == 'Y'">
+                                    <div data-ng-repeat="storage in getServiceType.storage">
+                                        <div data-ng-repeat="getTerm in storage[serviceData.storageType[serviceData.storageType.length-1]].terms" ng-if="getTerm[3] == 'Y'">
+                                            <div class="radio" data-ng-repeat="paymentType in getTerm[2]" >
+                                                
+                                                    <input type="radio" id="ckPaymentType{{$index}}" required="" name="rType" ng-model="serviceData.paymentType[serviceData.paymentType.length-1]" ng-value="paymentType" ng-change="setCrosssku()"><label for="ckPaymentType{{$index}}">{{paymentType}}
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>                                                    
+                            </div>
+                            <div class="col-sm-7 form-control-static" ng-if="paymentTypeCount < 1">
+                                <div class="radio" data-ng-repeat="payType in serviceData.paymentType[0]">
+                                    <input type="radio" id="chkPayType{{$index}}" required="" name="payType1" ng-model="serviceData.paymentType[serviceData.paymentType.length-1]" ng-value="payType[0]"><label for="chkPayType{{$index}}">{{payType[0]}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" ng-if="globalVars.serviceCategory != 'VSPP'">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.partner}}</label>
+                                <span class="infoIcon"><a href="javascript:void(0);" class="info ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe={{globalVars.offeringPartnerInfo}}>&nbsp;</a></span>
+                            </div>
+                            <div class="col-sm-7 form-control-static">
+                               <!-- <select name="partner" ng-model="serviceData.partner[1]" ng-options="obj.id as obj.name for obj in serviceData.partner[0]" ng-change="setCrosssku()" selectpicker="{container:'body'}"></select>-->
+								<div class="radio" ng-if="partnerData.id=='VMware'" data-ng-repeat="partnerData in serviceData.partner[0]">
+                                    <input ng-if="partnerData.id=='VMware'" type="radio" id="partner{{$index}}" required="" name="partner" ng-click="vmwareSelected(partnerData.id)" ng-model="localObj.selectedId" value="{{partnerData.id}}"><label ng-if="partnerData.id=='VMware'" for="partner{{$index}}">{{partnerData.name}}</label>
+                               </div>
+                               <div class="radio">
+                                    <input type="radio" id="partner" required="" value="partner" ng-model="localObj.selectedId" ng-click="showPartnersList()" name="partner"><label for="partner">{{globalVars.offeringPartner2}}</label>
+                               </div>
+                            </div>
+                            <!-- <div class="col-sm-7 form-control-static" ng-if="serviceData.partner[0].length == 1">
+                               {{serviceData.partner[0][0]['name']}}
+                            </div> -->
+                            <div class="dispPartnerNewService col-sm-offset-5 col-sm-7 {{(partnerSelected == false) && 'opaque' || ''}}" ng-repeat="data in displaySelectedPartner">
+                                <span class="partnerInView">{{data.name}}</span><span class="partnerInView">{{data.address}}</span>
+                                <span class="changeButton"><a href="javascript:void(0);" ng-click="changePartnersList()" ng-if="partnerSelected">{{globalVars.change}}</a></span>
+                                <span class="changeButton"><a href="javascript:void(0);"  ng-if="!partnerSelected" ng-disabled="!partnerSelected" class="disabledAnchor">{{globalVars.change}}</a></span>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.currency}}</label>
+                            </div>
+                            <div class="col-sm-7 form-control-static" ng-repeat="(currKey,CurrVal) in serviceData.currency[0]" ng-if="currKey == serviceData.currency[1]">
+                                {{CurrVal[0]}} ({{CurrVal[1]}})
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 margin-top-30">
+                <div class="calculationSidebar box-bgBlue" data-spy="affix" data-offset-top="360" data-offset-bottom="550">
+                    <div class="row">
+                        <div class="col-md-12 margin-bottom-5">
+                            <h4 class="calculationBoxHeader18">{{globalVars.serviceCost}} ({{serviceData.priceList[0]}})</h4>
+                            <span class="intro-text" ng-if="currSku.data && !skuError">{{currSku.data[1]  | customCurrency:serviceData.currency[0][serviceData.currency[serviceData.currency.length-1]][1]:serviceData.fundInfo.redemptionCurrency}} 
+                            <span ng-if="serviceData.paymentType[serviceData.paymentType.length-1] == 'Monthly'">{{globalVars.payment_type2}}</span> 
+                            <span ng-if="serviceData.paymentType[serviceData.paymentType.length-1] == 'Annually'">{{globalVars.payment_type3}}</span>
+                            </span>
+                        </div>
+                        <div class="col-md-12 margin-bottom-10" class="form-required" ng-if="!allSelected">
+                            {{globalVars.selectBelow}}                                                
+                        </div>
+                        <div ng-if="skuError && allSelected" class="form-required">{{globalVars.invalCombination}}                              
+                        </div>
+                    </div>
+                    <div class="row" ng-if="currSku.data && !skuError">
+                        <div class="col-md-12 text-left">
+                            <span>{{globalVars.term}}: {{serviceData.currentSelectedTerm}}</span>
+                        </div>
+                    </div>
+				</div>
+            </div>
+        </div>
+		<div class="row">
+		<div class="bottomBorder margin-top-0"></div>
+		</div>
+		<div class="row">
+			<div class="col-sm-7 admin">
+				
+				<h2>{{globalVars.administratorService}}</h2>
+				<p>{{globalVars.administratorServiceText}}</p>
+				 
+				<div class="radio">
+							
+								<input type="radio" name="rFType" id ="adminYes" data-ng-model="serviceData.isAdmin" value="Yes"  ng-click='hideRadioAdmin()'>
+							<label for ="adminYes">	
+								{{globalVars.primaryAdministrator}}
+							</label>                                                       
+				</div>
+				<div class="radio">
+					
+						<input type="radio" name="rFType" id ="adminNo" data-ng-model="serviceData.isAdmin" value="No" ng-click='radioAdmin()'>
+					<label for="adminNo">	
+						{{globalVars.nonPrimaryadministrator}}
+					</label>                                                       
+				</div>
+			</div>	
+			
+			
+			<div class="adminLogin col-sm-7" style="display : {{serviceData.isAdmin == 'No'? 'block' : 'none'}}">
+				<h3>{{globalVars.administratorDetails}}</h3>
+				<div class="adminform">
+				<form class="form-horizontal" role="form" id="adminForm" data-validate="parsley">
+					<div class="row addSection">
+						<div class="col-sm-offset-2 col-sm-3">
+							<label for="firstName" class="control-label-left">{{globalVars.administratorFirstName}}</label>
+						</div>
+						<div class="col-sm-7 formFields">
+							<input class="form-control" id="firstName" placeholder="{{globalVars.administratorFirstName}}" name="firstname" data-ng-model="serviceData.leuFirstName"  ng-keyup="userEmpty()" data-required="true" data-trigger="change" data-parsley-required-message="{{globalVars.fnameRequired}}" data-parsley-required data-parsley-trigger="blur">
+						</div>
+					</div>
+					<div class="row addSection">
+						<div class="col-sm-offset-2 col-sm-3">
+							<label for="lastName" class="control-label-left">{{globalVars.administratorLastName}}</label>
+						</div>
+						<div class="col-sm-7 formFields">
+							<input class="form-control" id="lastName" placeholder="{{globalVars.administratorLastName}}" data-ng-model="serviceData.leulastName"  ng-keyup="userEmpty()" data-required="true" data-trigger="change" data-parsley-required-message="{{globalVars.lnameRequired}}" data-parsley-required data-parsley-trigger="blur">
+						</div>
+					</div>
+					<div class="row addSection">
+						<div class="col-sm-offset-2 col-sm-3">
+							<label for="inputEmail" class="control-label-left">{{globalVars.administratorEmailAddress}}</label>
+						</div>
+						<div class="col-sm-7 formFields">
+							<input type="email" class="form-control" id="inputEmail" placeholder="{{globalVars.emailDomain}}" data-ng-model="serviceData.leuEmail"   ng-keyup="userEmpty()" data-required="true" data-trigger="change" data-parsley-type="email" data-parsley-required-message="{{globalVars.emailRequired}}" data-parsley-required data-parsley-type-message="{{globalVars.invalidEmail}}" data-parsley-trigger="blur">
+						</div>
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+        <div class="row newServiceBtnWrap">
+            <div class="col-md-6 text-left"></div>
+            <div class="col-md-6 text-right">
+                <span ng-if="ajaxLoader">
+                    <div class="ajaxSpinner">&nbsp;</div> 
+                </span>
+              <a href="javascript:void(0);" class="btn btn-primary" ng-click="goToAddOns()" ng-disabled="trueUpError || skuError || !currSku.data[0] || ajaxLoader || adminFields || partsel">{{globalVars.continueBtn}}
+              </a>
+
+                <a class="btn btn-default margin-left-20" ng-click="cancelFlow(cancelFn)">{{globalVars.cancelBtn}}</a>
+            </div>
+        </div>
+    </div>                        
+</article>
+
+<!--  Praxis flow starts here -->
+
+<article ng-if="localObj.isPraxisFlow && showPage">
+     <div class="container-fluid starlight-container-fluid">
+   <div class="row margin-top-20">
+       <div class="col-md-8">
+           <div class="row">
+               <div class="col-md-12">
+                    {{globalVars.praxisHeaderDescription}}
+               </div>
+           </div>
+           <div class="row praxisFundInfoWrap margin-top-20">
+                  <div class="col-md-12">
+                      <div class="fundInfo">
+                          <span class="fundLabel"><b>{{globalVars.accountName}}</b></span> <span>{{serviceData.eaAccount}}</span>
+                      </div>
+                      <div class="fundInfo">
+                          <span class="fundLabel"><b>{{globalVars.accountNumber}}</b></span> <span>{{serviceData.eaAccountNumber}}</span>
+                      </div>
+                      <div class="fundInfo">
+                          <span class="fundLabel"><b>{{(globalVars.serviceCategory != 'VSPP') && globalVars.fund_text || globalVars.vsppName}}</b></span> <span>{{serviceData.fundInfo.name}}</span>
+                      </div>
+                      <div class="fundInfo">
+                          <span class="fundLabel"><b>{{(globalVars.serviceCategory != 'VSPP') && globalVars.balance_text || globalVars.commitmentLevel}}</b></span> <span> {{serviceData.fundInfo.fundBalance | customCurrency:serviceData.fundInfo.fundCurrencySymbol:serviceData.fundInfo.redemptionCurrency}} {{(globalVars.serviceCategory != 'VSPP') && "" || globalVars.payment_type2}}</span>
+                      </div>
+                      <div class="fundInfo">
+                          <span class="fundLabel"><b>{{globalVars.fundExpiration}}</b></span> <span>{{(globalVars.serviceCategory != 'VSPP') && serviceData.fundInfo.fundExpiration || serviceData.commitInfo.expirationDate}}</span>
+                      </div>
+                      <div class="margin-top-10" ng-if="globalVars.serviceCategory != 'VSPP'">
+                             <a href="javascript:void(0);" ng-click="openChangeFund()">{{globalVars.change}} {{globalVars.fund_text}}</a>
+                      </div>                     
+                  </div>
+           </div>            
+           <!-- <div class="row margin-top-20">
+               <!--p class="col-md-12 paraWrap">
+                    {{globalVars.praxis_para1_1}} {{serviceData.service}} {{globalVars.portal_text}}.
+               </p>
+               <p class="col-md-12">{{globalVars.praxis_para1_2}}</p>
+               <div class="alert-box col-md-12 margin-top-10">
+                    <div role="alert" class="alert alert-info alert-dismissable">
+                        <div class="row">
+                            <span class="icons-alert-info"></span>
+                            <div class="alert-text col-sm-11">
+                                <span class="ng-binding">
+                                    <p class="paraWrap">
+                                        {{globalVars.praxis_para1_1}} {{serviceData.service}} {{globalVars.portal_text}}.
+                                   </p>
+                                   <p>{{globalVars.praxis_para1_2}}</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div> -->
+            <div class="row" ng-if="globalVars.serviceCategory != 'VSPP'">
+               <div class="col-md-12">
+                   <div class="row">
+                        <div class="col-md-12">
+                           <h3>{{globalVars.partner}}
+                            <span class="infoIcon"><a href="javascript:void(0);" class="info ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe={{globalVars.offeringPartnerInfo}}>&nbsp;</a></span>
+                           </h3>
+
+                           <!-- <p>{{globalVars.selectPartnerText}}
+                           </p> -->
+                       </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"><!--as per latest WF-->
+                            <div class="radio" data-ng-repeat="partnerData in serviceData.partner[0]">
+                                    <input ng-if="partnerData.id=='VMware'" type="radio" id="partner{{$index}}" required="" name="partner" ng-click="vmwareSelected(partnerData.id)" ng-model="localObj.selectedId" value="{{partnerData.id}}"><label ng-if="partnerData.id=='VMware'" for="partner{{$index}}">{{partnerData.name}}</label>
+                            </div>
+                           <div class="radio">
+                                <input type="radio" id="partner" required="" value="partner" ng-model="localObj.selectedId" ng-click="showPartnersList()" name="partner"><label for="partner">{{globalVars.offeringPartner2}}</label>
+                           </div>
+                        </div>
+                        <div class="row">
+                            <div  class="dispPartner col-sm-7 {{(partnerSelected == false) && 'opaque' || ''}}" ng-repeat="data in displaySelectedPartner">
+                                    <span class="partnerInView">{{data.name}}</span><span class="partnerInView">{{data.address}}</span>
+                                    <span class="changeButton"><a href="javascript:void(0);" ng-click="changePartnersList()" ng-if="partnerSelected">{{globalVars.change}}</a></span>
+                                    <span  class="changeButton"><a href="javascript:void(0);"  ng-if="!partnerSelected" ng-disabled="!partnerSelected" class="disabledAnchor">{{globalVars.change}}</a></span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="margin-top-20">
+                    <div class="col-md-12">
+                      <h3>{{globalVars.praxisSupportText}}</h3>  
+                    </div>    
+                </div>
+                
+                    <div class="col-md-12">
+                      <!-- <div class="radio" data-ng-repeat="(supportKey,supportValue) in serviceData.praxisSupportSKU">
+                                <input type="radio" id="support{{$index}}" required="" name="support"  ng-model="localObj.supportType" value="{{supportKey}}"><label for="support{{$index}}"><a href="javascript:void(0);">{{supportValue[0]}}</a>&nbsp;-&nbsp;{{supportValue[1]}}</label>
+                        </div>  --> 
+                        <div >
+                            <div class="radio" data-ng-repeat="supportObj in praxisSupportSKUAll">
+                                <input type="radio" id="support{{supportObj.labelID}}" required="" name="support"  ng-model="localObj.supportType" value="{{supportObj.labelID}}-{{supportObj.labelTxt}}"><label for="support{{supportObj.labelID}}"><b>{{supportObj.labelTxt}}</b> {{supportObj.supportTxt}} <a href="{{supportObj.supportlink}}" target = "_blank">{{supportObj.supportLrnTxt}}</a></label>
+
+                            </div> 
+                                
+                        </div> 
+                    </div>    
+                          </div> 
+            <div class="row" ng-if="globalVars.serviceCategory !=='VSPP'">
+                <div class="col-md-12 margin-top-20">
+                    <div><!--class="box-bgBlue" as per WF-->
+                        <div>
+                            <div class="margin-top-10"><b>{{globalVars.enterPromoCodeText}}</b></div>
+                            <div ng-if="!localObj.showChangePromoForm">
+                                <div class="margin-top-10"><b>{{serviceData.promotion.promoCode}}</b> <a href="javascript:void(0);" ng-click="changePromotion()">{{globalVars.change}}</a></div>
+                                <div class="margin-top-10">
+                                    <p ng-repeat="promoText in serviceData.promotion.promoText">{{promoText}}</p>                                   
+                                </div>
+                            </div>
+                            <!-- Added || VSPP to enable textbox in VSPP-->
+                            <div ng-if="localObj.showChangePromoForm" class="form-inline">
+                                <div class="margin-top-10">
+                                    <input type="text" ng-model="localObj.newPraxisCode" class="form-control {{(localObj.promoError !== false) && 'text-error' || ''}}">
+                                    <a class="btn btn-primary margin-left-20" ng-click="updatePromotion()" ng-disabled="localObj.newPraxisCode.length == 0">{{globalVars.applyBtn}}</a>
+                                    <a class="btn btn-default margin-left-20" ng-click="localObj.showChangePromoForm = false">{{globalVars.cancelBtn}}</a>
+                                    <div class="ajaxSpinner" ng-if="localObj.applyPromoLoader">&nbsp;</div>
+                                </div>
+                                <div class="margin-top-10 fRed" ng-if="localObj.promoError !== false">
+                                    <span class="icons-icn_warning"></span>{{localObj.promoError}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col-md-12 margin-top-20">
+                    <div class="margin-bottom-5">
+                            <div class="margin-top-15">
+                                <b>{{globalVars.redemptionNotes}}</b>
+                                <span><a href="javascript:void(0);" class="standard-info-icon ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe= {{globalVars.redemptionTag_Tooltip}}>&nbsp;</a></span>
+                            </div>
+                            <div class="form-inline">
+                                <div class="margin-top-15 margin-bottom-15">
+                                    <input class = "form-control inputboxForRedemptionTag"  ng-if= "redemptionNotesListPraxisFlow == undefined || redemptionNotesListPraxisFlow == null || redemptionNotesListPraxisFlow.length == 0" placeholder = "{{globalVars.tagPlaceholder}}" ng-model = "PraxisFlowdynabox.value"></input>
+                                    <ng-vmcombobox ng-if= "redemptionNotesListPraxisFlow.length > 0" options = 'redemptionNotesListPraxisFlow' ng-vm-model = 'PraxisFlowdynabox' configobj = '{customClass: "dynamicSearchBox", maxlength : "100", dropdownCustomClass: "dynamicCBDropDownForPraxisFlow", placeholder : globalVars.tagPlaceholder}'></ng-vmcombobox>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+            <!--alert info box-->
+            <div class="row margin-top-20">
+               <div class="alert-box col-md-12 margin-top-10">
+                    <div class="alert alert-info alert-dismissable" role="alert">
+                        <div class="row">
+                            <span class="icons-alert-info"></span>
+                            <div class="alert-text col-sm-11 normal-text"><!--{{serviceData.service}}  {{globalVars.portal_text}} as per latest WF-->
+                                <p>{{globalVars.praxis_para1_1}}
+                               </p>
+                               <p>{{globalVars.praxis_para1_2}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ends--> 
+            <div class="row margin-top-20">
+                <div class="col-md-4">
+                     <!--a class="btn btn-default">Back</a-->   
+                </div>    
+                <div class="col-md-8">
+                    <div class="text-right">                        
+                        <div class="ajaxSpinner" ng-if="localObj.showSubmitPromotionLoader">&nbsp;</div>
+                        <a class="btn btn-primary margin-left-20" ng-if="globalVars.serviceCategory != 'VSPP'" ng-disabled="localObj.showSubmitPromotionLoader || (localObj.selectedId.length=='') || (localObj.selectedId.length== undefined)" ng-click="submitPromotion()">{{globalVars.SubmitBtn}}</a>
+                        <a class="btn btn-primary margin-left-20" ng-if="globalVars.serviceCategory == 'VSPP'" ng-disabled="localObj.showSubmitPromotionLoader" ng-click="submitPromotion()">{{globalVars.SubmitBtn}}</a>
+						<a class="btn btn-default margin-left-20" ng-click="cancelFlow(cancelFn)">{{globalVars.cancelBtn}}</a>
+                    </div>
+                </div>
+            </div>  
+       </div>
+       <div class="col-md-4" ng-if="localObj.isPraxisFlow">
+           <div class="row">
+                <div class="col-md-12">
+                    <div ng-if="!localObj.isDaasFlow">
+                       <div class="box-right-praxis"><b>{{globalVars.pricingEstimatorText}}</b></div>
+                       <div class="margin-top-10">
+                           {{globalVars.pricingEstimatorDesc}}
+                       </div>
+                       <div class="margin-top-10">
+                        <a href="{{globalVars.goToEstimatorLinkURL}}" target="_blank">{{globalVars.goToEstimatorLinkText}}</a>
+                       </div>
+                    </div>
+                    <div ng-if="localObj.isDaasFlow">
+                       <div class="box-right-praxis"><b>{{globalVars.horizonAirHeader}}</b></div>
+                       <div class="margin-top-10">
+                           {{globalVars.horizonAirDesc}}
+                       </div>
+                       <div class="margin-top-10">
+                        <a href="{{globalVars.horizonAirLinkURL}}" target="_blank">{{globalVars.horizonAirLinkText}}</a>
+                       </div>
+                    </div>
+               </div>
+           </div>
+       </div>
+       <!-- <div class="col-md-4" ng-if="localObj.isPraxisFlow" ng-repeat="data in serviceData.rightSec">
+           <div class="row">
+                <div class="col-md-12">
+                    <!-- <div class="box-bgBlue">
+                    <div>
+                       <div class="rightSecHead"><h3>{{data.header}}</h3></div>
+                       <div class="margin-top-10">
+                           {{data.desc}}
+                       </div>
+                       <div class="margin-top-10">
+                        <a href="{{data.linkUrl}}" target="_blank">{{data.linkText}}</a>
+                       </div>
+                    </div>
+               </div>
+           </div>
+       </div> -->
+   </div>
+</div>
+</article>

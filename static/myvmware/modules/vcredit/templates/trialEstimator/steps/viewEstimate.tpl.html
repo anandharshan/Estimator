@@ -1,0 +1,229 @@
+<article ng-if="showLoader">
+	    <div class="row margin-top-20 margin-bottom-20">
+	        <div class="col-md-8-12 text-center">
+	            <div class="ajaxSpinner">&nbsp;</div>   
+	        </div>
+	    </div>
+</article>
+<article ng-if="!showLoader && !updateError" class="container-fluid">
+    <div class="row margin-top-5 margin-bottom-30">
+        <div class="col-md-8">
+            <div class="row margin-top-10">
+                <div class="col-md-12  padding-left-0">
+                	<p>{{globalVars.viewEstimateDesc1}}</p>
+                	<p>{{globalVars.viewEstimateDesc2}}</p>
+                	<p class="priceInfoNote">{{globalVars.viewEstimateDesc3}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+             <div class="margin-top-10 padding-left-10">
+                <div class="row box-bgBlue estimatorBlueBox margin-top-15">
+                    <div class="col-md-12 padding-left-0 padding-right-0">
+                        <div>
+                           <h4 class="calculationBoxHeader18 estimatorCalculationBox">{{globalVars.totalEstimatedCost}}&nbsp;({{ref_addOnObj.core.pricelist[0]}})</h4>
+                           <span class="intro-text estimatorIntroText">{{totalCost | customCurrency:addOnData.core.currency[0]:addOnData.core.redemptionCurrency}}</span>
+                           <div class="margin-top-5 estimated_credits_sku">
+	                       		<div><b>{{globalVars.trialID}}&nbsp;:&nbsp;{{ref_addOnObj.trialID}}</b></div>
+	                       		<div class="margin-top-15"><b>{{globalVars.estimatedCredits}}:</b> <span>{{totalCeilCost  | number : 0}}</span>
+		                           	<span class="infoIcon">
+		                           		<a href="javascript:void(0);" class="info" tooltip-trigger="{{{true: 'mouseenter', false: 'never'}['']}}" tooltip-placement="right" data-tooltip-html-unsafe="{{globalVars.estimatedCreditsTooltip}}">&nbsp;</a>
+		                           </span>
+		                       </div>
+	                       		<div><b>{{globalVars.SKU}}:</b> <span>{{levelSKU}}</span>
+		                           	<span class="infoIcon">
+		                           		<a href="javascript:void(0);" class="info" tooltip-trigger="{{{true: 'mouseenter', false: 'never'}['']}}" tooltip-placement="right" data-tooltip-html-unsafe="{{globalVars.viewEstSprtToolTip}}">&nbsp;</a>
+		                           </span>
+		                       </div>
+	                       </div>
+                           <div class="margin-top-5 text-right"><span class="small">{{tokenValue}} {{globalVars.credit}} = {{addOnData.core.currency[0]}}{{msrpValue | number : 0}}&nbsp;({{ref_addOnObj.core.pricelist[0]}})
+							</span></div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>                          
+    </div>
+	<div class="row est_update_box">
+		<div class="col-md-12 padding-left-0">
+			<div class="updateRow est_update_title"><span>{{globalVars.updateBilling_Term}}</span></div>
+			<div class="updateRow">
+				<select ng-model="serviceData.currentSelectedTermId" data-width="200px" selectpicker="{container:'body'}" ng-change="updateTerm()">
+					<option ng-selected="{{serviceData.currentSelectedTermId == getTerm[1]}}" ng-repeat="getTerm in serviceData.selectedTerms" value="{{getTerm[1]}}">{{getTerm[0]}}</option>
+				</select>
+				<!--select class="form-control" ng-options="pt.paymentTypeVal for pt in ref_addOnObj.paymentType" data-ng-model="localObj.selPaymentType" data-width="200px" selectpicker="{container:'body'}" ng-change="updateTerm()">
+				</select-->
+			</div>
+			<div class="updateRow">
+				<span ng-repeat="getTerm in serviceData.selectedTerms" ng-if="serviceData.currentSelectedTermId == getTerm[1]">
+					<select ng-model="serviceData.selectedPaymentType" data-width="200px" selectpicker="{container:'body'}">
+						<option ng-selected="{{serviceData.selectedPaymentType == paymentType}}" ng-repeat="paymentType in getTerm[2]" value="{{paymentType}}">{{paymentType}}</option>
+					</select>	
+				</span>
+				<!--select id="selTerm" class="form-control" ng-options="key as value for (key,value) in termArray[0]" ng-model="localObj.selTerm" data-width="200px" selectpicker>
+				</select-->
+			</div>
+			<div class="updateRow">
+				<a class="btn-default btn" ng-disabled="ajaxLoader" ng-click="updateTermType()">{{globalVars.update}}</a>
+			</div>
+		</div>	
+	</div>
+	<ul class="margin-top-20 list-group serviceDataUl addontable">
+		<li class="row padding-10 padding-left-5 addontable-head">
+			<div class="col-md-6 addon-separator">
+				<small>{{globalVars.coreService}}</small>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-xs-4 addon-separator"><small>{{globalVars.quantity}}</small></div>
+					<div class="col-xs-4 addon-separator"><small>{{globalVars.unitCost}}</small></div>
+					<div class="col-xs-4"><small>{{globalVars.extendedCost}}</small></div>
+				</div>
+			</div>
+		</li>
+		<li class="margin-top-20 padding-left-5">
+			<div class="row">
+				<div class="col-md-6">
+    				<div class="row">
+        				<div class="col-md-12"><span>{{ref_addOnObj.core.coreTierInfo}}</span></div>
+        				<div class="col-md-12"><span>{{ref_addOnObj.core.longSkuDescription}}</span></div>
+    				</div>
+    				<div class="row skuName margin-top-10">
+                        <div class="col-md-12">                                            
+                        	<span class="small">{{ref_addOnObj.core.coreServiceSku}}</span>
+                        </div>
+    				</div> 
+				</div>
+				<div class="col-md-6">
+                    <div class="row">
+                        <div class="col-xs-4">
+                             1
+                        </div>
+                        <div class="col-xs-4">
+                            <span>{{ref_addOnObj.core.cost | customCurrency:addOnData.core.currency[0]:addOnData.core.redemptionCurrency
+								}}</span>
+                        </div>
+                        <div class="col-xs-4">
+                            <div>{{fullTermServiceCost | customCurrency:addOnData.core.currency[0]:addOnData.core.redemptionCurrency
+								}}</div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</li>
+		<li class="row margin-top-20 padding-10 padding-left-5 addontable-head">
+			<div class="col-md-6"><small>{{globalVars.subscriptionServiceAddon}}</small></div>
+		</li>
+		<li class="margin-top-20 padding-left-5 items_wrap" data-ng-repeat="addOnKey in notSorted(ref_addOnObj.addons)" data-ng-init="addOnsData = ref_addOnObj.addons[addOnKey]" ng-if="ref_addOnObj.addons[addOnKey].selectedNode == true">
+                <div class="row">
+                	<div class="col-md-12">
+                		<label ng-bind-html="addOnKey"></label>
+                	</div>
+                </div>
+                <div data-ng-repeat = "addOns in addOnsData"  ng-if = "addOns[8].selected=='selected'">
+	                <div class="row">
+	                    <div class="col-md-6">
+	                        <div class="row">
+	                            <div class="col-md-12"><span ng-bind-html="addOns[5]"></span></div>
+	                        </div>
+							<div class="row skuName">
+	                            <div class="col-md-12"><span class="small">{{addOns[8].selectedAddonSKU[0]}}</span></div>
+	                        </div>
+							<div class="row margin-top-10" ng-if="addOns[7][5] != null || addOns[7][5] != undefined">
+								<div class="col-md-12">                                            
+									<div class="row">
+										<ul class="col-xs-11 col-xs-offset-1">
+											<li>
+												<span class="bg-support"></span>
+												<span ng-bind-html="addOns[7][5]"></span>
+											</li>
+										</ul>
+									</div>
+									<div class="row skuName">
+										<div class="col-xs-11 col-xs-offset-1"><span class="small">{{addOns[8].selectedAddonSKU[1]}}</span></div>
+									</div>
+								</div>
+							</div>
+	                    </div>
+	                    <div class="col-md-6" ng-if="addOns[8].selectedType.paymentTypeID != '0'">
+	                        <div class="row">
+	                            <div class="col-xs-4">
+									<span  class="labelForm">{{addOns[8].selectedQty}}</span>
+									<!--<span class="labelForm row" ng-click="enableEdit($event)">edit</span>-->
+									<span class="editForm"  style="display:none;">
+										<input type="text" style="width: 80px;" maxlength="{{globalVars.quantitySize}}" class="form-control text-left" data-ng-model="addOns[8].selectedQty" ng-change="changeAddon(addOnKey, addOns)" ng-blur="checkQty(addOns[8].selectedQty, addOns)">
+									 </span>
+									 <span class="center-block">
+											<a class="labelForm btn-link" ng-click="enableEdit($event)">{{globalVars.editBtn}}</a>
+											<a class="editForm btn-link" style="display:none;" ng-click="disableEdit($event, addOnKey, addOns, $index)">{{globalVars.saveBtn}}</a>
+											<div class="ajaxSpinner hide">&nbsp;</div>
+									</span>
+									<span class="center-block" ng-if="displayRemove">
+										<span class="icons-close removeAddon" ng-click="removeAddon($event, addOnKey, addOns)"></span>
+										<div class="ajaxSpinner hide">&nbsp;</div>
+									</span>
+	                            </div>
+	                            <div class="col-xs-4" ng-if="addOns[8].noCost == 'N'">
+	                                <div>{{addOns[8].selectedCost | customCurrency:addOnData.core.currency[0]:addOnData.core.redemptionCurrency
+									}}</div>
+	                            </div>
+								<div class="col-xs-4" ng-if="addOns[8].noCost == 'N'">
+	                                <div>{{addOns[8].addOnRemainingCost | customCurrency:addOnData.core.currency[0]:addOnData.core.redemptionCurrency
+									}}</div>
+	                            </div>
+								<div ng-if="addOns[8].noCost == 'Y'" class="col-md-8 col-xs-12">
+									<span class=" form-required" ng-bind-html="globalVars.noPriceAssociated"></span>
+								</div>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-6" ng-if="addOns[8].selectedType.paymentTypeID == '0'">
+		                    <div class="row text-center">
+		                        <div class="col-xs-3"> - </div>
+		                        <div class="col-xs-3"> - </div>
+		                        <div class="col-xs-3"> - </div>
+		                    </div>
+		                </div>
+	                </div>
+	                <div class="row margin-top-15 margin-bottom-15" ng-if="addOns[8].discountText != '' && addOns[8].discountText != undefined && addOns[8].dataExist">
+	                    <div class="col-md-12">
+	                        <div class="discountInfo">
+	                            <span class="discountText">{{globalVars.discountsText}}:</span> <span ng-bind-html="addOns[8].discountText"></span>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="visible-xs-block">&nbsp;</div>
+                </div>           
+      	</li>
+      	<li class="margin-top-20 padding-left-5 items_wrap" ng-if="addOnCount==0">
+	    	<div class="row">
+		        <div class="col-md-5 form-required margin-bottom-10">{{globalVars.NoAddOnService}}</div>                        
+		    </div>
+		</li>
+		<li class="margin-top-20">
+			<div class="row">
+				<div class="col-md-3 col-md-offset-9 text-right est_total_cost">{{globalVars.totalCost}} <span>{{totalCost | customCurrency:addOnData.core.currency[0]:addOnData.core.redemptionCurrency}}</span></div>	
+			</div>
+		</li>                                
+	</ul>
+	<div class="row margin-top-30">
+		<div class="col-xs-6 text-left margin-top-10 padding-left-0">
+			<a ng-click="goToConfigureAddon()" class="btn btn-default">{{globalVars.backBtn}}</a>
+		</div>
+		<div class="col-xs-6 text-right margin-top-10 padding-right-0">
+			<span ng-if="ajaxLoader">
+                <div class="ajaxSpinner">&nbsp;</div> 
+            </span>
+			<a class="btn btn-primary margin-left-20" href="{{excelImportDownloadURL}}" ng-disabled="ajaxLoader" ng-click="submitOrder($event,'excel')">{{globalVars.exportToExcel}}</a>
+			<a class="btn btn-default margin-left-20 addServiceBtn" ng-disabled="ajaxLoader" ng-click="cancelFlow()">{{globalVars.btnClose}}</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-md-offset-8 margin-top-30 margin-bottom-30 text-right padding-right-0">
+			<a class="btn-link pull-right" ng-disabled="ajaxLoader" ng-click="submitOrder($event,'viewSummary')">
+				<span class="pull-left">{{globalVars.goToMyVMWHome}}&nbsp;</span>
+				<span class="glyphicon glyphicon-chevron-right chevron-link"></span>
+			</a>
+		</div>	
+	</div>
+	
+</article>

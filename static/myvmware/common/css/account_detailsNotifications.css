@@ -1,0 +1,204 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  account_detailsNotifications.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 09/08/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. ACCOUNT DETAILS AND NOTIFICATIONS
+/* ########################################################################### */
+
+/* ########################################################################### *
+/* ##### ACCOUNT DETAILS AND NOTIFICATIONS
+/* ########################################################################### */
+
+#content-section .tabbed_area section.accountsNotifications h1 {
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.column-wrapper .accountsNotifications {
+	float: left;
+	width: 630px;
+	height: auto;
+}
+
+.accountsNotifications .accountsnotificationWrapper {
+	padding:15px;
+	border-left: #eaeaea 1px solid;
+}
+
+#content-section .accountsNotifications p {
+	font-size: 12px;
+}
+#content-section .accountsNotifications h2 {	
+	font-size: 12px; 
+	font-weight: bold;
+}
+
+#content-section .accountsNotifications h2 {
+	margin-bottom: 5px;
+	color: #333;
+}
+
+#content-section .accountsNotifications h2 span {
+	font-weight:normal;
+}
+
+.accountsNotifications .profile-header-noborder {
+	font-size: 12px;
+	color: #333;
+	padding-bottom: 15px;
+	margin-bottom: 0;
+	border-bottom: 1px dotted #aaa;
+}
+
+.accountsNotifications .profile-maximize-button {
+	background: url('img/btn_gray_blue_plus_minus.png') no-repeat 0 -2px;
+	outline: none;
+}
+
+.accountsNotifications .open .profile-maximize-button {
+	background: url('img/btn_gray_blue_plus_minus.png') no-repeat 0 -22px;
+}
+
+.accountsNotifications .accountsAdditionalWrappers {		
+	margin-bottom:20px;
+}
+
+.accountsNotifications .closed > ul {
+	display: none;
+}
+
+.text_input_grey {
+	padding: 2px 6px;
+	width: 237px;
+	color:#CDCDCD;
+}
+
+.accountsAdditionalWrappers p.chkbox_holder {
+	margin-bottom:20px;
+}
+
+#content-section .tabContent section .accountsAdditionalWrappers ul {
+	border-bottom: 1px dotted #aaa;
+	padding: 10px 0 10px 300px;
+}
+
+	#content-section .tabContent section .accountsAdditionalWrappers ul li {
+		border: none;
+	}
+		#content-section .tabContent section .accountsAdditionalWrappers ul li input {
+			margin-left: 0;
+		}
+
+		#content-section .tabContent section .accountsAdditionalWrappers ul ul {
+			border: none;
+			padding: 0 0 0 20px;
+		}
+
+		.ie7 #content-section .tabContent section .accountsAdditionalWrappers ul ul,
+		.ie8 #content-section .tabContent section .accountsAdditionalWrappers ul ul {
+			padding: 0 0 0 25px;
+		}
+
+#content-section .tabContent section .accountsAdditionalWrappers ul li label,
+#content-section .tabContent section .accountsAdditionalWrappers ul ul li label {
+	width: auto;
+	padding: 0px;
+}
+
+.accountsAdditionalWrappers .unsubscribe_box {
+	border: #4C4E53 2px solid;
+	max-width: 500px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	color: #4C4E53;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+	   -moz-border-radius: 5px;	
+		    border-radius: 5px;	
+	background-color: #EEEEEE;
+	font-size:12px;
+}
+
+#content-section .tabContent section .accountsAdditionalWrappers .unsubscribe_box ul {
+	margin: 0px;
+	font-size: 12px;
+}
+
+.accountsNotifications p.privacy_paragraph {
+	font-size: 11px;
+}
+
+.accountsNotifications p.privacy_paragraph a {
+	color: #C1EAFD;	
+	text-decoration: underline;
+}
+
+.tabContent .ctrlHolder-footer {
+	text-align: right;
+	margin-top:15px;
+}
+
+	#content-section .tabContent .ctrlHolder-footer p {
+		float: left;
+		width: 600px;
+		text-align: left;
+		color: #4d4e53;
+	}
+
+.oneLineWrapper h2 {
+	float: left;
+	width: 300px;
+}
+
+.oneLineWrapper div {
+	float: left;
+	width: 295px;
+	margin-top: 9px;
+}
+
+.oneLineWrapper div input {
+	float: left;
+}
+
+.oneLineWrapper div label {
+	float: left;
+	padding-left: 10px;
+	width: 270px;
+}
+
+.ie7 .oneLineWrapper div label,
+.ie8 .oneLineWrapper div label {
+	width: 250px;
+}
+
+.bottomarea {
+	/*height: 0px;*/
+}
+
+.additionalWrapper {
+	
+}
+
+	.additionalWrapper .additionalLeft {
+		float: left;
+		width: 300px;
+	}
+
+		.additionalWrapper .additionalLeft p {
+			margin-top: -10px;
+		}
+
+	.additionalWrapper .additionalRight {
+		float: left;
+		width: 290px;
+		margin-top: 5px;
+	}
+
+.column .settings-cog .dropdown {
+	width: 195px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+	<head>
+		<!--CDN URL Added-->
+		<!-- HTML5 Shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>		  
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- Bootstrap CDN URL added -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="/assignment/css/assignment.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//Login form load on initial landing 
+				$.ajax({
+    				url: '/assignment/resource/loginForm.html',
+    				success: function(htmlData){
+    					$("#form").html(htmlData);
+    				}
+    			})
+    			.done(function() {
+    				console.log("login form load success");
+    			})
+    			.fail(function() {
+    				console.log("login form load error");
+    			});
+    			// .always(function() {
+    			// 	console.log("complete");
+    			// });
+    			
+			});
+		</script>
+	</head>
+	<body>
+		<div class= "container">
+			<header>
+				//Image needs to be embedded
+			</header>
+			<section class="login_content">
+				<div class="row">
+					<div id="form" class="center-block"></div>
+					<div class="col-md-8">
+						
+					</div>
+				</div>
+				
+			</section>
+			<footer>
+				<section class ="text_center_align">
+					<p>
+						Learn More!
+					</p>
+					<p>
+						Check out our demos and quickguides to our app.
+					</p>
+				</section>
+				<hr>
+				<section>
+					<video>
+
+					</video>
+					//place the play button on top of the image or what ever
+				</section>
+			</footer>
+		</div>
+	</body>
+</html>

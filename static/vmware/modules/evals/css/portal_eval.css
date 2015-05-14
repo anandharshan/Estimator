@@ -1,0 +1,1439 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  portal_eval.css
+ * ##### VERSION: v0.2
+ * ##### UPDATED: 08/04/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+* ## 1.  OVERRIDE VMWARE STYLES
+* ## 2.  TABLES
+/* ########################################################################### */
+
+
+/* ########################################################################### *
+/* ***** Override VMware Styles   ********************************************
+/* ########################################################################### */
+
+
+body #content-container.wide #content {
+	margin: 0 0 0 -25px !important;
+	padding: 0px 0px 0 25px !important;
+	/*margin-top: -39px !important;
+	padding-top: 0px !important;*/
+}
+
+/*For Alternate Login Page*/
+body #content-container.wide .place-holder #content {
+	margin: 15px 0 0 -25px !important;
+}
+/*To avoid tooltip getting cut off which is going beyond screen*/
+body #container {
+	overflow:visible;
+	position:relative;
+}
+.ie7 #top-of-page {
+    margin: 0 auto 0 !important;
+	top: 28px;
+}
+
+.ie7 #content-container.wide {
+	margin-top: 0px !important;
+}
+
+div.dbox {
+	background: url(/static/vmware/modules/evals/img/bg_cont.png) no-repeat;
+	margin-bottom: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	min-height: 150px;
+	padding: 20px;
+}
+
+div.dbox div.body {
+	padding: 20px;
+	background: none !important;
+	
+}
+
+.logonbottom {
+	background: url(/static/vmware/modules/evals/img/log_btm.png) bottom left no-repeat !important;
+}
+
+#main {
+	background: url(/static/vmware/modules/evals/img/bg_header.png) repeat-x scroll 0 0 transparent;
+	padding: 57px 25px 0px 25px;
+	width: 940px;
+}
+
+#tab_buy ul{
+	list-style: disc outside none;
+}
+
+#tab_buy ul li{
+	margin-left: 40px;
+}
+
+div.tab {
+	width: auto !important;
+}
+
+strong {
+	font-weight: bold;
+}
+
+#head {
+	width: 600px;
+	padding: 0 18px;
+}
+	#head h1 {
+		font-size: 30px;
+		color: #FFF;
+		padding-top: 20px;
+		margin: 0 0 18px;
+	}
+
+#tab_content {
+	clear: both;
+}
+
+
+#head div p strong {
+	color: #ADE700;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+ul.evalhead {
+	margin: 0px;
+	padding: 0px 20px 0 0;
+	float: left;
+	font-size: 13px;
+	width: 45%;
+	font-weight: bold;
+}
+
+ul.evalhead a {
+		color: white;
+}
+
+#content .evalhead li {
+	margin: 0px 0 8px 0px;
+	list-style: none;
+	background: url(/static/vmware/modules/evals/img/li_wht.png) no-repeat 0 6px;
+	padding: 0px 0 0px 16px;
+}
+
+.evaltabhead {
+	height: 54px;
+}
+
+	div.evaltabhead ul {
+		background: none;
+		font-size: 12px;
+		font-weight: bold;
+		list-style: none outside none;
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+		position: relative;
+		width: 100%;
+	}
+	
+	#content div.evaltabhead ul li {
+		float: left;
+		text-align: center;
+		margin: 0;
+		line-height: normal;
+	}
+	
+		#content div.evaltabhead ul li.one {
+			line-height: 31px;
+		}
+		
+		div.evaltabhead ul li a {
+			background: url(/static/vmware/modules/evals/img/bg_normaltab.png) no-repeat 0 0;
+			cursor: pointer;
+			float: left;
+			height: 31px;
+			padding: 12px 0px 12px 0px;
+			margin-left: 0px;
+			width: 134px;
+		}
+		
+		#content div.evaltabhead ul li a:hover,
+		div.evaltabhead ul li a.active {
+			background: url(/static/vmware/modules/evals/img/bg_atabnew.png) no-repeat;
+			color: #0C8D63;
+			text-decoration: none;
+			margin-left: -10px;
+			margin-right: 0px;
+			padding-left: 10px;
+		}
+		
+		#content div.evaltabhead ul li a.first {
+			width: 144px;
+			margin: 0px;
+			background: url(/static/vmware/modules/evals/img/bg_tab1.png) no-repeat left 0;
+		}
+		
+			#content div.evaltabhead ul li.first a:hover,
+			#content div.evaltabhead ul li.first a.active {
+				background: url(/static/vmware/modules/evals/img/bg_aftab.png) no-repeat;
+				width: 144px;
+				margin: 0;
+				padding-left: 0px;
+			}
+
+				
+		#content div.evaltabhead ul li a.last {
+			width: 124px;
+			background: url(/static/vmware/modules/evals/img/bg_lastnormaltab.png) no-repeat 0 0;
+			border-right: 1px solid #CECECE;
+			margin-top: 0px;
+		}
+
+			#content div.evaltabhead ul li.last a:hover,
+			#content div.evaltabhead ul li.last a.active {
+				background: url(/static/vmware/modules/evals/img/bg_alasttab1.png) 0 0 no-repeat;
+				color: #0C8D63;
+				text-decoration: none;
+				margin-left: -10px;
+				margin-right: 0px;
+				padding-left: 10px;
+			}
+
+.white {
+	color: #FFF;
+}
+
+.video img {
+   width: auto !important;
+}
+
+#logon {
+	background: url(/static/vmware/modules/evals/img/bg_logon1.png) no-repeat;
+	float: right;
+	margin: 20px 0px 30px 0px !important;
+	width: 288px;
+	padding-right: 0;	
+}
+
+	#logon p {
+		padding: 20px 20px 0px 20px;
+		margin-bottom: 10px;
+	}
+	
+	#logon #tab_login, #logon #tab_register {
+		background: url(/static/vmware/modules/evals/img/bg_log.png) no-repeat;
+		min-height: 200px;
+		height: auto !important;
+	}
+	
+	#logontab {
+		margin: 0 9px;
+	}
+	
+		#logontab ul {
+			list-style: none outside none;
+			margin: 0px;
+			padding: 0px;
+			height: 24px;
+		}
+		
+		#logontab ul li {
+			background: url(/static/vmware/modules/evals/img/bg_logontab.png) no-repeat;
+			float: left;
+			display: inline;
+			height: 24px;
+			margin: 0;
+			padding: 0;
+		}
+		
+			#logontab ul li#logontab1 {
+				background-position: 0 -25px;
+				width: 134px;
+			}
+			
+				#logontab ul li#logontab1.active {
+					background-position: 0 0;
+					font-weight: bold;
+					color: #333;
+				}
+		
+		#logontab ul li#logontab2 {
+			background-position: 0 -25px;
+			width: 131px;
+		}
+		
+		#logontab ul li#logontab2.active {
+			background-position: 0 0;
+			height: 24px;
+			width: 131px;
+		}
+		
+			#logontab ul li a {
+				display: block;
+				height: 24px;
+				padding: 5px 6px 0px 7px !important;
+			}
+			
+			#logontab1.active a,
+			#logontab2.active a {
+				font-weight: bold;
+				color: #333;
+			}
+			
+
+			
+		#logon #tab_login,
+		#logon #tab_register {
+			background: url(/static/vmware/modules/evals/img/bg_log.png) no-repeat;
+			min-height: 200px;
+			height: auto !important;
+			margin: 0px 9px;
+		}
+		
+		#logon form {
+			padding:15px 15px 8px 15px !important;
+		}	
+		
+/*.evalloginbox {
+	float: right;
+	width: 284px;
+	background: url(/static/vmware/modules/evals/img/bg_logon1.png) no-repeat top left;
+	margin: 20px 0px 0px 0px !important;
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+} */
+
+	.evalloginbox #tabinfobox.inner {
+		background: url(/static/vmware/modules/evals/img/bg_newlog1.png);
+		width: auto;
+		float: none;
+		min-height: 131px;
+		margin: 10px 10px 0px 7px;
+    /*    padding: 5px 0 10px !important; */
+		/*margin: 10px 0px 0px 6px !important;
+        padding: 5px 5px 5px 5px !important;*/
+	}
+	
+	 #tabinfobox p,
+	 .evalloginbox  #tabinfobox p {
+		margin: 0px 5px 5px 0px;
+		font-size: 12px;
+		color: #333;
+	}
+	#tabinfobox p.welcome {
+		margin-bottom: 5px !important;
+
+	}
+	#tabinfobox p.name {
+		font-size: 22px;
+		line-height: 24px;
+		font-weight: normal;
+	/*	margin: 0 0 10px 0 !important;
+		padding: 0 !important; */
+		word-wrap: break-word;
+	}
+	
+		#tabinfobox p.name long{
+			font-size: 16px;
+			font-weight: normal;
+			margin: 0 0 10px !important;
+			padding: 0 !important ;
+		}
+	
+	#tabinfobox .line {
+		border-top: 1px solid #CACACE;
+		line-height: 2px;
+		margin: 10px 10px 10px 0px;
+	}
+	
+.evalloginbox .strip{
+	/*background: url(/static/vmware/modules/evals/img/bg_newstrip.png) no-repeat top left;
+	background:url(/static/vmware/modules/evals/img/bg_newstrip.png) no-repeat top left;*/
+	background:#E6E6E6;
+	min-height: 41px;
+	padding: 0 10px 0 20px !important;	
+/*	border-top: 1px solid #DADBDB; 
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px; */
+}
+
+.evalloginbox .day {
+	font-size: 38px;
+	font-weight: bold;
+	color: #666;
+	float: left;
+	line-height: 38px;
+	margin-top: -1px;
+}
+
+.evalloginbox .note {
+	font-size: 15px;
+	line-height: normal;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-left: 35px;
+    padding-top: 8px;
+    width: auto;
+    word-wrap: break-word;
+}
+
+#hinfo {
+	position: absolute;
+	right: 28px;
+	top: 160px;
+}
+
+	#hinfo a {
+		color: white;
+		font-size: 11px;
+	}
+
+#breadcrumbs {
+	padding: 4px 40px !important;
+}
+
+#breadcrumbs, #breadcrumbs a {
+	color: #ACE4FF !important;
+}
+
+#main-content.eval_center {
+	padding-top: 0px;
+}
+
+#main-content {
+	padding-top: 0px !important;
+}
+
+.main-container .refinePanel .tagsLabel {
+	float: none;
+	color: #666;
+}
+
+/* ########################################################################### *
+/* ***** NEW STYLES ************************************************************
+/* ########################################################################### */
+#logon .ctrlHolder,
+.evalloginbox .ctrlHolder,
+.step1 {
+	margin-bottom: 5px;
+	padding: 0;
+}
+.ie7 #logon .ctrlHolder,
+.evalloginbox .ctrlHolder{
+	white-space: nowrap;
+}
+	#logon .ctrlHolder label {
+		float: left;
+		width: 200px;
+		margin-right: 5px;
+	}
+
+	.ie7 #logon .ctrlHolder label {
+		width: 230px;
+	}
+
+		#logon .ctrlHolder .radio-button-wrapper label {
+			width: 70px;
+		}
+		
+		.main-container .step1 .ctrlHolder label {
+			float: left;
+			width: 600px;
+			margin-right: 5px;
+		}
+		
+		.main-container .step1 .ctrlHolder textarea {
+			float: left;
+			width: 100%;
+			min-height: 50px;
+			margin: 5px 0px 10px;
+			background:#ffffff;
+			resize: none;
+		}
+	
+	#logon .ctrlHolder input[type="text"],
+	#logon .ctrlHolder input[type="password"]
+	{
+		float: left;
+		margin-right: 5px;
+		width: 230px;
+	}
+	
+	#logon .ctrlHolder input.shortInput,
+	#logon .ctrlHolder input[type="radio"] {
+		width: 15px;
+		float: left;
+		margin-right:5px;
+	}
+		
+	#logon .ctrlHolder p,
+	.evalloginbox .ctrlHolder p {
+		padding: 0;
+		margin-bottom: 5px;
+	}
+
+		#logon .ctrlHolder p em, .ctrlHolder label em {
+			color: red;
+		}
+
+#logon .ctrlHolder .radio-button-wrapper {
+	float: left;
+	width: 300px;
+}		
+
+#logon .ctrlHolder .radio-button-wrapper ul {
+	margin: 0;
+	padding: 0;
+}
+
+	#logon .ctrlHolder .radio-button-wrapper ul li {
+		border: none;
+		background: none;
+		list-style: none;
+		margin: 0;
+		float: left;
+		font-weight: normal;
+	}
+	
+		#logon .ctrlHolder .radio-button-wrapper ul li:first-child {
+			margin-left: 0;
+		}
+
+.evalloginbox .ctrlHolder {
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+.evalloginbox .ctrlHolder .warning_message_box {
+	background: #FFF9EA;
+	border: 1px #D9D9CB solid;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin: 0px 20px 20px 10px;
+	padding: 10px 5px 10px 15px;
+}
+	
+	.evalloginbox  .ctrlHolder p.name {
+		font-size: 16px;
+		font-weight: bold;
+	}
+	
+	.textRed,
+	.evalloginbox  .ctrlHolder p.textRed {
+		color: #F00;
+	}
+	
+	.textGreen {
+		color:#090;
+	}
+	.textGreen img{
+		cursor: pointer;
+		margin-left:2px;
+	}
+	.evalloginbox  .ctrlHolder p.name span {
+		font-size: 12px;
+	}
+	
+	.evalloginbox .ctrlHolder input.btn_submit {
+			float: left;
+			height: auto;
+			width: auto;
+			margin-bottom: 4px;
+			padding: 5px 14px;
+		}
+		
+	.evalImg {
+	   padding-top: 7px;
+	   padding-bottom: 18px;
+    }
+    .evalTooltipIcon {
+	   /*padding-top: 7px;*/
+	   padding-bottom: 0px;
+    }
+    div#licspacer {
+      padding-bottom: 20px;
+    }
+    
+  #errorbetaBody {
+    min-height: 500px;
+    padding: 40px !important;
+} 
+
+/*#tabinfobox a.button {
+   text-align: center;
+}*/	
+
+/* ########################################################################### *
+/* ***** LAYOUT ***************************************************************
+/* ########################################################################### */
+
+/*#logon a.button,
+#logon button,
+.evalloginbox a.button,
+.evalloginbox button, 
+.downloadManager a.button,
+.buttonPanelLinks a.button{
+	background: #2B75B2 url('/static/vmware/modules/evals/img/bg_buttons.png') repeat-x;
+	background: -moz-linear-gradient(top, #4FB8DC 0%, #399DBF 50%, #2B75B2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4FB8DC), color-stop(50%,#399DBF), color-stop(100%,#2B75B2));
+	border: 1px solid #4FB8DC;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: white;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 5px 14px;
+	text-shadow: none;
+	height: auto;
+	width: auto;
+	text-indent: 0;
+	overflow: visible;
+}
+
+#logon input.button,
+.evalloginbox input.button {
+	background: #2B75B2 url('/static/vmware/modules/evals/img/bg_buttons.png') repeat-x;
+	background: -moz-linear-gradient(top, #4FB8DC 0%, #399DBF 50%, #2B75B2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4FB8DC), color-stop(50%,#399DBF), color-stop(100%,#2B75B2));
+	border: 1px solid #4FB8DC;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: white;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding: 5px 14px;
+	text-shadow: none;
+	height: auto;
+	width: auto;
+	text-indent: 0;
+	overflow: visible;
+}
+
+#logon a.button.secondary,
+#logon button.secondary,
+#logon input.button.secondary,
+.evalloginbox a.button.secondary,
+.evalloginbox button.secondary,
+.evalloginbox input.button.secondary,
+.buttonPanelLinks a.button.secondary {
+	background: #FEFEFE url('img/bg_button_secondary.png') repeat-x;
+	background: -moz-linear-gradient(top, #FEFEFE 0%, #E3E3E3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#E3E3E3));
+	border: #BCBCBC 1px solid;
+	color: #2A73B1;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+	#logon input.button {
+		float: none;
+	}
+	
+#logon a.button:hover,
+#logon button:hover,
+#logon input.button:hover,
+.evalloginbox a.button:hover,
+.evalloginbox button:hover,
+.evalloginbox input.button:hover,
+.downloadManager a.button:hover,
+.buttonPanelLinks a.button{
+	cursor: pointer;
+}*/
+#logon .ctrlHolder.buttons,
+.evalloginbox .ctrlHolder.buttons {
+	float: right;
+}
+
+.evalloginbox #tabinfobox .eval_dashboard_link {
+     font-weight: bold;
+     margin-top: 10px;
+}
+
+.evalloginbox #tabinfobox .eval_dashboard_link img {
+		margin-right: 10px;
+	}
+
+#logon .desc {
+	font-size: 11px;
+	color: #999;
+	width: 140px;
+	float: left;
+}
+.step1 .refinePanel {
+	background: #4D4E53;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 0;
+    padding: 15px;
+}
+.refinePanel label{
+	color:#FFFFFF;
+	font-weight: bold;
+	font-size:12px;
+}
+.refinePanel .keywords{
+	color:#FFFFFF;
+	font-size:12px;
+}
+.refinePanel .keywords a,
+.refinePanel .keywords a:hover{
+	color: #3495ca;
+}
+.refinePanel .popularTagsSection{
+	font-size: 12px;
+}
+.refinePanel .popularTagsSection .tagsLabel{
+	color: #FFF;
+	font-weight: bold;
+}
+.refinePanel .tagsLabel {
+	font-weight: bold;
+}
+#tab_ssr_help .main-container .pagination-wrapper{
+	border-bottom:1px solid #A3C5E8;
+	border-left:0;
+	border-right:0;
+	padding: 10px 15px 5px;
+	background:url("../img/bkg_eval_pagination.png") repeat-x;
+}
+.resultsData h4{
+	padding:10px 0 5px 15px;
+}
+.resultsData .resultItem{
+	border-bottom: 1px solid #EDF0F5 !important;
+	background:none  !important;
+	padding:15px !important;
+}
+#modal_box_tagclouds_id,
+#modal_box_tagclouds_id_collapse{
+	text-align:right; 
+	margin:10px 0 0px 0;
+}
+.resultsData .resultItemTitle{
+	font-size:12px !important;
+}
+#content .portlet section.step1 {
+	border-bottom: none;
+}
+
+#content .divider {
+	border-top: 1px solid #CCC;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* ########################################################################### *
+/* ***** OPEN/CLOSE BUTTON ***************************************************
+/* ########################################################################### */
+
+.openCloseSelect {
+		float: left;
+		width: 30px;
+		margin: 0 10px 0 0;
+	}	
+		.products-content-category .openCloseSelect {
+			/*min-height: 73px;*/
+		}
+
+	.openCloseSelect a {
+		display: block;
+		height: 20px;
+		background: url("/static/vmware/modules/evals/img/btn_expand_collapse.png") no-repeat scroll center -2px transparent;
+	}
+	
+		.openCloseSelect a.open{
+			background: url("/static/vmware/modules/evals/img/btn_expand_collapse.png") no-repeat scroll center -22px transparent;
+		}
+
+
+/* ########################################################################### *
+/* ##### MAIN PAGE CONTENT
+/* ########################################################################### */
+.column-wrapper {
+	margin: 0;
+	padding: 15px 0 10px 15px;
+	font-size: 11px;
+	color: #4C4E53;
+	-moz-border-radius:6px;
+	border-radius: 6px;
+}
+
+	.column-wrapper p {
+		font-size: 12px;	
+		margin: 0 0 10px 0;
+		color: #666;
+	}
+	
+	.main-container {
+		color: #666;
+		float: left;
+		width: 620px;
+		margin-right: 20px;
+		padding: 5px 0 5px 0;
+	}
+	
+	#content #support-main.main-container {
+		color: #666;
+		float: left;
+		width: 620px;
+		margin-right: 20px;
+		padding: 5px 0 5px 0;
+	}
+	
+	#content #support-main.main-container hr {width:620px !important;}
+	textarea.problem_descripText {padding:5px; color:#333; font-size:11px;}
+	
+	.right-side-panel {
+		float: right;
+		width: 220px;
+		margin-top: 20px;
+	}
+		.right-side-panel .white-Box {
+			margin-bottom: 15px;
+			padding: 10px;
+			background: white;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			border: #CCC solid 1px;
+		}
+		
+			.right-side-panel .white-Box h3 {
+				font-size: 14px;
+				font-weight: bold;
+				color: #333;
+				margin-bottom: 10px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #CCC;
+			}
+			
+		.right-side-panel .white-Box ul  {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.right-side-panel .white-Box ul li {
+			list-style: none;
+			background: none;
+			padding: 4px 0 2px 1px;
+			font-size: 12px;
+		}
+
+.column-wrapper .resultsData {
+	color: #666;
+	border:1px solid #A3C5E8;
+	border-bottom:0;
+}
+
+.body p {
+	margin: 0 0 10px 0;
+}
+
+p.white{
+   margin: 0 0 20px 0 !important;
+   line-height: 17px !important;
+}
+
+h2 {
+	margin: 15px 0 20px 0;
+}
+
+/* ########################################################################### *
+/* ##### SUPPORT COMPONENT
+/* ########################################################################### */
+.buttonPanel {
+	padding: 10px 10px;
+	text-align: right;
+}
+
+	.buttonPanel .buttonPanelLabel {
+		float: left;
+		text-align: left;
+		font-size: 10px;
+		width: 350px;
+		margin-left: 250px;
+		padding-top: 0px;
+	}
+	
+	.buttonPanel .panelQuestion {
+		font-size: 10.5px;
+		font-weight: bold;
+	}
+	
+	.buttonPanel .buttonPanelLinks {
+		margin-top: 10px;
+	}
+
+/* ########################################################################### *
+/* ***** TABLES ***************************************************************
+/* ########################################################################### */
+.products-section-wrapper {
+	font-size: 12px;
+	margin: 0 0 20px 0;
+}
+
+.products-section-wrapper h3 {
+	color: #0C8D63;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.products-section-wrapper .products-section-head {
+	background: url('/static/vmware/modules/evals/img/bg-vsphere-section-head.gif') repeat-x;
+	border: 1px solid #BCBCBC;
+	color: #666;
+	font-weight: bold;
+	height: 15px;
+	margin: 10px 0 0 0;
+	padding: 10px;
+	cursor: pointer;
+}
+	
+.products-section-wrapper .products-section-content {
+	margin: 0;
+}
+
+	.products-section-content.closed,
+	.products-content-binary-wrapper.closed{
+		display: none;
+	}
+	
+	.products-section-content.open,
+	.products-content-binary-wrapper.open{
+		display: block;
+	}
+	
+.products-section-head {
+	background: none;
+	border: none;
+}
+
+.products-content-category {
+	border-left: 1px solid #BCBCBC;
+	border-right: 1px solid #BCBCBC;
+	border-bottom: 1px solid #BCBCBC;
+	padding: 10px;
+}
+
+	.products-content-category-textarea {
+		margin-left: 40px;
+	}
+
+.products-content-binary-wrapper {
+	
+}
+
+	.products-content-binary-wrapper .products-content-binary {
+		padding: 10px 10px 0 40px;
+		border-top: 1px solid #BCBCBC;
+	}
+	
+		.products-content-binary-wrapper .products-content-binary-body {
+			/*float: left;*/
+			width: 60%;			
+		}
+		
+		.products-content-binary-body .binary-fileTitle {
+			font-weight: bold;
+		}
+	
+	.products-content-binary-wrapper .downloadManager {
+		float: right;
+		margin-top: 10px;
+		padding-right: 25px;
+		text-align: left;
+		width: 250px;
+	}
+	.products-content-binary-wrapper .downloadManager .btnWrapper {
+		float:left;
+		text-align: right;
+	}
+	.products-content-binary-wrapper .downloadManagerTooltip {
+		float: left;
+		position: relative;
+		top: 11px;
+		left: 5px;
+	}
+
+		.products-content-binary-wrapper .downloadManager a.button {
+		/*	height: 20px;
+			width: 180px;
+			padding-bottom: 0px;*//* Code commented as part of BUG to vertical align text of the button
+			float: left;*/
+		}
+	
+	.products-content-binary-wrapper .manualDownloadLink {
+		clear: both;
+		padding: 0 0 0 5px;
+		text-align:center;
+	}
+
+.products-section-content table {
+	border: 0;
+	width: 100%;
+	border: 1px solid #D6D6D6;
+	border-top: 0px;
+}
+
+.products-section-content table thead th {
+	border: 0px;
+	color: #666;
+	font-weight: bold;	
+	font-size: 11px;
+	padding: 5px 5px 5px 7px;
+	text-align: left;
+	text-transform: uppercase;	
+	background: #ebebeb; /* Old browsers */
+	background: -moz-linear-gradient(top, #ebebeb 1%, #e5e5e5 50%, #cfcfcf 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ebebeb), color-stop(50%,#e5e5e5), color-stop(100%,#cfcfcf)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ebebeb 1%,#e5e5e5 50%,#cfcfcf 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ebebeb 1%,#e5e5e5 50%,#cfcfcf 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #ebebeb 1%,#e5e5e5 50%,#cfcfcf 100%); /* IE10+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#cfcfcf',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(top, #ebebeb 1%,#e5e5e5 50%,#cfcfcf 100%); /* W3C */
+}
+
+.products-section-content td {
+	text-align: left;
+}
+
+.products-section-content table tbody td {
+	font-size: 12px;
+	border-top: 1px solid #D6D6D6;
+	border-bottom: 0px;
+	color: #333;
+	padding: 7px 0 7px 10px;
+}
+
+	.products-section-content table tbody tr td table td {
+		background-color: #FFF;
+	}
+
+.products-section-content .tdOpenCloseButton {
+	width: 5%;
+}
+
+.products-section-content table tr.more-details td {
+	padding: 0;
+	background: #FFF;
+}
+
+	.products-section-content table tr.more-details table tr td {
+		padding: 0;
+		border-top: 0px solid #E3E6EF;
+		background: #FFF;
+	}
+	
+		.products-section-content table tr.more-details table.child-table tr td table tr td {
+			border-top: none;
+		}
+
+.products-section-content table td table.child-table {
+	border: 0;
+	width: 97%;
+	border-spacing: 0;
+}
+
+	.products-section-content table .more-details table.child-table td {
+		padding: 8px 0px 12px 10px;
+	}
+
+		.products-section-content table .more-details td table tr:first-child td {
+			border-top: 0px;
+		}
+
+
+.products-section-content table table.child-table table {
+	border: 1px solid #e2e3e7;
+	width: 90%;
+}
+
+	.products-section-content table table.child-table table td {
+		padding: 0px 0px 0px 10px;
+	}
+
+
+.products-section-content table tbody td.empty {
+	width: 5%;
+}
+		
+.products-section-content table .productColumn {
+	font-weight: bold;
+	width: 47%;
+	
+}
+
+.products-section-content table .licenseKeyColumn {
+	width: 30%;
+}
+
+.products-section-content table .versionColumn {
+	width: 15%;
+}
+
+.products-section-content table .dateColumn {
+	width: 14%;
+}
+
+#breadcrumbs {
+    color: #CCC !important;
+    font-size: 14px;
+    left: 0;
+    margin: 0;
+    padding: 4px 40px 4px 40px !important;
+    position: absolute;
+    top: 164px;
+    z-index: 0;
+}
+
+/* ########################################################################### *
+/* ***** EULA ***********************************************************
+/* ########################################################################### */
+.simplemodal-container .ctrlHolder {
+    margin-bottom: 15px;
+}
+
+.modalContent .ctrlHolder.error-message label ,
+.modalContent .ctrlHolder.error-message input {
+    color: #990000;
+}
+.simplemodal-container  .modalContent .footer button {
+    height: 28px;
+}
+
+.simplemodal-container  .modalContent .body {
+    padding-top: 0px;
+}
+/* ########################################################################### *
+/* ***** ALERT BOX ***********************************************************
+/* ########################################################################### */
+.alert-box-wrapper {
+	border: 1px #D9DACA solid;
+	background: #FFF9EA;
+	margin: 5px 0px 10px 4px;
+	padding-top: 10px;
+	padding-left: 10px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+	.alert-box-wrapper .alert-box-holder {
+		background: url(img/icon-alert.gif) no-repeat;
+		padding: 10px 10px 10px 60px;
+	}
+
+	.alert-box-holder .alert-title {
+		font-size: 13px;
+		font-weight: bold;
+		color: black;
+	}
+
+/* ########################################################################### *
+/* ***** THIS SECTION IS ONLY FOR THE HTML TEMPLATES. ************************
+/* ########################################################################### */
+
+#content-container.wide{
+	margin-top: -22px !important;
+}
+body #content-container.wide #content.forTemplate {
+	margin: -35px 0 0 -25px !important;
+}
+
+#logon #tab_login.forTemplateLoginTab {
+	min-height: 215px;
+}
+
+#logon #tab_register.forTemplateCreateAccTab {
+	min-height: 245px;
+}
+
+/* Newly Introduced styles to fix CSS issues */
+p.category-description {
+	padding-left: 40px;
+}
+
+#div-intro img{
+	width: 160px !important;	
+}
+#div-intro p{
+	line-height:17px;
+	margin: 0 0 20px !important;
+	padding:0;
+}
+
+/* Error Page UI Changes */
+
+#error-section header h1 {
+    border-bottom: 1px solid #B7B8BA;
+    color: #333333;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 5px;
+}
+
+#error-section p {
+    color: #333333;
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+
+
+.products-section-wrapper .products-section-head-level0 {
+    background: url('/static/vmware/modules/evals/img/bg-vsphere-section-head.gif') repeat-x;
+    border: 1px solid #BCBCBC;
+    color: #666;
+    font-weight: bold;
+    height: 15px;
+    margin: 10px 0 0 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.products-section-head-level0 {
+    background: none;
+    border: none;
+}
+
+.products-section-wrapper .products-section-content-level0 {
+    margin: 0;
+}
+
+.products-section-content-level0.closed,
+.products-content-binary-wrapper.closed{
+    display: none;
+}
+
+.products-section-content-level0.open,
+.products-content-binary-wrapper.open{
+    display: block;
+}
+
+.products-section-content-level0 table {
+    border: 0;
+    width: 100%;
+    border: 1px solid #D6D6D6;
+    border-top: 0px;
+}
+
+.products-section-content-level0 table thead th {
+    border: 0px;
+    color: #666;
+    font-weight: bold;  
+    font-size: 11px;
+    padding: 5px 5px 5px 7px;
+    text-align: left;
+    text-transform: uppercase;  
+    background: #ebebeb; /* Old browsers */
+    background: -moz-linear-gradient(top, #ebebeb 1%, #e5e5e5 50%, #cfcfcf 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ebebeb), color-stop(50%,#e5e5e5), color-stop(100%,#cfcfcf)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ebebeb 1%,#e5e5e5 50%,#cfcfcf 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ebebeb 1%,#e5e5e5 50%,#cfcfcf 100%); /* Opera11.10+ */
+    background: -ms-linear-gradient(top, #ebebeb 1%,#e5e5e5 50%,#cfcfcf 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#cfcfcf',GradientType=0 ); /* IE6-9 */
+    background: linear-gradient(top, #ebebeb 1%,#e5e5e5 50%,#cfcfcf 100%); /* W3C */
+}
+
+.products-section-content-level0 td {
+    text-align: left;
+}
+
+.products-section-content-level0 table tbody td {
+    font-size: 12px;
+    border-top: 1px solid #D6D6D6;
+    border-bottom: 0px;
+    color: #333;
+    padding: 7px 0 7px 10px;
+}
+
+    .products-section-content-level0 table tbody tr td table td {
+        background-color: #FFF;
+    }
+
+.products-section-content-level0 .tdOpenCloseButton {
+    width: 5%;
+}
+
+.products-section-content-level0 table tr.more-details td {
+    padding: 0;
+    background: #FFF;
+}
+
+    .products-section-content-level0 table tr.more-details table tr td {
+        padding: 0;
+        border-top: 0px solid #E3E6EF;
+        background: #FFF;
+    }
+    
+        .products-section-content-level0 table tr.more-details table.child-table tr td table tr td {
+            border-top: none;
+        }
+
+.products-section-content-level0 table td table.child-table {
+    border: 0;
+    width: 97%;
+    border-spacing: 0;
+}
+
+    .products-section-content-level0 table .more-details table.child-table td {
+        padding: 8px 0px 12px 10px;
+    }
+
+        .products-section-content-level0 table .more-details td table tr:first-child td {
+            border-top: 0px;
+        }
+
+
+.products-section-content-level0 table table.child-table table {
+    border: 1px solid #e2e3e7;
+    width: 90%;
+}
+
+    .products-section-content-level0 table table.child-table table td {
+        padding: 0px 0px 0px 10px;
+    }
+
+
+.products-section-content-level0 table tbody td.empty {
+    width: 5%;
+}
+        
+.products-section-content-level0 table .productColumn {
+    font-weight: bold;
+    width: 47%;
+    
+}
+
+.products-section-content-level0 table .licenseKeyColumn {
+    width: 30%;
+}
+
+.products-section-content-level0 table .versionColumn {
+    width: 15%;
+}
+
+.products-section-content-level0 table .dateColumn {
+    width: 14%;
+}
+
+/* #####################################################
+   ########	Changes for CR-00016824 - Start ############
+   ##################################################### */
+
+.langPromo {
+	background: url(/static/vmware/modules/evals/img/bg_desc.png) no-repeat; 
+	padding:0 0 20px 30px;
+	color:#fff;
+	height:31px;
+	line-height:31px; 
+	width:401px; 
+	font-weight:bold;	
+}
+
+.noLink {
+	font-weight:bold; 
+	color: #FFFFFF; 
+	text-decoration:none !important;
+}
+
+.tryflex{background:url(/static/vmware/modules/evals/img/bg_descleft.png) no-repeat left top; padding:0 10px 0 30px;color:#fff;height:31px;line-height:31px; font-weight:bold;float:left;border-radius: 7px 7px 7px 7px;background-size: 100% 100%;}
+.rightpad{height:50px;line-height:31px;}
+.tryflex a{color:#fff;}
+
+
+/* #####################################################
+   ########	Changes for CR-00016824 - End ############
+   ##################################################### */
+
+
+/* ############################ Redesign changes ############################ */
+
+#content #main .evalloginbox {
+	float: right;
+	width: 330px;
+	background: none repeat scroll 0 0 #E6E6E6;
+	margin: 20px 0px 0px 0px !important;
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#content #main .evalloginbox #tabinfobox.inner {
+    background: none repeat scroll 0 0 #E6E6E6;
+    float: none;
+    margin: 0;
+    padding: 14px 0 10px;
+    width: 330px;
+}
+
+#content #main .evalloginbox #tabinfobox.inner p.welcome{
+	color: #666;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    padding-top: 8px !important;
+    margin-top: 0 !important;
+}
+
+#content #main .evalloginbox #tabinfobox.inner p.name {
+    color: #0095D3;
+    font-size: 32px !important;
+    font-weight: 300;
+    line-height: 45px;
+    padding-bottom:10px !important;
+    margin-top: 0 !important;
+}
+
+#content #main .evalloginbox #tabinfobox.inner p.eval_dashboard_link{margin-top: 0 !important}
+
+#content #main .evalloginbox #tabinfobox p {
+	padding: 0 0 0 20px !important;
+	margin-top: 10px !important;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+#content #main .evalloginbox #tabinfobox p button.primary{
+	width:140px;
+	height:31px;
+}
+#content #main .evalloginbox #tabinfobox div.line{margin:5px 5px 5px 20px;width:287px;}
+#content #main .evalloginbox #tabinfobox .eval_dashboard_link{padding:5px 0 !important;}
+#content #main .evalloginbox #tabinfobox .eval_dashboard_link a{
+	font-size: 15px;
+	font-weight: 400;
+}
+
+#content #main .evalloginbox #tabinfobox p#eval-not-registered-msg {
+	color: #666666;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px !important;
+}
+
+#content #main .evalloginbox #tabinfobox p#eval-not-registered-link {
+    font-size: 15px;
+    margin-top: 5px !important;
+}
+
+#content #main .evalloginbox .strip{padding:0 24px 0 20px !important;margin-bottom: 20px;}
+
+.ie8 #content #main .evalloginbox #tabinfobox p, .ie7 #content #main .evalloginbox #tabinfobox p,
+.ie8 #content #main .evalloginbox .note, .ie7 #content #main .evalloginbox .note{font-size: 14px;}
+.ie8 #content #main .evalloginbox .day, .ie7 #content #main .evalloginbox .day{font-size: 36px;}
+/* ########################################################################## */

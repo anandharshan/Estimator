@@ -1,0 +1,103 @@
+table  th.sorting, table th.sorting_asc, table th.sorting_desc{cursor:pointer;}
+table  th.sorting { background:none;}
+table th.sorting_asc  {background: url("img/drop_up_arrow.png") no-repeat scroll right 5px transparent;}
+table th.sorting_desc  {background: url("img/drop_down_arrow.png") no-repeat scroll right 5px transparent;}
+
+.dataTables_wrapper table.scrollableTable td button.secondary{
+	 padding:1px 4px 0 5px;
+}
+
+div.addRow{
+	margin-top:10px;
+}
+
+/*Added on 20/9/2011*/
+.example_alt_pagination div.dataTables_info {
+    width: 40%;
+}
+
+.dataTables_info {
+    float: right;
+    font-size: 12px;
+    line-height: 24px;
+    padding-right: 20px;
+    width: auto;
+}
+
+.dataTables_paginate {
+    float: right;
+    text-align: right;
+    width: 44px;
+}
+
+.paging_full_numbers {
+    height: 22px;
+    line-height: 22px;
+    width: auto;
+}
+
+.paging_full_numbers span.paginate_button, .paging_full_numbers span.paginate_active {
+    cursor: pointer;
+    padding: 2px 5px;
+	font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+	color: #3399CC
+}
+
+.paging_full_numbers span.paginate_active {
+    color:#fff;
+	background:url("../../../common/css/img/search_results_page_number.png") no-repeat scroll 0 0 transparent
+}
+
+.clear{
+	clear:both;
+}
+
+.dataTables_length {
+    float: left;
+    width: auto;
+}
+	
+	.dataTables_length label{
+		font-weight:bold;
+	}
+
+table.display {
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.dataTables_wrapper .top{
+	padding:10px 0;
+}
+
+.dataTables_wrapper .bottom{
+	padding:10px 0;
+}
+
+div.addRow div div.error{
+	float: none;
+	padding:0;
+	margin:0
+}
+
+div.addRow div{
+	padding:9px;
+}
+
+div.addRow div.button button{
+	margin-top:0px;
+	margin-left:5px;
+}
+
+div.addRow div.i-wrapper{
+	padding:9px;
+	float:left;
+	width:16%
+}
+
+div.addRow div.i-wrapper select{
+	width:100%
+}

@@ -1,0 +1,52 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	a:hover{text-decoration: none;}
+}
+
+// To set specific Starlight Headings line-height and color 
+h1, .h1 { line-height: $line-height-h1; color: $color-h1; font-family: $font-family-proxima-nova-light; }
+h2, .h2 { line-height: $line-height-h2; color: $color-h2;}
+h3, .h3 { line-height: $line-height-h3; color: $color-h3; font-family: $font-family-proxima-nova-semibold;}
+h4, .h4 { line-height: $line-height-h4; color: $color-h4; font-family: $font-family-proxima-nova-semibold;}
+h5, .h5 { line-height: $line-height-h5; color: $color-h5; font-family: $font-family-proxima-nova-semibold;}
+h6, .h6 { line-height: $line-height-h6; color: $color-h6; font-weight: 600;}
+
+// To set specific Starlight Anchor tags headings color 
+h1 a,  h1 a:hover, a.h1, a.h1:hover {color: $color-h1-a;}
+h2 a,  h2 a:hover, a.h2, a.h2:hover {color: $color-h2-a;}
+h3 a,  h3 a:hover, a.h3, a.h3:hover {color: $color-h3-a;}
+h4 a,  h4 a:hover, a.h4, a.h4:hover {color: $color-h4-a;}
+h5 a,  h5 a:hover, a.h5, a.h5:hover {color: $color-h5-a;}
+h6 a,  h6 a:hover, a.h6, a.h1:hover {color: $color-h6-a;}
+
+//To set new Intro Text and Alternate Intro Text. Both classes are new
+.intro-text, .alt-intro-text{ color: $color-intro; }
+
+.intro-text {
+	font-family: $font-family-proxima-nova-light;
+	font-size: $font-size-intro;
+	line-height: $line-height-intro;
+}
+
+.alt-intro-text{
+	font-family: $font-family-proxima-nova-light;
+	font-size: $font-size-alt-intro;
+	line-height: $line-height-alt-intro;
+}
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul, ol {
+	list-style-type: 	disc;
+	padding-left: 		floor(($font-size-base * 1.1)); // ~17px
+}

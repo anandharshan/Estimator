@@ -1,0 +1,30 @@
+{
+    "new": {
+        "DAAS-SERVICE|TERM COMMITMENT": "VMware Horizon DaaS",
+        "VC-HYBRID-SERVICE|TERM COMMITMENT": "VMware vCloud Hybrid Service",
+        
+        "MGMT-BUSINESS-UNIT|TERM COMMITMENT": null
+    },
+    "add-on": {
+        "DAAS-SERVICE|TERM COMMITMENT": "VMware Horizon DaaS",
+        "VC-HYBRID-SERVICE|TERM COMMITMENT": "VMware vCloud Hybrid Service",
+        
+        "MGMT-BUSINESS-UNIT|TERM COMMITMENT": null
+    },
+    "renewal": {
+        "DAAS-SERVICE|TERM COMMITMENT": "VMware Horizon DaaS",
+        "VC-HYBRID-SERVICE|TERM COMMITMENT": "VMware vCloud Hybrid Service",
+        
+        "MGMT-BUSINESS-UNIT|TERM COMMITMENT": null
+    },
+	"header": {
+        "eaAccountName": "qatest1436",
+        "eaAccountNumber": "313377584",
+        "fundName": "GRP10009_name",
+        "fundGroupId": "GRP10009",
+        "balance": "1260000",
+        "redemptionCurrency": "USD",
+        "redemptionCurrencySymbol": "$",
+        "isXaasFund" : "1"
+    }
+}

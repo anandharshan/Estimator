@@ -1,0 +1,10 @@
+<article id="progressBarWrapper" ng-if="showProgressBar">
+    <div class="progressBar"> 
+		<ol>                   
+            <li class="{{(step.link == currState) && 'active' || ''}}" ng-repeat="step in steps">
+            	<span ng-if="$last == false" class="icons-progress-{{$index+1}}{{(step.link == currState) && '-active' || '-inactive'}}"></span>
+            	<span ng-if="$last == true" class="icons-progress-check{{(step.link == currState) && '-active' || '-inactive'}}"></span>{{step.linkText}}
+            </li>                               
+        </ol> 
+    </div>
+</article>

@@ -1,0 +1,372 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  evaluations.css
+ * ##### VERSION: v0.2
+ * ##### UPDATED: 06/15/2011
+ * ##### AUTHOR: Deloitte Consulting LLP (Shiva Ete)
+/* ########################################################################### *
+
+  _    ____  ___                        
+ | |  | |  \/  |                        
+ | |  | | .  . |__      ____ _ _ __ ___ 
+ | |/\| | |\/| |\ \ /\ / / _` | '__/ _ \
+ \  /\  / |  | | \ V  V / (_| | | |  __/
+  \/  \/\_|  |_/  \_/\_/ \__,_|_|  \___|
+ 
+
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. MY EVALUATIONS CONTENT
+ * ##    - Start Evaluations Banner
+ * ##    - Alerts
+ * ##    - Tables
+/* ########################################################################### */
+
+
+/* ########################################################################### *
+/* ##### MY EVALUATIONS CONTENT
+/* ########################################################################### */
+span.textRed {
+	font-size: 10px;
+}
+
+#content-section section.renewal-info h2 {
+	padding-bottom: 5px;
+	position: relative;
+	border-bottom: #B7B8BA 1px solid;
+	margin-bottom: 30px;
+}
+
+#content-section section.portlet .header {
+	background: #2F2F32 url(img/bg_filter_header.jpg) repeat-x;
+	color: white;
+	height: 38px;
+}
+
+#content-section section.portlet .header h2 {
+	font-size: 20px;
+	font-weight: normal;
+	padding: 5px 14px;
+	border-top: 1px solid white;
+	color: white;
+}
+
+.activitiesLog .emptyHeader {
+	font-size:16px !important; 
+	color:#666 !important;
+	margin-top: 45px;
+	text-align: center;
+}
+
+.activitiesLog p {
+	line-height: 16px;
+	margin-top: 15px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.activitiesLog p.evalButton {
+	text-align: right;
+}
+
+.input-wrapper textarea {
+	width: 450px;
+}
+
+.input-wrapper .note {
+	font-size: 12px;
+	font-style: italic;
+}
+
+.quote-request-header-wrapper {
+    float: left;
+    margin-right: 10px;
+    padding: 10px;
+    width: 390px;
+}
+
+.quoteFieldName {
+	width: 250px;
+	word-wrap: break-word;
+}
+#content-section form .buttons {
+	margin-right: 180px;		
+}
+
+.productColumn{
+	width:240px;
+}
+
+.longPoductColumn{
+	width:350px;
+}
+
+
+.licenseKeyColumn{
+	width:130px;
+}
+
+.dateColumn{
+	width:160px;
+}
+
+#content-container .tdOpenCloseButton{
+	width: 12px;
+	text-align: center;
+	padding-left:7px;
+	padding-top: 7px;
+}
+
+.longDateColumn{
+	width:230px;
+}
+
+.buttonsColumn{
+	width: auto;	
+}
+
+.longButtonsColumn{
+	width: auto;
+	text-align:right;
+	padding-right:0 !important;
+}
+
+.buttonsColumn-oneBtn{
+	width: 180px;	
+	text-align:center;
+}
+
+.buttonPanel{
+  padding:14px 10px;
+  text-align:right;  
+} 
+
+  .buttonPanel .buttonPanelLabel{
+    float:left;
+    text-align:left;
+    font-size:10px;
+    width:300px;
+    margin-left:370px;
+
+  }
+  .buttonPanel .panelQuestion{
+    font-size:10.5px;
+    font-weight:bold;
+  }
+
+.column-wrapper h1 {
+	font-size: 20px;
+	font-weight: normal;
+	/*margin-bottom: 10px;
+	margin-top: 10px;*/
+}
+
+/* ##### Start Evaluations Banner (Top Right) ##### */
+#content .start-eval-wrapper {
+	position: relative;
+	float: right;
+	/*width: 320px;*/
+	margin: 0 0 10px 10px;
+ 	background: none;
+	border: 0;
+	/*-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px;	*/
+	min-height: 100px;
+}
+
+	#content .start-eval-wrapper .start-eval-content {
+		font-size: 12px;
+		margin:0px;
+		padding:0px;
+	}
+	#content .start-eval-wrapper .start-eval-content ul{
+		margin:0px;
+		padding:0px;
+	}
+	#content .start-eval-wrapper .start-eval-content ul li{
+		list-style:none;
+		background:none;
+		padding:0px;
+	}
+	.start-eval-content  h3 {
+		font-size: 16px;
+		margin-bottom: 5px;
+	}
+	
+	.start-eval-content p {
+		margin-bottom: 10px;		
+	}
+		
+.start-eval-wrapper .start-eval-nav {
+	float: right;
+	margin: 20px 7px 0 0;	
+}
+
+/* ##### Alerts ##### */
+/*#content .alerts-container {
+	padding-top: 10px;
+}*/
+
+	.alerts-container .alerts-icon {
+		float: left;
+		margin-left:12px;
+		
+	}
+
+/* ##### TABLES ##### */
+
+#content-container table td.buttonsColumn {
+	padding: 5px 0px 5px 15px;
+}
+
+#content-container .alerts-container table{
+	width: 100%;	
+	float: left;
+	font-size: 12px;
+}
+
+	#content-container .alerts-container table td  {
+		padding: 10px 15px;
+		color: #666;
+	}
+
+.ie7 #content-container table td.productName,
+.ie8 #content-container table td.productName {
+	width: 270px;
+}
+
+
+#content-container .tabbed_area .activitiesLog table .more-details table{
+	margin-left:0;
+	width: 100%;
+}
+#content-container .tabbed_area .activitiesLog table .more-details table thead th{
+	padding:10px 5px 10px 15px;
+	font-weight: bold;
+	line-height: 12px;
+}
+#content-container .tabbed_area .activitiesLog table .more-details table td{
+	padding:0 0 10px 15px;
+	line-height: 12px;
+}
+#content-container .tabbed_area .activitiesLog table .more-details table tr:last-child td{
+	padding:0 0 15px 15px;
+	line-height: 12px;
+}
+#content-container table tr.more-details td {
+	padding: 0px;
+}
+
+td.alert_text {
+	width: 450px;
+}
+
+td.alert_date {
+	width: 150px;
+}
+
+td.ext_link {
+	width: 150px;
+}
+
+.solid-border .spacer{
+	width:20px;
+}
+
+#content-container .filter-section .filter-header ul li:first-child{
+	padding-left: 0;
+}
+#content-container .filter-section .filter-header .expand-collapse span{
+	margin-right:15px;
+}
+#content-container table td{
+	word-wrap: break-word;
+	padding: 10px 5px 10px 15px;
+}
+#content-container table td table thead{
+	border:0;
+}
+#content-section table .productDetailCol{
+	width:31%;
+}
+#content-section table .productExpired{
+	width:30%;
+}
+
+.ie8 #content-section table .productExpired,
+.ie9 #content-section table .productExpired {
+	width:30%;
+}
+#content-section table .expiryDetailCol{
+	width:80px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#content-section table .productDetailCol{
+		width:415px;
+	}
+	#content-section table .productExpired{
+		width:345px;
+	}
+}
+
+.chrome #content-section table .productDetailCol{
+	width:31%;
+}
+.chrome #content-section table .productExpired{
+	width:30%;
+}
+
+#content-container .tabbed_area .activitiesLog.solid-border table td.buttonsColumn{
+	text-align:right;
+	width: auto;
+}
+#content-container .tabbed_area .activitiesLog table .more-details table .productDetailCol{
+	width:300px !important;
+	/*vertical-align: middle;*/
+}
+#content-container .tabbed_area .activitiesLog table td button{
+	margin: 0px 0 0px 2px !important;
+	min-width:100px;
+}
+.ie7 #reqReason,
+.ie8 #reqReason{
+	width: 450px !important;
+}
+/*Fix for BUG-00051827*/
+.mydownloadText{
+    float: left;
+    width: 78%;
+}
+.mydownloadSelect{
+    float: right;
+}
+.mydownloadSelect .eaInputWrapper{
+    width: 203px !important;
+}
+.mydownloadSelect .eaInputWrapper input.optionsHolder{
+    width: 193px !important;
+}
+.alignLeftTable{
+    float: left;
+    width: 60%;
+}
+.alignCarousel{
+    float:right; 
+    width:330px;
+    margin-top:34px !important;
+}
+
+.chrome.mac .eaInputWrapper input.optionsHolder, 
+.chrome.mac .eaInputWrapper input.optionsHolder:focus,
+.safari.mac .eaInputWrapper input.optionsHolder, 
+.safari.mac .eaInputWrapper input.optionsHolder:focus{
+	padding: 7px 0 6px 4px !important;
+}
+
+#eaDropDownOpts a.dropdownOpt.selectedOpt {
+    color: #FFFFFF !important;
+}

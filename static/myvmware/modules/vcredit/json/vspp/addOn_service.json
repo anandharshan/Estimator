@@ -1,0 +1,143 @@
+{
+    "wrapper": {
+        "account": "313377584-qatest1436",
+        "fundName": "GRP10006",
+        "commitInfo": {
+            "name": "VSPP Air Identifier",
+            "id":"XXX",
+            "threshold":"500",
+            "currentConsumption":"10000.32",
+            "commitLevel":"20000",
+            "redemptionCurrency": "USD",
+            "redemptionCurrencySymbol": "$"
+        },
+        "services": [
+            {
+                "id": "M814137673",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "US - Nevada",
+                "term": "2016-09-10",
+                "remaining": "23 Months & 29 Days",
+                "cost": "1052.083333333333333333333333333333333333",
+                "msrp": "1052.083333333333333333333333333333333333"
+            },
+            {
+                "id": "M321725827",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "N/A",
+                "term": null,
+                "remaining": null,
+                "cost": "0",
+                "msrp": "0"
+            },
+            {
+                "id": "M480561928",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "US - Nevada",
+                "term": "2016-09-10",
+                "remaining": "23 Months & 29 Days",
+                "cost": "1052.083333333333333333333333333333333333",
+                "msrp": "1052.083333333333333333333333333333333333"
+            },
+            {
+                "id": "M537787991",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "US - Nevada",
+                "term": "2016-09-10",
+                "remaining": "23 Months & 29 Days",
+                "cost": "1052.083333333333333333333333333333333333",
+                "msrp": "1052.083333333333333333333333333333333333"
+            },
+            {
+                "id": "M821700201",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "US - Nevada",
+                "term": "2014-10-10",
+                "remaining": "0 Months & 28 Days",
+                "cost": "1169",
+                "msrp": "1169"
+            },
+            {
+                "id": "M278719948",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "APAC - Japan",
+                "term": "2015-09-09",
+                "remaining": "11 Months & 28 Days",
+                "cost": "8592.5",
+                "msrp": "8592.5"
+            },
+            {
+                "id": "M926456292",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "US - Nevada",
+                "term": "2016-09-10",
+                "remaining": "23 Months & 29 Days",
+                "cost": "1052.083333333333333333333333333333333333",
+                "msrp": "1052.083333333333333333333333333333333333"
+            },
+            {
+                "id": "M110299227",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "US - Nevada",
+                "term": "2016-09-10",
+                "remaining": "23 Months & 29 Days",
+                "cost": "1052.083333333333333333333333333333333333",
+                "msrp": "1052.083333333333333333333333333333333333"
+            },
+            {
+                "id": "M960992935",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "US - Nevada",
+                "term": "2016-09-10",
+                "remaining": "23 Months & 29 Days",
+                "cost": "1052.083333333333333333333333333333333333",
+                "msrp": "1052.083333333333333333333333333333333333"
+            },
+            {
+                "id": "M763054447",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "US - Nevada",
+                "term": "2016-09-09",
+                "remaining": "23 Months & 28 Days",
+                "cost": "7735.5",
+                "msrp": "7735.5"
+            },
+            {
+                "id": "M271116134",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "N/A",
+                "term": null,
+                "remaining": null,
+                "cost": "0",
+                "msrp": "0"
+            },
+            {
+                "id": "M484042115",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "US - Nevada",
+                "term": "2015-09-10",
+                "remaining": "11 Months & 29 Days",
+                "cost": "1237",
+                "msrp": "1237"
+            },
+            {
+                "id": "M651975829",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "N/A",
+                "term": null,
+                "remaining": null,
+                "cost": "0",
+                "msrp": "0"
+            },
+            {
+                "id": "M122655108",
+                "type": "VMware vCloud Hybrid Service",
+                "region": "US - Nevada",
+                "term": "2015-09-09",
+                "remaining": "11 Months & 28 Days",
+                "cost": "1098.833333333333333333333333333333333333",
+                "msrp": "1098.833333333333333333333333333333333333"
+            }
+        ]
+    }
+}

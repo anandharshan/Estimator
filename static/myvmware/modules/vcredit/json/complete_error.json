@@ -1,0 +1,8 @@
+{
+    "ERROR": [
+        {
+            "error_code": "12345",
+            "error_msg": "This is the error message"
+        }
+    ]
+}

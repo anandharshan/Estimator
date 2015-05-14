@@ -1,0 +1,132 @@
+{
+    "wrapper": {
+        "addOnServices": [
+            {
+                "name": "Compute",
+                "description": [
+                    "VMware vCloud Hybrid Service - Virtual Private Cloud A1A - Compute Subscription",
+                    "US - Nevada Data Center - 5 GHz vCPU 20GB vRAM. Must be ordered with Production Support"
+                ],
+                "duration": [
+                    "Prepaid",
+                    "Monthly",
+                    "Annual"
+                ],
+                "cost": "800",
+                "MSRP": "900",
+                "currency" : "$",
+                "support": [
+                    {
+                        "name": "Production Support Subscription",
+                        "description": "Technical Support, 24 Hour Sev 1 Support - 7 days a week."
+                    }
+                ]
+            },
+            {
+                "name": "Storage",
+                "description": [
+                    "VMware vCloud Hybrid Service - Virtual Private Cloud A1A - SSD-Accelerated Storage Subscription",
+                    "US - Nevada Data Center - 2 TB SSD-Accelerated Storage"
+                ],
+                "duration": [
+                    "Prepaid",
+                    "Monthly",
+                    "Annual"
+                ],
+                "cost": "400",
+                "MSRP": "450",
+                "currency" : "$"
+            },
+            {
+                "name": "Bandwidth",
+                "description": [
+                    "VMware vCloud Hybrid Service - Virtual Private Cloud A1A - SSD-Accelerated Storage Subscription",
+                    "US - Nevada Data Center - 2 TB SSD-Accelerated Storage"
+                ],
+                "duration": [
+                    "Prepaid",
+                    "Monthly",
+                    "Annual"
+                ],
+                "cost": "100",
+                "MSRP": "150",
+                "currency" : "$"
+            },
+            {
+                "name": "IP",
+                "description": [
+                    "VMware vCloud Hybrid Service - Virtual Private Cloud A1A - SSD-Accelerated Storage Subscription",
+                    "US - Nevada Data Center - 2 TB SSD-Accelerated Storage"
+                ],
+                "duration": [
+                    "Prepaid",
+                    "Monthly",
+                    "Annual"
+                ],
+                "cost": "560",
+                "MSRP": "600",
+                "currency" : "$"
+            },
+            {
+                "name": "Standard Storage",
+                "description": [
+                    "VMware vCloud Hybrid Service - Virtual Private Cloud A1A - SSD-Accelerated Storage Subscription",
+                    "US - Nevada Data Center - 2 TB SSD-Accelerated Storage"
+                ],
+                "duration": [
+                    "Prepaid",
+                    "Monthly",
+                    "Annual"
+                ],
+                "cost": "350",
+                "MSRP": "400",
+                "currency" : "$"
+            },
+            {
+                "name": "Data Protection",
+                "description": [
+                    "VMware vCloud Hybrid Service - Virtual Private Cloud A1A - SSD-Accelerated Storage Subscription",
+                    "US - Nevada Data Center - 2 TB SSD-Accelerated Storage"
+                ],
+                "duration": [
+                    "Prepaid",
+                    "Monthly",
+                    "Annual"
+                ],
+                "cost": "100",
+                "MSRP": "150",
+                "currency" : "$"
+            },
+            {
+                "name": "Direct Connect",
+                "description": [
+                    "VMware vCloud Hybrid Service - Virtual Private Cloud A1A - SSD-Accelerated Storage Subscription",
+                    "US - Nevada Data Center - 2 TB SSD-Accelerated Storage"
+                ],
+                "duration": [
+                    "Prepaid",
+                    "Monthly",
+                    "Annual"
+                ],
+                "cost": "50",
+                "MSRP": "60",
+                "currency" : "$"
+            },
+            {
+                "name": "More Solutions and Services",
+                "description": [
+                    "VMware vCloud Hybrid Service - Virtual Private Cloud A1A - SSD-Accelerated Storage Subscription",
+                    "US - Nevada Data Center - 2 TB SSD-Accelerated Storage"
+                ],
+                "duration": [
+                    "Prepaid",
+                    "Monthly",
+                    "Annual"
+                ],
+                "cost": "200",
+                "MSRP": "300",
+                "currency" : "$"
+            }
+        ]
+    }
+}

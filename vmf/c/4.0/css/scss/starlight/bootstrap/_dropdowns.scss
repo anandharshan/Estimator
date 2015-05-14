@@ -1,0 +1,125 @@
+//Starlight dropdowns
+.starlight{
+	.dropdown-menu {
+	font-size: 14px;
+	min-width: 200px;
+	margin-top: 0px;
+	border-radius:2px;
+	padding: 5px 0 0;
+	box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.5);
+	.drop-cont {
+		overflow: hidden;
+		ul {
+			white-space: nowrap;
+			list-style-type: none;
+			padding-left: 0px;
+			margin-bottom: 2px;
+			li{
+				padding:0 20px 0 10px;
+				min-height:20px;
+				&:hover{
+					background-color:$starlight-bg-blue;
+				}
+				&.item-no-hover:hover{
+            		background-color: transparent !important;
+        		}
+        		&.indent-left{
+		            padding-left:33px !important;
+		        }
+		        input.hasDatepick{
+					margin-left: -4px;
+				}
+				.form-control{
+					height: 28px;
+					font-size: 14px;
+					padding:3px 10px;
+				}
+				.icons-icn_info{
+					vertical-align: text-top;
+				}
+			}
+			li.divider{
+				min-height: 0;
+			}
+			label {
+				.drop-add-info{
+					margin-left: 5px;
+					color:#999;
+				}
+			}
+		}
+		label {
+			font-family: inherit;
+			font-weight: 400;
+			line-height: 18px;
+			vertical-align: middle;
+		}
+		input {
+			margin-right: 10px;
+		}
+		.drop-add-cont{
+			padding:0 20px;
+			margin-bottom: 15px;
+		}
+		.drop-cust-cont{
+			white-space: nowrap;
+			margin-top: 5px;
+			padding:0 20px 0 10px;
+			width:100%;
+			label{
+				margin-right: 20px;
+			}
+			ul{
+				li {
+					overflow: hidden;
+					padding:0;
+					label{
+						margin-right: 10px;
+						float:left;
+						margin-top: 5px;
+					}
+					input[type="text"]{
+						float:right;
+						margin-bottom: 5px;
+						width:72%;
+					}
+				}
+			}
+		}
+	} 
+	.drop-foot {
+		font-family: $font-family-proxima-nova-semibold;
+		background-color:#F6F6F6;
+		font-size: 14px;
+		padding: 10px 20px 0;
+		overflow: hidden;
+		min-height: 40px;
+		margin-top: 10px;
+	}
+	.drop-cust-cont{
+		white-space: nowrap;
+		margin-top: 5px;
+		padding:0 20px;
+		label{
+			margin-right: 20px;
+		}
+		li {
+			padding:0;
+			label{
+				margin-right: 10px;
+				float:left;
+				margin-top: 5px;
+			}
+		}
+		input[type="text"]{
+			float:right;
+			margin-bottom: 5px;
+		}
+	}
+	
+	li a:hover{
+		background-color: #E1F2F7;
+	}
+	
+}	
+}

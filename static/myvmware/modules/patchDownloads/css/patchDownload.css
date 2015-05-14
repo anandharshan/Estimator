@@ -1,0 +1,148 @@
+#content-section .patchSearchPage h2 {color: #0C8D63; font-size: 22px;font-weight: normal;margin: 0 0 16px;}
+.patchSearchPage .noteHdr {font-weight: bold;margin-right: 5px;color: #f00}
+.patchSearchPage .backLink {  font-weight: bold;font-size: 14px;}
+.patchSearchPage .downloadBtn {margin-left: 0 !important;}
+/*button.downloadBtn, .downloadLnk, .downloadLnk:hover,button.downloadBtn:visited, .downloadLnk:visited{
+  background: rgb(41,154,11) !important; 
+  background: -moz-radial-gradient(center, ellipse cover, rgba(41,154,11,1) 0%, rgba(53,153,26,1) 46%, rgba(53,153,26,1) 100%) !important;
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(41,154,11,1)), color-stop(46%, rgba(53,153,26,1)), color-stop(100%, rgba(53,153,26,1))) !important; 
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(41,154,11,1) 0%, rgba(53,153,26,1) 46%, rgba(53,153,26,1) 100%) !important;
+  background: -o-radial-gradient(center, ellipse cover, rgba(41,154,11,1) 0%, rgba(53,153,26,1) 46%, rgba(53,153,26,1) 100%)!important; 
+  background: -ms-radial-gradient(center, ellipse cover, rgba(41,154,11,1) 0%, rgba(53,153,26,1) 46%, rgba(53,153,26,1) 100%) !important; 
+  background: radial-gradient(ellipse at center, rgba(41,154,11,1) 0%, rgba(53,153,26,1) 46%, rgba(53,153,26,1) 100%) !important; 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#299a0b', endColorstr='#35991a', GradientType=1 ) !important; 
+}*/
+.downloadLnk{
+  border-radius: 3px 3px 3px 3px !important;color: #FFF;cursor: pointer;font-size: 11px;font-weight: bold;float:left;text-decoration: none !important;
+ text-shadow: none;padding: 5px 10px !important;/*BUG-00065472*/
+}
+.downloadBtn.disabled, .downloadLnk.disabled{font-family: inherit;background: #b9b9b9 !important;
+background: -moz-linear-gradient(top, #cccccc 0%, #b9b9b9 100%) !important; 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #b9b9b9)) !important;background-image: -ms-linear-gradient(top, #cccccc, #b9b9b9);background-image: -o-linear-gradient(top, #cccccc, #b9b9b9) !important;
+filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#cccccc, endColorstr=#b9b9b9) !important;color: #FFF;text-decoration: none;cursor: default;}
+.downloadLnk:hover, .downloadLnk:visited{color:#fff !important; padding: 5px 10px !important;/*BUG-00065472*/}
+.patchSearchPage .disabled {font-family: inherit;background: #b9b9b9;background: -moz-linear-gradient(top, #cccccc 0%, #b9b9b9 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #b9b9b9));background-image: -ms-linear-gradient(top, #cccccc, #b9b9b9);background-image: -o-linear-gradient(top, #cccccc, #b9b9b9);filter: progid:DXImageTransform.Microsoft.gradient(enabled='true', startColorstr=#cccccc, endColorstr=#b9b9b9);color: #FFF;text-decoration: none;cursor: default;
+}
+.patchSearchPage .key {font-weight: bold;margin-right: 5px;}
+.patchSearch em {font-weight: bold;margin-left: 5px;  color: #f00;display: inline-block;font-size: 16px;}
+.patchSearchPage table td { background: #fff !important;border-left: 1px solid #ccc !important;padding-bottom: 0 !important;}
+.patchSearchPage .odd td {background: #fff !important;border-bottom: 1px solid #ccc !important;}
+.patchSearchPage .even td {background: #eee !important;border-bottom: 1px solid #ccc !important;}
+.patchSearchPage .subList{margin:0;padding:0}
+.patchSearchPage .subList .super span{margin:0 0 8px;display:block;}
+.patchSearchPage .twoRowTh{padding-left:0 !important;padding-right:0 !important;width:20% !important;}
+
+.patchSearchPage .requires{border-top:1px solid #252525;display: block; margin-top: 2px;}
+.patchSearchPage table tr td.subTblTd{padding:0px !important;margin:0px;}
+.patchSearchPage .subList td{border:1px solid #ccc !important;border-top:0 !important;border-right:0 !important;background:none !important;}
+.patchSearchPage .subList td:first-child{border-left:0 !important;}
+.patchSearchPage .subList tr:last-child td{border-bottom:0 !important;}
+.patchSearchPage .prodCheck {margin-right: 3px;}
+.patchSearch {  margin: 0 0 15px;}
+.patchSearch span { vertical-align: middle; position: relative;}
+.patchSearch span, .patchSearch button {vertical-align: middle;display:inline-block;}
+.patchSearch .errInst {position: absolute;top: 20px;left: 0;color: #F00;}
+.patchSearch .long {width: 220px;}
+.patchSearch .mid {width: 180px;}
+.patchSearch .short {width: 158px;}
+.checkDependent input, .checkDependent label {vertical-align: middle;margin-right: 5px;}
+.patchSearchPage h3.error_message {color: #f00 !important;font-weight: normal !important}
+.eaSelector {float: left !important;  margin:0px 20px 0px 0px !important;padding: 0px !important;border: 0px !important;font-size: 11px;}
+#content-section {background: #fff !important;}
+#patchPortalDownload table p, #patchPortalDownload table td{word-wrap: break-word !important;padding:0px !important;}
+.inputsDiv {padding: 20px 0px 0px 0px;}
+.inputsDiv input {padding: 5px 10px 5px 5px;border: 1px solid #ccc;margin: 0 20px 10px 0;width:173px !important;}
+.disabledText {color: #999 !important;}
+.enabledText {color: #000;}
+#releaseDate {margin-right: 0px !important;}
+a.dp-choose-date{padding-right: 13px !important;}
+/*.categoryPanel {  float: left;width: 200px;background: #fff;border: 1px solid #ccc;position: absolute;margin: 20px 0px 0px -83px;padding: 10px 0px 0px 0px;z-index: 999;}*/
+.categoryPanel ul li input {margin: 0px 10px 0px 0px;}
+.categoryPanel ul li {list-style: none !important;padding: 4px 0 4px 15px !important;background:none !important;}
+#filterLink{float:left;margin:10px 0px 0px 0px;font-weight:bold;text-decoration:none;}
+/*.simplemodal-container{background:#FFF;padding: 20px;}*/
+.btnCancel {
+  border: 1px solid #4FB8DC;
+  background: #fafafa; 
+  background: -moz-linear-gradient(top, #fafafa 1%, #f5f5f5 100%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fafafa), color-stop(100%, #f5f5f5)); 
+  background: -webkit-linear-gradient(top, #fafafa 1%, #f5f5f5 100%); 
+  background: -o-linear-gradient(top, #fafafa 1%, #f5f5f5 100%); 
+  background: -ms-linear-gradient(top, #fafafa 1%, #f5f5f5 100%); 
+  background: linear-gradient(to bottom, #fafafa 1%, #f5f5f5 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#f5f5f5', GradientType=0 ); 
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px 3px 3px 3px !important;
+  color: #4FB8DC;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 5px 0 5px 2px !important; 
+  padding: 4px 15px;
+  text-decoration: none !important;
+  text-shadow: none;
+  margin-left: 10px;
+}
+.btnBlock { float: right; margin: 0px 13px 20px 0px;}
+/*#patchPortalDownload{float:none;width:100%;}*/
+#patchPortalDownload .leftPanel{float: left;width: 83%; margin-right: 20px;}
+.ie8 #patchPortalDownload .leftPanel{width: 82%;}
+#patchPortalDownload .rightPanel{float: right;width:13%;}
+#patchPortalDownload .rightPanel h1{border-bottom: 1px solid #BEBFC0;margin-bottom: 15px;}
+.dropdownOpts{-moz-border-radius: 3px;-webkit-border-radius: 3px;-khtml-border-radius: 3px;border-radius:3px}
+ a.dropdownOpt{padding:5px 25px;color:#4D4E53}
+
+ a.dropdownOpt.selectedOpt{color:#fff !important;background:#0A246A !important;}
+ a.dropdownOpt.defaultEA{padding:10px 20px 10px 25px;border-bottom:1px dotted #666666}
+ a.dropdownOpt.tick{background: url("img/tick.png") no-repeat scroll 10px 5px transparent;}
+ a.dropdownOpt.defaultEA.tick{background: url("img/tick.png") no-repeat scroll 10px 10px transparent;}
+ a.dropdownOpt:hover{background-color:#eef7ff;color:#4D4E53}
+ a.dropdownOpt.tick:hover{background-color:#eef7ff;color:#4D4E53}
+ td.downloads{border-right:1px solid #ccc !important;}
+ #main ul li.eolList{background:none !important;}
+ .eaInputWrapper .optionsHolder{display:block !important;}
+ #patchDescription{float: left !important;margin:10px 20px 0px 0px;padding: 0px;border: 0px !important;font-size: 11px;}
+#patchResultTblVc .prodCheck,#patchResultTblVc .selectAll{margin-right:6px !important;}
+.dropdownOpts a.dropdownOpt{padding:5px 10px !important;color:#4D4E53;}
+.dropdownOpts a.dropdownOpt:hover{background-color: #eef7ff;color: #4D4E53;}
+.patchSearchPage .inputTh{padding:5px !important;width:15px !important;}
+.patchSearchPage .downloads{width:100px !important;padding:5px !important;}
+
+#byProdSearch{float:left;clear:both;}
+#advancefilters{position:absolute;top:-20000px;}
+#error_message{font-size:14px !important;color:#cc0000 !important;font-weight:normal !important;padding:10px 0px 10px 0px;display: none;}
+.patchSearch{padding-bottom:20px;border-bottom:1px dotted #000;}
+#manageColumnsDiv{display:none;}
+.buttonsContainer{position: relative;width: 193px;top: 24px;float:right;z-index: 999;}
+.buttonsContainer a#manageColumns{position: absolute;z-index: 3001; right:5px; /* BUG-00065853 - alignment issue */}
+#manageColumnsDiv{background-color: #FFFFFF;border: 1px solid #CCCCCC;margin: 0;width: 180px;padding: 5px;position: absolute;top: 15px;z-index:999; right: 8px;}
+.subList tr td {text-align:justify;}
+.manageColumns_Section{padding:0px 0px 20px 0px;}
+.floatLeft{float:left;}
+#advancefilters .patchSearch{padding-bottom:20px;border-bottom:1px dotted #000;}
+table.subList tr td{padding:0px !important;}
+table.subList tr td p{margin:10px 10px 0px 15px}
+#patchPortalDownload table td.subTblTd p {margin: 0px !important;text-align:left;float:left;width: 100%;border-top: 1px solid #ccc;}
+th.supRequires{word-wrap:break-word !important;}
+
+.ie8 table#patchResultTbl3x,.ie8 table#patchResultTbl4x,.ie8 table#patchResultTbl5x,.ie8 table#patchResultTblVc{
+table-layout:inherit !important;}
+
+.ie8 table#patchResultTbl3x td.chkSums div.paddingClass p,.ie8 table#patchResultTbl4x td.chkSums div.paddingClass p,.ie8 table#patchResultTbl5x td.chkSums div.paddingClass p,.ie8 table#patchResultTblVc td.chkSums div.paddingClass p{word-wrap:break-word !important;width:140px !important;}
+
+.ie8 table#patchResultTbl3x td.buildNumber div.paddingClass p,.ie8 table#patchResultTbl4x td.buildNumber div.paddingClass p,.ie8 table#patchResultTbl5x td.buildNumber div.paddingClass p,.ie8 table#patchResultTblVc td.buildNumber div.paddingClass p{word-wrap:break-word !important;width:140px !important;}
+
+#dpl_error_message{margin-left: 0px !important;}
+.patchSearch input.optionsHolder{min-height:16px !important;}
+.searchAllDownloads{float:right;border:none !important;background:none !important;top:0px !important;width:100% !important;}
+.searchAllDownloads div.inputsearchbox input{width:300px;background:none;border-radius:0px;padding:0px 25px 0px 4px;}
+.searchAllDownloads div.inputsearchbox{float:right;margin:0px 20px 0px 0px;}
+.eaInputWrapper{float:left !important;height:27px !important;}
+#releaseNumber{margin-left:0px !important;}
+div.paddingClass{padding:10px;}
+.downloads div.paddingClass{padding: 10px 3px;}
+span.paddingClass{padding:10px;float:left;word-break:break-word !important;display: inline-block;word-break: break-all;}
+td.inputTh .paddingClass{padding:10px 0px 0px 5px !important;}
+#clearfilters{font-weight: 700; text-decoration: none;margin: 2px 0px 0px 3px;float: left;}

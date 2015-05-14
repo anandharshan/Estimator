@@ -1,0 +1,279 @@
+body.starlight #content-container {
+  background: #FFF;
+  padding:25px 45px;
+}  
+
+/* Temp for Estimator. */
+.initial_label{
+  margin-top: 5px;
+}
+
+.estimator_heading{
+  margin: 0px;
+}
+
+.estimated_credits{
+  font-size:14px;
+  padding:0;
+}
+
+.estimated_credits > div{
+	float:right;
+}
+.estimated_credits .estimate_credit_text{
+	font-family: "proxima-nova-regular","Arial",sans-serif;
+	font-size: 16px;
+	color: #006990;
+}
+.estimated_credits .estimated_credits_amount{
+	font-family: "proxima-nova-bold","Arial",sans-serif;
+	font-size: 16px;
+	color: #006990;
+}
+
+.estimated_credits a:hover, .estimated_credits a:focus{
+	text-decoration: none;
+}
+
+.estimated_credits .estimated_credits_amount .caret{
+	margin-left: 5px;
+}
+
+.estimated_credits .dropdown-menu{
+	left:auto;
+	right:0;
+	padding:15px;
+	font-size:12px;
+	width:400px;
+}
+
+.estimated_credits .dropdown-menu ul{
+	margin-bottom: 0;
+}
+
+.estimated_credits .dropdown-menu ul li{
+	margin-bottom: 7px;
+	color: #333;
+}
+
+.estimated_credits .dropdown-menu ul li .est_service_label{
+	font-family: "proxima-nova-semibold","Arial",sans-serif;
+	font-size: 14px;
+	color: #333333;
+}
+
+.estimated_credits .dropdown-menu ul li .est_service_credit, .estimated_credits .dropdown-menu ul li .estimateLabel{
+	font-family: "proxima-nova-regular","Arial",sans-serif;
+	font-size: 14px;
+	color: #333333;
+}
+.estimated_credits .chevron-link{
+	font-size: 12px;
+	float: none;
+}
+/*.estimated_credits .estimator_popover{
+	padding: 15px;
+}
+
+.estimated_credits .estimator_popover a.link{
+	font-family: "proxima-nova-regular","Arial",sans-serif;
+	font-size: 14px;
+	color: #006990;
+}*/
+
+.info_icon{
+	position: absolute;
+}
+
+.est_change_config{
+	font-size:14px;
+}
+
+.est_quantity_box{
+	width: 60px;
+}
+
+.box-bgBlue .estimated_credits_box{
+	padding: 0;
+}
+
+.box-bgBlue .estimated_credits_box h3{
+	margin-top: 0;
+}
+
+.box-bgBlue .estimated_credits_sku{
+	font-size: 14px;
+	border-bottom: 2px solid #E6E6E6;
+	padding-bottom: 7px;
+}
+
+.box-bgBlue .info_icon{
+	margin-left: 5px;
+}
+
+.est_update_box{
+	background-color: #0095D3; 
+	border: 1px solid #E6E6E6;
+	padding: 13px 20px 3px 20px;
+}
+
+.est_update_box .est_update_title{
+	color: #FFF;
+	margin-top: 6px;
+	padding: 0;
+}
+
+.est_update_box .est_update_title span{
+	font-family: "proxima-nova-bold","Arial",sans-serif;
+}
+
+small.small_font{
+	font-size: 14px !important;
+}
+
+.est_total_cost span{
+	font-family: "proxima-nova-semibold","Arial",sans-serif;
+}
+
+.estimator_accordion_container{
+	padding:0;
+}
+.accordion-data-padding{
+	padding-left: 60px;
+	padding-right: 60px;
+}
+.totalcost_Summary{
+	border-left:1px solid #DDD;
+	border-right:1px solid #DDD;
+	border-bottom:1px solid #DDD;
+	background-color: rgba(0, 61, 121,.20);
+	padding-top:14px;
+	padding-bottom: 14px;
+}
+.estimator_accordion_container .panel-group{
+	margin-bottom: 0px;
+}
+.estimator_accordion_container .totalcredits{
+	padding-right:45px;
+	font-size: 16px;
+	color: #333;
+	font-family: "proxima-nova-regular","Arial",sans-serif;
+}
+.estimator_accordion_container .removeBtn{
+	margin-left: 35px;
+	margin-top: 2px;
+}
+.estimator_accordion_container .openaccordion.glyphicon-chevron-down{
+	margin-left: 4px;
+}
+.estimator_accordion_container .accordion .panel .panel-heading {
+	color: #666;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+.estimator_accordion_container .accordion .panel.collapsed .panel-heading {
+	color: #666 !important;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+.openaccordion.glyphicon-chevron-down{
+ 	background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+	background-position: 0 -575px; 
+	width: 15px; 
+	height: 9px; 
+	margin-top: 5px;
+ }
+.margin-top-50{
+	margin-top: 50px;
+}
+.font-size-14{
+	font-size: 14px;
+}
+.estimator_accordion_container .addOnTag{
+	background-color: #666;
+	border-radius: 5px;
+	font-size: 11px;
+	padding: 1px;
+	padding-left: 3px;
+	padding-right: 3px;
+	color: white;
+	margin-left: 10px;
+}
+.estimator_accordion_container .row.custom{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.estimator_accordion_container .removeAddonPosition{
+	position: absolute;
+	right: -23px;
+	top: 2px;
+}
+#breadcrumb{
+	display: none !important;
+}
+
+.estimatorBlueBox{
+  padding: 20px 20px 20px 20px;
+}
+.estimatorCalculationBox{
+color: #333333;
+font-family: "proxima-nova-regular","Arial",sans-serif;
+font-size: 22px;
+margin-bottom: 10px;
+}
+
+.estimatorIntroText{
+color: #000000;
+font-family: "proxima-nova-regular","Arial",sans-serif;
+font-size: 40px;
+}
+.creditConversionInfo{
+font-size: 14px;
+
+}
+.accordion_heading{
+	position: relative;
+}
+.removeService{
+	position: absolute; 
+	top: 15px; 
+	right: 15px;
+}
+.chevron_position{
+	position: absolute;
+    top: 15px;
+}
+.padding-left-55{
+	padding-left:55px !important;
+}
+.padding-right-45{
+	padding-right:45px !important;
+}
+.updateRow{
+float:left;
+padding-right: 20px!important;
+}
+
+.addServiceBtn{
+  margin-left: 15px!important;
+}
+
+.padding-left-10{
+	padding-left: 10px!important;
+}
+.padding-left-0{
+	padding-left: 0px;
+}
+
+.padding-right-0{
+padding-right: 0px;	
+}
+
+.priceInfoNote{
+	font-size: 14px;
+}
+
+body.liferay.starlight .addontable-head small{
+	font-size: 14px !important;
+	color: #333 !important;
+}

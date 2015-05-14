@@ -1,0 +1,197 @@
+#head {
+	padding:0 18px 18px;
+/*	width:400px !important; */
+}
+#head h1 {
+	padding-top:14px;
+}
+#head p {
+	line-height:18px;
+/*	color:#fff !important; */
+}
+#main {
+	background:url(/static/vmware/modules/evals/img/bg_header.jpg) no-repeat top left;
+	margin:-3px 0px 0px;
+*margin:-3px 0px 0px;
+}
+#head h2 {
+	color:#9fda52;
+	font-size:22px;
+}
+ul.evalhead {
+	font-weight:normal !important;
+	width: 380px !important;
+	margin:6px 0px;
+}
+ul.evalhead a {
+	color:#fff !important;
+}
+#head a.lnk14 {
+	font-size:14px;
+	color:#ace3ff;
+}
+#logon {
+	width:500px;
+	background:#cecece;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#cdcdcd), to(#efefef));
+	background-image: -webkit-linear-gradient(top, #cdcdcd, #efefef);
+	background-image: -moz-linear-gradient(top, #cdcdcd, #efefef);
+	background-image: -ms-linear-gradient(top, #cdcdcd, #efefef);
+	background-image: -o-linear-gradient(top, #cdcdcd, #efefef);
+/*	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px; 
+	-khtml-border-radius: 3px; */
+	padding-top:10px;
+	color:#353539;
+}
+
+#logontab ul li.active {
+	background:#eee;
+	height:24px;
+}
+#logontab ul li {
+	background:none;
+	background-color:#eae9e9;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#dad8d8));
+	background-image: -webkit-linear-gradient(top, #f2f2f2, #dad8d8);
+	background-image: -moz-linear-gradient(top, #f2f2f2, #dad8d8);
+	background-image: -ms-linear-gradient(top, #f2f2f2, #dad8d8);
+	background-image: -o-linear-gradient(top, #f2f2f2, #dad8d8);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-khtml-border-radius: 3px;
+	padding-top:4px;
+}
+#logontab {
+	height:28px;
+}
+#content #logontab ul li a {
+	padding:0px 6px 0 15px !important;
+}
+#logontab ul li#logontab1, #logontab ul li#logontab2 {
+	font-size:17px;
+	width:200px;
+	margin-right:6px;
+	background-position: 0 0;
+	line-height:24px;
+	font-weight:bold;
+}
+#logontab ul li#logontab1.active, #logontab ul li#logontab2.active {
+	width:200px;
+	margin-right:6px;
+}
+#logontab ul li#logontab1 a:hover, #logontab ul li#logontab2 a:hover {
+	text-decoration:none;
+}
+.leftfields {
+	float:left;
+	width:220px;
+}
+.rightfields {
+	float:right;
+	width:200px;
+	margin-right:10px;
+}
+#logon input[type="password"], #logon input[type="text"] {
+	width:200px !important;
+	height:20px;
+}
+#logon select {
+	width:207px;
+	height:25px;
+	margin-bottom:2px;
+}
+#container #logon #tab_login, #logon #tab_register {
+	background:#eee;
+}
+#logon .tryfree {
+	height:31px;
+	font-size:14px;
+	padding-top:2px !important;
+	border:1px solid #00acdb;
+	border-bottom:1px solid #467fb1;
+	width: 110px;
+	font-weight: 600;
+}
+#logon .rightbutton {
+	float:right;
+	width:190px;
+}
+#logon .left {
+	float:left;
+	width:260px;
+}
+.clearboth {
+	clear:both;
+}
+#loggedin {
+/*	width:500px;
+	background:#eee; */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-khtml-border-radius: 3px;
+	margin-top:-10px;
+}/*
+#logon .name {
+	font-size:24px; 
+	font-weight:bold; 
+	line-height:36px;
+}*/
+#logon .middle {
+	text-align:center;
+}
+input.tryfree:before, input.tryfree:after {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	bottom: -1px;
+	content: "";
+	height: 42px;
+	left: -1px;
+	position: absolute;
+}
+input.tryfree:before {
+	height: 40px;
+	bottom: -4px;
+	border-top: 0;
+}
+.error_required {border-color: red !important;}
+
+.loggedinNotreg {
+	padding-top: 0px;
+/*	margin-top: -25px; */
+}
+
+/* redesign changes */
+
+#loggedin {
+	width:330px;
+	background:none;
+}
+
+#logon #loggedin p{
+	position: relative;
+	margin-top: 29px;
+	padding-top:0;
+}
+
+#logon #loggedin p strong{font-style: italic;color:#666;}
+
+#logon .name{
+	font-size:32px !important; 
+	color:#0095D3;
+	line-height: 45px;
+	font-weight: 300;
+}
+
+#head p{color:#666;}
+.loggedinNotreg {margin-top: -35px;}
+.ie8 #logon .name{font-size:30px !important;}
+.ie7 #loggedin p {padding-left:20px;}
+#logon #loggedin .tryfree{width:auto;}
+.ie7 #logon{position: relative;}
+/* ################ */

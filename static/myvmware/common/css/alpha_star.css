@@ -1,0 +1,473 @@
+/* line 1, scss/alpha_star.scss */
+ul ul {
+  list-style: none;
+}
+
+html{font-family: "proxima-nova-regular";}
+
+/* line 3, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 > li:hover > ul {
+  display: block;
+}
+/* line 4, scss/alpha_star.scss */
+body.liferay.starlight .header .nav-menu ul.nav-level-1 > li > ul {
+  padding-left: 0;
+  padding-right: 0;
+  margin:0;
+  width:255px;
+}
+
+/* line 7, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 ul.nav-level-2 > li {
+  padding: 0 0 5px 10px;
+  width: 100%;
+  position: relative;
+  left: 0;
+  margin:0;
+  font-family:proxima-nova-regular;
+}
+/* line 12, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 ul.nav-level-2 > li:hover > ul {
+  top: -10px;
+}
+/* line 14, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 ul.nav-level-2 > li a {
+  font-size: 14px;
+  color: #006990;
+}
+/* line 16, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 ul.nav-level-2 > li a:hover {
+  color: #0095d3;
+  background-color: transparent;
+}
+/* line 18, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 ul.nav-level-2 > li.show_drop_l2:after {
+  content: ">>";
+  color: #006990;
+  right: 15px;
+  position: absolute;
+}
+/* line 21, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 ul.nav-level-2 > li > ul > li {
+  padding-left: 30px;
+  margin-bottom: 5px;
+}
+
+/* line 24, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 ul.nav-level-2 ul {
+  display: none;
+  list-style: none;
+  position: absolute;
+  left: 255px;
+  top: -12px;
+  background-color: #f1f1f1;
+  border-top: 4px solid #0095d3;
+  box-shadow: 0 8px 8px 2px rgba(0, 0, 0, 0.5);
+  display: none;
+  list-style-type: none;
+  min-width: 255px;
+  padding: 10px 0px 0px 0px;
+  position: absolute;
+  right: 0;
+  width: auto;
+  z-index: 100;
+  padding-bottom:8px;
+}
+
+/* line 41, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 li ul.nav-level-2 li:hover > ul {
+  display: block;
+}
+/* line 44, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 li:hover > ul {
+  display: block;
+}
+
+/* line 47, scss/alpha_star.scss */
+.liferay  .header .dropdown-menu > li > a {
+  display: inline;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 49, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 li:last-child ul.nav-level-2, .starlight .header .nav-menu ul.nav-level-1 li:nth-last-child(2) ul.nav-level-2 {
+  left: auto;
+  
+}
+/* line 49, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 li:last-child ul.nav-level-2 ul, .starlight .header .nav-menu ul.nav-level-1 li:nth-last-child(2) ul.nav-level-2 ul {
+  left: -240px;
+  position: absolute;
+  width: 245px;
+}
+/* line 49, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 li:last-child ul.nav-level-2 li.show_drop_l2:after, .starlight .header .nav-menu ul.nav-level-1 li:nth-last-child(2) ul.nav-level-2 li.show_drop_l2:after {
+  content: " ";
+  color: #006990;
+  right: 15px;
+  position: absolute;
+}
+/* line 49, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 li:last-child ul.nav-level-2 li.show_drop_l2:before, .starlight .header .nav-menu ul.nav-level-1 li:nth-last-child(2) ul.nav-level-2 li.show_drop_l2:before {
+  content: "<<";
+  color: #006990;
+  left: 8px;
+  position: absolute;
+}
+
+/* line 51, scss/alpha_star.scss */
+.starlight .header .nav-menu ul.nav-level-1 ul.nav-level-2 .ul_heading {
+  background: url("/files/images/framework/arrow-heading-link.png") no-repeat scroll right center transparent;
+  color: #006990;
+  display:none;
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 0 10px 30px;
+  padding-right: 20px !important;
+  max-width: 80%;
+  line-height:1;
+  font-family:proxima-nova-regular;
+}
+
+/* line 54, scss/alpha_star.scss */
+.starlight .page-eyebrow .eyebrow-menu ul li.user_options:hover > ul {
+  display: block;
+  }
+
+/* line 55, scss/alpha_star.scss */
+.starlight .page-eyebrow .eyebrow-menu ul li.user_options > ul {
+  position: absolute;
+  min-width: 120px;
+  left:4px;
+}
+
+/* line 56, scss/alpha_star.scss */
+.starlight .page-eyebrow .eyebrow-menu ul li.user_options > ul li {
+  border: none;
+}
+
+/* line 57, scss/alpha_star.scss */
+.starlight .page-eyebrow .eyebrow-menu ul li.user_options > ul li a {
+  color: #006990;
+}
+/* line 57, scss/alpha_star.scss */
+.starlight .page-eyebrow .eyebrow-menu ul li.user_options > ul li a:hover {
+  background-color: transparent;
+  color: #0095d3;
+}
+
+/* line 58, scss/alpha_star.scss 
+.starlight .page-eyebrow .eyebrow-menu ul li.user_options > .dropdown2 {
+  position: absolute;
+  right: 0px;
+  width: 160px;
+}
+*/
+/* line 60, scss/alpha_star.scss */
+.starlight .page-eyebrow .eyebrow-menu ul.nav-level-2 {
+  background-color: #f1f1f1;
+  border-top: 4px solid #0095d3;
+  box-shadow: 0 8px 8px 2px rgba(0, 0, 0, 0.5);
+  display: none;
+  list-style-type: none;
+  min-width: 120px;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: 26px;
+  width: 100%;
+  z-index: 100;
+  line-height: 2;
+}
+
+/* line 75, scss/alpha_star.scss */
+.starlight .page-eyebrow .eyebrow-menu ul li {
+  position: relative;
+  height:20px;
+}
+
+/* .starlight.liferay .header .nav-menu{margin:-5px -20px 0 0;} */
+
+.starlight.liferay  .configDashBox .dropdown-menu li,.starlight.liferay  #breadcrumb .configDashBox .dropdown-menu li{display:block;background:none;}
+.starlight.liferay  #breadcrumb li{background:none;margin-right:0;padding-right:0;vertical-align:top;}
+.starlight.liferay  #breadcrumb ul.breadcrumb{padding-bottom:8px;margin:0;padding-top:10px;}
+.starlight.liferay  #breadcrumb li a{color: #999;font-weight:normal;padding-left:2px;}
+.starlight.liferay  #breadcrumb{font-size:100%;padding:0 0 0 0;height:auto;}
+.liferay.starlight .page-eyebrow .eyebrow-menu ul li a.menu-item-quick{padding:3px 13px 26px;}
+/***** RESET CSS **********/
+
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    font-weight:normal;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* .starlight .portal-add-content{background-color:#;font-size:100%;} */
+
+body.liferay.starlight .icons-locale_bg {
+    background-position: 0 -516px;
+	display: inline-block;
+    height: 16px;
+    width: 38px;
+}
+
+ body.liferay.starlight .header .brand{display:none;}
+ .starlight .page-eyebrow .eyebrow-menu ul li.user_options:hover > a.menu-item-quick{background: #0095d3;color:#FFF;}
+ body.liferay.starlight .portlet-column-content.empty{padding:0;}
+ 	@media only all and (max-width: 768px) {
+	.starlight .header .nav-menu ul.nav-level-1  > li a.menu-item-primary-1{color: #006690;left:20px;position:relative;padding:8px 0px 15px; display:inline-block;}
+	body.liferay.starlight .header .nav-menu ul.nav-level-1 > li.show_drop{background: url("/vmf/c/4.0/images/mobile-menu-arrow.png") no-repeat scroll 12px 15px rgba(0, 0, 0, 0);}
+	.liferay.starlight .header .nav-menu ul.nav-level-1  > li a.menu-item-primary-1:before{background:none;
+    content: "";
+    display: block;
+    height: 13px;
+    left: 16px;
+    position: absolute;
+    top: 16px;
+    width: 8px;}
+    .starlight .header .nav-menu ul.nav-level-1  > li.focused {color:#FFF;display:block;top:0}
+	.starlight .header .nav-menu ul.nav-level-1 > li:hover > ul{
+    display: none; } 
+
+	.starlight .header .nav-menu ul.nav-level-1  li.focused > div > ul{
+    display: block;padding:0; padding-left:5%; } 
+	
+	.starlight .header .nav-menu ul.nav-level-1 . li.focused ul.level-3 li.level-3Child{padding-left:8%;}
+	.starlight .header .nav-menu ul.nav-level-1  li.focused > div ul.nav-level-2 .level-3{
+	display: block;padding-left:5%;}
+	
+
+	.starlight .header .nav-menu ul.nav-level-1  li.focused,body.liferay.starlight .header .nav-menu ul.nav-level-1  li ,body.liferay.starlight .header .nav-menu ul.nav-level-1  li{height:auto;background: none repeat scroll 0 0 #f1f1f1;overflow:initial;float:left;display:block; width:100%;line-height:2;font-size:16px;}
+	.starlight .header .nav-menu ul.nav-level-1  li.focused > ul, .starlight .header .nav-menu ul.nav-level-1  li.focused > ul ul{display:block; width:100%;position:relative}
+	 
+	.dropdown1 li.focused {background: url("/vmf/c/4.0/images/mobile-menu-arrow.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0); width: 16px;}				
+	 .nav-level-1  ul.nav-level-2  div.col {
+      display: block; float: none; width:100%;
+		}
+		.nav-level-1  ul.nav-level-2  div.col a{
+      background:none;
+		}
+		.nav-level-1  ul.nav-level-2  div.col li{
+      background:none; display:block;list-style:none;
+		}
+         .nav-menu ul.nav-level-2 li.has-subnav{margin-top:0px;line-height: 2;}
+		.nav-menu ul.nav-level-2 li.has-subnav p.menu-item-primary-2{width:100%;margin-bottom: 0px;}
+		.nav-menu ul.nav-level-2 li.has-subnav p.menu-item-primary-2 a{border-bottom:0px none;padding-left:5%;}
+		.starlight .header .nav-menu ul.nav-level-2{border-top:0px;background-color:#f7f7f7;right:0;}
+                .nav-menu ul.nav-level-2 li.has-subnav p.menu-item-primary-2 a.menu-item-primary-2{border-bottom:0;}
+		.navbar-collapse{border:1px solid #dddddd; border-radius:5px;background-color:#f7f7f7;}
+		.js .menu,  .starlight > ul ul, .js .menu-section > ul ul{overflow:initial;}
+		.starlight .container-fluid > .navbar-collapse {
+				margin-right: 0;
+				margin-left: 0;
+				float:none;
+				width:100%;
+			  }
+		.starlight .nav-menu  ul.nav-level-2 .col {margin:0px;}
+                .starlight .navbar-collapse.in{overflow:initial;}
+                body.starlight .header .nav-menu ul.nav-level-1 {overflow: initial;}
+                body.starlight .header .nav-menu ul{margin:0;}
+				.liferay.starlight .header .nav-menu ul.nav-level-1 > li, .liferay.starlight .header .nav-menu ul.nav-level-1 > li {border-top:1px solid #d0d0d0;}
+	.liferay.starlight .header .nav-menu ul.nav-level-1 > li a.menu-item-primary-1, .liferay.starlight .header .nav-menu ul.nav-level-1 > li a.menu-item-primary-2{border-top:0px;}
+	body.liferay.starlight .header .nav-menu ul.nav-level-1 ul.nav-level-2 ul{left: 15px;
+    list-style: none outside none;
+    padding: 0;
+    top: 5px;
+	border-top:0px;
+    width:90%;
+    z-index: 100;
+	box-shadow:none;}
+	body.liferay.starlight .header .nav-menu ul.nav-level-1 ul.nav-level-2 a.ul_heading{display:none;}
+	body.liferay.starlight .header .nav-menu ul.nav-level-1 li ul.nav-level-2 li.show_drop_l2:before,body.liferay.starlight .header .nav-menu ul.nav-level-1 li ul.nav-level-2 li.show_drop_l2:after{content:"";}
+	}
+	.ie7.starlight .page-eyebrow .eyebrow-menu ul li {float:left;}
+.addontable-head small {
+  font-size: 16px;
+  white-space: nowrap;
+}
+.starlight .form-control {
+  background-image: none;
+}
+.starlight input.focus{
+  background: none;
+}
+.liferay.starlight input{
+  padding: 0 15px;
+}
+.starlight .starlight-eyebrow-quick .user_options  span.glyphicon-chevron-down{float:none; padding-left:10px;font-size:12px;}
+/* header changes for vcredits newly adding as per UX */ 
+body.liferay.starlight .header .page-logo-my{background-image: url("/vmf/c/4.0/images/starlight/logo_myvmware.png"); background-repeat: no-repeat;height: 39px;margin: 25px 0 0;width: 185px;}
+body.liferay.starlight .header .nav-menu {float: right;font-family: "proxima-nova-thin","Arial",sans-serif;margin:12px -10px 5px 0;position: relative;z-index: 3;}
+/*body.liferay.starlight .header{height: 25px; margin: 25px 0; }*/
+body.liferay.starlight .header{height:auto;}
+body.liferay.starlight .header .nav-menu ul.nav-level-1 > li a.menu-item-primary-1{padding:10px 12px 15px;font-size:18px;}
+#localeSelector.vmbar-vmware, .liferay #vmbar{display:inline-block;}
+
+.starlight.liferay label input[type="radio"]:checked + span {
+  cursor: default;
+  color: #333;
+}
+
+.starlight .hor-filter-list .col-lg-2 .hor-filter-item label input[type="radio"]:checked + span + span {
+  cursor: default;
+  color: #333;
+}
+
+.lt-ie9 .starlight .hor-filter-list .col-lg-2 .hor-filter-item label input[type="radio"][checked="checked"] + span {
+  cursor: default;
+  color: #333;
+}
+.lt-ie9 .starlight .hor-filter-list .col-lg-2 .hor-filter-item label input[type="radio"][checked="checked"]+ span + span {
+  cursor: default;
+  color: #333;
+}
+
+/* User Name, Welcome Message Localization changes */
+.liferay.starlight .page-eyebrow .eyebrow-menu ul li.welcomeMsg a.menu-item-quick.welcome_a{padding-right:0;}
+.liferay.starlight .page-eyebrow .eyebrow-menu ul li.welcomeMsg a.menu-item-quick.welcome_a:hover{text-decoration:none;color:#FFF;cursor:auto;}
+.liferay.starlight .page-eyebrow .eyebrow-menu ul li.has-subnav.user_options,.liferay.starlight .page-eyebrow .eyebrow-menu ul li.welcomeMsg{border-left:0;}
+#modal_localeSelect  ul.country-list li{list-style:none;line-height:22px;margin:0 0 10px;}
+#modal_localeSelect  ul.country-list li a{color: #4ba8c4;
+text-decoration: none;
+}
+#modal_localeSelect  ul.country-list li a:visited{color: #39C;
+text-decoration: none;
+}
+body.liferay.starlight .header .nav-menu ul.nav-level-1 > li{margin:0;}
+
+
+#modal_localeSelect .modal-content{box-shadow:none;background-color:transparent !important;border:0px;border-radius:0px;}
+#modal_localeSelect .modal-dialog{   margin: 15% auto!important;}
+#modal_localeSelect .modal-header{border-bottom:0px; padding:0px   }
+#modal_localeSelect .close{ position: absolute !important;
+    right: 0;
+    top: -4px;}
+#modal_localeSelect .modal-footer{padding:0px;   }
+#modal_localeSelect .modal-body{ padding:8px 6px 1px;  }
+#modal_localeSelect .country-list{font-size:12px;margin:0px;}
+#modal_localeSelect .option-header {
+     background: url("/static/myvmware/common/css/img/header-bg-select.png") no-repeat scroll -1px 0 transparent;
+   height: 150px;
+    margin-top: -7px;
+    position: relative;
+}
+#modal_localeSelect .modal-title{   
+       color: white;
+    font-size: 20px;
+    padding: 51px 0 5px 5px;
+    text-align: center;
+    width: 166px;}
+#modal_localeSelect ul.country-list li{   margin: 0 0 2px;}
+#modal_localeSelect  #option-inner-mid{
+background: url('/static/myvmware/common/css/img/location-option-main-bg-mid.png') repeat-y scroll 100% 0 transparent;
+      height: 139px;
+    position: relative;
+    width: 576px;
+	}
+	
+#modal_localeSelect  #option-inner-bottom {
+background: url('/static/myvmware/common/css/img/location-option-main-bg-btm.png') no-repeat scroll 100% 0 transparent;
+width: 576px;
+height: 9px;
+}
+
+#modal_localeSelect  #option-inner-top {
+background: url('/static/myvmware/common/css/img/location-option-main-bg-top.png') no-repeat scroll 100% 0 transparent;
+width: 576px;
+height: 7px;}
+#localeSelector .locale-selector{ line-height: 14px; vertical-align: top;}

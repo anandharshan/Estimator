@@ -1,0 +1,9 @@
+// @import "ie_scss/_pie";
+
+
+html{
+	&.lt-ie8{
+		@import "ie_scss/_ie7";
+		@import "ie_scss/_bootstrap-grid-ie7";
+	}	
+}

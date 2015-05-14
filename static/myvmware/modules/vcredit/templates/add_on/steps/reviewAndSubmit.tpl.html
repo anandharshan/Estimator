@@ -1,0 +1,234 @@
+<article class="container-fluid">
+        <div class="row margin-top-20 margin-bottom-20">
+            <div class="col-md-5 {{!addOnData.core.horizon && 'boder-right-1' || ''}}">
+                <div class="row">
+                    <div class="col-md-5"><label>{{globalVars.serviceId}}</label></div>
+                    <div class="col-md-7"><a class="btn-link" ng-click="gotoPrevious()">{{addOnData.core.serviceID}}</a></div>
+                </div>
+               <div class="row">
+                    <div class="col-md-5"><label>{{globalVars.serviceType}}</label></div>
+                    <div class="col-md-7">{{addOnData.core.serviceName}}</div>
+                </div>
+                <!--<div class="row">
+                    <div class="col-md-5"><label>{{globalVars.remainingTerm}}</label></div>
+                    <div class="col-md-7">{{addOnData.core.remainingTermText}}</div>
+                </div>-->
+
+            </div>    
+            <div class="col-md-7 {{!addOnData.core.horizon && 'border-left-1-margin' || ''}}">
+				<div class="row" ng-if="!addOnData.core.horizon">
+                    <div class="col-md-12">{{addOnData.core.longSkuDescription}}</div>
+                 </div>
+                <!--<div class="row box-bgBlue">
+                    <div class="col-md-6 text-center">
+                        <div>
+                           Current Recurring Cost ({{addOnData.core.pricelist[0]}})
+                           <span class="row intro-text">{{addOnData.core.currency[0]}}{{addOnData.core.cost}}</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div>
+                            <h4>Add-on Recurring Cost</h4>
+                            
+                            <span ng-if="ttlMonthlyCost > 0">Monthly Cost: <strong>{{addOnData.core.currency[0]}}{{ttlMonthlyCost}} {{globalVars["payment_type2"]}}</strong><br></span>
+                            <span ng-if="ttlYearlyCost > 0">Annual Cost: <strong>{{addOnData.core.currency[0]}}{{ttlYearlyCost}}  {{globalVars["payment_type3"]}}</strong><br></span>
+                            <span ng-if="ttlPrepaidCost > 0">One-time Cost: <strong>{{addOnData.core.currency[0]}}{{ttlPrepaidCost}}</strong><br></span>
+                            
+                            <span ng-if="(ttlPrepaidCost == 0 || ttlPrepaidCost == null) && (ttlMonthlyCost == 0 || ttlMonthlyCost == null) && (ttlYearlyCost == 0 || ttlYearlyCost == null)"><i>Choose an add-on below</i></span>
+                        </div>
+                    </div>
+                </div>-->
+            </div>  
+        </div>
+</article>
+<ng-review-table-addon-flow></ng-review-table-addon-flow>
+<article class="container-fluid">
+    <div class="row text-right">
+        <!--div class="col-md-12 margin-tb-20">Order Total for Remaining Term: {{addOnData.core.currency[0]}}{{totalCost | number:2}}</div-->                            
+    </div>
+    <div class="row" id="calculationsBox">
+         <div class="col-md-4">
+            <div ng-if="!isXaasFund">
+                <p>{{globalVars.isNotXaasRenewalPageMessage1}}</p>
+                <p>{{globalVars.isNotXaasRenewalPageMessage2}}</p>
+                <p>{{globalVars.isNotXaasRenewalPageMessage3}}</p>
+            </div>
+         </div>
+         <div class="col-md-8">
+            <div class="box-bgBlue">
+                <div class="row text-center reviewOrderWrap {{(showCalc != true) && 'fullCalc'}}">
+                    <div class="col-md-12">
+                        <div class="row" ng-if="showCalc">
+                            <div class="col-md-12 text-left">
+                                <a class="btn-link" ng-click="showCalcDisable()">{{globalVars.showCalculations}}</a>
+                            </div>
+                        </div>
+                        <div class="row" ng-if="!showCalc">
+                            <div class="col-md-12 text-left">
+                                <a class="btn-link" ng-click="showCalcEnable()">{{globalVars.hideCalculations}}</a>
+                            </div>  
+                        </div>
+                        <div class="row" ng-if="dueCost > 0">
+                            <div class="col-xs-7 text-right">
+                                <h3 class="ng-binding">{{globalVars.dueNow}}<span><a href="javascript:void(0);" class="info ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe={{globalVars.dueNowTooltip}}>&nbsp;</a></span> </h3>
+                            </div>
+                            <div class="col-xs-5 text-left"><h3>{{dueCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</h3></div>
+                        </div>
+                        <div class="row"  ng-if="recurringCount > 0 && !showCalc">
+                            <div class="col-xs-7 text-right">{{globalVars.addOnMonthlyCost}}</div>
+                            <div class="col-xs-5 text-left">{{recurringVal | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</div>
+                        </div>
+                        <div class="row"  ng-if="oneTimeCount > 0 && !showCalc">
+                            <div class="col-xs-7 text-right">{{globalVars.addOnOneTime}}</div>
+                            <div class="col-xs-5 text-left">{{oneTimeVal | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</div>
+                        </div>
+                        <div class="row" ng-if="annualCount > 0 && !showCalc">
+                            <div class="col-xs-7 text-right">{{globalVars.addOnAnnualCost}}</div>
+                            <div class="col-xs-5 text-left">{{annualVal | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</div>
+                        </div>
+                        <div class="row"  ng-if="prepaidCount > 0 && !showCalc">
+                            <div class="col-xs-7 text-right">{{globalVars.addOnPrepaidCost}}</div>
+                            <div class="col-xs-5 text-left">{{prepaidVal | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</div>
+                        </div>
+                        <div class="row"  ng-if="newAddOnRecurring > 0">
+                            <div class="col-xs-7 text-right">
+                                <h3 class="ng-binding">{{globalVars.monthlyCostService}}<span><a href="javascript:void(0);" class="info ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe={{globalVars.monthlyCostServiceTooltip}}>&nbsp;</a></span> </h3>
+                            </div>
+                            <div class="col-xs-5 text-left"><h3>{{newAddOnRecurring | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{globalVars.payment_type2}}</h3></div>
+                        </div>
+                        <div class="row" ng-if="coreServiceCostMonthly > 0 && !showCalc">
+                            <div class="col-xs-7 text-right">{{globalVars.coreServiceMCost}}</div>
+                            <div class="col-xs-5 text-left">{{coreServiceCostMonthly | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{globalVars.payment_type2}}</div>
+                        </div>
+                        <div class="row" ng-if="addOnRecurring + ref_addOnObj.core.coreMonthlyAddonCost > 0 && !showCalc">
+                            <div class="col-xs-7 text-right">{{globalVars.addOnServiceMCost}}</div>
+                            <div class="col-xs-5 text-left">{{addOnRecurring + ref_addOnObj.core.coreMonthlyAddonCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{globalVars.payment_type2}}</div>
+                        </div>
+                        <div class="row" ng-if="annualRecuuring + annualAddonRecuuring + ref_addOnObj.core.coreAnnualAddonCost > 0">
+                            <div class="col-xs-7 text-right">
+                                <h3 class="ng-binding">{{globalVars.annualCostService}}<span><a href="javascript:void(0);" class="info ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe={{globalVars.annualCostServiceTooltip}}>&nbsp;</a></span> </h3>
+                            </div>
+                            <div class="col-xs-5 text-left"><h3>{{annualRecuuring + annualAddonRecuuring + ref_addOnObj.core.coreAnnualAddonCost  | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{globalVars.payment_type3}}</h3></div>
+                        </div>
+                        <div class="row" ng-if="coreServiceCostAnnually > 0 && !showCalc">
+                            <div class="col-xs-7 text-right">{{globalVars.coreServiceACost}}</div>
+                            <div class="col-xs-5 text-left">{{coreServiceCostAnnually | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{globalVars.payment_type3}}</div>
+                        </div>
+                        <div class="row" ng-if="annualAddonRecuuring + ref_addOnObj.core.coreAnnualAddonCost > 0 && !showCalc">
+                            <div class="col-xs-7 text-right">{{globalVars.AddOnServiceACost}}</div>
+                            <div class="col-xs-5 text-left">{{annualAddonRecuuring + ref_addOnObj.core.coreAnnualAddonCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{globalVars.payment_type3}}</div>
+                        </div>
+                        <div class="row"  ng-if="totalCost > 0">
+                            <div class="col-xs-7 text-right">
+                                <h3 class="ng-binding">{{globalVars.orderTotal}} <span><a href="javascript:void(0);" class="info ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe= {{globalVars.orderTotalTooltip}}>&nbsp;</a></span> </h3>
+                            </div>
+                            <div class="col-xs-5 text-left"><h3>{{totalCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</h3></div>
+                        </div>
+                        <div class="row" ng-if="fullTermServiceCost > 0 && !showCalc">
+                            <div class="col-xs-7 text-right">{{globalVars.coreServiceTotal}}</div>
+                            <div class="col-xs-5 text-left">{{fullTermServiceCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</div>
+                        </div>
+                        <div class="row" ng-if="totalFinalAddonCost > 0 && !showCalc">
+                            <div class="col-xs-7 text-right">{{globalVars.addOnServiceTotal}}</div>
+                            <div class="col-xs-5 text-left">{{totalFinalAddonCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</div>
+                        </div>
+                        <!--div class="row"  ng-if="(oneTimeVal + prepaidVal) > 0">
+                            <div class="col-md-7 text-right">Due Now for One Time/Prepaid:</div>
+                            <div class="col-md-5 text-left">{{addOnData.core.currency[0]}}{{oneTimeVal + prepaidVal | number:2}}</div>
+                        </div>
+                        <div class="row" ng-if="addOnRecurring > 0">
+                            <div class="col-md-7 text-right">Monthly Total:</div>
+                            <div class="col-md-5 text-left">{{addOnData.core.currency[0]}}{{addOnRecurring * ref_addOnObj.core.remainingTerm[2] | number:2}}</div>
+                        </div>
+                        <div class="row"  ng-if="annualVal > 0">
+                            <div class="col-md-7 text-right">Annually Total:</div>
+                            <div class="col-md-5 text-left">{{addOnData.core.currency[0]}}{{annualRecuuring | number:2}}</div>
+                        </div>
+                        <div class="row" ng-if="fullTermServiceCost > 0">
+                            <div class="col-md-7 text-right">Service Cost for the term:</div>
+                            <div class="col-md-5 text-left">{{addOnData.core.currency[0]}}{{fullTermServiceCost | number:2}}</div>
+                        </div-->
+                    </div>
+                </div>
+                <div class="row margin-tb-20">
+                    <div class="col-md-12"><div class="items_wrap"></div></div>    
+                </div>
+                <div class="row" ng-if="isXaasFund">
+                    <div class="col-md-12">
+                        <strong>{{globalVars.addOnSubmitNotificationTitle}}</strong>
+                        <div class="margin-bottom-30 margin-top-5" ng-bind-html="globalVars.addOnSubmitNotification"></div>
+                        <div class="checkbox"><input type="checkbox" id="boolValue" ng-model="getChecked.boolValue"/><label for="boolValue">{{globalVars.agree}} <a href="{{globalVars.termsAndConditionsUrl}}" target="_blank" ng-bind-html="globalVars.termsConditions"></a></label></div>
+                    </div>
+                </div>
+                <div class="row" ng-if="!isXaasFund">
+                    <div class="col-md-12">
+                        <strong>{{globalVars.submitNotification}}</strong>
+                        <div class="checkbox"><input id="agreement" type="checkbox" ng-model="getCheckedXaas.boolValue"/><label for="agreement">{{globalVars.agree}} </label><a href="{{globalVars.termsAndConditionsUrl}}" target="_blank" ng-bind-html="globalVars.termsConditions"></a></div>
+                    </div>
+                </div>
+            </div>
+            <!--div class="box-bgBlue" ng-if="!isXaasFund">               
+                 <div class="row text-center reviewOrderWrap " id="fullCalc" ng-if="showCalc==false">
+                    <div class="col-md-12">
+                         <div class="row"  ng-if="addOnTotalRecurringRemainingCost > 0">
+                            <div class="col-md-7 text-right"><h3>{{globalVars.monthlyRecurringTotal}} :</h3></div>
+                            <div class="col-md-5 text-left"><h3>{{addOnData.core.currency[0]}}{{addOnTotalRecurringRemainingCost | number:2}}</h3></div>
+                        </div>
+                        <div class="row"  ng-if="addOnTotalRecurringRemainingCost > 0">
+                            <div class="col-md-7 text-right">{{globalVars.recurringTotal}} ({{recurringCount}}, <span ng-if="addOnData.core.remainingTerm[2] > 0">{{addOnData.core.remainingTerm[2]}} Months</span><span ng-if="addOnData.core.remainingTerm[3] > 0">&nbsp;{{addOnData.core.remainingTerm[3]}} days</span>):</div>
+                            <div class="col-md-5 text-left">
+                                <span ng-repeat="addOnArr in addOnTotalRecurringArray">
+                                  {{$index !== 0 && '+' || ''}}  {{addOnData.core.currency[0]}}{{addOnArr | number:2}}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row"  ng-if="oneTimeVal + prepaidVal > 0">
+                            <div class="col-md-7 text-right"><h3>{{globalVars.oneTOrPrepaidTotal}}:</h3></div>
+                            <div class="col-md-5 text-left"><h3>{{addOnData.core.currency[0]}}{{oneTimeVal + prepaidVal | number:2}} {{globalVars.payment_type2}}</h3></div>
+                        </div>
+                        <div class="row" ng-if="prepaidVal > 0">
+                            <div class="col-md-7 text-right">{{globalVars.prepaid}} ({{prepaidCount}} items):</div>
+                            <div class="col-md-5 text-left">{{addOnData.core.currency[0]}}{{prepaidVal | number:2}} {{globalVars.payment_type2}}</div>
+                        </div>
+                        <div class="row" ng-if="oneTimeVal > 0">
+                            <div class="col-md-7 text-right">{{globalVars.oneTime}} ({{oneTimeCount}} items):</div>
+                            <div class="col-md-5 text-left">{{addOnData.core.currency[0]}}{{oneTimeVal | number:2}} {{globalVars.payment_type2}}</div>
+                        </div>
+                        <div class="row" ng-if="addOnTotalRecurringRemainingCost + oneTimeVal + prepaidVal > 0">
+                            <div class="col-md-7 text-right">{{globalVars.orderTotal}}:</div>
+                            <div class="col-md-5 text-left">{{addOnData.core.currency[0]}}{{addOnTotalRecurringRemainingCost + oneTimeVal + prepaidVal | number:2}}</div>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="row margin-tb-20">
+                    <div class="col-md-12"><div class="items_wrap"></div></div>    
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <strong>{{globalVars.submitNotification}}</strong>
+                        <div class="checkbox"><label><input type="checkbox" ng-model="getCheckedXaas.boolValue"/> {{globalVars.agree}} <a>{{globalVars.termsConditions}}.</a></label></div>
+                    </div>
+                </div>
+            </div-->
+            <div ng-if= "TagName != '' && TagName != undefined && TagName != null" class="margin-top-15">
+                <b>{{globalVars.redemptionNotes_withoutOptional}}</b>
+                <div> {{TagName}} </div>
+            </div>
+         </div>
+    </div>
+    <div class="row" ng-if="errorMsg != null">
+        <div class="col-md-9"><span class="form-required">{{errorMsg}}</span></div>
+    </div>
+    <div class="row margin-top-20">
+            <div class="col-xs-6 text-left"><a class="btn btn-default" ng-click="back()">{{globalVars.backBtn}}</a></div>
+            <div class="col-xs-6 text-right">
+                <span ng-if="ajaxLoader">
+                    <div class="ajaxSpinner">&nbsp;</div> 
+                </span>&nbsp;
+                <a class="btn btn-primary" ng-if="!isXaasFund" ng-click="submitOrder($event)" ng-disabled="!validSelectedData || editPhase || !getCheckedXaas.boolValue || ajaxLoader || !submitOrderNoXaasFund"><b>{{submitBtnText}}</b></a>
+
+                <a class="btn btn-primary" ng-if="isXaasFund" ng-click="submitOrder($event)" ng-disabled="!validSelectedData || editPhase || !getChecked.boolValue || ajaxLoader"><b>{{submitBtnText}}</b></a>
+                <a class="btn btn-default margin-left-20" ng-click="cancelFlow(cancelFn)">{{globalVars.cancelBtn}}</a>
+            </div>
+    </div>
+</article>

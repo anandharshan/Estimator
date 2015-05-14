@@ -1,0 +1,9 @@
+//Import
+
+// Core variables and mixins
+@import "../../../../../c/4.0/css/scss/bootstrap/variables";
+@import "../../../../../c/4.0/css/scss/starlight/bootstrap/variables"; //Added for Starlight
+@import "../../../../../c/4.0/css/scss/bootstrap/mixins";
+
+@import "default";
+@import "starlight-datatable"; //Added for Starlight

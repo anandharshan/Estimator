@@ -1,0 +1,50 @@
+.starlight{
+  .alert-box{
+    .alert {
+      border-width:1px;
+      font-family: $font-family-proxima-nova-regular;
+      overflow: hidden;
+      padding:17px 35px 17px 22px;
+
+      .row{
+        margin:0;
+      }
+      .icons-alert-info,
+      .icons-alert-success,
+      .icons-alert-warning,
+      .icons-alert-danger{
+        height: 27px;
+        width: 27px;
+        display: inline-block;
+        float:left;
+      }
+
+      .alert-text{
+        font-family: $font-family-proxima-nova-semibold;
+        float: left;
+        margin-top: 3px;
+      }
+
+      .icons-alert-close{
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+      }
+    }
+  // Dismissable alerts
+  //
+  // Expand the right padding and account for the close button's positioning.
+    .alert-dismissable {
+      // Adjust close link position
+      .close {
+        top: 5px;
+        right: 0;
+        opacity:1;
+         &:hover,
+         &:focus {
+          opacity:1;
+        }
+      }
+    }
+  }
+}

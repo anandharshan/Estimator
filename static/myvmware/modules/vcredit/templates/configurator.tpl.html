@@ -1,0 +1,64 @@
+<section>
+  <ng-content-header></ng-content-header>
+  <article ng-if="displayConfigPage">
+      <div class="row">
+          <div class="col-md-12 margin-top-20">
+              {{globalVars["config_page_content"]}}
+          </div>
+      </div>                       
+        <div class="row">
+          <div class="col-md-4">
+              <div class="configDashBox">
+                  <h2><span class="newServices"></span><span class="headingContent">{{globalVars["newService"]}}</span></h2>
+                  <p>{{globalVars["ConfigureNewService"]}}</p>
+                  <div class="btn-group btn-caret">
+                        <!--a type="button" class="btn btn-primary {{ chkEmptyObject(configData['new']) && disabledText || ''}}">{{globalVars["selectStart"]}}</a-->
+                        <a type="button" class="btn btn-primary dropdown-toggle {{ chkEmptyObject(configData['new']) && disabledText || ''}}" data-toggle="dropdown">
+                          {{globalVars["selectStart"]}}<span class="caret"></span>
+                          <span class="sr-only">{{globalVars["toggleDropdown"]}}</span>
+                        </a>
+                        <ul class="dropdown-menu text-left" role="menu">
+                          <li ng-repeat="(key,val) in configData['new']"><a href="#/newService/configureService/{{key}}">{{val.description}}</a></li>
+                        </ul>
+                  </div>                                    
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="configDashBox">
+                  <h2><span class="addOn"></span><span class="headingContent">{{globalVars["addOnService"]}}</span></h2>
+                  <p>{{globalVars["configureCapacity"]}}</p>
+                  <div class="btn-group btn-caret">
+                        <!--a type="button" class="btn btn-primary {{ chkEmptyObject(configData['add-on']) && disabledText || ''}}">{{globalVars["selectStart"]}}</a-->
+                        <a type="button" class="btn btn-primary dropdown-toggle {{ chkEmptyObject(configData['add-on']) && disabledText || ''}}" data-toggle="dropdown">
+                          {{globalVars["selectStart"]}}<span class="caret"></span>
+                          <span class="sr-only">{{globalVars["toggleDropdown"]}}</span>
+                        </a>
+                        <ul class="dropdown-menu text-left" role="menu">
+                         <li ng-repeat="(key,val) in configData['add-on']"><a href="#/addOnService/selectService/{{key}}">{{val.description}}</a></li>
+                        </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="configDashBox">
+                  <h2><span class="renewal"></span><span class="headingContent">{{globalVars["renewalService"]}}</span></h2>
+                  <p>{{globalVars["ConfigureRenewal"]}}</p>
+                  <div class="btn-group btn-caret">
+                        <!--a type="button" class="btn btn-primary {{ chkEmptyObject(configData['renewal']) && disabledText || ''}}">{{globalVars["selectStart"]}}</a-->
+                        <a type="button" class="btn btn-primary dropdown-toggle {{ chkEmptyObject(configData['renewal']) && disabledText || ''}}" data-toggle="dropdown">
+                          {{globalVars["selectStart"]}}<span class="caret"></span>
+                          <span class="sr-only">{{globalVars["toggleDropdown"]}}</span>
+                        </a>
+                        <ul class="dropdown-menu text-left" role="menu">
+                          <li ng-repeat="(key,val) in configData.renewal"><a href="#/renewService/selectService/{{key}}">{{val.description}}</a></li>
+                        </ul>
+                  </div>  
+              </div>
+          </div>
+      </div> 
+      <div class="row">
+          <div class="hidden col-md-12" ng-bind-html="globalVars['pricingTerms']">
+          </div>
+      </div>
+  </article>
+</section> 

@@ -1,0 +1,20 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+.starlight{
+  .breadcrumb {
+	  font-size:14px;
+	  margin-bottom: $breadcrumb-margin-bottom;
+	  li,
+	  li a{
+	  	color:$breadcrumb-color;
+	  }
+	  li a:hover{
+	  	color:#ccc; /* $starlight-blue; */
+	  }
+	  > li + li:before{
+	  	content: "\/";
+	  }
+
+	}	
+}

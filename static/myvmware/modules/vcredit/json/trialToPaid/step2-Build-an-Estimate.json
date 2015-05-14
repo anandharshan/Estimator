@@ -1,0 +1,25 @@
+{
+    "wrapper": {
+        "trialID": "M12345678",
+        "customerType": {
+            "commercial": "Commercial",
+            "academic": "Academic"
+        },
+        "country": [
+            [
+                "US",
+                "United States",
+                "U.S.Dollar",
+                "USD",
+                "$",
+                "USD",
+                "AMER-USD",
+                "AMER"
+            ]
+        ],
+        "productFamilyInfo": {
+            "productFamilyCode": "MGMT-BUSINESS-UNIT",
+            "productFamilyName": "vRealize Air"
+        }
+    }
+}

@@ -1,0 +1,186 @@
+<article ng-if="showLoader && !showPage">
+    <div class="row margin-top-20 margin-bottom-20">
+        <div class="col-md-12 text-center">
+            <div class="ajaxSpinner">&nbsp;</div>   
+        </div>
+    </div>
+</article>
+<article id="configureServiceContainer" ng-if="showPage">
+    <div class="container-fluid starlight-container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="form-horizontal form-entry-container">
+                    <div class="row">
+                        <div class="form-required col-sm-offset-5 col-md-7 margin-top-20">{{globalVars.requiredFields}}<br>
+                            <!--div ng-if="serviceTypeError == true">{{config.serviceType_error}}</div-->
+                            <!--div ng-if="serviceTermError == true">{{config.term_error}}</div-->
+                        </div>
+                    </div>
+                    <div>
+						<div class="form-group margin-top-20" ng-if="serviceData.showPriceList">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.priceList}}</label>
+                            </div>
+                            <div class="col-sm-7 form-control-static" ng-repeat="(currKey,CurrVal) in serviceData.currency[0]" ng-if="currKey == serviceData.currency[1]">
+                                {{serviceData.regionName}} {{CurrVal[0]}} ({{CurrVal[1]}})
+                            </div>
+                        </div>
+						<div class="form-group margin-top-20" ng-if="!serviceData.showPriceList">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.country}}</label>
+                            </div>
+                            <div class="col-sm-7">
+                                {{serviceData.country}}
+                            </div>
+                        </div>
+						<div class="form-group" ng-if="!serviceData.showPriceList">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.currency}}</label>
+                            </div>
+                            <div class="col-sm-7 form-control-static" ng-repeat="(currKey,CurrVal) in serviceData.currency[0]" ng-if="currKey == serviceData.currency[1]">
+                                {{CurrVal[0]}} ({{CurrVal[1]}})
+                            </div>
+                        </div>
+						<div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.customerType}}</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="form-control-static">{{serviceData.customerType}}</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.service}}</label>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="form-control-static">{{serviceData.serviceName}}</div>
+                            </div>
+                        </div>                                            
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.region}}</label>
+                                <span class="infoIcon"><a href="javascript:void(0);" class="info ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe="{{globalVars.region_tooltip}}">&nbsp;</a></span>
+                            </div>
+                            
+                            <div class="col-sm-7 form-control-static">
+                                <div class="radio"  ng-if="Object.keys(serviceData.region[0]).length > 1" data-ng-repeat="(getRegionKey,getRegions) in serviceData.region[0]">
+                                    <input type="radio" id="chkServiceData{{$index}}" name="rRegion" ng-model="serviceData.region[serviceData.region.length-1]" ng-value="getRegionKey" ng-change="changeRegion(getRegionKey);"><label for="chkServiceData{{$index}}">{{getRegions}}</label>
+                                </div>
+                                <div ng-if="Object.keys(serviceData.region[0]).length == 1" data-ng-repeat="(getRegionKey,getRegions) in serviceData.region[0]">
+                                    {{getRegions}}
+                                </div>
+                            </div>
+                        </div>                                          
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.serviceType}}</label>
+                                <span class="infoIcon"><a href="javascript:void(0);" class="info ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe="{{globalVars.seriveType_tooltip}}">&nbsp;</a></span>
+                            </div>
+                            <div class="col-sm-7 form-control-static">                                                    
+                                <div class="radio" data-ng-repeat="getServiceType in serviceData.serviceType[serviceData.region[serviceData.region.length-1]]">
+                                        
+                                            <input type="radio" id="chkServiceName{{$index}}" name="rSType"  ng-checked="{{ getServiceType.defaultFlag == 'Y' }}" ng-click="changeService(getServiceType);">
+											<label for="chkServiceName{{$index}}">
+												{{getServiceType.serviceName}}
+											</label>                                                       
+                                </div> 
+                                <div ng-if="serviceTypeCount == 0" class="form-required">{{globalVars.selectRegion}}</div>
+                            </div>
+                        </div>
+                        <!-- <div class="form-group" ng-if="serviceData.editions != undefined && serviceData.editions != null && serviceData.editions.length > 0">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.editions}}</label>
+                                <span class="infoIcon"><a href="javascript:void(0);" class="info ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe="{{globalVars.editions_tooltip}}">&nbsp;</a></span>
+                            </div>
+                            
+                            <div class="col-sm-7 form-control-static">
+                                <div class="radio" data-ng-repeat="(getEditionsKey,getEditions) in serviceData.editions[0]">
+                                    <input type="radio" id="chkEditionData{{$index}}" name="rEditions" ng-model="serviceData.editions[serviceData.editions.length-1]" ng-value="getEditionsKey" ng-change="changeEditions(getEditionsKey);"><label for="chkEditionData{{$index}}">{{getEditions}}</label>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="form-group" ng-if="serviceData.isStorageEnabled == 'Y'">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.storage}}</label>
+                                <span class="infoIcon"><a href="javascript:void(0);" class="info ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe="{{globalVars.storage_tooltip}}">&nbsp;</a></span>
+                            </div>
+                            <div class="col-sm-7 form-control-static" ng-if="storageCount !== 0">
+                                <div data-ng-repeat="getServiceType in serviceData.serviceType[serviceData.region[serviceData.region.length-1]]" ng-if="getServiceType.defaultFlag == 'Y'">
+                                   <div data-ng-repeat="stData in getServiceType.storage">
+                                        <div class="radio" data-ng-repeat="(stDataKey,stDataVal) in stData">
+                                            <input type="radio" id="chkStorageType{{$parent.$index}}" required="" name="rStorageType" ng-model="serviceData.storageType[serviceData.storageType.length-1]" ng-value="stDataKey" ng-change="changeStorage(stDataKey)"><label for="chkStorageType{{$parent.$index}}">{{stDataVal.storageName}}</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7 form-control-static" ng-if="storageCount == 0">
+                                <div class="radio" data-ng-repeat="(stDataKey, stDataVal) in serviceData.storageType[0]">
+                                    <input type="radio" id="chkStorageCount{{$index}}" required="" name="rStorageType1" ng-model="serviceData.storageType[serviceData.storageType.length-1]" ng-value="stDataKey"><label for="chkStorageCount{{$index}}">{{stDataVal}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" ng-if="serviceTermError !== true">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.term}}</label>
+                                <span class="infoIcon"><a href="javascript:void(0);" class="info ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe="{{globalVars.term_tooltip}}">&nbsp;</a></span>
+                            </div>
+                            <div class="col-sm-7 form-control-static">
+                                <div data-ng-repeat="getServiceType in serviceData.serviceType[serviceData.region[serviceData.region.length-1]]" ng-if="getServiceType.defaultFlag == 'Y'">
+                                    <div data-ng-repeat="storage in getServiceType.storage">
+                                        <div class="radio" data-ng-repeat="getTerm in storage[serviceData.storageType[serviceData.storageType.length-1]].terms">
+                                                    <input type="radio" id="chkTerm{{$index}}" required="" name="rLength" ng-checked="{{ getTerm[3] == 'Y' }}" ng-click="changeTermLength(getTerm[1])"><label for="chkTerm{{$index}}">{{getTerm[0]}}
+                                            </label>
+                                        </div>
+                                    </div> 
+                                </div>                                           
+                            </div>
+                        </div>                                            
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-3">
+                                <label class=" control-label-left">{{globalVars.paymentType}}</label>
+                                <span class="infoIcon"><a href="javascript:void(0);" class="info ng-scope" tooltip-trigger tooltip-placement="right" data-tooltip-html-unsafe="{{globalVars.billingType_tooltip}}">&nbsp;</a></span>
+                            </div>
+                            <div class="col-sm-7 form-control-static" ng-if="paymentTypeCount !== 0">
+                                 <div data-ng-repeat="getServiceType in serviceData.serviceType[serviceData.region[serviceData.region.length-1]]" ng-if="getServiceType.defaultFlag == 'Y'">
+                                    <div data-ng-repeat="storage in getServiceType.storage">
+                                        <div data-ng-repeat="getTerm in storage[serviceData.storageType[serviceData.storageType.length-1]].terms" ng-if="getTerm[3] == 'Y'">
+                                            <div class="radio" data-ng-repeat="paymentType in getTerm[2]" ng-if="getTerm[2].length > 1">
+                                                
+                                                    <input type="radio" id="ckPaymentType{{$index}}" required="" name="rType" ng-model="serviceData.paymentType[serviceData.paymentType.length-1]" ng-value="paymentType" ng-change="setCrosssku()"><label for="ckPaymentType{{$index}}">{{paymentType}}
+                                                </label>
+                                            </div>
+                                            <div ng-if="getTerm[2].length == 1">{{getTerm[2][0]}}</div>
+                                        </div>
+                                    </div> 
+                                </div>                                                    
+                            </div>
+                            <div class="col-sm-7 form-control-static" ng-if="paymentTypeCount < 1">
+                                <div class="radio" data-ng-repeat="payType in serviceData.paymentType[0]">
+                                    <input type="radio" id="chkPayType{{$index}}" required="" name="payType1" ng-model="serviceData.paymentType[serviceData.paymentType.length-1]" ng-value="payType[0]"><label for="chkPayType{{$index}}">{{payType[0]}}</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+		
+		
+        <div class="row newServiceBtnWrap">
+            <div class="col-xs-6 text-left"><a class="btn btn-default" ng-click="gotoSelectService()">{{globalVars.backBtn}}</a></div>
+            <div class="col-xs-6 text-right">
+                <span ng-if="ajaxLoader">
+                    <div class="ajaxSpinner">&nbsp;</div> 
+                </span>
+                <a href="javascript:void(0);" class="btn btn-primary margin-left-20" ng-click="goToAddOns()" ng-disabled="trueUpError || skuError || !currSku.data[0] || ajaxLoader">{{globalVars.continueBtn}}</a>
+                <a class="btn btn-default margin-left-20" ng-click="cancelFlow(cancelFn)">{{globalVars.cancelBtn}}</a>
+                <!--a class="btn btn-default margin-left-20" ng-click="cancelFlow(cancelFn)">{{globalVars.cancelBtn}}</a-->
+            </div>
+        </div>
+    </div>                        
+</article>

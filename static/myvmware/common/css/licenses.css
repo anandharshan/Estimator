@@ -1,0 +1,2279 @@
+/* ########################################################################### *
+ * ## 1. KEY MANAGEMENT
+ * ##    - Combine
+ * ##    - Divide
+ * ##    - Move
+ * ##    - Ads
+/* ########################################################################### */
+/* ########################################################################### *
+ * ## KEYS MANAGEMENT
+/* ########################################################################### */
+
+/* Combine Keys */
+.key-wrapper {margin: 15px 15px 0 10px;padding-bottom: 12px;}
+.note-wrapper {	margin: 10px 0 0 20px;}
+#content-section .confirmation-wrapper h2 {
+	font-size: 15px;
+	margin-bottom:10px; /* Added for matching with design preejith */
+	color: #0c8d63;
+	font-weight: bold;
+}
+#content-section .tabbed_area section h1{
+	font-weight:bold;
+}
+.confirmation-wrapper p {margin: 2px 0;}
+	#content-section section .confirmation-wrapper p{
+		margin-bottom:0px;
+	}
+
+		/*For Support Contract page*/
+		#content-container table .key-wrapper-simple {
+			margin: 2px 2px 2px 2px;
+		}
+		/*For Support Contract page*/		
+	.key-wrapper-simple .keyNo {
+		width: 225px;
+		display: inline-block;
+	}
+
+	.key-wrapper-simple .cpu {
+		font-weight: bold;
+	}
+	
+	.key-wrapper-simple .new {
+		font-size: 9px;
+		text-transform: uppercase;
+		color: #FFF;
+		background: #7ebb42;
+		padding: 3px 5px 0px;
+		margin-left: 3px;
+		display: -moz-inline-box;
+		display: inline-block;
+		position: relative;
+		top: -1px;
+	}
+
+.topBar {
+    float: right;
+    font-size: 12px;
+    padding-bottom: 0;
+}
+.mac .nav_sec .topBar {
+     padding-right: 1px;
+}
+.nav_sec .topBar button {
+	margin-bottom: 0 !important;
+    margin-top: 0 !important;
+	margin-left:0 !important;
+}
+.mac  .nav_sec .topBar button, .mac .nav_sec .topBar button:hover, .mac .nav_sec  .topBar button:focus{
+	height:26px;
+	padding-top:5px;
+}
+	.topBar #VI3Licenses span {
+		margin-left: 5px;
+	}
+	.topBar #VI3Licenses{
+		background: url("img/openNewWindow_icon.png") no-repeat scroll right 2px transparent;
+    	display: inline-block;
+    	padding-right: 21px;
+    	padding-top: 3px;
+	}
+.vi3DowngradeLink {
+	padding-bottom: 5px;
+	/*padding-right:13px; BUG-00028728*/
+	text-align:right;
+	font-size:12px;
+}	
+.vi3DowngradeLink a {
+		/*background: url("img/openNewWindow_icon.png") no-repeat scroll right 2px transparent; BUG-00028728*/
+    	display: inline-block;
+    	padding-right: 3px; /*BUG-00028728 */
+    	padding-top: 3px;
+	}
+/* CHROME & SAFARI */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.topBar,.vi3DowngradeLink {
+		padding-bottom:0px;
+		padding-top:1px;
+	}
+}	
+
+.confirmation-wrapper .buttons,
+.column-wrapper .buttons {
+	text-align: right;
+	margin-top: 0;
+	margin-bottom:30px;
+}
+	.buttons.rght_margin{
+		margin-right:15px;
+	}
+
+
+.confirmation-wrapper .ctrlHolder {
+	margin: 0;
+}
+
+	.confirmation-wrapper .ctrlHolder input {
+		float: none;
+		
+	}
+	
+	.confirmation-wrapper .ctrlHolder label {
+		float: none;
+		font-weight: normal;
+		margin-right: 0;
+	    width: auto;
+	}
+#licenseDetail .note-wrapper button{margin-left:5px !important}
+
+
+.ie8 table#licenseDetail > tbody > tr > td:first-child {width: 70% !important;}  /* BUG-00061871: Fixed for prod issue only for IE8*/	/*BUG-00062912 - Updated*/
+.ie8 table#licenseDetail > tbody > tr > td:first-child+td {width: 15% !important;}  /* BUG-00061871: Fixed for prod issue only for IE8*/	/*BUG-00062912 - Updated*/
+.ie8 table#licenseDetail > tbody > tr > td:first-child+td+td {width: auto !important;}  /* BUG-00061871: Fixed for prod issue only for IE8*/	/*BUG-00062912 - Updated*/
+
+/* Key Management Module */
+#content #licenseDivider {
+	margin: 0;
+}
+
+	#licenseDivider header {
+		background: #FFF;
+		color: #000;
+	}
+
+		#licenseDivider .ctrlHolder.downArrowBar {
+			padding: 0 10px 20px 15px;
+		}
+		.ie7 #licenseDivider .ctrlHolder.downArrowBar {
+			padding: 0 10px 8px 15px;
+		}
+	
+		.downArrowBar {
+			background: url("img/lic_arrowDown.png") no-repeat scroll 0 top #333436;
+           /* border-bottom: 1px solid #FFFFFF;*/
+            margin-bottom: 0;
+			margin-left: 0;
+            margin-right: 0;
+            padding: 10px 10px 20px 15px;
+            color: #FFF;
+
+		}
+		
+			#keyManagement label {
+				width: auto;
+				font-size: 12px;
+				position: relative;
+				top: 2px;
+			}
+			
+			#keyManagement select {
+				font-size: 12px;
+			}
+			
+		#keyManagement p {
+			color: #4C4E53;
+			font-weight: normal;
+			padding-top: 5px;
+		}
+		
+		#content section#licenseDivider h1 {
+			background: none repeat scroll 0 0 #333436;
+			color: #FFFFFF;
+			font-size: 18px;
+			font-weight: bold;
+			padding-bottom: 10px;
+			padding-left:0;
+			padding-top: 15px;
+			width: 101%;
+		}
+		/*SFF*/
+		#content section#licenseDivider h1 span{
+			display: inline-block;
+			padding-left: 15px;
+			/*width: 82%;*/
+			width:60%;
+		}
+		#content section#licenseDivider h1 a.togNotes{
+			border-right: 1px solid;
+			color: #A7E4FF;
+			cursor: pointer;
+			display: inline-block;
+			float: right;
+			font-size: 11px;
+			font-weight: bold;
+			margin: 0;
+			padding-right: 15px;
+			position: relative;
+			right: 3px;
+			top: 5px;
+		}
+		
+		#content section#licenseDivider p{
+			color:#fff;
+		}
+	
+	#keyManagement .content ul {
+		margin-bottom: 0px;
+		margin-top: 0;
+		height: 330px;
+		overflow-y: scroll;
+		position: relative;
+	}
+	
+		#keyManagement .content ul li {
+			padding: 10px 0;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		
+		#keyManagement .content ul li:first-child {
+			border-top: none;
+		}
+	
+			.key-wrapper .key {
+				padding-right: 5px;
+				font-size: 12px;
+			}
+			
+			.key-wrapper .env,
+			.key-wrapper .cpu,
+			.key-wrapper .exp {
+				padding-right: 5px;
+				padding-left: 6px;
+				font-size: 12px;
+			}
+			
+		#keyManagement ul li .env {width: 175px;}
+/* Styles for view license key folder which adds expires column */
+#keyManagement #view .key,
+#keyManagement #view .exp {
+	white-space:nowrap;
+}
+
+.tabContent #keyManagement ul li a {color: #4D9BCF;}	
+	#keyManagement .key-wrapper {border-bottom: none;padding: 0;margin: 0;}	
+	.openCloseSelect {
+		float: left;
+		width: 20px;
+	}
+	.noCheckOrRadio .openCloseSelect {
+		width: 35px;
+	}
+	#keyManagement #view .noCheckOrRadio .key {
+		width: 243px;
+	}
+	
+		#keyManagement .openCloseSelect input {
+			margin-left: 0 !important;
+			margin-right: 5px !important;
+			margin-top: 1px;
+			padding: 0;
+			vertical-align: top
+		}
+				
+		#keyManagement .openCloseSelect {
+			float: left;
+			width:auto;
+		}
+		#keyManagement .openCloseSelect a {
+			background: url("img/btn_gray_blue_plus_minus.png") no-repeat scroll -5px -5px transparent;
+			height: 13px;
+			margin-left: 0px;
+			margin-right: 3px;
+			margin-top: 2px;
+			width: 13px;
+		}
+		#keyManagement .openCloseSelect a.open {
+			background: url("img/btn_gray_blue_plus_minus.png") no-repeat scroll -5px -25px transparent;
+		}
+		.ie7 #keyManagement li .openCloseSelect a,
+		.ie8 #keyManagement li .openCloseSelect a {
+			margin-right: 2px;
+		}		
+		#keyManagement li .openCloseSelect a.open {
+			background-position: -5px -25px;
+		}
+		.ie7 #keyManagement li {
+			zoom: 1;
+		}
+		
+#keyManagement .dynamicRow td{
+	padding-top:0
+}
+
+#productSummaryTableParent{
+	position:relative;
+}
+		
+.rightaligned_link{
+	background: none repeat scroll 0 0 #333436;
+	text-align: right;
+}
+.more-details {
+	 background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #AAAAAA;
+    margin: 16px 13px 5px 15px;
+	padding: 10px 10px 10px 13px;/*BUG-00027513*/
+	position:relative;
+}
+.more-details.mleftOneZeroTwo{
+	margin-left:79px;
+}
+.dynamicRow  span.loading{padding:0;}
+#content-container table tr.dynamicRow td div.loading_small{
+	display:block;
+	margin-left:40%;
+}
+.dynamicRow .note-wrapper,.dynamicRow .details-wrapper{
+	/*padding-bottom: 10px;*/
+	margin-left: 16px;
+	/*position: relative;*/
+	margin-top: 0;
+	font-size: 12px;
+}
+	/*.more-details .note-header {
+		font-weight: bold;
+	}*/
+	.dynamicRow .note {
+		color:#999;
+		word-wrap:break-word;
+	}	
+		.dynamicRow .note .edit {
+			color: #3399CC;	
+			font-weight: normal;
+		}		
+		.dynamicRow .editText {
+			/*background-color: #FFF9EB;*/
+			height: 19px;
+			margin-top: 5px;
+			padding: 5px;
+			width: 93%;
+		}
+		.dynamicRow .btnWrapper{
+			margin: 8px 13px 0px 0;
+			text-align:right
+		}
+		.tabContent #keyManagement ul li a.saveBtn {
+			color: #FFFFFF;
+			margin-left: 10px;
+			position: absolute;
+			top: -5px;
+		}	
+	div.disabled{
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+		filter: alpha(opacity=50);
+		opacity: 0.5;
+	}
+	tr.disabled{
+		color:#999
+	}
+/* Labels CR*/
+.dynamicRow .label_holder{padding-top:3px;}
+.dynamicRow .label_holder span.sLabeln{color:#000;}
+.dynamicRow .label_holder span.sLabelv{color:#999999;padding-right:11px;}
+.dynamicRow .details-wrapper.nlholder{border:1px solid #c5c5c5;padding:5px;}
+.dynamicRow .details-wrapper .hdlabel{color:#000;padding:5px 0px;display:block;}
+.dynamicRow .edLabelWrapper{padding:5px 0px 0px;position:relative;}
+.dynamicRow .details-wrapper input.clvalue{height: 16px;margin: 0 15px; padding: 4px 2px; width:170px;}
+#keyManagement .dynamicRow .details-wrapper label.labeltxt{display: inline-block;padding-right:5px;width: 194px;word-wrap: break-word;font-size:11px;font-weight:bold;}
+#content-section .dynamicRow .details-wrapper span.delete {
+    background: url("img/btn_remove_red.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 17px;
+    overflow: hidden;
+    padding-left: 18px;
+    position: relative;
+    top: 8px;
+	color:#960505;
+}
+#content-section .dynamicRow .details-wrapper span.delete a{color:#960505;}
+#keyManagement .dynamicRow .details-wrapper .labelheadcontent{padding:3px 0px;font-weight:bold;}
+#keyManagement .dynamicRow .details-wrapper .labelheadcontent span.first{display: inline-block;width:201px;margin-right:13px;}
+.dynamicRow .details-wrapper .addclcontainer{padding: 15px 0 10px;}
+.dynamicRow .details-wrapper .addclcontainer a{ background: url("img/ico_plus_blue.png") no-repeat scroll 0 0 transparent;display: inline-block;height: 16px;padding-left: 17px; color:#3399CC; font-weight:bold;}
+.noteError{display:none;}
+.dynamicRow .label_holder div.labelEllipsis{
+	padding-top:5px;
+	text-overflow:ellipsis;
+	white-space:nowrap; 
+	overflow:hidden; 
+	display:block;
+	float:left;
+}
+.dynamicRow .label_holder div.labelEllipsis span{zoom:normal;}
+.dynamicRow .label_holder a.ed_custom_labels{vertical-align:top;font-weight:normal;display:inline-block;padding-top:5px;}
+.details-wrapper .clabeleditErrorCont{padding-top:5px; color:#960505;}
+.details-wrapper .clabeleditErrorCont span.first{width:201px;padding-left:13px;display:inline-block;}
+.details-wrapper .clabeleditErrorCont span.second{padding-left:4px;}
+
+/* CUSTOM DROPDOWN STYLE FOR LABELS*/
+.clWrapper{background:#FFF url('img/arrow-dropdown-ea.png') no-repeat scroll 100% 0;padding:0 26px 0 0;overflow:hidden;white-space:nowrap;float:left;position:relative;z-index:9992;}
+.ie7 .clWrapper{background-position-y:center}
+.corner-img-left{background: url("img/bg-input-left.png") no-repeat scroll 0 0 transparent;display: inline-block;height: 26px;width: 6px;float:left}
+.ie7 .corner-img-left{position:relative;top:1px !important;}
+.ie7 .edLabelWrapper .corner-img-left{position:relative;top:0px !important;} /*BUG-00061973 - adjusted top to be 0 for menu style */
+.clWrapper span.optionsHolder {
+	background: url("img/bg-input-middle.png") repeat scroll 0 0 transparent;
+    display: inline-block;
+    padding: 6px 3px 6px 4px !important;
+	width:180px;
+}
+.dropdown-flyout{
+	position:absolute;width:196px;top:31px;border:1px solid #999;display:none;background-color:#fff;z-index:9993;padding-top:5px;
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	border-radius: 5px; /* CSS3 */
+}
+.ie7 .dropdown-flyout{left:0;}
+.dropdown-flyout a.dropdown-option{
+	cursor:pointer;
+	display:block;
+	font-size:11px;
+	font-weight:normal;
+	color:#333;
+	list-style:none outside none;
+	margin:0;
+	padding: 3px 5px 3px 10px;
+	text-align:left;
+	text-decoration:none;
+	position:relative;
+	z-index:9994;
+}
+.dropdown-flyout a.dropdown-option.dottedline{border-bottom:1px dotted #CCC;}
+.dropdown-flyout a.dropdown-option.plus{background: url("img/ico_add_menu.png") no-repeat scroll 10px 4px transparent; padding-left: 25px;}
+.dropdown-flyout a.dropdown-option.redpen{background: url("img/ico_edit_menu.png") no-repeat scroll 10px 4px transparent; padding-left: 25px;}
+.dropdown-flyout a.dropdown-option:hover{background-color:#eef7ff;}
+.dropdown-flyout .flyout_custom_labels{padding: 5px 0;}
+.dropdown-flyout .flyout_custom_labels input.fcinput{margin:5px 0 0 10px; width:167px;padding: 4px 2px 3px 3px;}
+.dropdown-flyout .error_msg.leftmargin{margin-left:10px;}
+.alert_ico{
+	background: url("img/ico_alert_red.png") no-repeat scroll right center transparent;
+    height: 18px;
+    position: absolute;
+    right: 15px;
+    top: 37px;
+    width: 22px;
+}
+.ie7 .alert_ico{top:40px;}
+#content-section .dynamicRow .details-wrapper span.delete.grey_col {
+    background: url("img/ico_delete_gray.png") no-repeat scroll 0 0 transparent;
+	text-indent:-9999px;
+	cursor:pointer;
+}
+#content-section .dynamicRow .details-wrapper span.delete.grey_col:hover{
+	background: url("img/ico-delete_orange.png") no-repeat scroll 0 0 transparent;
+	text-indent:0px;
+}
+#content-section .dynamicRow .details-wrapper span.delete.grey_col a{color:#333;position:relative;top:-1px;}
+/* CUSTOM DROPDOWN STYLE FOR LABELS*/
+
+.dynamicRow div.addlinkContainer{padding-top:3px;}
+#keyManagement .more-details .key{
+	margin-top:15px;
+}
+	
+	#keyManagement .key a {
+		color: #4D9BCF;
+		font-weight: bold;
+		margin-top: -3px;
+	}	
+/* Divide Key */
+.divide-table-wrapper {
+	margin-left: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.divide-table-wrapper.viewLicenseKeys {
+	font-size: 12px;
+	padding-top: 8px;
+}
+	.divide-table-wrapper.viewLicenseKeys a {
+		font-weight: bold;
+	}
+#content-container .divide-table-wrapper table th {
+	background: #eee;
+	border:0px;
+	color: #4b4c52;
+	font-size: 12px;
+	padding: 3px 0px;
+	font-weight:bold;/*BUG-00027513*/
+}
+#content-container .divide-table-wrapper table th.col1{
+	width:145px;
+}
+#content-container .divide-table-wrapper table th.col2{
+	width:120px;
+}
+#content-container .divide-table-wrapper table th.col3{
+	width:100px;
+}
+
+
+
+#content-container .divide-table-wrapper table td {
+	background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    padding: 3px 0;
+}
+#content-container .more-details .divide-table-wrapper table td{
+	padding-left:0px !important;
+	padding-top:0
+}
+
+	#content-section .confirmation-wrapper .ctrlHolder.heading select {
+		float: none;
+		position: relative;
+		top: -2px;
+		left: 3px;
+		width:50px;
+		border: 1px solid #CDCDCD;
+		padding:2px 0px 2px 2px; 
+	}
+	.confirmation-wrapper .ctrlHolder.heading label {
+		font-size: 12px;
+		font-weight: normal;
+	}	
+	.confirmation-wrapper .ctrlHolder.heading.divide_sec label{
+		padding-right: 2px;
+	}
+	.firefox.mac .confirmation-wrapper .ctrlHolder.heading.divide_sec label{
+		padding-right:5px;
+	}
+	#content-section .confirmation-wrapper .ctrlHolder.heading.divide_sec select{
+		width:51px;
+	}
+.confirmation-wrapper ol {
+	margin: 0px 0 10px 18px;
+}
+	.confirmation-wrapper li {
+		margin: 5px 0;
+	}
+.confirmation-wrapper ol label {
+	width: 125px;
+}
+.confirmation-wrapper ol input {
+	width: 45px;
+	padding:2px;
+}
+.confirmation-wrapper input,
+.confirmation-wrapper select {
+	border: 1px solid #cdcdcd;
+	text-align:right;
+}
+.confirmation-wrapper input[type=checkbox] {
+	border: none;
+	vertical-align: middle;
+}
+.confirmation-wrapper ol .cpus {
+	font-size: 12px;
+	font-weight: bold;
+	padding-left:5px;
+}
+.summary {
+	margin-top: 5px;
+    padding-top: 10px;
+}
+	.summary strong {
+		color: #000000;
+	}
+	.summary .total {
+		float: left;
+		width: 50%;
+	}
+	.summary.divide_tot .total{
+		width:100%;
+	}
+	.summary.divide_tot .total span{padding-left:3px;}
+	.summary .cpus {
+		float: left;
+		width: 50%;
+		text-align: right;
+}
+.asp-wrapper {
+	margin-left: 15px;	
+}
+/* Move Keys */
+
+.oldFolder {
+	background: #EEE;
+	padding: 15px 18px 15px 15px;
+	word-wrap: break-word;
+	color:#333333;
+}
+#content-section ul.keys {
+	margin: 0px;
+}
+#content-section ul.keys li.key {
+	font-size: 12px;
+	background: none;
+	padding: 8px 15px;
+}
+.secondary-note {
+	color: #999;	
+}
+.moveKeys .tabContent ul.license_folders_id {
+	height: auto;
+}
+#content-section section .warning p {
+    margin-bottom: 0px;
+}
+.moveKeys .agree{
+	margin: 2px 4px 5px 15px;
+	overflow: hidden;
+}
+.moveKeys .agree.error{color:#960505;}
+.ie9 .moveKeys .agree{
+	margin-right:0px;
+}
+	.moveKeys .checkbox.agree input {
+		margin-right: 5px;
+	}
+	.moveKeys .checkbox.agree label {
+		width: auto;
+	}
+.moveKeys .loading {
+	font-size: 15px;
+}
+.keysMoved .following {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.keysMoved .key {
+	margin-bottom: 20px;
+}
+.from.folder {
+	margin-bottom: 20px;
+}
+/* ########################################################################### 	*/
+/* ##### MANAGE DIVIDE KEYS / PREEJITH /										*/
+/* ########################################################################### 	*/
+
+.review-lic-container{
+	padding: 10px 0 10px 10px;
+	color:#333;
+}
+.review-lic-container .first{
+	width: 100px;
+	float:left;
+	padding-bottom:5px;
+	font-weight:bold;
+}
+.review-lic-container .second{
+	width: 140px;
+	float:left;
+	word-wrap: break-word;
+	padding-bottom:5px;
+}
+.review-lic-container .btm_margin{
+	margin-bottom:10px;
+}
+.review-lic-container .btm_marginoneFive{
+	margin-bottom:15px
+}
+
+.review-lic-container .first.oneZeroZero{
+	width: 100px;
+}
+.review-lic-container .second.oneFourZero{
+	width: 130px;
+}
+#content-section .confirmation-wrapper .ctrlHolder select{
+	width: 90px;
+	font-size: 12px;
+    padding: 1px
+}
+.confirmation-wrapper .ctrlHolder label{
+	float:left;
+}
+
+/*moved from page level to css file rvooka 12/06/2011*/
+.productLoading{ /* needs to be removed once raghavendra is done (theme side)*/
+	height: 250px; 
+	text-align: left;
+	font-size: 16px;
+	padding-left: 10px; 
+	padding-top: 10px;
+}
+.boldLabel {
+	font-weight:bold;
+}
+#content-container table tr.selected td span.action {
+    color: #FFFFFF;
+    font-weight: normal;
+}
+#content-container table td span.action {
+    color: #E0764C;
+    display: block;
+    font-size: 12px;
+}
+.warning_big {
+    background: url("img/ico-alert.gif") no-repeat scroll 10px 5px #FFF9E9;
+    border: 1px solid #DDDDCE;
+    border-radius: 3px 3px 3px 3px;
+    color: #666666;
+    font-size: 12px;
+    margin: 15px 15px 20px;
+    padding: 13px 15px 25px 80px;
+}
+.warning_big.oneFiveMrgin_top{
+	margin-top:30px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.warning_big {
+		padding-top:12px
+	}
+}
+.dataTables_empty {
+    color: #666666;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 75px;
+    text-align: center;
+    vertical-align: middle;
+}
+.noborder {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+}
+#content-section .ctrlHolder select {
+    float: none;
+    width: 154px;
+}
+#productSummary p {
+	font-style:italic;
+	font-size:11px;
+	margin-bottom: 0 !important;
+}
+.splcontract {font-weight:bold;margin:15px;}
+div.updownKeys div.dataTables_wrapper{
+	min-height:20px;
+	height:auto;
+}
+.filter-content-wrapper .ctrlHolder.date input, #licenseMainDiv .filter-content-wrapper .ctrlHolder.date input {width: 92px;}
+#licenseMainDiv .ctrlHolder input[type="text"] {width: 148px;}
+#licenseMainDiv .ctrlHolder textarea#notesKey{height:35px;width:300px;overflow:auto;}
+#licenseMainDiv .filter-content-wrapper .ctrlHolder.date{width:132px;}
+.ie7 #licenseMainDiv .filter-content-wrapper .ctrlHolder.ie_marginright{margin-right:6px;}
+#licenseMainDiv .filter-content-wrapper .button_holder_right{
+	float:right;
+	margin-right:15px;
+	padding-top:20px;	
+}
+#licenseMainDiv .filter-content-wrapper .button_holder_right button{margin-right:3px !important;}
+/* This change only for downgrade v13 tbl */
+#content-container table.downgrade_v13_order_tbl th.exp_col_th,
+#content-container table.downgrade_v13_order_tbl td.v_openclose{
+	padding-right:10px;
+	padding-left:13px;
+}
+#content-container table.downgrade_v13_order_tbl td.v_openclose .openCloseSelect{width:14px;}
+#content-container table.downgrade_v13_order_tbl td.v_openclose .openCloseSelect a{
+	margin-right:0;
+	width:13px;
+}
+#content-container table.downgrade_v13_order_tbl div.more-details thead{border:none;}
+#content-container table.downgrade_v13_order_tbl div.more-details thead th{
+	font-weight:bold;
+	padding-bottom:12px;
+}
+#content-container table.downgrade_v13_order_tbl div.more-details td{padding-bottom:5px;}
+#content-container table.tbl_downgrade_cls td.with_input,#content-container table#tbl_upgradelic td.with_input{padding-top:5px;}
+.firefox.mac #content-container table.tbl_downgrade_cls td.with_input,.chrome #content-container table.tbl_downgrade_cls td.with_input,
+.firefox.mac #content-container table#tbl_upgradelic td.with_input,.chrome #content-container table#tbl_upgradelic td.with_input{padding-top:6px;}
+#content-container table.tbl_downgrade_cls td.with_input span,#content-container table#tbl_upgradelic td.with_input span{position:relative;top:1px;}
+.chrome #content-container table#tbl_upgradelic td.with_input span{top:2px;}
+.firefox.mac #understand_warning {position: relative;top: -2px;}
+.firefox.mac .moveKeys #understand_warning {top: -1px;}
+/* MOVE KEYS */
+.column .scroll.httwoFourEight{height:248px;}
+.column .scroll.scrollxauto{overflow:scroll;}
+.ie7 .column .scroll.httwoFourEight{height:245px;}
+.column .scroll.htTwoOneSeven{height:217px;}
+.withTopborder{border-top:1px solid #ccc;}
+section.htauto{height:auto}
+section.ht370{min-height:370px}
+.firefox.mac section.ht370 {min-height: 368px;}
+.chrome.mac section.ht370 {min-height: 367px;}
+.divideKeys .ctrlHolder.checkbox.agree{margin-left:15px;}
+/*Added for right click CR add user flow*/
+.noborder.bottomarea{background: url("img/bkg_tabs_bottom_new.png") repeat-x scroll 0 bottom transparent;} 
+/* Start: Added for BUG-00044460 - VSUS Nov release*/
+.reviewPadd {padding: 0;}
+.reviewPadd  span.proTitle{width:60px;font-weight:bold;}
+.reviewPadd  span.proName{display:inline-block;word-wrap: break-word;}
+/* End: Added for BUG-00044460 - VSUS Nov release*/
+input.licDetSelectAllclass{float:left;margin-right:15px;}
+div.warning_big div.btn_bolder{text-align:right;}
+.left{text-align:left;}
+
+.oldFolder.padfive{padding-bottom:5px;padding-top:5px;}
+.oldFolder.borderTop{border-width:1px;border-top: solid;border-color:#ccc;}
+#content-section .tabContent ul li.mainfolder{padding-top:0px;border-bottom:none;padding-bottom:0px;}
+#content-section .tabContent section ul ul li.folderNode{padding:5px 15px;}
+
+/* Folder persistence CR related CSS - START */
+.boldText{
+	font-weight: bold;
+}
+.redText{
+	color: #CC0000;
+}
+.innerConHt{
+    min-height: 558px;
+}
+h1#heading{
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+.inlineBlock{
+	display: inline-block;
+}
+#mlNotesLabelsSel{
+    margin-top: 10px;
+}
+#nlHeading{	
+	margin: 5px 0;
+}
+#headingDesc{
+	margin-bottom: 15px;
+}
+#mlHeader{
+	margin-bottom:15px;
+}
+#mlHeader h1{
+    font-size: 18px;
+    font-weight: bold;    
+}
+.nlOptionContainer{
+	margin: 8px 0 0 5px;
+	float: left;
+	width: 24%;
+}
+.nlOptionContainer > span{
+	margin-left: 3px;
+}
+#mlAttention{
+    padding: 0 5px;
+}
+#mlAttention .warning_big{
+	margin: 15px 0;
+	background-position: 10px 20px;
+}
+#mlActions.footer{
+    margin-top: 8px;
+    clear:both;
+}
+#mlMainContainer .dataTables_wrapper table tr td {
+    padding-left: 15px;
+}
+#mlMainContainer table tr:first-child td {
+    border-top: medium none;
+}
+#mlMainContainer table td {
+    border: 0 solid #FFFFFF;
+}
+#mlMainContainer table tr {
+    background: url("img/bkg_dotted_line.png") repeat-x scroll 101% bottom transparent;
+
+}
+#mlMainContainer table tr.odd td, #mlMainContainer table tr.even td{
+    margin: 0;
+    padding: 8px 5px 7px;  
+}
+
+#mlMainContainer label.noteH {font-weight:bold;}
+
+#mlMainContainer table tr td{
+	    margin: 0;
+    padding: 4px 5px 8px;
+}
+#mlMainContainer table tr.noborder{
+    background: none repeat scroll 0 0 #FFF;
+    border: medium none;
+}
+#mlMainContainer .note-wrapper {	margin: 0px;}
+#mlMainContainer span.openclose{
+	cursor: pointer;
+}
+#mlMainContainer div.note-wrapper div.noteH{
+	/*float:left;
+	width:5%;*/
+	display: inline-block;
+}
+#mlMainContainer div.note-wrapper span.note{
+	/*float:left;*/
+	width:676px;
+    color: #9c9c9c;
+    display: inline-block;
+}
+#mvlContainer span.moveFolderN {width:300px;}
+#mlMainContainer div.note-wrapper div.sLabeln {
+	float:left;
+	/*font-weight:bold;*/
+	padding-right:3px;
+}
+#mlMainContainer div.note-wrapper div.sLabelv {
+	float:left;
+	padding-right:20px;
+        color: #9c9c9c;
+}
+#mlMainContainer div.note-wrapper div.lCont{
+	float:left;
+        padding-bottom:2px;
+}
+#mlMainContainer div.note-wrapper.clDiv {
+	margin:5px 0 0 0;
+}
+.ie7 #mlMainContainer div.note-wrapper{
+    width: 790px;
+    float: left;
+}
+#simplemodal-container a.help {
+    background: url("img/btn_help.png") no-repeat scroll 0 top transparent;
+    cursor: pointer;
+    display: inline;
+    height: 16px;
+    position: absolute;
+    right: 40px;
+    top: 12px;
+    width: 16px;
+    z-index: 3200;
+	font-size:0px;
+}
+/*  Begin -- styles for Result /  Email functionality */
+
+.resultMainContainer, .resultContainer, .resultData,  .resultHeader,
+.notifyHeader, .resultData, .addNewMailId, .notifyFooter, .addNewMailId li,.errorMsg, 
+.resultHeader ul li, .messageContainer, .sendBtnContainer, .sendBtnContainer li, 
+#dlHeaderList li, #dlDivideList li, .dlSnumber, .dlNewKey, .dlNewInstance{
+    float: left;
+}
+.resultMainContainer{
+    width: 100%;    
+    /*margin: 4%;*/
+    height: auto;
+} 
+.resultContainer{    
+    width: 100%;    
+}
+.resultHeading{    
+    width: 78%;
+}
+
+.resultHeader ul{
+    margin-left: 0px !important;
+}
+.sendBtnContainer{
+    margin:10px 0 0 0px !important;    
+}
+
+.resultHeader ul li, .sendBtnContainer li, #dlHeaderList li, #dlDivideList li{    
+    list-style: none;
+    background: none !important;
+    padding: 0; 
+}
+
+.resultHeader ul li a{
+    text-decoration: none;    
+}
+.resultHeadingLinks{
+    font-size: 12px;
+    color:#166fc9;
+    width: 11%;    
+}
+#btncopyToClipboard{
+    background: url('img/fp/copy.png') left top no-repeat !important;    
+    padding:2px 0 4px 21px
+}
+.copyContainer{
+    padding-top: 2px!important;
+}
+
+/* Begin - Style changes for to match UI with PSD - Divide */
+#mlCenterContainer .loading{
+    height: 200px;
+}
+#newKeys input, #selectedInstance {
+    height: 22px;
+    min-width: 40px;
+    font-size: 12px;
+    text-align: left;
+}
+.dlInput{
+    border: 1px solid #cdcdcd !important;
+    background:#FFFFFF !important;
+    color:#444444 !important;
+}
+/* End - Style changes for to match UI with PSD - Divide */
+#successMessage{    
+    width: 96%;
+    padding: 0.5em 1.4em;
+    border-radius: 5px;
+    margin: 15px 0 5px 0;
+    border: 1px solid #56ab2b;    
+    background-color: #eaf3dd;
+    height: 36px;
+}
+#successMessage h3{
+    color: #3d6d0f;  
+    width: 90%;
+    float: left;
+}
+#successMessage h3, .closeSuccessMsg{
+    margin: 0.9em 0 0 0;
+}
+.showTick, .closeSuccessMsg, .copyIcon, .printIcon{
+    background: url('img/fp/resultSprite.png') left top no-repeat;
+}
+.showTick{
+    float: left;
+    width: 36px;
+    height: 36px; 
+    margin: 0.3em 1em 0 0;
+}
+.closeSuccessMsg{
+    float: right;
+    width: 16px;
+    height: 16px;
+    background-position: -39px top; 
+    cursor: pointer;
+} 
+.copyIcon, .printIcon{
+    width: 20px;
+    height: 16px;
+    float: left;      
+}
+.copyIcon{
+     background-position: -58px top; 
+}
+.printIcon{    
+    background-position: -80px top;    
+}
+#btncopyToClipboard span, #btnPrint span{
+    padding:4px 0 0 2px;
+    display: block;
+}
+#oldHeading, #newHeading, #cLdLheading{
+    font-size: 12px;
+    font-weight: bold;    
+}
+#newHeading{
+    margin-top: 20px;
+}
+.oldKeyResultList, .newKeyResultList, .remaningKeyList{
+    margin: 5px 0 5px 0;
+}
+.oldKeyResultList li, .newKeyResultList li, .remaningKeyList li{
+    background-image: none !important;
+    padding: 1% 1% 1% 0 !important;
+    list-style: none !important;
+}
+.oldKeyResultList .leftList, .newKeyResultList .leftList,.remaningKeyList .leftList
+{
+    width:30%;
+    float: left;
+}
+.oldKeyResultList .rightList, .newKeyResultList .rightList,.remaningKeyList .righttList{
+    width:65%;
+    float: left;
+}
+#remaningKeyContainer em{
+    font-style: italic;
+}
+.instanceCount{
+    padding-left:15px; 
+    font-weight:bold
+}
+.resultData{
+    padding: 2% 0 0 2%; 
+    width: 98%;
+    height: 200px;
+    overflow: auto;
+}
+.messageContainer p{
+    padding: 1%;
+}
+.newKeyContainer, .oldKeyContainer{
+    margin-top: 1%;
+}
+#activeLicense, #activeProd{
+    font-weight: normal;
+}
+.noteColor{
+    color:#999999;
+}
+/*    End -- styles for Result / Email functionality  */
+
+/* Begin - Styles for divide license */
+/* Common styles */
+.fpPopupHeading{
+    background-color: #DEDEDE;
+    display: block;
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 5px 0 0 !important;
+    padding: 1.25% 0.65% 1.1% 0.65%;  
+}
+
+.outline{
+    border:1px solid #E1E1E1;
+}
+.fpPopupHeading.resultHeader{
+    width: 99%;
+}
+#newKeysContainer{
+    width: 100%;
+    height: 84px;
+    overflow: auto;
+    /*margin-top: -3px;*/
+    padding-top: 15px;
+}
+#newKeysContainer ol#newKeys{
+	margin-left:3em;
+}
+.dlKeyCount, .dlSelectedKeyCount, .dlTotalInstance, .dlRemaningInstance{
+    float: left;   
+    font-weight: bold;
+     padding: 0% 0% 0% 1%!important;
+} 
+.dlKeyCount{
+    width: 25%;
+}
+.dlSelectedKeyCount{
+    width: 9%;       
+    text-align: center;
+}
+.dlTotalInstance{
+    width: 38%;
+    text-align: right;
+}
+.dlRemaningInstance{
+    width: 23%;
+    text-align: right;
+}
+.dlSnumber, .dlNewKey, .dlNewInstance{
+    
+}
+.dlData {
+    margin-bottom: -5px;
+}
+.dlData p{
+    margin: 8px 0;
+    font-weight: bold; 
+    color:#333333;
+    padding-left: 15px;
+}
+/*Need to check this id is used or not ?*/
+#dlNotesLabel{
+    margin: 0 0 8px 0;
+    padding-left: 15px;
+}
+#customData{
+    margin: 0 0 8px 0;
+    display: none;
+    padding-left: 15px;
+}
+.dlTop{
+    padding: 1% 1% 0 1%;        
+}
+.dlCustomKey{
+    
+}
+#newKeys li{
+    padding: 3px 0;
+     width: 46%;
+     float: left;
+}
+#newKeys input{
+    text-align: right;    
+    width:50px; 
+    height: 15px;
+    margin-left: 38px;
+}
+/* End - Styles for divide license */
+/* Notes and labels Styles */ 
+#mlnotesLabelsForm {
+	padding: 0px 10px 10px 0px;	
+}
+#notesContainer textarea {
+	width:99%;
+	margin-top: 5px;
+	height: 50px; 
+}
+#mlNotesLabel {
+	display:block;
+}
+.modalContent #mlnotesLabelsForm .ctrlHolder label   {
+	width:140px;
+	font-weight:bold;
+	margin-left:0px;
+	padding-bottom:5px;
+	padding-right:5px;
+	cursor: auto;
+}
+#mlLabelsContainer .customLablesContiner{
+    height: 218px;
+    overflow: auto;
+    padding-top: 5px;
+}
+#mlLabelsContainer .first,#mlLabelsContainer .second{
+	float:left;
+}
+#mlLabelsContainer .second{
+	margin-left:40px;
+}
+.modalContent  #mlLabelsContainer .ctrlHolder label{
+	margin-left:10px;
+}
+h2.customLablesHeader {
+	font-size:14px;
+	padding-bottom:10px;
+}
+
+#mlnotesLabelsForm div.ctrlHolder div.error_msg {
+	margin-left:156px;
+	float:none;
+	height:10px;
+	width:180px;
+}
+/* End : Notes and labels styles */ 
+
+/* downgrade/upgrade related css - START */
+.tabbed_area header h1{
+	font-size: 12px;
+    font-weight: bold;
+    padding: 8px 10px 7px 10px;
+}
+#tbl_downgradelic_wrapper div.dataTables_scrollBody{
+	height: 151px !important;
+}
+#dglContainer div.dataTables_wrapper{
+	min-height: 160px !important;
+}
+.downgrade_sel_container .sel_downgrade{
+	font-size: 12px;
+	height: 23px;
+}
+.downgrade_sel_container .lbl_sel_downgrade{
+	margin-top: 1px;
+}
+#mlMainContainer table th, #dlKeyHeading {
+    background: url("img/bkg_header_black.png") repeat-x scroll 0 0 #383838;
+    border-color: #252525;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0;
+    padding: 4px 5px 4px 15px;
+    text-align: left;
+}
+.downgrade_sel_container{
+	margin-bottom: 15px;
+	margin-top: 5px;
+	padding-left: 10px;
+}
+.subHeading {
+	font-size: 15px;
+	font-weight: bold;
+	margin: 5px 0;
+}
+#mlMainContainer .errorBorder {
+    border-color: #CC0000 !important;
+}
+#dglContainer .error_msg,
+#tbl_upgradelic .error_msg{
+	margin-left: 0px;
+	display:none;
+	height:15px;
+	position:absolute;
+}
+#dglContainer{
+	height: 225px;
+}
+#mlMainContainer #tbl_upgradelic tr.odd td,
+#mlMainContainer #tbl_upgradelic tr.even td, #mlMainContainer #tbl_downgradelic tr.odd td,
+#mlMainContainer #tbl_downgradelic tr.even td{
+	padding-bottom: 15px !important;
+}
+
+.ie #mlMainContainer table#tbl_upgradelic tr td:first-child{
+    width: 234px;
+}
+.ie7 #mlMainContainer table#tbl_downgradelic tr td:first-child{
+    width: 255px;
+}
+
+#dglContainer .loading,
+#uglContainer .loading{
+   padding-top: 100px;
+}
+#uglContainer .exportLicenseKey{
+	text-align: right; 
+	margin: 7px 0px;
+}
+#uglContainer .exportLicenseKey a {
+    cursor: pointer;
+    font-size: 13px;
+}
+/*Upgrade options  styles */ 
+#uglOptionsContainer{
+	/*border: 1px solid #DEDEDE;*/
+	float: left;
+    width: 100%;    
+    height:450px;
+}
+#uglOptionsContainer .uplHeader {
+    padding-left: 17px !important;
+    width: 773px !important;
+}
+#uplOptionsContent {
+    float: left;
+    height: 94%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 790px;
+}
+#uplOptionsContent table {
+    border: 1px solid #DEDEDE;
+    height: 100%;
+    margin-left: 17px;
+    width: 97.85% !important;
+}
+#uplOptionsContent table td, #selUplOptionsContent table td {
+    height: auto !important;
+}
+#selUplOptionsContent{
+	float: left;
+    height: 77%;
+    overflow: auto;
+    width: 100%;
+}
+#selUplOptionsContent table{
+	height: 100%;
+}
+#selUplOptionsContent table tr:nth-child(even) {
+    background-color: #F5FAFF !important;
+}
+#selUplOptionsContent table tr:nth-child(2n) {
+    background-color: #F5FAFF !important;
+}
+#uglQuantitiesContainer{
+	border: 1px solid #DEDEDE;
+	float: left;
+    width: 100%;   
+    height:150px;
+    margin-bottom:15px;
+}
+.uplHeader{
+	float: left;
+    width: 100%;
+}
+#uplQuantitiesContent {
+    clear: both;
+    height: 120px;
+    overflow: auto;
+}
+.uplFromOption {
+    background: url("img/option.png") no-repeat;
+    display: inline-block;
+    height: 50px;
+    margin-left: -18px;
+    text-align: center;
+    width: 120px;
+}
+.uplFromOption p{
+	padding-top: 13px; 
+	color: #666666; 
+	font-weight: bold;
+}
+#selectedOptionsDiv .uplFromProduct,#uglQuantitiesContainer .uplFromProduct{
+	margin-bottom:5px;
+	padding-top:5px;
+	width:100%;
+}
+
+.uplToProduct{
+	margin-bottom:5px;
+
+}
+#selectedOptionsDiv .uplToProduct ul,#uglQuantitiesContainer .uplToProduct ul{
+ 	list-style: none outside none;
+    margin-left: 15px;
+    margin-top: 5px;
+
+}
+#uglOptionsContainer .uplToProduct ul{
+	list-style: none outside none;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+#selectedOptionsDiv .uplToProduct ul li,#uglQuantitiesContainer .uplToProduct ul li{
+	margin-bottom: 0px;
+	border-bottom: none;
+	padding:0px;
+}
+#uglOptionsContainer .uplToProduct ul li{
+	margin-bottom: 8px;
+}
+#selectedOptionsDiv .uplToProduct ul li label,#uglOptionsContainer .uplToProduct ul li label,#uglQuantitiesContainer .uplToProduct ul li label{
+	color: #416C98;
+    display: block;    
+    font-size: 13px;
+    font-weight: bold;
+    width: 80%;
+    cursor:auto;
+}
+#selectedOptionsDiv .uplToProduct ul li p,#uglOptionsContainer .uplToProduct ul li p,#uglQuantitiesContainer .uplToProduct ul li p{
+	font-size: 11px;
+}
+#uglOptionsContainer table, #uglQuantitiesContainer table{
+    width: 100%;
+    height:100%;
+}
+#uglOptionsContainer table tr, #uglQuantitiesContainer table tr, #selectedOptionsContainer table tr, #selectedOptionsContainer table td {
+    background-image: none !important;
+}
+#uglOptionsContainer table tr:nth-child(even) {
+    background-color: #F5FAFF !important;
+}
+#uglOptionsContainer table tr:nth-child(2n) {
+    background-color: #F5FAFF !important;
+}
+.uglFromHeader {
+    background-color: #000000;
+	border-right: 1px solid #FFFFFF !important;
+    height: 25px;
+    padding: 5px 0 0 !important;
+    width: 380px;
+}
+
+.uglToHeader {
+    background-color: #336699;
+    height: 25px;
+    padding: 5px 0 0 !important;
+}
+.uglFromProducts {
+    border-right: 1px solid #DEDEDE !important;
+    height: 100%;
+    padding: 0 0 10px !important;
+    width: 380px;
+}
+.uglToProducts {
+    height: 100%;
+    padding: 0 0 10px !important;
+}
+
+.uplFromProduct {
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+#selectedOptionsDiv .uglFromHeader {
+    background-color: #000000 !important;
+}
+#selectedOptionsDiv .uglToHeader {
+    background-color: #336699 !important;
+}
+#selUplOptionsContent .uglFromProducts {
+    width: 50% !important;
+}
+
+.uglFromHeader label,.uglToHeader label{
+	color:#ffffff;
+	font-size:14px;
+	font-weight:bold;
+	padding-left:5px;
+	cursor:auto;
+}
+#uglOptionsContainer button.selectOption {
+	margin-left: 16px !important;
+}
+.uglFromProducts .anchorProduct{
+	display: block;    
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 15px;
+    width: 80%;
+    cursor:auto;
+}
+.nonAnchorDesc{
+	margin-left:15px;	
+	margin-top:10px;
+	margin-bottom:10px;;
+}
+#selectedOptionsDiv .nonAnchorDesc,#uglQuantitiesContainer .nonAnchorDesc{
+	margin-left:15px;	 
+	margin-top:5px;
+	margin-bottom:5px;
+	clear:both;
+}
+#selectedOptionsDiv .nonAnchorDesc p,#uglQuantitiesContainer .nonAnchorDesc p{
+	margin-bottom: 0px;
+}
+.nonAnchorDesc label{
+	font-weight: bold;
+	cursor: auto;
+}
+label.nonAnchorProduct{
+	display:block;
+	line-height:20px;
+	font-size:13px;
+	font-weight:bold;
+	margin-left: 15px;
+	cursor: auto;
+}
+th.uglQtyHeader {
+    background-color: #000000 !important;
+    background-image: none !important;
+    color: #FFFFFF !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+}
+#btn_checkUpgradeOptions{
+	height:36px;
+	background: #298f87 url('img/bg_buttons_green.png') repeat-x !important; /* Old browsers */
+	background: -moz-linear-gradient(top, #298f87 0%, #258b83 3%, #268c84 7%, #177d75 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#298f87), color-stop(3%,#258b83), color-stop(7%,#268c84), color-stop(100%,#177d75)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #298f87 0%,#258b83 3%,#268c84 7%,#177d75 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #298f87 0%,#258b83 3%,#268c84 7%,#177d75 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #298f87 0%,#258b83 3%,#268c84 7%,#177d75 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom, #298f87 0%,#258b83 3%,#268c84 7%,#177d75 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#298f87', endColorstr='#177d75',GradientType=0 ) !important; /* IE6-9 */
+}
+#upgradeOptionsContainer
+{
+	background: none repeat scroll 0 0 #666666;
+    float: left;
+    height: 80px;
+    width: 100%;
+}
+#upgradeOptionsDiv{
+	padding-top: 15px;
+    width: 98.5%;
+}
+
+#upgradeOptionsDiv div.ctrlHolder
+{	
+	float: left;
+	width: 66%;
+}
+#upgradeOptionsDiv div.button_holder_right
+{	
+	float: right;
+	margin-top: 15px;
+	width: 169px;
+}
+
+#upgradeOptionsDiv label.upgradeOptionsDesc
+{
+	color:#ffffff;
+	cursor: auto;
+}
+
+#selectedOptionsContainer
+{
+	background: none repeat scroll 0 0 #666666;
+    float: left;
+    height: 170px;
+    width: 100%;
+}
+#selectedOptionsDiv{
+	background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    height: 135px;
+    margin-left: 15px; 
+    margin-top:10px;  
+    width: 97.5%;
+    overflow:auto;
+}
+
+#selectedOptionsContainer div.selectedOptionsMsg{
+	clear: both;
+    margin-left: 15px;
+    padding-top: 5px;
+}
+
+#tbl_upgradeLicenseQuantities div.dataTables_wrapper{
+	min-height: 0px;
+}
+#mlMainContainer #tbl_upgradeLicenseQuantities td.details{
+	 padding: 0 !important;
+}
+#uglTblcontainer{
+	clear:both;	
+	width:100%;
+	border: 1px solid #C3C3C3;
+}
+.openSelectRowBackground{
+	background-color: #DDEDFF !important;
+}
+#tbl_upgradeLicenseQuantities div.openCloseSelect a.open {
+    background: url("img/btn_gray_blue_plus_minus.png") no-repeat scroll -5px -25px rgba(0, 0, 0, 0);
+}
+#tbl_upgradeLicenseQuantities div.openCloseSelect a {
+    background: url("img/btn_gray_blue_plus_minus.png") no-repeat scroll -5px -5px rgba(0, 0, 0, 0);
+    height: 13px;
+    margin-left: 0;
+    margin-right: 3px;
+    margin-top: 2px;
+    width: 13px;
+}
+#tbl_upgradeLicenseQuantities div.note-wrapper{
+	margin-left: 16px;
+}
+#tbl_upgradeLicenseQuantities div.note-wrapper.clDiv{
+	margin: 5px 0px 0px 16px !important;
+}
+.uglFolderPath{
+	padding-left:15px; 
+    font-weight:bold
+}
+.uplFromProduct .qtyUOM{
+	float: right;
+	font-size: 13px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.uplToProduct .qtyUOM{	
+	font-size: 13px;
+    font-weight: bold;
+    float:right;
+    margin-right:10px;
+} 
+#tbl_upgradeLicenseQuantities input.totalQty{
+	width:30px;
+}
+#tbl_upgradeLicenseQuantities td div.error_msg{
+	margin-left:0px;
+	position:absolute;
+}
+
+#mlMainContainer #tbl_upgradeLicenseQuantities tr.odd td,
+#mlMainContainer #tbl_upgradeLicenseQuantities tr.even td{
+	padding-bottom: 15px !important;
+}
+#uglErrorContainer{
+	margin: 20px 0px;
+}
+/* End : Upgrade options styles */
+
+/* downgrade/upgrade related css - END */
+
+/** Start : Move licenses styles **/
+
+.moveContainer{
+	border: 2px solid #CFCFCF;	
+	height:320px;	
+}
+.moveContainerHeader{
+	background-color: #E2E2E2;
+    border-bottom: 2px solid #CFCFCF;
+    color: #343434;
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    padding: 2% 0 0 2%;
+}
+.moveFromContainer{
+	float:left;
+	margin-right:5%;
+	width:47%;
+}
+.moveToContainer{
+	float:left;
+	width:47%;
+	
+}
+.moveToContainer a.addNewLink{
+	font-size:12px;
+	/*margin-left:54%;*/  /* BUG-00065092 - adjusted for text wrap issue in JP locale. */	
+	color: #CCCCCC;
+	text-decoration: none !important;
+	float: right;
+	margin-right: 10px;
+}
+.moveToContainer a.addNewLink.active{	
+	cursor:pointer;
+	color:#3399CC;	
+}
+.moveToContainer a.addNewLink.active:hover{
+	text-decoration: underline; 
+}
+.addNewfolderContainer{
+	background-color:#E2E2E2;
+	height:55px;
+}
+.addNewfolderContainer .addNewText {
+	width:49%;
+	margin:6px 5px 0;
+}
+#mlAddFolderCancel {
+    width: 80px;
+}
+#mlAddFolder {
+    width: 82px;
+}
+.moveFromWrapper{
+	height:280px;
+	overflow:auto;
+}
+.moveFromContainer ul.moveFromList{
+	list-style:none;
+	margin-left:5px;
+}
+
+.moveFromContainer li.licenseItem {
+	font-weight:bold;
+	padding-top:10px;	
+}
+.moveFromContainer li.folderItem {
+	font-size: 12px; 
+	background-image: url("img/fp/folder-icon.png"); 
+	background-repeat: no-repeat; 
+	margin: 5px; 
+	padding-left: 22px;
+	padding-top: 2px;
+}
+#moveProductName {
+	font-size:13px;
+	margin:5px 0px 10px 10px;
+	font-weight:bold;
+}
+#targetfolderPane{
+	height:280px;
+	overflow:auto;
+}
+
+#targetfolderPane.minimized{
+	height:215px;
+}
+#attentionHeader {
+	font-size:14px;
+}
+#bulkMoveuccessMessage{    
+    width: 96%;
+    padding: 0.5em 1.4em;
+    border-radius: 5px;
+    margin: 15px 0 5px 0;
+    border: 1px solid #56ab2b;    
+    background-color: #eaf3dd;
+}
+#bulkMoveuccessMessage h2{
+	padding: 5px 0;
+}
+#addNewfolderDiv .error_msg{
+	margin-left:8px;
+	font-size: 11px;
+    margin-top: -2px;
+	width:335px;
+}
+#sameFolderMsg{
+	padding-bottom:5px;
+}
+#targetfolderPane .ajaxLoading{
+	margin-left:30%;
+	margin-top:10px;
+}
+
+#targetfolderPane .folderPane  li[level="1"] span.folderNode  span.folderTxt{
+	width:300px;
+}
+#targetfolderPane .folderPane  li[level="2"] span.folderNode  span.folderTxt{
+	width:265px;
+}
+#targetfolderPane .folderPane  li[level="3"] span.folderNode  span.folderTxt{
+	width:230px;
+}
+#targetfolderPane .folderPane  li[level="4"] span.folderNode  span.folderTxt{
+	width:195px;
+}
+#targetfolderPane .folderPane  li[level="5"] span.folderNode  span.folderTxt{
+	width:160px;
+}
+
+/** End : Move Licenses styles **/ 
+/* Folder persistence CR related CSS - END */
+
+#mlMainContainer .ellipsisTxt {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+#mlMainContainer span.folderPathCL{width:240px;}
+#mlMainContainer span.folderPathDGL{width:140px;}
+#mlMainContainer span.folderPathUGL{width:145px;}
+#mlMainContainer .ellipsisTxt.normalWhiteSpace {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+#resultDataContainer span.newBadge{
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 8px;
+    margin-left: 5px;
+    padding: 1px 2px;    
+    top: -2px;    
+    background: #9dba3a;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(1, rgb(160,185,58)),
+		color-stop(0, rgb(130,150,49))
+	);
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgb(160,185,58) 100%,
+		rgb(130,150,49) 0%
+	);
+}
+#mlCenterContainer table th.sorting_disabled{
+	cursor:auto !important;
+}
+#global-zeroclipboard-html-bridge{
+    position: fixed!important;   
+}
+/*
+    Style changes for folderpersistance  CR-00064441
+ */
+ .dgugHeaderContainer{
+     display: block;     
+ }
+ 
+ .dgugHeaderContainer ul{
+     margin: 0 0 10px 0;
+     padding: 0px;
+     list-style: none;
+ }
+ .dgugHeaderContainer ul li{
+     display: inline-block;
+     font-size: 15px;
+     font-weight: bold;
+ }
+ .ie7 .dgugHeaderContainer ul li{
+     float: left;
+ }
+ .dgugHeaderContainer ul .verticalAlign{
+     vertical-align: 5px;
+ }
+ .dgugHeaderContainer ul .lbl_sel_downgrade{
+     margin-top: 1px;
+ }
+ .hideAll{
+     display: none !important;
+ }
+ #dlLabelSelectedProduct{
+     padding-left: 15px;
+ }
+#dlLabelSelectedProduct .openclose{
+    background: url("/static/myvmware/common/css/img/btn_gray_blue_plus_minus.png") no-repeat scroll -5px -3px rgba(0, 0, 0, 0);
+    padding: 0 8px;
+}
+.ie #dlLabelSelectedProduct .openclose{
+    background-image: url("/static/myvmware/common/css/img/btn_gray_blue_plus_minus.png");
+    background-repeat: no-repeat;
+    background-position: -5px -3px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 8px;
+}
+#dlLabelSelectedProduct .minus {
+    background-position: -5px -23px;
+}
+.ie #dlLabelSelectedProduct .minus{
+    background-position: -5px -23px;
+}
+.movedFromCntr p{
+    margin-bottom: 5px;
+}
+.movedHeading{
+    margin:10px 0 5px 0 !important;
+}
+#mlMainContainer select.sel_downgrade {
+    width: 300px;
+}
+
+/* Begin Merger - code from exposed_filters.css */
+/* ef = exposed filter */
+.hide{
+	display: none;
+}
+.fLeft{
+	float: left;
+}
+.fRight{
+	float: right;
+}
+br.clear{
+	clear: both;
+	height: 0px;
+	width: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+.inlineBlock{
+	display: inline-block;
+}
+.width50{
+	width: 49.99%;
+}
+.paddingLeft10{
+	padding-left: 10px;
+}
+.marginRight15{
+	margin-right: 15px;
+}
+.nowrap{
+	white-space: nowrap;
+}
+/* liquid layout with fixed blocks - START */
+#exposedFilterForm{
+	position: relative;
+	z-index: 101; /*solution z-index issue in IE7*/
+	background-color: #E6E6E6;
+	padding-top: 12px;
+}
+.contentWrapper{
+	width: 100%;
+}
+#filterFieldsContainer{
+	margin-left: 72px; /* Set left margin to LeftColumnWidth */
+	margin-right: 323px;
+	padding: 3px 0 0 3px;
+}
+#leftColumn{
+	width: 71px; /*Width of left column. (reduced 6px to get some space between filter by text and the form fields)*/
+	margin-left: -100%;
+}
+#rightColumn{
+	width: 298px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: auto;
+	margin: 12px 0;
+	padding-left: 3px;
+}
+#exposedFilterForm.expanded #rightColumn{
+	border-left: 2px solid #FFFFFF;
+}
+#exposedFilterForm.expanded #rightColumn .fixedDiv{
+	position: absolute;
+	bottom: 5px;
+}
+/* liquid layout with fixed blocks - END */
+#filterFieldsContainer input[type=text]{
+	font-size: 11px;
+	font-weight: normal;
+}
+.filterByContent{
+	font-weight: bold;
+	margin-top: 5px;
+	text-align: center;
+}
+.mac .filterByContent{
+	white-space: nowrap;
+}
+#exposedFilterForm .buttonsContainer button.button{
+	padding: 5px 15px !important;
+	height: 25px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+#exposedFilterForm.expanded .buttonsContainer button.button,
+#exposedFilterForm .buttonsContainer button.button.secondary{
+	margin-left: 2px !important;
+}
+#exposedFilterForm.expanded .buttonsContainer{
+	padding: 5px;
+}
+.activitiesLog{
+	margin-left: 5px;
+}
+.advancedOptionsContainer{
+	border-right: 1px solid #fff;
+}
+.advancedFilter .fieldText{
+	font-size: 11px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.advancedFilter .fieldText input[type=radio]{
+	margin-bottom: 2px;
+	*margin-bottom: 0px;
+	margin-bottom: 0px\9;
+}
+.moreOrlessFilter,
+.moreOrlessFilter:active,
+.moreOrlessFilter:hover,
+.moreOrlessFilter:visited{
+	color: #3399CC;
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration: none !important;
+	margin-left: 5px;
+}
+/* toggling, manipulations of advanced options - START */
+#exposedFilterForm.collapsed .advancedFilter,
+#exposedFilterForm.collapsed .activitiesLog{
+	display: none;
+}
+#exposedFilterForm.ef_disabled .filterByContent,
+#exposedFilterForm.ef_disabled .fieldText,
+#exposedFilterForm.ef_disabled .moreOrlessFilter,
+#exposedFilterForm.ef_disabled a.addLabel,
+#exposedFilterForm.ef_disabled a.addLabel:hover,
+#exposedFilterForm.ef_disabled a.delLabel,
+#exposedFilterForm.ef_disabled a.delLabel:hover,
+#exposedFilterForm.ef_disabled input.calendarIcon{
+	cursor: default;
+	color: #cccccc;
+}
+/* toggling, manipulations of advanced options - END */
+
+.filterErrorMsg{
+	height: 15px;
+	visibility: hidden;
+	font-size: 11px;
+	color: #CC0000;
+	word-wrap: break-word;
+}
+#exposedFilterForm .errorBorder{
+	border-color: #CC0000 !important;
+}
+.advancedFilter .filterErrorMsg{
+	height: 8px;
+}
+
+/* content.css - editing - START */
+.tabbed_box{
+	margin: 0px !important;
+}
+/* content.css - editing - END */
+
+/* liquid layout for basic filter form-filds - START */
+.basicFilter > div{
+	width: 33.3%;
+}
+.basicFilter > div > div{
+	margin-right: 13px;
+}
+.basicFilter > div > div.ProdNameContainer{
+	margin-right: 7px;
+}
+.basicFilter > div > div.lastInput{
+	margin-right: 10px;
+}
+.basicFilter input[type=text]{
+	width: 100%;
+}
+/* liquid layout for basic filter form-filds - END */
+
+/* liquid layout for advanced filter form-fields - START */
+.liquidFileds > div.dateRangeContainer{
+	width: 46.99%;
+}
+.liquidFileds > div.orderOrContractNoContainer{
+	width: 52.99%;
+}
+.liquidFileds > div.orderOrContractNoContainer > div{
+	margin-right: 25px; /* 4px extra for the padding given for input fields; 1px being vertical-border*/
+	margin-left: 7px;
+}
+
+.liquidFileds > div{
+	width: 49.99%;
+}
+.liquidFileds > div > div.first{
+	margin-right: 7px;
+}
+
+.liquidFileds > div > div input[type=text]{
+	width: 100%;
+}
+/* liquid layout for advanced filter form-fields - ENd */
+
+/* optionField's liquid fixed - START */
+.dateDropDownDiv{
+	margin-right: 27px;
+}
+.calContainer{
+	width: 22px;
+	margin-left: -27px;
+}
+.ie7 #exposedFilterForm input.calendarIcon{
+	margin-left: 8px;
+}
+#exposedFilterForm input.calendarIcon{
+	background: url("img/exposed_filters/calendar.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 15px;
+	display: inline-block;
+	border:0;
+	color: transparent !important;
+	cursor: pointer;
+	font-size:0px;
+}
+#exposedFilterForm.ef_enabled input.calendarIcon:hover{
+	background: url("img/exposed_filters/calendar_hov.png") no-repeat scroll 0 0 transparent;
+}
+/* optionField's liquid fixed - END */
+
+/* custom labels - START */
+.customLabelsDiv{
+	margin-left: 20px;
+	margin-right: 15px;
+}
+.customLabelRow{
+    margin-bottom: 5px;
+}
+.customLabelRow.last{
+	margin-bottom: 0px;
+}
+.customLabelFields{
+	margin-right: 72px; /*BUG-00062917*/
+}
+.custumLabelsErrContainer{
+	margin-right: 55px;
+}
+/*BUG-00062917-Updated margin-left and width*/
+.addOrDeleteLabel{
+	margin-left: -60px;
+	width: 60px;
+	margin-top: 3px;
+	text-align: left !important;
+}
+a.addLabel,
+a.addLabel:hover,
+a.addLabel:visited,
+a.addLabel:active{
+	font-weight: bold;
+	background: url("img/exposed_filters/lab_add.png") no-repeat scroll left center transparent;
+	padding-left: 15px;
+	text-decoration: none !important;
+}
+a.delLabel,
+a.delLabel:visited,
+a.delLabel:active,#exposedFilterForm.ef_disabled a.delLabel:hover{
+	background: url("img/ico_delete_gray.png") no-repeat scroll left center transparent;
+	padding-left: 15px;
+}
+a.delLabel:hover{background: url("img/ico-delete_orange.png") no-repeat scroll left center transparent;text-decoration: none !important;}
+a.delLabel span, a.delLabel:visited span, a.delLabel:active span,#exposedFilterForm.ef_disabled a.delLabel span, #exposedFilterForm.ef_disabled a.delLabel:visited span, #exposedFilterForm.ef_disabled a.delLabel:active span, #exposedFilterForm.ef_disabled a.delLabel:hover span {visibility:hidden}
+a.delLabel:hover span {visibility:visible; color:#4C4E53;font-weight: bold;}
+/* custom labels - END */
+
+/* overriding autosuggest css - START */
+#exposedFilterForm ul.as-selections{
+	margin:0;
+	padding: 0;
+	border-width: 1px;
+	border-style: solid;
+	box-shadow: none;
+	line-height: 14px;
+	height: 18px;
+	overflow: hidden;
+}
+.ie8 #exposedFilterForm .dateRangeContainer ul.as-selections{
+	height: 18px;
+	line-height: 13px;
+}
+.mac #exposedFilterForm ul.as-selections{
+	line-height: 15px;
+}
+#exposedFilterForm ul.as-selections li.as-original input{
+	padding: 0px;
+	margin: 0px;
+	height: auto;
+	width: 100%;
+}
+#exposedFilterForm ul.as-selections li.as-original{
+	margin: 0;
+	padding: 1px 20px 2px 2px;
+	display: block;
+	float: none;
+	*margin-top: -1px;
+	*padding-bottom: 3px;
+}
+#exposedFilterForm .as_customDDContainer ul.as-selections li.as-original{
+	background: url("img/exposed_filters/arrow-dropdown-ff_win.png") no-repeat scroll right center #FFFFFF;
+}
+#exposedFilterForm ul.as-list{
+	background: #FFFFFF;
+	border-radius: 0px;
+	box-shadow: 1px 2px 3px #222222; 
+	z-index: 101;
+	overflow: auto;
+}
+#exposedFilterForm ul.as-list li{
+	font-size: 12px;
+	padding: 2px 0 3px 5px;
+}
+#exposedFilterForm li.as-result-item.active{
+	border-color: transparent;
+	text-shadow: none;
+	background-color: #69737d;
+	color: #FFFFFF;
+}
+#exposedFilterForm li.as-result-item,
+#exposedFilterForm li.as-message{
+	border: medium none;
+	border-radius: 0px;
+}
+/* overriding autosuggest css - END */
+
+/* custom dropdown related - START */
+#exposedFilterForm input.customDDInput{
+	cursor: default;
+}
+/* custom dropdown related - END */
+
+/* Static-Texts in data-table - START */
+.dataTabelStaticText{
+	color: #333333;
+	font-size: 14px;
+	display: inline-block;
+}
+.dataTabelStaticText.leftArrow{
+	padding-left: 20px;
+	background: url("img/exposed_filters/left_arrow.png") no-repeat scroll left center transparent;
+}
+.dataTabelStaticText.topArrow{
+	padding-left: 20px;
+	background: url("img/exposed_filters/up_arrow.png") no-repeat scroll left center transparent;
+}
+.noResultsForFilter{
+	font-size: 14px;
+	text-align: left;
+	width: 85%;
+	margin: 0 auto;
+}
+.noResultsForFilter span.important{
+	margin-bottom: 5px;
+	color: #cc0000;
+}
+.noResultsForFilter a{
+	white-space: nowrap;
+}
+/* Static-Texts in data-table - END */
+
+/* borders for input fields in enabled and disabled modes - START */
+#exposedFilterForm.ef_disabled input[type=text],
+#exposedFilterForm.ef_disabled ul.as-selections{
+	border-color: #CCCCCC;
+}
+
+#exposedFilterForm.ef_enabled input[type=text],
+#exposedFilterForm.ef_enabled ul.as-selections{
+	border-color: #666666;
+}
+/* borders for input fields in enabled and disabled modes - END */
+/* End Merger - code from exposed_filters.css */

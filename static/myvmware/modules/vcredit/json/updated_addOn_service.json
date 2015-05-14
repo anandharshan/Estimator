@@ -1,0 +1,488 @@
+{
+    "wrapper": {
+        "core": {
+            "serviceID": "M767468761",
+            "serviceTerm": "12 months",
+            "serviceName": "VMware vCloud Hybrid Service",
+            "serviceType": "Dedicated Cloud",
+            "tenantType": "DC",
+            "isDCFormSubmitted": false,
+            "region": "US - Nevada",
+            "storage": "Standard Storage",
+            "paymentMethod": null,
+            "partner": null,
+            "renewalPartner": null,
+            "defaultPaymentType": "3",
+            "cost": "8000",
+            "recurringCost": {
+                "2": [
+                    "8000",
+                    "251"
+                ],
+                "3": [
+                    "0",
+                    "300"
+                ]
+            },
+            "pricelist": [
+                "MSRP",
+                "-10769157587923222057810132984"
+            ],
+            "remainingTerm": [
+                730,
+                0,
+                24,
+                0,
+                {
+                    "ttlCurrentMonthlyDays": 31,
+                    "ttlCurrentAnnualDays": 365,
+                    "ttlCurrentPrepaidDays": 1096,
+                    "remainingMonthlyDays": 31,
+                    "remainingAnnualDays": 365,
+                    "remainingPrepaidDays": 1096
+                },
+                {
+                    "annualRemainingTerm": [
+                        "11",
+                        "29"
+                    ]
+                }
+            ],
+            "term": "12 months",
+            "prepaidTerm": "12",
+            "currency": [
+                "$",
+                "U.S.Dollar"
+            ],
+            "longSkuDescription": "US Data Center - dummy",
+            "storageType": null,
+            "coreServiceSku": null,
+            "crossRefSKUMap": null,
+            "coreServices": null,
+            "fundInfo": {
+                "name": "GRP10006GRP10006_RENAME-name",
+                "fundGroupId": "GRP10006",
+                "trueUp": 0,
+                "fundBalance": "10000",
+                "redemptionCurrency": "USD",
+                "fundCurrencySymbol": "$",
+                "fundAccess": 1,
+                "fundOwner": "ABC",
+                "isXaasFund": 1
+            },
+            "serviceStartDate": null,
+            "termStartDate": null,
+            "termEndDate": null,
+            "paymentType": null,
+            "managePermission": "1"
+        },
+        "redemptionNotes": [
+            "Alabama",
+            "Alaska",
+            "Arizona",
+            "Arkansas",
+            "California",
+            "Colorado",
+            "Connecticut",
+            "Delaware",
+            "Notes 1",
+            "Notes 2",
+            "Notes 3"
+        ],
+        "paymentType": [
+            {
+                "paymentTypeID": "0",
+                "paymentTypeVal": "Promotion"
+            },
+            {
+                "paymentTypeID": "1",
+                "paymentTypeVal": "Prepaid"
+            },
+            {
+                "paymentTypeID": "2",
+                "paymentTypeVal": "Monthly"
+            },
+            {
+                "paymentTypeID": "3",
+                "paymentTypeVal": "Annually"
+            },
+            {
+                "paymentTypeID": "4",
+                "paymentTypeVal": "One Time"
+            }
+        ],
+        "addons": {
+            "Standard Storage": [
+                [
+                    "HSD-A1AS1-C",
+                    "Standard Storage",
+                    {
+                        "1": "2",
+                        "2": "5"
+                    },
+                    [
+                        "1",
+                        "2"
+                    ],
+                    "1",
+                    "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription<br/>US - Nevada Data Center - 6 TB Standard Storage",
+                    {
+                        "Monthly": {
+                            "1_1": [
+                                "346.00",
+                                "HSD-A1AS1-12MT1-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Monthly Payments - Tier 1"
+                            ],
+                            "2_4": [
+                                "328.00",
+                                "HSD-A1AS1-12MT2-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Monthly Payments - Tier 2"
+                            ],
+                            "5_5": [
+                                "311.00",
+                                "HSD-A1AS1-12MT3-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Monthly Payments - Tier 3"
+                            ],
+                            "6_99999": [
+                                "294.00",
+                                "HSD-A1AS1-12MT4-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Monthly Payments - Tier 4"
+                            ]
+                        },
+                        "Prepaid": {
+                            "1_1": [
+                                "4061.00",
+                                "HSD-A1AS1-12PT1-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Month Prepaid - Tier 1"
+                            ],
+                            "2_3": [
+                                "3858.00",
+                                "HSD-A1AS1-12PT2-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Month Prepaid - Tier 2"
+                            ],
+                            "4_5": [
+                                "3655.00",
+                                "HSD-A1AS1-12PT3-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Month Prepaid - Tier 3"
+                            ],
+                            "6_99999": [
+                                "3452.00",
+                                "HSD-A1AS1-12PT4-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Month Prepaid - Tier 4"
+                            ]
+                        }
+                    },
+                    {},
+                    [],
+                    {},
+                    [],
+                    [],
+                    "",
+                    {},
+                    {
+                        "defaultQuantity": "2"
+                    }
+                ]
+            ],
+            "Compute": [
+                [
+                    "HSD-A1AS1-C",
+                    "Compute",
+                    {
+                        "1": "3",
+                        "2": "1"
+                    },
+                    [
+                        "1",
+                        "2"
+                    ],
+                    "2",
+                    "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Compute",
+                    {
+                        "Monthly": {
+                            "1_1": [
+                                "346.00",
+                                "HSD-A1AS1-12MT1-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Monthly Payments - Tier 1"
+                            ],
+                            "2_3": [
+                                "328.00",
+                                "HSD-A1AS1-12MT2-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Monthly Payments - Tier 2"
+                            ],
+                            "4_5": [
+                                "311.00",
+                                "HSD-A1AS1-12MT3-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Monthly Payments - Tier 3"
+                            ],
+                            "6_99999": [
+                                "294.00",
+                                "HSD-A1AS1-12MT4-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Monthly Payments - Tier 4"
+                            ]
+                        },
+                        "Prepaid": {
+                            "1_1": [
+                                "4061.00",
+                                "HSD-A1AS1-12PT1-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Month Prepaid - Tier 1"
+                            ],
+                            "2_3": [
+                                "3858.00",
+                                "HSD-A1AS1-12PT2-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Month Prepaid - Tier 2"
+                            ],
+                            "4_5": [
+                                "3655.00",
+                                "HSD-A1AS1-12PT3-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Month Prepaid - Tier 3"
+                            ],
+                            "6_99999": [
+                                "3452.00",
+                                "HSD-A1AS1-12PT4-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Standard Storage Subscription - 12 Month Prepaid - Tier 4"
+                            ]
+                        }
+                    },
+                    [
+                        "HSD-A5ASP-A",
+                        "Compute",
+                        "0",
+                        [
+                            "1",
+                            "2"
+                        ],
+                        "2",
+                        "Academic VMware vCloud Hybrid Service",
+                        {
+                            "Monthly": {
+                                "1_1": [
+                                    "910.00",
+                                    "HSD-A5ASP-12MT1-A1S",
+                                    "Academic VMware vCloud Hybrid Service - Dedicated Cloud A5A - Production Support Subscription - 12 Monthly Payments - Tier 1"
+                                ],
+                                "2_3": [
+                                    "810.00",
+                                    "HSD-A5ASP-12MT2-A1S",
+                                    "Academic VMware vCloud Hybrid Service - Dedicated Cloud A5A - Production Support Subscription - 12 Monthly Payments - Tier 2"
+                                ],
+                                "4_5": [
+                                    "622.00",
+                                    "HSD-A5ASP-12MT3-A1S",
+                                    "Academic VMware vCloud Hybrid Service - Dedicated Cloud A5A - Production Support Subscription - 12 Monthly Payments - Tier 3"
+                                ],
+                                "6_99999": [
+                                    "538.00",
+                                    "HSD-A5ASP-12MT4-A1S",
+                                    "Academic VMware vCloud Hybrid Service - Dedicated Cloud A5A - Production Support Subscription - 12 Monthly Payments - Tier 4"
+                                ]
+                            },
+                            "Prepaid": {
+                                "1_1": [
+                                    "10688.00",
+                                    "HSD-A5ASP-12PT1-A1S",
+                                    "Academic VMware vCloud Hybrid Service - Dedicated Cloud A5A - Production Support Subscription - 12 Month Prepaid - Tier 1"
+                                ],
+                                "2_3": [
+                                    "8945.00",
+                                    "HSD-A5ASP-12PT2-A1S",
+                                    "Academic VMware vCloud Hybrid Service - Dedicated Cloud A5A - Production Support Subscription - 12 Month Prepaid - Tier 2"
+                                ],
+                                "4_5": [
+                                    "7309.00",
+                                    "HSD-A5ASP-12PT3-A1S",
+                                    "Academic VMware vCloud Hybrid Service - Dedicated Cloud A5A - Production Support Subscription - 12 Month Prepaid - Tier 3"
+                                ],
+                                "6_99999": [
+                                    "6324.00",
+                                    "HSD-A5ASP-12PT4-A1S",
+                                    "Academic VMware vCloud Hybrid Service - Dedicated Cloud A5A - Production Support Subscription - 12 Month Prepaid - Tier 4"
+                                ]
+                            }
+                        }
+                    ],
+                    [],
+                    {},
+                    [
+                        "COMPUTE",
+                        "4"
+                    ],
+                    [],
+                    "",
+                    {},
+                    {
+                        "defaultQuantity": "0"
+                    }
+                ]
+            ],
+            "Direct Connect": [
+                [
+                    "HSD-A1AC2-C",
+                    "Direct Connect",
+                    {
+                        "1": "0",
+                        "2": "0",
+                        "3": "0"
+                    },
+                    [
+                        "1",
+                        "2",
+                        "3"
+                    ],
+                    "3",
+                    "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Direct Connect 10Gbps Port Subscription<br/>US - Nevada Data Center - Direct Connect 10 Gbps port charge. Does not include line charge.",
+                    {
+                        "Monthly": {
+                            "1_99999": [
+                                "240.00",
+                                "HSD-A1AC2-12MT0-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Direct Connect 10Gbps Port Subscription - 12 Monthly Payments"
+                            ]
+                        },
+                        "Prepaid": {
+                            "1_99999": [
+                                "2820.00",
+                                "HSD-A1AC2-12PT0-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Direct Connect 10Gbps Port Subscription - 12 Month Prepaid"
+                            ]
+                        },
+                        "Annually": {
+                            "1_99999": [
+                                "2000.00",
+                                "HSD-A1AC2-12PT0-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Direct Connect 10Gbps Port Subscription - 12 Month Prepaid"
+                            ]
+                        }
+                    },
+                    {},
+                    [],
+                    {},
+                    [
+                        "DIRECTCONNECT",
+                        "1"
+                    ],
+                    [],
+                    "",
+                    {},
+                    {
+                        "defaultQuantity": "0"
+                    }
+                ],
+                [
+                    "HSD-A1AC1-C",
+                    "Direct Connect",
+                    {
+                        "1": "0",
+                        "2": "0"
+                    },
+                    [
+                        "1",
+                        "2"
+                    ],
+                    "1",
+                    "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Direct Connect 1Gbps Port Subscription<br/>US - Nevada Data Center - Direct Connect 1 Gbps port charge. Does not include line charge.",
+                    {
+                        "Monthly": {
+                            "1_99999": [
+                                "72.00",
+                                "HSD-A1AC1-12MT0-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Direct Connect 1Gbps Port Subscription - 12 Monthly Payments"
+                            ]
+                        },
+                        "Prepaid": {
+                            "1_99999": [
+                                "846.00",
+                                "HSD-A1AC1-12PT0-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Direct Connect 1Gbps Port Subscription - 12 Month Prepaid"
+                            ]
+                        }
+                    },
+                    {},
+                    [],
+                    {},
+                    [
+                        "DIRECTCONNECT",
+                        "5"
+                    ],
+                    [],
+                    "",
+                    {},
+                    {
+                        "defaultQuantity": "0"
+                    }
+                ]
+            ],
+            "Promotion": [
+                [
+                    "HSD-A1AC2-C",
+                    "Promotion",
+                    {
+                        "0": "1"
+                    },
+                    [
+                        "0"
+                    ],
+                    "0",
+                    "VMware vCloud Hybrid Service - Virtual Private  Cloud - First Month Offer",
+                    {
+                        "Promotion": {
+                            "1_99999": [
+                                "0",
+                                "HSV-BXXPD-1TCT0-C1P",
+                                "VMware vCloud Hybrid Service - Virtual Private  Cloud - First Month Offer",
+                                [
+                                    1,
+                                    100
+                                ]
+                            ]
+                        }
+                    },
+                    {},
+                    [],
+                    {},
+                    [],
+                    [],
+                    "",
+                    {},
+                    {
+                        "defaultQuantity": "0"
+                    }
+                ]
+            ],
+            "More Solutions and Services": [
+                [
+                    "HSD-A1ADT2-C",
+                    "More Solutions and Services",
+                    {
+                        "4": "0"
+                    },
+                    [
+                        "4"
+                    ],
+                    "4",
+                    "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Offline Data Transfer - One Time Charge<br/>US - Nevada Data Center - Device usage and transfer service. Do not order at same time as other add-ons.",
+                    {
+                        "One Time": {
+                            "1_999999999999999": [
+                                "250.00",
+                                "HSD-A1ADT-1TCT0-C1S",
+                                "VMware vCloud Hybrid Service - Dedicated Cloud A1A - Offline Data Transfer - One Time Charge"
+                            ]
+                        }
+                    },
+                    {},
+                    [],
+                    {},
+                    [],
+                    [],
+                    "",
+                    {},
+                    {
+                        "defaultQuantity": "1"
+                    }
+                ]
+            ]
+        },
+        "addonRedemptionNotes": "Notes that has been Saved"
+    }
+}

@@ -1,0 +1,2248 @@
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. INCLUDES
+ * ## 2. MODAL STYLES
+/* ########################################################################### */
+/* ########################################################################### *
+/* ##### MODAL STYLES
+/* ########################################################################### */
+/* Input Text */
+.modalContent input[type=text],
+.modalContent input[type=password] { 
+  	background: #FFFFFF; /* old browsers */
+  	border: #e2e9ef 1px solid;
+	border-top: #aaadb2 1px solid;
+	font-size: 12px;
+	color: #333;
+	   -moz-border-radius: 3px; /* Firefox */
+	-webkit-border-radius: 3px; /* Safari, Chrome */
+	 -khtml-border-radius: 3px; /* KHTML */
+	        border-radius: 3px; /* CSS3 */
+} 
+
+.modalContent .input-wrapper input[type=text],
+.modalContent .input-wrapper input[type=password]
+{
+	   -moz-border-radius: 3px; /* Firefox */
+	-webkit-border-radius: 3px; /* Safari, Chrome */
+	 -khtml-border-radius: 3px; /* KHTML */
+	        border-radius: 3px; /* CSS3 */
+}
+
+/* Select */
+.modalContent select {
+	font-size:11px;
+	color:#333;
+  	background: #FFFFFF; /* old browsers */
+	border:1px solid #747474;
+	height:20px;
+ }
+
+/*BUG-00062679 - Change the empty div height in IE7*/
+.ie7 .simplemodal-data .modalTop{
+	height:0px;
+} 
+
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+
+#simplemodal-container a.modalCloseImg {
+	background:url(img/btn_modal_close.png) no-repeat 0 top transparent;
+	width:16px; 
+	height:16px; 
+	display:inline; 
+	z-index:3200; 
+	position:absolute; 
+	top:12px; 
+	right:15px; 
+	cursor:pointer;
+}
+#simplemodal-container a.modalCloseImg:hover{background-position: 0 bottom;}
+.modal_center{
+position:absolute; 
+top:-150px; 
+}
+
+#simplemodal-container{border:none;}
+ 
+.modalContent{
+	background: #FFF;
+	padding: 30px 35px 15px;
+	width: 550px;
+	   -moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+	 -khtml-border-radius: 5px; /* KHTML */
+	        border-radius: 5px; /* CSS3 */
+}
+.modalContent.fiveNineFive{
+	width:595px;
+}
+.modalContent.wide{
+	width:790px;
+}
+/*BUG-00052494 and BUG-00052499*/
+#addusersContent .modalContent.wide{
+	width:798px;
+}
+.modalContent.Sixsixzero{
+	width:600px;
+}
+
+.modalContent.narrow{
+	width: 260px;
+}
+
+.modalContent .header{
+	border-bottom: 1px solid #d6d6d6;
+	padding-bottom: 3px;
+}
+
+	.modalContent .header.noborder{
+		border:0px;
+	}
+	
+		.modalContent .header.noborder .headerTitle{
+			font-size:18px;
+		}
+	
+.modalContent .body{
+	padding-top:10px;
+	/*padding-bottom:8px;*/
+}
+.modalContent .body.nopad_bottom{
+	padding-bottom:0px;
+}
+
+.modalContent .body p{
+ 	color: #666666;
+	font-size:12px;
+	font-weight:lighter;
+    line-height: 16px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.modalContent .body p.btm_margin_11{
+	margin-bottom:11px;
+	padding-top:2px;
+}
+
+	.modalContent .body p.vspace{
+		margin-top:13px;
+	}
+	
+	.modalContent .body p.vspace2{
+		padding-bottom: 13px;
+		padding-top: 25px
+	}
+
+.modalContent .ctrlHolder label {
+	font-size: 12px;
+	width: auto;
+}
+.modalContent .ctrlHolder .eula{
+	margin-top:0;
+}
+.body .details {
+	background: #666;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 10px;
+	border-bottom: 1px solid #FFF;
+	padding: 7px 7px 10px 45px;
+}
+
+.modalContent .replaceITSuperUser .details {
+	color: #FFFFFF;
+    padding: 0 0 0 15px;
+}
+
+.modalContent .replaceITSuperUser .confirmBox{
+	background-color:#eeeeee;
+	border:1px solid #ccc
+}
+
+.body .name,
+.body .email {
+	font-size: 13px;
+	font-weight: normal;
+}
+.modalContent .body .title {
+		color: #ace3ff;
+		font-size: 13px;
+}
+.body table.withborders {
+	width:100%;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.modalContent .body .noborders {
+	width:auto;
+}
+
+.modalContent .body .noborders.moveRight {
+	width:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:50px;
+}
+.body table.withborders tbody td {
+	padding: 8px 10px 7px 15px; /* BUG-00027514*/
+	border-bottom: #CCC dotted 1px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.body table.withborders tbody td  .lightGray{
+	color:#666666;
+}
+
+
+.body table.withborders tbody td.center{
+	text-align: center;
+}
+.body table.withborders thead td {
+	border-bottom: none;
+
+}
+.body table.withborders thead .center {
+	text-align: center;
+	/*border-left:#FFF solid 1px;*/
+}
+.body table.withborders th span{
+	display:block;
+}
+
+.body table.withborders th.sorting_desc span.descending{
+	background:url("img/drop_down_arrow.png") no-repeat scroll right 0px transparent;
+}
+.body table.withborders th.sorting_asc span.descending{
+	background:url("img/drop_up_arrow.png") no-repeat scroll right 0px transparent;
+}
+
+.body table.withborders th,
+.body table.tablescroll_head th {
+	background: #383838 url("img/bkg_header_black.png") repeat-x;
+	border-right: 1px solid #000;
+	color: #FFF;
+	font-size: 10px;
+	padding: 4px;
+}
+.body table.withborders thead th,
+.body table.tablescroll_head th {
+    border-color: #000000;
+    border-width: 0 1px 0 0;
+    font-weight: normal;
+    padding-left: 15px;
+    text-align: left;
+}
+
+	.ie7 .body th {
+		position: relative;
+	}
+	
+		.body th a {
+			float: right;
+			display: block;
+			margin-right: 0;
+			background-image: url(img/drop_down_arrow.png);
+			text-indent: -9999px;
+			background-repeat: no-repeat;
+			width: 20px;
+		}
+		
+			.ie7 .body th a {
+				position: absolute;
+				right: 7px;
+				top: 5px;
+				text-decoration: none;
+			}
+.modalContent .footer{
+	padding-right:0px;
+	border-top: 1px solid #cccccc;/*BUG-00029723*/
+	padding-top:10px;
+	margin-top:15px;
+}
+.modalContent .footer.tp_margin_13{
+	margin-top:13px;
+}
+.modalContent .footer.mt_oneSeven{
+	margin-top:17px;
+}
+.modalContent .footer.notopMargin{
+	margin-top:0px;
+}
+.modalContent .footer.logInFooter{
+	margin:0px;
+	border-top: 0px;
+	height:20px;
+	width:260px;
+	padding-top:0px;
+	padding-bottom:10px;
+}
+.modalContent .footer.logInFooter p{
+	font-size:10px;
+	float:none;
+}
+
+.modalContent .ctrlHolder {
+margin-top:0;
+margin-bottom:0;
+padding-top:5px;
+}
+.modalContent .footer.wide{
+	border-top: 1px dotted #a9a9ab;
+	margin-top:10px;
+	padding-top:20px;
+	padding-right:0px;
+	margin-left:10px;
+}
+.modalContent .headerTitle{
+	font-size: 24px;
+	color:#666;
+	word-wrap: break-word;
+}
+/*BUG-00052494 and BUG-00052499*/
+#selFolder_name span.elipse{
+	cursor:pointer;
+}
+.modalContent .bodyTitle{
+	font-size:12px;
+	font-weight:900;
+	color:#000;
+	vertical-align:middle;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.modalContent .footerContent{
+	padding-top:20px;
+	padding-bottom:40px;
+}
+.modalContent .footerQuestion{
+	font-size:11px;
+	font-weight:bold;
+	color:#000;
+	padding:0 0 10px 0px;
+}
+.modalContent .fooerText{
+	font-size:10px;
+	padding:0 0 10px 0px;
+}
+.modalContent .learnMore{
+	background-image:url(img/anchor.png);
+	background-repeat:no-repeat;
+	text-indent:15px;
+	font-size:11px;
+	font-weight:bold;
+}
+.modalContent .bodyTitle img {
+	border: 0;
+}
+.modalContent .input-wrapper{
+	float:none;
+	padding:0 0 10px 0;
+}
+.modalContent .input-wrapper a{
+	font-size:11px;
+}
+.modalContent .input-wrapper label{
+	font-size:10px;
+	float:none;
+	color:#000;
+}
+.modalContent .input-wrapper .inputFeild{
+	font-size:10px;
+	float:none;
+	padding-top:4px;
+}
+.modalContent .devider{
+	border-top: 1px dotted #a9a9ab;
+	height:5px;
+}
+
+.modalContent input.wide, select.wide{width:170px;}
+
+.modalContent table.noborders tr td {
+	text-align:left;
+	border:0; 
+	padding:5px;
+	border-bottom:none;
+}
+.modalContent .highlight table.noborders tr td {
+	padding: 20px 0 0px 0;
+}
+.modalContent .highlight table.noborders.movefoldertbl tr td{
+	padding-top:0px;
+	padding-bottom:10px;
+}
+
+.modalContent .highlight table.noborders tr:first-child td {
+	padding: 0;
+}
+
+.modalContent .highlight table.noborders tr.subInfo td {
+	padding-top: 5px;
+}
+
+.modalContent .highlight table.noborders tr td.label {
+	padding-right: 5px;
+}
+
+	.modalContent .highlight table.noborders tr td.label.ptop25{
+		padding-top:25px
+	}
+
+.modalContent .noborders td {
+	width:auto;
+	font-size: 12px;
+}
+.noborders td.data {
+	padding-left:5px;
+	text-align:left;
+}
+.modalContent .body td.label { 
+	padding-right:2px;
+	text-align:left;
+	font-size:12px;
+	font-weight:bold;
+	color:#484849;
+}
+	.modalContent .body td.label.pad5{
+		padding-right:5px;
+	}
+
+.modalContent .body td.label.header { 
+	text-align:left;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.modalContent .marginRight {
+	margin-right: 15px;
+}
+.modalContent .body .searchLabel {
+	line-height:25px;
+	font-size:13px;
+	font-weight:bold;
+	color:#000;
+	border-bottom:none;
+}
+.modalContent .body .searchResult {
+	line-height:25px;
+	text-align:left;
+	font-size:13px;
+	font-weight:bold;
+	color:#666;
+	border-bottom:none;
+}
+.modalContent .body td.label.right { 
+	padding-right:2px;
+	text-align:right;
+	vertical-align:middle;
+	/*white-space:nowrap;*/
+	font-size:11px;
+	font-weight:lighter;
+	color:#000;
+}
+
+.modalContent ul.tabs {
+	border-bottom: 5px solid #006699;
+	margin: 0;
+}
+
+
+ul.license_folders_id ul{
+	padding-left:25px;
+	padding-right:0;
+}
+
+.modalContent .tabContent ul li input {
+    margin-left: 10px;
+	vertical-align:text-top
+}
+.modalContent .tabContent .folderPane ul li input{
+	margin-left:0px;
+	margin-right:5px;
+}
+.modalContent .tabContent ul.license_folders_id ul li label {
+    width: 160px;
+}
+
+.modalContent .tabContent ul.license_folders_id ul li input {
+    margin-left:5px;
+}
+
+.modalContent .tabContent ul.license_folders_id ul ul li input {
+    margin-left:0;
+}
+
+.modalContent .body table.indent {
+	display: block;
+	margin-left: 20px;
+	text-indent: 0;
+}
+
+.modalContent .tabContent .email{
+	display: block;
+	text-indent: 0;
+}
+
+.modalContent .centerArrow {
+	padding-top: 100px;
+}
+
+.modalContent .footer .buttons .left-btns {float:left;}
+.modalContent .footer .buttons .right-btns,
+.modalContent .buttons .right-btns{float:right;}
+/*.modalContent .footer button {cursor:pointer; height: 24px;}
+
+.modalContent .footer .buttons .button {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+*/
+div.filters{padding:3px;}
+
+.modalContent.column.tabledata {
+	float: left;
+	width: 370px;
+}
+.modalContent .details {
+	border:1px solid #000000;
+	border-bottom: 0px;
+	padding: 13px 7px 16px 15px;
+}
+.modalContent .details.pleft14{
+	padding-left:14px;
+}
+
+.modalContent .details .name.textStrong{
+	font-weight:bold;
+}
+
+.modalContent .name,
+.modalContent .email {
+	font-size: 13px;
+	font-weight: normal;
+	/*text-indent:5px*/
+}
+
+.modalContent .name.userDetail, .modalContent .email.userDetail{
+	margin:0 0 0 6px;
+}
+.modalContent .details .details_user_container,
+.modalContent .details .chk_box_container{float:left;}
+.modalContent .details .chk_box_container{float: right;padding-top: 15px;width: 150px;}
+.modalContent .details .chk_box_container label.admin_edperm_label{font-size: 12px;padding-left: 5px;position: relative;top: 2px;}
+.modalContent .details .chk_box_container #edperm_chkbox{vertical-align:middle !important;}
+.modalContent .details .chk_box_container button.tooltip{margin:0 0 0 5px !important;}
+.modalContent .details .chk_box_container div.tooltip .content{max-width:220px; width:220px !important;}
+.modalContent .details .chk_box_container div.tooltip .arrow.edge{
+	left:-9px !important;
+	top:12px !important;
+}
+
+.tabContent ul.license_folders_id ul.expandlist li.last {
+	padding-bottom: 0;
+}
+
+.modalContent .name img {
+	border: 0;	
+}
+
+.modalContent .email {
+	/*text-indent:5px;*/
+	margin-top: 3px;
+}
+
+.modalContent .email.indent5{
+	text-indent:5px;
+}
+
+	.modalContent .email a {
+		
+		color: #ace3ff;
+	}
+.modalContent thead {
+	background: #666;
+}
+
+.modalContent thead td {
+	border-bottom: none;
+}
+
+.modalContent th {
+    border-width: 0 1px 0 0;
+}
+
+.modalContent .remove {
+	background: url("img/btn_remove_red.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 14px;
+    margin-right: 5px;
+    text-indent: -9999px;
+    top: 1px;
+    width: 14px;
+}
+
+.modalContent .remove.crossImg {
+	background: url("img/red_cross_trans.png") no-repeat scroll 0 0 transparent;
+    height: 17px;
+    width: 16px;
+}
+.tabContent .section-wrapper { 
+	color:#333;
+	background-color:#FFF;   
+	border-bottom:1px solid #484848;
+}
+
+.section-wrapper .column {
+	height: 228px;
+}
+
+.section-wrapper .column.h275{
+	height:275px;
+}
+.section-wrapper .column.h274{
+	height:274px;
+}
+
+.section-wrapper .column.h340{
+	height:340px;
+}
+
+.section-wrapper .column.twoTwenty {
+	background-color:#FFF; 
+	/*border-right:2px solid #CCC;*/
+	width:211px;
+	float:left; 
+}
+.section-wrapper .column.threeTwenty {
+	background-color:#FFF; 
+	/*border-right:2px solid #CCC;*/
+	width:324px;
+	float:left; 
+}
+.section-wrapper .column div.sec_head, .section-wrapper .column header ,.section-wrapper .column div.sec_head, .section-wrapper .column div.header {
+	background: #383838 url("img/bkg_header_black.png") repeat-x; 
+}
+
+.section-wrapper .column.threeTwenty div.sec_head,.section-wrapper .column.threeTwenty header,.section-wrapper .column.threeTwenty div.sec_head,.section-wrapper .column.threeTwenty div.header{
+	border-right:1px solid #fff; /* This is added for 4.019a for seperator :: nagaraj*/
+	background: #383838 url("img/bkg_header_black.png") repeat-x; 	
+}
+
+.section-wrapper .column.fourFive {
+	width: 405px;
+	float:left; 
+}
+
+
+.section-wrapper .column.fourZeroZero {
+	width: 400px;
+	float:left; 
+}
+.section-wrapper .column.twoSevenZero{width:270px;float:left;}
+.section-wrapper .column.twoNineZero{width:290px;float:left;}
+.section-wrapper .column.threeZeroZero{width:300px;float:left;}
+
+.section-wrapper .column.threeEightFive {
+	width: 385px;
+	float:left; 
+}
+.section-wrapper .column.threeNineZero {
+	width: 390px;
+	float:left; 
+}
+.section-wrapper .column.threeFourZero {
+	width:340px;
+	float:left; 
+}
+.section-wrapper .column.fiveFifty {
+	width: 550px;
+	float: left;
+	margin-top: 15px;
+	height:auto;
+}
+
+.section-wrapper .column h1{
+	padding: 5px 10px 4px 15px;
+    font-size: 10px;
+    font-weight: normal;
+    padding: 5px 10px 4px 15px;
+    width: 180px;
+	color:#FFF;
+}
+
+.section-wrapper .column h1.auto{
+	width:auto;
+}
+
+.section-wrapper .column .subhead h1 {
+    color: #000000;
+    font-size: 11px;
+    padding: 0;
+}
+
+.section-wrapper .column.threeTwenty h1{
+	font-size:10px;
+	width:263px;
+	color:#FFF;
+
+}
+
+.section-wrapper .column.twoTwenty.lastColumn {
+	background-color:#FFF; 
+	border-left:2px solid #CCC;
+	width:214px;
+	float:left; 
+}
+.section-wrapper .column.arrow {
+	background-image:url(img/bkg_section_arrow.png);
+	background-repeat:repeat-y;
+	background-color:#FFF; 
+	border-top:1px solid #999;
+	width:34px;
+	float:left; 
+	text-align:center;
+}
+
+.section-wrapper .column.arrowSection {
+	background-image:url(img/bkg_EditContracts_Btn.png);
+	background-repeat:repeat-y;
+	background-color:#FFF; 
+	border-top:1px solid #999;
+	width:34px;
+	float:left; 
+	text-align:center;
+}
+.section-wrapper .column.arrow .cenerArrow{
+	padding-top:95px;
+}
+.section-wrapper .column .scroll {
+	height:90%;
+}
+
+.section-wrapper.adduser2 .column .scroll {
+	height:92%;
+}
+.section-wrapper.adduser2 .column .htTwoTwoThree {
+	height:224px;
+}
+.ie7 .section-wrapper.adduser2 .column .htTwoTwoThree {
+	height:223px;
+}
+.section-wrapper.adduser4 .column .scroll {
+	height:93%;
+}
+.section-wrapper.adduser4 .column .scroll.htTwoZeroSeven {
+	height:207px;
+}
+.section-wrapper.adduser4 .column .scroll.htOneEightSeven {
+	height:187px;
+}
+
+.section-wrapper.selFolder .column .scroll {
+	height:78%;
+} 
+
+.section-wrapper .column .scroll.ht280{
+	height:280px;
+}
+.section-wrapper.selFolder .column .scroll.htTwoFiveFour{
+	height:254px;
+}
+
+.section-wrapper .column .scroll ul li{
+	border-bottom: medium none;
+    color: #333333;
+    display: block;
+	font-size:11px;
+    margin:0;
+   padding: 6px 0;
+}
+.section-wrapper .column .scroll .folderPane ul li{
+	padding:0px;
+}
+/*.section-wrapper .column .scroll .folderPane ul li ul li{
+	margin-left:23px;	
+}*/
+.modalContent .section-wrapper .secColumn ul{
+	padding:0px;
+}
+
+	.modalContent .section-wrapper .secColumn ul li{
+		padding-left:20px;
+	}
+	
+
+.section-wrapper .column #repSuOrPuUserList ul li{
+	cursor:pointer;
+    padding-left: 15px;
+}
+
+	/*.section-wrapper .column #repSuOrPuUserList ul li.hover{
+		background-color:#eef7ff;
+	}*/
+	.section-wrapper .column #repSuOrPuUserList ul li.hover, #findFolderContent ul li:hover,
+	#findFolderContent ul li.hover {
+		background-color: #EEF7FF !important;
+	}
+	.section-wrapper .column #repSuOrPuUserList ul li.active{
+		background-color:#ddeefe;
+	}
+
+.section-wrapper .column .scroll .email{
+	font-size:10px;
+	color:#999;
+}
+.tabContent .thinLine{
+	height:1px;
+	background-color:#484848;
+}
+
+
+
+.column .supportLevelTitle {
+	font-size:12px;
+	font-weight:bold;
+	color:#000;
+}
+.column .subInfo {
+	font-size:9px;
+	color:#000;
+}
+.column .availableInfo{
+	padding-left:40px;	
+}
+.mySupportContracts{	
+	float:right;
+	margin-top: 10px;
+}
+
+.modalContent input.wide2, select.wide2{width:170px;}
+
+.modalContent .footer.wide2{
+	border-top: 1px dashed #666;
+	margin-top:10px;
+	padding-top:20px;
+	padding-right:0px;
+	height:60px;
+	width:492px;
+}
+
+.modalContent.wide2{
+	background-image:url(img/bkg_modalwindow_wide.png);
+	background-repeat:repeat-y;
+	padding-left:30px;
+	padding-right:20px;
+	padding-top:15px;
+	width:512px;
+}
+
+.modalContent .warning {
+    background: #fff9e9 url(img/warning_small.png) no-repeat 10px 14px;
+    border: 1px solid #ddddce;
+	   -moz-border-radius: 3px; /* Firefox */
+	-webkit-border-radius: 3px; /* Safari, Chrome */
+	 -khtml-border-radius: 3px; /* KHTML */
+	        border-radius: 3px; /* CSS3 */
+    color: #666666;
+    font-size: 12px;
+    margin: 15px 0 0;
+    padding: 15px 15px 15px 40px;
+    word-wrap:break-word;
+}
+.modalContent .warning p {
+font-weight:bold;
+color:#000000;
+}
+
+.modalContent .warning .serviceMsg{padding-top:5px}
+
+.modalContent .errmsg {color:#d9541e !important}
+
+.modalContent .successmsg{
+	color:#0b8c63;
+	font-weight:bold;
+}
+
+.modalContent .header .errmsg {
+	font-size: 15px;
+	font-weight:bold;
+}
+
+.modalContent .header .errmsg .folderName{
+	font-style:italic;
+}
+
+.modalContent  .warningctrls
+{
+	margin: 15px 0 0 0px;/*BUG-00028728*/
+	padding-bottom: 0;
+    padding-top: 0;
+}
+/* Warning message for edit permission CR*/
+.modalContent .warning.spl{
+	background-position: 35px 28px;
+	padding: 30px 40px 50px;
+}
+.modalContent .warning.spl p.head{
+	color: #202020;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    padding-left: 23px;
+}
+.modalContent .warning.spl p.desc{
+    font-weight: normal;
+	font-size:12px;
+    color:#212121;
+	padding-left:0px;
+	margin-right:0px;
+}
+.body table.withborders tbody td.indent{
+	text-indent:30px;
+}
+.body table.withborders tbody td.indent input{
+	vertical-align:baseline;
+}
+
+
+.body table.withborders tbody td.indent30{
+	text-indent:30px;
+}
+.body table.withborders tbody td.indent15{
+	text-indent:15px;
+}
+
+.body table.incHeight tbody td{
+	vertical-align:text-top;
+	padding:6px 0 6px 15px;
+}
+/*BUG-00062906: IE7 issue for permission table column alignment */
+.ie7 .body table.incHeight tbody#permission_tbody td{
+	padding-right: 20px;
+}
+.body table.incHeight tbody#savemsg_id p{
+	font-weight:bold;
+	font-size:12px;
+	color:#000;
+	text-align:center;
+	vertical-align:middle;
+	padding:20px;
+}
+
+.modalContent .footer2{
+	height:50px;
+	margin-top:10px;
+	width:512px;
+}
+
+.modalContent .footer2 .buttons .right-btns{
+	float:right;
+}
+
+
+.modalContent .body td.label.rightalign{ /*Right align a table cell*/
+	text-align:right !important /*Added important as only single style is included and no issues, even if it is coupled with other class*/
+}
+
+.modalContent .body .addDescription{ /* Additional description having more space on top and right*/
+	margin:20px 20px 0 0;
+	line-height:20px;
+}
+
+.modalContent .body td.label.moreSize{ /* Few labels are greater in size and left aligned*/
+	text-align:left;
+	font-size:12px;
+}
+
+.modalContent .body td.subhead{ /* Sub heading in a table -  Used for 4.006c & 4.006d*/
+	background-color:#eeeeee;
+	font-size:12px;
+	padding-left:15px
+}
+
+.modalContent .body p.description.moremargin{ /* Assigning more margin to description*/
+	margin:10px 0 20px 0px
+}
+
+.modalContent .body.moremargin{ /* Assigning more margin to body*/
+	margin:0px 15px
+}
+
+.pleft5{
+	padding-left:5px !important
+}
+
+.mleft15{
+	margin-left:15px !important
+}
+
+.tleft{
+	text-align:left !important
+}
+
+.modalContent .body p.licenseFolder{   /* Add style to License Folder descriptive text*/
+	padding: 10px 0 0px;
+	font-weight:bold;
+	color:#4c4e53;
+	font-size:15px;
+}
+
+.body table.incHeight tbody td.vspace{
+	vertical-align:top;
+	padding:5px 0 12px 15px;
+}
+
+.body table.incHeight thead th{
+	padding:5px 0 5px 15px;
+	vertical-align:middle;
+}
+
+.tabBorder{
+	background-color:#484848;
+	border-bottom:1px solid #FFFFFF;
+	height:5px;
+}
+
+.tabbed_box_1 {
+  margin: 15px 0 0;
+  position: relative;
+}
+
+.section-wrapper .column.threeTen {
+    background-color: #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: 4px solid #DEDEDE;
+    float: left;
+    width: 280px;
+}
+
+.section-wrapper .column.threeTwenty {
+    background-color: #FFFFFF;
+    border-right: 4px solid #DEDEDE;
+    float: left;
+    width: 323px;
+}
+
+.section-wrapper .column .scroll ul.block li{
+	display:block;
+	margin-left:0px;
+
+}
+/* Search area with search icon and cross icon*/
+.searchArea {
+    background: url("img/bkg_searchbar.png") repeat scroll 0 -2px transparent;
+    height: auto;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-top: 2px;
+}
+.searchArea.bgLtGray{background:#e6e6e6 !important;}
+.searchArea.withGrayGap{
+	background-color:#484848;
+	background-image:url(img/bkg_search_editContracts.png);
+	background-repeat:no-repeat;
+}
+
+.searchArea input[type="text"] {
+    background:none repeat scroll 0 0 #fff;
+    border: 0 none;
+    color: #333333;
+    height: 19px;
+    padding-left: 10px;
+    padding-right: 5px;
+    width: 168px;
+	-moz-border-radius: 2px; /* Firefox */
+	-webkit-border-radius: 2px; /* Safari, Chrome */
+	 -khtml-border-radius: 2px; /* KHTML */
+	        border-radius: 2px; /* CSS3 */
+}
+
+.searchArea input[type="text"].rect{
+	width:280px;
+}
+
+#findFolderContent .searchArea input[type="text"]{
+	width:408px;
+}
+
+.searchArea input.filtersearch_inp[type="text"] {
+    font-size: 10px;
+    margin: 0;
+    width: 48%;
+}
+.srIcon{
+	background: url("img/remove-icon.png") no-repeat scroll 0 4px #FFFFFF;
+    display: inline-block;
+    margin-left: -4px;
+    padding-bottom: 5px;
+    padding-right: 19px;
+    padding-top: 3px;
+    text-indent: -999px;
+	cursor:pointer;
+	-webkit-padding-before : 2px;
+	-webkit-padding-after : 7px;
+}
+.ie7 .srIcon {position:relative ; top:3px;}
+.sIcon{
+	background: url("img/search_icon.png") no-repeat scroll 0 3px #FFFFFF;
+}
+
+.section-wrapper .column.threeTen .searchArea {
+    padding-top: 5px;
+}
+.tabContent .section-wrapper.noborder{
+	border:0px;
+}
+
+.tabContent .section-wrapper.border-top{
+	border-top:1px solid #fff;
+}
+
+.section-wrapper .column .scroll.heightAdjust {
+    height: 76%;
+}
+
+.section-wrapper .column .scroll.h74 {
+    height: 74%;
+}
+.ht175{
+	height:175px !important;
+}
+.section-wrapper .column .scroll.resultPane{
+	background:url("img/bkg_dotted_line.png") repeat-x scroll 0 top transparent;
+}
+.section-wrapper .column .scroll.resultPane.notpborder{
+	background:none;
+}
+
+.section-wrapper.adduser .column .scroll.heightAdjust {
+    height: 74%;
+}
+.section-wrapper.adduser .column .scroll.htOneSevenZero {
+    height: 170px;
+}
+
+.section-wrapper .column .scroll.ht207 {
+    height: 207px;
+}
+
+.modalContent .body td.label div.folder{
+	float:left;
+}
+.modalContent .body td.label div.edit{
+	float: right; 
+	margin-right: 2px;
+}
+.modalContent .body td.label div.path{
+	clear: both; 
+	margin-left: 21px;
+}
+
+/*4.019a & 4.019b start */
+.section-wrapper p{
+	font-size:11px !important
+}
+
+.section-wrapper table td{
+	padding-left: 18px;
+    padding-top: 5px;
+	font-size:11px;
+	font-weight:bold
+}
+
+.modalContent .section-wrapper table.lighter td{
+	font-weight:lighter;
+}
+
+.section-wrapper input.moreWidth[type="text"]{
+	width:206px;
+	   -moz-border-radius: 2px; /* Firefox */
+	-webkit-border-radius: 2px; /* Safari, Chrome */
+	 -khtml-border-radius: 2px; /* KHTML */
+	        border-radius: 2px; /* CSS3 */
+}
+
+.section-wrapper .footer {
+    border-top: 1px dotted #a9a9ab;
+    height: 60px;
+    margin-left: 19px;
+    margin-top: 20px;
+    padding-top: 10px;
+    width:90%
+}
+
+.modalContent .section-wrapper .footer.noborder{
+	border: 0 none;
+    margin-top: 0;
+}
+
+.modalContent .bottomarea .footer{
+	margin-top:10px
+}
+
+.section-wrapper .footer a{
+	text-decoration:underline
+}
+
+#content_4 .section-wrapper .column{
+	height:296px !important
+}
+#content_9 .section-wrapper .column{
+	height: 244px !important;
+}
+/*4.019a & 4.019b start */
+/*4.019c start */
+
+.section-wrapper .column .scroll ul#license_folders_id ul li label {
+    padding-left: 15px;
+}
+
+.section-wrapper .column .scroll ul#license_folders_id label {
+ 	line-height:20px;
+	font-size:11px;
+}
+
+
+.section-wrapper .column .scroll ul#license_folders_id input[type="checkbox"]{
+	vertical-align:middle
+}
+
+.section-wrapper .column .scroll ul#license_folders_id ul.expandlist li label {
+    padding-left: 34px;
+}
+
+.section-wrapper .column .scroll ul#license_folders_id li{
+	display:table-row-group
+}
+
+.section-wrapper .column ul div.headerRow{
+	background: none repeat scroll 0 0 #EEEEEE;
+    border-top: 1px solid #FFF;
+    padding-left: 5px;
+    width: 560px;
+}
+
+.section-wrapper .column ul div.subRow{
+	border-top: 2px solid #FFF;
+    padding-left: 5px;
+    width: 560px;
+}
+
+/*4.019c end */
+/* 6.004 Replace IT Super User Start*/
+
+.tabbed_box_2 {
+    margin: 5px 0 0 0;
+    position: relative;
+}
+
+.section-wrapper .column .superUserQn{
+	border-top: 1px solid #ACACAC;
+    font-size: 11px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.section-wrapper table.noPadding td{
+	padding-left: 0;
+    vertical-align: text-top;	
+}
+
+.section-wrapper .column .scroll .email.inline{
+	display:inline;
+}
+
+.section-wrapper .column .scroll .users{
+	padding-top:10px;
+	padding-left: 15px;
+}
+
+.section-wrapper .column .scroll .users p {
+	margin-bottom: 10px;
+	padding-left: 0;
+}
+
+.section-wrapper .column.threeOneOne {
+    background-color: #FFFFFF;
+    border-right: 4px solid #DEDEDE;
+    float: left;
+    width: 311px;
+}
+
+.section-wrapper .column.threetwoTwo {
+    background-color: #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: 4px solid #DEDEDE;
+    float: left;
+    width: 322px;;
+}
+
+.section-wrapper .column h1.withborder273{
+	padding:4px 10px;
+	width:273px;
+	border-right:1px solid #fff;
+}
+
+.section-wrapper .column h1.withborder284{
+	padding:4px 10px;
+	width:284px;
+	border-right:1px solid #fff;
+}
+
+.section-wrapper .column .textStrong {
+	font-weight: bold;
+}
+
+.section-wrapper .column .fixedWidth {
+	width: 90px;
+}
+
+/* 6.004 Replace IT Super User end*/
+/* 6.004a Replace IT Super User Confirmation start*/
+
+.body table.singleRow td{
+	color:#333;
+	padding: 12px 50px 0 0;
+}
+
+.body table.alignTop td{
+	vertical-align:text-top !important;
+}
+
+.body .replaceSection{
+	font-size: 12px;
+	margin: 13px 0 14px 15px;
+}
+
+.body .replaceSection.moremargin{
+	margin-top:28px;
+}
+
+#repSUorPU_confirm_warning{
+	margin-top:15px;
+}
+
+.replaceSection h1 {
+	font-size: 12px;
+}
+
+/* 6.004a Replace IT Super User Confirmation end*/
+
+/* START 6.005 Find Folder */
+#findFolderContent ul.block {
+	margin-left: 0px;
+}
+#findFolderContent ul.block .initMsg,
+.userListLeft_cls ul span.initMsg{
+	display: block;
+    padding: 10px 10px 10px 15px;
+	color:#d9541e;
+}
+
+#findFolderContent .section-wrapper .column .scroll ul.block li {
+	background: url("img/bkg_dotted_line.png") repeat-x scroll 0 bottom;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	font-size: 12px;
+}
+
+.section-wrapper .column .scroll ul li.selected {
+    background-color: #DDEEFF !important;
+}
+#findFolderContent .section-wrapper .column .scroll ul.block li.noresult,
+#findFolderContent .section-wrapper .column .scroll ul.block li.noresult:hover{
+		background:none !important;
+}
+
+#findFolderContent li input {
+	margin-right: 9px;
+}
+
+#findFolderContent .folderPath {
+	display: block;
+	margin-left: 23px;
+	color: #999;
+	white-space:nowrap;
+}
+/* END 6.005 Find Folder*/
+
+.modalContent .body section.scrollable{
+	height:390px;
+	overflow:auto;
+}
+
+.modalContent .body section.hauto{
+	height:auto;
+	overflow:auto;
+}
+
+.modalContent .body table.incHeight tbody td.vspace2{
+	vertical-align:top;
+	padding:6px 0 6px 15px;
+}
+
+.modalContent .body table.withborders tbody td.noborders, .body table.withborders tbody.noborders td{
+	border-bottom:0px !important;
+	margin:0px
+}
+	
+.modalContent .body table td.nopadding{
+	padding:0;
+}
+	
+.modalContent .body table.withborders.nomargin{
+	margin:0px;
+}
+
+.modalContent .body div.partnerDiv{
+	margin-top:4px; /*BUG-00024277, BUG-00031346 - recent 24/02/2012*/ 
+}
+
+.modalContent .body div.partnerDiv  span.mfilter{
+	float:right;
+}
+.modalContent .body div.partnerDiv  span.mfilter a{
+	color:#ACE3FF;
+	text-decoration:none;
+}
+
+	.modalContent .partnerDiv input {
+		margin-right: 10px;
+	}
+	
+	.ie7 .modalContent .partnerDiv input {
+		margin-right: 8px;
+	}
+	
+		.modalContent .partnerDiv input[type="radio"]{
+			margin-right: 5px;
+			vertical-align: text-top;
+		}
+
+		.modalContent .partnerDiv section input {
+			margin-right: 0;
+		}
+		
+		.modalContent .partnerDiv label.selectPartner {
+				font-weight:bold;
+				font-size:16px;
+		}
+
+.modalContent .body section.indent30{
+	margin:5px 0 5px 25px
+}
+
+.modalContent .body section div.scrollable{
+	height:259px;
+	overflow:auto;
+	border-bottom:1px solid #666
+}
+
+.modalContent .body td.subhead.border{
+	border-left:1px solid #fff;
+	width:15px;
+}
+
+.modalContent .body section .horLine{
+	border-top:1px solid #000;
+	height:2px
+}
+
+/*4.019d start */
+.modalContent .folder_grey{
+	background: url("/static/myvmware/common/css/img/folder_gray.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 13px;
+    margin-right: 8px;
+    position: relative;
+    text-indent: -9999px;
+    top: 1px;
+    width: 14px;
+}
+
+.tabbed_box_3{
+    margin: 15px 0 0 0;
+    position: relative;
+}
+
+.section-wrapper .column.threeSeventy {
+    background-color: #FFFFFF;
+    border-right: 1px dotted #eaeaea;
+    float: left;
+    width: 370px;
+}
+
+.section-wrapper .column.h330{
+	height:330px;
+}
+
+.section-wrapper .column.h427{
+	height:427px;
+}
+
+.section-wrapper .column.h385{
+	height:385px;
+}
+
+.modalContent .body table.alignLeft {
+	margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+.modalContent .body table.alignLeft  td{
+	padding-left:5px;
+}
+
+.modalContent .body p.data{
+	line-height:15px !important;
+}
+
+.modalContent div.headerRow {
+	border-top: 5px solid #006699;
+	margin: 0;
+	height:1px;
+}
+
+.modalContent .body div.accountUserSection{
+	padding:10px 15px 10px 10px;
+}
+
+.modalContent .body div.accountUserSection.h289{
+	height:292px;
+}
+.modalContent .body div.accountUserSection.reassign{
+	padding-top:2px;
+	height:297px;
+}
+.modalContent .body div.accountUserSection.reassign table.alignLeft{
+	margin-top:0px;
+	padding: 0 5px 5px;
+}
+.modalContent .devider.margin{
+	margin-right:10px;
+}
+/*4.019d start */
+
+.modalContent .highlight {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    font-weight: normal;
+    margin-top: 15px;
+    padding: 14px 15px 15px;
+}
+.modalContent .highlight.nomargin{
+	margin-left:0;
+	margin-right:0;
+}
+.modalContent .highlight.move_highlight{
+	padding-bottom:5px;
+	padding-top:13px;
+}
+
+.modalContent .highlight .radioBtn {
+	float: left;
+	padding-bottom:50px;
+	padding-right:5px;
+}
+.modalContent .highlight td {
+	color: #333333;
+}
+
+.modalContent .column.tabledata {
+	margin-bottom:-3px;
+	/*margin-top: 10px;*//*BUG-00027514*/
+}
+
+.modalContent .productName {
+	color: #FFFFFF;
+    font-size: 12px;
+	font-weight: normal;
+    padding: 14px 0
+}
+
+.modalContent .highlight .productName {
+	margin-top: 0;
+	color: #333;
+}
+
+.modalContent .highlight.company{
+	margin-top:37px;
+}
+
+.modalContent .textStrong label {
+	font-weight: bold;
+}
+
+.modalContent table .note {
+	color: #666;
+}
+
+.modalContent .border-left {
+	border-left: 1px solid #000;	
+}
+
+.modalContent .border-right {
+	border-right: 2px solid #eaeaea;	
+}
+.modalContent .onepx{
+	border-right: 1px solid #eaeaea;
+}
+.margin20 {margin:20px;}
+.padding12 {padding:12px;}
+.bdrRt1px {border-right:1px solid #666 !important;}
+.bdrLt1px {border-left:1px solid #000 !important;}
+
+
+/* START licenseKeyHistoryContent */
+#licenseKeyHistoryContent
+
+.body table.withborders tbody td span.time,.body table.withborders tbody td span.desc_act {
+	color: #8b8b8b;
+}
+
+#licenseKeyHistoryContent .column.scroll {
+	height: 300px;
+	overflow-y: scroll;
+}
+
+/* END licenseKeyHistoryContent */
+
+.modalContent .highlight .anchor{
+	background:url('img/anchor_right_gray_big.png') no-repeat;
+	text-indent:20px;
+}
+
+/* START changePreferredPartnerContent */
+
+/* BUG-00062765: other text is used in loading class DIV so removed the white-space */
+.partnerDiv #searchPartnerRender div.scrollable div.loading {
+	white-space: normal !important;
+}
+
+.partnerDiv .partnerSearchArea {
+	background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 1px;
+    padding: 5px 14px 14px;
+}
+
+	.partnerDiv .required {
+		color: #4C4E53;
+		font-style: italic;
+		margin-bottom: 10px;
+		padding-left: 0;
+	}
+
+		.partnerDiv .required em {
+			color: #d9541e;
+		}
+
+#changeDefaultAccountContent .required {
+		color: #4c4e53;
+		font-style: italic;
+		margin-bottom: 10px;
+	}
+
+		#changeDefaultAccountContent .required em {
+			color: #d9541e;
+		}		
+		
+		
+	.partnerDiv .partnerSearchArea .row {
+		margin-bottom: 15px;
+	}
+
+		.partnerDiv .partnerSearchArea label {
+			float: left;
+			font-weight: bold;
+			padding-right: 10px;
+			width: 180px;
+		}
+
+		.partnerDiv .partnerSearchArea .partnerNameInput {
+			float: right; /*BUG-00030797*/
+			width: 267px;
+		}
+		.ie .partnerDiv .partnerSearchArea .partnerNameInput {
+			width: 270px;
+		}
+
+		.partnerDiv .partnerSearchArea .findBtn {
+			float: right; /*BUG-00030797*/
+			/*width: 60px;*/
+			margin-top: -2px !important;
+		}
+
+		.partnerDiv .partnerSearchArea .country {
+			float: right; /*BUG-00030797*/
+			width: 165px;
+			margin-right: 30px;
+		}
+
+		.partnerDiv .partnerSearchArea .state {
+			float: right; /*BUG-00030797*/
+			width: 160px;
+		}
+
+
+.modalContent .partnerDiv table td.subhead {
+	background: url("img/bkg_header_black.png") repeat-x scroll 0 0 #383838;
+    color: #FFFFFF;
+    font-size: 10px;
+	font-weight: bold;
+    padding: 3px 0 4px 15px;
+}
+
+.modalContent .bgbig{
+	background: url("img/bkg_header_black_big.png") repeat-x scroll 0 0 #383838;
+    border-bottom: 1px solid #000000;
+    border-top: 0 none;
+    height: 42px;
+}
+
+.partnerDiv .section-wrapper .column header h1 {
+	font-size: 12px;
+    font-weight: bold;
+    padding: 8px 13px;
+    width: auto;
+}
+
+.partnerDiv .section-wrapper .column div.header h1{
+	font-size: 12px;
+    font-weight: bold;
+    padding: 5px 13px;
+    width: auto;
+}
+
+.body .partnerDiv table.withborders {
+	margin-bottom: 0;
+}
+
+.modalContent .body .partnerDiv div.scrollable {
+	border-bottom: none;
+	/*height:170px;*/
+	overflow-y:auto;
+	overflow-x: hidden;
+}
+
+.modalContent .body .partnerDiv td.label {
+	font-weight: normal;
+    padding-left: 7px !important;
+}
+
+.modalContent .body .partnerDiv td.label p {
+	font-weight: normal;
+	color: #666666;
+}
+
+.ie7 ul.tabs.nofloat li{
+	float:none !important;
+}
+
+/* END changePreferredPartnerContent */
+
+.modalContent .highlight table.noborders tr td.dataCell{
+	padding-left:27px;
+}
+
+.modalContent .highlight table.noborders tr td.firstCell{
+	/*width:130px;*/
+}
+.modalContent .highlight table.noborders tr td.firstCell.wdOneZeroZero{
+	width:100px;
+}
+.modalContent .section-wrapper .column  ul.emailInline span.name,
+.modalContent .section-wrapper .column  ul.emailInline span.email{
+	display: inline-block;
+    margin-left: 0;
+    padding-left: 5px;
+    vertical-align: top;
+    width: 160px;
+}
+
+.modalContent .section-wrapper .column ul.emailInline li {
+    border-bottom: 1px dotted #A9A9A9;
+}
+
+.modalContent .section-wrapper .column  ul.userLi li{
+    border-bottom: 1px dotted #A9A9A9;
+    padding:8px 0 8px 15px;
+}
+
+.modalContent .section-wrapper .column  ul.userLi div.remImg{
+    float: left;
+    width: 5%;
+}
+
+.modalContent .section-wrapper .column  ul.userLi div.userDetail{
+	float: left;
+	padding-left:3px;
+    width: 90%;
+}
+
+
+.modalContent .section-wrapper .column ul.folderList {
+	padding:0;
+}
+
+.modalContent .section-wrapper .column ul.folderList li {
+	padding-left:20px;
+	border-bottom:1px dotted #a9a9a9;
+}
+
+.modalContent .section-wrapper  table td.firstCell{
+	width:40%
+}
+
+.modalContent .section-wrapper table.inviteUserForm td{
+	padding:10px 0 10px 15px;
+}
+.ie7 .modalContent .section-wrapper table.inviteUserForm td{
+	padding:10px 0 3px 15px;
+}
+.modalContent .section-wrapper .required {
+	color: #666666;
+    font-size: 10px;
+    font-style: italic;
+    padding: 5px 0 0 15px;
+}
+
+	.modalContent .section-wrapper  .required em {
+		color: #d9541e;
+	}
+	
+.modalContent .bottomarea {
+	height:auto;
+	padding-bottom:9px;
+	margin-bottom: -7px;
+}
+
+.modalContent .partnerDiv .bottomarea {
+    height: auto;
+    margin-bottom: -7px;
+    padding-bottom: 9px;
+}
+
+.modalContent .section-wrapper .column header.blRight, .modalContent .section-wrapper .column div.sec_head.blRight{
+	border-right:1px solid #000;
+}
+.modalContent .highlight.scroll {
+		height: 140px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	.modalContent .highlight.scroll_a {
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	.modalContent .highlight.scroll.autoy,
+	.modalContent .highlight.scroll_a.autoy{
+		overflow-y:auto;
+	}
+	.modalContent .highlight table.order_details_tbl{
+		width:100%;
+	}
+	.modalContent .highlight table.order_details_tbl tr.noborder td{
+		border:none;
+		background:none;
+	}
+	.modalContent .highlight table.order_details_tbl thead{
+		background-color:transparent;
+	}
+		.modalContent .highlight table.order_details_tbl thead th{
+			text-align:left;
+			padding-right:5px;
+			font-size:12px;
+			font-weight:bold;
+			color:#484849;
+			padding:0px 10px 0px 0;
+		}
+		.modalContent .highlight table.order_details_tbl td{
+			color:#474747;
+			font-weight:normal;
+			font-size:12px;
+			padding:10px 10px 10px 0;
+			background: url("img/bkg_dotted_line.png") repeat-x scroll 0 bottom ;
+		}
+		.modalContent .highlight table.order_details_tbl th.col3{
+			width:250px;
+		}
+		
+		.modalContent .highlight.td_pad_five table.order_details_tbl tr:first-child td{
+			padding-top:4px;			
+		}
+		.modalContent .highlight table.order_details_tbl tr td.lastcol,
+		.modalContent .highlight table.order_details_tbl thead th.lastcol{
+			/*text-align:right;BUG-00028728*/
+			padding-right:0px;
+		}
+.modalContent .column.alignCenter{
+	margin-bottom: 5px;
+    margin-left: 23px;
+    width: 578px;
+}
+
+.modalContent .column td.w20{
+	width:20px;
+}
+
+.column-wrapper .column.twoSixThree{
+	height:80px;
+	float: left;
+	width: 263px;
+}
+
+.column-wrapper .column.twoSixThree header{
+	font-size: 12px;
+	padding: 20px;
+}
+
+.tabbed_area h1 span.stepdesc{
+	font-weight:lighter;
+}
+
+.modalContent h1.font14{
+	font-size:14px;
+}
+
+#changeUserEmailApprovalContent .modalContent .highlight div.options{
+	padding-bottom:30px;
+}
+
+.compInfoState{
+	float: left;
+	padding-right:5px;
+}
+.empty_table{
+	height:100px;
+	vertical-align:middle;
+	text-align:center;
+}
+.modalContent .body .column .scroll.htThreeZeroNine{
+	height:309px;
+}
+
+/*
+button.primary:focus{  /*BUG-00022005
+	background: #2B75B2 url('img/bg_buttons.png') repeat-x; /* old browsers 
+	background: -moz-linear-gradient(top, #4FB8DC 0%, #399DBF 50%, #2B75B2 100%); /* firefox 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4FB8DC), color-stop(50%,#399DBF), color-stop(100%,#2B75B2));
+	color:#fff;
+	border:1px solid #bcbcbc
+}
+*/
+/*Added for UM module by praneet*/
+.profileMsg {
+	height:100px;
+}
+
+#eulaAcceptButton {
+vertical-align:top !important;
+}
+/*Customize Your Home Page changes added by Praneet*/
+.customizeHomepage {
+width:400px;
+}
+#addUsersToFoldersContent3 .scroll .folderPane ul li.no_child input, #removeUserContent7 .scroll .folderPane ul li.no_child input{
+	margin-left : 18px;
+}
+.mac.firefox #addUsersToFoldersContent3 .scroll .folderPane ul li input[type="checkbox"]{
+	margin-top:-2px;
+}
+
+.section-wrapper.adduser4 .column.scroll.firstCol .email{
+	margin-top:0;
+}
+
+.section-wrapper.adduser4 .column.scroll.firstCol .name{
+	font-weight:lighter;
+	font-size:12px;
+}
+
+.modalContent .section-wrapper.adduser4 .firstCol ul{
+	margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.modalContent .section-wrapper.adduser4 .firstCol ul li{
+	padding:4px 0;
+}
+
+.hasPlaceholder{
+	color:#CCCCCC !important;
+}
+.rename_error{
+	color:#FF0000;
+	padding:5px 0px 0px 5px;
+	font-size:11px;
+}
+.errorMsg{font-size: 12px; font-weight: normal; padding-top: 5px;color: #D9541E;}
+.descEditPer{padding:5px 0 0;}
+a.button.waitcursor:hover, button.waitcursor:hover, input.waitcursor:hover{
+	cursor:wait;
+}
+.modalContent .body p.statictext_p{margin-bottom:0px;margin-top: 2px;}
+.section-wrapper .column.fiveFifty.mtop11{margin-top:11px;}
+.modalContent .warning p.attn_p{margin-bottom:0px;}
+.modalContent div.userListLeft_cls ul li input{margin-left:15px;margin-right:5px;float:left;}
+.modalContent div.userListLeft_cls ul li span.first,.modalContent div.userListright_cls ul li span.first{float:left;display:inline-block;width:160px;word-wrap:break-word;padding-right:5px;}
+.modalContent div.userListLeft_cls ul li span.second,.modalContent div.userListright_cls ul li span.second{float:left;display:inline-block;word-wrap:break-word;width:185px;}
+.modalContent div.userListright_cls ul li span.first{width:150px;}
+.modalContent div.userListright_cls ul li span.second{width:173px;}
+section.add_user_contract{margin-bottom:12px;}
+section.add_user_contract header{padding:15px}
+section.add_user_contract h1{float:left;padding-right:10px;}
+section.add_user_contract h1#contractIdHeader{width:200px;}
+section.add_user_contract h1#supportLevelHeader{width:200px;}
+.marg_tp{margin-top:11px;}
+a.cursor_hand{cursor:pointer;}
+/* Styles for CR - LABELS & FLAGS */
+.modalContent .rclholder{padding:5px 0px;}
+.modalContent .rclholder label{display: inline-block;padding-right: 10px;}
+.modalContent .rclholder .txt-holder{position:relative;display:inline-block;}
+.modalContent .rclholder input{width: 200px;margin-right:10px;padding:3px;}
+.rename_error.pad{padding-left:45px;}
+.modalContent span.delete_label {
+    background: url("img/btn_remove_red.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 17px;
+    overflow: hidden;
+    padding-left: 18px;
+    position: relative;
+    top: 5px;
+	cursor:pointer;
+	color:#960505;
+}
+.ie7 .modalContent .rclholder label,.ie7 .modalContent .rclholder .txt-holder,.ie7 .modalContent span.delete_label{
+	float:left;
+}
+.ie7 .modalContent .rclholder label{padding-top:5px;}
+.modalContent .alert_ico{
+	background: url("img/ico_alert_red.png") no-repeat scroll right center transparent;
+    height: 18px;
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    width: 22px;
+}
+.ie7 .modalContent .alert_ico{top:6px;}
+.modalContent .warning_container{
+	background: url("img/ico_alert_red.png") no-repeat scroll 22px center transparent;
+    font-weight: bold;
+    padding: 30px 30px 30px 50px;
+}
+input[type="checkbox"].right_marginonezero{
+	margin-right:10px
+}
+div.textareaholder{
+	padding:5px 0px;
+}
+div.textareaholder label{display:block;padding-bottom:3px;cursor:default;color:#666;}
+div.textareaholder textarea{width: 542px;height:45px;overflow-y:auto;}
+.modalContent .adminchkbox_wrapper .chk_box_container{padding: 0 0 10px 14px;}
+.modalContent .adminchkbox_wrapper .chk_box_container label.admin_edperm_label{font-size: 12px;padding-left: 5px;position: relative;top: 2px; cursor:default;}
+.modalContent .adminchkbox_wrapper .chk_box_container input[type=checkbox]{vertical-align:middle !important;}
+.modalContent .body p.mrgnbtmThree{margin-bottom:3px;}
+.modalContent .rename_container.scroll{overflow-x: hidden;overflow-y: auto;}
+.modalContent .rename_container.htclass{height:250px;}
+
+/*Add user new Styles - CR 12085*/
+.section-wrapper.adduser2 .column .sec_head h1{color:#000;font-size:11px;font-weight:bold;}
+.modalContent .section-wrapper.adduser2 .required{text-align:right;padding-right:20px;}
+.section-wrapper .threeTwoFive  input.moreWidth[type="text"]{
+	display:block;
+	width:285px;
+	margin-top:2px;
+}	
+.section-wrapper .column.threeTwoFive div.sec_head,.section-wrapper .column.fourOneFive div.sec_head{
+	background: #eee; 
+	padding:2px 0px;
+}
+.section-wrapper .column.threeTwoFive {
+	width: 325px;
+	float:left; 
+	margin-right:25px;
+	border:1px solid #ccc;
+}
+.section-wrapper .column.fourOneFive {
+	width: 415px;
+	float:left; 
+	border:1px solid #ccc;
+}
+#content_9 .section-wrapper.adduser2 .column{
+	height:275px !important;
+}
+.addBtnPadding{
+	padding:0px 6px 10px 0px;
+}
+.section-wrapper .column.fourOneFive  button{
+	margin:1px 0px !important;
+}
+.section-wrapper.adduser2 .column.fourOneFive .sec_head h1{
+	float:left;
+}
+
+.section-wrapper .column.threeTwoFive .footer{
+	height:auto;
+	padding-top:0px;
+}
+.section-wrapper .column.fourOneFive .removeBtn{
+	padding-right:5px;
+}
+.modalContent .footer .buttons .left-btns, .modalContent .buttons .left-btns{
+	float:left;
+}
+.usrHdr{
+	float:left;
+	padding:5px;
+	background:#ccc;
+	width:405px;
+}
+.usrHdr span{
+	display:block;
+	float:left;
+}
+.usrHdr span.first{
+	width:170px;
+	padding-left:10px;
+}
+.modalContent .section-wrapper .secColumn ul.userLi{
+	width:415px;
+	height:220px;
+	overflow:auto;
+}
+.ie7 .modalContent .section-wrapper .secColumn ul.userLi li.userElem{
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	line-height:11px;
+}
+.modalContent .section-wrapper .secColumn ul.userLi li.userElem{
+	padding:5px 0px 5px 15px;
+	cursor:pointer;
+	margin:0 !important;
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	user-select: none;
+}
+ul.userLi li.userElem.hover{
+	background:#eef7ff;
+}
+ul.userLi li.userElem.active{
+	background:#DDEEFE;
+}
+li.userElem span{
+	float:left;
+	display:block;
+}
+li.userElem span.name{
+	width:160px;
+	padding-right:10px;
+	font-size:12px;
+}
+.modalContent .section-wrapper .column ul.userLi li.userElem span.email{
+	color:#333333;
+	font-size:12px;
+	font-weight:normal;
+	width:200px;
+	margin: 0 !important;
+}
+.modalContent .section-wrapper.adduser2 .htTwoTwoThree .required{
+	font-style:normal;
+	font-size:12px;
+	color:#333;
+	padding-right:10px;
+}
+.modalContent .section-wrapper.adduser2 .htTwoTwoThree .required .errmsg{
+	padding-left:2px;
+}
+.modalContent .fLeft{
+	float:left !important;
+}
+.modalContent .fRight{
+	float:right !important;
+}
+.shareFolder.section-wrapper .column{
+	width:41%;
+	border:1px solid #ccc;
+}
+.shareFolder.section-wrapper{margin-bottom:15px;}
+.shareFolder.section-wrapper .listHolder{
+	height: 183px !important;
+	width:100%;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.shareFolder.section-wrapper #sList input{
+	display:none;
+}
+.ie7 .shareFolder.section-wrapper .listHolder, .ie8 .shareFolder.section-wrapper .listHolder,.ie9 .shareFolder.section-wrapper .listHolder{
+	height: 176px !important;
+}
+.shareFolder.section-wrapper .listHolder.selectedList{
+	height: 223px !important;
+}
+.shareFolder.section-wrapper .listHolder ul{
+	padding:0;margin:0;
+}
+.shareFolder.section-wrapper .listHolder ul li{
+	border-bottom: 1px dotted #AAAAAA;
+	padding:5px 0;
+	cursor:pointer;
+	-moz-user-select: none; 
+	-khtml-user-select: none; 
+	user-select: none;
+}
+.shareFolder.section-wrapper .listHolder.selectedList ul li{padding:5px 0 5px 10px;}
+.shareFolder.section-wrapper .listHolder ul li input,.shareFolder.section-wrapper .listHolder ul li span{vertical-align: top;margin-right:10px;display:inline-block;}
+.shareFolder.section-wrapper .listHolder ul li .uName{width: 90px;}
+.shareFolder.section-wrapper .listHolder ul li .email{margin:0;color:#333;font-size:11px;font-weight:normal;width: 170px;word-wrap: break-word;}
+.shareFolder.section-wrapper .listHolder ul li.hover{background:#d8f0f8;}
+.shareFolder.section-wrapper .listHolder ul li.active{background:#b7e2f1}
+.shareFolder.section-wrapper .sec_head{
+	background:#ededed !important;
+	padding:8px;
+}
+.shareFolder.section-wrapper .sec_head h3{
+	margin-bottom:10px;
+}
+.shareFolder.section-wrapper .sec_head .filterSec {
+	padding: 4px 0;
+}
+.shareFolder.section-wrapper .sec_head .filterSec input{
+	margin:1px 5px 0 0;
+	vertical-align: middle;
+    width: 214px;
+    color:#999;
+ }
+ #findBtn{
+ 	width: 81px;
+ }
+.shareFolder.section-wrapper .sec_head .filterSec button{
+	margin: 0 !important;
+}
+.shareFolder.section-wrapper .hdrTbl th{
+	background:url(img/bg_gray_hdr.png) repeat-x 0 0 #d3d3d3 !important;
+	padding:3px 0 3px 10px;
+	font-weight:normal;
+	text-align:left;
+}
+.shareFolder.section-wrapper .hdrTbl th:first-child{width:16px;}
+.shareFolder.section-wrapper .hdrTbl th.uName{width:92px;padding-left: 5px;}
+.shareFolder.section-wrapper .hdrTbl.rightTbl th.uName{width:90px;padding-left: 10px;}
+.shareFolder .control{
+	width: 17% !important;
+	padding-top:105px;
+	text-align:center;
+}
+.shareFolder.section-wrapper .center_text{font-size:12px;top:10%;}
+/*End of Add user new Styles - CR 12085*/

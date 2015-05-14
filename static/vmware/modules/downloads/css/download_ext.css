@@ -1,0 +1,614 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  download_ext.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 08/21/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. adjust style for tabs
+/* ########################################################################### */
+
+#p_SearchPortlet_WAR_itdownloadsportlets,
+#p_RelatedResourcesPortlet_WAR_itdownloadsportlets{
+	display:none !important;
+}
+#container {
+	overflow:visible;
+}
+div.alert-box {
+	margin: 0 0 10px 0 !important;
+}
+div.tabbed_box{
+	position: relative;
+	padding:0;
+}
+.tabbed_area .needHelp {
+	position: absolute;
+	padding:0;
+	right:5px;
+	top:5px;
+	font-weight:bold;	
+}
+.tabbed_box ul li:first-child {
+    margin-left: -27px;
+}
+.tabbed_area  table tr.no-category-more-details table tr:hover td {
+	background: #dae0ee;
+}
+.tabbed_area  table tr.no-category-more-details td {
+	padding: 0;	
+}
+.tabbed_area  table tr.no-category-more-details table tr td {
+	padding: 0;
+	border-top: 1px solid #e3e6ef;
+	background: #fff;
+}
+.tabbed_area  table .no-category-more-details table.child-table td {
+	padding: 11px 0px 11px 10px;
+}
+.tabbed_area  table .no-category-more-details td table tr:first-child td {
+	border-top: 0px;
+}
+	
+.tabbed_area  table .no-category-more-details td table tr:last-child td {
+	border-bottom: 0px;
+}
+#content-container.wide{
+	margin-top: -22px;
+}
+body #content-container.wide #content {
+    padding-top:30px;
+}
+body #content-container.wide #content.withoutBgGradient {
+    margin-top: -155px;
+}
+.video img {
+ }
+#content-header-container.smallHeading{
+ /*	width:935px; */
+	width: 100%;
+}
+.ie7 div.portlet-column.right-side-panel {
+	float: right;
+	width: 22em;
+	margin-top: 75px !important;
+	overflow: visible;
+}
+#content-header-container .search-container h4  {
+    color: #FFFFFF;
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+    width: auto;
+	font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+}
+.search-holder input[type="text"] {
+	width:300px;
+}
+
+.noDownloads-Msg{
+	font-size:16px;
+	text-align:center;
+	padding-top:70px;
+	padding-bottom:70px;
+}
+/* All donwloads for non logged in version*/
+/* Styles taken from download.css and modified to match with PDF */
+.tabbed_box .allDownloads{
+	float:left;
+	width:100%;
+}	
+.tabContent ul.products li, .tabContent ul.eas li{
+	border:none;
+	padding:5px 5px 5px 5px;
+	color:#0C8D63;
+}
+.tabContent .paneLeft ,
+.tabContent .paneRight {
+	float:left;
+	width:100%;	
+	margin-right:1%;
+}
+ul.products li div.accountName, 
+ul.products li.product{
+    font-size:18px; 
+    font-weight:bold; 
+    color:#333;
+}
+.tabContent ul.products li.product{
+    color:#008c00; /*Color Picked from PSD*/
+	margin-bottom:8px;
+	font-weight: 300;
+	font-size: 26px;
+	padding-left:0px;
+}
+.tabContent ul.products li.product .iconholder{
+    background-image:url(../img/icons.png);
+	background-repeat: no-repeat;
+	width:33px;
+	height:33px;
+	display:block;
+	float:left;
+	margin-right:15px;
+}
+.allDownloads  .tabContent ul.products li.product .ich0{	background-position: 0px 0px;} 
+.allDownloads  .tabContent ul.products li.product .ich1{	background-position: -34px 0px;}
+.allDownloads  .tabContent ul.products li.product .ich2{	background-position: -68px 0px;}
+.allDownloads  .tabContent ul.products li.product .ich3{	background-position: -0px -34px;}
+.allDownloads  .tabContent ul.products li.product .ich4{	background-position: -34px -34px;}
+.allDownloads  .tabContent ul.products li.product .ich5{	background-position: -68px 0px;}
+.tabContent ul.products li.prodChilds{
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 5px;
+    color:#666666;
+    min-height: 22px;
+	border-bottom: 1px solid #E6E6E6;
+	padding-top: 6px;
+}
+.tabContent ul.products li.prodChilds a{font-weight: 300;color:#006699;font-size: 15px;}
+.tabContent ul.products li.prodChilds a.download{font-weight: 600;padding-left:0px}
+.tabContent ul.products li.liLast{padding-bottom:35px;background:none}
+.tabContent ul.products{border-bottom: 0; padding-top:15px;color:#666666;font-weight:300;}
+.tabContent ul.products li.liLast{border-bottom: 2px solid #E6E6E6;}
+.tabContent ul.products.lastProdUl,.tabContent ul.products.lastProdUl li.liLast{border-bottom: 0;padding-bottom:30px;}
+.tabContent ul.products li.prodChilds.hover{background-color: #E5F9FF;}
+ul.products li.prodChilds div.warpLongText{display:inline-block; float: left;font-size: 15px;font-weight: 600; }  
+.ie7 ul.products li.prodChilds div.warpLongText{display:inline;float:left;font-family:Arial,sans-serif !important}
+.rightPanel h1{font-size:22px;}
+ul.products li.prodChilds span{display:inline;float: right;}
+ul.products li.prodChilds span a{background: url('../img/seperator_line1.png') left center no-repeat;padding-left: 8px !important;padding-right: 8px !important}
+ul.products li.prodChilds span a:first-child{  /* :first-child is a css2 property so lower versions of IE do support it */
+    background: none;  
+    padding-left: 0px;
+}
+ul.products li.prodChilds span.alignRight{
+    float: right;      
+	margin-top:1px !important;
+}
+.endOfLifeProducts{
+	display:none;
+}
+ul.products li span.defaulttext{
+    color:#999; 
+    padding-left:10px; 
+    font-size:13px;
+    font-weight:normal;
+}
+ul.products li span.defaulttext a{color:#3399CC;}
+.allDownloads .tabContent .ddContainer .eaInputWrapper input.optionsHolder, .allDownloads .tabContent .ddContainer .eaInputWrapper input.optionsHolder:focus{
+    padding-bottom:5px !important;
+}
+a#EOLproducts{
+    position: absolute;
+    top: 5px;
+    z-index: 3001;
+}
+.fLeft{
+    float: left;
+}
+.fRight{
+    float: right;
+}
+.clear{
+    height: 0px;
+    width: 0px;
+    padding: 0px;
+    margin: 0px;
+    clear: both;
+}
+.productDetailsTbl .prodDetails {
+    font-weight: bold;
+}
+.productDetailsTbl .prodDetails .prodName{
+    font-size: 13px;
+    color: #333333;
+    margin: 5px 0 10px;
+}
+.productDetailsTbl .prodDetails a{
+    color: #3399CC;
+}
+.productDetailsTbl .prodDetails .linksSeparator{
+    color: #333333;
+    margin: 0 5px;
+}
+.productDetailsTbl .prodDetails .secondary{
+    margin: 13px 20px 0 0 !important;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+.backgroundBlue{
+    background-color: #E5F9FF;
+}
+/* To align right panel */
+
+.rightPanel{
+	float:right;
+	width:18%;
+}
+div.rightPanel ul  li.withNoBackground{
+	padding:5px 0;
+}
+div.rightPanel ul{
+	border-top:1px solid #d6d6d6;
+	margin-top:5px;
+	padding:10px 0 20px 0;
+}
+div.ddContainer{
+	margin:10px 0;	
+	width:100%;
+}
+/**Dot 7 all downloads family page*/
+
+#content-container div.product-detail-section table td, #content-container div.product-detail-section table th {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #000000;
+    font-size: 14px;
+   /* font-weight: bold;*/
+    padding: 2px 15px 2px 0;
+}
+#content-container div.product-detail-section table th{
+	width: 17%;
+}
+#content-container div.product-detail-section table {
+    margin-bottom: 30px;
+    width: auto;
+	border:none;
+}
+#content-container div.product-detail-section table td.productHeading {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+#content-container div.product-detail-section table td ul li {
+    background: none repeat scroll 0 0 transparent;
+    padding-left: 0;
+}
+#content-container div.product-detail-section table td ul {
+    margin-bottom: 0px;
+}
+/*Styles to position search button*/
+.searchAllDownloads{
+    position: absolute;
+    top: 165px;
+	left: 46px;
+	border-bottom: 1px solid #E7E7E7;
+	width:92%;
+	height:65px;
+	background-image: url(../img/support-search-gradient.jpg);
+}
+.searchAllDownloads table#search_suggest {
+    left: 243px !important;
+    top: 38px !important;
+    width: 400px !important;
+}
+
+ div.inputsearchbox input{
+	padding:4px 25px 4px 4px;
+	width:500px;
+	height:28px;
+	background:url(/vmwareNew-theme/images/forms/input_shadow.png);
+	border-radius: 5px;
+}
+.ie7 div.inputsearchbox input,.ie8 div.inputsearchbox input,.ie9 div.inputsearchbox input{
+	height:22px;
+	padding-top:10px;
+}
+div.inputsearchbox input.focus{background:#FFFFFF;border: 1px solid #0091CE;}
+ div.inputsearchbox{text-align:center;position:relative; top:8px}
+
+/* added to fix buy, trial and other link styles*/
+	.right-side-panel .gray-Box {		
+		margin: 0px 0 26px 0 !important;
+		background-color:#FFFFFF;						
+		
+	}
+	.gray-Box  ul{
+		border-top:1px solid #D3D3D3 !important;
+		padding:20px 0 0 0 !important;
+	}
+	.gray-Box  ul li{
+		background:none !important;
+		padding:0 0 0 7px !important;
+	}
+	.white-Box h3,.white-Box strong{
+                border-bottom: 1px solid #CCC;
+                font-size:20px !important;
+                padding:2px 0 5px 0;
+                line-height: 15px;
+				border:0;
+				font-weight:bold;
+				margin-left:17px;
+        }
+		.white-Box  hr { display:none;padding:2px 0 5px 0;}
+/* Fix for BUG-00051852 and BUG-00051869 */
+.readMoreLess span{
+    font-size: 12px;
+    color:#0085b2;
+    text-decoration: none;
+	margin-left:15%;
+	display:inline-block;
+}
+.readMoreLess span.displayNone{display:none;}
+
+.pDownloadHeading{
+    font-size: 18px !important;
+    color:#008c23 !important;
+}
+.lblVersion{
+    display:block;
+    font-size: 13px;
+    margin-bottom: 5px;
+	width:100%;
+	font-weight:bold;
+}
+.versionList{
+    display: block;
+    float: left;
+    margin-left: 0;
+    overflow: hidden;
+}
+.toggleDetails{
+    /*display: none;*/
+    float:left;
+    width:85%;
+}
+.ie7 .toggleDetails{width:83%;}  .ie7 .readMoreLess span, .ie7 .visibleDetails{width:17%}
+.ie7 .readMoreLess span{
+	margin-left: 18%;
+}
+.toggleDetails p{
+    width:auto;
+}
+.displayNone{
+    display: none;
+}
+.mac .eaInputWrapper input.optionsHolder, 
+.mac .eaInputWrapper input.optionsHolder:focus, 
+.eaInputWrapper input.optionsHolder, 
+.eaInputWrapper input.optionsHolder:focus {
+    padding: 6px 0 5px 4px !important;
+}
+.ie8 .eaInputWrapper input.optionsHolder, 
+.ie8 .eaInputWrapper input.optionsHolder:focus,
+.ie7 .eaInputWrapper input.optionsHolder, 
+.ie7 .eaInputWrapper input.optionsHolder:focus{
+	padding: 6px 0 4px 4px !important;
+}
+.ie8 .eaInputWrapper input.optionsHolder, 
+.ie8 .eaInputWrapper input.optionsHolder:focus {
+  background-position :99% 0px;
+ }
+.ie9 .eaInputWrapper input.optionsHolder, 
+.ie9 .eaInputWrapper input.optionsHolder:focus , 
+.ie10 .eaInputWrapper input.optionsHolder, 
+.ie10 .eaInputWrapper input.optionsHolder:focus {
+padding: 6px 0 6px 4px !important;
+}
+#content-container table .midProductColumn, #content-container table td table .midProductColumn {width:60%;padding-left:0;vertical-align:middle;}
+/*For help icon on non logged page*/
+.tabbed_area .helpLink{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 100;
+}
+.helpLink .help{
+    background: url("../img/btn_help.png") no-repeat scroll 0 0 transparent;    
+    display: block;
+    height: 16px;
+    text-indent: -9999px;
+    width: 16px;
+}
+/*Fix for BUG-00054398*/
+#eaDropDownOpts a.dropdownOpt.selectedOpt, .ie #eaDropDownOpts a.dropdownOpt.selectedOpt{color: #FFFFFF !important; }
+div.rightPanel span.extLink {
+    min-height: 16px!important;
+    height: auto;
+}
+/*  styles for the read more link */
+.visibleDetails{
+    float: left;
+    width: 15%;
+}
+.visibleDetails{margin-bottom: 17px;}
+.toggleDetails p, .toggleDetails h2, .toggleDetails h3, .toggleDetails h4, .toggleDetails h5,
+.toggleDetails ul li{
+    display: none;
+}
+.showAll p, .showAll h2, .showAll h3, .showAll h4, .showAll h5, .showAll ul li{
+    display: block;
+}
+.toggleDetails > p:first-child, .toggleDetails > h2:first-child, .toggleDetails > h3:first-child,
+.toggleDetails > h4:first-child, .toggleDetails > h5:first-child {
+    display: block;
+}
+.displayNone{display: none;}
+
+.products .BTP{
+	color: #717074;
+	float: right;
+	font-size: 14px;
+	font-weight: normal;
+	display:none;
+	cursor:pointer;
+}
+.tabContent ul.products li.product .BTP{
+	color: #d0d0d0;
+	float: right;
+	font-size: 14px;
+	font-weight: normal;
+}
+/*.eaInputWrapper{
+	float: right;
+}  */
+.ddContainer select{
+	float: right;
+	display:none;
+}
+.main-container .detail-section {
+   overflow: hidden;
+    padding-left: 0;
+}
+.tabContent .ddContainer .eaInputWrapper{
+	display:none;
+}
+.tabbed_box .tabbed_area  ul.tabs li a span ,.tabbed_box .tabbed_area ul.tabs li a{
+	background:none;
+	font-size:16px;
+	font-weight:300;
+}
+.tabbed_box .tabbed_area ul.tabs li  a.tab{
+	background: #CCCCCC;
+	color:#0095D3;
+}
+#content .tabbed_box .tabbed_area ul.tabs li  a.tab.active{
+	background: #0095D3;
+	color:#FFFFFF;
+}
+#content .tabbed_box .tabbed_area ul.tabs li a :hover{
+	background: #0095D3;
+	color:#FFFFFF;
+}
+.download-center p{
+	display:none;
+}
+.portlet-boundary_ProductFamilyPBDTOSTabsPortlet_WAR_itdownloadsportlets_ .portlet-body .tabbed_box .tabs{border-bottom: 2px #0095D3 solid; background: none;padding-bottom:0px;margin-bottom:15px;width: 100%;padding-left: 0px;}
+.portlet-body .tabbed_box .tabs{
+	padding-bottom:15px;
+	border-bottom: 1px #CCCCCC solid;
+	margin-bottom: 0px;
+	padding-left:115px;
+	width:90%;
+}
+.portlet-body .scProductDlgTabDetails .tabbed_box .tabbed_area  .tabs{ border-bottom: 2px #0095D3 solid; background: none;padding-bottom:0px;margin-bottom:15px;width: 100%;padding-left: 0px;}
+#content-header-container .main-container  header h1 {
+	color:#0095D3 !important;
+	font-size:40px !important;
+	font-weight: 300;
+}
+.tab_title{
+	float:left;
+	display:block;
+	font-size:22px;
+	font-weight:normal;
+	margin-bottom:-30px;
+}
+.ie7 span.dsearchbutton{
+	top: -12px;
+}
+.allDownloads div.ddContainer{
+	margin: 0 0;
+}
+#content .largeHeading .main-container{
+	width: 100%;
+	border-bottom: 1px solid #E7E7E7;
+}
+#content .largeHeading .main-container .clearfix{
+	width: 100%;
+	width: 100%;
+}
+.right-side-panel {
+    /*border-bottom: 1px solid #DDDDDD;
+	width:220px; 
+    margin-bottom: 20px;*/
+	margin-top:75px !important;
+	width:30%;
+ }
+
+#content-header-container.largeHeading {
+	margin-bottom: 0px;
+	height:230px;
+}
+ /** Style guide changes- Which can't be added to existing styles **/ 
+ ul#breadcrumb{margin-bottom:12px;}
+.largeHeading #breadcrumb li a,.largeHeading #breadcrumb li.last a,.smallHeading #breadcrumb li a,.smallHeading #breadcrumb li.last a{
+	color:#999999;
+	font-size: 14px;
+}
+.largeHeading #breadcrumb li a:hover,.smallHeading #breadcrumb li a:hover{
+	color:#0095D3;
+}
+.largeHeading #breadcrumb li ,.smallHeading #breadcrumb li {
+	background:url("../img/slash.png") no-repeat scroll 1px 3px transparent;
+}
+.ie7 .largeHeading #breadcrumb li ,.smallHeading #breadcrumb li {
+	background:url("../img/slash.png") no-repeat scroll 1px 5px transparent;
+}
+#breadcrumb li:first-child,.small-header #breadcrumb li:first-child{
+	background:none;
+}
+#portlet_ProductDetailsHeaderPortlet_WAR_itdownloadsportlets .small-header #breadcrumb li{
+	white-space: normal !important;
+}
+#tab_prod_A-Z.tabContent ul.products{
+	padding-bottom:0px;
+	padding-top:0px;
+}
+tab_prod_A-Z.tabContent  ul.products:last-child{
+	border-bottom:0;
+}
+#tab_prod_A-Z.tabContent  ul.products li.prodChilds{
+	padding: 5px;
+}
+#tab_prod_A-Z.tabContent{
+	padding-top:20px;
+}
+.tabbed_area .activitiesLog table .buttoncol a.button.secondary,tr.more-details table.child-table td a.button.secondary{font-weight:400;color: #006690;font-size: 14px;border: 0px; background: none; font-weight: 300;}
+#content-header-container  .portlet-body div.small-header{ background:none; padding: 11px 0 0 0; margin-top:45px}
+#content-header-container  .portlet-body div.small-header h1{ color:#0095D3 !important;}
+.portlet-boundary_ProductFamilyPBDTOSTabsPortlet_WAR_itdownloadsportlets_  div.searchAllDownloads{display:none}
+.tabbed_area .activitiesLog table thead th{background:#006990;color:#FFFFFF;text-transform:none; font-size:14px;vertical-align:middle;filter:none}
+body .tabbed_area .activitiesLog table{border:1px solid #CCCCCC; font-weight:500;}
+body .tabbed_area .activitiesLog table tbody td{ color:#666;font-size:14px;font-weight:500;font-size: 14px;}
+body .tabbed_area .activitiesLog table  thead tr{height:42px;}
+.tabbed_area .activitiesLog  table tr.open td, .tabbed_area .activitiesLog table tr.more-details td{border-top:1px solid #CCCCCC;background: #FFFFFF !important;}
+.tabbed_area .activitiesLog table tr.clickable td{border-top:1px solid #CCCCCC;background: #F1F6F9;font-weight:bold;font-size: 16px;}
+.tabbed_area .activitiesLog table tr.clickable.open td{background:#FFFFFF;color:#0095D3; font-weight:bold;font-size: 16px;}
+.visibleDetails h2{ display:none}
+.right-side-panel .white-Box ul li{font-size:14px;padding:5px;border-bottom:1px solid #E6E6E6;font-weight:500;margin-left:15px;}
+.ie7 li.my-download-history a{border-bottom:1px solid #CCCCCC !important;}
+.ie7 li.my-download-history,.ie7 li.my-download-history ul li a{border-bottom:0 !important;}
+.ie7 .right-side-panel .white-Box ul li ul li{font-size:14px;padding:5px;border-bottom:1px solid #CCCCCC;font-weight:500;margin-left:0px;}
+.right-side-panel .white-Box ul li a.freeIcon{padding-bottom:0}
+#content .right-side-panel .white-Box{border:0;}
+#content-header-container .main-container .toggleDetails p{width:100%;font-size:15px}
+body #content-container.wide #content.withBgGradient.clearfix{padding-top: 45px;}
+.activitiesLog .openCloseSelect a.openClose{background: url(../img/arrow_gray.png) no-repeat 0 30%;}
+.activitiesLog .openCloseSelect a.openClose.open{background: url(../img/arrow_blue.png) no-repeat 0 30%;}
+.right-side-panel #portlet_NewRelatedResourcesPortlet_WAR_itdownloadsportlets .white-Box{padding-left:10px;font-weight: 400;background:url("../img/bordershadow.png") no-repeat; padding-left:8px;}
+.tabbed_area table tbody tr td.filename {background:#FFFFFF; font-size:14px;font-weight: 500;border-top:1px solid #CCCCCC;}
+td.filename .infoDownload{float:left;}
+td.filename .downloadCol{float:right;}
+td.filename .detailsOnHover{display:none;clear:both; padding:15px;background: #E6E6E6;margin:10px;float:left;width:95%}
+td.filename .detailsOnHover .col1{float:left; width:44%;overflow:hidden;height:100%;}
+td.filename .detailsOnHover .col2{float:right;;width:42%;overflow:hidden;height:100%; padding-right:60px;padding-left:30px;border-left:1px solid #CCCCCC;}
+td.filename .readMoreDetails{color: #0095D3;display:block;clear:both;width:87px}
+td.filename .readMoreDetails:hover{cursor:pointer;}
+#closeDetails{cursor:pointer; position:relative;right:0; top:0;float:right;background:url("../img/close-btn.png") no-repeat scroll 0 0 transparent;width:20px;height:20px;}
+td.filename .downloadCol{padding-right:25px;}
+#tabbed_box_1 td.filename .downloadCol a.button.primary{background:linear-gradient(to bottom, #0095d3 0%, #006690 100%);color:#FFF; width:177px; height:25px;display:block;text-align:center;padding:8px;font-size:16px}
+td.filename .downloadCol .manualDownloadLink a{color:#006990;background:transparent;}
+#container .column-wrapper .manualDownloadLink{text-align:center;}
+.col1 .label,.col1 .NameLabel,.col2 .label{font-weight:bold;}
+.col1, .col2{line-height: 1.5;}
+.detailsOnHover, .detailsOnHover .col2 p{font-size:14px;}
+/* overriding template css */
+div#content table td input.optionsHolder{margin: 0;padding-bottom:5px;}
+.ie7 td.filename .infoDownload{width: 56em;}
+.ie7 td.filename .downloadCol{width:14em;clear:both;}
+.ie7 td.filename .readMoreDetails{width:68em;clear:both;}
+.ie7 td.filename .detailsOnHover{width:68em;clear:both;}
+#content-container #content table .tdOpenCloseButton, #content-container #content  table td table .tdOpenCloseButton{padding-right:10px}
+.detail-section p.tHandleContainer{display:inline-block;}
+.mac #content-container #content{width:1050px !important;}
+#refineSearch.searchFixer {margin-right: 109px;margin-top: 0 !important;}
+.safari #content{width:1050px !important;}
+.ie7 #content-container #footer .footerbar ,.ie8 #content-container #footer .footerbar {filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#68696d', endColorstr='#68696d');width:110%;}
+.ie7 .page-b-footer-pattern,.ie8 .page-b-footer-pattern {z-index:1;}
+.win.safari #versionList{width:100px;}

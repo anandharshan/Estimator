@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html id="alpha_html" class="no-js">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dashboard</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width" />
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+<link rel="stylesheet" href="/vmf/c/4.0/css/liferay.css">
+<link rel="stylesheet" href="/static/myvmware/common/css/vcredit.css">
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="/vmf/c/4.0/css/ie.css" />
+<link rel="stylesheet" href="/static/myvmware/common/css/ie7.css" />	
+<script src="/vmf/c/4.0/js/vmf-liferay-ie.js"> </script>
+<![endif]-->
+
+<script src="/vmf/c/4.0/js/vmf.js" type="text/javascript"></script> 
+<script src="/vmf/m/angular/4.0/js/angular.min.js" type="text/javascript"></script> 
+<script src="/static/myvmware/modules/vcredit/js/common/ajaxService.js" type="text/javascript"></script>
+<script type="text/javascript" src="/vmf/m/foresee/foresee-trigger.js"></script>
+<script src="/static/myvmware/modules/vcredit/js/vsppdashboard.js"></script>
+
+</head>
+<!--[if lt IE 7 ]> <body class="no-js liferay starlight ie7 lt-ie8"> <![endif]-->
+<!--[if IE 7 ]> <body class="no-js liferay starlight ie7 lt-ie8"> <![endif]-->
+<!--[if IE 8 ]> <body class="no-js liferay starlight ie8"> <![endif]-->
+<!--[if IE 9 ]> <body class="no-js liferay starlight ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body class="starlight liferay">
+<!--<![endif]-->
+<section class="page-eyebrow">
+    <div class="starlight container">
+        <div class="page-eyebrow">
+            <nav class="eyebrow-menu menu-eyebrow">
+                <a href="javascript:void(0);" class="menu-link-quick">Quick Links </a>
+                <div class="starlight-eyebrow-quick">
+                    <!-- <a title="Select a Country/Region" href="/in/worldwide.html" class="pull-left user-locale">
+							<span class="icons-locale_bg"></span>English
+						</a> -->
+                    <div class="vmbar-vmware" id="localeSelector">
+                        <span class="icons-locale_bg "></span> <a href="#" class="locale-selector " data-toggle="modal" data-target="#myModal">English</a>
+                        <a href="#" class="locale-selector hidden">English</a>
+                    </div>
+                    <ul class="user_options pull-right nav-level-1">
+
+                        <div id="p_p_id_MyVMWareHeaderPortlet_WAR_itcrossfunctional_" class="portlet-boundary portlet-boundary_MyVMWareHeaderPortlet_WAR_itcrossfunctional_  portlet-static portlet-static-end  ">
+                            <a id="p_MyVMWareHeaderPortlet_WAR_itcrossfunctional"></a>
+
+                            <section class="portlet" id="portlet_MyVMWareHeaderPortlet_WAR_itcrossfunctional">
+                                <div class="portlet-content">
+
+                                    <div class=" portlet-content-container" style="">
+
+                                        <div class="portlet-body">
+
+                                            <li>
+
+                                                <a target="_blank" class="menu-item-quick" href="//www.vmware.com/">  VMware.com </a>
+                                            </li>
+                                            <li><a href="//www.vmware.com/vmwarestore/" role="button" class="menu-item-quick">Store</a>
+                                            </li>
+
+                                            <li class="has-subnav user_options">
+                                                <a title="User" href="javascript:;" class="dropdown-toggle menu-item-quick">
+		qatest 0055						
+		<span class="glyphicon glyphicon-chevron-down"></span>
+	</a>
+
+                                                <ul class="dropdown-menu nav-level-2 user_options" role="menu">
+                                                    <li class="userID hidden"> <a title="User" href="javascript:;" class="menu-item-quick">qatest0055@vmware.com</a>
+                                                    </li>
+                                                    <li>Customer # 9521319442 </li>
+                                                    <li><a href="https://my-dev13.vmware.com/group/vmware/alerts">Alerts</a>
+                                                    </li>
+                                                    <li><a id="pThemeProfileID" href="https://my-dev13.vmware.com/group/vmware/profile">Profile</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://my-dev13.vmware.com/c/portal/logout" onclick="javascript: oo_beta_lgout.show();">  Logout </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <!-- <li class="has-subnav user_options">
+	<a title="User" href="javascript:;" href="javascript:;" class="dropdown-toggle menu-item-quick">
+		$user_first_name $user_last_name 
+		<span class="glyphicon glyphicon-chevron-down"></span></a>
+	<ul class="dropdown-menu nav-level-2" role="menu">
+		<li class="userID hidden"> <a title="User" href="javascript:;">$user_email_address</a></li>
+		<li><a href="$msgBundle.getMessage("alerts.url", null, $locale)">$msgBundle.getMessage("alerts.label", null, $locale)</a></li>
+		<li><a id="pThemeProfileID" href="$msgBundle.getMessage("profile.url", null, $locale)">$msgBundle.getMessage("profile.label", null, $locale)</a></li>
+	</ul>
+</li>
+<li><a class="menu-item-quick" href="$msgBundle.getMessage("sign_out_url", null, $locale)" onclick="javascript: FSR.stopTracker();">$msgBundle.getMessage("logout", null, $locale)</a></li> 
+<li><a class="menu-item-quick" target="_blank" href="$msgBundle.getMessage("vmware.url", null, $locale)">$msgBundle.getMessage("vmware.com", null, $locale)</a></li> -->
+
+
+
+
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</section>
+<section class="starlight container page-container">
+<header class="header">
+		<nav class="navbar nav-menu" role="navigation"> 
+		    <a title="vmware" href="/" class="page-logo-my"></a><span class="brand"></span>
+			<div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <!-- This is completely optional -->
+                        
+                        <!-- Collect the nav links, forms, and other content for toggling    NAVBAR ********************** -->
+                        <div class="collapse navbar-collapse nav-menu-collapse pull-right margin-top-10 homePageNavigator" id="homePageNavigator">
+                            <ul class="nav navbar-nav nav-level-1">
+																					
+																					
+							                                <li id="navHeader_1"><a href="javascript:;" title="Products" alt="Products" target="_top" class="menu-item-primary-1">Products</a>
+																			<ul class="nav-level-2 nav-col-2">
+												<li>
+													<div class="row">
+																											<div class="col-md-6">
+															
+															<div class="header">Manage My Products</div>
+															<div class="links">
+																																<a href="/lan_code/group/vmware/downloads#tab1">My Products</a>
+																																<a href="/group/vmware/my-licenses">License Keys</a>
+																																<a href="/group/vmware/my-downloads">My Download History</a>
+																																<a href="https://www-dev13.vmware.com/account/secure/productRegistration.do?action=existingCustomer" target="_blank">Product Registration</a>
+																																<a href="/group/vmware/myeval">My Evaluations</a>
+																															</div>
+															
+															
+														</div>
+																											<div class="col-md-6">
+															
+															<div class="header">Manage My Subscription Services</div>
+															<div class="links">
+																																<a href="/group/vmware/subscription-services">Subscription Services</a>
+																																<a href="/group/vmware/add-on-requests">Add-On Requests</a>
+																															</div>
+															
+															
+														</div>
+																											<div class="col-md-6">
+															
+															<div class="header">All Products &amp; Programs</div>
+															<div class="links">
+																																<a href="/lan_code/group/vmware/downloads#tab2">All Products</a>
+																																<a href="https://www-dev13.vmware.com/try-vmware" target="_blank">Trial &amp; Free Products</a>
+																																<a href="/lan_code/group/vmware/patch">Product Patches</a>
+																																<a href="http://communities-dev13.vmware.com/community/vmtn/beta" target="_blank">Beta Programs</a>
+																																<a href="http://www.vmware.com/appliances" target="_blank">Virtual Appliances</a>
+																																<a href="/lan_code/group/vmware/eppenroll">VMware Purchasing Programs</a>
+																																<a href="http://www.vmware.com/vmwarestore/" target="_blank">Online Store</a>
+																															</div>
+															
+															
+														</div>
+																											
+													</div>
+												</li>
+											</ul>
+									
+								</li>
+																						
+							                                <li id="navHeader_2"><a href="javascript:;" title="Accounts" alt="Products" target="_top" class="menu-item-primary-1">Accounts</a>
+																			<ul class="nav-level-2 nav-col-2">
+												<li>
+													<div class="row">
+																											<div class="col-md-6">
+															
+															<div class="header">Manage Accounts</div>
+															<div class="links">
+																																<a href="/group/vmware/my-account">Account Summary</a>
+																																<a href="/group/vmware/users-permissions">Users &amp; Permissions</a>
+																																<a href="/lan_code/group/vmware/support-contract-history">Account Activities</a>
+																																<a href="/group/vmware/reports">Reports</a>
+																															</div>
+															
+															
+														</div>
+																											<div class="col-md-6">
+															
+															<div class="header">View Purchases</div>
+															<div class="links">
+																																<a href="/lan_code/group/vmware/support-contract-history?_VM_orderHistory=true">Order History</a>
+																																<a href="/group/vmware/billing-statements">Subscription Billing Statements</a>
+																															</div>
+															
+															
+														</div>
+																											<div class="col-md-6">
+															
+															<div class="header">Manage Funds</div>
+															<div class="links">
+																																<a href="/group/vmware/epp-overview">Enterprise Purchasing Token</a>
+																																<a href="/group/vmware/ccp-overview">Cloud Credit</a>
+																																<a href="/group/vmware/my-subscription-funds">Subscription Funds</a>
+																															</div>
+															
+															
+														</div>
+																											
+													</div>
+												</li>
+											</ul>
+									
+								</li>
+																						
+							                                <li id="navHeader_3"><a href="javascript:;" title="Support" alt="Products" target="_top" class="menu-item-primary-1">Support</a>
+																			<ul class="nav-level-2 nav-col-2">
+												<li>
+													<div class="row">
+																											<div class="col-md-6">
+															
+															<div class="header">Support</div>
+															<div class="links">
+																																<a href="/group/vmware/get-help">Get Support</a>
+																																<a href="/group/vmware/support-requests">Support Request History</a>
+																																<a href="/group/vmware/support-contracts">Support by Product</a>
+																																<a href="/lan_code/group/vmware/support-contract-history?_VM_contractHistory=true">Support Contracts</a>
+																															</div>
+															
+															
+														</div>
+																											<div class="col-md-6">
+															
+															<div class="header">Resource &amp; Tools</div>
+															<div class="links">
+																																<a href="https://www-dev13.vmware.com/lan_code/support" target="_blank">Support Center</a>
+																																<a href="http://kb.vmware.com/selfservice/microsites/microsite.do" target="_blank">Knowledge Base</a>
+																																<a href="http://partnerlocator.vmware.com/" target="_blank">Partner Locator</a>
+																																<a href="https://www-dev13.vmware.com/support/tracksn.portal" target="_blank">License Tool Tracker</a>
+																																<a href="https://www-dev13.vmware.com/lan_code/support/support-resources/pubs" target="_blank">Product Documentation</a>
+																																<a href="/group/vmware/support-tools1" target="_blank">Support Tools</a>
+																																<a href="/group/vmware/communities" target="_blank">Communities</a>
+																																<a href="http://mylearn.vmware.com/MgrReg/login.cfm" target="_blank">Training</a>
+																															</div>
+															
+															
+														</div>
+																											
+													</div>
+												</li>
+											</ul>
+									
+								</li>
+															                                                              
+                                
+                            </ul>
+                        </div><!-- /.navbar-collapse  END-->
+                    </div>
+		</nav>
+</header>        
+<section  class="content-container vsppDashboard" id="ng-app" ng-app="vsppDashboardConfig">
+
+<!-- Content -->
+<div ui-view></div>
+<!-- Content End -->
+
+
+</section>
+
+
+
+</section>
+<div id="footer-container">
+    <div id="p_p_id_MyVMWareFatFooterPortlet_WAR_itcrossfunctional_" class="portlet-boundary portlet-boundary_MyVMWareFatFooterPortlet_WAR_itcrossfunctional_  portlet-static portlet-static-end  ">
+        <a id="p_MyVMWareFatFooterPortlet_WAR_itcrossfunctional"></a>
+        <section class="portlet" id="portlet_MyVMWareFatFooterPortlet_WAR_itcrossfunctional">
+            <div class="portlet-content">
+                <div class=" portlet-content-container" style="">
+                    <div class="portlet-body">
+                        <div class="reskinningFooterWrap">
+                            <div class="container-fluid fluid-width">
+                                <div class="row footerLinksHolder">
+                                    <div class="col-md-3 linksWrap border0">
+                                        <div class="linkHdr">About My Vmware</div>
+                                        <ul>
+                                            <li><a href="//kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&amp;docType=ex&amp;bbid=TSEBB_1334373573903&amp;url=&amp;stateId=1%200%20454816648&amp;dialogID=454806944&amp;docTypeID=DT_KB_1_1&amp;externalId=2017468&amp;sliceId=1&amp;rfId=">Top 10 things to know</a> </li>
+                                            <li><a href="//kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&amp;docType=ex&amp;bbid=TSEBB_1334365725551&amp;url=&amp;stateId=1%200%20454816648&amp;dialogID=454806944&amp;docTypeID=DT_KB_1_1&amp;externalId=2014350&amp;sliceId=2&amp;rfId=">My vmware FAQ</a> </li>
+                                            <li><a href="//kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&amp;docType=kc&amp;externalId=2020793&amp;sliceId=1&amp;docTypeID=DT_KB_1_1&amp;dialogID=454806944&amp;stateId=1%200%20454816648">Index of My Vmware Articles</a> </li>
+                                            <li><a href="#">Managing Folders in My VMware</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 linksWrap">
+                                        <div class="linkHdr">Vmware Technology</div>
+                                        <ul>
+                                            <li><a href="//www.vmware.com/end-user-computing.html">End-User Computing</a> </li>
+                                            <li><a href="//www.vmware.com/cloud-computing/hybrid-cloud.html">Hybrid Cloud</a> </li>
+                                            <li><a href="//www.vmware.com/software-defined-datacenter/index.html">Software-Defined Data Center</a> </li>
+                                            <li><a href="//www.vmware.com/virtualization/">Virtualization</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 linksWrap">
+                                        <div class="linkHdr">Try &amp; Purchase</div>
+                                        <ul>
+                                            <li><a href="//hol.vmware.com/">Vmware Hands-on Lab</a> </li>
+                                            <li><a href="//www.vmware.com/appliances">Virtual Applications Marketplace</a> </li>
+                                            <li><a href="://my.vmware.com/group/vmware/eppenroll">Vmware Purchasing Programs</a> </li>
+                                            <li><a href="//partnerlocator.vmware.com/">Partner Locator</a> </li>
+                                            <li><a href="//www.vmware.com/vmwarestore/">Online Store</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 linksWrap">
+                                        <div class="linkHdr">Community</div>
+                                        <ul>
+                                            <li><a href="://communities.vmware.com/community/vmtn">VMTN Communities</a> </li>
+                                            <li><a href="//blogs.vmware.com/">VMware Blogs</a> </li>
+                                            <li><a href="//www.vmware.com/community_terms">Community Terms of Use</a> </li>
+                                            <li><a href="//developercenter.vmware.com/web/dp">Developer Center</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="p_p_id_MyVMWareFooterPortlet_WAR_itcrossfunctional_" class="portlet-boundary portlet-boundary_MyVMWareFooterPortlet_WAR_itcrossfunctional_  portlet-static portlet-static-end  ">
+        <a id="p_MyVMWareFooterPortlet_WAR_itcrossfunctional"></a>
+        <section class="portlet" id="portlet_MyVMWareFooterPortlet_WAR_itcrossfunctional">
+            <div class="portlet-content">
+                <div class=" portlet-content-container" style="">
+                    <div class="portlet-body">
+                        <footer class="wrapper">
+                            <div class="footerbar">
+                                <p>Copyright © 2014 VMware, Inc. All rights reserved.</p>
+
+                                <ul class="footer-nav-links">
+                                    <li>
+                                        <a title="Contact Us" target="_blank" href="//www.vmware.com/company/contact/">     Contact Us    </a>
+                                    </li>
+                                    <li>
+                                        <a title="Terms of Use" href="/web/vmware/terms-of-use?mode=view">     Terms of Use    </a>
+                                    </li>
+                                    <li>
+                                        <a title="Privacy" target="_new" href="//www.vmware.com/help/privacy.html">     Privacy    </a>
+                                    </li>
+                                    <li>
+                                        <a title="Accessibility" href="//www.vmware.com/accessibility.html">Accessibility</a>
+                                    </li>
+                                    <li>
+                                        <a title="Site Index" href="//www.vmware.com/site_index.html">Site Index</a>
+                                    </li>
+                                    <li>
+                                        <a title="Help" href="//www.vmware.com/help/">Help</a>
+                                    </li>
+                                    <li><a href="javascript:void(0);">
+				Feedback</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- Background divs -->
+<div class="page-b-header-gradient">
+</div>
+<div class="page-b-footer-gradient">
+</div>
+<!-- ##################### -->
+
+
+
+</body>
+
+</html>
+<script type="text/javascript">
+
+vmf.include(["datatable","parsley"]);
+var vSpp ={
+	"globalVars" : {
+		'newPartnerUrl' : 'http://www.vmware.com/partners/service-provider',
+		"account": 'Account',
+		"balance" : "Current Balance",
+		"iAssetContract":"iAsset Contract",
+		"aggregator":"Aggregator",
+		"contractTerm":"Contract Term",
+		"startDate":"Start Date",
+		"endDate":"End Date",
+		"iAssetTxt":"View billing and payments on vCAN Portal",
+		"serviceID":"Service ID",
+		"serviceStatus" : "Service Status",
+		"product" : "Product",
+		"termEnd" : "Term End",
+		"subscriptionServices" : "Subscription Services",
+		"addNewUser": "Add New User",
+		"fname": 'First Name',
+		"lname": 'Last Name',
+		"email": 'Email Address',
+		"continue": 'Continue',
+		"reset": 'Reset',
+		"confirm": 'Confirm',
+		"cancel": 'Cancel',
+		"clear": 'Clear',
+		"save": 'Save',
+		"rename": 'Rename',
+		"removeuser": 'Remove User',
+		"removeUser": "Remove a User",
+		"removeUserLabel": "Select the users you want to remove.",
+		"Apply" : 'Apply',
+		"VSPPAir" : "vCloud Air Network",
+		"requiredFundname":"Identifier Name is Required",
+		"invalidFundName":'Invalid Identifier Name',
+		"currentCosumption":"Consumption this month",
+		"currencyCode" : "Currency",
+		"month":"month",
+		"months":"Months",
+		"commitLevel" : "Commitment Level",
+		"thresholdlimitReached":"Threshold limit reached",
+		"admin":"Admin",
+		"change":"Change",
+		"users":"Users",
+		"add":"Add",
+		"remove":"Remove",
+		"vsspStartTxt":"Begin signup process and start adding services",
+		"startBtn":"Start",
+		"learnAboutTxt":"Contact your aggregator {1} to learn about your options",
+		"configuratorTxtMsg":"Configure Subscription Services, Add-ons, and Renewals",
+		"addServices":"Add Services",
+		"export":"Export",
+		"addDescription" : "Add a user to your vCloud Air Network account to allow them to sign up for new services, purchase Add-ons, and configure service renewals. Users must register with My VMware before being added to this account. Only the  Administrator contact for your account can add or remove users.",
+		"step1_info": "Step 1: Enter the new User's contact information.",
+		"step2_info": "Step 2: Review and confirm the contact information below.",
+		"all_req": 'All fields are Required',
+		"email": 'Email Address',
+		"emailAddress": 'email@domain.com',
+		"newUser": 'New User',
+		"errorUser": "Error Message",
+		"validUser":"Click Confirm to add the new user and send an alert confirming their access to this vCloud Air Network account. The Super User and Procurement Contact for the account will also be notified.",
+		"validEmsUser":"validEmsUser Message",
+		"serviceData":"VSPP",
+		"terms" : "I understand that the selected users can no longer sign up for new services, purchase Add-ons, or configure renewals for this vCloud Air Network account.",
+		"getServiceUrl" :"/static/myvmware/modules/vcredit/json/vspp/vsppdas.json",
+		"SubscriptionServices": "/static/myvmware/modules/vcredit/json/vspp/vsppdas 1.json",
+		"postdashboardModalUrl" :"/static/myvmware/modules/vcredit/json/vspp/removeuser.json",
+		"renameFundGroupURL" : "/static/myvmware/modules/vcredit/json/rename.json",
+		"postServiceUrl":"/static/myvmware/modules/vcredit/json/vspp/confirmRemUser.json",
+		"postaddUserServiceUrl" : "/static/myvmware/modules/vcredit/json/vspp/adduser.json",
+		"confirmAddUserServiceUrl" : "/static/myvmware/modules/vcredit/json/vspp/validAddUser.json",
+		"purchaseAddOnText":"Purchase Add-ons",
+		"excelReportForSubscriptionServicesRequests" : "${excelReportForSubscriptionServicesRequests}",
+		"actions":"Actions",
+		"noPermissions":"No Permissions",
+		"ERROR_MESSAGE" : "Error reported",
+		"addonExportURL":"",//"https://my-dev13.vmware.com/group/vmware/all-services?p_p_id=sdpMySubscript…Addons&p_p_cacheability=cacheLevelPage&p_p_col_id=column-6&p_p_col_count=1",
+		"availableAddons" : "Available Addons",
+		"purchaseAddOnUrl" : "/group/vmware/configure-service?_VM_flow=addon",
+		"removeUserBtn" : "Remove Users",
+		"configuratorUrl": "/vspp_configurator.html?_VM_fundId=",
+		"fundName": 'Account Name:',
+		"consumptionTooltip":"The amount you are billed will differ from you consumption this month. Visit iAsset to view your monthly billing information",
+		"autoRenewalTooltip" : "Your Asset contract is set to renew automatically on {1}.To edit the renewal method, contact your Aggregator",
+		"VSPPAirEmpty":'You are not currently subscribed to the vCloud Air Network Program. To learn more about your subscription options, visit the <a target="_blank" href="{0}">VMware vCloud Air Network program</a> page',
+		//"VSPPAirEmpty" : "You are not currently subscribed to the vCloud Air Network Program. To learn more about your subscription options, visit the  ",
+		//"VSPPAirEmtyTxt" : "VMware vCloud Air Network program",
+		//"VSPPAirEmptyPage" : " page",//text after the link..
+		//"autoRenewalTooltip2":" .To edit the renewal method, contact your Aggregator",
+		"help" : "Help",
+		"vsppDashboardKBLink":"https://ikb.vmware.com/contactcenter/php/searchEntry.do?cmd=displayKC&docType=kc&externalId=2105274_draft"
+	}
+
+};
+var vCredit =   {
+"globalVars" : {
+"subscriptionHeading":"My Subscription Funds",
+"expire" : "Expired Funds",
+"balance" : "Balance",
+"addNewUser": "Add a New User",
+"removeUser": "Remove Fund User",
+"removeUserLabel": "Select Fund User from list to delete",
+"terms" : "terms and conditions",
+"okText" : "OK",
+"cancelText":"Cancel",
+"header":"Error Message",
+"ERROR_MESSAGE" : "Error reported",
+"addDescription": "XAAS FUND GROUP to which the XAAS Fund User is being ADDED to.XAAS FUND GROUP to which the XAAS Fund User is being ADDED to.XAAS FUND GROUP to which the XAAS Fund User is being ADDED to.",
+"errorUserMessage":"XAAS FUND GROUP to which the XAAS Add New User",
+//"errorUser": "Error Message",
+"errorUser": "This user does not have a My VMware profile and must register before you can proceed.",
+"registrationUrl": "/web/vmware/registration",//Non Vmware User
+"validUser":"validUser Message",
+"validEmsUser":"validEmsUser Message",
+"ConfiguratorUrl": "https://my-dev15.vmware.com/group/vmware/customer-config-new-service?_VM_fundId=",
+"expiredFundsUrl":"/static/myvmware/modules/vcredit/json/expirefunds.json",//expire funds
+"postdashboardModalUrl": "/static/myvmware/modules/vcredit/json/removeuser.json",//Remove User
+"getdashboardServiceUrl":"/static/myvmware/modules/vcredit/json/dashboard.json",//dashboard URL
+"removeFundGroupUsersUrl":"/static/myvmware/modules/vcredit/json/confirmRemUser.json",//Confirm Remove user
+"postdashboardaddUserServiceUrl" : "/static/myvmware/modules/vcredit/json/adduser.json",// check Add user
+"confirmAddUserServiceUrl" :"/static/myvmware/modules/vcredit/json/validAddUser.json",//Valid Add user
+"renameFundGroupURL" : "/static/myvmware/modules/vcredit/json/rename.json",
+//"confirmAddUserServiceUrl" :"/static/myvmware/modules/vcredit/templates/json/adduser.json",
+"fundGroupDetailsURL" : '${fundGroupDetails}',
+//"renameFundGroupURL" : '${renameFundGroup}',
+//"postdashboardServiceUrl":"/static/myvmware/modules/vcredit/templates/json/dashboardStatus.json",
+"fundGroupPrefix":"Fund Name:",
+"fundActivityReportLabel":"Fund Activity Report (.XLS)",
+"fundActivityReportUrl":"activityReport.php",
+"fundRedemptionReportLabel":"Redemption Report (.XLS)",
+"fundRedemptionReportUrl":"redemptionreport.php",
+"noExpiredFunds":"You don’t have any expired funds. <a href='#'>View your active funds.</a>",
+"noExpiredFunds": "You do not have any expired funds. <a href=\'#\'>View your active funds.<\/a>",		
+
+"expFund_link1": 'My Vmware',
+"expFund_link2": 'Accounts',
+"expFund_link3": 'My Subscription Funds',
+"expFund_expire": 'Expired Funds',
+"expFund_orderNum": 'Order Number',
+"expFund_expDate": 'Expiration Date',
+"expFund_reports": 'Reports',
+"fundName": 'Fund Name',
+"step1_info": "Step 1: Enter the new Fund User's contact information and click Continue. All fields are required.",
+"loginPageUrl" : '/web/vmware/login',
+"all_req": 'All fields Required',
+"fname": 'First Name',
+"lname": 'Last Name',
+"email": 'Email Address',
+"continue": 'Continue',
+"step2_info": 'Step 2: Review the contact information below and click Confirm.',
+"newUser": 'New Fund User',
+"reset": 'Reset',
+"confirm": 'Confirm',
+"cancel": 'Cancel',
+"clear": 'Clear',
+"save": 'Save',
+"redeem": 'Redeem',
+"fundUsers": 'Fund Users',
+"owner": 'Fund Owner',
+"trueUp": 'TRUE-UP',
+"adduser": 'Add User',
+"removeuser": 'Remove User',
+"partner": 'Offering Partner',
+"account": 'Account',
+"subscriptionServices": 'Subscription Services (#)',
+"download": 'Download',
+"redemptionHistory": 'Redemption History',
+"fundActivity": 'Fund Activity',
+"expiry": 'Begins to expire',
+"rename": 'Rename',
+"learnMore": "You must establish a Subscription Fund to sign up for new Subscription Services.",
+"learnMore2": "Learn more about the Subscription Purchasing Program.",
+"sppLanding" : '/group/vmware/spp-landing',
+"Apply" : 'Apply',
+"noSidsForFundGroup" : 'There are currently no Subscription Services associated with this Fund.',
+"invalidFundName":'Invalid Fund Name',
+"requiredFundname":'Fund Name is Required',
+"dashboardHeading" : 'View your active Subscription Funds below and select Redeem to apply your balance toward new Subscription Services, Add-ons, or renewals.',
+"emailAddress": 'email@domain.com',
+"fnameRequired": 'First Name required',
+"lnameRequired": 'Last Name required',
+"invalidEmailAddress": 'Invalid email address',
+"emailRequired": 'Email required'
+}
+}
+
+</script>

@@ -1,0 +1,80 @@
+
+//The "starlight-container-fluid" class is added to overwrite bootstrap's container-fluid padding, so all the elements
+//inside will occupy the proper space within the content area
+.container-fluid.starlight-container-fluid{
+	padding:0;
+}
+
+// Added .starlight-cont for the Starlight containers. Each container can have a header, subheader, content and footer
+// Each header will have a h4 Title, which can have an icon to its left, by adding the class .cont-green or .cont-blue to
+// the h4 element.
+.starlight-cont {
+	background-color:$starlight-bg-gray-light;
+	padding:20px;
+	margin-bottom: 20px;
+
+	.starcont-header{ //Container Header
+		h4 {
+			padding-left: 32px;
+			color:$starlight-gray-dark;	
+			&.cont-green {
+				background:url("../images/containers/large-angle-icon-green.jpg") no-repeat;
+				color:$starlight-blue-dark;
+			}
+			&.cont-blue {
+				background:url("../images/containers/large-angle-icon-dark-blue.png") no-repeat;
+			}
+		}
+	}
+
+	.starcont-sub { //Container Subheader
+		margin:10px 0;
+	}
+
+	.startcont-content { //Container Content
+		ul {
+			padding-left: 0;
+			li {
+				list-style-type: none;
+				line-height: 20px;
+					a:hover {
+			  		cursor:pointer;
+			  	}
+			}
+		}
+		hr {
+			margin:5px 0;
+			border-top:1px solid $starlight-bg-gray-dark;
+		}
+	}
+
+	.starcont-footer { //Container Footer
+		margin:20px 0 5px;
+	}
+}
+
+//Added .starlight-step-container for Starlight Step Containers. Each container should have a header and a 2 column
+//content, hence the .step-left and .step-right classes.
+
+.starlight-step-container {
+	border-top:4px solid $starlight-blue-light;
+	background-color:$starlight-bg-blue;
+	overflow:hidden;
+	width:55%;
+	padding:20px;
+
+	h4 {
+		color:$starlight-gray-dark;
+		margin-top: 0px;
+	}
+	.step-left{
+		float: left;
+		ul,ol{
+			padding-left:20px;
+		}
+	}
+	.step-right{
+		float: right;
+	}
+
+}

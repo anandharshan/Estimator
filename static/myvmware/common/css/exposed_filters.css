@@ -1,0 +1,375 @@
+/* ef = exposed filter */
+.hide{
+	display: none;
+}
+.fLeft{
+	float: left;
+}
+.fRight{
+	float: right;
+}
+br.clear{
+	clear: both;
+	height: 0px;
+	width: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+.inlineBlock{
+	display: inline-block;
+}
+.width50{
+	width: 49.99%;
+}
+.paddingLeft10{
+	padding-left: 10px;
+}
+.marginRight15{
+	margin-right: 15px;
+}
+.nowrap{
+	white-space: nowrap;
+}
+/* liquid layout with fixed blocks - START */
+#exposedFilterForm{
+	position: relative;
+	z-index: 101; /*solution z-index issue in IE7*/
+	background-color: #E6E6E6;
+	padding-top: 12px;
+}
+.contentWrapper{
+	width: 100%;
+}
+#filterFieldsContainer{
+	margin-left: 64px; /* Set left margin to LeftColumnWidth */
+	margin-right: 250px;
+	padding: 3px 0 0 3px;
+}
+#leftColumn{
+	width: 58px; /*Width of left column. (reduced 6px to get some space between filter by text and the form fields)*/
+	margin-left: -100%;
+}
+#rightColumn{
+	width: 240px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: auto;
+	margin: 12px 0;
+	padding-left: 3px;
+}
+#exposedFilterForm.expanded #rightColumn{
+	border-left: 2px solid #FFFFFF;
+}
+#exposedFilterForm.expanded #rightColumn .fixedDiv{
+	position: absolute;
+	bottom: 5px;
+}
+/* liquid layout with fixed blocks - END */
+#filterFieldsContainer input[type=text]{
+	font-size: 11px;
+	font-weight: normal;
+}
+.filterByContent{
+	font-weight: bold;
+	margin-top: 5px;
+	text-align: right;
+}
+.mac .filterByContent{
+	white-space: nowrap;
+}
+#exposedFilterForm .buttonsContainer button.button{
+	padding: 5px 15px !important;
+	height: 25px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+#exposedFilterForm.expanded .buttonsContainer button.button,
+#exposedFilterForm .buttonsContainer button.button.secondary{
+	margin-left: 2px !important;
+}
+#exposedFilterForm.expanded .buttonsContainer{
+	padding: 5px;
+}
+.activitiesLog{
+	margin-left: 5px;
+}
+.advancedOptionsContainer{
+	border-right: 1px solid #fff;
+}
+.advancedFilter .fieldText{
+	font-size: 11px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.advancedFilter .fieldText input[type=radio]{
+	margin-bottom: 2px;
+	*margin-bottom: 0px;
+	margin-bottom: 0px\9;
+}
+.moreOrlessFilter,
+.moreOrlessFilter:active,
+.moreOrlessFilter:hover,
+.moreOrlessFilter:visited{
+	color: #3399CC;
+	font-weight: bold;
+	font-size: 11px;
+	text-decoration: none !important;
+	margin-left: 5px;
+}
+/* toggling, manipulations of advanced options - START */
+#exposedFilterForm.collapsed .advancedFilter,
+#exposedFilterForm.collapsed .activitiesLog{
+	display: none;
+}
+#exposedFilterForm.ef_disabled .filterByContent,
+#exposedFilterForm.ef_disabled .fieldText,
+#exposedFilterForm.ef_disabled .moreOrlessFilter,
+#exposedFilterForm.ef_disabled a.addLabel,
+#exposedFilterForm.ef_disabled a.addLabel:hover,
+#exposedFilterForm.ef_disabled a.delLabel,
+#exposedFilterForm.ef_disabled a.delLabel:hover,
+#exposedFilterForm.ef_disabled input.calendarIcon{
+	cursor: default;
+	color: #cccccc;
+}
+/* toggling, manipulations of advanced options - END */
+
+.filterErrorMsg{
+	height: 15px;
+	visibility: hidden;
+	font-size: 11px;
+	color: #CC0000;
+	word-wrap: break-word;
+}
+#exposedFilterForm .errorBorder{
+	border-color: #CC0000 !important;
+}
+.advancedFilter .filterErrorMsg{
+	height: 8px;
+}
+
+/* content.css - editing - START */
+.tabbed_box{
+	margin: 0px !important;
+}
+/* content.css - editing - END */
+
+/* liquid layout for basic filter form-filds - START */
+.basicFilter > div{
+	width: 33.3%;
+}
+.basicFilter > div > div{
+	margin-right: 13px;
+}
+.basicFilter > div > div.ProdNameContainer{
+	margin-right: 7px;
+}
+.basicFilter > div > div.lastInput{
+	margin-right: 10px;
+}
+.basicFilter input[type=text]{
+	width: 100%;
+}
+/* liquid layout for basic filter form-filds - END */
+
+/* liquid layout for advanced filter form-fields - START */
+.liquidFileds > div.dateRangeContainer{
+	width: 46.99%;
+}
+.liquidFileds > div.orderOrContractNoContainer{
+	width: 52.99%;
+}
+.liquidFileds > div.orderOrContractNoContainer > div{
+	margin-right: 25px; /* 4px extra for the padding given for input fields; 1px being vertical-border*/
+	margin-left: 7px;
+}
+
+.liquidFileds > div{
+	width: 49.99%;
+}
+.liquidFileds > div > div.first{
+	margin-right: 7px;
+}
+
+.liquidFileds > div > div input[type=text]{
+	width: 100%;
+}
+/* liquid layout for advanced filter form-fields - ENd */
+
+/* optionField's liquid fixed - START */
+.dateDropDownDiv{
+	margin-right: 27px;
+}
+.calContainer{
+	width: 22px;
+	margin-left: -27px;
+}
+.ie7 #exposedFilterForm input.calendarIcon{
+	margin-left: 8px;
+}
+#exposedFilterForm input.calendarIcon{
+	background: url("img/exposed_filters/calendar.png") no-repeat scroll 0 0 transparent;
+	height: 16px;
+	width: 15px;
+	display: inline-block;
+	border:0;
+	color: transparent !important;
+	cursor: pointer;
+	font-size:0px;
+}
+#exposedFilterForm.ef_enabled input.calendarIcon:hover{
+	background: url("img/exposed_filters/calendar_hov.png") no-repeat scroll 0 0 transparent;
+}
+/* optionField's liquid fixed - END */
+
+/* custom labels - START */
+.customLabelsDiv{
+	margin-left: 20px;
+	margin-right: 15px;
+}
+.customLabelRow{
+    margin-bottom: 5px;
+}
+.customLabelRow.last{
+	margin-bottom: 0px;
+}
+.customLabelFields{
+	margin-right: 72px; /*BUG-00062917*/
+}
+.custumLabelsErrContainer{
+	margin-right: 55px;
+}
+/*BUG-00062917-Updated margin-left and width*/
+.addOrDeleteLabel{
+	margin-left: -60px;
+	width: 60px;
+	margin-top: 3px;
+	text-align: left !important;
+}
+a.addLabel,
+a.addLabel:hover,
+a.addLabel:visited,
+a.addLabel:active{
+	font-weight: bold;
+	background: url("img/exposed_filters/lab_add.png") no-repeat scroll left center transparent;
+	padding-left: 15px;
+	text-decoration: none !important;
+}
+a.delLabel,
+a.delLabel:visited,
+a.delLabel:active,#exposedFilterForm.ef_disabled a.delLabel:hover{
+	background: url("img/ico_delete_gray.png") no-repeat scroll left center transparent;
+	padding-left: 15px;
+}
+a.delLabel:hover{background: url("img/ico-delete_orange.png") no-repeat scroll left center transparent;text-decoration: none !important;}
+a.delLabel span, a.delLabel:visited span, a.delLabel:active span,#exposedFilterForm.ef_disabled a.delLabel span, #exposedFilterForm.ef_disabled a.delLabel:visited span, #exposedFilterForm.ef_disabled a.delLabel:active span, #exposedFilterForm.ef_disabled a.delLabel:hover span {visibility:hidden}
+a.delLabel:hover span {visibility:visible; color:#4C4E53;font-weight: bold;}
+/* custom labels - END */
+
+/* overriding autosuggest css - START */
+#exposedFilterForm ul.as-selections{
+	margin:0;
+	padding: 0;
+	border-width: 1px;
+	border-style: solid;
+	box-shadow: none;
+	line-height: 14px;
+	height: 18px;
+	overflow: hidden;
+}
+.ie8 #exposedFilterForm .dateRangeContainer ul.as-selections{
+	height: 18px;
+	line-height: 13px;
+}
+.mac #exposedFilterForm ul.as-selections{
+	line-height: 15px;
+}
+#exposedFilterForm ul.as-selections li.as-original input{
+	padding: 0px;
+	margin: 0px;
+	height: auto;
+	width: 100%;
+}
+#exposedFilterForm ul.as-selections li.as-original{
+	margin: 0;
+	padding: 1px 20px 2px 2px;
+	display: block;
+	float: none;
+	*margin-top: -1px;
+	*padding-bottom: 3px;
+}
+#exposedFilterForm .as_customDDContainer ul.as-selections li.as-original{
+	background: url("img/exposed_filters/arrow-dropdown-ff_win.png") no-repeat scroll right center #FFFFFF;
+}
+#exposedFilterForm ul.as-list{
+	background: #FFFFFF;
+	border-radius: 0px;
+	box-shadow: 1px 2px 3px #222222; 
+	z-index: 101;
+	overflow: auto;
+}
+#exposedFilterForm ul.as-list li{
+	font-size: 12px;
+	padding: 2px 0 3px 5px;
+}
+#exposedFilterForm li.as-result-item.active{
+	border-color: transparent;
+	text-shadow: none;
+	background-color: #69737d;
+	color: #FFFFFF;
+}
+#exposedFilterForm li.as-result-item,
+#exposedFilterForm li.as-message{
+	border: medium none;
+	border-radius: 0px;
+}
+/* overriding autosuggest css - END */
+
+/* custom dropdown related - START */
+#exposedFilterForm input.customDDInput{
+	cursor: default;
+}
+/* custom dropdown related - END */
+
+/* Static-Texts in data-table - START */
+.dataTabelStaticText{
+	color: #333333;
+	font-size: 14px;
+	display: inline-block;
+}
+.dataTabelStaticText.leftArrow{
+	padding-left: 20px;
+	background: url("img/exposed_filters/left_arrow.png") no-repeat scroll left center transparent;
+}
+.dataTabelStaticText.topArrow{
+	padding-left: 20px;
+	background: url("img/exposed_filters/up_arrow.png") no-repeat scroll left center transparent;
+}
+.noResultsForFilter{
+	font-size: 14px;
+	text-align: left;
+	width: 85%;
+	margin: 0 auto;
+}
+.noResultsForFilter span.important{
+	margin-bottom: 5px;
+	color: #cc0000;
+}
+.noResultsForFilter a{
+	white-space: nowrap;
+}
+/* Static-Texts in data-table - END */
+
+/* borders for input fields in enabled and disabled modes - START */
+#exposedFilterForm.ef_disabled input[type=text],
+#exposedFilterForm.ef_disabled ul.as-selections{
+	border-color: #CCCCCC;
+}
+
+#exposedFilterForm.ef_enabled input[type=text],
+#exposedFilterForm.ef_enabled ul.as-selections{
+	border-color: #666666;
+}
+/* borders for input fields in enabled and disabled modes - END */

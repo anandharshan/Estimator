@@ -1,0 +1,25 @@
+//
+// Tooltips
+// --------------------------------------------------
+
+.starlight{
+	// Base class
+	.tooltip {
+	  font-family: $font-family-proxima-nova-regular;
+	  min-width: 200px;
+	  font-weight: normal;
+
+	  &.top    { margin-top:  -5px;}
+	  &.right  { margin-left:  5px;} 
+	  &.bottom { margin-top:   5px;}
+	  &.left   { margin-left: -5px;} 
+	}
+
+	// Wrapper for the tooltip content
+	.tooltip-inner {
+	  padding: 10px;
+	  white-space: normal;
+	  text-align:left;
+	  background-color: $tooltip-background-color;
+	}
+}

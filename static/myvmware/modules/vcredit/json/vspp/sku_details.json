@@ -1,0 +1,22 @@
+{
+    "wrapper": {
+        "skuDetails": [
+            [
+                "HSV-A1ACS-12MT0-C1S",
+                "US - Nevada Data Center - 5 GHz vCPU 20GB vRAM 2TB Standard Storage 10Mbps Internet Bandwidth 2 Public IPs and Production Support",
+                "Core",
+                "Monthly",
+                "11 Months & 25 Days",
+                "1"
+            ],
+            [
+                "HSV-A1AS1-12MT1-C1S",
+                "US - Nevada Data Center - 2 TB Standard Storage",
+                "Addon",
+                "Monthly",
+                "11 Months & 25 Days",
+                "1"
+            ]
+        ]
+    }
+}

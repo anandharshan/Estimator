@@ -1,0 +1,471 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  support_request_details.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 05/05/2011
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. SUPPORT REQUEST DETAILS
+/* ########################################################################### */
+
+#content-section .support-details-wrapper {
+	margin-bottom: 15px !important;
+}
+
+		.support-details-wrapper .input-wrapper .note {
+			width: 155px;;
+			font-weight: normal;
+			font-style: normal;
+			font-size: 11px;
+		}
+		
+		#support-details-content .input-wrapper textarea {
+		  width: 262px;
+		  height:100px;
+		  resize:none;
+		  min-height: 100px;
+		  padding:6px;
+		}
+#content-section #sel_wantTo{
+	width:auto;
+}
+.support-details-wrapper header {
+	background: white;
+	color: #000;
+	padding-top: 5px;
+	padding-left: 15px;
+	border-bottom: 1px solid #c1c1c3;
+	margin-bottom: 15px;
+}
+
+	/*.support-details-wrapper header .ctrlHolder {
+		margin-left: 15px;
+	}*/
+	
+	.support-details-wrapper header .ctrlHolder label {
+		width: auto;
+		font-size: 13px;
+		padding-top:3px;
+	}
+	
+	.support-details-wrapper header select {
+		font-size: 13px;
+	}
+	
+	.ie7 #tabbed_box_1 .support-details-wrapper header select {
+		width:auto;
+	}
+.support-details-wrapper h4 {
+	margin-bottom: 15px
+}
+
+.support-details-wrapper .ctrlHolder {
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom:5px;
+}
+#support-details-content .support-details-wrapper .ctrlHolder{
+	margin-bottom:15px;
+	padding: 0;
+}
+	#content-section .support-details-wrapper label {
+		color:#333333;
+		width: 105px;
+		margin-right: 5px;
+	}	
+#content-section .support-details-wrapper .selSection label { /*Done by rvooka BUG-00029802: 10/Feb/2012*/
+	color: #0C8D63;
+	font-size: 15px;
+	font-weight: bold;
+	margin-right: 10px;
+    width: auto;
+}
+	#content-section .error label,
+	#content-section label.error{
+		color:red !important;
+	}
+	#update_ea .ctrlHolder label{
+		width:auto;
+		margin-right:50px;
+		margin-top:4px;
+	}
+	#update_ea .ctrlHolder .messageHolder label.error{
+		cursor: auto;
+	}
+	#update_ea .ctrlHolder #eaSelector, #update_ea .ctrlHolder #folderListFileSR{
+		width:230px;
+	}
+	#update_ea .ctrlHolder #folderListFileSR.folderListFileSR {
+		float:right;
+		width:245px;
+		display:block;
+	}
+	#support-details-content .eaSelector{
+		border-right:0px;	
+		margin:0px;
+		padding:0px;
+		float:right;
+	}
+	#support-details-content .eaSelector select{
+		width:210px;
+	}
+	/*#update_ea .ctrlHolder select,
+	#update_ea .ctrlHolder input
+	{
+		width:265px !important;
+		float:right !important;
+	}*/
+	.support-details-wrapper .ctrlHolder .attachButton {
+		text-align: right;
+	}
+		.support-details-wrapper .ctrlHolder .attachButton .note {
+			width: auto;
+			font-size: 11px;
+		}
+
+		#content-section .support-details-wrapper .ctrlHolder select.long {
+			width: 245px;
+		}
+
+	#content-section .support-details-wrapper .support-details-content-footer p {
+		color: #666;
+		font-size: 11px;
+		font-weight: normal;
+		padding-top: 5px;
+		margin-right: 160px;	
+		text-align: left;
+		margin-bottom:0;
+	}
+		#support-details-content p.required {
+			font-style: italic;
+			color: #666;
+			border-bottom:none !important;
+			padding:0;
+		}
+			.support-details-wrapper p.required em {
+				color: red;
+			}
+
+		.support-details-wrapper p span.instruction_text {
+			color:#189948;
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+/*.support-details-wrapper .details-holder-section {
+	margin-bottom: 10px;
+}*/
+.details-holder-section .section-header {
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.ie7 .section-header span{
+	padding-top:3px;
+	vertical-align: middle;
+}
+.details-holder-section .details-holder-content {
+	margin-left: 20px;
+	margin-bottom: 10px;
+	background:#eeeeee;
+	padding:14px 5px 0px 15px;
+	border: 1px solid #CDCDCD;
+	line-height: 12px;
+}
+/*Firefox Fix*/
+@-moz-document url-prefix() { 
+	.details-holder-section .details-holder-content  {
+		padding:13px 5px 0px 15px;
+	}
+}
+.safari.mac .details-holder-section .details-holder-content{
+		padding:13px 5px 0px 15px;
+}
+.details-holder-section .section-header a.openClose {
+	background: url("img/btn_gray_blue_plus_minus.png") no-repeat scroll -5px 0 transparent;
+    display: inline-block;
+    width: 13px;
+    height: 17px;
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
+}
+
+.details-holder-section .section-header .openClose.open {
+	background: url(img/btn_gray_blue_plus_minus.png) no-repeat -5px -20px;
+}
+
+.support-details-wrapper .details-holder {
+	font-size: 11px;
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+	.details-holder .details-field {
+		color: #333;
+		font-weight: bold;
+		font-size: 12px;
+		float: left;
+		width: 150px;
+		margin-right: 10px;
+		word-wrap: break-word;
+	}
+	
+	.details-holder .details-field-name {
+		float: left;
+		font-size: 12px;
+		color: #666;
+		width: 200px;
+		word-wrap: break-word;
+	}
+		.details-holder .details-field-name.issueDis {
+			clear:left;
+			padding-left:10px;
+			width: 95%;
+		}
+		.details-holder .details-field-name .file-detail{
+			margin-bottom:10px;
+		}
+		#content .support-details-wrapper .details-field-name p {
+			padding: 0;
+			margin: 0;
+			color: #666;
+		}
+
+/**** SUPPORT REQUEST DETAILS OVERVIEW (Left Hand side of the page)****/
+.support-details-overview-main{
+	background:url(img/bkg_supportDevider.png) repeat-y center top;
+}
+.support-details-wrapper #support-details-overview {
+	float:left;
+	width: 405px;
+	padding-bottom: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	/*border-right: 1px solid #e2e2e2;*/
+}
+
+.support-details-wrapper #support-details-overview-wide {
+	float:left;
+	width: 858px;
+	border-right: none;
+	padding-top: 10px;
+	margin-left: 15px;
+}
+	#support-details-overview-wide .details-field-name {
+		width: 600px;
+	}
+	
+	#support-details-overview .support-details-overview-footer {
+		margin-left: 18px;
+		border-bottom: 1px solid #7b7b7b;
+	}
+		#support-details-overview .support-details-overview-footer .footer-header {
+			padding: 3px 5px 3px 14px;
+			background: url("img/bg_filter_header.jpg") repeat-x scroll 0 0 #2F2F32;
+			color:#FFFFFF;
+			font-size: 11px;
+			border: 1px solid #272727;
+		}
+		.support-details-overview-footer .activity-type {
+			font-weight: bold;
+			color: #333;
+			float: none;
+			padding:5px 0px 8px 10px;
+			border-bottom: 1px dotted #CCCCCC;
+		}
+
+		.support-details-overview-footer .activity-type a{
+			background: url(img/btn_gray_blue_plus_minus.png) no-repeat;
+			margin-right: 5px;
+			width: 17px;
+			height: 17px;
+			display: -moz-inline-box;
+			display: inline-block;
+			position: relative;
+			top: 2px;
+			vertical-align: baseline;
+		}
+		.support-details-overview-footer .activity-type a.open {
+			background: url(img/btn_gray_blue_plus_minus.png) no-repeat 0 -20px;
+		}
+		.support-details-overview-footer .activity-type .activityContent {
+			font-weight: normal;
+			margin-left: 23px;
+			word-wrap: break-word;
+			background:#eeeeee;
+			border: 1px solid #cccccc;
+			margin-top: 5px;
+			margin-bottom: 10px !important;
+    		padding: 15px;
+		}
+
+/**** SUPPORT REQUEST DETAILS CONTENT (Right Hand side of the page) ****/	
+#content-section .support-details-wrapper #support-details-content {
+	float: left;
+	width: 420px;	
+	padding: 0 0 0 15px; 
+}
+	#support-details-content .messageHolder.fixedWidth{
+		width:270px;
+	} 
+
+	#content-section #support-details-content .sup_content {
+		border: 1px solid #CCC;
+		padding: 14px 15px 15px;
+		background-color: #EEE;
+	}
+
+		#content-section #support-details-content .sup_content em{			
+			color:#d9541e;
+		}
+		#content-section .sup_content label.error {
+			width: auto;
+			margin-left:0;
+		}
+		#content-section .input-wrapper .error
+		{
+		margin-left:0px;
+		
+		}
+		#content-section #support-details-content .sup_content.noBkgrd {
+			border: 0px solid #CCC;
+			background-color: #FFF;
+		}
+		#content-section .sup_content.noBkgrd .ins_text{
+			text-align:center;
+			font-size:16px;
+			color:#333;
+			margin-top:10px;
+		}
+	#content-section #support-details-content .title {	
+		color: #333;
+		font-size: 14px;
+		line-height: 14px;
+		font-weight: bold;
+		margin-bottom: 5px; 
+	}
+
+	#content-section #support-details-content .uploadModule {
+	  background: none;
+	  float: right;
+	  padding: 10px 0px 10px 10px;
+	  width: 270px;
+	 }
+
+	 	#content-section #support-details-content .uploadModule .uploadedFileTitle {
+		  color: #333;
+		  font-size: 12px;
+		  font-weight: bold;
+	 	}
+
+	#content-section #support-details-content .support-details-content-footer {
+		text-align: right;
+		float: right;
+		padding: 0;
+	}
+		#content-section #support-details-content .support-details-content-footer .ctrlHolder.buttons{
+			margin: 0 0 15px 0;
+			padding: 0;
+		}
+		#content-section .support-details-wrapper .support-details-content-footer button {
+			margin: 0 0 0 5px !important
+		}	
+		#support-details-content #update_ea .ctrlHolder{
+			margin: 0 0 15px 0;
+			padding:0;
+		}
+		#support-details-content #update_ea .ctrlHolder .inputHolderClass{
+			float:right;
+		}
+/**** BUTTONS ****/	
+.minimize-button {
+	background: url(img/small_minimize_maximize_button.png) no-repeat 0 -16px;
+	margin-right: 5px;
+	width: 16px;
+	height: 16px;
+	display: -moz-inline-box;
+	display: inline-block;
+	position: relative;
+	top: 3px;
+}
+.maximize-button {
+	background: url(img/small_minimize_maximize_button.png) no-repeat;
+}
+.support-details-wrapper .support-details-wrapper-footer {
+	text-align: right;
+	float: right;
+	color: black;
+	padding-top: 10px;
+	padding-left: 200px;
+	margin-bottom: 10px;
+	width:670px;
+}
+
+	.support-details-wrapper-footer p {
+		float:left;
+		color: #000;
+		width:490px;
+		margin-right:5px;
+	}
+	
+	.support-details-wrapper-footer button {
+		float: right;
+		margin-left: 5px;
+	}
+
+	.support-details-wrapper-footer .additional-info {
+		margin-top: 5px;
+		padding-top: 5px;
+		color: #4C4E53;
+		position: relative;
+	}
+	
+	.support-details-wrapper-footer .additional-info a {
+		margin: 0;
+	}
+	
+		.additional-info img {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+	
+/* tooltip styles for support request details.*/	
+a.tooltip, 
+button.tooltip, 
+input.tooltip{
+	margin: 3px 0 0 4px !important;
+	vertical-align: middle !important;	
+}
+.chrome.mac a.tooltip, 
+.chrome.mac button.tooltip, 
+.chrome.mac input.tooltip{
+	margin-top: 1px !important;
+	vertical-align: middle !important;
+}
+.input-wrapper a.tooltip, 
+.input-wrapper button.tooltip, 
+.input-wrapper input.tooltip{
+	margin: 3px 0 5px 1px !important;
+	vertical-align: middle !important;	
+}
+.chrome.mac .input-wrapper a.tooltip, 
+.chrome.mac .input-wrapper button.tooltip, 
+.chrome.mac .input-wrapper input.tooltip{
+	margin: 3px 0 5px 1px !important;
+	vertical-align: middle !important;
+}
+
+.input-wrapper.issueDescription a.tooltip,
+.input-wrapper.issueDescription button.tooltip,
+.input-wrapper.issueDescription input.tooltip {
+	margin: 0px 0 0px 1px !important;
+	vertical-align: top !important;	
+}
+.chrome.mac .input-wrapper.issueDescription a.tooltip,
+.chrome.mac .input-wrapper.issueDescription button.tooltip,
+.chrome.mac .input-wrapper.issueDescription input.tooltip{
+	margin-top: 0px !important;
+	vertical-align: top !important;	
+}

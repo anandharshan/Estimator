@@ -1,0 +1,112 @@
+/* Custom Search Component */
+.starlight {
+  .search-drop{
+  display: inline-block;
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+  width:30%;
+  .input-group{
+	.form-control{ /* Controls the text field */
+	  font-size:14px;
+	  border-right:0 none;
+	  box-shadow:none;
+	  &:focus{
+		box-shadow:none;
+		border-color:#CCC;
+		}
+	}
+	.input-group-btn{
+	  &.select-drop{
+		padding:6px 10px;
+		background:#FFF; 
+		border:1px solid #CCC;
+		border-left:0px;
+		.dropdown-toggle{
+		  border-left:1px solid #CCC;
+		  font-size: 14px;
+		  padding-left:10px;
+		  color:$starlight-blue-dark;
+		  &:hover,
+		  &:focus{ 
+			cursor:pointer;
+			color:$starlight-blue;
+		  }
+		}
+		.drop-label{
+		  margin-right: 2px;
+		}
+		.dropdown-menu{
+		  min-width: 0;
+		  font-size: 14px;
+		  right:auto;
+		  left: auto;
+		  li{
+		  	padding:3px 10px;
+		  	&:hover{
+		  	  background-color:#E1F2F7;
+		  	}
+			a{
+			  display: inline-block;
+			  padding:0 5px 0 0;
+			  &:hover{
+			  	background-color:transparent;
+			  }
+			}
+		  }
+		}
+	  }
+	  &.search-drop-submit{
+	  	vertical-align: top;
+	  	button{
+			padding-bottom:3px;
+	  	}
+	  	button.filterSearchButton{
+	  		padding-bottom:6px;
+	  	}
+	  }
+    }	
+  }
+  /*  input[type="text"]:focus::-webkit-input-placeholder{
+  	  color: transparent;
+    }
+    input[type="text"]:focus::-moz-placeholder{
+	  color: transparent;
+    }*/
+ }
+ .icons-icn_basic_tickmark{
+ 	display: inline-block;
+ 	width:13px;
+ 	height: 10px;
+ }
+}
+
+@media all and (max-width:$screen-lg){
+  .starlight{
+  	section{
+      .search-drop{
+        width:40%;
+      }
+  	}
+  }
+}
+
+@media only all and (max-width:$screen-md){
+  .starlight{
+  	section{
+  	  .search-drop{
+	    width:73%;
+	  }
+	}
+  } 
+}
+
+@media only all and (max-width:$screen-sm){
+  .starlight{
+  	section{
+  	  .search-drop{
+	    width:100%;
+	  }
+	}
+  } 
+}

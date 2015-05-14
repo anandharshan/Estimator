@@ -1,0 +1,191 @@
+div.dropdownOpts {
+background-color:#FFF;
+border:1px solid #000;
+display:none;
+overflow-x:hidden;
+overflow-y:auto;
+padding:0;
+position:absolute;
+z-index:1000
+}
+	div.dropdownOpts div.label{
+		border-bottom: 1px dotted #656565;
+		color: #4D4E53;
+		cursor: pointer;
+		display: block;
+		font-size: 11px;
+		margin-bottom: 10px;
+		padding: 5px 20px 5px 2px;
+		z-index: 100;
+	}
+	div.dropdownOpts div.optionGroup{
+		font-weight: bold;
+		padding: 20px 0 5px 20px;
+	}
+	div.dropdownOpts div.optionGroupWthBdr{
+		border-top: 1px dotted;
+		font-weight: bold;
+		margin-top: 10px;
+		padding: 10px 0 5px 20px;
+	}
+
+div.overlayOpts {
+background-color:#FFF;
+border:1px solid #000;
+display:none;
+overflow-x:hidden;
+overflow-y:auto;
+padding:0;
+position:absolute;
+z-index:1008
+}
+
+a.dropdownOpt {
+color:#4D4E53;
+cursor:pointer;
+display:block;
+font-size:11px;
+list-style:none outside none;
+margin:0;
+padding:0 20px 0 2px;
+text-align:left;
+text-decoration:none;
+white-space:nowrap;
+z-index:100
+}
+
+.dropdownOpt.none{
+display:none;
+}
+
+a.dropdownOpt.textStrong {
+color:#000;
+font-weight:700
+}
+
+a.dropdownOpt:hover {
+background-color:#0A246A;
+color:#FFF
+}
+
+a.dropdownOpt.selectedOpt {
+background-color:#0A246A;
+color:#FFF !important
+}
+
+.inputHolderClass{
+background:#FFF url('img/arrow-dropdown.png') no-repeat scroll 100% center;
+border-color:#999;
+border-style:solid;
+border-width:1px;
+padding:2px 15px 3px 5px;
+overflow:hidden;
+white-space:nowrap;
+float:none;
+}
+
+.firefox .inputHolderClass {
+background:#FFF url('img/arrow-dropdown-ff_win.png') no-repeat scroll 100% center;
+}
+
+.chrome .inputHolderClass{
+	background:#FFF url('img/arrow-dropdown-chrome_win.png') no-repeat scroll 100% center;
+}
+
+.ie .inputHolderClass{
+background:#FFF url('img/arrow-dropdown-ie_win.png') no-repeat scroll 100% center;
+padding:3px 15px 3px 5px;
+}
+
+.ie .inputHolderClass:focus, .ie .inputHolderClass:hover{
+background:#FFF url('img/arrow-dropdown-ie_win_focus.png') no-repeat scroll 100% center;
+}
+
+.ie7 .inputHolderClass{
+background:#FFF url('img/arrow-dropdown-ie7_win.png') no-repeat scroll 100% center;
+padding:1px 15px 1px 5px;
+}
+
+.ie7 .inputHolderClass:hover, .ie7 .inputHolderClass:focus{
+background:#FFF url('img/arrow-dropdown-ie7_win_focus.png') no-repeat scroll 100% top;
+padding:1px 15px 1px 5px;
+}
+
+.mac.firefox .inputHolderClass{
+background:#FFF url('img/arrow-dropdown-ff_mac.png') no-repeat scroll 100% center;
+}
+
+.mac.chrome .inputHolderClass, .mac.safari .inputHolderClass{
+background:#FFF url('img/arrow-dropdown-chrome_mac.png') no-repeat scroll 100% center;
+-webkit-border-radius:5px;
+border-radius:5px;
+}
+
+.ie8 .inputHolderClass{
+	padding-bottom:1px;
+}
+
+/*.ie7 .inputHolderClass{
+	padding-top:1px;
+	padding-bottom:1px
+}*/
+
+input.optionsHolder, input.optionsHolder:focus {
+-k-user-select:none;
+-moz-user-select:moz-none;
+-webkit-user-select:none;
+user-select:none;
+border: medium none !important;
+cursor: default;
+float:none;
+margin-bottom: 0;
+padding: 0 !important;
+text-align: left;
+text-decoration: none;
+height:auto;
+/*text-overflow: ellipsis;*/
+}
+
+.dd-all {
+/*background:#FFF url('img/arrow-dropdown.png') no-repeat scroll 100% center !important;
+border-color:#404040 #D4D0C8 #D4D0C8 #404040 !important;
+background-size:auto !important;
+background-origin:padding-box !important;
+background-clip:border-box !important;*/
+}
+
+/* browser hacks */
+.dd-msie7 {
+padding:1px 4px 1px 1px
+}
+/*.firefox.mac input.optionsHolder{
+	position:relative;
+	top:1px;
+}*/
+
+/*EA selector CR changes start*/
+.eaInputWrapper{background:url("img/arrow-dropdown-ea.png") no-repeat scroll 100% 0 transparent;padding:0 26px 0 0;overflow:hidden;white-space:nowrap;float:left;}
+.ie7 .eaInputWrapper{background-position-y:center}
+/*.eaInputWrapper.focus{border:1px solid #39c;-moz-border-radius: 7px;-webkit-border-radius: 7px;-khtml-border-radius: 7px;border-radius:7px}*/
+#eaDropDownOpts.dropdownOpts{border:1px solid #a9a9a9;-moz-border-radius: 3px;-webkit-border-radius: 3px;-khtml-border-radius: 3px;border-radius:3px}
+#eaDropDownOpts a.dropdownOpt{padding:5px 25px;color:#4D4E53}
+#eaDropDownOpts a.dropdownOpt40{padding-left:40px;color:#4D4E53}
+.eaInputWrapper input.optionsHolder,.eaInputWrapper input.optionsHolder:focus{background: url("img/bg-input-middle.png") repeat scroll 0 0 transparent;padding:6px 0 6px 4px !important}
+.mac .eaInputWrapper input.optionsHolder,
+.mac .eaInputWrapper input.optionsHolder:focus{
+    padding:7px 0 7px 4px !important;
+}
+.ie9 .eaInputWrapper input.optionsHolder,
+.ie9 .eaInputWrapper input.optionsHolder:focus{
+	padding:7px 0 6px 4px !important;
+}
+#eaDropDownOpts a.dropdownOpt.selectedOpt{color:#4D4E53 !important}
+#eaDropDownOpts a.dropdownOpt.defaultEA{padding:10px 20px 10px 25px;border-bottom:1px dotted #666666}
+#eaDropDownOpts a.dropdownOpt.tick{background: url("img/tick.png") no-repeat scroll 10px 5px transparent;}
+#eaDropDownOpts a.dropdownOpt.defaultEA.tick{background: url("img/tick.png") no-repeat scroll 10px 10px transparent;}
+#eaDropDownOpts a.dropdownOpt:hover{background-color:#eef7ff;color:#4D4E53}
+#eaDropDownOpts a.dropdownOpt.tick:hover{background-color:#eef7ff;color:#4D4E53}
+.eaInputWrapper input.optionsHolder, .eaInputWrapper input.optionsHolder:focus{font-weight:bold;padding-left:4px !important}
+.corner-img-left{background: url("img/bg-input-left.png") no-repeat scroll 0 0 transparent;display: inline-block;height: 26px;width: 6px;float:left}
+.ie7 .corner-img-left{position:relative;top:1px}
+/*EA selector CR changes end*/

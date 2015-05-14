@@ -1,0 +1,1861 @@
+html,body{height:100%;}
+body {
+	margin:0;
+/*	font:62.5% Arial, Helvetica, sans-serif; */
+	font:12px Arial, Helvetica, sans-serif;
+	color:#333;
+	background:#eee;
+}
+* { /* IE5-6 font declaration */
+	_font-size: inherit;
+	_font-family: inherit;
+	_font-color: inherit;
+	_font-weight: inherit;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	_zoom: 1;
+}
+a { color:#39C;
+	text-decoration: none; 
+}
+strong { font-weight: bold; }
+form,fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+img{border:none;}
+input,select,textarea{
+	font:12px Arial, Helvetica, sans-serif;
+}
+.wrap{
+	height:1%;
+	overflow:hidden;
+}
+/*a:hover {
+	text-decoration: underline;
+}*/
+
+/* wrapper */
+#container{
+	width:990px;
+	margin:0 auto;
+	position:relative;
+	background:#fff url(//www.vmware.com/files/templates/images/bg-wrapper.gif) no-repeat;
+	overflow:hidden;
+/*	font-size:1.2em; */
+/*	min-height:100%;  */
+}
+* html #container{
+	overflow:visible; 
+}
+#top-of-page {
+	position:absolute;
+	top:28px;
+	left:25px;
+	width:940px;
+	height:119px;
+	_z-index:2;
+}
+#content-container {
+	overflow:hidden;
+	width:100%;
+	background:transparent url(//www.vmware.com/files/templates/images/bg-sphere-two-columns.gif) no-repeat 725px 276px; 
+	min-height: 360px;
+	_z-index:1;
+}
+* html #content-container{
+       overflow:visible;
+}
+.place-holder {margin-top:-35px;}
+.main-box{padding:0px 25px 0;	
+          height:1%;
+	      overflow:hidden;
+		  z-index:1;
+}
+#normal-box	{
+	padding:0px;	
+    height:1%;
+	overflow:hidden;
+}
+	  
+/* logo styles */
+.vmwarelogo{
+	position:absolute;
+	overflow:hidden;
+	text-indent:-9999px;
+	margin:0;
+	background:url(//www.vmware.com/files/templates/images/bg-logo.gif) no-repeat;
+	width: 113px;
+	height: 17px;
+	left:10px;
+	top:39px;
+	z-index:1;
+}
+.vmwarelogo a{
+	height:100%;
+	display:block;
+}
+#search-form {
+	position: absolute;
+	top:0px;
+	right:0px;
+	width:18%;
+}
+#search-form fieldset{
+	float:right;
+	background:url(//www.vmware.com/files/templates/images/bg-search.gif) no-repeat;
+	width:144px;
+	height:16px;
+	padding:4px 6px;
+}
+#search-form .text-input{
+	float:left;
+	background:none;
+	border:none;
+	width:120px;
+	margin:0;
+	color:#999;
+}
+#search-form input{border:none;margin:0;padding:0;width:auto;}
+.btn-search{
+	float:right;
+	margin:1px 0 0;
+	border:none;
+	width:auto;
+}
+#site-tools {
+	position: absolute;
+	top: 0px;
+	right: 156px;
+	float:right;
+	width:82%;
+	overflow:hidden;
+}
+#site-tools ul{
+	float:right;
+	overflow:hidden;
+	margin:5px 0 0;
+	padding:0;
+	list-style:none;
+	font-size:11px;
+	font-weight:bold;
+}
+#site-tools ul li{
+	float:left;
+	margin:0 1px 0 -1px;
+	background:url(//www.vmware.com/files/templates/images/sep-entry-nav.gif) no-repeat 0 50%;
+	padding:0 11px 0 13px;
+}
+#site-tools ul a{color:#39c;}
+.ad-nav ul a{color:#39c;}
+#site-tools ul a:hover,
+.ad-nav ul a:hover{color:#4d4e53;}
+/* additional navigation */
+.ad-nav{
+	width:100%;
+	overflow:hidden;
+	margin:18px 0 0;
+	position:absolute;
+	top:24px;
+}
+.ad-nav ul{
+	float:right;
+	overflow:hidden;
+	margin:0 -10px 0 0;
+	padding:0;
+	list-style:none;
+	display:inline;
+	font-weight:bold;
+}
+.ad-nav ul li{
+	float:left;
+	margin:0 3px 0 -3px;
+	padding:0 10px 0 13px;
+	background:url(//www.vmware.com/files/templates/images/bar-ad-nav.gif) no-repeat 0 50%;
+}
+.nav{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:940px;
+	font-size:12px;
+	z-index:20;
+}
+.nav ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	background:url(//www.vmware.com/files/templates/images/bg-nav.png) no-repeat;
+	width: 940px;
+	font-weight:bold;
+	height:41px;
+	*background: none;
+	*filter: progid:dximagetransform.microsoft.alphaimageloader(src='//www.vmware.com/files/templates/images/bg-nav.png', sizingmethod='crop');
+	padding-left:20px;
+}
+.nav ul li{
+	float:left;
+	background:url(//www.vmware.com/files/templates/images/sep-nav.gif) no-repeat right;
+	position:relative;
+	padding:0;
+}
+.nav ul a{
+	color:#4d4e53;
+	float:left;
+	height:41px;
+	line-height:38px;
+	padding:0 22px 0 22px;
+	text-align: center;
+	width:inherit;
+}
+.nav ul a.no {padding:0}
+.nav ul li:hover a,
+.nav ul li.hover a, .nav ul a:hover, .nav ul a.hover{
+	background:url(//www.vmware.com/files/templates/images/bg-nav-hover.gif) repeat-x;
+	color:#fff;
+}
+.nav ul li:hover .drop,
+.nav ul li.hover .drop,
+.nav li.first.hover .drop, .nav li.first:hover .drop,
+.nav li.last.hover .drop, .nav li.last:hover .drop{
+    /* TW: Disable the mega drop down mouse over effect */
+    /*display:block;*/
+}
+/*.nav li.first{
+	padding:0;
+} */ 
+.nav li.last{
+	background:none; 
+	_margin: 0px;
+}
+/*.nav li.active a.a-first{background:url(//www.vmware.com/files/templates/images/bg-first-item-active.png) no-repeat;} */
+.nav ul li.last a{
+	width: inherit !important; 
+}
+/*.nav li.first:hover a,
+.nav li.first.first-hover a{
+	background:url(//www.vmware.com/files/templates/images/bg-nav-hover-first.gif) no-repeat; 
+	color:#fff;
+} 
+.nav li.last:hover a,
+.nav li.last.last-hover a{
+	background:url(//www.vmware.com/files/templates/images/bg-nav-hover-last.gif) no-repeat 100% 0; 
+	color:#fff;
+} */
+.nav li.active a{background:url(//www.vmware.com/files/templates/images/bg-nav-active.gif) no-repeat}
+/*.last a{
+	margin:0 -50px 0 0;
+	position:relative;
+} */
+/* drop down */
+.right-side .drop{
+	left:auto;
+	right:-54px;
+}
+.drop{
+	position:absolute;
+	top:41px;
+	left:-54px;
+	width:614px;
+	display:none;
+	z-index:100;
+}
+.nav ul .drop a{
+	padding:0;
+	background:none;
+	float:none;
+	line-height:normal;
+	font-weight:normal;
+}
+.last .drop{right:-8px !important;}
+.first .drop{left:-8px !important;}
+
+.drop .t{
+	width:100%;
+	overflow:hidden;
+	background:url(//www.vmware.com/files/templates/images/bg-drop-top.png) no-repeat;
+	height: 9px;
+	*background: url(none.gif);
+	*filter: progid:dximagetransform.microsoft.alphaimageloader(src='//www.vmware.com/files/templates/images/bg-drop-top.png', sizingmethod='crop');
+	z-index:100;
+}
+.drop .c{
+	width:579px;
+	overflow:hidden;
+	background:url(//www.vmware.com/files/templates/images/bg-drop-strip.png) repeat-y;
+	padding:0 26px 19px 9px;
+	*background: url(none.gif);
+	*filter: progid:dximagetransform.microsoft.alphaimageloader(src='//www.vmware.com/files/templates/images/bg-drop-strip.png', sizingmethod='scale');
+}
+.drop .b{
+	width:100%;
+	overflow:hidden;
+	background:url(//www.vmware.com/files/templates/images/bg-drop-bottom.png) no-repeat;
+	height: 16px;
+	*background: url(none.gif);
+	*filter: progid:dximagetransform.microsoft.alphaimageloader(src='//www.vmware.com/files/templates/images/bg-drop-bottom.png', sizingmethod='crop');
+}
+/* drop down links */
+.drop-links{
+	float:left;
+	width:370px;
+	font-size:11px;
+	padding:14px 0 0;
+}
+.drop-links div.drop-links-left{
+	float:left;
+	padding:0 0 0 20px;
+	width:155px;
+	margin:0 7px 0 0;
+}
+
+.drop-links div.drop-links-right{
+	float:left;
+	padding:0 0 0 20px;
+	width:165px;
+	margin:0 3px 0 0;
+}
+.drop-links div{
+	padding:4px 0 4px;
+	/*float:left;
+	padding:16px 0 0 23px;
+	width:130px;
+	margin:0 28px 0 0;*/
+}
+.drop-links h3{
+	font-size:11px;
+	margin:0 0 4px;
+	color:#666;
+}
+.drop-links ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	background:none;
+	width:auto;
+	height:auto;
+}
+.drop-links ul li{
+	float:none;
+	line-height:12px;
+	background:none;
+	padding:0;
+	padding-bottom:4px
+}
+.drop-links ul a{
+	color:#39c !important;
+	background:none !important;
+}
+.drop-links ul a:hover{color:#069 !important;}
+/* agenda */
+.agenda{
+	float:right;
+	width:186px;
+}
+.agenda a{background:none !important;}
+.agenda ul{
+	margin:0;
+	padding:10px 0 0;
+	list-style:none;
+	background:none;
+	height:auto;
+	width:auto;
+}
+.agenda ul li{
+	float:none;
+	width:100%;
+	overflow:hidden;
+	background: none;
+	padding:0px 0 10px;
+}
+.agenda ul li img{
+	float:left;
+	margin:0 15px 0 0;
+}
+.agenda ul h3{
+	margin:5px 0 0;
+	font-size:12px;
+	padding-right:18px;
+}
+.agenda ul p{
+	line-height:14px;
+}
+.agenda ul .mega-bottom h3 a{
+/*	background:url(//www.vmware.com/files/templates/images/bullet-agenda-heading.gif) no-repeat 100% 50% !important; */
+	padding:10px 13px 0 0 !important;
+	color:#39c !important;
+	font-weight:bold !important;
+}
+.agenda .mega-blue, img02_02.jpg {
+		background:url(/files/templates/images/mega-blue.gif) no-repeat top right;
+}
+.agenda .mega-lightblue,  img02_01.jpg {
+		background:url(/files/templates/images/mega-lightblue.gif) no-repeat top right;
+}
+.agenda .mega-green {
+		background:url(/files/templates/images/mega-green.gif) no-repeat top right;
+}
+.agenda .mega-darkgreen {
+		background:url(/files/templates/images/mega-darkgreen.gif) no-repeat top right;
+}
+.agenda .mega-orange {
+		background:url(/files/templates/images/mega-orange.gif) no-repeat top right;
+}
+.agenda .mega-top {
+		background:url(/files/templates/images/mega-top.gif) no-repeat top left;
+		width:183px;
+		margin-bottom:6px;
+}
+.agenda .mega-bottom {
+		background:url(/files/templates/images/mega-bottom.gif) no-repeat bottom left;
+		padding:10px;
+}
+
+
+
+/*.agenda ul h3 a span{
+	*background:url(//www.vmware.com/files/templates/images/bullet-agenda-heading.gif) no-repeat 100% 50% !important;
+	*padding:0 13px 0 0 !important;
+	} */
+.agenda ul p{
+	margin:2px 0 0;
+	font-size:11px;
+	font-weight:normal;
+	width:162px;
+}
+.agenda .frame{
+	padding:13px 0 0 7px;
+	height:1%;
+	overflow:hidden;
+}
+.agenda .frame h3{
+	font-size:12px;
+	margin:0;
+	color:#333;
+}
+.agenda .frame p{
+	margin:2px 0 0;
+	font-size:11px;
+	font-weight:normal;
+	width:180px;
+}
+.agenda .frame a {
+         color:#39c !important;
+         font-size:11px;
+}
+.agenda .frame a:hover {
+         color:#069 !important;
+}
+.overlay-nav .holder:after,
+.sphere-content-list li:after,
+.visual-entry:after{
+	display:block;
+	content:"";
+	clear:both;
+}
+
+#footer{
+	width:990px;
+	background:#fff;
+/*	height:35px;
+	padding:15px 0 0;
+	font-size:11px;
+	color:#999;
+	overflow:hidden;;
+	background:#eee; */
+}
+.category-links{
+	margin:0px 25px 28px;
+	height:1%;
+	overflow:hidden;
+	background:#eee url(//www.vmware.com/files/templates/images/divider-links.gif) no-repeat 0 14px;
+}
+.category-links .frame{
+	width:960px;
+	margin:0 -20px 0 0;
+	padding:20px 0 28px;
+	overflow:hidden;
+}
+.category-links .frame div{
+	float:left;
+	width:200px;
+	margin:0 20px 0 0;
+	padding:0 0 0 20px;
+}
+.category-links h3{
+	font-size:13px;
+	margin:0;
+	color:#666;
+}
+.category-links ul{
+	margin:6px 0 0;
+	padding:0;
+	list-style:none;
+	font-size:11px;
+}
+.category-links ul li{line-height:16px;background:none;padding:0;}
+.category-links ul a{color:#737373;}
+.category-links ul a:hover{color:#4d4e53;}
+.footerbar{
+/*	width:990px; */
+/*	margin:-50px auto 0; */
+	position:relative;
+	height:35px;
+	padding:15px 0 0 28px;
+	font-size:11px;
+	color:#999;
+	overflow:hidden;;
+	background:#eee;
+}
+.footerbar p{
+	float:left;
+	margin:1px 0 0;
+	line-height:normal;
+	color:#999;
+}
+.footerbar ul{
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+* html .footerbar ul{
+	height:1%;
+	overflow:visible;
+}
+.footerbar ul li{
+	float:left;
+	background:url(//www.vmware.com/files/templates/images/sep-footer.gif) no-repeat 0 50%;
+	padding:0 7px 0 9px;
+	margin:0 1px 0 -1px;
+}
+.footerbar ul a{color:#39c;}
+.footerbar ul a:hover{color:#069;}
+
+#primary-navigation {
+/*	position: relative;  */
+}	
+.visual{
+	background:url(//www.vmware.com/files/templates/images/bg-visual.gif) repeat-x;
+	padding:30px 25px 12px;
+/*	height:1%;
+	overflow:hidden; 
+     height:50px; 
+margin:96px 0pt 0pt -25px; 
+overflow:visible; */
+width:100%;
+top:96px;
+left:-25px; 
+height:auto;
+position:absolute;
+_z-index:2;
+}
+.visual h2{
+	float:left;
+	margin:10px 0 0;
+	font-size:30px;
+	color:#4d4e53;
+	font-weight:normal;
+	line-height:30px;
+	letter-spacing:2px;
+	padding-left:10px;
+}
+.visual-entry{
+	width:100%;
+/*	height:50px; */
+}
+.btn-login-register{
+	float:right;
+	overflow:hidden;
+	background:url(//www.vmware.com/files/templates/images/btn-login-register.gif) no-repeat;
+	width: 119px;
+	height: 22px;
+	text-indent:-9999px;
+	margin:12px 0 0;
+}
+.visual-entry ul{
+	margin:14px 0 0;
+	padding:0 14px 0 14px;
+	list-style:none;
+	float:right; 
+	font-size:13px;
+	height:99%; 
+	_position:relative;
+	_z-index:2;
+/*    _height:200px;  */
+}
+.drop-down{
+	position:absolute;
+	top:26px;
+	left:4px;
+	width:169px;
+	display:none;
+	_margin-right:-1px;
+}
+
+/*.drop-down .c ul {height:100%; z-index:100; float:left; overflow:hidden;}*/
+.visual-entry ul li{
+	float:left; 
+	padding:0;
+	background:none;
+	position:relative; 
+}
+.visual-entry ul a {color:#4d4e53; z-index:1; position:relative;}
+.visual-entry ul .has-drop-down a{	
+	background:url(//www.vmware.com/files/templates/images/bullet-tech-entry-nav.gif) no-repeat 100% 14px;
+/*	color:#4d4e53; */
+	float:left;  
+	margin:0 15px 0 4px;
+/*	position:relative; */
+	cursor:pointer;
+/*	overflow:hidden; */
+	}
+	
+.visual-entry ul li.active a span {color:#39c; font-weight:bold;}
+.visual-entry ul li.active a:hover span {color:#069;}
+.visual-entry ul li a:hover span {color:#069; cursor:pointer;}
+.visual-entry ul a span{
+	float:left;
+	height:27px;
+	line-height:30px;
+	padding:0 11px 0 10px;
+}
+.visual-entry ul .right-side a:hover {margin:0;}
+/*
+.visual-entry ul li:hover,
+.visual-entry ul li.hover, .visual-entry ul li.active:hover,
+.visual-entry ul li.active.hover{position:relative;} */
+.visual-entry ul .has-drop-down a:hover,
+.visual-entry ul li:hover a,
+.visual-entry ul li.hover a {
+	background:url(//www.vmware.com/files/templates/images/bg-page-entry-nav-left.gif) no-repeat;
+	margin:0 0px 0 4px;
+}
+
+
+.visual-entry ul .has-drop-down a:hover span,
+.visual-entry ul li.has-drop-down:hover a span,
+.visual-entry ul li.has-drop-down.hover a span
+{
+	background:url(//www.vmware.com/files/templates/images/bg-page-entry-nav-right.gif) no-repeat 100% 0;
+	padding:0 26px 0 10px;
+}
+.visual-entry ul li:hover .drop-down,
+.visual-entry ul li.hover .drop-down
+{display:block;}
+
+.visual-entry ul li.right-side .drop-down{
+	right:0;
+	left:auto; 
+}
+
+
+/* * html .visual-entry ul li.right-side .drop-down{right:-1px;}*/
+.visual-entry ul li.right-side .drop-down .t{background:url(//www.vmware.com/files/templates/images/bg-page-entry-drop-top-alt.png) no-repeat;
+_background: url(none.gif);
+	_filter: progid:dximagetransform.microsoft.alphaimageloader(src='//www.vmware.com/files/templates/images/bg-page-entry-drop-top-alt.png', sizingmethod='crop');
+}
+.drop-down .t{
+	background:url(//www.vmware.com/files/templates/images/bg-page-entry-drop-top.png) no-repeat;
+	width:100%;
+	overflow:hidden; 
+	height: 4px;
+	_background:none;
+	_filter: progid:dximagetransform.microsoft.alphaimageloader(src='//www.vmware.com/files/templates/images/bg-page-entry-drop-top.png', sizingmethod='crop');
+}
+.drop-down .c{
+	background:url(//www.vmware.com/files/templates/images/bg-page-entry-drop-strip.png) repeat-y;
+	overflow:hidden; 
+	padding:5px 3px 7px;
+/*	_background:none;
+	_filter: progid:dximagetransform.microsoft.alphaimageloader(src='//www.vmware.com/files/templates/images/bg-page-entry-drop-strip.png', sizingmethod='scale'); */
+	height:1%;   
+}
+.drop-down .b{
+	background:url(//www.vmware.com/files/templates/images/bg-page-entry-drop-bottom.png) no-repeat;
+	height: 8px;
+	width:100%;
+	overflow:hidden;
+	_background: none;
+	_filter: progid:dximagetransform.microsoft.alphaimageloader(src='//www.vmware.com/files/templates/images/bg-page-entry-drop-bottom.png', sizingmethod='crop');
+}
+
+.drop-down ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	overflow:hidden;  
+}
+.drop-down ul li{
+/*	padding:7px 0 7px 12px; */
+	border-bottom:1px solid #d6d6d6;
+	margin:1px 0 -1px;
+/*	width:151px;  */
+	line-height:14px;	
+}
+.drop-down ul li a{
+	background:none !important;
+	padding:7px 12px 7px 12px;
+	margin:0 !important;
+	color:#39c;
+	font-size:11px;
+	width:140px;
+}
+.drop-down ul a:hover{color:#069;}
+
+#content a:hover, #content-right a:hover {text-decoration:underline;}
+
+a.image img {
+	display: block;
+	border: none;
+}
+a.button {
+	display: block;
+	width: 110px;
+	text-indent: -9999px;
+	overflow: hidden;
+	height: 24px;
+	margin-bottom: 10px;
+}
+a.rss {
+	background: url(/files/images/tpl/rss_14x14.png) bottom right no-repeat; 
+	padding: 0px 20px 0 0;
+	float:right;
+	margin-right:28px;
+}
+a.openpdf {
+	background: url(//www.vmware.com/files/templates/images/ico-pdf.gif) bottom right no-repeat; 
+	padding: 3px 17px 0 0;
+}
+a.openpdf span{
+	*background: url(//www.vmware.com/files/templates/images/ico-pdf.gif) bottom right no-repeat; 
+	*padding-left:17px;
+	*width:19px;	
+}
+a.openpdf:hover span{
+	*text-decoration:none;
+}
+a.openflash {
+        background: url(/files/images/icons/icon_flash.gif) bottom right no-repeat;
+        padding: 3px 19px 0 0;
+}
+a.roll {
+	display: block;
+	width: 11px;
+	height: 11px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: #FEFEFE url(/files/images/tpl/button-roll.gif) no-repeat;
+}
+a.call {
+	background: url(/files/images/tpl/button-call.gif) no-repeat;
+	height: 21px;
+}
+a.demo {
+	background: transparent url(/files/images/fce/demo.gif) bottom right no-repeat;
+	padding: 3px 19px 0 0;
+}
+a.openpopup {
+	background: url(/files/images/icons/icon_popup_a.gif) bottom right no-repeat; 
+	padding: 3px 19px 0 0;
+}
+a.video {
+	background: url(/files/images/icons/icon_video.gif) right 4px no-repeat; 
+	padding: 0px 19px 0 0;
+}
+a.audio {
+	background: url(/files/images/icons/icon_audio.gif) right 4px no-repeat; 
+	padding: 0px 16px 0 0;
+}
+
+a.download_vsph_trial {background: url(/files/images/buttons/btn_vsph-downloadtrial.gif) no-repeat;}
+a.visit {background: url(/files/images/buttons/btn_vsp-visitupgrdcenter.gif) no-repeat;}
+a.mvp_learnmore {background: url(/files/images/buttons/btn_prd-learn-more.png) no-repeat;}
+a.register_webcast {background: url(/files/images/buttons/btn_reg_webcast.gif) no-repeat;}
+
+
+#content {
+ 	margin: 0;
+	padding: 0px 20px 0 20px;	
+}
+p {
+	line-height:18px;
+	margin:0 0 18px;
+	padding:0;
+}
+h1 {
+	margin: 0 0 18px;
+	font-size: 30px;
+	color: #4d4e53;
+	font-weight: normal;
+}
+h3, h2{
+	margin: 0 0 14px;
+	font-size:14px;
+	font-weight: bold;
+	color:#333;
+}
+h2
+{
+	margin: 0 0 16px;
+	font-size: 22px;
+	color:#0c8d63;	
+	font-weight: normal;
+}
+h4 {
+	margin: 0 0 13px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #666;
+} 
+h5, h6 {
+	margin: 0 0 10px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666;
+}
+
+ul.features {
+	margin: 0 0 10px 0;
+	list-style: none;
+	padding: 0;
+}
+
+ul.features li {
+	padding: 0 0 10px 14px;
+	line-height: 17px;
+	background: url(/files/images/tpl/bullet-features.gif) no-repeat 0 6px;
+}
+
+/* SEO headings */
+strong.seo {
+	display: block;
+	height: 0px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+span.tiny {
+	display: block;
+	font-size: 11px;
+	color: #777777;
+	background: transparent;
+	clear: both;
+}
+
+/*********************************************************************/
+/*
+#container {
+	width: 950px;
+	margin: 0 auto;
+	position: relative;
+	padding: 107px 0 0 0;
+	_text-align: left;
+}
+#top-of-page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 950px;
+	height: 106px;
+	clear: both;
+	background: url(/files/images/tpl/background-header.gif) no-repeat 0 20px; 
+}
+#content-container {
+	width: 100%;
+	background: url(/files/images/tpl/background-content.gif) repeat-y 721px 0;
+	overflow: hidden;
+	margin-bottom: 1px;
+} */
+/* two column */
+/*.two-column{
+	height:1%;
+	overflow:hidden;
+	padding:35px 0 19px;
+}
+#two-columns{
+	width:100%;
+	overflow:hidden;
+	margin:0;
+	background:url(//www.vmware.com/files/templates/images/bg-sphere-two-columns.gif) no-repeat 700px 126px; 
+}*/
+#content-left {
+	width: 700px;
+	float: left;
+	height:1%;
+	overflow:hidden;
+	padding:2px 0px 19px 25px;
+/*	_margin-top: -10px; */
+}
+/*
+.index #content-left {
+	padding: 0 1px 0 0;
+	width: 700px;
+}*/
+#content-right {
+	float:right;
+	width:220px;
+	height:1%;
+	overflow:hidden;
+	padding:2px 25px 19px 0px;
+/*	_margin-top: -10px; */
+}
+/*#content {
+	margin: 0;
+	padding: 0px 0 0 20px;
+}
+*/
+
+#content-container.wide {
+	width: 100%;
+	background: none;
+	overflow: hidden;
+	margin: 0px;
+}
+
+#content-container.wide-noindent {
+	width: 100%;
+	background: none;
+	overflow: hidden;
+	margin: 0px;
+}
+
+#content-container.wide #content {
+	border: none;
+	padding:0 25px;
+	padding: 30px 25px;  
+}
+#content-container.wide #normal-box #content {
+	border: none;
+	padding: 0px 25px 0px; 
+}
+#content-container.wide-noindent #content {
+	border: none;
+	margin: 0;
+	padding: 0px;
+}
+
+/*********************************************************************/
+/*
+
+#search-form select {
+	margin: 0;
+	padding: 2px 4px 0 4px;
+	width: 94px;
+	height: 16px;
+	display: block;
+	float: left;
+	border: 1px solid #999999;
+	font-size: 11px;
+	color: #666666;
+}
+#search-form input.searchfield {
+	margin: 0;
+	padding: 2px 4px 0 4px;
+	width: 94px;
+	height: 16px;
+	display: block;
+	float: left;
+	border: 1px solid #999999;
+	font-size: 11px;
+	color: #666666;
+}
+#search-form input.search-button {
+	width: 22px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-left: 3px;
+	background-color: #FFB22B;
+}
+*/
+/*********************************************************************/
+/*
+#language {
+	margin: 8px 0px;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	top: 18px;
+	right: 150px;
+	font-size: 11px;
+	z-index: 20;
+	border-right:1px solid white;
+	height:16px;
+}
+#language li {
+	display: block;
+	float: left;
+	margin: 0;
+	padding-left: 4px;
+	position: relative; 
+	background: url(/files/images/fce/arrow-white.gif) no-repeat 0px 3px;
+}
+#language li a {
+	display: block;
+	float: left;
+	height: 16px;
+	padding: 0 0 0 3px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+#language li a span {
+	display: block;
+	float: left;
+	padding: 0px 10px 0 5px;
+	line-height: 16px;
+	font-size: 11px;
+	color: #FFFFFF;
+	cursor: pointer;
+	height: 16px;
+}
+#language li a:hover span {
+	text-decoration:underline;
+}
+
+
+
+#site-tools li {
+	display: inline;
+	padding: 0 0 0 7px;
+	margin: 0 2px 0 0;
+	background: url(/files/images/tpl/separator.gif) no-repeat 0 2px;
+	_background-image: expression( (this===this.parentNode.childNodes[0]) ? "none" : "auto");
+	_padding-left: expression( (this===this.parentNode.childNodes[0]) ? "none" : "auto");
+}
+
+#site-tools li:first-child {
+	background-image: none;
+	padding-left: 0;
+}
+
+#site-tools li a {
+	color: #3366CC;
+	text-decoration: none;
+	background: #FBFBFB;
+}
+
+#site-tools li a:hover {
+	text-decoration: underline;
+}
+
+#global-sites li {
+	display: block;
+	float: left;
+	background: url(/files/images/tpl/bullet-middle.gif) no-repeat 0 13px;
+	padding: 0 0 0 17px;
+	margin: 0 10px 0 10px;
+}
+
+* html #global-sites li {
+	margin-left: 5px;
+}
+
+#global-sites li.active {
+	margin: 0 10px 0 -47px;
+	padding: 0 0 0 60px;
+	background: url(/files/images/tpl/link-left.gif) no-repeat;
+	_padding-left: expression( (this===this.parentNode.childNodes[0]) ? "6px" : "auto");
+	_margin-left: expression( (this===this.parentNode.childNodes[0]) ? "0px" : "-47px");
+	_background-image: expression( (this===this.parentNode.childNodes[0]) ? "url(/files/images/tpl/link-first.gif)" : "auto");
+}
+
+#global-sites li.active:first-child {
+	margin-left: 0;
+	padding: 0 0 0 6px;
+	background: url(/files/images/tpl/link-first.gif) no-repeat;
+}
+
+#global-sites li.active span {
+	margin-right: -47px;
+	background: url(/files/images/tpl/link-right.gif) no-repeat top right;
+	padding: 1px 62px 0 2px;
+	position: relative; 
+	display: block;
+	height: 37px;
+	float: left;
+}
+
+#global-sites li a {
+	display: block;
+	float: left;
+	color: #FFF;
+	text-decoration: none;
+	position: relative;
+}
+
+#global-sites li a:hover {
+	text-decoration: underline;
+}
+
+#global-sites li.active a {
+	font-weight: bold;
+	color: #7D9BC6;
+	background-color: #FFF;
+}
+
+#global-sites li a.vmware {
+	width: 56px;
+	height: 22px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(/files/images/tpl/logo.gif) no-repeat 0 -22px;
+	margin: 7px 0 0 0;
+}
+
+#global-sites li.active a.vmware {
+	background: url(/files/images/tpl/logo.gif) no-repeat;
+	width:72px;
+	height: 22px;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin: 7px 4px 0 6px;
+	padding: 0;
+}
+
+* html #global-sites li.active a.vmware {
+	margin-left: 4px;
+	margin-right: 2px;
+}
+
+
+#primary-navigation {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	top: 58px;
+	left: 32px;
+	font-size: 11px;
+	z-index: 10;
+}
+
+#primary-navigation li {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative; 
+	background: url(/files/images/tpl/separator.gif) no-repeat 100% 6px;
+}
+
+#primary-navigation li.last {
+	background-image: none;
+}
+
+#primary-navigation li a {
+	display: block;
+	float: left;
+	height: 22px;
+	line-height: 16px;
+	color: #477AC3;
+	padding: 0 0 0 3px;
+	text-decoration: none;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+#primary-navigation li a.active {
+	color: #F69401;
+}
+
+#primary-navigation li a span {
+	display: block;
+	float: left;
+	padding: 3px 9px 0 5px;
+	cursor: pointer;
+	height: 19px;
+}
+
+#primary-navigation li a:hover {
+	color: #F69401;
+}
+
+#primary-navigation li.hover a {
+	color: #F69401;
+	height: 19px;
+	overflow: hidden;
+	z-index: 10;
+	position: relative;
+	margin-left: -1px;
+	padding-left: 4px;
+	background: url(/files/images/tpl/link-main-left.gif) no-repeat;
+}
+
+#primary-navigation li.hover a span {
+	cursor: pointer;
+	background: url(/files/images/tpl/link-main-right.gif) no-repeat top right;
+}
+
+#primary-navigation li div {
+	display: none;
+	background: url(/files/images/tpl/dropdown-top.gif) no-repeat;
+	padding: 4px 0 0 0;
+	width: 168px;
+	position: absolute;
+	top: 18px;
+	left: -1px;
+}
+
+#primary-navigation ul {
+	margin: 0;
+	padding: 0 8px 4px 8px;
+	list-style: none;
+	width: 152px;
+	background: url(/files/images/tpl/dropdown-bottom.gif) no-repeat bottom left;
+}
+
+#primary-navigation ul li {
+	display: block;
+	float: none;
+	margin: 0;
+	padding: 1px 0 1px 0;
+	background: none;
+	border-top: 1px solid #C9D6E8;
+	_border-top: expression( (this===this.parentNode.childNodes[0]) ? "none" : "auto");
+	width: 152px;
+}
+
+#primary-navigation ul li:first-child {
+	border-top: none;
+}
+
+#primary-navigation li.hover ul li a {
+	white-space: normal;
+	display: block;
+	float: none;
+	height: auto;
+	font-weight: normal;
+	color: #477AC3;
+	background: none;
+	padding: 8px 0 8px 0;
+	width: 100%;
+	margin: 0;
+	line-height: 14px;
+}
+
+#primary-navigation li.hover ul li a:hover, #primary-navigation li.hover ul li:hover a {
+	background: url(/files/images/tpl/gradient.gif) repeat-y top;
+	margin: 0;
+	padding: 8px 0 8px 0;
+	color: #477AC3;
+}
+
+#primary-navigation li.hover ul li a.active{
+	font-weight: bold;
+	background: url(/files/images/tpl/gradient.gif) repeat-y top;
+	margin: 0;
+	padding: 8px 0 8px 0;
+	color: #477AC3;
+}
+
+#primary-navigation li.hover div {
+	display: block;
+}
+*/
+/* primary navigation for communities */
+/* old design
+.communities #primary-navigation li a span {
+	display: block;
+	float: left;
+	padding: 3px 20px 0 5px;
+	cursor: pointer;
+	height: 19px;
+	background: url(/files/images/tpl/link-main-right-act.gif) no-repeat top right;
+}
+.communities #primary-navigation li a.active span {
+	background: url(/files/images/tpl/link-main-active.gif) no-repeat 100% 0;
+}
+.communities #primary-navigation li.hover a span {
+	cursor: pointer;
+	background: url(/files/images/tpl/link-main-right-act.gif) no-repeat 100% -22px;
+}
+*/
+/*********************************************************************/
+/*
+#footer {
+	width: 922px;
+	height: 70px;
+	background: url(/files/images/tpl/background-footer.gif) no-repeat;
+	font-size: 10px;
+	line-height: 34px;
+	padding: 0 14px 0 14px;
+	position: relative;
+	color: #999999;
+	clear: both;
+    _padding-top:10px;
+}
+
+#footer p {
+	display: inline;
+}
+
+#footer a.rss {
+	position: absolute;
+	top: 8px;
+	right: 13px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	width: 16px;
+	height: 16px;
+	background: url(/files/images/tpl/rss.gif) no-repeat;
+	padding:0px;
+}
+*/
+
+#navigation-bottom {
+	margin: 0 0 0 12px;
+	padding: 0;
+	list-style: none;
+	display: inline;
+}
+
+#navigation-bottom li {
+	display: inline;
+	background: url(/files/images/tpl/separator.gif) no-repeat 0 4px;
+	padding: 0 0 0 10px;
+	margin: 0 6px 0 0;
+	_background-image: expression( (this===this.parentNode.childNodes[0]) ? "none" : "auto");
+	_padding-left: expression( (this===this.parentNode.childNodes[0]) ? "none" : "auto");
+	float:left;
+}
+
+#navigation-bottom li:first-child{
+	background-image: none;
+	padding-left: 8px;
+}
+/*
+#navigation-bottom li a {
+	color: #999999;
+	text-decoration: none;
+	background: #F3F3F3;
+}
+
+#navigation-bottom li a:hover {
+	text-decoration: underline;
+}
+*/
+
+
+#secondary-navigation {
+	width:100%;
+	overflow:hidden;
+	padding:0 0 4px;
+	background:url(//www.vmware.com/files/templates/images/bg-side-nav.gif) no-repeat 0 100%;
+	margin:0 0 10px;
+}
+#secondary-navigation ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-size:11px;
+	overflow:hidden;
+	height:1%;
+}
+#secondary-navigation ul li{
+	padding:0;
+	background:none;
+}
+#secondary-navigation ul a{
+	background:url(//www.vmware.com/files/templates/images/bg-side-item-strip.gif) repeat-y;
+	margin:0 0 -2px;
+	display:block;
+	color:#4d4e53;
+	overflow:hidden;
+	height:1%;
+/*	
+	padding:0 0 0 12px;
+	background:url(//www.vmware.com/files/templates/images/bg-side-nav-item.gif) no-repeat;
+	height: 37px;
+	line-height:37px;
+	margin:0 0 -2px;
+	display:block;
+	color:#4d4e53; */
+}
+#secondary-navigation ul .bg{
+	background:url(//www.vmware.com/files/templates/images/bg-side-item-top.gif) no-repeat;
+	overflow:hidden;
+	height:1%;
+	display:block;
+	_padding:0;
+	_margin:0;
+}
+#secondary-navigation ul .bg span{
+	padding:12px 0 12px 12px;
+	background:url(//www.vmware.com/files/templates/images/bg-side-item-bottom.gif) no-repeat 0 100%;
+	overflow:hidden;
+	height:1%;
+	display:block;
+}
+#secondary-navigation ul a:hover,
+#secondary-navigation ul li.active a:hover{color:#1c1c1e; cursor:pointer;}
+#secondary-navigation h3{
+	color:#fff;
+	background:url(//www.vmware.com/files/templates/images/bg-side-nav-heading.gif) no-repeat;
+	height: 38px;
+	margin:0;
+	padding:0 0 0 12px;
+	font-size:16px;
+	line-height:38px;
+	font-weight:normal;
+}
+#secondary-navigation h3 a {color:#fff;}
+#secondary-navigation ul ul li.active a{color:#39c;}
+#secondary-navigation ul ul ul{
+    padding:5px 0 5px 16px;
+	border-left:1px solid #cfcfcf;
+	border-right:1px solid #cfcfcf;
+	border-bottom:1px solid #e4e4e4;
+	border-top:1px solid #e4e4e4;
+	margin:0 0 -1px;
+	height:1%;
+	overflow:hidden;
+	background:#fff;
+}
+#secondary-navigation ul li ul li.active a {
+	color:#39c;
+	font-weight:bold;
+}
+#secondary-navigation  ul li ul li ul li.active a,#secondary-navigation  ul li ul li.active ul li a , #secondary-navigation  ul li.active ul li ul li a,#secondary-navigation  ul li ul li ul li a{
+	background:#fff;
+	border:none;
+}	
+#secondary-navigation  ul li ul li ul li a, #secondary-navigation  ul li ul li.active ul li a{color:#4d4e53; font-weight:normal;} 
+#secondary-navigation ul li.active ul a,
+#secondary-navigation ul li ul li a{
+	font-weight:normal ;
+	border-left:1px solid #cfcfcf;
+	border-right:1px solid #cfcfcf;
+	border-bottom:1px solid #e4e4e4;
+	background:#f6f6f6;
+	margin:1px 0 -1px;
+	padding:6px 0 6px 12px;
+	color:#4d4e53;
+	display:block;
+}
+#secondary-navigation ul ul ul li{line-height:14px;} 
+#secondary-navigation ul li ul li ul li a, #secondary-navigation ul li ul li.active ul li a {padding:4px 0px 4px 12px; }
+#secondary-navigation ul ul ul a{
+	display:inline;
+	height:auto;
+	background:#fff none;
+	padding:0;
+	border-color:#e4e4e4;
+	margin:0;
+} 
+#secondary-navigation ul li.active a {
+color:#006699;
+font-weight:bold;
+}
+/*
+#secondary-navigation li {
+	border-top: 1px solid #C5D4E9;
+	padding: 1px 0 1px 0;
+	background: url(/files/images/tpl/arrow-right-lite.gif) no-repeat 0 12px;
+}
+#secondary-navigation li.first {
+	border-top: none;
+}
+#secondary-navigation li.active {
+	background-image: url(/files/images/tpl/arrow-right-dark.gif);
+}
+#secondary-navigation li a {
+	padding: 8px 0 8px 12px;
+	display: block;
+	text-decoration: none;
+}
+#secondary-navigation li.active a {
+	color:#069;
+	font-weight:bold;
+}
+#secondary-navigation li a:hover {
+	background: url(/files/images/tpl/gradient.gif) repeat-y top;
+}
+#secondary-navigation ul ul {
+	border-top: none;
+	padding-left: 7px;
+}
+#secondary-navigation li.active ul li a, #secondary-navigation ul li.active ul li a {
+	font-weight: normal;
+	background: none;
+}
+#secondary-navigation li.active ul li a:hover, #secondary-navigation ul li.active ul li a:hover {
+	background: url(/files/images/tpl/gradient.gif) repeat-y top;
+}
+#secondary-navigation li ul li {
+	background-position: 9px 12px;
+	_width:204px;
+}
+#secondary-navigation li ul li a {
+	padding-left: 21px;
+}
+#secondary-navigation li ul li ul li {
+	background-position: 17px 12px; 
+	border-top: none;
+	_width:190px;
+}
+#secondary-navigation li ul li ul li a {
+	padding-left: 29px;
+}
+*/
+/*********************************************************************/
+#breadcrumbs {
+	margin: 0;
+	padding: 4px 40px 4px 60px;
+	font-size: 11px;
+	position: absolute;
+	top: 164px;
+	left: 0;
+	z-index: 0;
+	color: #ccc;
+	_clear:left;
+}
+#breadcrumbs a {
+	color: #ccc;
+}
+#breadcrumbs a:hover{text-decoration:underline;}
+#ibreadcrumbs {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100%;
+}
+
+/*********************************************************************/
+
+/* Content Element */
+#header {
+	margin: 0;
+	padding: 32px 40px 0 41px;
+}
+
+.wide #header {
+/*border: 1px dotted red;*/
+	margin: 1em 0;
+	padding: 0;
+	background: none;
+}
+
+#header p, #header br {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+#header .overlay{
+	padding-bottom: 15px;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+#header .overlay h1 {
+	font-size: 30px;
+	color: #7d9bc6;
+}
+
+#header .statement p {
+	padding-bottom: 10px;
+	width:auto;
+}
+
+/* Two-column Header (product, etc.) */
+#header .overlay div.left {
+	float: left;
+	width: 130px;
+	padding: 0 0 70px 0;
+	background: url(//www.vmware.com/files/templates/img/pattern_product.gif) no-repeat bottom left;
+}
+
+#header .overlay div.left a.image {
+	display: block;
+	margin-bottom: 20px;
+}
+
+#header .overlay div.right {
+	float: right;
+	_float: none;
+	width: 490px;
+	padding: 0 0 0 12px;
+	border-left: 1px solid #A1C2E2;
+}
+
+/* First Level Hero template */
+
+/***********************************************************/
+
+.communities #header.firstlevel .overlay {
+	background: url(/files/images/tpl/background-stdhero-alt.jpg) no-repeat top right;
+}
+.communities #header.full {
+	background: url(/files/images/tpl/background-header-full-footer.gif) no-repeat bottom left;
+	padding: 0 0 15px 0;
+}
+.communities #header.full .overlay {
+	height: 187px;
+	background: url(/files/images/tpl/background-header-full.jpg) no-repeat top right; 
+	padding-left: 40px;
+	width: 679px;
+	padding-top: 30px;
+}
+.communities #header.full p {
+	color: #7D9BC6;
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 5px;
+	width: 420px;
+}
+ul.news_column {width:834px; *width:826px;}
+
+/* ************************************************************* */
+/* MODIFICATION FOR HOME PAGE WITH NEW PLUG IN Cameron */
+/*
+ul.news_column {
+	padding: 0;
+	list-style-type: none;
+	margin: 0px 0 0 0; 
+	overflow: hidden;
+	display: block;
+}
+ul.news_column li {
+	display: block;
+	width: 100%;
+	margin: -1px 0;
+	padding: 4px 0;
+}
+ul.news_column a {
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	margin: -8px 0;
+	color: #659BC8;
+}
+ul.news_column a:hover {
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	margin: -8px 0;
+}
+ul.news_column a p.date {
+	margin: 0;
+	padding: 0;
+	color: #A9AAAA;
+}
+ul.news_column a p.author {
+	margin: 0;
+	padding: 0;
+}
+ul.news_column a p.link {
+	margin: 0;
+	padding: 0;
+}
+*/
+
+
+/* *************************************************************** */
+/* Table styles */
+table.comparison, 
+table.general {
+	margin: 10px 0 20px 0;
+	padding: 0;
+	border-bottom: 2px solid #a1c2e2;
+}
+
+table.comparison th, 
+table.general th {
+	text-align: left;
+	color: #ffffff;
+	padding: 4px 12px;
+	background-color: #336699;
+}
+
+table.comparison tr, 
+table.general tr {
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #cccccc;
+	background-color: #F9F9F9;
+}
+
+table.comparison tr.odd, 
+table.general tr.odd {
+	background-color: #f1f4f9;
+}
+
+/* END Table styles */
+/* *************************************************************** */
+li.inline {
+	float: left;
+	display: block;
+	width: 110px;	
+	height: 120px;
+	padding: 0 10px 0px 10px;
+	margin-top: -3px;
+	text-align: center;
+	border-right: 1px solid #dedede;	
+}
+
+/* *************************************************************** */
+
+/* info box settings */
+/*
+div.itop {
+	margin-top: -7px;
+}
+div.info-box {
+	background: #F8F8F8 url(/files/images/tpl/infobox-top.gif) no-repeat;
+	margin-bottom: 2px;
+}
+
+div.info-box div.inner {
+	padding: 0 8px 19px 8px;
+	background: url(/files/images/tpl/infobox-bottom.gif) no-repeat bottom left;
+	font-size: 11px;
+}
+
+div.info-box strong.head {
+	display: block;
+	line-height: 25px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #FFF;
+	padding-left: 20px;
+	background: url(/files/images/tpl/bullet-middle.gif) no-repeat 4px 8px;
+	margin-bottom: 5px;
+}
+
+div.info-box div.inner p {
+	margin-bottom: 6px;
+	line-height: 14px;
+}
+
+div.info-box ul.links {
+	margin: 0;
+	padding: 0;
+	list-style: square;
+	color: #7d9bc6;
+	margin: 4px 0 0px 0;
+	padding: 0px 13px 0 20px; 
+	_padding: 0px 13px 0 29px; 
+}
+
+div.info-box ul.links li {
+	line-height: 18px;
+}
+*/
+/*********************************************************************/
+div.features {
+	background: url(/files/images/tpl/background-features.gif) repeat-x;
+	margin-bottom: 18px;
+	padding-top: 20px;
+	font-size: 11px;
+}
+div.features div.layout {
+	overflow: hidden;
+	background: url(/files/images/tpl/background-feature-layout.gif) repeat-y;
+	padding-bottom: 10px;
+}
+div.features div.line {
+	height: 15px;
+	background: url(/files/images/tpl/background-feature-line.gif) no-repeat 20px 0;
+	clear: both;
+}
+div.features div.block {
+	width: 209px;
+	float: left;
+	padding: 0 10px 6px 20px;
+}
+div.features div.top, div.features div.bottom {
+	overflow: hidden;
+	height: 1%;
+}
+div.features div.top div.block {
+	background: url(/files/images/tpl/background-feature-block.gif) no-repeat;
+}
+div.features p {
+	margin-bottom: 10px;
+	line-height: 14px;
+}
+div.features a.participate {
+	margin-left: -3px;
+}
+div.features ul.actions li {
+	display: inline;
+ 	background: url(/files/images/tpl/separator.gif) no-repeat 0 3px;
+	padding-left: 8px;
+}
+div.features ul.actions li:first-child {
+	padding-left: 0;
+	background: none;
+}
+div.features ul.actions li a {
+	background-image: url(/files/images/tpl/arrow-right-lite.gif);
+	padding-left: 10px;
+}
+
+/*********************************************************************/
+/* Blogs CSS */
+.entry-footer,
+.trackback-footer,
+.comment-footer
+{
+	margin: 0 0 10px 0;
+	border-top: 1px dotted #999999;
+	padding: 3px;
+	color: #999999;
+	font-family: 'Trebuchet MS', Verdana, sans-serif;
+	font-size: x-small;
+	line-height: normal;
+	text-align: left;
+	font-weight: bold;
+}
+/*********************************************************************/
+div.error_message {
+	background-color:#FFFFFF;
+	color:#990000;
+	font-size:16px;
+	font-weight:bold;
+	margin:8px 0px;
+}
+/* Baynote */
+.bn_g_welcome {
+	background:			transparent url(http://www.vmware.com/files/images/bullet-lite.gif) no-repeat scroll 0pt 2px;
+	color:				#F69401;
+	display:			block;
+	font-weight:		bold;
+	padding-left:		17px;
+}
+.bn_g_result_link {
+	background:			transparent url(http://www.vmware.com/files/images/fce/bullet-features.gif) no-repeat scroll 0pt 6px;
+	display:			block;
+	margin:				0pt;
+	padding:			0pt 0pt 0pt 17px;
+	color:				#3366cc;
+	line-height:		16px;
+	list-style-image:	none;
+	list-style-position:outside;
+	list-style-type:	none;
+}
+a.bn_g_result_link {
+	text-decoration:	none;
+}
+a.bn_g_result_link:hover {
+	text-decoration:	underline;
+}
+.bn_g_result_terms {
+	display:			none;
+}
+.bn_g_details {
+	display:			none;
+}
+
+#cfooter #footer{
+  _padding-top:10px !important;
+}
+

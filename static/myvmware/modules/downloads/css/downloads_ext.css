@@ -1,0 +1,173 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  download_ext.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 08/21/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. adjust style for tabs
+/* ########################################################################### */
+body{
+font-family: "proxima-nova",​"Arial",​sans-serif !important;
+}
+#content-container table .midProductColumn {
+    width: 298px;
+}
+
+#content-container table .child-table .midProductColumn {
+    width: 298px;
+	table-layout:fixed;
+}
+
+#content-container .tabContent .activitiesLog table .no-category-more-details table.child-table {
+    margin-left: -13px;
+	width:100%;
+}	
+
+.portlet-column {
+    display: block;
+    vertical-align: top;
+}
+
+/*#products-index-wrapper .free-trial_icon img {
+    margin-right: 5px;
+    position: absolute;
+    right: 827px;
+    top: 35px;
+}
+#products-index-wrapper .free-trial_icon.downloadCenterIcon img {
+	right: 827px;
+}
+.ie7 #products-index-wrapper .free-trial_icon img {
+			top: 35px !important;
+}
+*/
+.column-one #content-section .helpLink, .column-two-collapse #content-section .helpLink {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    z-index: 100;
+}
+#content-container table td.dataTables_empty{
+	background: none !important;
+	padding-top:25px;
+}
+
+/*Styles to position search button*/
+/*.searchAllDownloads{
+    position: absolute;
+    left: 30%;
+    top:70px;  
+    width:340px;	
+} */	
+.searchAllDownloads{
+    position: absolute;
+    top:70px;  
+	left: 3px;
+	border-bottom: 1px solid #CCCCCC;
+	width:79%;
+	height:65px;
+	margin-bottom:25px;
+	background-image: url(../img/support-search-gradient.jpg);
+	padding-left:10px;
+}
+header div.inputsearchbox input{
+	padding:4px 25px 4px 4px;
+	width:500px;
+	border-radius: 5px;
+	background:url(/vmwareNew-theme/images/forms/input_shadow.png);
+	height:28px;
+}
+.ie7 div.inputsearchbox input,.ie8 div.inputsearchbox input,.ie9 div.inputsearchbox input{
+	height:22px;
+	padding-top:10px;
+}
+div.inputsearchbox input.focus{background:#FFFFFF;border: 1px solid #0091CE;}
+ div.inputsearchbox{text-align:center;}
+
+/* span.dsearchbutton{
+	display: inline-block;
+	width: 20px;
+	height: 17px; 
+	position: relative; 
+	left: 342px;         
+	top: -22px; 
+        *top: 3px; 
+	/*background: url("img/btn_zoomIcon.png");
+	.ie7 span.dsearchbutton{
+	top: -22px;
+	left: 348px;
+}
+	*/
+        background: #FFFFFF url('img/searchIcon.png') right center no-repeat; 
+        cursor: pointer;
+} */
+/* added to fix buy, trial and other link styles*/
+	.right-side-panel .gray-Box {		
+		margin: 0px 0 26px 0 !important;
+		background-color:#FFFFFF;						
+		
+	}
+	.gray-Box  ul{
+		border-top:1px solid #D3D3D3 !important;
+		padding:20px 0 0 0 !important;
+                margin-left: 10px !important;
+	}
+	.gray-Box  ul li{
+		background:none !important;
+		padding:0 0 0 2px !important;
+  	}
+.white-Box h3 {
+		border-bottom: 1px solid #CCC;
+		font-size:15px !important;
+		margin-bottom:10px;
+		padding:20px 0 10px 0;
+		line-height: 15px;
+		margin-left:15px;
+}
+/*Fix for BUG-00054398*/
+#eaDropDownOpts a.dropdownOpt.selectedOpt, .ie #eaDropDownOpts a.dropdownOpt.selectedOpt{color: #FFFFFF !important; }  
+div.rightPanel span.extLink {min-height: 16px!important;height: auto;}
+.ie7 .allDownloads .tabContent .ddContainer{float: right;}
+#content-container .tabContent .activitiesLog table.pDownloads thead th,#content-container .tabContent .activitiesLog table thead th{background:#006990;color:#FFFFFF;text-transform:none;height:25px;border:0;vertical-align:middle;text-transform:none; font-size:14px; filter:none;font-weight:600}
+/*.ie7 #content-container .tabContent .activitiesLog table.pDownloads thead th,.ie7 #content-container .tabContent .activitiesLog table thead th,.ie7 #content-container .tabContent .activitiesLog table.pDownloads thead ,.ie7 #content-container .tabContent .activitiesLog table thead{background:#006990 !important}*/
+.tabContent .activitiesLog table{border:1px solid #CCCCCC;}
+.portlet-boundary_ProductFamilyHeaderPortlet_WAR_itdownloadsportlets_ .searchAllDownloads,.portlet-boundary_ProductDetailsHeaderPortlet_WAR_itdownloadsportlets_   .searchAllDownloads{display:none;}
+#content-section section div.tabbed_area ul.tabs{margin-bottom:25px;margin-top:25px;}
+.visibleDetails h2{ display:none;}
+#content-container table thead{border: 0!important;}
+td.filename .infoDownload{float:left;}
+td.filename .downloadCol{float:right;}
+td.filename .detailsOnHover{display:none;clear:both; padding:15px;background: #E6E6E6;margin:10px;float:left;width:95%;line-height:18px; font-size: 14px;}
+td.filename .detailsOnHover .col1{float:left; width:44%;overflow:hidden;height:100%;}
+td.filename .detailsOnHover .col2{float:right;;width:42%;overflow:hidden;height:100%; padding-right:60px;padding-left:30px;border-left:1px solid #CCCCCC;}
+td.filename .readMoreDetails{color: #0095D3;display:block;clear:both;padding-top:15px;width:110px}
+td.filename .readMoreDetails:hover{cursor:pointer;}
+#closeDetails{cursor:pointer; position:relative;right:0; top:0;float:right;background:url("../img/close-btn.png") no-repeat scroll 0 0 transparent;width:20px;height:20px;}
+td.filename .downloadCol{padding-right:25px;}
+#tabbed_box_1 td.filename .downloadCol a.button.primary{background:linear-gradient(to bottom, #0095d3 0%, #006690 100%);color:#FFF; width:165px; height:25px;display:block;text-align:center;padding-top:10px;}
+td.filename .downloadCol .manualDownloadLink a{color:#006990;background:transparent;}
+div.inputsearchbox input.focus{}
+body .tabbed_area .activitiesLog table{border:1px solid #CCCCCC; font-weight:500;}
+body .tabbed_area #errorCheckDiv .activitiesLog table,body .tabbed_area #errorCheckDiv .activitiesLog table tr td{border:0}
+body .tabbed_area .activitiesLog table tbody td{ color:#666;font-size:14px;font-weight:500;font-size: 14px;}
+#container .column-wrapper .manualDownloadLink{text-align:center;}
+.right-side-panel #portlet_NewRelatedResourcesPortlet_WAR_itdownloadsportlets .white-Box{font-weight: 400;background:url("../img/bordershadow.png") no-repeat; padding-left:8px;}
+.right-side-panel .white-Box ul{padding-left:12px;}
+td.filename .infoDownload{line-height:22px;} td.filename .infoDownload strong{font-size:15px; color:#000000;display:block;}
+.right-side-panel .white-Box ul{padding-left:12px;}
+#main .right-side-panel .white-Box ul li{font-size:14px;padding:5px;border-bottom:1px solid #E6E6E6;font-weight:500;margin-left:15px;list-style: none;background: none;}
+.ie7 #main  li.my-download-history a{padding-bottom:5px;}
+.ie7 #main  li.my-download-history ul{border-top:1px solid #CCCCCC !important;}  /* BUG-00061374 - fixed this bug for LI element underline issue in IE7 */
+.ie7 #main  li.my-download-history,.ie7 #main  li.my-download-history ul li a{border-bottom:0 !important;}
+.ie7 #main  .right-side-panel .white-Box ul li ul li{font-size:14px;padding:5px;border-bottom:1px solid #CCCCCC;font-weight:500;margin-left:0px;}
+#main .right-side-panel .white-Box ul li .freeIcon{padding-bottom:0}
+.right-side-panel .white-Box ul li a,.right-side-panel .white-Box ul li a:visited{color:#006990;}
+#main .right-side-panel .white-Box ul{margin:0;}
+.col1 .label,.col1 .NameLabel,.col2 .label{font-weight:bold;}
+.col1, .col2{line-height: 1.5;}
+.detailsOnHover, .detailsOnHover .col2 p{font-size:14px;}
+.tabbed_area .activitiesLog table .buttoncol a.button.secondary{font-weight:400;color: #006690;font-size: 14px;filter:none}.tabbed_area .activitiesLog table .buttoncol a.button.secondary:hover{filter:none}
+.versionList .win.safari #versionList{width:100px;}

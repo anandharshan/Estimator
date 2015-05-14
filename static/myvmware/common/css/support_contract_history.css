@@ -1,0 +1,26 @@
+input.disabled {
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+}
+
+div.tooltip .content {
+	max-width: 140px;
+}
+
+.fn_disabled {
+	background: none repeat scroll 0 0 red;
+    height: 15px;
+    position: absolute;
+    width: 15px;
+}
+
+.noAccess {
+	text-align: center;
+	padding: 100px 0;
+}
+
+	#content-section section .noAccess p {
+		font-size: 15px;
+		line-height: 22px;
+		margin: 0;
+	}

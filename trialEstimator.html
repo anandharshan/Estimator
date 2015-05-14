@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html id="alpha_html" class="no-js">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Trial Estimator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="stylesheet" href="/vmf/c/4.0/css/liferay.css">
+    <link rel="stylesheet" href="/static/myvmware/common/css/vcredit.css">
+    <link rel="stylesheet" href="/static/myvmware/common/css/estimator.css">
+	
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="/vmf/c/4.0/css/ie.css" />
+		<link rel="stylesheet" href="/static/myvmware/common/css/ie7.css" />	
+		<script src="/vmf/c/4.0/js/vmf-liferay-ie.js"> </script>
+    <![endif]-->
+	
+     <script src="/vmf/c/4.0/js/vmf.js" type="text/javascript"></script> 
+     <script src="/vmf/m/angular/4.0/js/angular.min.js" type="text/javascript"></script> 
+	 <script type="text/javascript" src="/vmf/m/foresee/foresee-trigger.js"></script>
+     <script src="/static/myvmware/modules/vcredit/js/common/ajaxService.js" type="text/javascript"></script>
+	 <script src="/static/myvmware/modules/vcredit/js/trialEstimator-JS/trialEstimator.js"></script>
+	 <script src="/static/myvmware/modules/vcredit/js/trialEstimator-JS/factories/estimatorFactory.js"></script>
+	 <script src="/static/myvmware/modules/vcredit/js/trialEstimator-JS/directiveJS/directives.js"></script>
+	 <script src="/static/myvmware/modules/vcredit/js/trialEstimator-JS/controllers/payMethodCtrl.js"></script>
+	 <script src="/static/myvmware/modules/vcredit/js/trialEstimator-JS/controllers/trialEstimatorCtrl.js"></script>
+	 <script src="/static/myvmware/modules/vcredit/js/trialEstimator-JS/controllers/chooseServiseCtrl.js"></script>
+	 <script src="/static/myvmware/modules/vcredit/js/trialEstimator-JS/controllers/configureServiceController.js"></script>
+	 <script src="/static/myvmware/modules/vcredit/js/trialEstimator-JS/controllers/addonController.js"></script>
+	 <script src="/static/myvmware/modules/vcredit/js/trialEstimator-JS/controllers/viewEstimateCtrl.js"></script>
+</head>
+<!--[if lt IE 7 ]> <body class="no-js liferay starlight ie7 lt-ie8"> <![endif]-->
+	<!--[if IE 7 ]> <body class="no-js liferay starlight ie7 lt-ie8"> <![endif]-->
+	<!--[if IE 8 ]> <body class="no-js liferay starlight ie8"> <![endif]-->
+	<!--[if IE 9 ]> <body class="no-js liferay starlight ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!-->
+    <body class="starlight liferay">
+	<!--<![endif]-->
+	<section class="page-eyebrow">
+		<div class="starlight container">
+			<div class="page-eyebrow">
+				<nav class="eyebrow-menu menu-eyebrow">
+					<a class="menu-link-quick" href="javascript:void(0);">Quick Links </a>
+					<div class="starlight-eyebrow-quick">
+						<!-- <a title="Select a Country/Region" href="/in/worldwide.html" class="pull-left user-locale">
+							<span class="icons-locale_bg"></span>English
+						</a> -->
+						<div id="vmbar">
+							<div id="localeSelector" class="vmbar-vmware">
+								<span class="icons-locale_bg"></span><a data-target="#myModal" data-toggle="modal" class="locale-selector" href="#">English</a>
+							</div>
+						</div>
+					</div>
+				</nav> 
+			</div>
+		</div>
+	</section>
+    <section class="starlight container page-container">
+            <header class="header clearfix">
+				<a title="vmware" href="/" class="page-logo-my"></a><span class="brand"></span>
+			</header>        
+            <section  class="content-container" id="ng-app" ng-app="estimator">
+
+                <!-- Content -->
+                <div ui-view="estimator-view">
+                </div>
+                <!-- Content End -->
+                
+
+            </section>
+
+            
+
+        </section>
+		
+		<div id="footer-container">
+    <div id="p_p_id_MyVMWareFatFooterPortlet_WAR_itcrossfunctional_" class="portlet-boundary portlet-boundary_MyVMWareFatFooterPortlet_WAR_itcrossfunctional_  portlet-static portlet-static-end  ">
+        <a id="p_MyVMWareFatFooterPortlet_WAR_itcrossfunctional"></a>
+        <section class="portlet" id="portlet_MyVMWareFatFooterPortlet_WAR_itcrossfunctional">
+            <div class="portlet-content">
+                <div class=" portlet-content-container" style="">
+                    <div class="portlet-body">
+                        <div class="reskinningFooterWrap">
+                            <div class="container-fluid fluid-width">
+                                <div class="row footerLinksHolder">
+                                    <div class="col-md-3 linksWrap border0">
+                                        <div class="linkHdr">About My Vmware</div>
+                                        <ul>
+                                            <li><a href="//kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&amp;docType=ex&amp;bbid=TSEBB_1334373573903&amp;url=&amp;stateId=1%200%20454816648&amp;dialogID=454806944&amp;docTypeID=DT_KB_1_1&amp;externalId=2017468&amp;sliceId=1&amp;rfId=">Top 10 things to know</a> </li>
+                                            <li><a href="//kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&amp;docType=ex&amp;bbid=TSEBB_1334365725551&amp;url=&amp;stateId=1%200%20454816648&amp;dialogID=454806944&amp;docTypeID=DT_KB_1_1&amp;externalId=2014350&amp;sliceId=2&amp;rfId=">My vmware FAQ</a> </li>
+                                            <li><a href="//kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&amp;docType=kc&amp;externalId=2020793&amp;sliceId=1&amp;docTypeID=DT_KB_1_1&amp;dialogID=454806944&amp;stateId=1%200%20454816648">Index of My Vmware Articles</a> </li>
+                                            <li><a href="#">Managing Folders in My VMware</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 linksWrap">
+                                        <div class="linkHdr">Vmware Technology</div>
+                                        <ul>
+                                            <li><a href="//www.vmware.com/end-user-computing.html">End-User Computing</a> </li>
+                                            <li><a href="//www.vmware.com/cloud-computing/hybrid-cloud.html">Hybrid Cloud</a> </li>
+                                            <li><a href="//www.vmware.com/software-defined-datacenter/index.html">Software-Defined Data Center</a> </li>
+                                            <li><a href="//www.vmware.com/virtualization/">Virtualization</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 linksWrap">
+                                        <div class="linkHdr">Try &amp; Purchase</div>
+                                        <ul>
+                                            <li><a href="//hol.vmware.com/">Vmware Hands-on Lab</a> </li>
+                                            <li><a href="//www.vmware.com/appliances">Virtual Applications Marketplace</a> </li>
+                                            <li><a href="://my.vmware.com/group/vmware/eppenroll">Vmware Purchasing Programs</a> </li>
+                                            <li><a href="//partnerlocator.vmware.com/">Partner Locator</a> </li>
+                                            <li><a href="//www.vmware.com/vmwarestore/">Online Store</a> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 linksWrap">
+                                        <div class="linkHdr">Community</div>
+                                        <ul>
+                                            <li><a href="://communities.vmware.com/community/vmtn">VMTN Communities</a> </li>
+                                            <li><a href="//blogs.vmware.com/">VMware Blogs</a> </li>
+                                            <li><a href="//www.vmware.com/community_terms">Community Terms of Use</a> </li>
+                                            <li><a href="//developercenter.vmware.com/web/dp">Developer Center</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="p_p_id_MyVMWareFooterPortlet_WAR_itcrossfunctional_" class="portlet-boundary portlet-boundary_MyVMWareFooterPortlet_WAR_itcrossfunctional_  portlet-static portlet-static-end  ">
+        <a id="p_MyVMWareFooterPortlet_WAR_itcrossfunctional"></a>
+        <section class="portlet" id="portlet_MyVMWareFooterPortlet_WAR_itcrossfunctional">
+            <div class="portlet-content">
+                <div class=" portlet-content-container" style="">
+                    <div class="portlet-body">
+                        <footer class="wrapper">
+                            <div class="footerbar">
+                                <p>Copyright © 2014 VMware, Inc. All rights reserved.</p>
+
+                                <ul class="footer-nav-links">
+                                    <li>
+                                        <a title="Contact Us" target="_blank" href="//www.vmware.com/company/contact/">     Contact Us    </a>
+                                    </li>
+                                    <li>
+                                        <a title="Terms of Use" href="/web/vmware/terms-of-use?mode=view">     Terms of Use    </a>
+                                    </li>
+                                    <li>
+                                        <a title="Privacy" target="_new" href="//www.vmware.com/help/privacy.html">     Privacy    </a>
+                                    </li>
+                                    <li>
+                                        <a title="Accessibility" href="//www.vmware.com/accessibility.html">Accessibility</a>
+                                    </li>
+                                    <li>
+                                        <a title="Site Index" href="//www.vmware.com/site_index.html">Site Index</a>
+                                    </li>
+                                    <li>
+                                        <a title="Help" href="//www.vmware.com/help/">Help</a>
+                                    </li>
+                                    <li><a href="javascript:void(0);">
+				Feedback</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</div>
+		
+    <!-- Background divs -->
+    <div class="page-b-header-gradient">
+    </div>
+    <div class="page-b-footer-gradient">
+    </div>
+    <!-- ##################### -->
+
+
+
+</body>
+
+</html>
+<script type="text/javascript">
+	vmf.include(["datatable","parsley"]);
+	var vCredit =   {
+        "globalVars" : {
+			"payment_type1" : 'for 12 months',
+            "payment_type2" : '/ month',
+            "payment_type3" : '/ year',
+            "payment_type4" : "",
+            "months": 'Month(s)',
+            "days": 'Day(s)',
+            "years": 'Years',
+            "quantityText":"Quantity",
+            "discountsText": "Discounts",
+            "serviceType_error" : 'Please select a sevice type.',
+			"term_error" : 'Please select a term.',
+			"ajax_error_body" : 'Content is not available',
+			"msrp" : 'MSRP',
+			"serviceType" : 'Service Type',
+			"region" : 'Region',
+			"backBtn" : 'Back',
+			"cancelBtn" : 'Cancel',
+			"continueBtn" : 'Continue',
+			"editBtn" : 'edit',
+			"saveBtn" : 'save',
+			"SKU" : 'SKU',
+			"paymentType" : 'Billing Type',
+			"qty" : 'Quantity',
+			"changeConfiguration" : 'Change configuration',
+			"term" : 'Term',
+			"requiredFields" : 'All fields are required.',
+			"service" : 'Service',
+			"selectRegion" : 'Select a region to display Service type.',
+			"storage" : 'Storage',
+			"currency" : 'Currency',
+			"NoAddOnService" : 'No Add ON selected for this service.',
+			"coreService" : 'Subscription Service',
+			"billingType" : 'Billing Type',
+			"quantity" : 'Quantity',
+			"billingRate" : 'Billing Rate',
+			"extendedCost" : 'Extended Cost',
+			"vcredit_path" : "/static/myvmware/modules/vcredit/",
+			"chooseService":"CHOOSE SERVICE",
+			"configureService":"CONFIGURE SERVICE",
+			"addAdditionalCapacity":"ADD ADDITIONAL CAPACITY",
+			"viewEstimate":"VIEW ESTIMATE",
+			"totalEstimatedCredits":"Total Estimated Credits",
+			"viewConsolidatedEstimate":"View Consolidated Estimate",
+			"creditNeeded":"Credit Needed:",
+			"priceList":"Price List",
+			"customerType":"Customer Type",
+			"country":"Country",
+			"vpnFalseSubtitleTop" : "Subscription Credits offer a flexible way to purchase Subscription Services. You can budget for services upfront and redeem credits as desired.",
+			"vpnFalseSubtitleBottom" : "Provide the Information below to begin estimating the Subscription Credits.",
+			"vpnTrueSubtitle" : "Provide the Information below to begin estimating the Subscription Credits your customer needs to purchase new Subscription Services.",
+			"selectYourCountry" : "Select Your Country",
+			"selectPriceList" : "Select Price List",
+			"selectCustomerType" : "Select Customer Type",
+			"cartPopOver_ModalMsg" : "Do you want to exit this page? You will lose your current service configuration.",
+			"modal_confirm" : '',
+			"estimate" : "Estimate",
+			"coreServiceConfig" : "Core Service Configuration",
+			"configDetails" : "Configuration Details",
+			"selectSubcriptionText" : "Select Subscription Service Add-ons below. You can proceed without selecting any Add-ons by clicking Continue.",
+			"subscriptionServiceAddon" : "Subscription Service Add-ons",
+			"optional" : " (Optional)",
+			"credits" : "Credits",
+			"service_Details":"Service Details",
+			"billing_Type":"Billing Type",
+			"core_Service":"Core Service",
+			"compute":"Compute",
+			"sce_p1":"Below is the consolidated estimate of the total number of credits needed for the Subscription Services that you configured using the Subscription Credit Estimator. You can remove a Subscription Service or Add-on from this consolidated estimate. You can add another service or export the estimate to Excel.",
+			"sce_p2":"*The pricing informaton shown is for estimation purpose only. The actual cost of each Subscription Service will be determined at the time of purchase.",
+			"month_s":"months",
+			"add_on":"ADD-ON",
+			"coreService" : "Core Service",
+			"unitCost" : "Unit Cost",
+			"exportToExcel":"Export to Excel",
+			"removeAService":"Remove a Service",
+			"removeServiceMessage":"Would you like to remove this Subscription Service and any related Add-ons from your estimate?",
+			"remove":"Remove",
+			"removeAddon":"Remove an Add-on",
+			"removeAddonMsg":"Would you like to remove this Subscription Service Add-on from your estimate?",
+			"update": "Update",
+			"updateBilling_Term" : "Update Billing Type and Term",
+			"region_tooltip":"Region refers to the location of the data center where the Subscription Service will be hosted. To minimize transit delays, select the Region that is closest to the largest number of end users.",
+			"seriveType_tooltip":"Depending on the Subscription Service you have selected, multiple Service Types may be available. To learn more, visit <a href='http://www.vmware.com/products' target='_blank'>VMware.com/products</a>.",
+			"storage_tooltip":"Depending on the Subscription Service you have selected, multiple Storage options may be available. To learn more, visit <a href='http://www.vmware.com/products' target='_blank'>VMware.com/products</a>.",
+			"billingType_tooltip":"The availability of different billing options depends on the Service Type you selected above.",
+			"term_tooltip":"Depending on the Service Type you have selected above, different subscription term lengths may be available.",
+			
+			"dataExistError" : "Data doesn't exist for selected criteria.",
+	      	"credit" : "Credit",
+	      	"select_a_service":"Select a Service",
+			"countryTooltip" : "Your estimate will be generated in a currency VMware supports for the country you select. When you purchase Subscription Credits, you will be charged in the VMware supported currency of the country in which you are located.",
+			"customerTypeTooltip" : "Select Commercial or Academic to generate an estimate specific to your customer type. You are not required to verify your customer type during the estimation process.",
+			"configurationInProgress" : "(Configuration in Progress)",
+			"smryToolTip":"",
+			"viewEstSprtToolTip":"Provide this SKU code to your VMware Account Executive or Offering Partner to purchase the exact number of Subscription Credits shown above.",
+			"quantitySize" : "3",
+			"currencyToolTip" : "Select the VMware-supported currency of the country where your customer is located. This should be the same currency the customer will use to purchase Subscription Credits.",
+			"internalCustomerTypeTooltip" : "Select Commercial or Academic to generate an estimate specific to this customer.",
+			"internalCustomerTypeTooltip" : "Select Commercial or Academic to generate an estimate specific to this customer.",
+			"noPriceAssociated" : 'Rate information is unavailable at this time. Please contact your VMware Account Executive for pricing details.',
+			"noAddOns" : 'No add-ons to display...',
+
+			//Newly added TAgs
+			"buildAnEstimate":"Build an Estimate",
+			"purchaseASubscriptionService":"Purchase a Subscription Service",
+			"page1_heading1_makeYourSelection":"Make your selections from the drop down menus below so we can provide you with the most current Subscription Service offerings available.",
+			"purchaseSubscriptionServiceDescription":"You have decided to convert your trial to a paid Subscription Service. By purchasing now, you ensure you will retain the same environment you started in your trial. To get started, select your payment method below.",
+			"trialName":"Trial Name:",
+			"trialId":"Trial ID:",
+			"expiryDate":"Expiry Date:",
+			"account": "Account",
+			"balance":"balance",
+			"expiry":"expires",
+			"purchaseOrderDes":"Use our estimator to create the {0} service offering you want to convert to. Then, export your estimate and discuss it with your preferred VMware Account Executive or Partner.",
+			"editions" : "Editions",
+            "editions_tooltip" : "Editions tooltip text",
+            "viewEstimateDesc1" : "Export this estimate to Excel and send it to your VMware Account Executive or preferred Partner.",
+            "viewEstimateDesc2" : "If you'd like to update your Billing Type and Term, select from the drop down menus below to recalculate the estimate.",
+            "viewEstimateDesc3" : "*The pricing information shown is for estimation purposes only. The actual cost of this new Subscription Service will be determined at the time of purchase.",
+            "totalEstimatedCost" : "Total Monthly Estimated Cost",
+            "estimatedCredits" : "Total Estimated Credit needed",
+            "estimatedCreditsTooltip" : "The credit estimate is for our Subscription Purchasing Program <a href='https://my.vmware.com/group/vmware/spp-landing'>Learn More</a>",
+            "trialID" : "Trial ID",
+            "btnClose":"Close",
+            "goToMyVMWHome":"Go to My VMware Home",
+            "confirm_message" : "Do you want to exit this page? You will lose your current service configuration.",
+            "confirm" : "Confirm",
+ 			"totalCost":"Total Cost:",
+ 			
+ 			"howToBuy": "How to Buy",
+ 			"fundDetected": "We've detected you have Subscription Service Funds. Please select one of the following purchase options.",
+ 			"noFundDetected": "To purchase this Subscription Service you must build an estimate and submit it to your preferred VMware Account Executive or Partner.",
+ 			"paySubscriptionFund": "I want to use my Subscription Service Funds and complete my purchase today.",
+			"payPurchanceOrder": "I want to build an estimate and purchase from my preferred VMware Account Executive or Partner.",
+
+            //Resource URLs
+			"purchaseSubscriptionServiceURL":"/static/myvmware/modules/vcredit/json/trialToPaid/step1-pay-Order.json",
+			"step2BuildanEstimateURL":"/static/myvmware/modules/vcredit/json/trialToPaid/step2-Build-an-Estimate.json",
+            "step3ConfigureServiceURL":"/static/myvmware/modules/vcredit/json/trialToPaid/step3-configure-service.json",
+            "step4AddadditionalCapacityURL":"/static/myvmware/modules/vcredit/json/trialToPaid/step4-add-additional-capacity.json",
+            "step5ViewEstimateURL":"/static/myvmware/modules/vcredit/json/trialToPaid/step5-view-estimate.json",
+            "step5ViewEstimateUpdateClickURL":"/static/myvmware/modules/vcredit/json/trialToPaid/step5-view-estimate-update-click.json",
+            "editAddonQuantityInStack" : "/static/myvmware/modules/vcredit/json/trialToPaid/viewEstimatePostUrl.JSON",
+			"removeAddonPostURL" : "/static/myvmware/modules/vcredit/json/trialToPaid/viewEstimatePostUrl.JSON",
+			"errorURL" : "/static/myvmware/modules/vcredit/json/trialToPaid/error.JSON",
+			"exportSingleServiceNew" : "/static/myvmware/modules/vcredit/json/trialToPaid/viewEstimatePostUrl.JSON",
+			"dashboardURL" : '/dashboard.html#/',
+            "closeButtonURL" : "/dashboard.html#/",
+            "configuratorURL": "/vcredit_configurator.html",
+            "encodedTrialID": "jax_esS4IEGZnURnHsZu4Q"
+
+			
+        }
+    }
+
+</script>

@@ -1,0 +1,31 @@
+{
+    "wrapper": {
+        "serviceID": "M299932332",
+        "serviceName": "VMware Horizon DaaS OnDemand",
+        "eaAccount": "qatest0055",
+        "eaAccountNumber": "364571507",
+        "fundName": "SPP_11988746",
+        "promotionDetails": null,
+        "instanceModel": "OnDemand",
+        "serviceInstanceId": "p9mJ6a8DlSoHSRsr-2nFTA",
+        "serviceInstanceName": "p9mJ6a8DlSoHSRsr-2nFTA",
+        "service": "VMware Horizon DaaS",
+        "sppID": null,
+        "configureUrl": "http://vmware.com/DaaS/ConfigURL/M885488635",
+        "configureText": "Visit Configuration Portal",
+        "rightSec": [
+            {
+                "header": null,
+                "desc": null,
+                "linkText": null,
+                "linkUrl": null
+            },
+            {
+                "header": null,
+                "desc": null,
+                "linkText": null,
+                "linkUrl": null
+            }
+        ]
+    }
+}

@@ -1,0 +1,676 @@
+//colors
+$color_mercury_approx: #e6e6e6;
+$color_cerulean_approx: #0095d3;
+$color_bahama_blue_approx: #006990;
+$color_celeste_approx: #cccccc;
+$white: #ffffff;
+$black_70: rgba(0, 0, 0, 0.7);
+$color_key_lime_pie_approx: #c1cd23;
+$color_silver_approx: #c1c1c1;
+$color_alizarin_crimson_approx: #e32828;
+$color_la_palma_approx: #387c2c;
+$color_mine_shaft_approx: #333333;
+$color_sushi_approx: #6db33f;
+//fonts
+$font_0: proxima-nova-light;
+$font_1: proxima-nova-regular;
+$font_2: proxima-nova-bold;
+$font_3: proxima-nova-semibold;
+
+//@extend-elements
+//original selectors
+//.flexslider .flex-direction-nav a.flex-prev, .flexslider .flex-direction-nav a.flex-next
+%extend_1 {
+  height: 45px;
+  text-indent: -99999px;
+  //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: none 0s ease 0s;
+  width: 33px;
+  opacity: 1 !important;
+}
+
+//original selectors
+//.starlight .page-b-footer-gradient, .starlight .page-b-footer-pattern
+%extend_2 {
+  bottom: 0;
+}
+
+
+h2 {
+  line-height: 20px;
+}
+body {
+  &.starlight {
+    #content-container {
+      background: none !important;
+    }
+    .content-container {
+      background: none !important;
+      padding: 20px 0 0;
+    }
+    .icons-locale_bg {
+      background: url("/vmf/c/4.0/images/bg_alert_spite.png") no-repeat;
+      background-position: 0 -728px;
+      height: 16px;
+    }
+  }
+  &.liferay.starlight {
+    input[type="checkbox"] {
+      display: none;
+    }
+    input[type="radio"] {
+      display: none;
+    }
+  }
+}
+.menu-link-quick {
+  display: none;
+}
+.starlight {
+  .page-b-footer-gradient {
+    bottom: 0;
+    @extend %extend_2;
+  }
+  .page-b-footer-pattern {
+    @extend %extend_2;
+  }
+  .header .page-logo {
+    background-image: url("/vmf/c/4.0/images/reskinning/MyVMware_logo_home.png") !important;
+    width: 252px !important;
+    height: 40px !important;
+    background-repeat: no-repeat !important;
+    margin: 40px 0 0 !important;
+  }
+  &.liferay .flex-direction-nav .flex-next :before {
+    content: "" !important;
+  }
+}
+.flexslider {
+  border: 0 !important;
+  height: 400px;
+  margin: 0 0 30px !important;
+  .flex-direction-nav {
+    a {
+      &.flex-prev {
+        @extend %extend_1;
+      }
+      &.flex-next {
+        @extend %extend_1;
+      }
+    }
+    .flex-next {
+      background: url("/vmf/c/4.0/images/reskinning/carousel-arrows-white.png") $black_70 35px 0 !important;
+      text-indent: 1000px !important;
+      //Instead of the line below you could use @includeborder-top-left-radius($radius)
+      border-top-left-radius: 4px;
+      //Instead of the line below you could use @includeborder-bottom-left-radius($radius)
+      border-bottom-left-radius: 4px;
+    }
+    .flex-prev {
+      left: -1px !important;
+      margin-left: 0;
+      background: url("/vmf/c/4.0/images/reskinning/carousel-arrows-white.png") $black_70 0 0 !important;
+      //Instead of the line below you could use @includeborder-top-right-radius($radius)
+      border-top-right-radius: 4px;
+      //Instead of the line below you could use @includeborder-bottom-right-radius($radius)
+      border-bottom-right-radius: 4px;
+    }
+  }
+  .slides img {
+    height: 400px !important;
+  }
+}
+.container {
+  width: 75.8%;
+}
+.flexContainer {
+  width: 64%;
+}
+.flex-control-paging {
+  display: none;
+}
+.flex-direction-nav {
+  .flex-next {
+    right: 0 !important;
+    opacity: 1 !important;
+  }
+  .flex-prev {
+    left: 0 !important;
+    opacity: 1 !important;
+  }
+}
+.flex-control-nav {
+  bottom: 20px !important;
+  z-index: 2;
+  display: block;
+  li {
+    height: 12px;
+    width: 12px;
+    background-color: #FFFFFF;
+    //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 25px;
+    &.flex-active {
+      background-color: #C1CD23;
+    }
+  }
+}
+.flex-prev {
+  left: 0;
+  background: url("/vmf/c/4.0/images/reskinning/carousel-arrows.png") 0 0 !important;
+  font-size: 1px !important;
+  content: "" !important;
+  opacity: 1;
+}
+.flex-next {
+  opacity: 1;
+  right: 0;
+  text-align: right;
+  background: url("/vmf/c/4.0/images/reskinning/carousel-arrows.png") 0 -100px !important;
+  font-size: 1px !important;
+  content: "" !important;
+}
+.flex-1 {
+  h2 {
+    line-height: 35px;
+    font-size: 38px;
+    font-family: $font_0;
+    color: #FFFFFF;
+    margin: 71px 330px 45px 0;
+  }
+  .description {
+    margin-right: 190px;
+    font-size: 16px;
+    font-family: $font_1;
+  }
+  .flex-caption .link {
+    color: #C2CC22;
+  }
+  .flex-caption {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    color: white;
+    padding: 0 32px 0 62px;
+  }
+}
+.flex-2 {
+  h2 {
+    font-size: 45px;
+    font-family: $font_0;
+    color: #FFFFFF;
+    margin-top: 63px;
+    margin-bottom: 18px;
+  }
+  .description {
+    margin-bottom: 21px;
+    font-size: 14px;
+    font-family: $font_1;
+  }
+  .description_2 {
+    .link {
+      font-size: 14px;
+      font-family: $font_2;
+      color: $white;
+      display: block;
+    }
+    p {
+      font-size: 14px;
+      font-family: $font_0;
+    }
+  }
+  .flex-caption {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    color: $white;
+    padding: 0 32px 0 62px;
+    .description .link {
+      display: inline-block;
+      padding-bottom: 15px;
+      font-family: $font_3;
+      color: #C1CD23;
+    }
+  }
+}
+.flex-3 {
+  h2 {
+    font-size: 45px;
+    font-family: $font_0;
+    color: #FFFFFF;
+    margin-top: 81px;
+    margin-bottom: 15px;
+  }
+  h3 {
+    color: #FFFFFF;
+    margin: 0;
+    font-family: $font_0;
+    font-size: 14px;
+  }
+  .flex-caption {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    color: $white;
+    padding: 0 32px 0 62px;
+    div a.link {
+      color: #FFFFFF;
+      font-family: $font_3;
+      font-size: 14px;
+      margin-bottom: 3px;
+      display: block;
+    }
+  }
+  .description {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-family: $font_1;
+  }
+}
+.register {
+  float: right;
+  width: 33.3333%;
+  margin-bottom: 30px;
+}
+.loginContainer {
+  background-color: $white;
+  margin-right: 30px;
+  padding: 35px 40px 58px 30px;
+}
+.h-icon-green {
+  background-image: url("/vmf/c/4.0/images/reskinning/large-angle-icon-green.jpg");
+}
+.h-icon-blue {
+  background-image: url("/vmf/c/4.0/images/reskinning/large-angle-icon-dark-blue.png");
+}
+.h-icon {
+  background-repeat: no-repeat;
+  min-height: 22px;
+  padding-left: 30px;
+}
+.h-4 {
+  color: $color_bahama_blue_approx;
+  font-size: 18px;
+  font-weight: 600;
+}
+.login {
+  width: 97.3%;
+  padding: 5px;
+  margin-top: 15px;
+  margin-left: 15px;
+  height: 30px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  border: 1px solid $color_celeste_approx;
+}
+.forgotPassword {
+  display: block;
+  color: $color_bahama_blue_approx;
+  font-size: 14px;
+  margin-left: 16px;
+  margin-top: 5px;
+}
+.loginButton {
+  height: 40px;
+  margin-top: 10px;
+  width: 120px;
+  float: right;
+}
+.hr-shadow {
+  background: linear-gradient(to bottom, $color_silver_approx 0, $color_mercury_approx 41%) repeat scroll 0 0 transparent;
+  //Instead of the line below you could use @includeborder-bottom-left-radius($radius)
+  border-bottom-left-radius: 20px;
+  //Instead of the line below you could use @includeborder-bottom-right-radius($radius)
+  border-bottom-right-radius: 20px;
+  //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 0 10px 0 $color_mercury_approx inset;
+  display: block;
+  height: 10px;
+  hr {
+    display: none;
+  }
+}
+.margin-top-15 {
+  margin-top: 15px;
+}
+.staySigned {
+  margin-left: 6px;
+  top: 16px;
+  position: relative;
+}
+.registerLink {
+  min-height: 100px;
+  background-color: $color_mercury_approx;
+  margin-right: 30px;
+  padding: 34px 40px 34px 30px;
+  h2 {
+    margin-top: 0;
+  }
+}
+.footerHead {
+  text-align: center;
+  color: $color_mine_shaft_approx;
+  font-size: 22px;
+  display: block;
+  border-bottom: 1px solid $color_mercury_approx;
+  padding-bottom: 10px;
+  margin: 0 0 25px 0;
+  font-family: $font_3;
+  .green {
+    color: $color_la_palma_approx;
+  }
+  .right-column-links {
+    color: $color_bahama_blue_approx;
+    font-size: 16px;
+  }
+}
+.infoFooter {
+  width: 100%;
+  clear: both;
+}
+.left-column {
+  float: left;
+  width: 64%;
+  border-top: 5px solid $color_key_lime_pie_approx;
+  background-color: $white;
+  padding: 25px 30px;
+}
+.footerText {
+  width: 33%;
+  float: left;
+  padding-right: 45px;
+  margin-top: -7px;
+  font-size: 16px;
+  font-family: $font_1;
+  span {
+    font-size: 16px;
+    color: $color_mine_shaft_approx;
+    margin-top: 5px;
+  }
+}
+.right-column {
+  float: left;
+  background-color: $white;
+  border-top: 5px solid #6DB33F;
+  margin-left: 30px;
+  width: 30.8%;
+  padding: 18px 32px 35px;
+  .link {
+    line-height: 25px;
+    font-family: $font_3;
+  }
+  .footerHead {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
+}
+.footerIcons {
+  display: block;
+  float: left;
+  min-height: 90px;
+}
+.footerbar {
+  border: none;
+  p {
+    padding-top: 46px !important;
+  }
+}
+#signedIn-checkbox {
+  display: none;
+}
+input[type="checkbox"] {
+  + label:before {
+    content: "";
+    display: inline-block;
+    height: 19px;
+    margin-right: 5px;
+    text-indent: 20px;
+    width: 19px;
+    vertical-align: text-top;
+    margin-left: 8px;
+    background: url("/vmf/c/4.0/images/reskinning/input_checks.png") no-repeat scroll -114px center transparent;
+  }
+  &:checked + label:before {
+    background: url("/vmf/c/4.0/images/reskinning/input_checks.png") no-repeat scroll 0 center transparent;
+  }
+}
+@media (max-width: 1200px) {
+  .flexContainer {
+    float: none;
+    margin: auto;
+    width: 100%;
+  }
+  .register {
+    float: none;
+    width: 100%;
+    margin: auto;
+  }
+  .loginContainer {
+    margin-left: 0;
+  }
+  .registerLink {
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .left-column {
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .right-column {
+    margin-left: 0;
+    float: none;
+    width: 100%;
+  }
+  .footerText {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .footerIcons {
+    display: inline-block;
+    float: none;
+    min-height: 23px;
+  }
+  .textDiv {
+    vertical-align: top;
+  }
+}
+@media (max-width: 899px) {
+  .menu-link-quick {
+    display: inline-block !important;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .starlight-eyebrow-quick {
+    display: none;
+    &.is-active {
+      display: block !important;
+    }
+    ul.navBarCustom {
+      float: none !important;
+      display: block;
+      background-color: $color_mercury_approx;
+      border-top: 6px solid $color_cerulean_approx !important;
+      padding: 20px 20px 30px !important;
+      margin-top: 40px !important;
+    }
+  }
+  .menu-item-quick {
+    color: $color_bahama_blue_approx !important;
+  }
+  .quick-link-wrapper {
+    display: inline-block;
+    padding: 11px 0;
+    margin-left: -4px !important;
+    background: url("/vmf/c/4.0/images/reskinning/eyebrow-menu-arrow.png") 92px 17px;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+    padding-left: 9px;
+    background-size: 14px;
+    float: right;
+    margin-right: 60px;
+    &.is-active {
+      background: url("/vmf/c/4.0/images/reskinning/down_arrow_active.png") 92px 17px $color_cerulean_approx;
+      background-repeat: no-repeat;
+    }
+  }
+  .flex-control-nav {
+    display: none;
+  }
+  li.navBorderAfter {
+    float: none !important;
+    display: block !important;
+    border: none !important;
+    margin-top: 10px !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    font-size: 16px !important;
+    a {
+      float: none !important;
+      display: block !important;
+      border: none !important;
+      margin-top: 10px !important;
+      margin-left: 0 !important;
+      padding-left: 0 !important;
+      font-size: 16px !important;
+    }
+    &.locale-li {
+      border-top: 1px solid #CCCCCC !important;
+      display: block !important;
+    }
+  }
+  a.user-locale {
+    display: none;
+  }
+  .locale-li a.user-locale {
+    padding-left: 40px !important;
+    height: 16px !important;
+  }
+  .starlight .page-eyebrow {
+    nav.eyebrow-menu {
+      margin-top: 0;
+    }
+    .eyebrow-menu a:hover {
+      color: #FFFFFF;
+    }
+  }
+  .flex-1 h2 {
+    font-size: 25px;
+  }
+  .flex-2 h2 {
+    font-size: 25px;
+  }
+  .flex-3 h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 661px) {
+  .flex-1 {
+    h2 {
+      margin-bottom: 4% !important;
+    }
+    .flex-caption h2.white {
+      width: 140px;
+    }
+  }
+  .flex-3 {
+    h2 {
+      margin-bottom: 4% !important;
+    }
+    .flex-caption h2.white {
+      padding-top: 30px !important;
+    }
+  }
+  .flex-2 {
+    h2 {
+      margin-bottom: 2% !important;
+    }
+    .flex-caption h2.white {
+      padding-top: 0 !important;
+    }
+  }
+  .flexslider .slides .flex-caption div p {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 523px) {
+  .container {
+    width: 95%;
+  }
+  .loginButton {
+    float: none !important;
+    margin-left: 30% !important;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1550px) {
+  .loginButton {
+    float: none !important;
+    margin-left: 36% !important;
+  }
+  .registerLink {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    min-height: 0;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1311px) {
+  .flex-2 .flex-caption div {
+    h2 {
+      padding-top: 0;
+      margin-bottom: 2%;
+    }
+    #register-now-carousel-link {
+      padding-bottom: 0;
+    }
+    p.white {
+      margin-bottom: 0;
+    }
+  }
+}
+@media (min-width: 1201px) {
+  .textDiv {
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 860px) {
+  .flex-caption {
+    padding: 0 !important;
+    p.white {
+      font-size: 14px;
+    }
+  }
+}
+li.locale-li.navBorderAfter {
+  display: none !important;
+}
+.slides:after {
+  content: "\0020";
+}
+.login-form .parsley-custom-error-message {
+  list-style: none;
+  font-size: 14px;
+  color: #E32828;
+  background: url("/vmf/c/4.0/images/reskinning/form-error.png") 0 3px no-repeat;
+  padding-left: 18px;
+  margin: -5px 0 -14px 15px;
+  position: absolute;
+}
+.video_vmware:after {
+  content: url("/vmf/c/4.0/images/reskinning/video_image.png");
+  margin-left: 2px;
+}
+.pdf_vmware:after {
+  content: url("/vmf/c/4.0/images/reskinning/pdf_image.png");
+  margin-left: 7px;
+}
+input[type="checkbox"][disabled] + label:before {
+  background: url("/vmf/c/4.0/images/reskinning/input_checks.png") no-repeat scroll -152px center transparent;
+  cursor: not-allowed;
+}
+.body.starlight #content-container {
+  padding: 20px 0 0;
+}

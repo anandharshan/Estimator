@@ -1,0 +1,38 @@
+<section tabindex="-1" role="dialog" aria-labelledby="changeFundModal" aria-hidden="true" class="overlay" id="changeFundModal">
+    <div class="modal-header">
+        <span class="close" data-dismiss="modal" aria-hidden="true" ng-click="cancel()"></span>
+        <h3 class="modal-title">{{globalVars.selectDifferentFund}}</h3>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <label>{{globalVars.account}} :</label>&nbsp;&nbsp;{{changeFundModalData.eaNumber}} - {{changeFundModalData.eaName}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 form-control-static">
+                <div class="radio" data-ng-repeat="(fundKey, fundVal) in changeFundModalData.fundDetails">
+                    
+                        <input id="changeID{{$index}}" type="radio" name="rFundName" ng-value="fundVal.groupId" ng-checked="fundVal.defaultFlag" ng-click="changeFundValue(fundVal)" ng-disabled="fundVal.trueUp == '0' && fundVal.balance <= '0'">
+                        <label for="changeID{{$index}}"><strong>{{fundVal.name}}</strong>&nbsp;{{globalVars.balance}} {{fundVal.balance | customCurrency:fundVal.currency:fundVal.redemptionCurrency}},&nbsp;{{globalVars.expires}} {{fundVal.expiry}}
+                        </label>
+                </div>
+				<div ng-if="!changeFundModalData.fundDetails.length">
+                    <span class="form-required">{{globalVars.noFundMessage}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <span ng-if="ajaxFundLoader">
+                        <div class="ajaxSpinner">&nbsp;</div> 
+                    </span>
+                <span class="form-required">{{errMessage}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a type="button" class="btn btn-primary" ng-disabled="continueFundDisable" ng-click="continueChangeFundModal()">{{globalVars.continueBtn}}</a>
+        <a type="button" class="btn btn-default" ng-click="cancel()">{{globalVars.cancelBtn}}</a>
+    </div>
+</section>

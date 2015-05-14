@@ -1,0 +1,63 @@
+.ui-state-default {
+    background-color: #ccc;
+}
+.ui-state-hover {
+    background-color: #ccc;
+}
+.ui-state-highlight {
+    background-color: #ccc;
+}
+.ui-state-error {
+    background-color: #ccc;
+}
+.splitter-bar-vertical {
+    background-image: url("img/vertical_dots.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 6px;
+}
+.splitter-bar-horizontal {
+    background-image: url("img/horizontal_dots.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 6px;
+	width:100% !important
+}
+.splitter-bar.ui-state-highlight {
+    opacity: 0.7;
+}
+.splitter-iframe-hide {
+    visibility: hidden;
+}
+
+#MySplitter {
+	min-height:450px;
+}
+/*.topPane {
+	min-height: 150px;
+}*/
+.ht150{
+	min-height:150px;
+}
+.bottomPane{width:100% !important}
+#thirdPane {
+	min-height: 100px;
+}
+.minHt550{
+	min-height:550px;
+}
+.minHt500{
+	min-height:500px;
+}
+.minHt450{
+	min-height:450px;
+}
+.minHt415{
+	min-height:415px;
+}
+.minHt530{
+	min-height:530px;
+}
+.minHt428{
+	min-height:428px;
+}

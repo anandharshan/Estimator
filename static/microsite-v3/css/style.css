@@ -1,0 +1,256 @@
+/*
+Theme Name: Style
+Author: Fermin Lira
+Author URI: www.ferminlira.com
+Version: 1.0v
+*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	RESET
+/*-----------------------------------------------------------------------------------*/
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: Arial,Helvetica,sans-serif;  
+	background-image: url(../images/bkg_body_tile.png) repeat-x;
+    height: 100%;
+	color:#333333;
+	
+}
+	
+h2 {
+Font-size: 28 px;
+Font-weight: bold;
+Line-height: 30 px;
+margin-bottom: 50 px;
+Case: Title case;
+text-align:center;
+letter-spacing:0,3em;
+font-family: 'Roboto', sans-serif;
+ font-weight: 500; 
+		}
+		
+h3 {
+Font-size: 15 px;
+Font-weight: bold;
+Case: Title case;
+color:#555;
+font-family: 'Roboto', sans-serif;
+ font-weight: 500; 
+		}
+		
+		
+p {
+line-height:1.4em; Font-size: 15 px;
+Color: #333333; Line-height: 15 px; Padding-bottom: 30 px; Case: Sentence case; 
+}	
+
+
+
+.wrapper {
+		width: 100%;
+	 	height: 100%;
+ 		background-image: url(../images/bkg_body_tile.png);
+		background-repeat: repeat-x;
+		margin-top:0px;
+		padding-top:10px;
+}
+
+
+
+#content {
+		width: 960px;
+		margin: 0px auto auto auto;
+		padding-top:30px;
+		}
+	
+#content-wrapper {
+    border: 1px solid #888888;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+	margin-top: 40px;
+    padding: 25px 19px 35px;
+    z-index: 2;
+	background: url("../images/bottom-gradient.png") repeat-x scroll left top #FFF;
+
+}
+	
+	
+header {
+		width: 100&;
+		margin-bottom: 0px;
+		padding-bottom:0px;	
+			background: url(../images/header-bg.png) repeat-x;
+	}
+	
+
+	
+#header-wrapper{
+		background: url(../images/header-bg.png) repeat-x;
+		width: 100&;
+	}
+	
+
+header img {
+		margin-bottom: 0px;
+		padding-bottom:0px;
+	}
+	
+.container {
+  *zoom: 1;
+}
+.navbar .container {
+  width: auto;
+}
+.navbar {
+font-size: 14px;
+text-shadow: 4px 1px 0 #FFFFFF;
+}
+
+	
+.row {
+	margin-bottom:10px;
+	border-bottom:1px solid #EEEEEE;
+	display:inline-block;
+	padding-bottom: 20px;
+	padding-top: 50px;
+}
+
+
+.row-content{
+		margin-bottom:43px;
+		display:inline-block;
+		}
+		
+		
+		
+.row p {font-family: 'Titillium Web', sans-serif; 
+margin-top:6px;}
+	
+.left{
+	float:left;
+	margin-right:27px;
+}
+
+.right{
+	float:right;
+	margin-left:27px;
+}
+
+.top-img {
+text-align:center;
+}
+
+.rss {
+    float: right;
+    height: 14px;
+    margin-right: 11px;
+    padding: 0 20px 0 0;
+	background: url("../images/rss_14x14.png") no-repeat scroll right bottom transparent;
+}
+.rss a, a:visited {
+    color: #3399CC;
+    text-decoration: none;
+}
+
+footer {
+display: block;
+ vertical-align: baseline;
+
+}
+
+.footerbar {
+    color: #999999;
+    font-size: 11px;
+	 height: 35px;
+	  padding: 0 0 0 0px;
+	  vertical-align: baseline;
+	  position: relative;
+}
+
+.footerbar p {
+ float: left;
+    line-height: normal;
+    margin: 3px 0 0 0;
+	color:#999999;
+	padding-left:10px;
+}
+
+
+.footerbar ul a, .footerbar ul a:visited {
+    color: #3399CC;
+    text-decoration: none;
+}
+
+#footer-container .footerbar ul {
+
+    margin: 0 6px 0 0;
+    padding: 0 0 0 10px;
+}
+
+#footer-container .footerbar ul li {
+    background: url("../images/sep-footer.gif") no-repeat scroll 0 50% transparent !important;
+    display: inline;
+    float: left;
+    margin: 0 6px 0 0;
+    padding: 0 0 0 10px;
+}
+#footer-container .footerbar ul li:first-child{
+    background-image: none !important;
+    padding-left: 8px;
+}
+
+
+#footer-container {
+    margin-top: 15px;
+}
+
+
+#navigation-bottom {
+	display: inline;
+	list-style: none outside none;
+	margin: 0 0 0 12px;
+	padding: 0;
+	vertical-align: baseline;
+	float:left;
+}
+
+
+   /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      margin-top: 0px;
+    }
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+	    margin-left: 10px;
+    margin-right: 10px;
+  }
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+

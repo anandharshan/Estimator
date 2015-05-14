@@ -1,0 +1,89 @@
+{
+    "wrapper": {
+        "customerType": null,
+        "isXaasFund": "",
+        "eaAccount": "qatest1436",
+        "eaAccountNumber": "313377584",
+        "customerNumber": "7897292256",
+        "isStorageEnabled": null,
+        "serviceName": "VMware vCloud Air Virtual Private Cloud OnDemand",
+        "service": "vCloud Hybrid Service",
+        "fundInfo": {
+            "name": "SPP_11911615_1",
+            "fundGroupId": "GRP10369",
+            "trueUp": "1",
+            "fundBalance": "1580.66667",
+            "redemptionCurrency": "USD",
+            "redemptionCurrencySymbol": "$",
+            "fundCurrencySymbol": "$",
+            "isXaasFund": 1,
+            "fundExpiration": "2015-08-17"
+        },
+        "priceList": null,
+        "paymentType": null,
+        "storageType": null,
+        "crossRefSKUMap": null,
+        "currency": [
+            {
+                "USD": [
+                    "U.S.Dollar",
+                    "$"
+                ]
+            },
+            "USD"
+        ],
+        "partner": [
+            [
+                {
+                    "id": "VMware",
+                    "name": "VMwareInc."
+                }
+            ],
+            "VMware"
+        ],
+        "region": null,
+        "serviceType": null,
+        "promotion": {
+            "promoCode": null,
+            "promoText": null
+        },
+        "rightSec": [
+            {
+                "header": "VMWare Horizon Air",
+                "desc": "VMWare Horizon Air delivers a variety of Subscription Services that provide virtualized and remote desktops and application through s single platform, giving end users acces to all of their Windows and online resources through a unified workspace",
+                "linkText": "Learn More",
+                "linkUrl": ""
+            }
+        ],
+        "redemptionNotes": [
+            "Alabama",
+            "Alaska",
+            "Arizona",
+            "Arkansas",
+            "California",
+            "Colorado",
+            "Connecticut",
+            "Delaware",
+            "Notes 1",
+            "Notes 2",
+            "Notes 3"
+        ],
+        "praxisSupportSKU": [
+            {
+            	"labelID":"105",
+            	"labelTxt":"OnDemand Services Online Support",
+            	"supportTxt":"24/7 Phone and email support. 12% of the total usage cost or minimum $100 per month.",
+            	"supportlink":"https://www.vmware.com/support/services/ondemand-online-support"
+            },
+            {	
+            	"labelID":"200",
+            	 "labelTxt":"OnDemand Services Production Support",
+            	 "supportTxt":"24/7 Email only support. 7% of the total usage cost per month.",
+            	 "supportlink":"https://www.vmware.com/support/services/ondemand-online-support"
+            	 
+            }
+        ]
+
+        
+    }
+}

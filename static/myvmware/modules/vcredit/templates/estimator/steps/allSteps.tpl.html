@@ -1,0 +1,17 @@
+<!-- Template #2... Step 1 -->
+<!-- <article ng-if="showLoader && !showPage">
+	    <div class="row margin-top-20 margin-bottom-20">
+	        <div class="col-md-8-12 text-center">
+	            <div class="ajaxSpinner">&nbsp;</div>   
+	        </div>
+	    </div>
+	</article> -->
+
+<article ng-app="estimator">
+		<ng-content-header></ng-content-header>
+		<ng-progress-bar></ng-progress-bar>
+		<ng-alert-warning></ng-alert-warning>  	
+		<div ui-view="allSteps"></div>
+	
+</article>
+<!-- END OF TEMPLATE #2 -->

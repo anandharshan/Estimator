@@ -1,0 +1,1495 @@
+#content-container .fLeft{float:left;}
+#content-container .fRight{float: right;}
+#content-container .filter-header div.list_links.sdpActionLinks{margin:0 0 0 -10px;}
+#content-container .details-wrapper.sdpAcDetail{background:#EEEEEE;color: #333;border:1px solid #BBBBBB;border-radius:2px;padding:15px;}
+#content-container .details-wrapper.sdpAcDetail div.details table th,
+#content-container .details-wrapper.sdpAcDetail div.details table td{color:#333;padding:2px 10px 2px 0;}
+.partner #content-container .dataTables_wrapper table tr.more-detail td{padding:0 0 10px 40px;}
+.partner #content-container .dataTables_wrapper table tr.more-detail td div.dataTables_wrapper{background:#EEE;padding:10px;border:1px solid #BBBBBB;}
+.partner #content-container .dataTables_wrapper table tr.more-detail td .dataTables_wrapper table td{padding:5px 5px 5px 15px}
+.ie8 #content-container .filter-header div.list_links.sdpActionLinks,
+.ie9 #content-container .filter-header div.list_links.sdpActionLinks{margin:5px 0 0 -10px;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li a{color:#A7E4FF}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li span{padding:0;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li{padding:0 15px 0 30px;border-left: 1px dotted #CCC;color: #CCC;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li:first-child{border:0;margin:0;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li.tick{background: url("img/tick.png") no-repeat scroll 10px -2px transparent;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li.tick.disabled{background: url("img/tick_disabled.png") no-repeat scroll 10px -2px transparent;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li.cross{background: url("img/cross.png") no-repeat scroll 10px -2px transparent;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li.cross.disabled{background: url("img/cross_disabled.png") no-repeat scroll 10px -2px transparent;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li.upload { background: url("img/upload.png") no-repeat scroll 10px -2px transparent;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li.upload.disabled { background: url("img/upload_disabled.png") no-repeat scroll 10px -2px transparent;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li.export { background: url("img/export.png") no-repeat scroll 10px -2px transparent;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li.export.disabled { background: url("img/export_disabled.png") no-repeat scroll 10px -2px transparent;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li.download { background: url("img/download.png") no-repeat scroll 10px -2px transparent;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li.download.disabled { background: url("img/download_disabled.png") no-repeat scroll 10px -2px transparent;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li.assign{background: url("img/assign.png") no-repeat scroll 10px -2px transparent;}
+#content-section .tabContent .filter-header div.list_links.sdpActionLinks ul li.assign.disabled{background: url("img/assign_disabled.png") no-repeat scroll 10px -2px transparent;}
+#content-container .details-wrapper{background: url("img/bg_gray_gradient.png") repeat-x scroll 0 0 #2F2F32;color: #FFFFFF;padding: 15px 5px 20px;}
+#content-container .details-wrapper div.details{background: none repeat scroll 0 0 transparent;border: 0 none;display: block;float: left;padding: 0;width: 35%;}
+#content-container .details-wrapper div.details.subDetail {width:29%; text-align:center;}
+#content-container .serviceDetailPage .details-wrapper div.details.subDetail {border-left: 1px solid #B7B8BA; padding: 16px 0;}
+#content-container .serviceDetailPage .details-wrapper div.details.rt-border {border-right:0px solid #B7B8BA !important;}
+#content-container .details-wrapper div.details.rt-border {border-right:1px solid #B7B8BA;}
+
+#content-container .details-wrapper .fRight{
+float:right !important;}
+
+#content-container .details-wrapper div.two_cols {width: 50%;}
+#content-container .details-wrapper div.details table{}
+#content-container .details-wrapper div.details table th{
+    background: none;
+    border: medium none;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 10px;
+    width:50%;
+}
+#content-container .details-wrapper div.details table td{
+    background: none repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    padding: 2px 0;
+    font-weight:normal;
+    width:50%;
+}
+/* Modified the below styles for Addon-Request details page - Start -- 27/01/2014*/
+#content-container .addonReqDetail.details-wrapper div.details{width:32%}
+#content-container .addonReqPage  div.priceInfo{background-color: #DDDDDD; color: #000000; padding: 25px 0px;width: 28%;float: left;}
+#content-container .addonReqPage div.details{ width: 45%;padding:6px}
+#content-container .addonReqPage div.priceInfo div.info{font-weight:12px;}
+#content-container .addonReqPage div.priceInfo table th{width:77%;color:#333 !important; background: none; border-right: 0; }
+#content-container .addonReqPage div.priceInfo table td{width:30%;color:#333 !important;background: none;}
+#content-container .addonReqPage div.priceInfo table.header-table th{width:35%;color:#333;padding:5px 0}
+#content-container .addonReqPage div.priceInfo table.header-table th.agree{padding-top:25px}
+#content-container .addonReqPage  div.priceInfo table.header-table td{width:50%;color:#333;padding:5px 0}
+#content-container .addonReqPage div.priceInfo table.header-table th a.pay{display:inline}
+#content-container .addonReqPage  div.priceInfo table.header-table th input[type="checkbox"]{display:inline-block;margin-right:3px}
+#content-container .addonReqPage  div.priceInfo table.header-table th div.clause{margin-left:17px;}
+#content-container .addonReqPage  div.priceInfo #AddOnTable tr div.clause.discount {background: url("img/status_icon.png") no-repeat scroll -33px -33px transparent;color: #169167;font-style: normal;line-height: 19px;padding: 0 0 0 21px;}
+#content-container .addonReqPage div.details.priceInfo table button.tooltip{margin: 0 !important;}
+/* Added the below styles for Addon-Request details page - End*/
+#content-section .tabContent ul li{display:inline;}
+.ie7 #content-section .tabContent ul li{padding:0;border:0;margin-right:3px;}
+.filter-section .filter-header button{margin:0 !important;}
+div.topBar.nextToHelp{margin-top:7px;}
+#settings #editValues {float:left; width:77% !important; }
+#settings #editValues tr td:first-child{width:30%;}
+#settings #editValues tr td:first-child + td{width:70%;}
+.ie7 #settings #editValues tr td:first-child + td{width:55%;}
+#settings #editValues input[type="text"] {width:90%;}
+.ie7 #settings #editValues input[type="text"] {width:9em; padding-left:0 !important;padding-right:0 !important;}
+#settings div.topBar{float:left;width:20% !important;}
+.ie7 #settings div.topBar{width:22% !important;}
+#settings div.topBar #saveVals {padding-left:8px !important; padding-right:8px !important;}
+.ie7 #settings div.topBar #saveVals {padding-left:8px !important; padding-right:8px !important;}
+.partner div.topBar.nextToHelp{border:0 none;margin-top:12px;margin-right:30px;}
+.partner div.topBar.nextToHelp.proformaLink{border:0 none;margin-top:12px;margin-right:177px;}
+.partner div.topBar_left{border-left:1px dotted #AAAAAA;margin-top:12px;margin-right:30px; padding-left:10px; float:left;}
+.downloadLink{background:url('img/iconDownloadRep.png') no-repeat right -20px transparent;padding-right:18px;height:20px;}
+.downloadLink:hover{background:url('img/iconDownloadRep.png') no-repeat right -20px transparent;}
+.sub-header a.downloadLink {height: auto} /* IE7 fix */
+.mplDownload{background:url('img/iconDownloadRep.png') no-repeat left 0 transparent;padding-left:18px;height:20px;}
+/* Two column Layout*/
+#content-container .details-wrapper div.details-two-sections{width:50%;background: none repeat scroll 0 0 transparent;border: 0 none;float: left;padding: 0;}
+#content-container .details-wrapper .details-two-sections ul li{border:0;display:block}
+#content-container .details-wrapper .details-two-sections ul li div.desc_head,
+#content-container .details-wrapper .details-two-sections ul li div.desc_det{width:45%;float:left;font-weight:bold}
+#content-container .details-wrapper .details-two-sections ul li div.desc_det{font-weight:normal}
+#content-section section h3.sub-header{margin:15px 0}
+#content-section .tabContent table td a.assign {background: url("img/editIcon_menu.png") no-repeat scroll 0 1px transparent; display: inline-block;height: 17px;margin-left: 4px;vertical-align: middle;width: 18px;}
+#content-container .details-wrapper table td a.edit, td#priceListUsed a.edit{background: url("img/editIcon_menu.png") no-repeat scroll 4px 2px transparent;display: inline-block;height: 17px;margin-left: 2px; vertical-align: middle;width: 18px;}
+.tabContainers .sub-header{font-size: 15px;font-weight: bold;margin-left:0px;margin-bottom:5px}
+.orders .tabContainers{margin:0}
+.dataTables_wrapper tbody td.default a{background: url("img/user_p.png") no-repeat scroll right 1px transparent;display: inline-block;padding-right: 16px;}
+.modalContent select.multiSelect{height: 75px;width: 100%;}
+.modalContent span.error{color: red;display: inline-block;margin-top: 10px;}
+.modalContent span.error .errorHeader{background: url("img/warning_alert.png") no-repeat scroll left center transparent;color: #CC0000;padding-left: 21px;}
+.modalContent .footer .buttons p{margin:12px 0;}
+.modalContent table tr.active td{background-color:#DDEEFF;}
+.tabContent.mTop20{margin-top:20px}
+.tabContent ul li a.hLink {color: #3399CC;}
+/* Two column landing pages*/
+.column-wrapper .two-column-left {float: left;margin-right: 15px;padding: 0;width: 49%;}
+.column-wrapper .two-column-right {float: left;padding: 0;width: 49%;}
+.column-wrapper .two-column-footer {font-size: 12px;font-weight: bold;margin-bottom: 20px;margin-right: 12px;margin-top: 80px;text-align: right;}
+.column-wrapper .two-column-footer.withTerms {margin-top: 0px;}
+.column-wrapper .two-column-footer.withTerms p.terms{font-weight: normal;text-align: left;}
+.column-wrapper .summary-column-wrapper.floatter {width: 27.4%;}
+#main .summary-column-wrapper .pLinks{height: 130px;overflow-y: auto;}
+#main .summary-column-wrapper .pLinks ul li{background:none;padding-left: 0;}
+.two-column-footer .anchorLink {background: url("img/anchor.png") no-repeat scroll 0 0 transparent;padding-left: 14px;}
+.summary-column-wrapper .pLinks ul li a.perFormaLink{background:url('img/csvDownload.png') no-repeat left 0 transparent;line-height: 24px;padding: 5px 0 12px 27px;cursor:pointer}
+/*Two column landing pages end*/
+#content-section .tabbed_area section.tabSections {float:left;width: 28.1%;border-right: 15px solid #FFF;padding:15px;background-color:#E6E6E6;}
+.tabSecContent, .tabSecBlock {padding:10px;}
+.tabSecBlock {background-color:#FFF;    position: relative;}
+#content-container .tabSecBlock table td {background-image:none;}
+#content-section .tabContent .tabSecContent ul li {display:block;border:none;list-style:disc inside; font-size:12px;}
+.tabContainers .tabSecContent .sub-header {margin:0px;}
+.tabSecBlock .topBar {position: absolute;right: 1px;}
+.confirmMsg{color: #0C8D63;display: inline-block;font-weight: bold;margin: 5px;color: #0C8D63;}
+.threshholdWrapper td button.tooltip{margin-top:0 !important;}
+.confirmMsg.availableAddon {color:#000 !important;}
+.confirmMsg.error{  color: #FF0000;}
+.validator-form label.error{display: block;float: none;margin-left: 0;position: absolute;vertical-align: middle;}
+.addonReqDetail div.dataTables_wrapper, .orders div.dataTables_wrapper{min-height:100px}
+.customfile-input { position:absolute; z-index:999; top:3px; left:43px; opacity:0; cursor:pointer; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=00); width:330px !important; font-size:160% !important; clip:rect(auto, 294px, 27px, 218px);}
+.modalContent .input-wrapper input[type="text"].uploadInputBox{width:250px}
+a.inactive{cursor:default}
+.modalContent .headerTitle.errMsg{color:red}
+.spanToolTip {line-height:24px; display:block;}
+.spanToolTip button.tooltip {float:right; opacity: 0; -moz-opacity: 0; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}
+input.quant[type="text"] {width: 23px;}
+#content-container .subscription .details-wrapper,#content-container .praxisContainer .details-wrapper{background: none; color:#000; padding:0;}
+#content-container .subscription .details-wrapper div.details table th, #content-container .subscription .details-wrapper div.details table td, #content-container .praxisContainer .details-wrapper div.details table th,#content-container .praxisContainer .details-wrapper div.details table td{color:#000; padding:2px 0; font-weight:normal;}
+.subscription.tabbed_area header.noBg { background:none;}
+.subscription.tabbed_area header.noBg a { color:#3399CC}
+.withEA .eaSelector.fRight { float:right;}
+div.topBar .readOnly{display:inline; margin-right:10px; padding-right:10px; border-right:1px dotted #CCC;}
+div.topBar.addOnSubmit {margin-top:18px;border:0}
+div.topBar.addOnSubmit .readOnly{margin-right:0}
+/* Modified Addon Req details for price info -- 27/01/2014 - starts */
+#content-container .addonReqPage div.priceInfo table.header-table tr td.tBorder, #content-container .addonReqPage div.priceInfo table.header-table tr th.tBorder{border-top:1px solid #000;}
+#content-container .addonReqPage div.priceInfo table.header-table tr.noPad td{margin:0; padding:0;}
+#content-container .addonReqPage div.priceInfo table.header-table tr.noPad td button{margin:0;}
+#content-container .addonReqPage div.priceInfo table.header-table tr th{width:68%;}
+#content-container .addonReqPage div.priceInfo table.header-table tr th.right{text-align:right;}
+#content-container .addonReqPage div.priceInfo table.header-table tr td, #content-container .addonReqPage div.priceInfo table.header-table tr th{font-weight:bold;padding: 5px 20px;font-size: 12px !important; position:relative;}
+/* Modified Addon Req details for price info -- 27/01/2014 - ends */
+#content-container .tabbed_area th input {font-size:12px;}
+header.withExport a.export, header.withExport a.exportCus { color:#A7E4FF; font-weight:normal !important; padding-right:0px !important;}
+table.expanded td div{margin-top:5px;}
+table.expanded td div:first-child{margin-top:0px;}
+table.expanded td div.tooltip .arrow {margin-top: 5px;} /*BUG-00050480*/
+table.expanded td div.support-sku{color:#999}
+.mac #main .tabSecBlock button, .mac .topBar button.launchProd{height:auto;padding:5px 15px}
+.mac div.topBar.nextToHelp{margin-top:13px}
+div.topBar .optionsWrapper{display: inline;padding-right: 10px;border-right: 1px dotted #CCCCCC;}
+table td select.bType{width:100%}
+.alert-box-wrapper.services .alert-box-holder.confirmMsg {padding-bottom: 15px;}
+.btn_buyAddon > span {background: url("img/bg_cart.png") no-repeat scroll 0 -1px transparent;padding: 1px 15px 1px 7px;}
+.btn_buyAddon.secondary > span {background: url("img/bg_cart.png") no-repeat scroll 0 -17px transparent;}
+.tabSecBlock .threshholdWrapper .thrsldLimit{width:80px}
+.topBar button.launchProd span {background: url("img/openNewWindow_icon.png") no-repeat}
+.mac.firefox .partner #content-section .tabbed_area .filter-section select{height:22px}
+#content-container .dataTables_wrapper table tr td.dataTables_empty{padding-top:15px;padding-bottom:15px}
+#content-section header.sidHelp div.topBar { position:relative;}
+#content-section header.sidHelp div.topBar div.helpLink {right:-20px !important; top:10px !important;}
+.mac #content-section header.sidHelp div.topBar div.helpLink {top: 3px !important;}
+.alert-box-holder.confirmMsg.error{background: url("img/warning_small.png") no-repeat scroll 0 0 transparent;padding-bottom: 10px;padding-left: 30px !important;padding-right: 2px;padding-top: 3px;}
+.more-detail div.dataTables_wrapper {min-height: 50px}
+.alert-box-modal { background:none repeat scroll 0 0 #ECECEC; border:1px solid #CCCCCC; border-radius:5px;}
+.alert-box-modal .alert-holder { background:url("img/warning_small.png") no-repeat scroll 0 0 transparent; padding:1px 2px 5px 33px;}
+.alert-box-modal .alert-holder .alert-content { color:#515151; font-weight:normal;}
+#content-container .dataTables_wrapper table tr td.expired{color:#d96d6b}
+#content-container .dataTables_wrapper table tr td.active{color:#08a117}
+#content-container .dataTables_wrapper table tr td.expiring{color:#c68643}
+
+span.alertIcon01, span.alertIcon02, span.alertIcon03, span.alertIcon04, span.alertIcon05, span.alertIcon06, span.alertIcon07, span.alertIcon08, 
+span.alertIcon09, span.alertIcon11, span.alertIcon12, span.alertIcon13, span.alertIcon14, span.alertIcon15, span.alertIcon16, span.alertIcon17, 
+span.alertIcon18, span.alertIcon19, span.alertIcon21, span.alertIcon22, span.alertIcon23, span.alertIcon24, span.alertIcon25, span.alertIcon26, 
+span.alertIcon27, span.alertIcon28, span.alertIcon29, span.alertIcon31, span.alertIcon32, span.alertIcon33, span.alertIcon34, span.alertIcon35, 
+span.alertIcon36, span.alertIcon37, span.alertIcon38, span.alertIcon39, span.alertIcon4, span.alertIcon5, span.alertIcon7 { width:16px; height:16px; display:inline-block; }
+
+span.alertIcon01, span.alertIcon02, span.alertIcon03, span.alertIcon04, span.alertIcon05, span.alertIcon06, span.alertIcon07, span.alertIcon08, 
+span.alertIcon09, span.alertIcon11, span.alertIcon12, span.alertIcon13, span.alertIcon14, span.alertIcon15, span.alertIcon16, span.alertIcon17, 
+span.alertIcon18, span.alertIcon19 { background: url("img/status_icon.png") no-repeat scroll -16px 0 transparent; }
+
+td.alertColor01, td.alertColor02, td.alertColor03, td.alertColor04, td.alertColor05, td.alertColor06, td.alertColor07, td.alertColor08, 
+td.alertColor09, td.alertColor11, td.alertColor12, td.alertColor13, td.alertColor14, td.alertColor15, td.alertColor16, td.alertColor17, 
+td.alertColor18, td.alertColor19, td.alertColor4 { color:#FF0000 !important; }
+
+td.alertColor31, td.alertColor32, td.alertColor33, td.alertColor34, td.alertColor35, td.alertColor36, td.alertColor37, td.alertColor38, 
+td.alertColor39 { color:#55b400 !important; }
+
+td.alertColor21, td.alertColor22, td.alertColor23, td.alertColor24, td.alertColor25, td.alertColor26, td.alertColor27, td.alertColor28, 
+td.alertColor29 { color:#FF9513 !important; }
+
+td.alertColor5{color: #666 !important;}
+
+span.alertIcon21, span.alertIcon22, span.alertIcon23, span.alertIcon24, span.alertIcon25, span.alertIcon26, span.alertIcon27, span.alertIcon28, 
+span.alertIcon29 { background: url("img/status_icon.png") no-repeat scroll 0 -17px transparent; }
+
+span.alertIcon31, span.alertIcon32, span.alertIcon33, span.alertIcon34, span.alertIcon35, span.alertIcon36, span.alertIcon37, span.alertIcon38, 
+span.alertIcon39 { background: url("img/status_icon.png") no-repeat scroll 0 0 transparent; }
+
+span.alertIcon4 { background: url("img/status_icon.png") no-repeat scroll -16px -16px transparent; }
+
+span.alertIcon7 { background: url("img/status_icon.png") no-repeat scroll -17px -35px transparent; }
+
+span.alertIcon5 { background: url("img/status_icon.png") no-repeat scroll -40px -120px transparent;}
+
+
+/* Praxis Billing Statement Changes */
+span.pdfIcon{ background: url("img/status_icon.png") no-repeat scroll 0px -118px transparent;width:16px;height:20px;display:inline-block;margin-left:10px;}
+span.csvIcon{ background: url("img/status_icon.png") no-repeat scroll -20px -118px transparent;width:16px;height:20px;display:inline-block;margin-left:10px;}
+.billingStatementDetailsContainer .billing-details-wrapper {border-bottom: 1px solid #b7b8ba;padding-bottom: 10px;}
+.billingStatementDetailsContainer .billing-details-wrapper .details{float:left;width:32%;border-right:1px solid #b7b8ba;} 
+.billingStatementDetailsContainer .billing-details-wrapper .details table td {background:none !important;}
+.billingStatementDetailsContainer .billing-details-wrapper .details table td.labelTd {font-weight:bold;}
+.billingStatementDetailsContainer .billing-details-wrapper .setLeft{margin-left:10px;}
+.billingStatementDetailsContainer .billing-details-wrapper .noBorder{border:none;}
+#tbl_billingdetails span.pdfIcon, #tbl_billingStatementDetails span.pdfIcon, #tbl_billingdetails span.csvIcon, #tbl_billingStatementDetails span.csvIcon{margin:-4px 0px 0px 10px; !important;}
+#tbl_billingdetails p span.fLeft{width: 60px;text-align: left;}
+#tbl_billingdetails p{margin-bottom:0px !important;height:30px;}
+#tbl_billingStatementDetails a span.fLeft{width:120px;}
+#tbl_billingStatementDetails tr td{width:25%;}
+
+/*Configurator Main Page Start*/
+.config_main{margin-left:40px}
+.config_main .box {background: url("img/bg_config_sprite.png") repeat-x 0 -419px #fff;border: 1px solid #C3C7C6;border-radius: 4px 4px 4px 4px;float: left;margin: 20px 15px 0;padding: 25px 24px 30px;width:285px}
+.config_main .box.active{background: url("img/bg_config_sprite.png") repeat-x 0 0 #fff}
+#content-section .config_main .box h3{color: #333333;font-size: 18px;font-weight: 400;margin: 10px 35px 0 0;padding: 0 0 20px;}
+#content-section .config_main .box .header{padding-left: 30px;}
+#content-section section .config_main .para{font-size: 14px;margin:10px 0 0 15px}
+.foot {color: #666666;font-size: 12px;margin-top: 100px;}
+#content-section section .box h2{background: url("img/bg_config_service_new.png") no-repeat scroll 0 0 transparent;color: #333333;height: 48px;line-height: 48px;margin-bottom: 0;padding: 0 0 0 60px;}
+#content-section section .box.box2 h2{background: url("img/bg_config_service_new.png") no-repeat scroll 0 -56px transparent;}
+#content-section section .box.box3 h2 {background: url("img/bg_config_service_new.png") no-repeat scroll 0 -107px transparent;}
+#content-section section .box.box4 h2 {background: url("img/bg_config_service_new.png") no-repeat scroll 0 -156px transparent;}
+#content-section section .box .btnHolder{margin-top: 25px;text-align: center;}
+.ie7 #content-section section .box {width: 290px;}
+.ie7 #content-section section .box .btnHolder{margin-left:auto !important;margin-right:auto !important;}
+button.bigBtn,button.bigBtn:hover{font-size: 16px;font-weight: bold;height: auto;padding: 11px 28px 12px;}
+#content-section section p.desc{color:#000}
+.foot span.helpMsg {display: inline-block;padding-bottom: 15px;}
+.config_main .box .btnHolder {margin:25px 10px 10px 35px}
+/*Configurator Main Page End */
+
+/* Configurator Service flow (ccs) Start*/
+#step1.ccs{width:1120px}
+.ccs.mLeft15 {margin-left: 15px;}
+.ccs .secHolder{border-bottom: 1px solid #A5A5A5;padding: 20px 0;}
+/*.secHolder .sType{margin-bottom:20px}*/
+#step1.ccs .fade {display: none;}
+#step1 .lastHolder{border-bottom: none !important; border-top:1px solid #A5A5A5;}
+#step1 .lastHolder #currency {width:800px;}
+.secHolder .tooltip {font-size: 12px;margin-top: 0 !important;}
+#content-section section .ccs .secHolder > h4 {color: #312F2F;float: left;font-size: 15px;width: 260px;}
+/*.ccs .radioHolder {float: left;width: 250px;}*/
+.ccs .sTypeHolder{width:100%;float:left}
+.ccs .sTypeHolder .sName{margin-right: 15px;}
+.ccs .secHolder .sLengthHolder{float: left; width: 200px;padding-top:4px;padding-left:18px;margin-bottom: 20px;}
+.ccs .secHolder .sLengthHolder.lastsLenHolder {margin-bottom: 0 !important;}
+.ccs .secHolder .sLength{font-weight:bold;color:#312f2f}
+.ccs .secHolder .lengthHolder{float:left;margin-left:20px}
+.ccs .secHolder .dPrice{margin-left:30px}
+.ccs .button_div {margin-top: 20px;text-align: right;}
+.ccs .button_div > button.secondary {margin-left: 25px !important;}
+.ccs .button_div > button.backBtn {margin-right: 60px !important;}
+.ccs input[type='radio'] {margin-bottom: 10px;margin-right: 5px;vertical-align: text-top;}
+/* Configurator Service flow (ccs) End*/
+div.topBar.nextToHelp.sid{margin-top:11px; float:left; border:none;}
+div.topBar.sid .optionsWrapper {border:none;}
+div.topBar.sid a.launchProd {background: url("img/openNewWindow_icon.png") no-repeat; padding:2px 0 8px 20px;}
+#content-section header.clearfix.withEA .helpLink {top:10px !important;}
+.config-header-section{border:1px solid #c0c0c0;margin-top: 20px;}
+.config-header-section .header-user-data{background-color:#fff;padding:10px;}
+#content-section section .header-core-data > h2 {color: #333333; font-size: 15px;font-weight: bold;line-height: 12px; padding-left:17px;padding-top:5px}
+#content-section section .header-core-data > table{margin-left: 18px;}
+#content-section section .header-core-data.renewalConfig > table {margin: 0}
+#content-container .header-core-data table thead {border: medium none;}
+#content-container .header-core-data table th {border: medium none; background: url("img/bkg_dotted_line.png") repeat-x scroll 101% bottom transparent !important; color: #333333;font-size: 12px;font-weight: bold;padding: 0;width:20%}
+#content-container .header-core-data table th.c1 {width:20%;padding-bottom:6px;}
+#content-container .header-core-data table th.c2 {width:35%}
+#content-container .header-core-data table th.c3 {width:10%}
+#content-container .header-core-data table th.c4 {width:18%}
+#content-container .header-core-data table th.c5 {width:17%}
+.config-header-section .header-user-data .user-data {background: none repeat scroll 0 0 transparent;border: 0 none;display: block;float: left;padding: 5px 0;width: 25%;}
+.config-header-section .header-user-data .Col3 { width:33% !important;}
+#content-container .config-header-section .header-user-data .user-data.service{width:auto}
+#content-container .user-data table th {background: none repeat scroll 0 0 transparent;border: 0 none;color: #000000;font-size: 12px;font-weight: bold;}
+#content-container .user-data table td {background: none repeat scroll 0 0 transparent;font-weight: normal;padding: 4px 0;}
+#content-container .config-header-section .header-user-data .user-data.service th{font-size: 15px;padding-left: 0;width: 110px;}
+#content-container .config-header-section .header-user-data .user-data.service td{padding: 7px 0 0}
+#content-container .config-header-section .header-user-data{background-color: #FFFFFF;padding: 5px 10px 0;}
+#content-container .user-data table.c1 th{width:135px}
+#content-container .user-data table.c2 th{width:120px}
+#content-container .user-data table.c21 th{width:90px}
+#content-container .user-data table.c3 th{width:110px}
+#content-container table.multipleServices tr th span.openclose{background: url("/static/myvmware/common/css/img/btn_gray_blue_plus_minus.png") no-repeat scroll -5px -3px transparent;padding-left: 18px;}
+#content-container table.multipleServices tr th span.openclose.minus{background-position: -5px -23px}
+#content-container table.multipleServices tr td:first-child{padding-left: 18px;}
+#content-section section .header-core-data > table.multipleServices{margin-left: 18px;}
+.moreServices .desc{padding-left:19px}
+.preview .icon, #nonUpgradeableTable .icon{float:left}
+.moreServices .icon.pLeft, .preview .icon.pLeft, #nonUpgradeableTable .icon.pLeft{padding-left:18px}
+.addonSection{margin-top:15px}
+.priceListNoSIDMsg{color:#c00}
+#content-section section .addonSection > h2, #content-section section .addonSection .header_desc> h2{color:#333;font-size:15px;font-weight:bold}
+#content-section section .addonSection .header_desc> h2{margin: 0;}
+.addonSection a.reset {background: url("img/bg_config_reset_icon.png") no-repeat scroll 0 0 transparent;padding-left: 23px;}
+.addonSection .alertMsg{margin-bottom:5px;display: inline-block;}
+.partner .config div.topBar.nextToHelp{margin-top:11px}
+.addonSection .label{color: #333333;font-size: 12px;font-weight: bold;margin-right: 20px;}
+.addonSection  .priceList{color:#111; margin-right:7px;}
+#content-container .header-core-data{background-color: #EEEEEE;padding: 10px 38px 10px 10px;overflow: hidden;}
+#content-container .header-core-data table td {background: none repeat scroll 0 0 transparent;color: #333333; padding: 8px 10px 0 0}
+#content-container .header-core-data.renewalConfig {padding: 15px 25px 20px}
+#content-container .header-core-data.renewalConfig table label strong {line-height: 21px}
+#content-container .header-core-data.renewalConfig table#coreConfig > tbody > tr > td:first-child {padding-right:50px; border-right: 1px solid #ccc;}
+#content-container .header-core-data.renewalConfig table#coreConfig > tbody > tr > td:last-child { width: 50%; padding-left: 20px}
+#content-container .header-core-data.renewalConfig table#coreConfig td label { display: block; cursor: default }
+#content-container .header-core-data.renewalConfig table#coreConfig tr.buttonbar td { padding: 20px 0 0 }
+#content-container .header-core-data.renewalConfig table#coreConfig tr.buttonbar button:first-child { margin-left: 0 !important}
+#content-container .header-core-data.renewalConfig table.coreConfigure { min-width:500px; margin:20px 0}
+#content-container .header-core-data.renewalConfig table.coreConfigure td label div { line-height:21px;}
+#content-container .header-core-data.renewalConfig table.coreConfigure td:first-child { min-width: 160px}
+#content-container .header-core-data.renewalConfig table.coreConfigure td.sQty { text-align:center;min-width: 30px}
+#content-container .header-core-data.renewalConfig table.coreConfigure td.paymentType { min-width: 160px}
+#content-container .header-core-data.renewalConfig table.coreConfigure td:last-child { min-width: 160px; padding-right: 0}
+#content-container .header-core-data.renewalConfig table.currentCoreConfig { height: 100%}
+div.autoClose { padding:8px 8px 8px 35px; clear:both; border-radius:3px; margin:15px 0;}
+div.autoClose p { padding:0 !important; margin:0 !important; }
+#content-section section div.autoClose.alert p{color:#FF4545}
+#content-section section div.autoClose.warn p{color:#E76D00}
+#content-section section div.autoClose.info p{color:#000}
+#content-section section div.autoClose.warn.txtBlk p {color: #333}
+div.autoClose a.autoCloseBtn { float:right; background: url("img/close_beak.png") no-repeat transparent; width:12px; height:12px; display:block; cursor:pointer; }
+div.autoClose.warn { border:1px solid #FFCB7E; background:url("img/warning_small_trans.png") no-repeat scroll 10px center #FFEBDE; }
+div.autoClose.info { border:1px solid #FFCB7E; background:url("img/info_small_trans.png") no-repeat scroll 10px center #FFEBDE; }
+div.autoClose.info.topAlign { border:1px solid #FFCB7E; background:url("img/info_small_trans.png") no-repeat scroll 10px 7px #FFEBDE !important; }
+div.autoClose.info p span.strong { font-weight:bold;}
+div.autoClose.success { border:1px solid #729A59; background:url("img/tick.png") no-repeat scroll 5px center #E6FBCF; }
+div.autoClose.alert { border:1px solid #E88E8E; background:url("img/bg_alert_small.png") no-repeat scroll 5px center #FFDEDE; }
+div.autoClose p a.right { float:right; padding-right: 10px; }
+#uploadRateCardModal .modalContent {width: 400px;}
+#uploadRateCardModal .modalContent .errorContent .content {margin-top: 20px;padding: 3px 15px 40px 27px;}
+#uploadRateCardModal .modalContent .errorContent .alertImg {background: url("img/status_icon.png") no-repeat scroll -16px -14px transparent;float: left;height: 20px;margin: 20px 0 0;width: 16px}
+.partner div.topBar.nextToHelp a.download, .partner div.helpLink.leftBorder a.performaIcon{background: url("img/download.png") no-repeat scroll 10px -1px transparent; padding-left:30px; margin-right:10px;}
+.partner div.topBar.nextToHelp a.download.disabled{background: url("img/download_disabled.png") no-repeat scroll 10px -1px transparent; padding-left:30px; margin-right:10px;}
+#content-container table td span.aType{display: inline-block;font-weight:bold;padding-top: 1px} /* 26th */
+#content-container table tr.odd td span.aType{font-weight:normal;width:95%}
+#content-container table td span.tier{display: inline-block;width:20%;}
+.addOnTable {margin-top: 12px;}
+.renewal .addOnTable{margin-top:2px}
+#content-container table.addOnTable input[type='checkbox'] {display:none;}
+#content-container table.addOnTable tr:first-child td{border-top: 1px dotted #A0A0A0;}
+#content-container table.addOnTable tr:last-child td{background:none}
+#content-container table.addOnTable tr.odd div{color:#333;margin-left: 25px;padding:2px 0} /* Modified 27/12/2013 */
+#content-container table.addOnTable tr.odd div.emptyTier{color:#c00}
+#content-container table.addOnTable tr.odd div.supportValue{margin-left:50px}
+#content-container table.addOnTable tr.even td {padding: 6px 5px;}
+#content-container table.addOnTable tr td.c1{width:45%}
+#content-container table.addOnTable tr td.c2{width:20%}
+#content-container table.addOnTable tr td.c3 .payType, #content-container table.addOnTable tr td.c2 span.qtyHolder{float: right;}
+#content-container table.addOnTable tr td.c3{width:23%}
+#content-section .addonSection .editRateCard {background: url("img/editIcon_menu.png") no-repeat scroll 0 1px transparent;margin-left: 4px;padding-left: 15px;}
+#priceListDetails > div {padding-bottom: 20px;}
+#priceListDetails input[type='radio'] {margin-right: 5px;vertical-align: text-top;}
+.fade {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";filter: alpha(opacity=30);-moz-opacity: 0.3;-khtml-opacity: 0.3;opacity: 0.3}
+.progress{background: url("img/bg_config_steps_service.png") repeat scroll 0 0 transparent;height: 44px;margin-top: 19px;width: 562px;}
+.progress.addon{background: url("img/bg_config_steps_addon.png") repeat scroll 0 0 transparent;height: 44px;margin-top: 19px;width: 493px;}
+.progress.newHorizon {background: url('img/bg_config_steps_newserviceHorizon.png') repeat scroll -85px -56px transparent; height: 44px; margin-top: 19px; width: 522px;}
+.progress.addonHorizon {background: url("img/Configurator_Steps_ForAddOn_horizon_new.png") repeat scroll -80px -55px transparent;height: 44px;margin-top: 19px;width: 493px;}
+.progress.addonHorizon.s0{background-position: 0 -145px;}
+.progress.addonHorizon.s2{background-position: -80px -165px;}
+.progress.addonHorizon.s3{background-position: -80px -275px;}
+.progress.s2{background-position: 0 -48px;}
+.progress.s3{background-position: 0 -96px;}
+.progress.s0{background-position: 0 -145px;}
+.progress.newHorizon.s2 {background-position: -85px -165px;}
+.progress.newHorizon.s3 {background-position: -85px -275px;}
+.progress.newHorizon.s0 {background-position: -85px -56px;}
+.progress.addon.renewal{background: url("img/Configurator_Steps_ForRenewal.png") repeat scroll -81px -72px transparent; height: 44px; margin-top: 19px; width: 700px;}
+.progress.addon.renewal.s2{background-position: -81px -164px;}
+.progress.addon.renewal.s3{background-position: -81px -257px;}
+.progress.addon.renewal.s0{background-position: -81px -348px;}
+
+.progress.addon.upgrade{background: url("img/Configurator_Steps_ForAddOn_horizon.png") repeat scroll -81px -55px transparent; height: 44px; margin-top: 19px; width: 700px;}
+.progress.addon.upgrade.s2{background-position: -81px -164px;}
+.progress.addon.upgrade.s3{background-position: -81px -275px;}
+.progress.addon.upgrade.s0{background-position: -81px -348px;}
+.alert-box-holder.confirmMsg.error{background: url("img/warning_small.png") no-repeat scroll 0 0 transparent;color: #000000;font-weight: normal;padding-bottom: 10px;padding-left: 30px !important;padding-right: 2px;padding-top: 3px;}
+.errorLabel{
+    padding-left: 20px;
+    background:url("img/alert_warning.png") no-repeat scroll 0 2px transparent;
+    line-height: 22px;
+    color:#cc0000 !important;
+}
+#addOnTable .errorLabel {
+    margin-right: 5px;
+}
+span.errorLabel{
+    float: right;
+}
+span.errorText{display:none; color:#CC0000; padding-top:6px;}
+span.errorLabel.err{background:url("img/alert_warning.png") no-repeat scroll 0 1px transparent;float: right;line-height: 20px;margin-right:5px;} /* Modified for Payment and Qty error msg css 30/12/2013 */
+div.supportSkuDesc, span.supportSkuDesc {background: url("img/bg_link.png") no-repeat scroll 0 center transparent;margin:0 !important; padding-left:25px !important;} /* modified 27/12/2013*/
+.supportValue {margin-left: 40px;}
+#rateCardInfo button.tooltip{position: relative;top: -1px;vertical-align:middle}
+#content-container .tabbed_area th span span.icon {background: url("img/bg_mail_icon.png") no-repeat scroll right center transparent;display: inline-block;float: right;}
+.errorOutline{border:1px solid #c00 !important;}
+/* Configurator preview Start*/
+#ConfigPreview .modalContent{width:750px;}
+.modalContent table{width:100%}
+.modalContent table th {background-color: #DDEEFF;padding: 9px 6px;border:0}
+#simplemodal-container .preview div.dataTables_scrollBody table tbody tr td, #simplemodal-container .preview table tr td {padding: 9px 6px !important;border-bottom: 1px dotted #A0A0A0;} /* Added by Sathya */
+.modalContent div.dataTables_wrapper{min-height:100px}
+.choseCurrency button.tooltip{vertical-align: middle !important; margin-top:0 !important;}
+.priceHolder{background-color: #FFFDDE;float: right;padding: 5px 15px;}
+.priceHolder button.tooltip, .ccs button.tooltip{text-indent:15px} /* IE7 fix */
+#serConfig button.tooltip {
+    left: 94px;
+    margin: 0 !important;
+    position: absolute;
+    top: 2px;
+}
+.priceHolder .estCost{display: inline-block;font-size: 9px;margin-right: 10px;text-align: left;width: 80px;}
+.priceHolder .totalCost{font-size: 28px;line-height: 23px;}
+.modalContent .dataTables_scrollHeadInner{background: none repeat scroll 0 0 #DDEEFF;}
+.core,.addon{font-weight:bold;margin-right:20px}
+.modalContent select.dPrice {margin-left: 20px;}
+.modalContent .pHolder {padding:15px 30px 0}
+.modalContent span.note{padding-top: 20px; display: inline-block;}
+#serviceConfigPreviewTable td {border: medium none; padding-left:6px;}
+.ie7 .modalContent .buttons .right-btns {float:none !important;text-align:right !important;}
+.ie7 .modalContent .buttons .right-btns.secondary {margin-left:25px !important}
+
+.modalContent .footer  {border-top:none !important;}
+/* Configurator preview End*/
+
+/* Configurator Add-On Flow Start*/
+.search{background-color:#eee;padding:10px 13px 4px;border:1px solid #ccc;margin-top:20px}
+.search .searchLabel {float: left;font-weight: bold;line-height: 50px;vertical-align: middle;} /* modified 16/01/2013 for CR-00044547*/
+.search span.or{float: left; margin-right: 15px; margin-top: 17px;}
+.search .searchHolder {float: left;margin-left: 15px;}
+.search .btnHolder{margin-top:9px}
+.search .ctrlHolder label{float:none;display:block;width:165px;font-size:10px;padding-bottom: 2px;}
+.search .ctrlHolder input{border: 1px solid #333333;float: none;height: 16px;margin-bottom: 0;padding: 2px;width: 165px;}
+.search .ctrlHolder{float: left;margin-bottom: 2px;margin-left: 0;margin-right: 10px;}
+.resultHolder{margin: 15px;}
+.resultHolder .resultsLabel{font-weight: bold;}
+.resultSet{border: 1px solid #ACACAC;color: #555555;margin-top: 25px;}
+.resultSet .row {border: 1px solid #ACACAC;padding: 15px}
+.resultSet .row.active{background-color:#ddeeff}
+.resultSet .wrap{float: left;overflow: hidden;padding-right: 5px;text-overflow: ellipsis;white-space: nowrap;}
+.resultSet .wrap .label {font-weight: bold;}
+.resultSet .c1{width:29%}
+.resultSet .c2{width:29%}
+.resultSet .c3{width:18%}
+.resultSet .c4{width:15%}
+.resultSet .c5{float: left;text-align: right;width: 6%;}
+.resultSet .c5 a{font-weight:bold}
+.resultSet .more-details{background-color: #FAFBFC;padding: 20px;}
+/* Configurator Add-On Flow End*/
+div.tabs-wrapper {position:relative;}
+div.tabs-wrapper a.exportCus {position: absolute; right:0px; top:10px; background:url("img/export_bg.png") no-repeat scroll 0 0 transparent; padding-left:20px; padding-bottom:2px;}
+div.tabs-wrapper .warn + a.tbl_addons,div.tabs-wrapper .warn + a + a.tbl_addonsRequest{top:55px;}
+.ie7 div.tabs-wrapper .warn + a.tbl_addons,.ie7 div.tabs-wrapper .warn + a + a.tbl_addonsRequest{top:70px;}
+button.purchase, button.purchase:active, button.purchase:focus, button.purchase:hover, button.purchase.btn_buyAddon{background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4a961a) color-stop(100%,#3e6d4d)) !important; background: url("img/bg_button_green.png") repeat-x #4a961a; background: -moz-linear-gradient(top,  #4a961a 0%, #3e6d4d 100%); padding:3px 15px 3px 10px !important;}
+.mac button.btn_buyAddon{height:22px}
+button.disabled.btn_buyAddon  {padding:3px 15px 3px 10px !important;}
+.clearfix.right a.exportCus, header.withExport a.exportCus {background:url("img/export_bg.png") no-repeat scroll 0 0 transparent; padding-left:20px; float:right; margin-bottom:7px;}
+.clearfix.right a.exportCus, header.withExport a.exportCus_1 {background:url("img/export_bg.png") no-repeat scroll 0 0 transparent; padding-left:20px; float:right; margin-bottom:7px; margin-top:10px;}
+#tbl_sdpRateCardDetails td span.pHolder{display: inline-block;padding: 1px;line-height:20px;width: 100%;}
+#tbl_sdpRateCardDetails td span.pHolder.hover{border: 2px solid #d1d1d1;}
+.pHolder input.editText.error{background-color:#e6b3b3; color:#d12322;border:2px solid #990000;}
+#content-section section table td p.error, #content-section section table td p.errorMsg{color:#d12322;margin:2px 0 0}
+.pHolder span.price{width:70%}
+.pHolder input.editText{border:2px solid #2b78e4;margin-left:5px;height:20px;display:inline-block;width:75%}
+.pHolder span.editInput p.error{ padding-left:12px;}
+.pHolder span.success{background: url("img/status_icon.png") no-repeat scroll 0 2px transparent;display: inline-block;height: 17px;margin-left: 5px;width: 16px;}
+.warningMsgDiv{position:absolute; top:150px; width:61%;}
+.partner .loadingHolder{margin: 45px 85px;}
+td.noStatus {padding-left:30px !important;}
+@media screen and (min-width:1200px ) and (max-width:1449px ) {.column-wrapper .summary-column-wrapper.floatter, #content-section .tabbed_area section.tabSections {width: 28.5%;}}
+@media screen and (min-width:1450px) {.column-wrapper .summary-column-wrapper.floatter, #content-section .tabbed_area section.tabSections {width: 29.5%;}}
+@media screen and (min-width:1200px ) and (max-width:1500px ) {.pHolder input.editText{width:80%}}
+@media screen and (min-width:1501px) {.pHolder input.editText{width:90%}}
+#content-container table tr:last-child td {background: none repeat scroll 0 0 transparent;}
+#content-container table tfoot tr:last-child td.bottomarea{background: url("img/bkg_tabs_bottom_new.png") repeat-x scroll 0 bottom transparent;height: 8px;padding: 0;}
+.resultSet div.dataTables_wrapper{min-height:50px}
+div#step1 .secHolder:nth-child(1) .tooltip br , #content-section .pTypeHead div.tooltip .content p {font-size: 0;margin: 0;}
+/*div#step1 .secHolder:nth-child(1) .tooltip p { margin-bottom:0px !Important;}*/
+.modalContent table th.normal{font-weight:normal}
+.modalContent .body .msg{margin-right:0}
+.modalContent .body .msg > .errorHeader {border-bottom: 1px solid #D6D6D6;color: #D9541E;display: block;font-size: 15px;font-weight: bold;padding-bottom: 3px;}
+.modalContent .body div.tooltip .content p{margin-right:0}
+.ie #content-section .selCusType div.tooltip .content p {margin-bottom:0 !important;}
+.ie #content-section .pTypeHead div.tooltip .content p {display:none;}
+.secHolder > div.fLeft {width: 590px;}
+.noServiceType {background: url("img/warning_alert.png") no-repeat scroll left center transparent;color: #CC0000;padding-left: 21px;}
+/* Bug: 56177 fixed; removing the border top for button in event preview model*/
+.modalContent .errWrapScroll{height:200px;overflow:auto}
+#content-container table td.autoAppCurT{padding-left:3px}
+#settings .topBar{ margin-right:0 !important; margin-top:0 !important;}
+#rejctComments {width: 508px !important;}
+.alert-box-wrapper.noAttn .alert-box-holder.confirmMsg .alertTitle{font-weight: normal;padding: 5px 0}
+.alert-box-wrapper.noAttn {padding-top:5px;}
+.alert-box-wrapper.bigWarn{padding-top:0}
+.alert-box-wrapper.bigWarn .confirmMsg{padding-top:11px;padding-bottom:18px;}
+div#EditRenewalSettings table tr td.strong {font-weight:bold;}
+div#EditRenewalSettings table tr td.dataCell { width: 10px; padding-bottom:10px; padding-top:3px;}
+div#EditRenewalSettings div.alert-box-holder.confirmMsg.error { background: url("img/warning_small.png") no-repeat scroll 6px 13px transparent !important; padding: 15px 15px 15px 31px !important; margin:0 !important;}
+div#EditRenewalSettings div.alert-box-wrapper.nomargin.nopadding { margin-bottom:10px !important;}
+
+/* Configurator Preview Modal Starts Sathya*/
+.modalContent .fpPopupHeading { background-color: #DEDEDE; color: #000000; display: block; font-size: 12px; font-weight: bold; margin: 5px 0; padding: 8px 0 6px 8px; }
+#ConfigPreview table { width: 100%;}
+#ConfigPreview .viewcontent { display: none; }
+#ConfigPreview .footer button { display: none; margin-right: 10px !important; }
+#ConfigPreview .footer button.fn_cancel { display: inline-block; margin-left: 0 !important; margin-right: 0 !important; }
+#ConfigPreview.previewContent .preview { display: block; }
+#ConfigPreview.quoteContent .quote { display: block; }
+#ConfigPreview.previewContent .previewBtn, #ConfigPreview.quoteContent .quoteBtn,  #ConfigPreview.quote1 .header .q1, #ConfigPreview.quote2 .header .q2, #ConfigPreview.quote1 .footer .q1, #ConfigPreview.quote2 .footer .q2 { display: inline-block; }
+#ConfigPreview.quote1 .body .q1, #ConfigPreview.quote2 .body .q2 { display: block; }
+#ConfigPreview .quote .body { padding-top: 5px; }
+#ConfigPreview .quote .first, .second { float: left; width: 48%; }
+#ConfigPreview .quote .second { margin-left: 30px; }
+#ConfigPreview .quote .ctrlHolder { position: relative; padding-top: 2px; }
+#ConfigPreview .quote .ctrlHolder label { font-weight: bold; margin:5px 0 12px 10px; padding-bottom: 5px; width: 40%; }
+#ConfigPreview .quote .required { color: #FF0000;}
+#ConfigPreview .quote .ctrlHolder input { width: 55%; }
+#ConfigPreview .quote .error_msg { margin: 10px 0 0 10px; position: absolute; top: 15px; left: 40%; }
+#ConfigPreview .quote .ctrlHolder label.error { margin: 0; width: 100%; font-weight: normal; font-size: 11px;}
+#ConfigPreview  input.error, select.error { border-color: #FF0000; border-style: solid; border-width: 1px; }
+#ConfigPreview span.errorTxt {color: red; line-height: 0; padding-top: 0; position: absolute; }
+#editUserInfo > div.ctrlHolder {width: 33%;}
+#ConfigPreview #editUserInfo > div.ctrlHolder input{float: left;position: relative;top: 3px;width: 62%;}
+#ConfigPreview .quote #editUserInfo > div.ctrlHolder label{width:30%}
+#ConfigPreview .quote #editUserInfo > div.ctrlHolder label.error{width:auto}
+#ConfigPreview .quote #editUserInfo > div.ctrlHolder .error_msg{left: 30%;top: 20px;}
+.ie7 #ConfigPreview .quote .ctrlHolder label { padding-bottom: 15px; }
+/* Configurator Preview Modal Ends - Sathya*/
+/*CR-00044909*/
+#content-container table.addOnTable tr.withCheck td:first-child {padding-left: 25px}
+#content-section div.autoClose.topBold > p {font-weight:bold !important;}
+#content-section .alert-box-wrapper.infoIcon .alertTitle, #content-section .alert-box-wrapper.infoIcon .alertTitle p {color:#000; font-weight:normal;}
+.alert-box-wrapper.infoIcon .alert-box-holder.confirmMsg {padding-left: 24px !important;}
+#content-section .alert-box-wrapper.infoIcon .confirmMsg, #content-section .alert-box-wrapper.discount.infoIcon .confirmMsg {background: url("img/status_icon.png") no-repeat scroll -34px -14px transparent;padding:1px 2px 5px 5px;}
+#content-section .alert-box-wrapper.infoIcon .confirmMsg{padding:0px 2px 0px 5px;position: relative;top: -2px;}
+#content-section .alert-box-wrapper.services.infoIcon,#content-section .alert-box-wrapper.discount.infoIcon {background-color: #EBFFF9;padding-bottom: 0;padding-left: 8px !important;}
+#content-section .alert-box-wrapper.services.infoIcon .confirmMsg{background-position: 1px -53px;padding-left:42px !important;}
+#content-section .alert-box-wrapper.discount.infoIcon .confirmMsg{background-position: -31px -33px;padding-left:25px !important;}
+#content-section .alert-box-wrapper.infoIcon{background-color:#e7f0f8;border: 1px solid #cccccc;color: #000000;}
+#renewOption button.edit.renewalLink, button.edit {font-size: 9px;padding: 1px;vertical-align: top;margin-top:0 !important;}
+.ie9 #renewOption button.edit.renewalLink { height:auto !important}
+#content-section .alert-box-wrapper.services.infoIcon .confirmMsg p.topBold{font-weight:bold;}
+.ie7 #renewOption button.edit.renewalLink, .ie7 button.edit {padding: 1px 2px;}
+.topMargin { margin-top:15px;}
+.errorPage .expiryMsg{background: url("img/ico-alert-trans.png") no-repeat scroll 0 0 transparent;color: #000000;margin: 80px 180px;padding: 13px 0 30px 60px;}
+#content-section header .helpLink.leftBorder span {float:right;}
+#content-container .details-wrapper div.details table tr.autoApproved td.confirmMsg, #content-container .details-wrapper div.details table tr.priceListSuccess td.confirmMsg{color: #0C8D63;font-size: 11px;font-weight: bold;width: auto;}
+#tbl_performaInvoice_wrapper table.withborders{width:100% !important}
+div.subHeading { margin-top:5px;}
+div.subHeading  h2 { color: rgb(51, 51, 51) !important; font-size: 15px !important; font-weight: bold !important; display:inline; margin-right:10px; }
+span.coreConfigResponse.error { font-size:12px;color:red;font-weight: bold;}
+span.coreConfigResponse.success {
+    background: url("img/tick.png") no-repeat scroll 2px 5px transparent;
+    color: #0C8D63;
+    display: inline-block;
+    font-size: 12px;font-weight: bold;line-height: 30px;
+    padding-left: 22px;
+}
+#EditRenewalSettings .modalContent table.noborders tr td{padding-top:4px !important}
+.ccs .user-data button.tooltip {margin-top: 0 !important;}
+.renewal .config-header-section {margin-top: 5px;}
+div#performaInvoice .modalContent .footer {position:relative; margin-top:10px; padding-top:5px;}
+div#performaInvoice .modalContent .footer span.error {position:absolute; top:-33px; left:0px;}
+#content-container table.addOnTable tr td.c3 label.payType{cursor:default}
+.tabSecBlock #settings #editVals.disabled {border:0;}
+.tabSecBlock #settings #editVals {padding: 4px 15px;}
+#actionDropdown { margin-top:  6px; }
+div.chooseType { background-color:#EEE; padding:12px 4px 4px 4px; border:1px solid #CCC;}
+div.chooseType p { padding-left:13px;}
+div.chooseType div.currenyDisplay { background-color:#FFF; padding:12px;}
+div.chooseType div.currenyDisplay span { display:inline; padding:10px; margin-right:2px;}
+.priceListTxt { float: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 135px; }
+#step2.renewal button.editRateCard { float: left; }
+.sdpAcDetail tr.only-customer td { white-space: nowrap; }
+.ccs .button_div > button.secondary.config_cancel {margin-left:10px !important;}
+div.dataTables_scrollBody table#addOnPreviewTable tbody tr td {padding:0 10px 0 6px !important;}
+#content-section .alert-box-wrapper.infoIcon.noAttn .confirmMsg {height:20px;} /* part of the top img is visible for info icon from the sprite img*/
+.alert-box-wrapper.noAttn.infoIcon .alertTitle{padding:3px 0 !important;}
+#uploadRateCardModal .modalContent .highlight table.noborders tr td.dataCell textarea { width:300px !important;}
+.mac button.editRateCard, .mac button.editRateCard:focus { padding:1px; height:auto !important;}
+/*Quote Tool Changes*/
+#eaNameDiv{display:none;}
+#eaName{float:left;padding:6px 0px 0px 0px;}
+/*Direct Connect Error CSS */
+.modalContent .hashBadge { background: url("img/bg_hashbadge.png") no-repeat scroll 0 0 transparent; color: #FFF; float: left; font-weight: bold; padding: 5px 20px 5px 10px; }
+.modalContent .errListCont { margin: 20px 0; }
+.modalContent .errListCont div:last-child { margin-left:41px; }
+
+table#addOnTable td {background: none; padding-bottom: 5px;}
+table#addOnTable tr.even.noCheck td {border-top: 1px dotted #A0A0A0}
+table#addOnTable {border-collapse: separate;border-bottom:1px solid #a5a5a5 !important;} /* fix issue Chrome dotted border becomes solid, Firefox dotted border also wierd */
+table#addOnTable .tHolder td {padding: 0 0 5px;}
+/* Increased service type divs width -- 14/01/2014*/
+#step1 #sType {width:70% !important;}
+#step1 .radioWidth {width:19px;}
+#step1 .sName {width: 95%;}
+/*  BUG-00071692 */
+.config_main .selectOpt {width:190px;}
+.ie9 button.edit, .mac button.edit {height: auto !important;} /* Edit button height */
+.ie7 #changePriceList .modalContent .body p, .ie8 #changePriceList .modalContent .body p {margin-bottom:5px !important;}
+.ie7 #changePriceList .modalContent .body, .ie8 #changePriceList .modalContent .body { padding-top:6px !important;}
+.ie7 #changePriceList .modalContent .fotter, .ie8 #changePriceList .modalContent .fotter { margin-top:6px !important;}
+
+/* BUG-00069225 -- starts */
+.mac #renewOption button.edit.renewalLink:hover, .mac button.edit:hover {padding: 1px !important;}
+.mac .ie7 #renewOption button.edit.renewalLink:hover, .mac .ie7 button.edit:hover {padding: 1px 2px !important;}
+/* BUG-00069225 -- ends */
+/* Added on 16/01/2014 for CR-00044547 */
+.search .searchHolder .tooltip {margin: -2px 0 0 5px !important} 
+.config_subHeading {font-weight:bold; margin-top:20px;}
+/* New Addon flow page design 27/01/2014 --- starts */
+#content-container .addonReqPage .addonReqDetail.details-wrapper.addOnReq.submitPage div.details{ width:33%; padding:4px 0;} 
+#content-container .addonReqPage .addonReqDetail.details-wrapper div.details table th,#content-container .praxisContainer .details-wrapper div.details table th{width:38%; font-weight: bold !important;}
+#content-container .addonReqPage .addonReqDetail.details-wrapper div.details table td,#content-container .praxisContainer .details-wrapper div.details table td{width:auto !important;}
+#content-container .addonReqPage .addonReqDetail.details-wrapper div.details table th, #content-container .addonReqPage .addonReqDetail.details-wrapper div.details table td,#content-container .praxisContainer .details-wrapper div.details table th,#content-container .praxisContainer .details-wrapper div.details table td {padding:5px 0;}
+.subscription.addonReqPage header button { margin: 20px 0 10px 16px !important; }
+.ie7 .subscription.addonReqPage header {margin-bottom: 10px !important;}
+#content-section header.clearfix.withEA.addonReqPage, #content-section header.clearfix.withEA.relative {position: relative !important;}
+#content-section header.clearfix.withEA.addonReqPage .helpLink {top: 17px !important}
+#content-section header.clearfix.withEA.addonReqPage .helpLink .help {height: auto;}
+#content-container .addonReqPage.warningMsgDiv {width:99%; position: static; top:0;}
+#content-section .addonReqPage.alert-box-wrapper {margin:0 0 10px; padding-top:5px;}
+#content-section .addonReqPage.alert-box-wrapper .alertTitle{padding: 2px 0 0;}
+#content-section .addonReqPage.alert-box-wrapper .alert-box-holder {background: url("img/warning_small.png") no-repeat !important;}
+#content-section .addonReqPage.alert-box-wrapper .alert-box-holder.confirmMsg {padding-left: 30px !important;}
+#content-section .addonReqPage .allOrdersTxt {width: 72%;float: left;padding:25px 0px;}
+#content-section .addonReqPage .bottom_part_priceInfo {background-color: #FFF9EB;border-top: 1px solid #000; }
+#content-section .addonReqPage .allOrdersTxt div {margin: 6px 25px;}
+#content-section .addonReqPage .allOrdersTxt h3 {margin: 0 25px 15px;}
+#content-section .addonReqPage .bottom_part_priceInfo .tooltip {position:absolute; top:0; left:0; margin: 0 !important;}
+.ie7 #content-section .addonReqPage .bottom_part_priceInfo .tooltip {margin: 0 0 0 -21px !important; position:absolute;}
+#content-section .addonReqPage .priceInfo .tableCont {margin: 0 10px;}
+#content-section .addonReqPage .priceInfo .padBtm {padding-bottom:15px !important;}
+#content-section .addonReqPage .priceInfo .agree {font-weight: normal !important;}
+#content-container .addonReqPage  td.bottomarea {background-image: none !important;background: none !important;}
+#tabbed_box_1.addonReqPage {margin:0px !important;}
+#noAddonError .headerTitle{color: red;}
+/* New Addon flow page design 27/01/2014 --- ends */
+
+/* New Service Detail page design 28/01/2014 -- starts */
+#content-section .serviceDetailPage .confirmMsg {margin: 0 5px 5px !important;}
+#content-section .serviceDetailPage .btn_buyAddon {display: none; float: right; position: absolute; right: 70px; padding:6px 20px !important;}
+#content-section .serviceDetailPage button.purchase, #content-section .serviceDetailPage button.purchase:active, #content-section .serviceDetailPage button.purchase:focus, #content-section .serviceDetailPage button.purchase:hover, #content-section .serviceDetailPage button.purchase.btn_buyAddon {background: #4fb8dc !important; background: -moz-linear-gradient(center top , #4FB8DC 0%, #399DBF 50%, #2B75B2 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0) !important; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4fb8dc), color-stop(50%,#399dbf), color-stop(100%,#2b75b2)) !important;}
+#content-section .serviceDetailPage.alertMsgDiv .alert-box-wrapper {margin-top: 0px !important;}
+/* New Service Detail page design 28/01/2014 -- ends */
+
+#content-container table.expanded.label_dataTable thead tr th span { color: #000; font-weight: bold; font-size: 12px; padding-right:0px;}
+#content-container table.expanded.label_dataTable thead tr th { background: #FFFFFF; padding:6px;}
+#content-container table.expanded.label_dataTable thead, #content-container table.expanded.label_dataTable thead tr th { border: medium none;}
+#content-container table.expanded.label_dataTable tbody tr td.labelHead { font-weight:bold; padding:10px 0px 10px 15px !important; background:#EEEEEE; border-bottom:1px dotted #CCCCCC;}
+#networkMessage.alert-box-wrapper.infoIcon.autoClose,#paymentMethodAlert.alert-box-wrapper.infoIcon.autoClose {padding:8px 8px 0px 16px !important; margin:0 0 15px !important;}
+#networkMessage .confirmMsg,#paymentMethodAlert .confirmMsg{padding: 0px 2px 3px 5px !important;}
+#networkMessage .alertTitle{padding-left: 18px; margin-top: 3px;}
+#odtMessage .alert-box-wrapper.infoIcon.autoClose {padding:8px 8px 0px 16px !important; margin:0 0 15px !important;}
+#odtMessage .confirmMsg {padding: 0px 2px 3px 5px !important;}
+#odtMessage .alertTitle {padding-left: 18px; margin-top: 3px;}
+.serviceDetailPage .oneLineTxt {margin: 7px 0 !important; }
+/* Network Config Page 04/02/2014 -- starts */
+.ccs.formcss form div.content-div {border-bottom: 1px solid #D4D4D4; padding: 20px 0;}
+.ccs.formcss h3 {color:#666666 !important; font-size: 18px !important; font-weight: normal !important;}
+.ccs.formcss h4 {font-size: 13px !important; width:220px;}
+.ccs.formcss .left {float: left;}
+.ccs.formcss .required {color: #FF0000;border: 0 !important;}
+.ccs.formcss  .secHolder { border: 0; padding: 10px 70px;}
+.ccs.formcss  .secHolder select {width: 225px;}
+.ie7 .ccs.formcss  .secHolder select {width: 227px;}
+.ccs.formcss .secHolder input{border: 1px solid #999999;padding: 2px;}
+.ccs.formcss #reqDetails .secHolder input {margin: 0 2px; width: 39px;}
+.ie9 .ccs.formcss #reqDetails .secHolder input {width: 40px;}
+.ie8 .ccs.formcss #reqDetails .secHolder input, .ie7 .ccs.formcss #reqDetails .secHolder input {width: 41px;}
+.ccs.formcss #reqDetails .secHolder input:first-child {margin: 0 2px 0 0;}
+.ccs.formcss #adminContact .secHolder .name input {width:103px !important;margin-right: 4px;}
+.ccs.formcss #adminContact .secHolder input {width: 220px;}
+.ccs.formcss label {font-size: 11px !important;}
+.ccs.formcss #reqDetails label.requiredTxt {font-size: 12px !important; margin-left: 190px; font-weight: normal !important; width:220px;cursor: default;}
+.ccs.formcss .buttons button {margin: 15px 0 0 10px !important;}
+.ccs.formcss #adminContact {background: url("img/table_shadow.png") repeat-x bottom;border:0 !important;}
+.ccs.formcss .secHolder input.error, .ccs.formcss .secHolder select.error {border: 1px solid #FF0000;padding: 2px;}
+.ccs.formcss  .error_msg label.error {margin-left: 0px!important;}
+.ccs.formcss  .error_msg {padding:0;margin:0;position: absolute;}
+.ccs.formcss #adminContact h3 .tooltip {margin: 0 !important;}
+.ccs.formcss .tooltip {margin-top: 1px !important;}
+.ccs.formcss #reqDetails .left.midTxt {margin:0 20px;}
+#cancelModal .alert-box-holder.confirmMsg.error {background-position: 0 center;}
+#cancelModal .alertTitle {padding:7px 0 0px !important;}
+.infoNetTxt {padding: 3px 30px !important; height: 15px !important; background: url("img/status_icon.png") no-repeat scroll -34px -14px rgba(0, 0, 0, 0) !important; margin-top:20px;}
+.infoNetTxt a {cursor: pointer;}
+/* Network Config Page 04/02/2014 -- ends */
+sup.newRequest { color: #74DF00; padding: 0 5px; line-height:1 !important; font-size:80% !important;}
+.validator-form #editValues label.error { margin-top:0px !important;}
+#formSubmitted div.body p.infoIcon, #daasFormSubmitted div.body p.infoIcon { background: url("img/infoImg.png") no-repeat scroll center left; margin: 10px 0; padding: 2px 30px; }
+/*praxis css start here*/
+/*.ie7 #content-section header.clearfix.withEA.praxisHeader .helpLink{top:-20px !important;}*/
+#content-container .praxisContainer .details-wrapper div.details.first{width: 29%;}
+#content-container .praxisContainer .details-wrapper div.details.second{width:40%;}
+#content-container .praxisContainer .details-wrapper div.details.second {border-right:1px solid #AAAAAA;}
+#content-container .praxisContainer .details-wrapper div.details.serviceBtns{width:29%;text-align: center; position:relative;}
+.plotDivInView{float:left;}
+#praxisContainer {position:relative;}
+#praxisContainer .footerContent .ServiceAgreement{width:100% !important;border-top: 3px solid #74B229 !important;}
+#praxisContainer .footerContent .SupportLevel{width:100% !important;border-top: 3px solid #8ECBE1 !important;}
+#praxisContainer .footerContent .PricingChart{width:100% !important;border-top: 3px solid #136992 !important;}
+#praxisContainer .footerContent p a{margin-top: 10px; color: #000;font-weight: bold; padding-right: 26px;}
+#praxisContainer div.details-wrapper.footerContent .details{ width:31% !important;padding-right:3.5%;}
+#praxisContainer div.details-wrapper.footerContent .details.lastFooterCont{padding-right:0 !important;}
+/* #content-container .details-wrapper div.details.serviceBtns{float: right;   border-left: 1px solid #ccc !important;text-align: right;padding-bottom: 14px;} */
+.ie7 #content-container .details-wrapper div.details.serviceBtns{margin-top: 0;}
+#content-container .details-wrapper div.details.serviceBtns div.dropDownbtns > div{display: inline-block;position: relative;}
+.ie7 #content-container .details-wrapper div.details.serviceBtns div.dropDownbtns > div {display: inline;}
+#praxisContainer .serviceBtns button{width: 183px;margin-left:20px !important;}
+/*#praxisContainer .manageServiceContainer,#praxisContainer .viewStatementsContainer{width: 157px;}*/
+#praxisContainer .serviceBtns .dropDownbtns ul.manageServiceList,#praxisContainer .serviceBtns .dropDownbtns ul.viewStatementsList,#praxisContainer .serviceBtns .dropDownbtns ul.buyNewServiceList{ background: #ffffff;z-index: 100;text-align: left;float: left;position: absolute;left: 21px;top:29px;width: 181px;border: 1px solid #B5B5B5;} 
+.ie7 #praxisContainer .serviceBtns .dropDownbtns ul.manageServiceList, .ie7 #praxisContainer .serviceBtns .dropDownbtns ul.viewStatementsList, .ie7 #praxisContainer .serviceBtns .dropDownbtns ul.buyNewServiceList{top:35px;left:1px;}
+.firefox #praxisContainer .serviceBtns .dropDownbtns ul.manageServiceList, .firefox #praxisContainer .serviceBtns .dropDownbtns ul.viewStatementsList, .firefox #praxisContainer .serviceBtns .dropDownbtns ul.buyNewServiceList{top:27px;}
+#praxisContainer .serviceBtns .dropDownbtns ul.manageServiceList li,#praxisContainer .serviceBtns .dropDownbtns ul.viewStatementsList li, #praxisContainer .serviceBtns .dropDownbtns ul.buyNewServiceList li {background: none;text-align: left;}
+#praxisContainer .serviceBtns .dropDownbtns ul.manageServiceList li a:hover{text-decoration: none;}
+#praxisContainer .serviceBtns .dropDownbtns ul li{cursor: pointer;padding-top:7px;padding-bottom:5px;padding-left: 10px;padding-right: 10px;}
+#content-container .praxisContainer .details-wrapper div.details table th{width:45% !important;padding-right: 20px !important;}
+#content-container .praxisContainer .details-wrapper div.details table td{padding-right: 20px !important;}
+#praxisContainer .serviceBtns .dropDownbtns ul li.manageUsers{border-top:1px dotted #000;}
+.praxisHeaderContainer {border-bottom: 1px #AAAAAA solid ;}
+#praxisContainer .normalBtns {margin-bottom: 10px;margin-top:12px;}
+.ie7 #praxisContainer .dropDownbtns{margin-left: 40px;} 
+#praxisContainer .serviceBtns .button:hover{width: 120px;display: inline-block;}
+.ie7 #praxisContainer .buyNewServiceContainer{z-index: 1002;}
+.ie7 #praxisContainer .normalBtns button.secondary{padding-bottom:6px;}
+.ie7 #praxisContainer .manageServiceContainer button.secondary,.ie7 #praxisContainer .viewStatementsContainer button.secondary, .ie7 #praxisContainer .buyNewServiceContainer button.secondary, .ie7 #praxisContainer .launchServiceContainer button.secondary{padding-bottom:0 !important}
+.ie7 #praxisContainer .launchServiceContainer button.secondary{height: 30px !important;}
+#praxisContainer .manageServiceImg,#praxisContainer .viewStatementsImg, #praxisContainer .buyNewServiceImg{float: right;margin-top: 3px;}
+.ie7 .manageServiceImg, .ie7 .viewStatementsImg, .ie7 .buyNewServiceImg{position:relative !important;margin-top:0 !important;float:none !important;}
+#praxisContainer .praxisHeaderContainer .details-wrapper .details .service{padding-bottom: 0 !important;}
+#praxisContainer .praxisHeaderContainer .details-wrapper .details .service span.posAlign{vertical-align: middle !important;}
+#praxisContainer .praxisUSN button.tooltip{margin-top: 0 !important; margin-bottom: 0 !important;}
+#praxisContainer .dropDownbtns .viewStatementsList li.currStmnts label{margin-top:-2px; margin-right: 8px;width:15px;height:16px;float:right;background: url("img/status_icon.png") no-repeat scroll -54px 0 transparent;}
+.ie7 #praxisContainer .dropDownbtns .viewStatementsList li.currStmnts{padding-bottom: 0;}
+.ie7 #praxisContainer .dropDownbtns .viewStatementsList li.currStmnts label{position:relative;bottom:12px;margin-bottom:0;padding-bottom: 0}
+.ie7 #praxisContainer .tabbed_box{z-index: -1;}
+#praxisContainer .praxisHeaderContainer .details-wrapper{margin-bottom: 10px; margin-top: 10px;}
+#praxisContainer .praxisHeaderContainer .praxisHeader .helpLink h1{margin-bottom: 0}
+#praxisContainer .praxisHeaderContainer .details-wrapper .details.rightBorder{border-right: 1px solid #CCCCCC;}
+#cancelModalWindow div.cancelSerAlertcont, #changeServiceOwner div.csoAlertcont{background: url("img/warning_small_trans.png") no-repeat scroll 8px 12px #FFF9E9;border: 1px solid #CCC;border-radius: 5px;}
+#cancelModalWindow div.cancelSerAlert, #changeServiceOwner div.csoAlertcont{padding: 10px 5px 10px 36px; }
+#cancelModalWindow div.cancelSerAlertcont #agree, #changeServiceOwner div.csoAlertcont #agree{margin-bottom: 1px;margin-right: 3px;cursor: pointer;}
+#cancelModalWindow div.cancelSerAlertcont .agreeText, #changeServiceOwner .csoHeader label, #changeServiceOwner .csoAlertcont label.agreeText{cursor:auto !important;}
+#cancelModalWindow div.step2CancelService,#cancelModalWindow div.step3CancelService, #changeServiceOwner div.step2CSO,#changeServiceOwner div.step3CSO{margin: 30px auto;}
+#cancelModalWindow div.step2CancelService .step2Body, #cancelModalWindow div.step3CancelService .step3Body, #changeServiceOwner div.step2CSO .step2Body, 
+#changeServiceOwner div.step3CSO .step3Body{    background: url("img/status_icon.png") no-repeat scroll 1px -85px transparent;float:left;height: 35px;width: 38px;}
+#cancelModalWindow div.step3CancelService .step3Body,#changeServiceOwner div.step3CSO .step3Body{background-position: -34px -85px;}
+#cancelModalWindow div.step2CancelService .step2BodyMsg,#cancelModalWindow div.step3CancelService .step3BodyMsg,#changeServiceOwner div.step2CSO .step2BodyMsg,
+#changeServiceOwner div.step3CSO .step3BodyMsg{margin-left:50px;line-height: 16px;}
+#changeServiceOwner div.csoHeader{height:100px;}
+#changeServiceOwner .csoHeader .csoList{position:relative;}
+#changeServiceOwner .csoHeader .csoList .csoDetailsCont{
+position: absolute;top: 26px;width: 42%;max-height: 200px;float: none;clear: both;background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #CCCCCC;overflow-y: auto;}
+.ie7 #changeServiceOwner .csoHeader .csoList .csoDetailsCont{
+   height: expression( this.scrollHeight > 200 ? "200px" : "auto" );
+}
+.csoBoxShadow{box-shadow: 0 1px 1px 1px #CCCCCC;}
+.disableCSO,#changeServiceOwner a.disableCSO:visited, #changeServiceOwner a.disableCSO:hover, #changeServiceOwner a.disableCSO:active,#praxisContainer .serviceBtns .dropDownbtns ul li.disableCSO{color:#666 !important;text-decoration:none !important;cursor:default !important;}
+#changeServiceOwner .csoHeader .csoButtonCont{cursor:pointer;}
+#changeServiceOwner .csoHeader .csoButton{color: #444444;font-size: 13px;font-weight: normal;height: 27px;margin: 0 !important;text-align: left;width: 307px;}
+#changeServiceOwner .csoHeader label.userInfoAftSel{margin-left:15px;line-height: 27px;cursor:auto;}
+#changeServiceOwner .csoHeader ul.csoDetails{list-style:none;margin-left: 0;}
+#changeServiceOwner .csoHeader ul.csoDetails li{padding: 8px 0 8px 24px;cursor: pointer;}
+#changeServiceOwner .csoHeader ul.csoDetails li:hover,#changeServiceOwner .csoHeader ul.csoDetails li:active,#changeServiceOwner .csoHeader ul.csoDetails li:visited,
+#changeServiceOwner .csoHeader ul.csoDetails li:hover p,#changeServiceOwner .csoHeader ul.csoDetails li:active p,
+#changeServiceOwner .csoHeader ul.csoDetails li:visited p{background-color: #0A246A;color:#FFF !important;}
+#changeServiceOwner .csoHeader ul.csoDetails li p {margin: 0;}
+#changeServiceOwner .csoHeader ul.csoDetails li, #changeServiceOwner .csoHeader ul.csoDetails li p.csoName {color: #444444;font-size: 13px;font-weight: bold;}
+#changeServiceOwner .csoHeader ul.csoDetails li p.csoEmail{color: #444444;}
+#changeServiceOwner .csoDetailsCont ul.csoDetails li.noData,#changeServiceOwner .csoHeader ul.csoDetails li.noData:hover,#changeServiceOwner .csoHeader ul.csoDetails li.noData:active,#changeServiceOwner .csoHeader ul.csoDetails li.noData:visited{color: #666666 !important;cursor: default;padding-left: 15px;background-color:#FFF !important;}	
+.firefox #changeServiceOwner .csoDetailsCont ul.csoDetails li.noData{padding-left: 17px;}
+.ie8 #changeServiceOwner .csoDetailsCont ul.csoDetails li.noData{padding-left: 20px;}
+#praxisContainer .alert-box-wrapper.praxisCSO {background-color: #E7F0F8;margin-top: 30px !important;width: 97%;}
+.ie7 #praxisContainer .alert-box-wrapper.praxisCSO, .webkit #praxisContainer .alert-box-wrapper.praxisCSO{padding-bottom:6px;padding-top:6px;float:left;}
+#praxisContainer .alert-box-wrapper.praxisCSO div{background: url("img/status_icon.png") no-repeat scroll -33px -15px transparent;}
+.ie7 #praxisContainer .alert-box-wrapper.praxisCSO div, .webkit #praxisContainer .alert-box-wrapper.praxisCSO div{height:18px;}
+#praxisContainer .alert-box-wrapper.praxisCSO p{margin-bottom:10px !important;font-weight: normal;padding-left: 30px;padding-top: 2px;}
+#usageSpendModalWindow .err{border: 1px solid #FF0000 !important;}
+#usageSpendModalWindow .modalContent .body span.ErrMsg{color: #FF0000;margin-left: 11px;}
+#usageSpendModalWindow .modalContent .body span.errorMsgCont{display: block;margin-top: 6px;position:absolute;}
+.ie7 #usageSpendModalWindow .modalContent .body span.errorMsgCont{top:22px;left:0;}
+#usageSpendModalWindow .modalContent input[type=text]{  color: #333;width: 80%;}
+#usageSpendModalWindow .modalContent input[type=text].placeholder{color: #e9e9e9;}
+#usageSpendModalWindow .setAmountContent{width: 40%;}
+#usageSpendModalWindow .setAmountContent p{position:relative;margin-bottom:32px;}
+#usageSpendModalWindow h4 {margin-bottom: 10px;}
+#usageSpendModalWindow span.error{position: absolute;bottom: 55px;left: 37px;width: 100%;}
+#usageSpendModalWindow label.amtLbl {margin-left: 12px; line-height: 20px;}
+#praxisContainer .praxisHeaderContainer header.withEA div.accountInfo, .billingStatementDetailsContainer header.withEA div.accountInfo{
+    border-left: 1px dotted #AAAAAA;float: left;margin-right: 20px;margin-top: 12px;padding-left: 15px;
+}
+#cancelModalWindow .modalContent .footer, #usageSpendModalWindow .modalContent .footer, #changeServiceOwner .modalContent .footer{border-top:none !important;}
+
+#cancelModalWindow b {font-weight: bold;}
+
+/*ODT modal window*/
+#newOdtModalWindow table thead tr th{background-color: white;}
+#newOdtModalWindow td {padding: 10px 0;}
+#newOdtModalWindow td.odtAddOnNameTd {width: 70%;}
+#newOdtModalWindow td.odtBillingRateTd {width: 20%;}
+#newOdtModalWindow td.odtQuantityTd {width: 10%; text-align: center;}
+#newOdtModalWindow td.odtQuantityTd input.odtAddonQty {width: 60%; text-align: center;}
+
+#newOdtModalWindow div.odtTotalPriceRow {border-top: 2px solid #DDDDDD; background-color: #DDDDDD;}
+#newOdtModalWindow div.odtTotalPriceRow div.agreeTextDiv {background-color: #FFFFEC; padding: 10px; float: left; width: 70%; font-size: 11px; }
+#newOdtModalWindow div.odtTotalPriceRow div.agreeTextDiv input#odtAgreeTermsCheck{margin-right: 5px;}
+#newOdtModalWindow div.odtTotalPriceRow div.odtTotalOrder {background-color: #DDDDDD; text-align: right; padding-top: 10px;}
+#newOdtModalWindow div.odtTotalPriceRow div.odtTotalOrder p.odtTotalOrderText{color: #000; font-weight: bold;}
+#newOdtModalWindow div.odtTotalPriceRow div.odtTotalOrder p#odtTotalOrderAmt {color: #2CB84F; font-size: 30px; line-height: 30px;}
+#newOdtModalWindow #odtAddOnStep2 {width: 90%;}
+#newOdtModalWindow #odtAddOnStep2 .odtStep2Body, #newOdtModalWindow #odtAddOnStep3 .odtStep3Body{background: url("img/status_icon.png") no-repeat scroll 1px -85px transparent;float:left;height: 35px;width: 38px; margin: 6px;}
+#newOdtModalWindow #odtAddOnStep3 .odtStep3Body{background-position: -34px -85px;}
+/*Praxis USage Section starts here*/
+/* the plot div */
+div.jqplot-target {height: 100%;margin: 30px auto;}
+#statementPastUsage .allPastPlotsWrapper div.jqplot-target {margin: 30px auto;}
+.fullwidth {width: 100% !important;}
+.inlineBlockDisplay {/*display: inline-block;*/}
+.legendBox {/*width: 100%;font-size: 1.2em; */margin-top: 10px;}
+.jqplot-table-legend-swatch {/* border-color: green; margin-right: 10px;*/}
+/* .legendBox .secondLegend .jqplot-table-legend-swatch{border-color: #D9541E;}
+.legendBox .firstLegend .jqplot-table-legend-swatch{border-color: #FDB813;} */
+
+/* .jqplot-highlighter-tooltip {border: 0;font-size: 1.2em;padding: 0 5px;background: rgba(208,208,208,0.8); left: 5px;} */
+/* .jqplot-highlighter-tooltip:after {content: "";position: absolute;width: 0;height: 0;border-width: 8px;border-style: solid;border-color: transparent #D0D0D0 transparent transparent;top: 0px;right: 100%;} */
+/* .jqplot-highlighter-tooltip:before {content: ""; position: absolute; width: 0;height: 0;border-width: 8px;border-style: solid;border-color: transparent transparent transparent #D0D0D0;top: 0px;left: 100%;} */
+.ribbonNav {float: left;width: 90%;overflow: hidden;margin: 0px auto;position: relative;}
+#carouselHeadings .currentHeadings {list-style: none;list-style-type: none;float: left;width: 300%;margin-bottom:0;position: relative;height:160px;}
+#carouselHeadings .currentHeadings li {display: inline-block;float: left;padding: 0;cursor: pointer;background: none;border-top:5px solid transparent;height:155px;}
+#content-section section  .currentHeadings li p {margin: 0px;}
+#carouselHeadings .currentHeadings li  div{border-left:1px solid #CCC;}
+#carouselHeadings .currentHeadings li p, #carouselHeadings .currentHeadings li div{padding-left:20px !important;padding-right:20px !important;margin: 10px 0 15px;}
+#carouselHeadings .currentHeadings li div p{padding-right:0 !important;padding-left:0 !important;}
+#content-section section  .currentHeadings li p.ribbonBorderTop1 {height: 5px;margin-bottom: 20px;}
+#eaDropDownOpts_variousCostsUsage a.dropdownOpt{padding:5px 10px;}
+/*
+#carouselHeadings .currentHeadings li div.frstItem{
+border-left:1px solid #CCC !important;
+}
+#carouselHeadings .currentHeadings li .frstItem{
+padding-left:20px;
+}*/
+.leftNav, .rightNav {float: left;width: 5%;height: 160px;}
+.leftNav .navImg , .rightNav .navImg {position: absolute;top: 54px;z-index: 1000;height: 31px;width: 31px;cursor: pointer;}
+.ie7 .leftNav .navImg , .ie7 .rightNav .navImg {width:0;padding:0 15px;}
+#ribbonLeft, #ribbonRight, #pastPrevious, #pastNext{height:31px;width:31px;}
+#praxisContainer .navImg{background: url("img/navigation.png") no-repeat scroll transparent;} 
+#praxisContainer .navImg.prev:hover,#carouselHeadings .navImg.prev:focus,#carouselHeadings .navImg.prev:active {background-position: 0 -31px;}
+#praxisContainer .navImg.next {background-position: -31px 0;}
+#praxisContainer .navImg.next:hover,#carouselHeadings .navImg.next:focus,#carouselHeadings .navImg.next:active {background-position: -31px -31px;}
+#ribbonRight{right: 0;}
+.graphWithMarker{float:left;margin: 10px 0 0;width:100%;}
+.arrowMarker{float:left;clear:both;width:20px;height:15px;background: url('img/arrowPosCarousel.png') no-repeat;position:relative;}
+.graphSection {float: left;width: 98%;position: relative;border: 8px solid #DDD;}
+.newGraphSection {float: left;width: 98%; margin-top: 50px; position: relative;}
+#carouselHeadings {float: left;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;width: 100%;position: relative;height:160px;}
+.currentHeadings li p.topText {font-size: 16px !important;font-weight: bold !important;color: #666 !important;padding-top:10px;}
+.currentHeadings li p.costValue {font-size: 40px !important;line-height: 50px !important;color: #333 !important;}
+.currentHeadings li p.greyText {font-size: 14px !important;font-weight: bold !important;color: #868686 !important;}
+#carouselHeadings .currentHeadings .selectedRHead .costValue, #carouselHeadings .currentHeadings .selectedRHead .greyText{color:#FDB813 !important;}
+.currentHeadings li p.ctd { font-size: 14px !important;font-weight: bold !important;color: #999 !important;}
+#carouselHeadings .currentHeadings .selectedRHead .ctd{color:#D9541E !important;}
+.ribbonBorderTop {border-top:5px solid #DDD !important;}
+.navigateBtnLeft {top: 250px;left: 0px;float: left;position: absolute;height:31px;}
+.navigateBtnRight {top: 250px;right: 0px;float: right;position: absolute;height:31px;}
+.allPlotsWrapper, .allPastPlotsWrapper {height: 500px;position: relative;overflow: hidden;margin: 30px auto;/* width: 1200px; */width: 94.5%;}
+.allPastPlotsWrapper{height: 650px; margin:0px auto !important; width: 88%;}
+.allPlotsWrapper .parallex, .allPastPlotsWrapper .newParallex_2014 {width: 100%;position: relative;left: 0px;}
+.newParallex_year{width: 100%;position: relative;left: 0px;}
+/* .allPlotsWrapper .plotWrapper {width: 100%;height: 300px;display: inline-block;position: absolute;} */   
+.allPlotsWrapper .pastPlotWrapper_year, .allPastPlotsWrapper .pastPlotWrapper_year{width: 100%;height: 300px;display: inline-block;position: absolute;margin-top: 20px;}
+#statementCurrentUsage{margin-bottom:40px;}
+#statementPastUsage .allPastPlotsWrapper .newParallex_year, #statementPastUsage .allPastPlotsWrapper .pastPlotWrapper_year{width: 100%; margin: 0 auto;}
+#statementCurrentUsage .allPlotsWrapper .newParallex_year, #statementCurrentUsage .allPlotsWrapper .pastPlotWrapper_year{width: 100%; margin: 0 auto;}
+#statementPastUsage .allPastPlotsWrapper .plotDiv{width:80%;}
+#statementPastUsage .allPastPlotsWrapper .odtElement{height: 100%; margin: 30px auto; text-align: center; display: table;}
+#statementPastUsage .allPastPlotsWrapper .odtPurchaseHist{display: table-cell; vertical-align: middle; border: 3px solid #ccc;}
+#statementPastUsage .allPastPlotsWrapper .odtPurchaseHist .odtPurchaseHistDetails{display: inline-block; text-align: left;}
+#statementPastUsage .allPastPlotsWrapper .odtPurchaseHist .odtPurchaseHistDetails .odtCustName, #statementPastUsage .allPastPlotsWrapper .odtPurchaseHist .odtPurchaseHistDetails .odtQty, #statementCurrentUsage .allPlotsWrapper .odtPurchaseHist .odtPurchaseHistDetails .odtCustName, #statementCurrentUsage .allPlotsWrapper .odtPurchaseHist .odtPurchaseHistDetails .odtQty{font-weight: bold;}
+#statementCurrentUsage .allPlotsWrapper .plotDiv{width:90%;}
+#statementCurrentUsage .allPlotsWrapper .odtElement{height: 100%; margin: 30px auto;}
+#statementCurrentUsage .allPlotsWrapper .odtElement .odtPurchaseHist{height: 100%; overflow-y: scroll; text-align: left; border: 1px solid #ccc; padding: 10px;}
+#statementCurrentUsage .allPlotsWrapper .odtElement .nextBillingStmtText{margin: 20px 10px;}
+#curConUsage{float:none;width:100%;margin:20px 0px;}
+#curConUsage .estiCTD .estiCTDtext{font-size: 16px;color: #333333;margin-bottom: 5px;}
+#curConUsage .curConUsageleftText1{font-size: 17px;color:#000;margin-bottom: 5px;}
+#curConUsage  .curConUsageleftText2,.curConUsage .estiCTD .estiCTDdate{font-size: 13px;margin-bottom: 5px;}
+#curConUsage button.tooltip{margin-top: 0px;float:left;position: relative;top: -2px;}
+#curConUsage .estiCTDval{color:#333;font-size: 40px;line-height: 40px;margin: 0px 0px 0px 10px;}
+a.exportCus{float:right; }
+#statementPastUsage .pastCont{background-color: #EAEAEA !important;position: relative;width: 100%;height:65px;}
+#statementPastUsage .pastYearsCont{float: right;position: relative;right: 380px;top: 23px;}
+#statementPastUsage .pastYearsCont select#pastYears{width:75px;}
+#statementPastUsage .drpdwnCatCont{float: right;left: 60px;margin: 20px;position: relative;}
+#eaDropDownOpts a.totalCostUsageText{border-top:1px dotted #CCC;}
+.chartTitle{text-align: center;font-size: 24px;}
+/* .titleCategory{color: red;} */
+#praxisContainer .eaSelector {margin-top: 0;}
+.ie9 #praxisContainer .eaInputWrapper input.optionsHolder, #praxisContainer .eaInputWrapper input.optionsHolder:focus{height: 13px !important;}
+.mac #praxisContainer .eaInputWrapper input.optionsHolder, #praxisContainer .eaInputWrapper input.optionsHolder:focus{height: 13px !important;}
+#praxisContainer .eaInputWrapper input.optionsHolder, #praxisContainer .eaInputWrapper input.optionsHolder:focus{height: 15px !important;}
+.chrome #eaSelectorWidgetDiv .eaInputWrapper input.optionsHolder{padding-bottom: 8px!important;}
+#praxisContainer .curUsageErrorMsg{color: #939393;font-size: 24px;font-weight: bold;margin-top: 100px;text-align: center;border-bottom: 1px solid #CCCCCC;padding-bottom: 375px;margin-bottom: 100px;}
+.consumptionCostData .consumptionCostText{font-weight: bold;}
+.consumptionCostData ul.consumptionDataDetails{display: inline;}
+.consumptionCostData ul.consumptionDataDetails li.monthData {background: none !important;width: 7%;}
+#praxisContainer .odtEleCont .consumptionCostData{margin: 0 auto;  font-weight: bold;}
+#praxisContainer #statementPastUsage .allPastPlotsWrapper .odtEleCont .consumptionCostData .lblCont{text-align: left !important;} 
+#praxisContainer #statementPastUsage .allPastPlotsWrapper .odtEleCont .consumptionCostData .lblCont p {margin-right: 0;} 
+#praxisContainer .odtEleCont .consumptionCostData .odtCostData{width: 90%; float: left; text-align: center; font-size: 15px; padding-top: 5px;}
+.titleLegends{text-align: center;font-size: 12px;}
+.legendBox {margin: 10px auto;text-align: center;}
+span.firstLegendStyle, span.secondLegendStyle{padding-left: 30px;} 
+span.firstLegendStyle{border-bottom: 3px solid #FDB813; position: relative; bottom: 9px; margin-right: 6px;}
+span.secondLegendStyle{border-bottom: 3px solid #D9541E; border-bottom-style: dotted;position: relative; bottom: 9px; margin-right: 6px;}   
+.ie7 span.firstLegendStyle, .ie7 span.secondLegendStyle{bottom:5px;} 
+.firstLegend{display: inline-block;/* margin-right: 25px; */position: relative;}
+.secondLegend{display: inline-block;/* margin-left: 25px; */position: relative;}
+#praxisContainer .doubleLegendProperty{margin-right: 10px;}
+.ie7 .firstLegend, .ie7 .secondLegend{display: inline;}
+.legendBox2 {width: 100%;font-size: 1.2em;}
+#loadingSYm{text-align: center;width:100%;height: 400px;}
+#loadingSYm div {background:url("img/loading_32.gif") no-repeat scroll 0 7px transparent;display: inline-block;position: relative;top: 120px;}
+.ie7 #loadingSYm div{display:inline;}
+#loadingSYm div p{font-size:37px !important;color:#999999;padding-left:40px;}
+#praxisContainer  .jqplot-highlighter-tooltip{display: inline-block;background:none;background-image: url('img/graphToolTipFinal.png');background-repeat: no-repeat;background-color: transparent !important;background-position: left;font-size: 1.2em;padding: 0 5px;border: 0;}
+.tooltipContent{background-color: #DDD;margin: 0 5px;padding: 0 5px;}
+#praxisContainer .consumptionCostData .consumptionDataDetails{width: 1035px;}
+#praxisContainer .consumptionCostData .consumptionDataDetailsRow{text-align: center;width: 100%;}
+#praxisContainer .consumptionCostData .monthData{word-break: break-all;background: none;width: 8%;color: #666666;font-size: 12px;font-weight: bold;}
+#statementPastUsage .allPastPlotsWrapper .lblCont{float: left;text-align: right !important;font-weight: bold;}
+#statementPastUsage .allPastPlotsWrapper .lblCont p {font-size: 15px !important;margin-right: 10px;padding-top: 5px;}
+#statementPastUsage .allPastPlotsWrapper .usageCont{float: left;}
+#statementPastUsage .newGraphSection div.billingStmtWrapper.clearfix{position: absolute;width: 100%; bottom: 78px; }
+/* #statementPastUsage .newGraphSection div.billingStmtWrapper.clearfix{position: absolute;left: 90px;bottom: 78px;} */
+#statementPastUsage .newGraphSection .billingStmtWrapper .billinStmtLabel{float: left;padding-top: 5px;font-weight: bold;font-size: 15px !important;margin-right: 10px;text-align: right;}
+#statementPastUsage .newGraphSection .billingStmtWrapper .billinStmtLabel a{padding-right: 7px;}
+#statementPastUsage .allPastPlotsWrapper .billingDropDownCont{float: left;}
+/* .newGraphSection .eaSelector.billingDropDownCont .eaInputWrapper {position: absolute; left: 230px; bottom: 78px;} */
+/*Praxis Usage Section ends here*/
+/*praxis css end here*/
+/* CR-00046271 -- AddonFlow header -- starts */
+#content-container .alertTxtSpace {margin-right: 3px;}
+#content-container .alertStatusTxt {vertical-align: -0.5px;cursor: default;}
+.ie8 #content-container .alertStatusTxt, .ie7 #content-container .alertStatusTxt {vertical-align: 0px !important;}
+/* CR-00046271 -- AddonFlow header -- ends */
+#content-section section .filter-header h3.sub-header { margin:0px !important; color: #fff;}
+#content-section section .filter-header h3.sub-header span#curRateCard { float:none !important;}
+
+
+/* CR-00078267 -- AddonFlow header -- starts */
+div.topBar .readOnly.account {padding-left:10px; border-left:1px dotted #CCC; border-right:0px;}
+#content-container header.serviceDetailPage .nextToHelp {margin-top: 10px !important;}
+#content-container header.serviceDetailPage .readOnly {border-left: 1px dotted #CCCCCC; border-right: 0; padding-left: 10px;}
+/*#content-container .details-wrapper div.details.serviceBtns.serviceDetail{border-left: 1px solid #ccc !important;}*/
+#content-container .details-wrapper div.details.serviceBtns .serviceCont button img {float: right; padding: 3px 5px;}
+
+/* btn container */
+#content-container .btnsContainer button.btnBg, #content-container .btnsContainer1 input.button.btnBg {width:183px; margin:5px !important;}
+#content-container .btnsContainer.greyBlue button.btnBg, #content-container .btnsContainer1 input.button.btnBg {
+    background: #FEFEFE url('img/bg_button_secondary.png') repeat-x; /* old browsers */
+    background: -moz-linear-gradient(top, #FEFEFE 0%, #E3E3E3 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#E3E3E3)); /* webkit */
+    border: 1px solid #bcbcbc;
+    color: #2A73B1;
+}
+#content-container .btnsContainer .normalBtns button {margin-top: 0 !important;}
+#content-container .btnsContainer .drpDownCont {position: relative;display: inline-block;}
+#content-container .btnsContainer .drpDownCont button.btnBg, #content-container .btnsContainer1 .drpDownCont input.button.btnBg {margin-bottom: 0 !important;}
+#content-container .btnsContainer .dropDownbtns ul.drpDownList {background: #ffffff;z-index: 1001;position: absolute;width: 181px;border: 1px solid #B5B5B5; left:5px;}
+#content-container .btnsContainer ul.drpDownList li {background: none;text-align: left;padding: 7px 10px 5px;}
+#content-container .btnsContainer ul.drpDownList li a {font-weight: normal;font-size: 13px;}
+#content-container .btnsContainer ul.drpDownList li a:hover {text-decoration: none;}
+#content-container .btnsContainer ul.drpDownList li.dotterList {border-bottom: 1px dotted #bcbcbc;}
+#content-container .btnsContainer ul.drpDownList li a.disabled { color:#ccc; cursor:default; }
+
+/* Footer */
+
+#content-container .details-wrapper.footerContent h1 {padding-bottom: 5px !important;}
+#content-container .details-wrapper.footerContent p {width: 90%;}
+#content-container .details-wrapper.footerContent div.details p a {font-weight:normal !important;margin-top: 10px;}
+#content-container .details-wrapper.footerContent div.details p {border-top: 3px solid #136992;}
+#content-container .details-wrapper.footerContent div.details.green p {border-top: 3px solid #74B229 !important;}
+/* CR-00078267 -- AddonFlow header -- ends */
+
+#tbl_subscriptions div.autoClose.info {margin:0px;}
+
+/* Deployment Worksheet -- starts */
+.dForm.ccs.formcss .setfloat h2{float:left;}
+.dForm.ccs.formcss .marginTop10{margin:10px 0px 0px 20px;}
+.warning-message{border: 1px #D9D9CB solid;background: #FFF9EA;margin: 10px 0px;padding-top: 10px;padding-left: 15px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;-moz-border-radius-bottomleft: 5px;-moz-border-radius-bottomright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;}
+.dForm.ccs.formcss  .patternLinks{float:left;width:100%;}
+.dForm.ccs.formcss div.content-div {border-bottom: 1px solid #D4D4D4; padding: 20px 0;}
+/*.dForm.ccs.formcss {margin-top: 20px;}*/
+.dForm.ccs.formcss .secHolder {padding: 11px 0 !important;}
+.dForm.ccs.formcss.display .secHolder {padding: 7px 0 !important;}
+.dForm.ccs.formcss.display .secHolder h4, .dForm.ccs.formcss.display .secHolder h3 {text-align:right; margin-right: 25px;width:260px}
+.dForm.ccs.formcss a {text-decoration: none;}
+.dForm.ccs.formcss h2 {margin:0px 0px 20px !important;}
+.dForm.ccs.formcss h3 {font-size: 15px !important; font-weight: bold !important; color: #333333 !important;}
+.dForm.ccs.formcss h4 {font-size: 12px !important; color: #333333 !important;}
+.dForm.ccs.formcss label.error {float: right;}
+.dForm.ccs.formcss .portalContent, .dForm.ccs.formcss .siteVPnContent {display: none;}
+.dForm.ccs.formcss p.emphasis {font-style:italic}
+.dForm.ccs.formcss input {height:18px;}
+.dForm.ccs.formcss input.small {width:190px;}
+.dForm.ccs.formcss input.medium, .dForm.ccs.formcss select.medium {width:250px;}
+.dForm.ccs.formcss select.medium {height: 24px; line-height: 18px;}
+.dForm.ccs.formcss input.large {width:520px;}
+.dForm.ccs.formcss .note {margin:0; padding:0; width:25%;display:none;overflow: auto; color: #333333 !important;line-height: 1.5em;font-size:14px !important;min-height: 350px;}
+.dForm.ccs.formcss .note > div {padding-top:8px;padding-bottom:8px;background-color:#F6F6F6;line-height: 1.5em;font-size:14px !important;}
+.dForm.ccs.formcss .note > div h3{ margin: 10px 20px !important;line-height: 1.5em;font-size:14px !important;}
+.dForm.ccs.formcss .note > div p { margin: 0 20px 20px;line-height: 1.5em;font-size:14px !important; }
+.dForm.ccs.formcss .note > div ul li { list-style-type: disc !important; margin: 0 20px 0 30px; }
+.dForm.ccs.formcss .radio {margin-right: 20px;}
+.dForm.ccs.formcss .radio span {vertical-align: -2px;}
+.dForm.ccs.formcss label.requiredTxt {font-size: 12px !important; font-weight: normal !important;float: right;margin-right: 2px; cursor: default;}
+.dForm.ccs.formcss .usedefault {font-size: 12px !important; font-weight: normal; margin-left: 55px; cursor: default;}
+.dForm.ccs.formcss .submitContainer {display:none;}
+.dForm.ccs.formcss .dynamicContent {float: left; margin-right: 10px;}
+.dformError {line-height: 17px;}
+/* Changes when readonly */
+.dForm.ccs.formcss.display label.requiredTxt, .dForm.ccs.formcss.display .buttons {display: none;} /* hiding few elements in readonly mode*/
+.alert-box-wrapper.dForm {margin:0 0 20px !important;}
+header.dForm {margin-bottom: 25px !important; position: relative;}
+.dForm.ccs.formcss #serviceInfo {padding: 0 0 20px !important;}
+.dForm.ccs.formcss.display .nobtmborder {border-bottom: 0px !important}
+.dForm.ccs.formcss label.error {white-space: nowrap;}
+.ie7 .dForm label.requiredTxt {position: absolute;right: 0px; margin-right: 0px;}
+.ie7 .dForm .secHolder {position: relative !important;}
+.ie7 .dForm.ccs.formcss label.error {float: left !important;}
+.ie7 .dForm div.error_msg {position:absolute; top: 35px; left:260px;}
+.ie7 .dForm.ccs.formcss .required {padding-bottom: 0 !important;}
+.ie7 .dForm .autoClose, .ie7 .dForm .alert-box-wrapper {margin-top: 0 !important;}
+.ie7 .dForm.ccs.formcss select.medium, .ie8 .dForm.ccs.formcss select.medium, .ie9 .dForm.ccs.formcss select.medium {height: 24px;}
+.ie9 .dForm.ccs.formcss .radio input, .ie8 .dForm.ccs.formcss .radio input, .ie7 .dForm.ccs.formcss .radio input {border: 0px !important;}
+.ie9 .dForm.ccs.formcss label.error,.ie8 .dForm.ccs.formcss label.error,.ie7 .dForm.ccs.formcss label.error {white-space: normal !important;}
+/* Deployment Worksheet -- ends */
+.manageServiceImg {margin-top: 3px; float:right;} /*down arrow image for custom dropdowns*/
+/*.subDetail .normalBtns { margin-bottom:10px;}*/
+/* BUG-00083456 - starts */
+.serviceDetailPage .details-wrapper {margin-bottom: 15px !important;}
+.ie9 .serviceDetailPage .btnsContainer button, .mac .serviceDetailPage .btnsContainer button {height: auto !important;}
+.serviceDetailPage .details tr:first-child th, .serviceDetailPage .details tr:first-child td {padding-top: 0px !important;}
+.serviceDetailPage .details tr:last-child th, .serviceDetailPage .details tr:last-child td {padding-bottom: 0px !important;}
+.ie7 #content-section section header.withEA.mgBtm {margin-bottom: 10px !important;}
+/* BUG-00083456 - ends */
+.serviceDetailPage .details th {font-weight: bold !important;}
+.ie10 header.withEA .eaInputWrapper .optionsHolder{height: 14px;}
+#serviceBtnBeaks {position:absolute; width:5px; height:5px; display:block; left:51%; top:35%;}
+span.successMsg { margin-left:15px;}
+span.successMsg.success { color:#298A08;}
+span.successMsg.error { color:#DF0101;}
+div.saveDraftAlert { background:url("img/ico-alert-trans.png") no-repeat scroll 0 18px rgba(0, 0, 0, 0); padding:26px 0 26px 60px; }
+div#addonSection table#addOnTable div.autoClose {border-radius: 3px; clear: both; margin: 15px 0; padding: 8px 8px 8px 35px; }
+div#addonSection table#addOnTable div.autoClose.info {border: 1px solid #FFCB7E; background: url("img/info_small_trans.png") no-repeat scroll 10px center #FFEBDE;}
+#content-container table#addOnTable tbody tr.active td {background:none;}
+#content-container .header-core-data.renewalConfig table.currentCoreConfig tbody tr td.firstCol {width:150px;}
+#fundChangeMW h6 {
+    display: inline-block;
+    padding: 0 2px 0 4px;
+}
+.fundDetailsUl li {
+    list-style-type: none;
+    padding: 6px;
+}
+.normalBtns .button.primary {
+    display: inline-block;
+    width: 153px;
+    text-align: center;
+    margin: 5px !important;
+
+}
+.fundDetailsUl ul {
+    margin: 0px;
+}
+.fundDetailsUl {
+    padding-top: 10px;
+}
+/*.subscriptionServicesDetails > div {
+    float: left;
+    padding: 10px 0;
+    width: 30%;
+}*/
+.custDetailsPg {
+    padding-top: 10px;
+}
+.custDetailsPg .subscriptionServicesDetails {
+    padding: 0 0 5px;
+}
+.marginTop40 {
+    margin-top: 40px !important;
+}
+.defaultFont {
+    font-size: 12px !important;
+}
+.purchaseAvailable,.purchaseUnAvailable {
+    background:#ececec;
+    padding: 25px;
+}
+#editSubscriptionFundService ul li,#subscriptionFundService ul li {
+    margin: 0px;
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+.purchaseAvailable p {
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.successNewService p {
+    padding: 20px 0;
+}
+#editSubscriptionFundService .infoFund {
+    margin: 10px auto;
+    width: 93%;
+}
+span.alertIcon999 {
+	display: block;
+    height: 17px;
+    margin-right: 6px;
+    margin-top: -1px;
+    width: 17px;
+    background: url("img/status_icon.png") no-repeat scroll 0 -33px transparent;
+}
+
+#Sub_Funds_Details.tabbed_area th a.descending, #Sub_Funds_Details .tabbed_area th.sorting_desc a.descending {
+    background: url("img/drop_down_arrow.png") no-repeat scroll right 0 transparent;
+    color: #ffffff;
+    padding-right: 9px;
+}
+#Sub_Funds_Details .tabbed_area th a.ascending, #Sub_Funds_Details .tabbed_area th.sorting_asc a.descending {
+    background: url("img/drop_up_arrow.png") no-repeat scroll right 0 transparent;
+    color: #ffffff;
+    padding-right: 9px;
+}
+#Sub_Funds_Details .tabbed_area th.sorting a.descending {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #ffffff;
+}
+#Sub_Funds_Details .tabbed_area th span.descending, #Sub_Funds_Details .tabbed_area th.sorting_desc span.descending {
+    background: url("img/drop_down_arrow.png") no-repeat scroll right 0 transparent;
+    color: #ffffff;
+}
+#Sub_Funds_Details .tabbed_area th span.ascending, #Sub_Funds_Details .tabbed_area th.sorting_asc span.descending {
+    background: url("img/drop_up_arrow.png") no-repeat scroll right 0 transparent;
+    color: #ffffff;
+}
+.body table.withborders th.sorting_asc span.descending {
+    background: url("img/drop_up_arrow.png") no-repeat scroll right 0 transparent;
+}
+.body table.withborders th.sorting_desc span.descending {
+    background: url("img/drop_down_arrow.png") no-repeat scroll right 0 transparent;
+}
+.body table.withborders th span {
+    display: block;
+}
+
+#subcriptionDet div{
+float: left;
+margin-right: 45px;
+}
+/*
+.partner  #localeSelector a.locale-selector{
+    right: 30px;
+    left: auto;
+    position: relative;
+    float: right;
+    top: auto;
+}
+*/
+.priceListDiffCSuccess {
+    background: url("img/tooltip.png") no-repeat 0 center;
+    display: inline-block;
+    padding-left: 20px;
+    font-weight: normal;
+    color: #0c8d63;
+    margin: 0 5px 0;
+}
+#priceListSuccess .confirmMsg,#autoApproved .confirmMsg {
+    background: url("img/tick.png") no-repeat 0 center;
+    padding-left: 20px;
+    font-weight: normal;
+    margin:0 5px 0;
+}
+
+/* Interstitial Page Changes Starts */
+h1.rightBorder{
+padding-right;10px;
+border-right: 1px dotted #ccc;
+}
+div.topBar.nextToHelp.sid.inter{
+margin-top:12px;
+}
+div.topBar .readOnly.account.inter{
+border-left:none;
+}
+div.fleftinter{
+float:left;
+font-size: 15px !important ;
+font-weight: 600 !important;
+}
+div.fleftinter > span{
+	color: #666 !important;
+}
+div.interHeadButton{
+height:37px;
+padding-top:10px;
+padding-bottom:10px
+}
+#tbl_interstitial td.group{
+background:none;
+background-color:#CCC !important;
+font-size:14px;
+border-bottom:7px solid #FFF !important;
+cursor: pointer;
+padding-bottom: 7px !important;
+padding-top: 7px !important;
+}
+.csvBorder{
+border:1px solid #399dbf !important;
+}
+a.interDownload{
+	font-size:13px !important;
+	margin-left:25px !important;
+}
+#tbl_interstitial tbody tr.dummyRow{
+font-size:0;
+}
+#tbl_interstitial tbody tr.dummyRow td{
+padding:7px 0 0 0;
+}
+#tbl_interstitial tr.dynamicRow td {
+padding-top:0 !important;
+}
+/*.expanded-group {
+    background: url("img/minus.jpg") no-repeat scroll 99% center transparent !important;
+}
+
+.collapsed-group {
+    background: url("img/plus.jpg") no-repeat scroll 99% center transparent !important;
+}
+*/
+#tbl_interstitial tr.dynamicRow span.sNote {
+color: #7d7d7d;
+}
+.ie7 span.bandUsers{
+margin-top:-15px;
+}
+#exportCsvError div.footer{
+ border-top: 1px solid #cccccc !important;
+}
+/* Interstitial Page Changes ends */
+.dropDownbtns .cancelService, .dropDownbtns .manageUsers{
+border-bottom:1px dotted #000;
+}
+
+#paymentMethodAlert .confirmMsg{
+    background: url("img/status_icon.png") no-repeat scroll -34px -14px transparent !important;
+    padding: 1px 2px 5px 5px !important;
+}
+
+#paymentMethodAlert  .alertTitle p {
+    margin: 1px 0 0 16px !important;
+    padding: 0 !important;
+}
+
+.editFundServiceSelecton,.fundServiceSelecton{
+	margin-top:12px
+}
+
+.EditFundsSelecton.tabContent > ul li  input[type="radio"], .buyfundDetailsUl.tabContent > ul li  input[type="radio"]{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.EditFundsSelecton.tabContent > ul li span.light, .buyfundDetailsUl.tabContent > ul li span.light{
+	color:#999;
+}
+.EditFundsSelecton.tabContent > ul li span.fundName,.buyfundDetailsUl.tabContent > ul li span.fundName{
+	color:#333;
+}
+#simplemodal-container a.help {
+	background: url("img/btn_help.png") no-repeat scroll 0 top transparent;
+	cursor: pointer;
+	display: inline;
+	font-size: 0;
+	height: 16px;
+	position: absolute;
+	right: 40px;
+	top: 12px;
+	width: 16px;
+	z-index: 3200;
+}
+/** Added by Sathya **/
+.upgrade .nonUpgradeableSection, .upgrade .upgradeableServiceTblCont {
+    padding:25px !important;
+}
+.upgrade #nonUpgradeableTable {
+    margin-left: 0 !important;
+}
+.upgrade .nonUpgradeableSection #nonUpgradeableTable th, .upgrade #upgradeServicesTables .upgradeableServiceTable td {
+    width: 10% !important;
+    background: url("img/bkg_dotted_line.png") repeat-x scroll 101% bottom transparent;
+}
+.upgrade th.first-sku-col {
+    width: 20% !important;
+}
+.upgrade #upgradeServicesTables .upgradeableServiceTable td.upgradeableSupportLevel {
+    width: 20% !important;
+}
+.upgrade #upgradeServicesTables select {
+    width:150px;
+}
+.upgrade #nonUpgradeableTable thead tr {
+    height: 17px;
+}
+.upgrade #nonUpgradeableTable tbody tr.nonUpgradable-header td {
+    height: 15px;
+}
+.upgrade #nonUpgradeableTable .nameAndDesc .prodName {
+   font-weight: bold;
+}
+.upgrade #upgradeServicesTables .bg-bottom {
+    background: url("img/bkg_dotted_line.png") repeat-x scroll 101% bottom transparent;
+}
+.upgrade #nonUpgradeableTable tbody tr td {
+    padding: 9px 0px 8px !important;
+    /*padding: 4px 5px 4px 15px !important;*/
+}
+.upgrade .header_desc {
+    margin: 40px 0 20px 0;
+}
+.upgrade #upgradeServicesTables{
+    background-color: none!important;
+}
+.upgrade .upgradeableServiceTblCont {
+    background-color: #EEEEEE!important;
+    margin-bottom: 20px;
+    border: 1px solid #c0c0c0 !important;
+}
+.upgrade #upgradeServicesTables table.first-table{
+    margin-top: 0;
+}
+.upgrade #upgradeServicesTables table.upgradeableServiceTable thead.upgradeableServiceTableHead{
+    border: none;
+}
+.upgrade #upgradeServicesTables table.upgradeableServiceTable thead.upgradeableServiceTableHead tr th{
+    font-weight: bold;
+    background: url("img/bkg_dotted_line.png") repeat-x scroll 101% bottom transparent !important;
+    border: none;
+    color: #000;
+    font-size: 12px;
+    padding: 4px 0;
+}
+.upgrade #upgradeServicesTables table.upgradeableServiceTable td {
+    padding:9px 0 8px !important;
+}
+.upgrade .nonUpgradeableSection #nonUpgradeableTable .product-col, .upgrade #upgradeServicesTables .upgradeableServiceTable .upgradeableProduct {
+    width: 40% !important;
+    padding-right: 5% !important;
+}
+.upgrade #upgradeServicesTables table.upgradeableServiceTable div.tierHolder{
+    margin-top: 20px;
+}
+.upgrade #upgradeServicesTables table.upgradeableServiceTable tr td span.tier{
+    display: inline-block;
+    width: 50%;
+}
+.upgrade .upgradeableProductName, .upgrade .upgradeableProductSkuName, .upgrade #nonUpgradeableTable .product-name {
+    font-weight: bold !important;
+}
+.upgrade #upgradeServicesTables .qtySupportError{
+    color: red;
+}
+.upgrade #upgradeServicesTables .last-col, .upgrade .first-col {
+    background: none !important;
+}
+.showHideUpgrades{
+	text-decoration:none !important;
+	display: inline-block;
+	padding-top: 5px;
+}
+#rateCardInfo span.error{
+    padding-left: 20px;
+    float: left;
+	margin-top:3px;
+	color:red;
+}
+#ConfigPreview .upgradeConfigTable div.dataTables_scrollBody table tbody tr td, #ConfigPreview .upgradeConfigTable table tr td{
+	border-bottom:0 none;
+}
+#ConfigPreview .upgradeConfigTable #serviceConfigPreviewTable td {
+    padding-bottom: 20px !important;
+}
+#ConfigPreview .upgradeConfigTable div.dataTables_scrollBody table tbody tr.upgradeLabel td, #ConfigPreview .upgradeConfigTable table tr.upgradeLabel td{
+	border-bottom:1px dotted #a0a0a0;
+}
+#ConfigPreview .upgradeConfigTable div.dataTables_scrollBody table tbody tr.moreSpace td, #ConfigPreview .upgradeConfigTable table tr.moreSpace td{
+	padding-bottom:0px;
+	font-size:0;
+}
+#ConfigPreview .upgradeConfigTable div.dataTables_scrollBody table tbody tr.upgradeFromLabel td, #ConfigPreview .upgradeConfigTable table tr.upgradeFromLabel td{
+	padding-top:20px !important;
+}
+#content-container table.addOnTable tr td.c3 .floatNone,#content-container table.addOnTable tr td.c2 .floatNone{
+	float:none;
+}
+#content-container table.addOnTable .blockLevel{
+	display:block
+}
+#content-container table.addOnTable .qtyTxt{
+	line-height:20px;
+}
+
+.upgrade #upgradeServicesTables table.upgradeableServiceTable tr td span.errorLabel{
+    background-position-y: -1px;
+    float: none;
+}
+
+#upgradeAbleServiceContainer #rateCardInfo{
+    margin-bottom: 20px;
+}
+
+#upgradeServicesTables .qtySupportErrorContainer{
+    margin-bottom: 5px;
+}
+
+.sidpage .help, .praxisContainer .help{
+    display: inline-block !important;
+    margin-left: 15px;
+}
+.sidpage .launchLink, .praxisContainer .launchLink {
+    cursor: pointer;
+}
+.buyfundDetailsUl, .EditFundsSelecton  {
+max-height:200px;
+overflow-y:auto;
+}
+.mac a.purchaseAddon{
+	height:auto;
+}
+span.extLinkCnt {
+    display: block;
+}
+/*#content-container .btnsContainer ul.drpDownList li.first {
+    padding-top: 10px 5px 0px !important;
+}*/
+#loadingNew{
+    background: url(img/loading_24.gif);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-position: left center;
+    font-size: 24px;
+}
+.text_dec_none {
+    text-decoration: none !important;
+}
+.nonFundHeaderTxt {
+    margin:30px 0 5px;
+}
+.partner select.levelType { 
+	width:190px;
+} 
+.paging_full_numbers span.paginate_active {
+    background: #999999 !important;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}

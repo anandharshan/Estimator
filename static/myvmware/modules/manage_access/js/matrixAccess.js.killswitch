@@ -1,0 +1,254 @@
+vmf.ns.use("ice");
+ice.matrixaccess = { 
+	fromIndex:0,
+	toIndex:5,
+	newurl : null,
+	imgfolderPath : null,
+	matrixUserViewUrl: null,
+	fromUserIndex: 0,
+	toUserIndex: 5,
+	frmcnt: 0,
+	jsonError:null,
+	init : function(arg1, agr2,arg3, arg4, arg5){
+		if(($('#header-container').find('nav').length==0) && (!$('#header-container').find('.exit').length>0)){// to integrate bug-00031586
+			$('#header-container').css('height', '62px');
+			$('#spacer').css('margin-bottom', '10px');
+		} 
+		fromIndex = arg1;
+		toIndex = agr2;
+		newurl = arg3;
+		imgfolderPath = arg4;
+		matrixUserViewUrl = arg5;
+		fromUserIndex = 0;
+		toUserIndex= 5;
+		ice.matrixaccess.frmcnt = 0;
+		ice.matrixaccess.loadFolderPermission();
+		$('#seeMoreFolder').click( function() {
+			$('#moreloading').show();
+			$('#more').hide();
+			if(jsonError!=''){
+				fromIndex = fromIndex;
+				toIndex = toIndex; 
+			} else {
+				fromIndex = fromIndex+5;
+				toIndex = toIndex+5; 
+			}
+			ice.matrixaccess.loadFolderPermission();
+		});
+		$('li a#tab1').click(function(){
+			$('li a#tab2').removeClass('tab active').addClass('tab');
+			$('li a#tab1').addClass('tab active');
+			$('div#folderTab').show();
+			$('div#userTab').hide();
+		});
+		$('li a#tab2').click(function(){
+			$('li a#tab1').removeClass('tab active').addClass('tab');
+			$('li a#tab2').addClass('tab active');
+			$('div#userTab').show();
+			$('div#folderTab').hide();
+			$('#loading').show();
+			if($('#userPlaceHolder tr').length == 1){
+				ice.matrixaccess.loadUserPermission();
+			}
+		});
+		$('#userSeeMoreFolder').click( function() {
+			$('#userMoreloading').show();
+			$('#userMore').hide();
+			fromUserIndex = fromUserIndex+5;
+			toUserIndex = toUserIndex+5; 
+			ice.matrixaccess.loadUserPermission();
+		});
+		$('#exportAllToCsvButton').click(function() {
+			var _fPerPostData = new Object();
+			_fPerPostData['selectedFolders'] = "ALL";
+			_fPerPostData['selectedUserCustomerNumber'] = "ALL";
+			_fPerPostData['reportFor'] = 'matrixAccessFromExportAllButton';
+			ice.matrixaccess.generateCSVreports($exportToCsvActionFromMatrixViewUrl, _fPerPostData, "users-permissions : matrix-access : export-all");
+			
+		});
+	},
+	generateReports : function(url){// Generating xl reports 
+		if($('body iframe').length>0){$('body iframe:first').attr('src',url);}	
+		else{$("<iframe  src='" + url + "' style='display: none;' name='frameName' />").appendTo('body');}
+	},
+	generateCSVreports:function(url,postData,omnitureArgs){
+		//These changes for Reporting killer switch.
+		ice.matrixaccess.showErrorBak('exportCsvError',"The reporting functionality is under maintenance and we cannot complete your request at this time. Please try again later.", "Unable to Complete Your Request");
+		// Start: fix for BUG-00047299
+		//riaLink(omnitureArgs); //commented this Omniture events line because it is not working in the case of WSRP url
+		/*vmf.scEvent = true;
+		riaLinkmy(omnitureArgs);
+		// End: fix for BUG-00047299
+		if(!vmf.loading){VMFModuleLoader.loadModule("loading",function(){vmf.loading.show({"overlay":true});});
+		}else	vmf.loading.show({"overlay":true});
+		vmf.ajax.post(url,postData,
+			function(jData){//Success call
+				var data = vmf.json.txtToObj(jData);
+				if(data.respUrl && data.respUrl != 'undefined' && data.respUrl.length > 0) {
+					ice.matrixaccess.generateReports(data.respUrl);
+				} else {	ice.matrixaccess.showError('exportCsvError',data.error);}
+			},
+			function(errMsg){
+				var err = vmf.json.txtToObj(errMsg);
+				ice.matrixaccess.showError('exportCsvError',err.error);
+			},
+			function(){vmf.loading.hide();}// on complete 
+		);*/
+	},
+	showError:function(id,msg){
+		vmf.modal.show(id,{
+				checkPosition: true,
+				onShow: function (dialog) {
+					$('.modalContent p.errorContent').html(msg);
+					$('.modalContent .fn_cancel').click(function(){vmf.modal.hide();})
+				}
+			});
+	},
+	showErrorBak:function(id,msg,headerMsg){
+		vmf.modal.show(id,{
+				checkPosition: true,
+				onShow: function (dialog) {
+					$('.modalContent p.errorContent').html(msg);
+					$('.modalContent span.folderName').html(headerMsg);
+					$('.modalContent .fn_cancel').click(function(){vmf.modal.hide();})
+				}
+			});
+	},
+	loadFolderPermission : function() {
+		var matrixAccessFolderUrl = newurl + '' + '&fromIndex=' + fromIndex + '&toIndex=' + toIndex;
+		$.ajax({type: 'POST', url: matrixAccessFolderUrl,
+			success: function (data) {
+			try{
+				var jsonResponse = vmf.json.txtToObj(data); 
+				if(typeof(jsonResponse.error)!='undefined' && jsonResponse.error==true){
+					jsonError = jsonResponse.error;
+					if(fromIndex==0){
+						$('#loading').hide();
+					} else {
+						$('#moreloading').hide();
+					}
+					$('#more').show().find('.error').html("&nbsp;"+jsonResponse.message);
+					} else {
+						jsonError = '';
+						if(jsonResponse != null && jsonResponse != ""){
+							var listData = jsonResponse.licenseFolderViewContents;
+							var outputHtml = '';
+							var cls = '';
+							var cnt = ice.matrixaccess.frmcnt;
+							for(i=0;i<listData.length;i++){
+								cls = (cnt% 2== 0)?'even':'odd';
+								outputHtml = outputHtml+'<tr class="'+cls+'"><td colspan="10">\\\\'+listData[i].folderPath+'</td></tr>';
+								var usrNames = listData[i].userList;
+								for(j=0;j<usrNames.length;j++){
+									var permission = usrNames[j].userPerm;
+									outputHtml = outputHtml+'<tr class="'+cls+'"><td class="regular col_1">'+usrNames[j].userName+'</td>';
+									for(k=0;k<permission.length;k++){
+										if(permission[k]==true){
+											outputHtml = outputHtml+'<td class="regular center"><img src="/static/myvmware/common/img/dot.png" title="'+$staticTextfortick+'"  alt="Yes" /></td>';
+										}
+										else{
+											outputHtml = outputHtml+'<td class="regular center"><img src="/static/myvmware/common/img/cross.png" title="'+$staticTextforcross+'" alt="No" /></td>';
+										}
+									}
+									outputHtml = outputHtml+'</tr>';
+								}
+								cnt++;
+								ice.matrixaccess.frmcnt = cnt;
+							}
+							$('#loading').hide();
+							if(fromIndex==0){
+								$('#placeHolder').html(outputHtml);
+								var el = $('.tableData');
+								el.css('height', 'auto');
+								cnt=0;
+							}
+							else{
+								$('#moreloading').hide();
+								$('#more').show();
+								$('#placeHolder').append(outputHtml);
+								var el = $('.tableData'),
+								curHeight = el.height(),
+								autoHeight = el.css('height', 'auto').height();
+								el.height(curHeight).animate({height: autoHeight}, 1000);
+								tableDataheight = autoHeight;	
+								cnt=ice.matrixaccess.frmcnt;
+							}
+							if(jsonResponse.end==true){
+								$('#more').hide();
+								$('#moreloading').hide();
+							}
+						}else{
+							$('#placeHolder').find('div#loading').hide();
+						}
+					}
+				} catch(err){
+					if(fromIndex==0){
+						$('#loading').hide();
+					} else {
+						$('#moreloading').hide();
+					}
+					$('#more').show().find('.error').html("&nbsp;"+err);
+				}
+			},
+			error: function (statusError, msgtext) {
+				if(fromIndex==0){
+					$('#loading').hide();
+				} else {
+					$('#moreloading').hide();
+				}
+				$('#more').show().find('.error').html("&nbsp;"+statusError);
+			}
+		});
+	},
+	loadUserPermission : function(){
+		var _matrixUserViewUrl = matrixUserViewUrl+'&fromUserIndex=' + fromUserIndex + '&toUserIndex=' + toUserIndex;;
+		vmf.ajax.post(_matrixUserViewUrl, null, ice.matrixaccess.onSuccess_matrixUserViewUrl, ice.matrixaccess.onFail_matrixUserViewUrl);
+	},
+	onSuccess_matrixUserViewUrl : function(event){
+		var responseObj = vmf.json.txtToObj(event);
+		var jsonResponseData = responseObj.licenseUserViewContents;
+		var outputHtml = "";
+		var cnt = ice.matrixaccess.frmcnt;
+		for(var index = 0; index < jsonResponseData.length; index++){
+			cls = (cnt% 2== 0)?'even':'odd';
+			outputHtml = outputHtml+'<tr class="'+cls+'"><td colspan="10">'+jsonResponseData[index].firstName+"&nbsp;"+jsonResponseData[index].lastName+'</td></tr>';
+			var listFolderVO = jsonResponseData[index].listFolderVO;
+			for(var innerIndex = 0; innerIndex < listFolderVO.length; innerIndex++){
+				outputHtml = outputHtml+'<tr class="'+cls+'"><td class="regular col_1">\\\\'+listFolderVO[innerIndex].fullFolderPath+'</td>';
+				var permissionAssignmentVOList = listFolderVO[innerIndex].permissionAssignmentVOList;
+				var permissionVOList = permissionAssignmentVOList[0].permissionVOList;
+				for(var permissionIndex = 0; permissionIndex < permissionVOList.length; permissionIndex++){
+					if(permissionVOList[permissionIndex].assigned == true)	{
+						outputHtml = outputHtml+'<td class="regular center"><img src="/static/myvmware/common/img/dot.png" title="'+$staticTextfortick+'" alt="Yes" /></td>';
+					}else{
+						outputHtml = outputHtml+'<td class="regular center"><img src="/static/myvmware/common/img/cross.png" title="'+$staticTextforcross+'" alt="No" /></td>';
+					}
+				}
+			}
+			cnt++;
+			ice.matrixaccess.frmcnt = cnt;
+		}
+		if(fromUserIndex == 0){
+			$('#userPlaceHolder').html(outputHtml);
+			var el = $('.usertableData');
+			el.css('height', 'auto');
+			cnt = 0;
+		}else{
+			$('#userMoreloading').hide();
+			$('#userMore').show();
+			$('#userPlaceHolder').append(outputHtml);
+			var el = $('.usertableData'),
+			curHeight = el.height(),
+			autoHeight = el.css('height', 'auto').height();
+			el.height(curHeight).animate({height: autoHeight}, 1000);
+			tableDataheight = autoHeight;	
+			cnt=ice.matrixaccess.frmcnt;
+		}
+		if(responseObj.endFlag == true){
+			$('#userMore').hide();
+			$('#userMoreloading').hide();
+		}
+	},
+	onFail_matrixUserViewUrl : function(){
+	}
+};

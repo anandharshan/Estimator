@@ -1,0 +1,223 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  alerts.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 09/07/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. Alerts
+/* ########################################################################### */
+
+.filter-section .filter-header a.dismissBtn {
+	background: #f3f3f3; /* Old browsers */
+	background: -moz-linear-gradient(top, #f3f3f3 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f3f3f3 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: linear-gradient(top, #f3f3f3 0%,#e5e5e5 100%); /* W3C */
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #228bc0;
+	padding: 5px 10px;
+}
+
+table th input {
+	font-size: 12px;
+	margin-right: 10px;
+	/*margin-left: 3px;*/
+}
+
+.select {
+	/*width: 100px;*/
+}
+
+.date {
+	width: 100px;
+}
+
+.account {
+	width: 240px;
+}
+
+.subject {
+	width: 240px;
+}
+
+#content-container table tr.hovered td {
+	background: #006699;
+	color: #FFF;
+}
+
+	#content-container table tr.hovered td a {
+		color: #FFF; /* Added as text was unreadable */
+	}
+
+#content-container table tr.unread td {
+	font-weight: bold;
+}
+
+/* Alerts Message */
+.alertsMessage {
+	font-size: 12px;
+	margin-top:40px;
+}
+
+	.messageSubject {
+		background: url("img/bg_filter_header.jpg") repeat-x scroll 0 0 #2F2F32;
+		border-color: #252525 #252525 #343536;
+		border-style: solid;
+		border-width: 1px;
+		color: white;
+		font-size: 15px;
+		font-weight: bold;
+		padding: 8px 5px 5px 10px;
+		position: relative;
+	}
+
+		.messageDateCategory {
+			background: #2F2F32 url(img/bg_gray_gradient.png) repeat-x;
+			color: #FFF;
+			padding: 15px;
+			border-color: #252525 #252525 #252525 #252525;
+			border-style: solid;
+			border-width: 1px;
+		}
+
+			.alertsMessage .holder {
+			}
+
+				.alertsMessage .label {
+					width: 115px;
+					font-weight: bold;
+					float: left;
+				}
+
+				.alertsMessage .field {
+					width: 200px;
+					float: left;
+				}
+
+				.alertsMessage .messageDate {
+					margin-bottom: 15px;
+				}
+
+.messageBodyHolder {
+	padding: 15px 15px 10px 15px;
+	background: #EEE;			
+	border:1px solid #cccccc;
+	border-top:none;		
+}
+
+	.alertsMessage .messageBody {
+		
+	}
+
+	.alertsMessage .buttonHolder {
+		border-top: #b5b6b8 1px solid;
+		margin-top: 15px;
+		padding-top: 10px;
+	}
+
+		.alertsMessage .button {
+			display: block;
+			float: right;
+			margin-left: 10px;
+		}
+
+		.alertsMessage .primary {
+			padding-bottom: 6px;
+			padding-top: 6px;
+		}
+
+/* Filters */
+.filterSubject {
+	width: 200px;
+}
+
+.filter-section .ctrlHolder .note {
+	width: 235px;
+	color: #BBB;
+}
+
+.filter-content-wrapper .ctrlHolder label.errorHolder {
+	width: 235px;
+}
+
+.filter-section .errorMsg {
+	color: #FA6666;
+	width: 235px;
+}
+.httwozerozero{
+	height:200px;
+}
+.alertsModule .bottom{
+	display:none;
+}
+#content-container .tabbed_area .alerts .filter-content{
+	padding-left:15px;
+}
+.ie7 .alerts .openCloseSelect,
+.ie8 .alerts .openCloseSelect,
+.ie9 .alerts .openCloseSelect{
+	position:relative;
+	top: -2px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.alerts .openCloseSelect {
+		position:relative;
+		top: -2px;
+	}
+}
+.ie8 .alerts .openCloseSelect{
+	top:-1px;
+}
+.alerts .openCloseSelect a{
+	margin-right:5px; /* BUG-00026968*/
+}
+.ie9 .alerts .filter-section .filter-header, .ie8 .alerts .filter-section .filter-header{
+	padding-top:8px;
+}
+#content-container .alertsModule .dataTables_wrapper table tr td:first-child{
+	padding-left:13px;
+}
+#content-container .alertsModule table tr.hover td{
+	background:url("img/bkg_dotted_line.png") repeat-x scroll 0 bottom #eef7ff;		
+}
+
+/* IE fixes */
+.ie7 #content-container table td,
+.ie8 #content-container table td {
+	padding-bottom: 9px;
+}
+
+#account-content{
+	/*height:68px!important; BUG-00026968*/
+}
+/*BUG-00027899*/
+#eaSelectorWidgetDiv {
+ margin-right: 17px!important;
+}
+#content-section .filter-date.ctrlHolder{
+margin-right: 12px!important;
+}
+.firefox.mac .alerts .openCloseSelect a{
+	background-position:center -1px;	
+}
+.firefox.mac .alerts .openCloseSelect a.open{
+	background-position:center -21px;	
+}
+.firefox.mac .alerts input[type="checkbox"]{
+	position:relative;
+	top:-1px;
+}
+
+/* FOR SFF- PHASE-2 */
+#content-section .tabContent ul.bundle_deactivation_bullet li {
+border-bottom: medium none;
+display: list-item;
+list-style-position: inside;
+list-style-type: square;
+padding: 2px 10px;
+}

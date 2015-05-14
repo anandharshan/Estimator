@@ -1,0 +1,64 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  supportEntitlements.css
+ * ##### VERSION: v0.1
+ * ##### UPDATED: 08/09/2011
+/* ########################################################################### *
+/* ##### MY SUPPORT ENTITLEMENTS
+/* ########################################################################### */
+
+.supportEntitlements {
+	padding-bottom: 40px;
+	border-bottom: 2px solid #043c5f;	
+}
+
+#content-section .tabbed_area section.supportEntitlementsDetail h1 {
+	color: #043A5C;
+	padding: 10px 0;
+	font-size: 13px;
+	font-weight: normal;
+	padding-left: 15px;
+}
+
+#content-container table .more-details {
+	background: url("img/bkg_dotted_line.png") repeat-x scroll 0 bottom transparent;
+}
+
+#content-container table .more-details td {
+	border-top: none;	
+	padding-top: 0;
+	background: none;
+}
+
+#content-container .tabbed_area th.noRightBorder {
+	border-right: none;
+}
+
+#content-container .tabbed_area th.number,
+#content-container .tabbed_area td.number {
+	width: 65px;
+	text-align: center;
+}
+
+#content-container .tabbed_area table table {
+	font-size: 10px;
+}
+
+	#content-container .tabbed_area table table th {
+		background: #FFF;
+		color: #444444;	
+		font-size: 10px;
+		padding: 5px;
+		border-right: 0;
+	}
+	
+	#content-container table .more-details table td {
+		border-top: none;	
+		padding: 5px;		
+	}
+	
+.tdOpenCloseButton {
+	width: 10px;	
+}
+#supportEntDetail .loading{width:190px;}

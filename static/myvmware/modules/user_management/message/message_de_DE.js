@@ -1,0 +1,25 @@
+﻿label.common.requiredMessage=erforderlich
+label.common.validEmailIDMessage=Bitte geben Sie eine gültige E-Mail-ID
+label.common.validEmailIDLengthMessage=Bitte geben Sie eine gültige E-Mail-ID
+label.common.validEmailIDNotMatchMessage=E-Mail Adresse stimmt nicht mit
+label.common.validPasswordNotMatchMessage=Die Kennwörter stimmen nicht überein.
+label.common.alphaNumericMessage=Bitte geben Sie nur Zahlen, Buchstaben und Unterstrich
+label.common.phoneNumberMessage=Ungültige Telefonnummer
+label.common.maxlengthMessage=Bitte geben Sie nicht mehr als {0} Zeichen.
+label.common.rangelengthMessage=Invalid. Muss {0} - {1} Zeichen lang sein.
+label.common.digitMessage=Bitte geben Sie nur Ziffern
+label.common.range=Bitte geben Sie einen Wert zwischen {0} und {1}
+label.common.validAlphaNumericNoSpace=Ungultiger Benutzername
+label.common.selectOne=Auswählen
+label.common.tooshort=zu kurz
+label.common.weak=schwach
+label.common.good=gut
+label.common.loading=Ladevorgang ...
+label.common.strong=stark
+label.common.defaultPass =Kennwort Stärke
+label.common.sameasusername=Passwort ist das gleiche wie Benutzernamen ein.
+label.common.cancelButtonURL=/de/web/vmware/login
+label.common.loadingDataForDropDown=Ladevorgang...
+label.common.summation.rangelengthmessage=Enter a number between {0}-{1}.  
+label.common.empinCountry.exceedGlobalEmpMessage=Übersteigt die Anzahl von Mitarbeitern weltweit.
+label.common.already.deactivated.error=Diese E-Mail-Adresse wurde deaktiviert.  Wenn Sie diese Nachricht fälschlicherweise erhalten haben, wenden Sie sich bitte an den <a href="http://www.vmware.com/support/us_support.html" target='_blank'>Support</a>.

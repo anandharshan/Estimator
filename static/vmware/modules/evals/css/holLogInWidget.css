@@ -1,0 +1,102 @@
+/* New HOL Log on Styles*/
+
+
+.floatLft{
+    float: left !important;
+}
+
+#logon{
+    background: none repeat scroll 0 0 #f1f1f1 !important;
+}
+
+#logontab{
+    margin-top:0px !important; 
+    border: 0px !important;
+    width: 329px;
+    margin: 0px !important;
+}
+#logontab ul li{
+    padding-right: 19px !important;
+}
+#logontab ul li.active{
+    background: none !important;
+}
+#logontab ul li a{
+    padding-top: 18px !important;
+}
+#logontab1.active a, #logontab2.active a{
+    color: #666666 !important;
+}
+#logontab ul li#logontab1, #logontab ul li#logontab2{
+    height: 49px !important;
+}
+.frgtpwd{
+    margin-left: 10px !important;
+    margin-top: 10px !important;
+    width: 70.7%;
+    text-align: right;
+}
+.btnLgn input{
+    margin-left: 0px !important;
+}
+.divHgt{
+    height: 65px;
+}
+.divHgt label{
+    height: 23px;
+    width: 252px !important;
+}
+#logon form{
+    padding:15px 28px 8px !important;
+}
+#logon #tab_login input[type="text"], #logon #tab_login input[type="password"]{
+    width: 96% !important;
+}
+#evalRegisterTabId div:nth-child(11) { /* First Name */
+    width:128px !important;
+}
+
+#evalRegisterTabId div:nth-child(12) { /* Last Name */
+    width:132px !important;
+}
+input#FirstName_Register_Tab[type="text"], input#LastName_Register_Tab[type="text"]{    
+    width: 121px !important;
+    width: 117px\9 !important;
+}
+input#Email_Register_Tab[type="text"]{
+    width: 262px !important;
+}
+#evalRegisterTabId .divHgt{
+    height: 62px;
+}
+#evalRegisterTabId .divHgt label{
+    height: 23px;
+    width: 252px !important;
+}
+#evalRegisterTabId div:nth-child(13), #evalRegisterTabId div:nth-child(14){
+    margin: 0px !important;
+    clear: both !important;
+}
+.divHgt.vmPrtnr{
+    height: 38px !important;
+}
+#logontab ul li#logontab1, #logontab ul li#logontab2{
+    background-image: none !important;
+    background: none repeat scroll 0 0 #e6e6e6 !important;
+}
+#logontab ul li#logontab1.active, #logontab ul li#logontab2.active{
+    background: none !important;
+}
+.ieclearBth{
+    clear: both;
+}
+#evalRegisterTabId div:nth-child(16){
+    margin-left: 0px;
+}
+#logon .ctrlHolder.buttons, .evalloginbox .ctrlHolder.buttons{
+    float: left;
+}
+#button-register-tabcenter{
+    margin-left: 0px !important;
+}
+/* end New HOL Log on Styles*/

@@ -1,0 +1,626 @@
+/* ########################################################################### *
+/* ***** DOCUMENT INFO  ****************************************************** *
+/* ########################################################################### *
+ * ##### NAME:  downloads.css
+ * ##### VERSION: v0.3
+ * ##### UPDATED: 07/13/2011
+/* ########################################################################### *
+/* ***** CONTENT  ************************************************************ *
+/* ########################################################################### *
+ * ## 1. ALERT BOX
+ * ## 2. MY DOWNLOADS CONTENT
+ * ## 3. TABLES
+ * ## 4. HEADER CONTENT
+ * ##    - Main Container
+ * ##    - Right Side Panel
+ * ## 5. PRODUCT INDEX
+ * ## 6. DOWNLOAD CENTER SEARCH
+ * ## 7. OVERRIDE CSS STYLES
+/* ########################################################################### */
+/* ########################################################################### *
+/* ##### ALERT BOX 
+/* ########################################################################### */
+.alert-box-wrapper {
+    border: 1px #D9DACA solid;
+    background: #FFF9EA;
+    margin: 5px 0px 20px 4px;
+    padding-top: 10px;
+    padding-left: 10px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.activitiesLog .alert-box-wrapper {
+    margin: 0 10px 0 0;
+}
+
+.alert-box-wrapper.wide {
+    margin: 5px 0px 20px 25px;
+}
+    .alert-box-wrapper .alert-box-holder {
+        background: url(img/ico-alert.gif) no-repeat;
+        padding: 10px 10px 10px 60px;
+    }
+        .alert-box-holder .alert-title {
+            font-size: 13px;
+            font-weight: bold;
+            color: #000;
+        }
+
+/* ########################################################################### *
+/* ##### MY DOWNLOADS CONTENT
+/* ########################################################################### */
+.productTitle {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    color:#053b5f;  
+    font-weight:bold;
+    padding-top:20px;
+}
+
+.productSubTitle {
+    margin-top: 5px;
+}
+
+.productTitleRed {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#D9541E;  
+    font-weight:bold;
+    padding-top:20px;
+}
+
+.versionSelect{
+    float:right;    
+}
+
+    .versionSelect select {
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:11px;
+        color:#333;
+        background: #FFFFFF; /* old browsers */
+        border:1px solid #747474;
+        height:20px;
+    }
+
+.column-wrapper .topLine{
+    height:2px;
+    background:#666666;
+    border-bottom:1px solid #FFF;
+}
+
+.column-wrapper .files_Text{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:10px;
+    color:#000;
+    width:150px;
+}
+
+.column-wrapper .info_Text{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:11px;
+    color:#000;
+    width:150px;
+}
+
+.column-wrapper .downloadManager {
+    width:140px;
+    text-align:right;
+}
+
+.column-wrapper .downloadManager button{
+    float:right;
+    
+}
+
+.column-wrapper .manualDownloadLink{
+    float:right;
+    padding-top:10px;
+    padding-right:10px;
+}
+
+.column-wrapper .windows{
+    background-image:url(img/icon_Windows.png);
+    background-repeat:no-repeat;
+    width:25px;
+    height:25px;
+    display:block;
+    float:left;
+}
+
+.column-wrapper .linux{
+    background-image:url(img/icon_Linux.png);
+    background-repeat:no-repeat;
+    width:25px;
+    height:25px;
+    display:block;
+    float:left;
+}
+
+.column-wrapper .mac{
+    background-image:url(img/icon_Mac.png);
+    background-repeat:no-repeat;
+    width:25px;
+    height:25px;
+    display:block;
+    float:left;
+}
+
+div.more-details {
+    margin: 8px -10px 0px;
+    padding: 10px;  
+}
+
+.filter-content-wrapper .ctrlHolder label {
+    color: #000;
+}
+
+.filter-content-wrapper .filter-date.ctrlHolder label {
+    display: block;
+}
+
+/* ########################################################################### *
+/* ##### TABLES 
+/* ########################################################################### */
+.more-details {
+    margin-top: 12px;   
+}
+
+#content-container table .noDownloads-Msg{
+    font-size:12px;
+    text-align:center;
+    height:150px;
+    padding-top:90px;
+}
+
+    #content-container .noDownloads-Msg .noDownloads-Msg-Main{
+        font-size:16px;
+    }
+
+#content-container .noProducts-Msg{
+    font-size:14px;
+    text-align:center;
+    padding:10px;
+}
+
+td.filename {
+    width: 239px;   
+}
+
+/**Table Column with Open Close Button**/
+.tdOpenCloseButton {
+    width: 10px;
+}
+
+/**Tables with More Details Section **/
+#content-container table .more-details td {
+    padding: 0 10px 9px 5px;
+    border-top: 0 solid #043A5C;
+}
+
+    #content-container table .more-details td.spacer {
+        border-top: none;
+    }
+    
+    #content-container table .more-details td.spacer {
+        border-bottom: none;
+    }
+
+#content-container table .productColumn{
+    width:353px;
+}
+
+#content-container table .shortProductColumn{
+    width:288px;
+}
+
+#content-container table .midProductColumn{
+    width:325px;
+}
+
+#content-container table .longProductColumn{
+    width:450px;
+}
+
+#content-container table .versionColumn{
+    width:242px;
+}
+
+#content-container table .shortVersionColumn{
+    width:105px;
+}
+
+#content-container table .midVersionColumn{
+    width:150px;
+}
+
+#content-container table .longVersionColumn{
+    width:178px;
+}
+
+#content-container table .shortDateColumn{
+    width:105px;
+}
+
+#content-container table .midDateColumn{
+    width:140px;
+}
+
+#content-container table .longDateColumn{
+    width:170px;
+}
+
+/* ########################################################################### *
+/* ##### HEADER CONTENT 
+/* ########################################################################### */
+
+/* ##### MAIN CONTAINER ##### */
+#content-section #header-container {
+    margin: 0 0 15px 0;
+    padding: 0;
+    background: none;
+}
+
+    .forDownloadCenter {
+        top:30px;
+        min-height:330px;
+    }
+
+#content-section .main-container {
+    float: left;
+    width: 620px;
+    margin-right: 20px;
+    padding: 5px 0 5px 0;
+}
+
+    .main-container .greenText {
+        color: #268F5D;
+        font-weight: bold;
+    }
+
+#content-section .main-container .detail-section {
+    
+}
+
+#content-section .main-container .detail-section table{
+    border: 1px solid #FFF;
+    font-size: 12px;
+}
+
+#content-section .main-container  .detail-section table td{
+    border-bottom:1px solid #FFF;
+    color:#333;
+    padding: 15px 25px;
+    background: #EFEFEF;    
+}
+
+#content-section .main-container .detail-section table th{
+    width:115px;
+    background:#666;
+    font-weight:bold;
+    color:#FFF;
+    text-align:left;
+    padding: 15px;
+    border-top:1px solid #FFF;
+}
+        
+#content-section .main-container .detail-section .linklist {    
+    margin: 0;
+    padding: 0 0 10px 0;    
+}
+
+#content-section .main-container .detail-section .linklist li {
+    float: left;
+    padding: 10px 0px 0 0px;
+    width: 140px;
+    background: none;
+}
+
+
+/* ##### RIGHT SIDE PANEL IN HEADER ##### */
+#content-section .right-side-panel {
+    float: right;
+    width: 220px;
+    margin-top: 10px;
+}
+
+#content-section .right-side-panel.long-top-margin {
+    float: right;
+    width: 220px;
+    margin-top: 33px;
+}
+
+    .right-side-panel h3 {
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0px;
+            padding-bottom: 10px;
+            color: #333;
+    }
+    
+    .right-side-panel p {
+        padding-top: 10px;
+    }
+
+    .right-side-panel .gray-Box {
+        background: #D3D3D3;
+        background: -moz-linear-gradient(top, #FEFEFE 0%, #EBEBEB 50%, #D3D3D3 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(50%,#EBEBEB), color-stop(100%,#D3D3D3));
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        padding: 10px;
+        border: #D3D3D3 solid 1px;
+        margin-bottom:15px;
+    }       
+    
+        .gray-Box div {
+            margin-bottom: 12px;
+        }
+    
+        #main .right-side-panel .gray-Box ul li,
+        #main .right-side-panel .white-Box ul li {
+            list-style: none;
+            background: none;
+            padding: 4px 0 2px 15px;
+        }
+        
+        .white-Box ul li img,
+        .gray-Box ul li img {
+            margin-right: 5px;
+        }
+            
+    .right-side-panel .white-Box {
+        margin-bottom:15px;
+        padding:10px;
+        background:white;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        border: #CCC solid 1px;
+    }   
+        .right-side-panel .white-Box h3 {
+            border-bottom: 1px solid #CCC;
+        }
+        
+    .right-side-panel .white-Box.search-results-sidebar {
+        margin-bottom:15px;
+        padding:0px;
+        background:white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        -moz-border-radius-bottomleft: 5px;
+        -moz-border-radius-bottomright: 5px;
+        -moz-border-radius-topleft: 0px;
+        -moz-border-radius-topright: 0px;
+        border: #CCC solid 1px;
+    }
+    
+        .white-Box.search-results-sidebar ul {
+            padding: 10px;
+        }
+        
+        #content-section .white-Box.search-results-sidebar h3 {
+            padding: 10px;
+            background: #666;
+            color: #FFF
+        }
+        
+        .white-Box.search-results-sidebar h4 {
+            padding: 10px;
+        }
+
+        
+/* ########################################################################### *
+/* ##### PRODUCT INDEX
+/* ########################################################################### */
+.column-wrapper #products-index-wrapper {
+    border-bottom: 3px solid #666;
+}
+    #content-section .column-wrapper #products-index-wrapper h1 {
+        color:#000;
+        font-size:11px;
+        font-weight:bold;
+        margin:18px 0 0;
+    }
+    
+    #products-index-wrapper .free-trial_icon {
+        font-size: 12px;
+        background: url(img/free_trial_icon_bg.png) repeat-x;
+        padding: 10px 10px 10px 40px;
+        margin-left: -20px;
+    }
+        #products-index-wrapper .free-trial_icon img {
+            position: absolute;
+            top: 465px;
+            right: 845px;
+            margin-right: 5px;
+        }
+        
+        .ie7 #products-index-wrapper .free-trial_icon img {
+            top: 489px;
+        }
+    
+    #products-index-wrapper  .products-index-heading {
+        line-height: 28px;
+        color: white;
+        padding: 0 0 0 20px;
+        font-size: 12px;
+        background: #666;
+        font-weight: bold;
+    }
+        
+    #products-index-wrapper  .products-index {
+        height: 1%;
+        padding: 0 0 20px 20px;
+        overflow: hidden;
+        border-bottom: 1px solid #666;
+        margin-bottom: 1px;
+        
+    }
+        
+        .products-index  .products-index-left {
+            float: left;
+            padding: 0 20px 0 0;
+            width: 190px;
+        }   
+            
+        .products-index  .products-index-middle {
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 0;
+            width: 190px;
+            float: left;
+        }
+            
+        .products-index  .products-index-right {
+            border: none;
+            margin-left: 20px;
+            padding: 0 20px 0 0;
+            width: 180px;
+            float: left;
+        }
+            
+            .column-wrapper #products-index-wrapper .products-index  ul {   
+                list-style-image: none;
+                list-style-position: outside;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .column-wrapper #products-index-wrapper .products-index ul li { 
+                background: transparent none repeat scroll 0 0;
+                line-height: 12px;
+                margin: 10px 0 0;
+                padding: 0;
+                font-size: 12px;
+                font-weight: normal;
+            }
+/* ########################################################################### *
+/* ##### DOWNLOAD CENTER SEARCH
+/* ########################################################################### */
+
+.column-wrapper .search-container {
+    background: #666;
+    color: #FFF;
+    padding: 6px 5px 1px 10px;
+    height: 30px;
+}
+
+    .search-container h4 {
+        float: left;
+        margin-right: 10px;
+        width: 185px;
+        margin-top: 3px;
+    }
+    
+    .search-container .search-wrapper {
+        float: left;
+        width: 480px;
+    }
+    
+    .search-container .search-holder {
+        float: none;
+        padding: 0;
+        margin-right: 10px;
+    }
+    
+    .search-holder select {
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .search-holder input {
+        float: none;
+        padding: 3px 3px 3px 6px;
+    }
+    
+    .search-container a.button {
+        float: left;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+.main-container .search-header {
+    padding: 7px 5px 0 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+    .search-header .sort {
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;   
+        padding: 5px;
+    }
+    
+    .search-header .sort label {
+        font-weight: bold;  
+    }
+    
+    .search-header h2 span {
+        font-size: 14px;    
+    }
+    
+#content-section section .main-container table tr td p {
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+/* ########################################################################### *
+/* ##### OVERRIDE CSS STYLES 
+/* ########################################################################### */   
+#content-container .tabbed_area .activitiesLog {
+    border-bottom: none;
+    padding-bottom: 5px;
+}
+
+#content-container tr.alt-clickable {
+    cursor: pointer;
+}
+
+#content-container tr.alt-clickable:hover {
+    background-color: #e9f0f8;
+}
+
+#content-section section header {
+    border-bottom: #B7B8BA 1px solid;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+    #content-section section header h1 {
+        font-size: 30px;
+        font-weight: normal;
+        color: black;
+        padding-bottom: 0;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    #content-section section header h2 {
+        font-size: 12px;
+        font-weight: bold;
+        color: #4D4E53;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+    
+.main-container .pagination-wrapper {
+    background: #484849;
+    color: #FFF;
+    padding-right: 14px;
+    padding-left: 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+    .main-container .page-results-wrapper .pagination-nav-ctrl {
+        color: #FFF;
+    }
+    
+    .pagination-nav-ctrl .next,
+    .pagination-nav-ctrl .previous { 
+        color: #ACE3FF;
+    }

@@ -1,0 +1,34 @@
+{
+    "aaData": [
+        [
+            "XAAS-38394949",
+            "2013-04-06",
+            "fundId",
+            "Costco Worldwide",
+            "1"
+        ],
+        [
+            "XAAS-38365940",
+            "2015-04-06",
+            "fundId2",
+            "Costco Worldwide",
+            "1"
+        ],
+        [
+            "XAAS-38394949",
+            "2013-04-06",
+            "fundId",
+            "Fund 2",
+            "0"
+        ],
+        [
+            "XAAS-38365940",
+            "2015-04-06",
+            "fundId2",
+            "Fund 2",
+            "0"
+        ]
+    ],
+    "iTotalRecords": "4",
+    "iTotalDisplayRecords": "4"
+}

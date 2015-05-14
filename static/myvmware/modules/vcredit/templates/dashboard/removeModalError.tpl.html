@@ -1,0 +1,15 @@
+<section tabindex="-1" role="dialog">
+	<div class="modal-header">
+		<span class="close" data-dismiss="modal" aria-hidden="true" ng-click="modalClose()"></span>
+		<h3 class="modal-title">
+			{{modalData.header}}
+		</h3>
+	</div>
+	<div class="modal-body">
+		{{modalData.body}}
+	</div>
+	<div class="modal-footer">
+		<a class="btn btn-primary" ng-click="ok()" ng-if="modalData.showOk" >{{modalData.okText}}</a>
+		<a class="btn btn-dafault" ng-click="ok()" ng-if="modalData.showCancel" >{{modalData.cancelText}}</a>
+	</div>
+</section>

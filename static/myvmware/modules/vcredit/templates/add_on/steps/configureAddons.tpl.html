@@ -1,0 +1,120 @@
+            <article ng-if="showLoader">
+                <div class="row margin-top-20 margin-bottom-20">
+                    <div class="col-md-12 text-center">
+                        <div class="ajaxSpinner">&nbsp;</div>   
+                    </div>
+                </div>
+            </article>
+            <section ng-if="!showLoader && showAddOnPage">
+                <article class="container-fluid">
+                        <div class="row margin-top-20 margin-bottom-20">
+                            <div class="col-md-5">
+                                <div class="row"><div class="col-md-12">
+                                    {{globalVars.configSelectedService}}<br>
+                                    <!--a class="btn-link" ng-click="gotoPrevious()">{{globalVars.viewServiceDetails}}</a-->
+                                    </div>
+                                </div>
+                                <div class="row margin-top-20">
+                                    <div class="col-md-5"><label>{{globalVars.serviceId}}</label></div>
+                                    <div class="col-md-7"><a class="btn-link" ng-click="gotoPrevious()">{{addOnData.core.serviceID}}</a></div>
+                                </div>
+                               <div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.serviceType}}</label></div>
+                                    <div class="col-md-7">{{addOnData.core.serviceName}}</div>
+                                </div>
+                                <!--<div class="row">
+                                    <div class="col-md-5"><label>{{globalVars.remainingTerm}}</label></div>
+                                    <div class="col-md-7">{{addOnData.core.remainingTermText}}</div>
+                                </div> -->
+                                <div class="row margin-top-20"  ng-if="!addOnData.core.horizon">
+                                    <div class="col-md-12">{{addOnData.core.longSkuDescription}}</div>
+                                </div>                
+                            </div>    
+                            <div class="col-md-7">
+                                <div class="row box-bgBlue {{addOnData.core.totalCoreCost == 0 && 'col-sm-offset-6' || ''}}">
+                                    <div class="col-md-6 padding-left-0 borderRightWhite" ng-if="addOnData.core.totalCoreCost > 0">
+                                        <div ng-if="addOnData.core.coreTtlMonthlyCost > 0" class="margin-bottom-10">
+                                            <h4 class="calculationBoxHeader18">{{globalVars.monthlyServiceCost}}<span ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</span></h4>
+                                           <!--h3><span class="small">{{globalVars.monthlyServiceCost}}</span><span ng-if="isXaasFund" class="small"> ({{addOnData.core.pricelist[0]}})</span></h3-->
+                                           <span class="intro-text">
+                                                {{addOnData.core.coreTtlMonthlyCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{globalVars["payment_type2"]}}
+                                           </span>
+                                        </div>
+                                        <div ng-if="addOnData.core.coreTtlAnnualCost > 0">
+                                            <h4 class="calculationBoxHeader18">{{globalVars.annuallyServiceCost}}</span><span ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</span></h4>
+                                           <!--h3><span class="small">{{globalVars.annuallyServiceCost}}</span><span ng-if="isXaasFund" class="small"> ({{addOnData.core.pricelist[0]}})</span></h3-->
+                                           <span class="intro-text">
+                                            {{addOnData.core.coreTtlAnnualCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{globalVars["payment_type3"]}}
+                                           </span>
+                                        </div>
+                                    </div>
+                                    <div class="{{addOnData.core.totalCoreCost == 0 && 'col-md-12 padding-left-0' || 'col-md-6 borderLeftWhite'}}">
+                                        <div>
+                                            <h4 ng-if="(ttlOneTimeCost == 0 || ttlOneTimeCost == null) && (ttlPrepaidCost == 0 || ttlPrepaidCost == null) && (ttlMonthlyCost == 0 || ttlMonthlyCost == null) && (ttlYearlyCost == 0 || ttlYearlyCost == null)" class="calculationBoxHeader18">{{globalVars.AddOnRecurringCost}}</h4>
+                                            
+                                            <div ng-if="ttlOneTimeCost > 0" class="margin-bottom-10">
+                                                <h4 class="calculationBoxHeader18">{{globalVars.addOnOneTime}}<span ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</span></h4>
+                                                <!--span><strong>{{globalVars.addOnOneTime}}</strong><strong ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</strong></span-->
+                                                <span class="intro-text intro-text-24">{{ttlOneTimeCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</span></div>
+                                            <div ng-if="ttlMonthlyCost > 0" class="margin-bottom-10">
+                                                <h4 class="calculationBoxHeader18">{{globalVars.addOnMonthlyCost}}<span ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</span></h4>
+                                                <!--span><strong>{{globalVars.addOnMonthlyCost}}</strong><strong ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</strong></span-->
+                                                <span class="intro-text intro-text-24">{{ttlMonthlyCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{globalVars["payment_type2"]}}</span></div>
+                                            <div ng-if="ttlPrepaidCost > 0" class="margin-bottom-10">
+                                                <h4 class="calculationBoxHeader18">{{globalVars.addOnPrepaidCost}}<span ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</span></h4>
+                                                <!--span><strong>{{globalVars.addOnPrepaidCost}}</strong><strong ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</strong></span-->
+                                                <span class="intro-text intro-text-24">{{ttlPrepaidCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</span></div>
+                                            <div ng-if="ttlYearlyCost > 0">
+                                                <h4 class="calculationBoxHeader18">{{globalVars.addOnAnnualCost}}<span ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</span></h4>
+                                                <!--span><strong>{{globalVars.addOnAnnualCost}}</strong><strong ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</strong></span-->
+                                                <span class="intro-text intro-text-24">{{ttlYearlyCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}  {{globalVars["payment_type3"]}}</span></div>
+                                            
+                                            <span ng-if="(ttlOneTimeCost == 0 || ttlOneTimeCost == null) && (ttlPrepaidCost == 0 || ttlPrepaidCost == null) && (ttlMonthlyCost == 0 || ttlMonthlyCost == null) && (ttlYearlyCost == 0 || ttlYearlyCost == null)">{{globalVars.chooseAddOn}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--div class="row box-bgBlue col-sm-offset-6" ng-if="addOnData.core.totalCoreCost == 0">
+                                    <div class="col-md-12 padding-left-0">
+                                        <div>
+                                            <h4 ng-if="(ttlOneTimeCost == 0 || ttlOneTimeCost == null) && (ttlPrepaidCost == 0 || ttlPrepaidCost == null) && (ttlMonthlyCost == 0 || ttlMonthlyCost == null) && (ttlYearlyCost == 0 || ttlYearlyCost == null)" class="calculationBoxHeader18">{{globalVars.addOnRecurringCost}}</h4>
+                                            
+                                            <span ng-if="ttlOneTimeCost > 0">
+                                                <span><strong>{{globalVars.addOnOneTime}}</strong><strong ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</strong></span>
+                                                <h4>{{ttlOneTimeCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</h4></span>
+                                            <span ng-if="ttlMonthlyCost > 0">
+                                                <span><strong>{{globalVars.addOnMonthlyCost}}</strong><strong ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</strong></span>
+                                                <h4>{{ttlMonthlyCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}} {{globalVars["payment_type2"]}}</h4></span>
+                                            <span ng-if="ttlPrepaidCost > 0">
+                                                <span><strong>{{globalVars.addOnPrepaidCost}}</strong><strong ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</strong></span>
+                                                <h4>{{ttlPrepaidCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}</h4></span>
+                                            <span ng-if="ttlYearlyCost > 0">
+                                                <span><strong>{{globalVars.addOnAnnualCost}}</strong><strong ng-if="isXaasFund"> ({{addOnData.core.pricelist[0]}})</strong></span>
+                                                <h4>{{ttlYearlyCost | customCurrency:addOnData.core.currency[0]:addOnData.core.fundInfo.redemptionCurrency}}  {{globalVars["payment_type3"]}}</h4></span>
+                                            
+                                            <span ng-if="(ttlOneTimeCost == 0 || ttlOneTimeCost == null) && (ttlPrepaidCost == 0 || ttlPrepaidCost == null) && (ttlMonthlyCost == 0 || ttlMonthlyCost == null) && (ttlYearlyCost == 0 || ttlYearlyCost == null)">{{globalVars.chooseAddOn}}</span>
+                                        </div>
+                                    </div>
+                                </div-->
+                            </div>  
+                        </div>
+                </article>
+                <ng-addon-table-addon-flow></ng-addon-table-addon-flow>
+                <article class="container-fluid">                    
+                    <div class="row" ng-if="!isXaasFund">
+                        <div class="col-md-12 margin-bottom-20">
+                            {{globalVars.addonMessageNotXaas}}
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-xs-6 text-left"><a class="btn btn-default" ng-if="!getURLParam" ng-click="gotoConfigure()">{{globalVars.backBtn}}</a></div>
+                            <div class="col-xs-6 text-right">
+								<span ng-if="ajaxLoader">
+                                    <div class="ajaxSpinner">&nbsp;</div> 
+                                </span>&nbsp;
+                                <a class="btn btn-primary" ng-click="goToReview()" ng-disabled="!validSelectedData || reviewError || ajaxLoader || !trueUpError">{{globalVars.reviewOrderBtn}}</a>
+
+                                <a class="btn btn-default margin-left-20" ng-click="cancelFlow(cancelFn)">{{globalVars.cancelBtn}}</a>
+                            </div>
+                    </div>
+                </article>
+            </section>
